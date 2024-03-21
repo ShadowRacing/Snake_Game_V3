@@ -1,0 +1,26 @@
+[Shadow Racing] Snake app License
+
+Version 1.0 [03-03-2024]
+
+Terms and conditions for this License: 
+
+Use.
+Copying.
+Modification.
+Distribution.
+
+1. You are permitted to Use, Copy, modify and distribute this piece off software when the following conditions are met:
+    
+    a. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.
+
+2. THIS SOFTWARE IS PROVIDED AS IT IS INTENDED TO BE USED.
+
+3. If you modify this piece of software, you must include a notice stating that the original code has been modified by a third party
+
+    a. In this you need to have the following information: The name off the modifyer, the date of the modifyer.
+
+    b. The original maker off the App is not liable for any changes made by a third party.
+
+    c. For bugs and modifiations not made by the original maker, you need to contact the third party that has modified the content.
+
+4. You may NOT use the Name of the author or contributors to endors or promote this piece off software, without a written permision form the original Owner.

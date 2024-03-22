@@ -78,7 +78,7 @@ class SnakeGameApp:
         self.endless_food = EndlessFood(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
 
         #create the functions dictionary
-        functions = {
+        self.functions = {
             'return_home': self.return_home,
             'confirm_quit': self.confirm_quit,
             'destroy_canvas': self.destroy_canvas,
@@ -94,10 +94,10 @@ class SnakeGameApp:
         }
 
         # Initializing the button panel and label panel
-        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile)
+        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
         
         # And then create the ButtonCommands instance
-        self.button_commands = ButtonCommands(self.logfile, functions)
+        self.button_commands = ButtonCommands(self.logfile, self.functions)
 
         self.framelabel_panel = NameOffFrameLabelPanel(self.logfile, self.main_canvas, self.game_config, self.open_info,
                                       self.open_settings)
@@ -143,10 +143,10 @@ class SnakeGameApp:
         self.main_canvas = self.classic_snake_canvas
 
         # Update the button panel
-        self.create_button_panel = ClickButtonPanel(self.logfile, self.main_canvas)
+        self.create_button_panel = ClickButtonPanel(self.main_canvas,self.logfile, self.functions)
 
         # Update the frame label panel
-        self.framelabel_panel = NameOffFrameLabelPanel(self.logfile, self.main_canvas, self.game_config)
+        self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,self.logfile, self.game_config)
         
         # Update the game labels panel
         self.game_labels_panel = GameLabelsPanel(self.logfile, self.main_canvas, self.game_config)
@@ -178,8 +178,9 @@ class SnakeGameApp:
 
         # Update the button panel
         self.create_button_panel = ClickButtonPanel(
+            self.main_canvas,
             self.logfile,
-            self.main_canvas
+            self.functions
         )
 
         self.framelabel_panel = NameOffFrameLabelPanel(
@@ -214,8 +215,9 @@ class SnakeGameApp:
 
         # Update the button panel
         self.create_button_panel = ClickButtonPanel(
+            self.main_canvas,
             self.logfile,
-            self.main_canvas
+            self.functions
         )
 
         self.framelabel_panel = NameOffFrameLabelPanel(
@@ -249,8 +251,9 @@ class SnakeGameApp:
 
         # Update the button panel
         self.create_button_panel = ClickButtonPanel(
+            self.main_canvas,
             self.logfile,
-            self.main_canvas
+            self.functions
         )
 
         self.framelabel_panel = NameOffFrameLabelPanel(
@@ -280,8 +283,9 @@ class SnakeGameApp:
 
         # create the button panel
         self.create_button_panel = ClickButtonPanel(
+            self.main_canvas,
             self.logfile,
-            self.main_canvas
+            self.functions
         )
         
 

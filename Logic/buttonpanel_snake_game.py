@@ -14,12 +14,122 @@ from Configuration.constants_snake_game import GameConstants, FONT_LIST
 from Logic.Screen_size_Changer_snake_game import Screen_size
 from Logic.labelpanel_snake_game import SettingsOptionButtonLabels
 
+
+class ButtonCommands:
+    def __init__(self, logfile, functions):
+        self.functions = functions
+        self.logfile = logfile
+
+    def home_command(self):
+        if 'home' in self.functions:
+            self.functions['home']()
+        else:
+            print("No function assigned to 'home'")
+
+    def quit_command(self):
+        if 'confirm_quit' in self.functions:
+            self.functions['confirm_quit']()
+        else:
+            print("No function assigned to 'confirm_quit'")
+
+    def settings_command(self):
+        if 'open_settings' in self.functions:
+            self.functions['open_settings']()
+        else:
+            print("No function assigned to 'open_settings'")
+
+    def info_command(self):
+        if 'info' in self.functions:
+            self.functions['info']()
+        else:
+            print("No function assigned to 'info'")
+
+    def patchnotes_command(self):
+        if 'patchnotes' in self.functions:
+            self.functions['patchnotes']()
+        else:
+            print("No function assigned to 'patchnotes'")
+
+    def classic_snake_command(self):
+        if 'classic_snake' in self.functions:
+            self.functions['classic_snake']()
+        else:
+            print("No function assigned to 'classic_snake'")
+
+
+    def snake_endless_command(self):
+        if 'snake_endless' in self.functions:
+            self.functions['snake_endless']()
+        else:
+            print("No function assigned to 'snake_endless'")
+
+    def snake_special_command(self):
+        if 'snake_special' in self.functions:
+            self.functions['snake_special']()
+        else:
+            print("No function assigned to 'snake_special'")
+
+    def snake_color_command(self):
+        if 'snake_color' in self.functions:
+            self.functions['snake_color']()
+        else:
+            print("No function assigned to 'snake_color'")
+
+    def snake_outline_command(self):
+        if 'snake_outline' in self.functions:
+            self.functions['snake_outline']()
+        else:
+            print("No function assigned to 'snake_outline'")
+
+    def snake_length_command(self):
+        if 'snake_length' in self.functions:
+            self.functions['snake_length']()
+        else:
+            print("No function assigned to 'snake_length'")
+
+    def reset_high_score_command(self):
+        if 'reset_high_score' in self.functions:
+            self.functions['reset_high_score']()
+        else:
+            print("No function assigned to 'reset_high_score'")
+
+    def reset_high_score_time_command(self):
+        if 'reset_high_score_time' in self.functions:
+            self.functions['reset_high_score_time']()
+        else:
+            print("No function assigned to 'reset_high_score_time'")
+
+    def reset_high_score_snake_length_command(self):
+        if 'reset_high_score_snake_length' in self.functions:
+            self.functions['reset_high_score_snake_length']()
+        else:
+            print("No function assigned to 'reset_high_score_snake_length'")
+
+    def game_size_command(self):
+        if 'game_size' in self.functions:
+            self.functions['game_size']()
+        else:
+            print("No function assigned to 'game_size'")
+
+    def snake_speed_command(self):
+        if 'snake_speed' in self.functions:
+            self.functions['snake_speed']()
+        else:
+            print("No function assigned to 'snake_speed'")
+
+    def destroy_canvas(self):
+        if 'destroy_canvas' in self.functions:
+            self.functions['destroy_canvas']()
+        else:
+            print("No function assigned to 'destroy_canvas'")
+
 # Class for creating the button panel
 class ClickButtonPanel:
-    def __init__(self, parent, logfile):
+    def __init__(self, parent, logfile, functions):
         # Initializing variables
         self.parent = parent
         self.logfile = logfile
+        self.functions = functions
         self.theme_updater = ThemeUpdater(self.logfile)
         self.home_button_ref = None
        
@@ -34,91 +144,108 @@ class ClickButtonPanel:
         # Create a dictionary to store button objects
         self.home_button_ref = None
 
-    # Methods to create specific buttons
+        self.button_commands = ButtonCommands(self.logfile, self.functions)
+
+    # Methods to create specific buttons    
     # Each method calls the create_click_button method with specific parameters
     def home_button(self):
         home_button = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
-                                command=self.home_command)
+                                command=self.button_commands.home_command)
         home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w")
 
 
     def quit_button(self):
         quit_button = ctk.CTkButton(self.button_canvas, text="Quit", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.quit_command)
         quit_button.grid(in_=self.button_canvas, row=20, column=0, padx=10, pady=10, sticky="w")
 
     def settings_button(self):
         settings_button = ctk.CTkButton(self.button_canvas, text="Settings", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.settings_command)
         settings_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
     def info_button(self):
         info_button = ctk.CTkButton(self.button_canvas, text="Information", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.info_command)
         info_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
 
     def patchnotes_button(self):
         patchnotes_button = ctk.CTkButton(self.button_canvas, text="Patchnotes", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.patchnotes_command)
         patchnotes_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
 
     def classic_snake_button(self):
         classic_snake_button = ctk.CTkButton(self.button_canvas, text="Classic Snake", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.classic_snake_command)
         classic_snake_button.grid(in_=self.button_canvas, row=1, column=0, padx=10, pady=10, sticky="w")
 
     def snake_endless_button(self):
         snake_endless_button = ctk.CTkButton(self.button_canvas, text="Endless Snake", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.snake_endless_command)
         snake_endless_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
 
     def snake_special_button(self):
         snake_special_button = ctk.CTkButton(self.button_canvas, text="Classic Snake", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.snake_special_command)
         snake_special_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
 
     # in-game buttons
     def snake_color_button(self):
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.snake_color_command)
         snake_color_button.grid(in_=self.button_canvas, row=1, column=0, padx=10, pady=10, sticky="w")
 
     def snake_outline_button(self):
         snake_outline_button = ctk.CTkButton(self.button_canvas, text="Snake Outline", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.snake_outline_command)
         snake_outline_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
 
     def snake_length_button(self):
         snake_length_button = ctk.CTkButton(self.button_canvas, text="Snake Length", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.snake_length_command)
         snake_length_button.grid(in_=self.button_canvas, row=1, column=0, padx=10, pady=10, sticky="w")
 
     def reset_high_score_button(self):
         reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Score\n Highscore", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_high_score_command)
         reset_high_score_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
 
     def reset_high_score_time_button(self):
         reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Time\n Highscore", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_high_score_time_command)
         reset_high_score_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
 
     def reset_high_score_snake_length(self):
         reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset snakelength\n Highscore", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_high_score_snake_length_command)
         reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def game_size_button(self):
         game_size_button = ctk.CTkButton(self.button_canvas, text="Game Size", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.game_size_command)
         game_size_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def snake_speed_button(self):
         snake_speed_button = ctk.CTkButton(self.button_canvas, text="Snake Speed", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal")
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.snake_speed_command)
         snake_speed_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
     def set_home_button_state(self, state):
@@ -231,61 +358,7 @@ class DisabelingButtons:
         self.button_panel.set_home_button_state("normal")
         print("Buttons enabled")
 
-class ButtonCommands:
-    def __init__(self, logfile, functions):
-        self.functions = functions
-        self.logfile = logfile
 
-    def home_command(self):
-        self.functions['return_home']()
-
-    def quit_command(self):
-        self.functions['confirm_quit']()
-
-    def settings_command(self):
-        self.functions['open_settings']()
-
-    def info_command(self):
-        self.functions['open_info']()
-
-    def patchnotes_command(self):
-        pass
-
-    def classic_snake_command(self):
-        self.functions['classic_snake']()
-
-    def snake_endless_command(self):
-        self.functions['snake_endless']()
-
-    def snake_special_command(self):
-        self.functions['snake_special']()
-
-    def snake_color_command(self):
-        pass
-
-    def snake_outline_command(self):
-        pass
-
-    def snake_length_command(self):
-        self.functions['reset_snake_length']()
-
-    def reset_high_score_command(self):
-        self.functions['reset_high_score']()
-
-    def reset_high_score_time_command(self):
-        self.functions['reset_high_score_time']()
-
-    def reset_high_score_snake_length_command(self):
-        pass
-
-    def game_size_command(self):
-        pass
-
-    def snake_speed_command(self):
-        pass
-
-    def destroy_canvas(self):
-        self.functions['destroy_canvas']()
 
 # *****************************************
 # Wims Snake Button Panel File

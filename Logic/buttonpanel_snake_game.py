@@ -21,8 +21,8 @@ class ButtonCommands:
         self.logfile = logfile
 
     def home_command(self):
-        if 'home' in self.functions:
-            self.functions['home']()
+        if 'return_home' in self.functions:
+            self.functions['return_home']()
         else:
             print("No function assigned to 'home'")
 
@@ -55,7 +55,6 @@ class ButtonCommands:
             self.functions['classic_snake']()
         else:
             print("No function assigned to 'classic_snake'")
-
 
     def snake_endless_command(self):
         if 'snake_endless' in self.functions:
@@ -229,7 +228,7 @@ class ClickButtonPanel:
         reset_high_score_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
 
     def reset_high_score_snake_length(self):
-        reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset snakelength\n Highscore", font=FONT_LIST[11],
+        reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset snake\nlength Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.reset_high_score_snake_length_command)
         reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")

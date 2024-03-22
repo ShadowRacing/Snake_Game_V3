@@ -34,9 +34,8 @@ class SnakeGameApp:
         self.theme_updater = ThemeUpdater(self.logfile)
         self.game_width = game_width
         self.game_height = game_height
-        self.resizing = False
-        self.previous_width = root.winfo_width()
-        self.previous_height = root.winfo_height()
+        # self.previous_width = root.winfo_width()
+        # self.previous_height = root.winfo_height()
         self.theme_updater.set_initial_theme()
 
         # Read the config file and load it
@@ -99,10 +98,10 @@ class SnakeGameApp:
         # And then create the ButtonCommands instance
         self.button_commands = ButtonCommands(self.logfile, self.functions)
 
-        self.framelabel_panel = NameOffFrameLabelPanel(self.logfile, self.main_canvas, self.game_config, self.open_info,
+        self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.logfile,  self.game_config, self.open_info,
                                       self.open_settings)
         
-        self.game_labels_panel = GameLabelsPanel(self.logfile, self.main_canvas, self.game_config)
+        self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.logfile,  self.game_config)
         
         # Create the home screen
         self.create_home_screen()
@@ -322,6 +321,12 @@ class SnakeGameApp:
                                                         self.logfile, 
                                                         self.functions
                                                         )
+        
+        self.create_option_button_panel = OptionButtonPanel(
+            self.root, 
+            self.settings_canvas, 
+            self.logfile
+        )
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
@@ -441,6 +446,8 @@ if __name__ == "__main__":
     root = ctk.CTk()
     app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
     root.title("Wims Snake Game")
+    root.geometry(f"{GameConstants.MIN_WIDTH}x{GameConstants.MIN_HEIGHT}")
+    root.resizable(False, False)
 
     # Center the window on the screen
     def center_window():

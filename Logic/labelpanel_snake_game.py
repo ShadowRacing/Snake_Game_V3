@@ -4,9 +4,10 @@ from os import path
 from Configuration.constants_snake_game import FONT_LIST
 
 class NameOffFrameLabelPanel:
-    def __init__(self, logfile, parent, info_callback, settings_callback, game_config):
-        self.logfile = logfile
+    def __init__(self, parent, logfile, info_callback, settings_callback, game_config):
         self.parent = parent
+        self.logfile = logfile
+        
         self.game_config = game_config
         self.create_label_canvas_flag = False
         self.info_callback = info_callback

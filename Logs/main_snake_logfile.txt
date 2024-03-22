@@ -53492,3 +53492,78 @@ Current initial_theme in config.ini: Default
 delete_labels method called
 Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
 [2024-03-22 15:43:18] start_screen method called
+[2024-03-22 15:48:11] Started the app
+[2024-03-22 15:48:11] Started the GameApp Class
+[2024-03-22 15:48:11] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 15:48:11] Contrast mode set to dark
+[2024-03-22 15:48:11] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 15:48:11] start_screen method called
+[2024-03-22 15:48:12] Game mode: classic_snake
+[2024-03-22 15:48:12] start_game
+[2024-03-22 15:48:12] Reset snake length
+[2024-03-22 15:48:12] Game mode: classic_snake
+[2024-03-22 15:48:12] Game state: start_game
+[2024-03-22 15:48:12] Game focused
+[2024-03-22 15:48:24] Game state: game
+[2024-03-22 15:48:24] Food ID:
+[2024-03-22 15:48:24] 3bf4f493-ba6c-4a62-9aac-a09ea962691d
+[2024-03-22 15:48:24] {'3bf4f493-ba6c-4a62-9aac-a09ea962691d': {'x': 120, 'y': 60, 'tag': 'food3bf4f493-ba6c-4a62-9aac-a09ea962691d', 'oval_id': 7}}
+[2024-03-22 15:48:24] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-22 15:51:00] Started the app
+[2024-03-22 15:51:00] Started the GameApp Class
+[2024-03-22 15:51:00] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 15:51:00] Contrast mode set to dark
+[2024-03-22 15:51:00] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 15:51:00] start_screen method called
+[2024-03-22 15:51:01] Game mode: classic_snake
+[2024-03-22 15:51:01] start_game
+[2024-03-22 15:51:01] Reset snake length
+[2024-03-22 15:51:01] Game mode: classic_snake
+[2024-03-22 15:51:01] Game state: start_game
+[2024-03-22 15:51:01] Game focused
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'home'
+No function assigned to 'snake_color'
+No function assigned to 'snake_color'
+[2024-03-22 15:52:08] Highscore reset to 0
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-22 15:52:30] Highscore reset to 0
+[2024-03-22 15:52:30] Highscore reset to 0
+[2024-03-22 15:52:30] Highscore reset to 0
+[2024-03-22 15:52:31] Closed the app
+
+
+
+

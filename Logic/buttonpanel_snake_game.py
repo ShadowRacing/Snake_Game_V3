@@ -141,33 +141,32 @@ class ButtonCommands:
 
 # Class for creating the button panel
 class ClickButtonPanel:
-    def __init__(self, parent, logfile, functions):
+    def __init__(self, parent, logfile, functions, home_button=None):
         # Initializing variables
         self.parent = parent
         self.logfile = logfile
         self.functions = functions
+        self.home_button = home_button
         self.theme_updater = ThemeUpdater(self.logfile)
        
-        # Creating a separate canvas for the buttons
-        self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5)
-        self.button_canvas.pack(side='left', fill='both')
-
         # Managing the buttons height and width
         self.button_width = GameConstants.BUTTON_WIDTH
         self.button_height = GameConstants.BUTTON_HEIGHT
 
-        # Create a dictionary to store button objects
-        self.home_button_ref = None
-
         self.button_commands = ButtonCommands(self.logfile, self.functions)
+        
+        # Creating a separate canvas for the buttons
+        self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5)
+        self.button_canvas.pack(side='left', fill='both')
+
 
     # Methods to create specific buttons    
     # Each method calls the create_click_button method with specific parameters
-    def home_button(self):
-        self.home_button_ = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11],
+    def create_home_button(self):
+        self.home_button = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.home_command)
-        self.home_button_.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w")
+        self.home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w")
 
 
     def quit_button(self):
@@ -366,7 +365,6 @@ class DisabelingButtons:
         self.button_panel = button_panel
     
     def disable_buttons(self):
-        
         self.button_panel.home_button.configure(state="disabled")
        
        

@@ -122,6 +122,23 @@ class ButtonCommands:
         else:
             print("No function assigned to 'destroy_canvas'")
 
+# class DisabelingButtons:
+#     def __init__(self, button_panel):
+#         self.button_panel = button_panel
+    
+#     def disable_buttons(self):
+#         if hasattr(self.button_panel, 'home_button'): 
+#             self.button_panel.set_home_button_state("disabled")
+#             print("Buttons disabled")
+#         else:
+#             print("No home button found")
+    
+#     def enable_buttons(self):
+#         self.button_panel.set_home_button_state("normal")
+#         print("Buttons enabled")
+
+
+
 # Class for creating the button panel
 class ClickButtonPanel:
     def __init__(self, parent, logfile, functions):
@@ -130,7 +147,6 @@ class ClickButtonPanel:
         self.logfile = logfile
         self.functions = functions
         self.theme_updater = ThemeUpdater(self.logfile)
-        self.home_button_ref = None
        
         # Creating a separate canvas for the buttons
         self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5)
@@ -148,10 +164,10 @@ class ClickButtonPanel:
     # Methods to create specific buttons    
     # Each method calls the create_click_button method with specific parameters
     def home_button(self):
-        home_button = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11],
+        self.home_button_ = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.home_command)
-        home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w")
+        self.home_button_.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w")
 
 
     def quit_button(self):
@@ -228,7 +244,7 @@ class ClickButtonPanel:
         reset_high_score_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
 
     def reset_high_score_snake_length(self):
-        reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset snake\nlength Highscore", font=FONT_LIST[11],
+        reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset length\n Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.reset_high_score_snake_length_command)
         reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
@@ -350,12 +366,16 @@ class DisabelingButtons:
         self.button_panel = button_panel
     
     def disable_buttons(self):
-        self.button_panel.set_home_button_state("disabled")
-        print("Buttons disabled")
-    
+        
+        self.button_panel.home_button.configure(state="disabled")
+       
+       
     def enable_buttons(self):
-        self.button_panel.set_home_button_state("normal")
-        print("Buttons enabled")
+        if hasattr(self.button_panel, 'return_home'):
+            self.button_panel.home_button.configure(state="normal")
+            print("Buttons enabled")
+        else:
+            print("Home button not found")
 
 
 

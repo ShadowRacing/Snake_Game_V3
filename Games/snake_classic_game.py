@@ -11,18 +11,19 @@ from Configuration.gameconfig_snake_game import GameConfig
 from Logic.food_logic_snake_game import ClassicFood
 from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
-from Logic.buttonpanel_snake_game import DisabelingButtons
+from Logic.buttonpanel_snake_game import DisabelingButtons, ClickButtonPanel
 from Logic.key_logic_snake_game import MovementOffSnake
 
 #global variabels
 
 
 class Snake_Classic_Game(ctk.CTkCanvas):
-    def __init__(self, parent, game_config, logfile):
+    def __init__(self, parent, game_config, logfile, functions ,button_panel):
         # Create the game logger
-        
         self.logfile = logfile
         self.game_config = game_config
+        self.functions = functions
+        self.button_panel = button_panel
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
         self.score = 0
@@ -51,7 +52,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.snake = Snake(self.logfile, self.snake_canvas, game_config)
         self.food = ClassicFood(self.logfile, self.snake_canvas, game_config)
         self.game_labels_panel = GameLabelsPanel(self.logfile, parent, self.game_config)
-        self.disabeling_buttons = DisabelingButtons(self.logfile)
+        self.disabeling_buttons = DisabelingButtons(self.button_panel)
         self.game_config = GameConfig(self.logfile, 'classic_snake')
         #self.movement_off_snake = MovementOffSnake(self.snake_canvas, self.game_config, self.logfile)
         self.game_labels_panel.create_game_labels()

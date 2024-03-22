@@ -53919,3 +53919,1578 @@ Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
 
 
 
+[2024-03-22 19:27:42] Started the app
+[2024-03-22 19:27:42] Started the GameApp Class
+[2024-03-22 19:27:42] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:27:42] Contrast mode set to dark
+[2024-03-22 19:27:42] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:27:42] start_screen method called
+[2024-03-22 19:27:43] Game mode: classic_snake
+[2024-03-22 19:27:43] start_game
+[2024-03-22 19:27:43] Reset snake length
+[2024-03-22 19:27:43] Game mode: classic_snake
+[2024-03-22 19:27:43] Game state: start_game
+[2024-03-22 19:27:43] Game focused
+[2024-03-22 19:27:44] Game state: game
+[2024-03-22 19:27:44] Food ID:
+[2024-03-22 19:27:44] 792f9251-12ab-4029-af08-78e3d99b85e9
+[2024-03-22 19:27:44] {'792f9251-12ab-4029-af08-78e3d99b85e9': {'x': 180, 'y': 180, 'tag': 'food792f9251-12ab-4029-af08-78e3d99b85e9', 'oval_id': 7}}
+[2024-03-22 19:27:44] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-22 19:33:34] Started the app
+[2024-03-22 19:33:34] Started the GameApp Class
+[2024-03-22 19:33:34] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:33:34] Contrast mode set to dark
+[2024-03-22 19:33:34] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:33:34] start_screen method called
+[2024-03-22 19:33:42] Game mode: classic_snake
+[2024-03-22 19:33:42] start_game
+[2024-03-22 19:33:42] Reset snake length
+[2024-03-22 19:34:03] Started the app
+[2024-03-22 19:34:03] Started the GameApp Class
+[2024-03-22 19:34:03] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:34:03] Contrast mode set to dark
+[2024-03-22 19:34:03] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:34:03] start_screen method called
+[2024-03-22 19:34:04] Game mode: classic_snake
+[2024-03-22 19:34:04] start_game
+[2024-03-22 19:34:04] Reset snake length
+[2024-03-22 19:36:15] Started the app
+[2024-03-22 19:36:15] Started the GameApp Class
+[2024-03-22 19:36:15] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:36:15] Contrast mode set to dark
+[2024-03-22 19:36:15] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:36:15] start_screen method called
+[2024-03-22 19:36:19] Game mode: classic_snake
+[2024-03-22 19:36:19] start_game
+[2024-03-22 19:36:19] Reset snake length
+[2024-03-22 19:38:19] Started the app
+[2024-03-22 19:38:19] Started the GameApp Class
+[2024-03-22 19:38:19] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:38:19] Contrast mode set to dark
+[2024-03-22 19:38:19] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:38:19] start_screen method called
+[2024-03-22 19:38:20] Game mode: classic_snake
+[2024-03-22 19:38:20] start_game
+[2024-03-22 19:38:20] Reset snake length
+[2024-03-22 19:40:38] Started the app
+[2024-03-22 19:40:38] Started the GameApp Class
+[2024-03-22 19:40:38] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:40:38] Contrast mode set to dark
+[2024-03-22 19:40:38] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:40:38] start_screen method called
+[2024-03-22 19:41:06] Closed the app
+
+
+
+
+[2024-03-22 19:41:09] Started the app
+[2024-03-22 19:41:09] Started the GameApp Class
+[2024-03-22 19:41:09] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:41:09] Contrast mode set to dark
+[2024-03-22 19:41:09] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:41:09] start_screen method called
+[2024-03-22 19:41:14] Game mode: classic_snake
+[2024-03-22 19:41:14] start_game
+[2024-03-22 19:41:14] Reset snake length
+[2024-03-22 19:42:07] Started the app
+[2024-03-22 19:42:07] Started the GameApp Class
+[2024-03-22 19:42:07] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:42:07] Contrast mode set to dark
+[2024-03-22 19:42:07] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:42:07] start_screen method called
+[2024-03-22 19:42:08] Game mode: classic_snake
+[2024-03-22 19:42:46] Started the app
+[2024-03-22 19:42:46] Started the GameApp Class
+[2024-03-22 19:42:46] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:42:46] Contrast mode set to dark
+[2024-03-22 19:42:46] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:42:46] start_screen method called
+[2024-03-22 19:42:47] Game mode: classic_snake
+[2024-03-22 19:42:47] start_game
+[2024-03-22 19:42:47] Reset snake length
+[2024-03-22 19:43:16] Started the app
+[2024-03-22 19:43:16] Started the GameApp Class
+[2024-03-22 19:43:16] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:43:16] Contrast mode set to dark
+[2024-03-22 19:43:16] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:43:16] start_screen method called
+[2024-03-22 19:43:16] Game mode: classic_snake
+[2024-03-22 19:43:16] start_game
+[2024-03-22 19:43:16] Reset snake length
+[2024-03-22 19:43:16] Game mode: classic_snake
+[2024-03-22 19:43:16] Game state: start_game
+[2024-03-22 19:43:16] Game focused
+[2024-03-22 19:43:54] Started the app
+[2024-03-22 19:43:54] Started the GameApp Class
+[2024-03-22 19:43:54] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:43:54] Contrast mode set to dark
+[2024-03-22 19:43:54] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:43:54] start_screen method called
+[2024-03-22 19:43:55] Game mode: classic_snake
+[2024-03-22 19:43:55] start_game
+[2024-03-22 19:43:55] Reset snake length
+[2024-03-22 19:47:14] Started the app
+[2024-03-22 19:47:14] Started the GameApp Class
+[2024-03-22 19:47:14] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:47:14] Contrast mode set to dark
+[2024-03-22 19:47:14] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:47:15] start_screen method called
+[2024-03-22 19:47:15] Game mode: classic_snake
+[2024-03-22 19:47:15] start_game
+[2024-03-22 19:47:15] Reset snake length
+[2024-03-22 19:47:15] Game mode: classic_snake
+[2024-03-22 19:47:15] Game state: start_game
+[2024-03-22 19:47:15] Game focused
+[2024-03-22 19:49:26] Closed the app
+
+
+
+
+[2024-03-22 19:49:27] Started the app
+[2024-03-22 19:49:27] Started the GameApp Class
+[2024-03-22 19:49:27] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:49:27] Contrast mode set to dark
+[2024-03-22 19:49:27] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:49:27] start_screen method called
+[2024-03-22 19:49:28] Game mode: classic_snake
+[2024-03-22 19:49:55] Started the app
+[2024-03-22 19:49:55] Started the GameApp Class
+[2024-03-22 19:49:55] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:49:55] Contrast mode set to dark
+[2024-03-22 19:49:55] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:49:55] start_screen method called
+[2024-03-22 19:49:56] Game mode: classic_snake
+[2024-03-22 19:50:03] Started the app
+[2024-03-22 19:50:03] Started the GameApp Class
+[2024-03-22 19:50:03] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:50:03] Contrast mode set to dark
+[2024-03-22 19:50:03] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:50:03] start_screen method called
+[2024-03-22 19:50:04] Game mode: classic_snake
+[2024-03-22 19:50:04] start_game
+[2024-03-22 19:50:04] Reset snake length
+[2024-03-22 19:50:04] Game mode: classic_snake
+[2024-03-22 19:50:04] Game state: start_game
+[2024-03-22 19:50:04] Game focused
+[2024-03-22 19:51:40] Started the app
+[2024-03-22 19:51:40] Started the GameApp Class
+[2024-03-22 19:51:40] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:51:40] Contrast mode set to dark
+[2024-03-22 19:51:40] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:51:40] start_screen method called
+[2024-03-22 19:51:42] Game mode: classic_snake
+[2024-03-22 19:52:22] Started the app
+[2024-03-22 19:52:22] Started the GameApp Class
+[2024-03-22 19:52:22] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:52:22] Contrast mode set to dark
+[2024-03-22 19:52:22] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:52:22] start_screen method called
+[2024-03-22 19:52:23] Game mode: classic_snake
+[2024-03-22 19:53:10] Started the app
+[2024-03-22 19:53:10] Started the GameApp Class
+[2024-03-22 19:53:10] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:53:10] Contrast mode set to dark
+[2024-03-22 19:53:10] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:53:10] start_screen method called
+[2024-03-22 19:53:13] Game mode: classic_snake
+[2024-03-22 19:53:13] start_game
+[2024-03-22 19:53:13] Reset snake length
+[2024-03-22 19:56:31] Started the app
+[2024-03-22 19:56:31] Started the GameApp Class
+[2024-03-22 19:56:31] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:56:31] Contrast mode set to dark
+[2024-03-22 19:56:31] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:56:31] start_screen method called
+[2024-03-22 19:56:32] Closed the app
+
+
+
+
+[2024-03-22 19:56:33] Started the app
+[2024-03-22 19:56:33] Started the GameApp Class
+[2024-03-22 19:56:33] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:56:33] Contrast mode set to dark
+[2024-03-22 19:56:33] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:56:34] start_screen method called
+[2024-03-22 19:56:34] Game mode: classic_snake
+[2024-03-22 19:57:20] Started the app
+[2024-03-22 19:57:20] Started the GameApp Class
+[2024-03-22 19:57:20] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:57:20] Contrast mode set to dark
+[2024-03-22 19:57:20] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:57:20] start_screen method called
+[2024-03-22 19:57:21] Game mode: classic_snake
+[2024-03-22 19:57:56] Started the app
+[2024-03-22 19:57:56] Started the GameApp Class
+[2024-03-22 19:57:56] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 19:57:56] Contrast mode set to dark
+[2024-03-22 19:57:56] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 19:57:56] start_screen method called
+[2024-03-22 19:57:57] Game mode: classic_snake
+[2024-03-22 19:57:57] start_game
+[2024-03-22 19:57:57] Reset snake length
+[2024-03-22 19:57:57] Game mode: classic_snake
+[2024-03-22 19:57:57] Game state: start_game
+[2024-03-22 19:57:57] Game focused
+[2024-03-22 20:00:32] Started the app
+[2024-03-22 20:00:32] Started the GameApp Class
+[2024-03-22 20:00:32] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:00:32] Contrast mode set to dark
+[2024-03-22 20:00:32] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:00:32] start_screen method called
+[2024-03-22 20:00:33] Game mode: classic_snake
+[2024-03-22 20:00:33] start_game
+[2024-03-22 20:00:33] Reset snake length
+[2024-03-22 20:00:33] Game mode: classic_snake
+[2024-03-22 20:00:33] Game state: start_game
+[2024-03-22 20:00:33] Game focused
+[2024-03-22 20:03:13] Started the app
+[2024-03-22 20:03:13] Started the GameApp Class
+[2024-03-22 20:03:13] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:03:13] Contrast mode set to dark
+[2024-03-22 20:03:13] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:03:13] start_screen method called
+[2024-03-22 20:03:14] Game mode: classic_snake
+[2024-03-22 20:03:14] start_game
+[2024-03-22 20:03:14] Reset snake length
+[2024-03-22 20:03:14] Game mode: classic_snake
+[2024-03-22 20:03:14] Game state: start_game
+[2024-03-22 20:03:14] Game focused
+[2024-03-22 20:03:27] Started the app
+[2024-03-22 20:03:27] Started the GameApp Class
+[2024-03-22 20:03:27] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:03:27] Contrast mode set to dark
+[2024-03-22 20:03:27] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:03:27] start_screen method called
+[2024-03-22 20:03:28] Game mode: classic_snake
+[2024-03-22 20:03:28] start_game
+[2024-03-22 20:03:28] Reset snake length
+[2024-03-22 20:03:28] Game mode: classic_snake
+[2024-03-22 20:03:28] Game state: start_game
+[2024-03-22 20:03:28] Game focused
+delete_labels method called
+[2024-03-22 20:03:30] Game mode: classic_snake
+[2024-03-22 20:03:30] start_game
+[2024-03-22 20:03:30] Reset snake length
+[2024-03-22 20:03:30] Game mode: classic_snake
+[2024-03-22 20:03:30] Game state: start_game
+[2024-03-22 20:03:30] Game focused
+[2024-03-22 20:04:59] Started the app
+[2024-03-22 20:04:59] Started the GameApp Class
+[2024-03-22 20:04:59] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:04:59] Contrast mode set to dark
+[2024-03-22 20:04:59] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:04:59] start_screen method called
+[2024-03-22 20:05:00] Game mode: snake_endless
+[2024-03-22 20:06:09] Started the app
+[2024-03-22 20:06:09] Started the GameApp Class
+[2024-03-22 20:06:09] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:06:09] Contrast mode set to dark
+[2024-03-22 20:06:09] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:06:09] start_screen method called
+[2024-03-22 20:06:10] Game mode: classic_snake
+[2024-03-22 20:06:10] start_game
+[2024-03-22 20:06:10] Reset snake length
+[2024-03-22 20:06:10] Game mode: classic_snake
+[2024-03-22 20:06:10] Game state: start_game
+[2024-03-22 20:06:10] Game focused
+delete_labels method called
+[2024-03-22 20:06:13] Game mode: classic_snake
+[2024-03-22 20:06:13] start_game
+[2024-03-22 20:06:13] Reset snake length
+[2024-03-22 20:06:13] Game mode: classic_snake
+[2024-03-22 20:06:13] Game state: start_game
+[2024-03-22 20:06:13] Game focused
+delete_labels method called
+[2024-03-22 20:06:19] Started the app
+[2024-03-22 20:06:19] Started the GameApp Class
+[2024-03-22 20:06:19] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:06:19] Contrast mode set to dark
+[2024-03-22 20:06:19] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:06:19] start_screen method called
+[2024-03-22 20:06:20] Game mode: classic_snake
+[2024-03-22 20:06:20] start_game
+[2024-03-22 20:06:20] Reset snake length
+[2024-03-22 20:06:20] Game mode: classic_snake
+[2024-03-22 20:06:20] Game state: start_game
+[2024-03-22 20:06:20] Game focused
+delete_labels method called
+[2024-03-22 20:06:21] Game mode: classic_snake
+[2024-03-22 20:06:21] start_game
+[2024-03-22 20:06:21] Reset snake length
+[2024-03-22 20:06:21] Game mode: classic_snake
+[2024-03-22 20:06:21] Game state: start_game
+[2024-03-22 20:06:21] Game focused
+delete_labels method called
+[2024-03-22 20:06:27] Started the app
+[2024-03-22 20:06:27] Started the GameApp Class
+[2024-03-22 20:06:27] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:06:27] Contrast mode set to dark
+[2024-03-22 20:06:27] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:06:27] start_screen method called
+[2024-03-22 20:06:30] Game mode: classic_snake
+[2024-03-22 20:06:30] start_game
+[2024-03-22 20:06:30] Reset snake length
+[2024-03-22 20:06:30] Game mode: classic_snake
+[2024-03-22 20:06:30] Game state: start_game
+[2024-03-22 20:06:30] Game focused
+delete_labels method called
+[2024-03-22 20:06:37] Started the app
+[2024-03-22 20:06:37] Started the GameApp Class
+[2024-03-22 20:06:37] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:06:37] Contrast mode set to dark
+[2024-03-22 20:06:37] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:06:38] start_screen method called
+[2024-03-22 20:06:38] Game mode: classic_snake
+[2024-03-22 20:06:38] start_game
+[2024-03-22 20:06:38] Reset snake length
+[2024-03-22 20:06:38] Game mode: classic_snake
+[2024-03-22 20:06:38] Game state: start_game
+[2024-03-22 20:06:38] Game focused
+delete_labels method called
+[2024-03-22 20:06:45] Started the app
+[2024-03-22 20:06:45] Started the GameApp Class
+[2024-03-22 20:06:45] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:06:45] Contrast mode set to dark
+[2024-03-22 20:06:45] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:06:45] start_screen method called
+[2024-03-22 20:06:46] Game mode: classic_snake
+[2024-03-22 20:06:46] start_game
+[2024-03-22 20:06:46] Reset snake length
+[2024-03-22 20:06:46] Game mode: classic_snake
+[2024-03-22 20:06:46] Game state: start_game
+[2024-03-22 20:06:46] Game focused
+delete_labels method called
+[2024-03-22 20:07:49] Started the app
+[2024-03-22 20:07:49] Started the GameApp Class
+[2024-03-22 20:07:49] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:07:49] Contrast mode set to dark
+[2024-03-22 20:07:49] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:07:49] start_screen method called
+[2024-03-22 20:07:49] Game mode: classic_snake
+[2024-03-22 20:07:49] start_game
+[2024-03-22 20:07:49] Reset snake length
+[2024-03-22 20:07:49] Game mode: classic_snake
+[2024-03-22 20:07:49] Game state: start_game
+[2024-03-22 20:07:49] Game focused
+[2024-03-22 20:07:50] Game state: game
+[2024-03-22 20:07:50] Food ID:
+[2024-03-22 20:07:50] 11402da0-c7ae-4c91-8e76-b36730384c9e
+[2024-03-22 20:07:50] {'11402da0-c7ae-4c91-8e76-b36730384c9e': {'x': 40, 'y': 40, 'tag': 'food11402da0-c7ae-4c91-8e76-b36730384c9e', 'oval_id': 7}}
+[2024-03-22 20:07:50] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-22 20:08:36] Started the app
+[2024-03-22 20:08:36] Started the GameApp Class
+[2024-03-22 20:08:36] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:08:36] Contrast mode set to dark
+[2024-03-22 20:08:36] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:08:36] start_screen method called
+[2024-03-22 20:08:37] Game mode: classic_snake
+[2024-03-22 20:08:37] start_game
+[2024-03-22 20:08:37] Reset snake length
+[2024-03-22 20:08:37] Game mode: classic_snake
+[2024-03-22 20:08:37] Game state: start_game
+[2024-03-22 20:08:37] Game focused
+[2024-03-22 20:08:37] Game state: game
+[2024-03-22 20:08:37] Food ID:
+[2024-03-22 20:08:37] d297a45b-1498-41a6-90ce-c84de8ad1fe3
+[2024-03-22 20:08:37] {'d297a45b-1498-41a6-90ce-c84de8ad1fe3': {'x': 60, 'y': 360, 'tag': 'foodd297a45b-1498-41a6-90ce-c84de8ad1fe3', 'oval_id': 7}}
+[2024-03-22 20:08:37] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-22 20:24:32] Started the app
+[2024-03-22 20:24:32] Started the GameApp Class
+[2024-03-22 20:24:32] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:24:32] Contrast mode set to dark
+[2024-03-22 20:24:32] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:24:32] start_screen method called
+[2024-03-22 20:24:33] Game mode: classic_snake
+[2024-03-22 20:24:33] start_game
+[2024-03-22 20:24:33] Reset snake length
+[2024-03-22 20:24:33] Game mode: classic_snake
+[2024-03-22 20:24:33] Game state: start_game
+[2024-03-22 20:24:33] Game focused
+[2024-03-22 20:24:35] Game state: game
+[2024-03-22 20:24:35] Food ID:
+[2024-03-22 20:24:35] 703b3de2-32c7-4dff-ab40-ff89e8d98510
+[2024-03-22 20:24:35] {'703b3de2-32c7-4dff-ab40-ff89e8d98510': {'x': 380, 'y': 260, 'tag': 'food703b3de2-32c7-4dff-ab40-ff89e8d98510', 'oval_id': 7}}
+[2024-03-22 20:24:35] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Buttons disabled
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+[2024-03-22 20:24:38] snake has a collision
+[2024-03-22 20:25:30] Started the app
+[2024-03-22 20:25:30] Started the GameApp Class
+[2024-03-22 20:25:30] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:25:30] Contrast mode set to dark
+[2024-03-22 20:25:30] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:25:30] start_screen method called
+[2024-03-22 20:25:31] Game mode: classic_snake
+[2024-03-22 20:25:31] start_game
+[2024-03-22 20:25:31] Reset snake length
+[2024-03-22 20:25:31] Game mode: classic_snake
+[2024-03-22 20:25:31] Game state: start_game
+[2024-03-22 20:25:31] Game focused
+[2024-03-22 20:25:31] Game state: game
+[2024-03-22 20:25:31] Food ID:
+[2024-03-22 20:25:31] 0e25cfce-71d2-4c0f-b137-d2627c8fa022
+[2024-03-22 20:25:31] {'0e25cfce-71d2-4c0f-b137-d2627c8fa022': {'x': 20, 'y': 300, 'tag': 'food0e25cfce-71d2-4c0f-b137-d2627c8fa022', 'oval_id': 7}}
+[2024-03-22 20:25:31] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+No home button found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+[2024-03-22 20:25:32] snake has a collision
+[2024-03-22 20:25:34] Closed the app
+
+
+
+
+[2024-03-22 20:26:43] Started the app
+[2024-03-22 20:26:43] Started the GameApp Class
+[2024-03-22 20:26:43] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:26:43] Contrast mode set to dark
+[2024-03-22 20:26:43] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:26:43] start_screen method called
+[2024-03-22 20:26:44] Game mode: classic_snake
+[2024-03-22 20:26:44] start_game
+[2024-03-22 20:26:44] Reset snake length
+[2024-03-22 20:26:44] Game mode: classic_snake
+[2024-03-22 20:26:44] Game state: start_game
+[2024-03-22 20:26:44] Game focused
+[2024-03-22 20:26:45] Game state: game
+[2024-03-22 20:26:45] Food ID:
+[2024-03-22 20:26:45] 84e065c4-f813-49a4-94c9-caa519471c74
+[2024-03-22 20:26:45] {'84e065c4-f813-49a4-94c9-caa519471c74': {'x': 300, 'y': 260, 'tag': 'food84e065c4-f813-49a4-94c9-caa519471c74', 'oval_id': 7}}
+[2024-03-22 20:26:45] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Home button not found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+[2024-03-22 20:26:48] snake has a collision
+Home button not found
+[2024-03-22 20:26:48] Game state: game_over
+[2024-03-22 20:26:48] Snake coordinates after reset: [(100, 200), (80, 200), (80, 180), (100, 180), (100, 200)]
+[2024-03-22 20:26:48] High score: 0
+[2024-03-22 20:26:48] Score: 0
+[2024-03-22 20:26:50] Closed the app
+
+
+
+
+[2024-03-22 20:28:20] Started the app
+[2024-03-22 20:28:20] Started the GameApp Class
+[2024-03-22 20:28:20] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:28:20] Contrast mode set to dark
+[2024-03-22 20:28:20] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:28:20] start_screen method called
+[2024-03-22 20:28:21] Game mode: classic_snake
+[2024-03-22 20:28:21] start_game
+[2024-03-22 20:28:21] Reset snake length
+[2024-03-22 20:28:21] Game mode: classic_snake
+[2024-03-22 20:28:21] Game state: start_game
+[2024-03-22 20:28:21] Game focused
+[2024-03-22 20:28:21] Game state: game
+[2024-03-22 20:28:21] Food ID:
+[2024-03-22 20:28:21] 0a6d2887-5e31-4d08-a674-51a27f192812
+[2024-03-22 20:28:21] {'0a6d2887-5e31-4d08-a674-51a27f192812': {'x': 40, 'y': 180, 'tag': 'food0a6d2887-5e31-4d08-a674-51a27f192812', 'oval_id': 7}}
+[2024-03-22 20:28:21] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Home button not found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+delete_labels method called
+[2024-03-22 20:34:19] Started the app
+[2024-03-22 20:34:19] Started the GameApp Class
+[2024-03-22 20:34:19] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:34:19] Contrast mode set to dark
+[2024-03-22 20:34:19] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:34:19] start_screen method called
+[2024-03-22 20:34:20] Game mode: classic_snake
+[2024-03-22 20:34:20] start_game
+[2024-03-22 20:34:20] Reset snake length
+[2024-03-22 20:34:20] Game mode: classic_snake
+[2024-03-22 20:34:20] Game state: start_game
+[2024-03-22 20:34:20] Game focused
+[2024-03-22 20:34:21] Game state: game
+[2024-03-22 20:34:21] Food ID:
+[2024-03-22 20:34:21] e20c7a27-4dd5-4e30-9e0f-b897ec3634d9
+[2024-03-22 20:34:21] {'e20c7a27-4dd5-4e30-9e0f-b897ec3634d9': {'x': 80, 'y': 360, 'tag': 'foode20c7a27-4dd5-4e30-9e0f-b897ec3634d9', 'oval_id': 7}}
+[2024-03-22 20:34:21] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Home button not found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+[2024-03-22 20:34:24] Food ID:
+[2024-03-22 20:34:24] ec4ed5be-3728-4d09-aba4-4509c1001079
+[2024-03-22 20:34:24] {'ec4ed5be-3728-4d09-aba4-4509c1001079': {'x': 20, 'y': 340, 'tag': 'foodec4ed5be-3728-4d09-aba4-4509c1001079', 'oval_id': 34}}
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+[2024-03-22 20:34:24] Food ID:
+[2024-03-22 20:34:24] 32ce29f0-9a95-4752-9924-d1428d329304
+[2024-03-22 20:34:24] {'32ce29f0-9a95-4752-9924-d1428d329304': {'x': 340, 'y': 360, 'tag': 'food32ce29f0-9a95-4752-9924-d1428d329304', 'oval_id': 43}}
+3
+3
+3
+3
+3
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+[2024-03-22 20:34:29] Food ID:
+[2024-03-22 20:34:29] 4f77b18f-1376-430c-8378-f5980d1a5885
+[2024-03-22 20:34:29] {'4f77b18f-1376-430c-8378-f5980d1a5885': {'x': 40, 'y': 220, 'tag': 'food4f77b18f-1376-430c-8378-f5980d1a5885', 'oval_id': 83}}
+7
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+10
+10
+10
+10
+10
+10
+10
+10
+10
+[2024-03-22 20:34:31] Food ID:
+[2024-03-22 20:34:31] b9945c3a-04d2-4864-9a44-499df84f94de
+[2024-03-22 20:34:31] {'b9945c3a-04d2-4864-9a44-499df84f94de': {'x': 240, 'y': 320, 'tag': 'foodb9945c3a-04d2-4864-9a44-499df84f94de', 'oval_id': 108}}
+10
+10
+10
+10
+10
+10
+10
+10
+10
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+13
+13
+13
+13
+13
+[2024-03-22 20:34:34] Food ID:
+[2024-03-22 20:34:34] da7c8471-c257-4e8f-9667-de8110b5395f
+[2024-03-22 20:34:34] {'da7c8471-c257-4e8f-9667-de8110b5395f': {'x': 340, 'y': 20, 'tag': 'foodda7c8471-c257-4e8f-9667-de8110b5395f', 'oval_id': 134}}
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+[2024-03-22 20:34:35] snake has a collision
+Home button not found
+[2024-03-22 20:34:35] Game state: game_over
+[2024-03-22 20:34:35] Snake coordinates after reset: [(160, 300), (140, 300), (160, 300), (180, 300), (200, 300), (220, 300), (240, 300), (240, 320), (220, 320), (200, 320)]
+[2024-03-22 20:34:35] High score: 0
+[2024-03-22 20:34:35] Score: 5
+[2024-03-22 20:34:35] snake_length_high_score updated to: 10
+[2024-03-22 20:34:36] Game restarted
+[2024-03-22 20:34:36] Game state: game_over
+[2024-03-22 20:34:36] Reset snake length
+[2024-03-22 20:34:36] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-22 20:34:36] Game state: game
+[2024-03-22 20:34:36] Food ID:
+[2024-03-22 20:34:36] f7d6ac88-0d9e-4f90-9aec-168de270ed61
+[2024-03-22 20:34:36] {'f7d6ac88-0d9e-4f90-9aec-168de270ed61': {'x': 140, 'y': 260, 'tag': 'foodf7d6ac88-0d9e-4f90-9aec-168de270ed61', 'oval_id': 149}}
+[2024-03-22 20:34:36] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Home button not found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+[2024-03-22 20:34:38] Game paused
+[2024-03-22 20:34:39] Game resumed
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+0
+2
+0
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+2
+1
+3
+1
+[2024-03-22 20:34:41] Food ID:
+[2024-03-22 20:34:41] 3d7debe6-4b54-41e1-9863-6c6176f5ae9f
+[2024-03-22 20:34:41] {'3d7debe6-4b54-41e1-9863-6c6176f5ae9f': {'x': 320, 'y': 160, 'tag': 'food3d7debe6-4b54-41e1-9863-6c6176f5ae9f', 'oval_id': 181}}
+3
+2
+3
+2
+3
+2
+3
+2
+3
+2
+3
+2
+3
+2
+3
+2
+4
+2
+4
+3
+4
+3
+4
+3
+4
+3
+4
+3
+[2024-03-22 20:34:42] Food ID:
+[2024-03-22 20:34:42] 41ff3137-4ade-4c60-8700-26fc5e29d6a1
+[2024-03-22 20:34:42] {'41ff3137-4ade-4c60-8700-26fc5e29d6a1': {'x': 140, 'y': 360, 'tag': 'food41ff3137-4ade-4c60-8700-26fc5e29d6a1', 'oval_id': 196}}
+4
+3
+4
+3
+4
+3
+5
+3
+5
+4
+5
+4
+5
+4
+5
+4
+5
+4
+5
+4
+5
+4
+5
+4
+6
+4
+6
+5
+6
+[2024-03-22 20:34:44] Game paused
+[2024-03-22 20:41:11] Started the app
+[2024-03-22 20:41:11] Started the GameApp Class
+[2024-03-22 20:41:11] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:41:11] Contrast mode set to dark
+[2024-03-22 20:41:11] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:41:11] start_screen method called
+[2024-03-22 20:41:12] Game mode: classic_snake
+[2024-03-22 20:41:12] start_game
+[2024-03-22 20:41:12] Reset snake length
+[2024-03-22 20:41:12] Game mode: classic_snake
+[2024-03-22 20:41:12] Game state: start_game
+[2024-03-22 20:41:12] Game focused
+[2024-03-22 20:42:03] Started the app
+[2024-03-22 20:42:03] Started the GameApp Class
+[2024-03-22 20:42:03] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:42:03] Contrast mode set to dark
+[2024-03-22 20:42:03] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:42:03] start_screen method called
+[2024-03-22 20:42:04] Game mode: classic_snake
+[2024-03-22 20:42:04] start_game
+[2024-03-22 20:42:04] Reset snake length
+[2024-03-22 20:42:04] Game mode: classic_snake
+[2024-03-22 20:42:04] Game state: start_game
+[2024-03-22 20:42:04] Game focused
+[2024-03-22 20:42:06] Game state: game
+[2024-03-22 20:42:06] Food ID:
+[2024-03-22 20:42:06] 1fac72dc-1948-4d0e-8928-588f4ca6746e
+[2024-03-22 20:42:06] {'1fac72dc-1948-4d0e-8928-588f4ca6746e': {'x': 20, 'y': 100, 'tag': 'food1fac72dc-1948-4d0e-8928-588f4ca6746e', 'oval_id': 7}}
+[2024-03-22 20:42:06] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Home button not found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+[2024-03-22 20:42:35] Started the app
+[2024-03-22 20:42:35] Started the GameApp Class
+[2024-03-22 20:42:35] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:42:35] Contrast mode set to dark
+[2024-03-22 20:42:35] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:42:35] start_screen method called
+[2024-03-22 20:42:36] Game mode: classic_snake
+[2024-03-22 20:42:36] start_game
+[2024-03-22 20:42:36] Reset snake length
+[2024-03-22 20:42:36] Game mode: classic_snake
+[2024-03-22 20:42:36] Game state: start_game
+[2024-03-22 20:42:36] Game focused
+[2024-03-22 20:42:36] Game state: game
+[2024-03-22 20:42:36] Food ID:
+[2024-03-22 20:42:36] 3c989f2f-e726-4b92-8625-a96d5548fcfb
+[2024-03-22 20:42:36] {'3c989f2f-e726-4b92-8625-a96d5548fcfb': {'x': 20, 'y': 320, 'tag': 'food3c989f2f-e726-4b92-8625-a96d5548fcfb', 'oval_id': 7}}
+[2024-03-22 20:42:36] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Home button not found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+[2024-03-22 20:42:38] Closed the app
+
+
+
+
+[2024-03-22 20:49:04] Started the app
+[2024-03-22 20:49:04] Started the GameApp Class
+[2024-03-22 20:49:04] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:49:04] Contrast mode set to dark
+[2024-03-22 20:49:04] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:49:04] start_screen method called
+[2024-03-22 20:49:05] Game mode: classic_snake
+[2024-03-22 20:49:05] start_game
+[2024-03-22 20:49:05] Reset snake length
+[2024-03-22 20:49:05] Game mode: classic_snake
+[2024-03-22 20:49:05] Game state: start_game
+[2024-03-22 20:49:05] Game focused
+[2024-03-22 20:49:06] Game state: game
+[2024-03-22 20:49:06] Food ID:
+[2024-03-22 20:49:06] 8d6cf5ad-1ef8-45bc-aec3-32af1029da07
+[2024-03-22 20:49:06] {'8d6cf5ad-1ef8-45bc-aec3-32af1029da07': {'x': 220, 'y': 220, 'tag': 'food8d6cf5ad-1ef8-45bc-aec3-32af1029da07', 'oval_id': 7}}
+[2024-03-22 20:49:06] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Home button not found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+[2024-03-22 20:54:24] Started the app
+[2024-03-22 20:54:24] Started the GameApp Class
+[2024-03-22 20:54:24] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:54:24] Contrast mode set to dark
+[2024-03-22 20:54:24] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:54:24] start_screen method called
+[2024-03-22 20:54:25] Game mode: classic_snake
+[2024-03-22 20:54:25] start_game
+[2024-03-22 20:54:25] Reset snake length
+[2024-03-22 20:54:25] Game mode: classic_snake
+[2024-03-22 20:54:25] Game state: start_game
+[2024-03-22 20:54:25] Game focused
+[2024-03-22 20:54:26] Game state: game
+[2024-03-22 20:54:26] Food ID:
+[2024-03-22 20:54:26] 0f90914f-d656-4e44-a780-b836b0c8e70b
+[2024-03-22 20:54:26] {'0f90914f-d656-4e44-a780-b836b0c8e70b': {'x': 320, 'y': 160, 'tag': 'food0f90914f-d656-4e44-a780-b836b0c8e70b', 'oval_id': 7}}
+[2024-03-22 20:54:26] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Home button not found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+delete_labels method called
+[2024-03-22 20:54:28] Closed the app
+
+
+
+
+[2024-03-22 20:54:54] Started the app
+[2024-03-22 20:54:54] Started the GameApp Class
+[2024-03-22 20:54:54] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:54:54] Contrast mode set to dark
+[2024-03-22 20:54:54] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:54:54] start_screen method called
+[2024-03-22 20:54:55] Game mode: classic_snake
+[2024-03-22 20:54:55] start_game
+[2024-03-22 20:54:55] Reset snake length
+[2024-03-22 20:54:55] Game mode: classic_snake
+[2024-03-22 20:54:55] Game state: start_game
+[2024-03-22 20:54:55] Game focused
+[2024-03-22 20:54:55] Game state: game
+[2024-03-22 20:54:55] Food ID:
+[2024-03-22 20:54:55] 7e16d049-e796-40e4-a0fd-5eec0da57d78
+[2024-03-22 20:54:55] {'7e16d049-e796-40e4-a0fd-5eec0da57d78': {'x': 20, 'y': 320, 'tag': 'food7e16d049-e796-40e4-a0fd-5eec0da57d78', 'oval_id': 7}}
+[2024-03-22 20:54:55] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Home button not found
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+delete_labels method called
+[2024-03-22 20:54:57] Closed the app
+
+
+
+
+[2024-03-22 20:59:39] Started the app
+[2024-03-22 20:59:39] Started the GameApp Class
+[2024-03-22 20:59:39] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-22 20:59:39] Contrast mode set to dark
+[2024-03-22 20:59:39] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-22 20:59:39] start_screen method called
+[2024-03-22 20:59:40] Game mode: classic_snake
+[2024-03-22 20:59:40] start_game
+[2024-03-22 20:59:40] Reset snake length
+[2024-03-22 20:59:40] Game mode: classic_snake
+[2024-03-22 20:59:40] Game state: start_game
+[2024-03-22 20:59:40] Game focused
+[2024-03-22 20:59:40] Game state: game
+[2024-03-22 20:59:40] Food ID:
+[2024-03-22 20:59:40] f2c38b0c-396a-418b-a3a8-b5ad6c26ccc3
+[2024-03-22 20:59:40] {'f2c38b0c-396a-418b-a3a8-b5ad6c26ccc3': {'x': 320, 'y': 160, 'tag': 'foodf2c38b0c-396a-418b-a3a8-b5ad6c26ccc3', 'oval_id': 7}}
+[2024-03-22 20:59:40] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]

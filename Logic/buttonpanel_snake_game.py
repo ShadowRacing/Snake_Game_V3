@@ -122,22 +122,6 @@ class ButtonCommands:
         else:
             print("No function assigned to 'destroy_canvas'")
 
-# class DisabelingButtons:
-#     def __init__(self, button_panel):
-#         self.button_panel = button_panel
-    
-#     def disable_buttons(self):
-#         if hasattr(self.button_panel, 'home_button'): 
-#             self.button_panel.set_home_button_state("disabled")
-#             print("Buttons disabled")
-#         else:
-#             print("No home button found")
-    
-#     def enable_buttons(self):
-#         self.button_panel.set_home_button_state("normal")
-#         print("Buttons enabled")
-
-
 
 # Class for creating the button panel
 class ClickButtonPanel:
@@ -170,9 +154,6 @@ class ClickButtonPanel:
                                 command=self.home_button_command)
         self.home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w")
 
-
-
-
     def home_button_command(self):
         # If it's the first click, record the current time
         if self.home_button_clicks == 0:
@@ -197,19 +178,19 @@ class ClickButtonPanel:
         settings_button = ctk.CTkButton(self.button_canvas, text="Settings", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.settings_command)
-        settings_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
+        settings_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
 
     def info_button(self):
         info_button = ctk.CTkButton(self.button_canvas, text="Information", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.info_command)
-        info_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
+        info_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
     def patchnotes_button(self):
         patchnotes_button = ctk.CTkButton(self.button_canvas, text="Patchnotes", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.patchnotes_command)
-        patchnotes_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
+        patchnotes_button.grid(in_=self.button_canvas, row=14, column=0, padx=10, pady=10, sticky="w")
 
     def classic_snake_button(self):
         classic_snake_button = ctk.CTkButton(self.button_canvas, text="Classic Snake", font=FONT_LIST[11],
@@ -234,51 +215,51 @@ class ClickButtonPanel:
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.snake_color_command)
-        snake_color_button.grid(in_=self.button_canvas, row=1, column=0, padx=10, pady=10, sticky="w")
+        snake_color_button.grid(in_=self.button_canvas, row=6, column=0, padx=10, pady=10, sticky="w")
 
     def snake_outline_button(self):
         snake_outline_button = ctk.CTkButton(self.button_canvas, text="Snake Outline", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.snake_outline_command)
-        snake_outline_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
+        snake_outline_button.grid(in_=self.button_canvas, row=7, column=0, padx=10, pady=10, sticky="w")
 
     def snake_length_button(self):
         snake_length_button = ctk.CTkButton(self.button_canvas, text="Snake Length", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.snake_length_command)
-        snake_length_button.grid(in_=self.button_canvas, row=1, column=0, padx=10, pady=10, sticky="w")
+        snake_length_button.grid(in_=self.button_canvas, row=8, column=0, padx=10, pady=10, sticky="w")
 
     def reset_high_score_button(self):
         reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Score\n Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.reset_high_score_command)
-        reset_high_score_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
+        reset_high_score_button.grid(in_=self.button_canvas, row=10, column=0, padx=10, pady=10, sticky="w")
 
     def reset_high_score_time_button(self):
         reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Time\n Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.reset_high_score_time_command)
-        reset_high_score_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
+        reset_high_score_button.grid(in_=self.button_canvas, row=11, column=0, padx=10, pady=10, sticky="w")
 
     def reset_high_score_snake_length(self):
         reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset length\n Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.reset_high_score_snake_length_command)
-        reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
+        reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=12, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def game_size_button(self):
         game_size_button = ctk.CTkButton(self.button_canvas, text="Game Size", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.game_size_command)
-        game_size_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
+        game_size_button.grid(in_=self.button_canvas, row=13, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def snake_speed_button(self):
         snake_speed_button = ctk.CTkButton(self.button_canvas, text="Snake Speed", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.snake_speed_command)
-        snake_speed_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
+        snake_speed_button.grid(in_=self.button_canvas, row=9, column=0, padx=10, pady=10, sticky="w")
 
     def set_home_button_state(self, state):
         if self.home_button_ref:

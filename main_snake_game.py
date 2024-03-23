@@ -168,8 +168,6 @@ class SnakeGameApp:
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
-        self.create_button_panel.snake_color_button()
-        self.create_button_panel.snake_outline_button()
         self.create_button_panel.reset_high_score_button()
         self.create_button_panel.reset_high_score_time_button()
         self.create_button_panel.reset_high_score_snake_length()

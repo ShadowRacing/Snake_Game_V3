@@ -11,7 +11,7 @@ from os import path
 from Logs.gamelogger_snake_game import LogFile
 from Configuration.constants_snake_game import GameConstants
 from Configuration.gameconfig_snake_game import GameConfig
-from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands#, DisabelingButtons
+from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands, DisabelingButtons
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel
 from Logic.snake_logic_snake_game import Snake
 from Logic.food_logic_snake_game import ClassicFood, SpecialFood, EndlessFood
@@ -82,7 +82,7 @@ class SnakeGameApp:
             'confirm_quit': self.confirm_quit,
             'destroy_canvas': self.destroy_canvas,
             'reset_button_press_variable': self.reset_button_press_variable,
-            'reset_snake_length': self.reset_snake_length,
+            'reset_high_score_snake_length': self.reset_snake_length,
             'reset_high_score_time': self.reset_high_score_time,
             'reset_high_score': self.reset_high_score,
             'open_settings': self.open_settings,
@@ -98,7 +98,7 @@ class SnakeGameApp:
         # And then create the ButtonCommands instance
         self.button_commands = ButtonCommands(self.logfile, self.functions)
 
-        #self.button_panel = DisabelingButtons(self.create_button_panel)
+        self.button_panel = DisabelingButtons(self.create_button_panel)
 
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.logfile,  self.game_config, self.open_info,
                                       self.open_settings)
@@ -117,7 +117,6 @@ class SnakeGameApp:
         ctk.set_default_color_theme(theme_path)
     
     def create_home_screen(self):
-        self.create_button_panel.create_button_canvas()
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_main_menu_label()
         self.create_button_panel.classic_snake_button()
@@ -137,23 +136,19 @@ class SnakeGameApp:
         self.reset_button_press_variable()
 
         # Create a new canvas for the classic snake game
-        
+        self.game_config.set_configuration("classic_snake")
+        self.classic_snake_canvas = Snake_Classic_Game(self.root, 
+                                                        self.game_config, 
+                                                        self.logfile,
+                                                        self.functions,
+                                                        self.button_panel
+                                                        )
+        self.classic_snake_canvas.pack(expand=True, fill="both")
 
         # Update the main canvas attribute
         self.main_canvas = self.classic_snake_canvas
 
         #Update the button panel
-        
-
-        self.game_config.set_configuration("classic_snake")
-        self.classic_snake_canvas = Snake_Classic_Game(self.main_canvas, 
-                                                        self.game_config, 
-                                                        self.logfile,
-                                                        self.functions,
-                                                        self.create_button_panel
-                                                        )
-        self.classic_snake_canvas.place(x=0, y=0, relwidth=1, relheight=1)
-
         self.create_button_panel = ClickButtonPanel(self.main_canvas,
                                                         self.logfile, 
                                                         self.functions
@@ -172,11 +167,8 @@ class SnakeGameApp:
                                                         self.logfile, 
                                                         self.game_config
                                                         )
-        
-        
 
         # Pack buttons and labels
-        self.create_button_panel.create_button_canvas()
         self.create_button_panel.create_home_button()
         self.create_button_panel.snake_color_button()
         self.create_button_panel.snake_outline_button()
@@ -213,7 +205,7 @@ class SnakeGameApp:
                                                         self.functions
                                                         )
         
-        #self.disabeling_buttons = DisabelingButtons(self.button_panel)
+        self.disabeling_buttons = DisabelingButtons(self.button_panel)
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
@@ -230,7 +222,7 @@ class SnakeGameApp:
                                                         )
 
         # Pack buttons and labels
-        self.create_button_panel.home_button()
+        self.create_button_panel.create_home_button()
         self.create_button_panel.snake_color_button()
         self.create_button_panel.snake_outline_button()
         self.create_button_panel.snake_length_button()
@@ -276,7 +268,7 @@ class SnakeGameApp:
                                                         )
 
         # Pack buttons and labels
-        self.create_button_panel.home_button()
+        self.create_button_panel.create_home_button()
         self.create_button_panel.snake_color_button()
         self.create_button_panel.snake_outline_button()
         self.create_button_panel.game_size_button()
@@ -321,7 +313,7 @@ class SnakeGameApp:
         # Create information labels and buttons
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_info_label()
-        self.create_button_panel.home_button()
+        self.create_button_panel.create_home_button()
         self.create_button_panel.patchnotes_button()
     
     # Open the settings screen
@@ -371,7 +363,7 @@ class SnakeGameApp:
         # Create settings labels, buttons, and options
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_settings_label()
-        self.create_button_panel.home_button()
+        self.create_button_panel.create_home_button()
         self.create_option_button_panel.show_options()
         self.settings_labels.create_screen_options_label()
         self.settings_labels.create_theme_options_label()
@@ -431,21 +423,15 @@ class SnakeGameApp:
     def destroy_canvas(self, canvas, canvas_name):
         try:
             if canvas is not None:
-                # Destroy all child widgets of the canvas
-                for widget in canvas.winfo_children():
-                    widget.destroy()
-
-                # Destroy the canvas itself
+                self.framelabel_panel.set_create_label_canvas_flag(False)
                 canvas.destroy()
                 return None
             return canvas
-
+        
         except Exception:
             self.logfile.log_game_event(f"Error in destroy_canvas: {canvas_name}")
             traceback.print_exc()
             return canvas
-        
-
 
     # Return to the home screen
     def return_home(self):

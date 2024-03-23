@@ -157,6 +157,10 @@ class ClickButtonPanel:
         self.button_height = GameConstants.BUTTON_HEIGHT
         self.button_commands = ButtonCommands(self.logfile, self.functions)
         
+    def destroy(self):
+        # Destroy all child widgets
+        self.destroy()
+        super().destroy()
 
     def create_button_canvas(self):
         # Creating a separate canvas for the buttons

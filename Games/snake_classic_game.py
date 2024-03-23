@@ -18,11 +18,12 @@ from Logic.key_logic_snake_game import MovementOffSnake
 
 
 class Snake_Classic_Game(ctk.CTkCanvas):
-    def __init__(self, parent, game_config, logfile, functions):
+    def __init__(self, parent, game_config, logfile, functions, create_button_panel):
         # Create the game logger
         self.logfile = logfile
         self.game_config = game_config
         self.functions = functions
+        self.create_button_panel = create_button_panel
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
         self.score = 0
@@ -52,7 +53,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.food = ClassicFood(self.logfile, self.snake_canvas, game_config)
         self.create_instance()
         self.game_labels_panel = GameLabelsPanel(self.logfile, parent, self.game_config)
-        self.create_button_panel = ClickButtonPanel(parent, self.logfile, self.functions)
+        #self.create_button_panel = ClickButtonPanel(parent, self.logfile, self.functions)
         #self.movement_off_snake = MovementOffSnake(self.snake_canvas, self.game_config, self.logfile)
         self.game_labels_panel.create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
@@ -126,8 +127,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         # self.disabeling_buttons = DisabelingButtons(self.button_panel)
         self.game_config = GameConfig(self.logfile, 'classic_snake')
         
-
-    
     def delete_game_labels(self):
         self.game_labels_panel.delete_labels()
     
@@ -207,7 +206,8 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.logfile.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
         #self.update_snake_length_label() 
 
-        self.disabeling_buttons.disable_buttons()
+        self.create_button_panel.disable_buttons()
+        #self.create_button_panel.disable_buttons()
         self.next_turn(self.snake, self.food)
     
     def next_turn(self, snake, food):
@@ -316,7 +316,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
     def game_over(self):
         self.state = 'game_over'
         self.bind_and_unbind_keys()
-        self.disabeling_buttons.enable_buttons()
+        self.create_button_panel.enable_buttons()
         self.config.set('Classic_Snake_Settings', 'state', 'game_over')
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")

@@ -122,6 +122,7 @@ class ButtonCommands:
         else:
             print("No function assigned to 'destroy_canvas'")
 
+
 # class DisabelingButtons:
 #     def __init__(self, button_panel):
 #         self.button_panel = button_panel
@@ -146,22 +147,22 @@ class ClickButtonPanel:
         self.parent = parent
         self.logfile = logfile
         self.functions = functions
+        self.button_canvas = button_canvas
         self.theme_updater = ThemeUpdater(self.logfile)
+        
+        
        
         # Managing the buttons height and width
         self.button_width = GameConstants.BUTTON_WIDTH
         self.button_height = GameConstants.BUTTON_HEIGHT
-
         self.button_commands = ButtonCommands(self.logfile, self.functions)
         
-        # Creating a separate canvas for the buttons
-        if button_canvas is not None:
-            self.button_canvas = button_canvas
-        else:
-            # Creating a separate canvas for the buttons
-            self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5)
-            self.button_canvas.pack(side='left', fill='both')
 
+    def create_button_canvas(self):
+        # Creating a separate canvas for the buttons
+        self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5)
+        self.button_canvas.pack(side='left', fill='both')
+    
 
     # Methods to create specific buttons    
     # Each method calls the create_click_button method with specific parameters
@@ -170,7 +171,6 @@ class ClickButtonPanel:
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.home_command)
         self.home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w")
-
 
     def quit_button(self):
         quit_button = ctk.CTkButton(self.button_canvas, text="Quit", font=FONT_LIST[11],
@@ -265,15 +265,15 @@ class ClickButtonPanel:
                                 command=self.button_commands.snake_speed_command)
         snake_speed_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
-    def set_home_button_state(self, state):
-        if self.home_button_ref:
-            self.home_button_ref.configure(state=state)
-
     def disable_buttons(self):
         self.home_button.configure(state="disabled")
+        print("Buttons disabled")
+        print(self.home_button.cget('state'))
        
     def enable_buttons(self):
         self.home_button.configure(state="normal")
+        print("Buttons normal")
+        print(self.home_button.cget('state'))
 
 # Class for creating the option button panel
 class OptionButtonPanel:

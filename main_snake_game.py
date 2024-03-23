@@ -187,6 +187,7 @@ class SnakeGameApp:
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_classic_snake_label()
     
+    
     # Start the endless snake game
     def snake_endless(self):
         self.original_main_canvas.pack_forget()

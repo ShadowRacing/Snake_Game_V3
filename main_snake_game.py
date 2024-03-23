@@ -11,7 +11,7 @@ from os import path
 from Logs.gamelogger_snake_game import LogFile
 from Configuration.constants_snake_game import GameConstants
 from Configuration.gameconfig_snake_game import GameConfig
-from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands, DisabelingButtons
+from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel
 from Logic.snake_logic_snake_game import Snake
 from Logic.food_logic_snake_game import ClassicFood, SpecialFood, EndlessFood
@@ -98,8 +98,6 @@ class SnakeGameApp:
         # And then create the ButtonCommands instance
         self.button_commands = ButtonCommands(self.logfile, self.functions)
 
-        self.button_panel = DisabelingButtons(self.create_button_panel)
-
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.logfile,  self.game_config, self.open_info,
                                       self.open_settings)
         
@@ -141,7 +139,7 @@ class SnakeGameApp:
                                                         self.game_config, 
                                                         self.logfile,
                                                         self.functions,
-                                                        self.button_panel
+                                                        self.create_button_panel
                                                         )
         self.classic_snake_canvas.pack(expand=True, fill="both")
 
@@ -205,7 +203,6 @@ class SnakeGameApp:
                                                         self.functions
                                                         )
         
-        self.disabeling_buttons = DisabelingButtons(self.button_panel)
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,

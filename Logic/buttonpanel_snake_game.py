@@ -380,7 +380,6 @@ class OptionButtonPanel:
 
 
 
-
 # *****************************************
 # Wims Snake Button Panel File
 # *****************************************

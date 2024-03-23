@@ -12,6 +12,9 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(script_dir, '..', 'Themes', 'colors.json'), 'r') as f:
     COLORS_DICT = json.load(f)
 
+with open(os.path.join(script_dir, '..', 'Themes', 'snake_colors.json'), 'r') as f:
+    SNAKE_COLOR_DICT = json.load(f)
+
 # Load the game settings from the config.ini file
 config = configparser.ConfigParser()
 config.read('config.ini')

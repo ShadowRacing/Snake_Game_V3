@@ -10,7 +10,7 @@ from os import path
 # Importing necessary modules from other folders
 from Themes.contrast_updater_snake_game import UpdateContrast
 from Themes.theme_updater_snake_game import ThemeUpdater
-from Configuration.constants_snake_game import GameConstants, FONT_LIST
+from Configuration.constants_snake_game import GameConstants, FONT_LIST, COLORS_DICT, SNAKE_COLOR_DICT
 from Logic.Screen_size_Changer_snake_game import Screen_size
 from Logic.labelpanel_snake_game import SettingsOptionButtonLabels
 
@@ -39,8 +39,8 @@ class ButtonCommands:
             print("No function assigned to 'open_settings'")
 
     def info_command(self):
-        if 'info' in self.functions:
-            self.functions['info']()
+        if 'open_info' in self.functions:
+            self.functions['open_info']()
         else:
             print("No function assigned to 'info'")
 
@@ -321,7 +321,8 @@ class OptionButtonPanel:
         # Handle snake color change
         self.config.set('Settings', 'snake_color', selected_value)
         self.updating_config_ini()
-       
+        self.snake_color_rgb = COLORS_DICT.get(selected_value)
+
     # Method to create an option button
     def create_option_button(self, command, values, config, x, y):
         option_button = ctk.CTkOptionMenu(self.settings_canvas,
@@ -360,8 +361,9 @@ class OptionButtonPanel:
             # Creating the option buttons for snake color
             self.snake_color_config = self.config.get('Settings', 'snake_color', fallback='Green')
             self.create_option_button(self.snake_color_callback,
-                                    ["Black", "Blue", "Green", "Orange", "Purple", "Red", "White", "Yellow"],
-                                    self.snake_color_config, 800, 50
+                                      ["Red", "Blue", "Green", "Yellow", "Black", "White", "Grey", "Olive", "Purple", "Orange", "Silver", "Gold", "OrangeRed", "MidnightPurple"],
+                                      self.snake_color_config, 800, 50
+                                      
                                     )
 
         # Handle exceptions appropriately

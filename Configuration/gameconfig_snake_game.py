@@ -23,8 +23,50 @@ class GameConfig:
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         self.snake_color = self.config.get('Settings', 'snake_color', fallback='Green')
+        if self.snake_color in ['Red', 'Blue', 'Green', 'Yellow', 'Black', 'White', 'Grey', 'Olive', 'Purple', 'Orange', 'Silver', 'Gold', 'OrangeRed', 'MidnightPurple']:
+            if self.snake_color == 'Red':
+                self.SNAKE_OUTLINE = "#FFFFFF"
+                self.snake_color = "#FF0000"
+            elif self.snake_color == 'Blue':
+                self.SNAKE_OUTLINE = "#FFFFFF"
+                self.snake_color = "#0000FF"
+            elif self.snake_color == 'Green':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#00FF00"
+            elif self.snake_color == 'Yellow':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#FFFF00"
+            elif self.snake_color == 'White':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#FF0000"
+            elif self.snake_color == 'Black':
+                self.SNAKE_OUTLINE = "#FFFFFF"
+                self.snake_color = "#000000"
+            elif self.snake_color == 'Grey':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#808080"
+            elif self.snake_color == 'Olive':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#808000"
+            elif self.snake_color == 'Purple':
+                self.SNAKE_OUTLINE = "#FFFFFF"
+                self.snake_color = "#800080"
+            elif self.snake_color == 'Orange':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#FFA500"
+            elif self.snake_color == 'Silver':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#C0C0C0"
+            elif self.snake_color == 'Gold':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#FFD700"
+            elif self.snake_color == 'OrangeRed':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#FF4500"
+            elif self.snake_color == 'MidnightPurple':
+                self.SNAKE_OUTLINE = "#000000"
+                self.snake_color = "#210F28"
 
-        
         # Set the game configuration
         try:
             self.set_configuration(game_mode)

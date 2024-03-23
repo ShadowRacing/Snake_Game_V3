@@ -21,7 +21,7 @@ class Snake:
         self.squares = []
 
         for x, y in self.coordinates:
-            square = self.canvas.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, tag="snake", outline= self.game_config.SNAKE_OUTLINE, width=2)
+            square = self.canvas.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, tag="snake", outline= self.game_config.SNAKE_OUTLINE, width=0.5)
             self.squares.append(square)
         
         self.logfile.log_game_event("Reset snake length")

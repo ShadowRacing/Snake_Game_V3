@@ -4,7 +4,7 @@
 
 
 # Importing necessary modules
-import customtkinter as ctk, configparser
+import customtkinter as ctk, configparser, time
 from os import path
 
 # Importing necessary modules from other folders
@@ -122,7 +122,6 @@ class ButtonCommands:
         else:
             print("No function assigned to 'destroy_canvas'")
 
-
 # class DisabelingButtons:
 #     def __init__(self, button_panel):
 #         self.button_panel = button_panel
@@ -142,40 +141,52 @@ class ButtonCommands:
 
 # Class for creating the button panel
 class ClickButtonPanel:
-    def __init__(self, parent, logfile, functions, button_canvas=None):
+    def __init__(self, parent, logfile, functions, home_button=None):
         # Initializing variables
         self.parent = parent
         self.logfile = logfile
         self.functions = functions
-        self.button_canvas = button_canvas
+        self.home_button = home_button
         self.theme_updater = ThemeUpdater(self.logfile)
-        
-        
        
         # Managing the buttons height and width
         self.button_width = GameConstants.BUTTON_WIDTH
         self.button_height = GameConstants.BUTTON_HEIGHT
+
         self.button_commands = ButtonCommands(self.logfile, self.functions)
         
-    def destroy(self):
-        # Destroy all child widgets
-        self.destroy()
-        super().destroy()
-
-    def create_button_canvas(self):
         # Creating a separate canvas for the buttons
         self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5)
         self.button_canvas.pack(side='left', fill='both')
-    
+
+        # Creating counter for home button clicks
+        self.home_button_clicks = 0
 
     # Methods to create specific buttons    
     # Each method calls the create_click_button method with specific parameters
     def create_home_button(self):
         self.home_button = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.home_command)
+                                command=self.home_button_command)
         self.home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w")
 
+
+
+
+    def home_button_command(self):
+        # If it's the first click, record the current time
+        if self.home_button_clicks == 0:
+            self.first_click_time = time.time()
+        # If it's the second click, check if it's within the time limit
+        elif self.home_button_clicks == 1:
+            if time.time() - self.first_click_time > 0.5:  # 2 seconds
+                # If it's not within the time limit, reset the counter
+                self.home_button_clicks = 0
+                return
+        self.home_button_clicks += 1
+        if self.home_button_clicks >= 2:
+            self.button_commands.home_command()
+            
     def quit_button(self):
         quit_button = ctk.CTkButton(self.button_canvas, text="Quit", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
@@ -253,7 +264,7 @@ class ClickButtonPanel:
         reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset length\n Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.reset_high_score_snake_length_command)
-        reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
+        reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def game_size_button(self):
@@ -269,15 +280,9 @@ class ClickButtonPanel:
                                 command=self.button_commands.snake_speed_command)
         snake_speed_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
-    def disable_buttons(self):
-        self.home_button.configure(state="disabled")
-        print("Buttons disabled")
-        print(self.home_button.cget('state'))
-       
-    def enable_buttons(self):
-        self.home_button.configure(state="normal")
-        print("Buttons normal")
-        print(self.home_button.cget('state'))
+    def set_home_button_state(self, state):
+        if self.home_button_ref:
+            self.home_button_ref.configure(state=state)
 
 # Class for creating the option button panel
 class OptionButtonPanel:
@@ -373,19 +378,22 @@ class OptionButtonPanel:
         except Exception as e:
             print("Error:", e)
 
-# class DisabelingButtons():
-#     def __init__(self, button_panel):
-#         self.button_panel = button_panel
-
-#     def disable_buttons(self):
-#         self.button_panel.home_button.configure(state="disabled")
+class DisabelingButtons:
+    def __init__(self, button_panel):
+        self.button_panel = button_panel
+    
+    def disable_buttons(self):
+        self.button_panel.home_button.configure(state="disabled")
        
-#     def enable_buttons(self):
-#         if hasattr(self.button_panel, 'return_home'):
-#             self.button_panel.home_button.configure(state="normal")
-#             print("Buttons enabled")
-#         else:
-#             print("Home button not found")
+       
+    def enable_buttons(self):
+        if hasattr(self.button_panel, 'return_home'):
+            self.button_panel.home_button.configure(state="normal")
+            print("Buttons enabled")
+        else:
+            print("Home button not found")
+
+
 
 # *****************************************
 # Wims Snake Button Panel File

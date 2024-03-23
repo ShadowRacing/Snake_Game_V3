@@ -58398,3 +58398,50 @@ Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
 
 
 
+[2024-03-23 16:41:32] Started the app
+[2024-03-23 16:41:32] Started the GameApp Class
+[2024-03-23 16:41:32] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:41:32] Contrast mode set to dark
+[2024-03-23 16:41:32] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:41:32] start_screen method called
+[2024-03-23 16:41:33] Game mode: classic_snake
+[2024-03-23 16:41:33] start_game
+[2024-03-23 16:41:33] Reset snake length
+[2024-03-23 16:41:33] Game mode: classic_snake
+[2024-03-23 16:41:33] Game state: start_game
+[2024-03-23 16:41:33] Game focused
+delete_labels method called
+[2024-03-23 16:41:36] Game mode: classic_snake
+[2024-03-23 16:41:36] start_game
+[2024-03-23 16:41:36] Reset snake length
+[2024-03-23 16:41:36] Game mode: classic_snake
+[2024-03-23 16:41:36] Game state: start_game
+[2024-03-23 16:41:36] Game focused
+delete_labels method called
+[2024-03-23 16:41:38] Game mode: classic_snake
+[2024-03-23 16:41:38] start_game
+[2024-03-23 16:41:38] Reset snake length
+[2024-03-23 16:41:38] Game mode: classic_snake
+[2024-03-23 16:41:38] Game state: start_game
+[2024-03-23 16:41:38] Game focused
+delete_labels method called
+[2024-03-23 16:42:09] Game mode: classic_snake
+[2024-03-23 16:42:09] start_game
+[2024-03-23 16:42:09] Reset snake length
+[2024-03-23 16:42:09] Game mode: classic_snake
+[2024-03-23 16:42:09] Game state: start_game
+[2024-03-23 16:42:09] Game focused
+[2024-03-23 16:42:11] Highscore time reset to 0
+[2024-03-23 16:42:13] Highscore reset to 0
+[2024-03-23 16:42:13] Highscore time reset to 0
+[2024-03-23 16:42:14] Highscore reset to 0
+[2024-03-23 16:42:16] Game state: game
+[2024-03-23 16:42:16] Food ID:
+[2024-03-23 16:42:16] 2a6e0ab6-f443-4504-9d76-11d8dd19a4db
+[2024-03-23 16:42:16] {'2a6e0ab6-f443-4504-9d76-11d8dd19a4db': {'x': 320, 'y': 40, 'tag': 'food2a6e0ab6-f443-4504-9d76-11d8dd19a4db', 'oval_id': 7}}
+[2024-03-23 16:42:16] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]

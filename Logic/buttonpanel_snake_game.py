@@ -378,20 +378,6 @@ class OptionButtonPanel:
         except Exception as e:
             print("Error:", e)
 
-class DisabelingButtons:
-    def __init__(self, button_panel):
-        self.button_panel = button_panel
-    
-    def disable_buttons(self):
-        self.button_panel.home_button.configure(state="disabled")
-       
-       
-    def enable_buttons(self):
-        if hasattr(self.button_panel, 'return_home'):
-            self.button_panel.home_button.configure(state="normal")
-            print("Buttons enabled")
-        else:
-            print("Home button not found")
 
 
 

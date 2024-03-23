@@ -55626,3 +55626,2308 @@ Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
 [2024-03-22 21:46:48] fbc9908c-c34c-4cda-bc13-e51c6e534974
 [2024-03-22 21:46:48] {'fbc9908c-c34c-4cda-bc13-e51c6e534974': {'x': 300, 'y': 260, 'tag': 'foodfbc9908c-c34c-4cda-bc13-e51c6e534974', 'oval_id': 7}}
 [2024-03-22 21:46:48] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:10:47] Started the app
+[2024-03-23 16:10:47] Started the GameApp Class
+[2024-03-23 16:10:47] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:10:47] Contrast mode set to dark
+[2024-03-23 16:10:47] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:10:47] start_screen method called
+[2024-03-23 16:10:48] Game mode: classic_snake
+[2024-03-23 16:10:48] start_game
+[2024-03-23 16:10:48] Reset snake length
+[2024-03-23 16:10:48] Game mode: classic_snake
+[2024-03-23 16:10:48] Game state: start_game
+[2024-03-23 16:10:48] Game focused
+[2024-03-23 16:10:51] Game state: game
+[2024-03-23 16:10:51] Food ID:
+[2024-03-23 16:10:51] 64698803-e19e-49d2-81fb-12d58f97fbc2
+[2024-03-23 16:10:51] {'64698803-e19e-49d2-81fb-12d58f97fbc2': {'x': 240, 'y': 120, 'tag': 'food64698803-e19e-49d2-81fb-12d58f97fbc2', 'oval_id': 7}}
+[2024-03-23 16:10:51] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:14:02] Started the app
+[2024-03-23 16:14:02] Started the GameApp Class
+[2024-03-23 16:14:02] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:14:02] Contrast mode set to dark
+[2024-03-23 16:14:02] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:14:02] start_screen method called
+[2024-03-23 16:14:03] Game mode: classic_snake
+[2024-03-23 16:14:03] start_game
+[2024-03-23 16:14:03] Reset snake length
+[2024-03-23 16:14:03] Game mode: classic_snake
+[2024-03-23 16:14:03] Game state: start_game
+[2024-03-23 16:14:03] Game focused
+delete_labels method called
+[2024-03-23 16:18:00] Started the app
+[2024-03-23 16:18:00] Started the GameApp Class
+[2024-03-23 16:18:00] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:18:00] Contrast mode set to dark
+[2024-03-23 16:18:00] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:18:00] start_screen method called
+[2024-03-23 16:18:01] Game mode: classic_snake
+[2024-03-23 16:18:01] start_game
+[2024-03-23 16:18:01] Reset snake length
+[2024-03-23 16:18:01] Game mode: classic_snake
+[2024-03-23 16:18:01] Game state: start_game
+[2024-03-23 16:18:01] Game focused
+delete_labels method called
+[2024-03-23 16:18:03] Game mode: classic_snake
+[2024-03-23 16:18:03] start_game
+[2024-03-23 16:18:03] Reset snake length
+[2024-03-23 16:18:03] Game mode: classic_snake
+[2024-03-23 16:18:03] Game state: start_game
+[2024-03-23 16:18:03] Game focused
+[2024-03-23 16:18:17] Game state: game
+[2024-03-23 16:18:17] Food ID:
+[2024-03-23 16:18:17] a2f7d6b2-1f4d-4398-8825-bf6774ff49ff
+[2024-03-23 16:18:17] {'a2f7d6b2-1f4d-4398-8825-bf6774ff49ff': {'x': 220, 'y': 40, 'tag': 'fooda2f7d6b2-1f4d-4398-8825-bf6774ff49ff', 'oval_id': 7}}
+[2024-03-23 16:18:17] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:19:20] Started the app
+[2024-03-23 16:19:20] Started the GameApp Class
+[2024-03-23 16:19:20] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:19:20] Contrast mode set to dark
+[2024-03-23 16:19:20] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:19:20] start_screen method called
+[2024-03-23 16:19:23] Game mode: classic_snake
+[2024-03-23 16:19:23] start_game
+[2024-03-23 16:19:23] Reset snake length
+[2024-03-23 16:19:23] Game mode: classic_snake
+[2024-03-23 16:19:23] Game state: start_game
+[2024-03-23 16:19:23] Game focused
+[2024-03-23 16:19:24] Game state: game
+[2024-03-23 16:19:24] Food ID:
+[2024-03-23 16:19:24] b413b2a6-b05a-4f5d-adbe-f2b15a44ee3a
+[2024-03-23 16:19:24] {'b413b2a6-b05a-4f5d-adbe-f2b15a44ee3a': {'x': 280, 'y': 340, 'tag': 'foodb413b2a6-b05a-4f5d-adbe-f2b15a44ee3a', 'oval_id': 7}}
+[2024-03-23 16:19:24] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+[2024-03-23 16:19:27] snake has a collision
+[2024-03-23 16:19:27] Game state: game_over
+[2024-03-23 16:19:27] Snake coordinates after reset: [(380, 320), (400, 320), (380, 320), (360, 320), (340, 320)]
+[2024-03-23 16:19:27] High score: 5
+[2024-03-23 16:19:27] Score: 0
+[2024-03-23 16:19:31] Game restarted
+[2024-03-23 16:19:31] Game state: game_over
+[2024-03-23 16:19:31] Reset snake length
+[2024-03-23 16:19:31] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:19:31] Game state: game
+[2024-03-23 16:19:31] Food ID:
+[2024-03-23 16:19:31] 00ed8b43-3287-4d88-bb94-8145d3b17ac9
+[2024-03-23 16:19:31] {'00ed8b43-3287-4d88-bb94-8145d3b17ac9': {'x': 0, 'y': 120, 'tag': 'food00ed8b43-3287-4d88-bb94-8145d3b17ac9', 'oval_id': 52}}
+[2024-03-23 16:19:31] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+[2024-03-23 16:19:31] Food ID:
+[2024-03-23 16:19:31] b3d3e030-3253-4b06-936a-410544a01b6f
+[2024-03-23 16:19:31] {'b3d3e030-3253-4b06-936a-410544a01b6f': {'x': 320, 'y': 340, 'tag': 'foodb3d3e030-3253-4b06-936a-410544a01b6f', 'oval_id': 59}}
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+[2024-03-23 16:19:32] snake has a collision
+[2024-03-23 16:19:32] Game state: game_over
+[2024-03-23 16:19:32] Snake coordinates after reset: [(100, 140), (120, 140), (100, 140), (80, 140), (60, 140), (40, 140)]
+[2024-03-23 16:19:32] High score: 5
+[2024-03-23 16:19:32] Score: 1
+[2024-03-23 16:19:33] Game restarted
+[2024-03-23 16:19:33] Game state: game_over
+[2024-03-23 16:19:33] Reset snake length
+[2024-03-23 16:19:33] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:19:33] Game state: game
+[2024-03-23 16:19:33] Food ID:
+[2024-03-23 16:19:33] 400df938-a931-4a23-be30-8f13f733e148
+[2024-03-23 16:19:33] {'400df938-a931-4a23-be30-8f13f733e148': {'x': 360, 'y': 260, 'tag': 'food400df938-a931-4a23-be30-8f13f733e148', 'oval_id': 75}}
+[2024-03-23 16:19:33] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+[2024-03-23 16:19:37] snake has a collision
+[2024-03-23 16:19:37] Game state: game_over
+[2024-03-23 16:19:37] Snake coordinates after reset: [(220, 320), (240, 320), (220, 320), (200, 320), (180, 320)]
+[2024-03-23 16:19:37] High score: 5
+[2024-03-23 16:19:37] Score: 0
+[2024-03-23 16:19:39] Game restarted
+[2024-03-23 16:19:39] Game state: game_over
+[2024-03-23 16:19:39] Reset snake length
+[2024-03-23 16:19:39] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:19:39] Game state: game
+[2024-03-23 16:19:39] Food ID:
+[2024-03-23 16:19:39] 845b65dd-c8f8-4de7-98c9-b72bd6f7895d
+[2024-03-23 16:19:39] {'845b65dd-c8f8-4de7-98c9-b72bd6f7895d': {'x': 200, 'y': 200, 'tag': 'food845b65dd-c8f8-4de7-98c9-b72bd6f7895d', 'oval_id': 120}}
+[2024-03-23 16:19:39] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+8
+8
+8
+[2024-03-23 16:19:47] Food ID:
+[2024-03-23 16:19:47] a3da327c-5012-4319-b717-77200f7d26e4
+[2024-03-23 16:19:47] {'a3da327c-5012-4319-b717-77200f7d26e4': {'x': 380, 'y': 20, 'tag': 'fooda3da327c-5012-4319-b717-77200f7d26e4', 'oval_id': 197}}
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+13
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+[2024-03-23 16:19:54] snake has a collision
+[2024-03-23 16:19:54] Game state: game_over
+[2024-03-23 16:19:54] Snake coordinates after reset: [(340, 140), (360, 140), (340, 140), (320, 140), (300, 140), (280, 140)]
+[2024-03-23 16:19:54] High score: 5
+[2024-03-23 16:19:54] Score: 1
+[2024-03-23 16:19:56] Game restarted
+[2024-03-23 16:19:56] Game state: game_over
+[2024-03-23 16:19:56] Reset snake length
+[2024-03-23 16:19:56] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:19:56] Game state: game
+[2024-03-23 16:19:56] Food ID:
+[2024-03-23 16:19:56] e34424d9-ce8d-4ab3-b97e-b99af7198336
+[2024-03-23 16:19:56] {'e34424d9-ce8d-4ab3-b97e-b99af7198336': {'x': 360, 'y': 20, 'tag': 'foode34424d9-ce8d-4ab3-b97e-b99af7198336', 'oval_id': 275}}
+[2024-03-23 16:19:56] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+12
+[2024-03-23 16:20:09] snake has a collision
+[2024-03-23 16:20:09] Game state: game_over
+[2024-03-23 16:20:09] Snake coordinates after reset: [(220, 220), (240, 220), (220, 220), (200, 220), (180, 220)]
+[2024-03-23 16:20:09] High score: 5
+[2024-03-23 16:20:09] Score: 0
+[2024-03-23 16:20:12] Game restarted
+[2024-03-23 16:20:12] Game state: game_over
+[2024-03-23 16:20:12] Reset snake length
+[2024-03-23 16:20:12] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:20:12] Game state: game
+[2024-03-23 16:20:12] Food ID:
+[2024-03-23 16:20:12] f9890cc5-1ce0-47ac-9299-8466a9ccf701
+[2024-03-23 16:20:12] {'f9890cc5-1ce0-47ac-9299-8466a9ccf701': {'x': 380, 'y': 300, 'tag': 'foodf9890cc5-1ce0-47ac-9299-8466a9ccf701', 'oval_id': 401}}
+[2024-03-23 16:20:12] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+[2024-03-23 16:20:14] snake has a collision
+[2024-03-23 16:20:14] Game state: game_over
+[2024-03-23 16:20:14] Snake coordinates after reset: [(0, 500), (0, 480), (0, 460), (0, 440), (0, 420)]
+[2024-03-23 16:20:14] High score: 5
+[2024-03-23 16:20:14] Score: 0
+[2024-03-23 16:20:16] Game restarted
+[2024-03-23 16:20:16] Game state: game_over
+[2024-03-23 16:20:16] Reset snake length
+[2024-03-23 16:20:16] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:20:16] Game state: game
+[2024-03-23 16:20:16] Food ID:
+[2024-03-23 16:20:16] 889c95e4-cfe5-4603-b814-2d41b839738f
+[2024-03-23 16:20:16] {'889c95e4-cfe5-4603-b814-2d41b839738f': {'x': 120, 'y': 120, 'tag': 'food889c95e4-cfe5-4603-b814-2d41b839738f', 'oval_id': 434}}
+[2024-03-23 16:20:16] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+[2024-03-23 16:20:18] snake has a collision
+[2024-03-23 16:20:18] Game state: game_over
+[2024-03-23 16:20:18] Snake coordinates after reset: [(0, 320), (0, 340), (0, 320), (0, 300), (0, 280)]
+[2024-03-23 16:20:18] High score: 5
+[2024-03-23 16:20:18] Score: 0
+[2024-03-23 16:20:19] Game restarted
+[2024-03-23 16:20:19] Game state: game_over
+[2024-03-23 16:20:19] Reset snake length
+[2024-03-23 16:20:19] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:20:19] Game state: game
+[2024-03-23 16:20:19] Food ID:
+[2024-03-23 16:20:19] 8ba67432-bea2-4d79-a45d-e83ae477ef6f
+[2024-03-23 16:20:19] {'8ba67432-bea2-4d79-a45d-e83ae477ef6f': {'x': 60, 'y': 60, 'tag': 'food8ba67432-bea2-4d79-a45d-e83ae477ef6f', 'oval_id': 460}}
+[2024-03-23 16:20:19] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+[2024-03-23 16:20:20] Food ID:
+[2024-03-23 16:20:20] 8ca109b6-75c3-4f85-a530-af8972c9cd72
+[2024-03-23 16:20:20] {'8ca109b6-75c3-4f85-a530-af8972c9cd72': {'x': 160, 'y': 300, 'tag': 'food8ca109b6-75c3-4f85-a530-af8972c9cd72', 'oval_id': 477}}
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+[2024-03-23 16:20:21] snake has a collision
+[2024-03-23 16:20:21] Game state: game_over
+[2024-03-23 16:20:21] Snake coordinates after reset: [(60, 160), (60, 180), (60, 160), (60, 140), (60, 120), (60, 100)]
+[2024-03-23 16:20:21] High score: 5
+[2024-03-23 16:20:21] Score: 1
+[2024-03-23 16:20:24] Game restarted
+[2024-03-23 16:20:24] Game state: game_over
+[2024-03-23 16:20:24] Reset snake length
+[2024-03-23 16:20:24] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:20:24] Game state: game
+[2024-03-23 16:20:24] Food ID:
+[2024-03-23 16:20:24] 55358ef2-58be-4e2b-b275-917aee50fc27
+[2024-03-23 16:20:24] {'55358ef2-58be-4e2b-b275-917aee50fc27': {'x': 120, 'y': 340, 'tag': 'food55358ef2-58be-4e2b-b275-917aee50fc27', 'oval_id': 492}}
+[2024-03-23 16:20:24] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+9
+9
+9
+9
+9
+9
+[2024-03-23 16:20:33] snake has a collision
+[2024-03-23 16:20:33] Game state: game_over
+[2024-03-23 16:20:33] Snake coordinates after reset: [(200, -20), (200, 0), (200, 20), (200, 40), (200, 60)]
+[2024-03-23 16:20:33] High score: 5
+[2024-03-23 16:20:33] Score: 0
+[2024-03-23 16:20:39] Started the app
+[2024-03-23 16:20:39] Started the GameApp Class
+[2024-03-23 16:20:39] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:20:39] Contrast mode set to dark
+[2024-03-23 16:20:39] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:20:39] start_screen method called
+[2024-03-23 16:20:40] Game mode: snake_endless
+[2024-03-23 16:20:58] Started the app
+[2024-03-23 16:20:58] Started the GameApp Class
+[2024-03-23 16:20:58] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:20:58] Contrast mode set to dark
+[2024-03-23 16:20:58] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:20:58] start_screen method called
+No function assigned to 'info'
+[2024-03-23 16:20:59] Game mode: snake_special
+[2024-03-23 16:21:01] Started the app
+[2024-03-23 16:21:01] Started the GameApp Class
+[2024-03-23 16:21:01] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:21:01] Contrast mode set to dark
+[2024-03-23 16:21:01] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:21:01] start_screen method called
+[2024-03-23 16:22:37] Started the app
+[2024-03-23 16:22:37] Started the GameApp Class
+[2024-03-23 16:22:37] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:22:37] Contrast mode set to dark
+[2024-03-23 16:22:37] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:22:37] start_screen method called
+[2024-03-23 16:22:37] Game mode: snake_endless
+[2024-03-23 16:22:43] Game mode: snake_special
+[2024-03-23 16:23:06] Started the app
+[2024-03-23 16:23:06] Started the GameApp Class
+[2024-03-23 16:23:06] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:23:06] Contrast mode set to dark
+[2024-03-23 16:23:06] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:23:06] start_screen method called
+[2024-03-23 16:23:13] Game mode: classic_snake
+[2024-03-23 16:23:13] start_game
+[2024-03-23 16:23:13] Reset snake length
+[2024-03-23 16:23:13] Game mode: classic_snake
+[2024-03-23 16:23:13] Game state: start_game
+[2024-03-23 16:23:13] Game focused
+[2024-03-23 16:23:22] Game state: game
+[2024-03-23 16:23:22] Food ID:
+[2024-03-23 16:23:22] d63a9ea6-4cda-49c2-8719-2b86d4c074ed
+[2024-03-23 16:23:22] {'d63a9ea6-4cda-49c2-8719-2b86d4c074ed': {'x': 0, 'y': 40, 'tag': 'foodd63a9ea6-4cda-49c2-8719-2b86d4c074ed', 'oval_id': 7}}
+[2024-03-23 16:23:22] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+[2024-03-23 16:23:22] Food ID:
+[2024-03-23 16:23:22] 74235bf9-387b-430d-942a-a93129237acb
+[2024-03-23 16:23:22] {'74235bf9-387b-430d-942a-a93129237acb': {'x': 140, 'y': 160, 'tag': 'food74235bf9-387b-430d-942a-a93129237acb', 'oval_id': 10}}
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+[2024-03-23 16:23:24] Food ID:
+[2024-03-23 16:23:24] acd8a2e1-6ae1-490e-98e9-2f7e1b68119b
+[2024-03-23 16:23:24] {'acd8a2e1-6ae1-490e-98e9-2f7e1b68119b': {'x': 260, 'y': 180, 'tag': 'foodacd8a2e1-6ae1-490e-98e9-2f7e1b68119b', 'oval_id': 24}}
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+[2024-03-23 16:23:26] snake has a collision
+[2024-03-23 16:23:26] Game state: game_over
+[2024-03-23 16:23:26] Snake coordinates after reset: [(160, 240), (160, 220), (180, 220), (180, 240), (160, 240), (140, 240), (140, 260)]
+[2024-03-23 16:23:26] High score: 5
+[2024-03-23 16:23:26] Score: 2
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:23:28] Highscore reset to 0
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:23:32] Highscore reset to 0
+[2024-03-23 16:23:33] Highscore reset to 0
+[2024-03-23 16:23:33] Highscore reset to 0
+[2024-03-23 16:23:36] Game restarted
+[2024-03-23 16:23:36] Game state: game_over
+[2024-03-23 16:23:36] Reset snake length
+[2024-03-23 16:23:36] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:23:36] Game state: game
+[2024-03-23 16:23:36] Food ID:
+[2024-03-23 16:23:36] b9f1bbfa-ed9d-40df-b69c-acd4b855fa49
+[2024-03-23 16:23:36] {'b9f1bbfa-ed9d-40df-b69c-acd4b855fa49': {'x': 20, 'y': 340, 'tag': 'foodb9f1bbfa-ed9d-40df-b69c-acd4b855fa49', 'oval_id': 55}}
+[2024-03-23 16:23:36] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+[2024-03-23 16:23:38] Food ID:
+[2024-03-23 16:23:38] 6e3778d4-6ae0-4842-a0b6-5ad709d9b526
+[2024-03-23 16:23:38] {'6e3778d4-6ae0-4842-a0b6-5ad709d9b526': {'x': 220, 'y': 120, 'tag': 'food6e3778d4-6ae0-4842-a0b6-5ad709d9b526', 'oval_id': 74}}
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+4
+4
+4
+[2024-03-23 16:23:40] Food ID:
+[2024-03-23 16:23:40] 70df4aa6-ec93-432a-97b0-f657a1a45bfe
+[2024-03-23 16:23:40] {'70df4aa6-ec93-432a-97b0-f657a1a45bfe': {'x': 260, 'y': 280, 'tag': 'food70df4aa6-ec93-432a-97b0-f657a1a45bfe', 'oval_id': 96}}
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+6
+[2024-03-23 16:23:42] Food ID:
+[2024-03-23 16:23:42] 0cb73174-96d3-4f27-b552-ab6a4e722b1d
+[2024-03-23 16:23:42] {'0cb73174-96d3-4f27-b552-ab6a4e722b1d': {'x': 140, 'y': 160, 'tag': 'food0cb73174-96d3-4f27-b552-ab6a4e722b1d', 'oval_id': 115}}
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+7
+[2024-03-23 16:23:43] Food ID:
+[2024-03-23 16:23:43] 97c1fc57-87ae-407a-a486-59ca2e7003e4
+[2024-03-23 16:23:43] {'97c1fc57-87ae-407a-a486-59ca2e7003e4': {'x': 180, 'y': 140, 'tag': 'food97c1fc57-87ae-407a-a486-59ca2e7003e4', 'oval_id': 128}}
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+9
+9
+9
+[2024-03-23 16:23:45] Food ID:
+[2024-03-23 16:23:45] 794c090b-0311-49dd-afcd-4762d5ed966e
+[2024-03-23 16:23:45] {'794c090b-0311-49dd-afcd-4762d5ed966e': {'x': 240, 'y': 280, 'tag': 'food794c090b-0311-49dd-afcd-4762d5ed966e', 'oval_id': 146}}
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+12
+12
+12
+[2024-03-23 16:23:48] Food ID:
+[2024-03-23 16:23:48] 8a9796aa-17a2-4c4e-a674-88dfb5634210
+[2024-03-23 16:23:48] {'8a9796aa-17a2-4c4e-a674-88dfb5634210': {'x': 200, 'y': 240, 'tag': 'food8a9796aa-17a2-4c4e-a674-88dfb5634210', 'oval_id': 175}}
+12
+12
+12
+[2024-03-23 16:23:48] snake has a collision
+[2024-03-23 16:23:48] Game state: game_over
+[2024-03-23 16:23:48] Snake coordinates after reset: [(220, 260), (240, 260), (240, 280), (240, 300), (220, 300), (220, 280), (220, 260), (220, 240), (220, 220), (200, 220), (180, 220)]
+[2024-03-23 16:23:48] High score: 0
+[2024-03-23 16:23:48] Score: 6
+[2024-03-23 16:23:48] snake_length_high_score updated to: 11
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:23:52] Highscore reset to 0
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:23:54] Highscore reset to 0
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:23:55] Highscore reset to 0
+[2024-03-23 16:23:56] Game restarted
+[2024-03-23 16:23:56] Game state: game_over
+[2024-03-23 16:23:56] Reset snake length
+[2024-03-23 16:23:56] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:23:56] Game state: game
+[2024-03-23 16:23:56] Food ID:
+[2024-03-23 16:23:56] 7c187bea-fe78-4ca3-a464-537f4ecaf3c1
+[2024-03-23 16:23:56] {'7c187bea-fe78-4ca3-a464-537f4ecaf3c1': {'x': 260, 'y': 380, 'tag': 'food7c187bea-fe78-4ca3-a464-537f4ecaf3c1', 'oval_id': 185}}
+[2024-03-23 16:23:56] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+[2024-03-23 16:23:59] Food ID:
+[2024-03-23 16:23:59] f7f907b8-0457-4e33-9499-b8e92a2f82b0
+[2024-03-23 16:23:59] {'f7f907b8-0457-4e33-9499-b8e92a2f82b0': {'x': 140, 'y': 340, 'tag': 'foodf7f907b8-0457-4e33-9499-b8e92a2f82b0', 'oval_id': 218}}
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+5
+5
+[2024-03-23 16:24:01] Food ID:
+[2024-03-23 16:24:01] 6b42acf7-5e71-4393-a352-aee918eee934
+[2024-03-23 16:24:01] {'6b42acf7-5e71-4393-a352-aee918eee934': {'x': 340, 'y': 340, 'tag': 'food6b42acf7-5e71-4393-a352-aee918eee934', 'oval_id': 235}}
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+7
+7
+7
+7
+[2024-03-23 16:24:03] snake has a collision
+[2024-03-23 16:24:03] Game state: game_over
+[2024-03-23 16:24:03] Snake coordinates after reset: [(-20, 320), (0, 320), (20, 320), (40, 320), (60, 320), (80, 320), (100, 320)]
+[2024-03-23 16:24:03] High score: 0
+[2024-03-23 16:24:03] Score: 2
+[2024-03-23 16:24:04] Game restarted
+[2024-03-23 16:24:04] Game state: game_over
+[2024-03-23 16:24:04] Reset snake length
+[2024-03-23 16:24:04] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:24:04] Game state: game
+[2024-03-23 16:24:04] Food ID:
+[2024-03-23 16:24:04] bbed1060-ccfd-4c9a-82ff-85e043b2de0e
+[2024-03-23 16:24:04] {'bbed1060-ccfd-4c9a-82ff-85e043b2de0e': {'x': 20, 'y': 300, 'tag': 'foodbbed1060-ccfd-4c9a-82ff-85e043b2de0e', 'oval_id': 262}}
+[2024-03-23 16:24:04] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+[2024-03-23 16:24:04] snake has a collision
+[2024-03-23 16:24:04] Game state: game_over
+[2024-03-23 16:24:04] Snake coordinates after reset: [(-20, 180), (0, 180), (0, 160), (0, 140), (0, 120)]
+[2024-03-23 16:24:04] High score: 2
+[2024-03-23 16:24:04] Score: 0
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:24:07] Highscore reset to 0
+[2024-03-23 16:24:07] Game restarted
+[2024-03-23 16:24:07] Game state: game_over
+[2024-03-23 16:24:07] Reset snake length
+[2024-03-23 16:24:07] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:24:07] Game state: game
+[2024-03-23 16:24:07] Food ID:
+[2024-03-23 16:24:07] b4ca0684-2312-4c57-817c-d057afbb5a01
+[2024-03-23 16:24:07] {'b4ca0684-2312-4c57-817c-d057afbb5a01': {'x': 240, 'y': 140, 'tag': 'foodb4ca0684-2312-4c57-817c-d057afbb5a01', 'oval_id': 280}}
+[2024-03-23 16:24:07] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+[2024-03-23 16:24:09] snake has a collision
+[2024-03-23 16:24:09] Game state: game_over
+[2024-03-23 16:24:09] Snake coordinates after reset: [(-20, 340), (0, 340), (0, 320), (0, 300), (0, 280)]
+[2024-03-23 16:24:09] High score: 0
+[2024-03-23 16:24:09] Score: 0
+[2024-03-23 16:24:48] Closed the app
+
+
+
+
+[2024-03-23 16:24:51] Started the app
+[2024-03-23 16:24:51] Started the GameApp Class
+[2024-03-23 16:24:51] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:24:51] Contrast mode set to dark
+[2024-03-23 16:24:51] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:24:51] start_screen method called
+[2024-03-23 16:24:52] Game mode: classic_snake
+[2024-03-23 16:24:52] start_game
+[2024-03-23 16:24:52] Reset snake length
+[2024-03-23 16:24:52] Game mode: classic_snake
+[2024-03-23 16:24:52] Game state: start_game
+[2024-03-23 16:24:52] Game focused
+[2024-03-23 16:24:55] Highscore time reset to 0
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:24:57] Highscore reset to 0
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:25:02] Game state: game
+[2024-03-23 16:25:02] Food ID:
+[2024-03-23 16:25:02] 45d3cc26-60b4-4232-97fa-7d64307286f1
+[2024-03-23 16:25:02] {'45d3cc26-60b4-4232-97fa-7d64307286f1': {'x': 360, 'y': 300, 'tag': 'food45d3cc26-60b4-4232-97fa-7d64307286f1', 'oval_id': 7}}
+[2024-03-23 16:25:02] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+[2024-03-23 16:25:06] Food ID:
+[2024-03-23 16:25:06] d8265204-5fad-4252-84b4-03bbbee9f4d4
+[2024-03-23 16:25:06] {'d8265204-5fad-4252-84b4-03bbbee9f4d4': {'x': 360, 'y': 20, 'tag': 'foodd8265204-5fad-4252-84b4-03bbbee9f4d4', 'oval_id': 45}}
+3
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+[2024-03-23 16:25:09] Food ID:
+[2024-03-23 16:25:09] 213d3a0a-de0d-455b-8d4b-cc3c3eab8efb
+[2024-03-23 16:25:09] {'213d3a0a-de0d-455b-8d4b-cc3c3eab8efb': {'x': 320, 'y': 0, 'tag': 'food213d3a0a-de0d-455b-8d4b-cc3c3eab8efb', 'oval_id': 70}}
+6
+6
+6
+6
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+[2024-03-23 16:25:10] Food ID:
+[2024-03-23 16:25:10] a65653c3-bc72-400c-8fb9-6ac0cf74df47
+[2024-03-23 16:25:10] {'a65653c3-bc72-400c-8fb9-6ac0cf74df47': {'x': 360, 'y': 120, 'tag': 'fooda65653c3-bc72-400c-8fb9-6ac0cf74df47', 'oval_id': 84}}
+7
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+[2024-03-23 16:25:11] Food ID:
+[2024-03-23 16:25:11] 1362879e-a600-4594-b4a3-18541f714a3a
+[2024-03-23 16:25:11] {'1362879e-a600-4594-b4a3-18541f714a3a': {'x': 160, 'y': 200, 'tag': 'food1362879e-a600-4594-b4a3-18541f714a3a', 'oval_id': 93}}
+8
+8
+8
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+10
+10
+10
+10
+10
+10
+10
+[2024-03-23 16:25:13] Food ID:
+[2024-03-23 16:25:13] f2567916-5a69-45b9-9032-7ebf394ce7cf
+[2024-03-23 16:25:13] {'f2567916-5a69-45b9-9032-7ebf394ce7cf': {'x': 200, 'y': 340, 'tag': 'foodf2567916-5a69-45b9-9032-7ebf394ce7cf', 'oval_id': 108}}
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+11
+[2024-03-23 16:25:14] snake has a collision
+[2024-03-23 16:25:14] Game state: game_over
+[2024-03-23 16:25:14] Snake coordinates after reset: [(100, 140), (120, 140), (120, 120), (120, 100), (120, 80), (100, 80), (100, 100), (100, 120), (100, 140), (100, 160)]
+[2024-03-23 16:25:14] High score: 0
+[2024-03-23 16:25:14] Score: 5
+[2024-03-23 16:25:14] high_score_time updated to: 11
+[2024-03-23 16:25:17] Game restarted
+[2024-03-23 16:25:17] Game state: game_over
+[2024-03-23 16:25:17] Reset snake length
+[2024-03-23 16:25:17] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:25:17] Game state: game
+[2024-03-23 16:25:17] Food ID:
+[2024-03-23 16:25:17] 489f47ab-7129-4b76-895b-8c41768468c4
+[2024-03-23 16:25:17] {'489f47ab-7129-4b76-895b-8c41768468c4': {'x': 0, 'y': 300, 'tag': 'food489f47ab-7129-4b76-895b-8c41768468c4', 'oval_id': 130}}
+[2024-03-23 16:25:17] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+[2024-03-23 16:25:18] snake has a collision
+[2024-03-23 16:25:18] Game state: game_over
+[2024-03-23 16:25:18] Snake coordinates after reset: [(-20, 220), (0, 220), (0, 200), (0, 180), (0, 160)]
+[2024-03-23 16:25:18] High score: 5
+[2024-03-23 16:25:18] Score: 0
+[2024-03-23 16:25:20] Highscore time reset to 0
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:25:24] Highscore reset to 0
+[2024-03-23 16:25:58] Game restarted
+[2024-03-23 16:25:58] Game state: game_over
+[2024-03-23 16:25:58] Reset snake length
+[2024-03-23 16:25:58] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-23 16:25:58] Game state: game
+[2024-03-23 16:25:58] Food ID:
+[2024-03-23 16:25:58] 03886251-5f45-439c-abf5-55f2a87fbf4d
+[2024-03-23 16:25:58] {'03886251-5f45-439c-abf5-55f2a87fbf4d': {'x': 160, 'y': 220, 'tag': 'food03886251-5f45-439c-abf5-55f2a87fbf4d', 'oval_id': 150}}
+[2024-03-23 16:25:58] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+[2024-03-23 16:25:59] snake has a collision
+[2024-03-23 16:25:59] Game state: game_over
+[2024-03-23 16:25:59] Snake coordinates after reset: [(-20, 240), (0, 240), (0, 220), (0, 200), (0, 180)]
+[2024-03-23 16:25:59] High score: 0
+[2024-03-23 16:25:59] Score: 0
+[2024-03-23 16:25:59] high_score_time updated to: 1
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-23 16:27:35] Closed the app
+
+
+
+
+[2024-03-23 16:27:36] Started the app
+[2024-03-23 16:27:36] Started the GameApp Class
+[2024-03-23 16:27:36] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-23 16:27:36] Contrast mode set to dark
+[2024-03-23 16:27:36] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'score_label'
+[2024-03-23 16:27:36] start_screen method called
+[2024-03-23 16:27:38] Game mode: classic_snake
+[2024-03-23 16:27:38] start_game
+[2024-03-23 16:27:38] Reset snake length
+[2024-03-23 16:27:38] Game mode: classic_snake
+[2024-03-23 16:27:38] Game state: start_game
+[2024-03-23 16:27:38] Game focused
+[2024-03-23 16:27:39] Highscore time reset to 0
+[2024-03-23 16:27:40] Highscore time reset to 0
+[2024-03-23 16:27:41] Highscore reset to 0

@@ -51,7 +51,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         # Create the snake and the food
         self.snake = Snake(self.logfile, self.snake_canvas, game_config)
         self.food = ClassicFood(self.logfile, self.snake_canvas, game_config)
-        self.create_instance()
+        self.game_config = GameConfig(self.logfile, 'classic_snake')
         self.game_labels_panel = GameLabelsPanel(self.logfile, parent, self.game_config)
         #self.movement_off_snake = MovementOffSnake(self.snake_canvas, self.game_config, self.logfile)
         self.game_labels_panel.create_game_labels()
@@ -120,10 +120,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         # Start the game loop
         self.start_screen()
         self.bind_and_unbind_keys()
-
-    def create_instance(self):
-        self.disabeling_buttons = DisabelingButtons(self.button_panel)
-        self.game_config = GameConfig(self.logfile, 'classic_snake')
         
 
     
@@ -206,7 +202,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.logfile.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
         #self.update_snake_length_label() 
 
-        self.disabeling_buttons.disable_buttons()
         self.next_turn(self.snake, self.food)
     
     def next_turn(self, snake, food):
@@ -315,7 +310,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
     def game_over(self):
         self.state = 'game_over'
         self.bind_and_unbind_keys()
-        self.disabeling_buttons.enable_buttons()
         self.config.set('Classic_Snake_Settings', 'state', 'game_over')
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")

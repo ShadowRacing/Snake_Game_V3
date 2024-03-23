@@ -170,6 +170,9 @@ class ClickButtonPanel:
                                 command=self.home_button_command)
         self.home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w")
 
+
+
+
     def home_button_command(self):
         # If it's the first click, record the current time
         if self.home_button_clicks == 0:

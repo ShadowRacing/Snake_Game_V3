@@ -11,19 +11,18 @@ from Configuration.gameconfig_snake_game import GameConfig
 from Logic.food_logic_snake_game import ClassicFood
 from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
-from Logic.buttonpanel_snake_game import DisabelingButtons, ClickButtonPanel
+from Logic.buttonpanel_snake_game import ClickButtonPanel #, DisabelingButtons
 from Logic.key_logic_snake_game import MovementOffSnake
 
 #global variabels
 
 
 class Snake_Classic_Game(ctk.CTkCanvas):
-    def __init__(self, parent, game_config, logfile, functions ,button_panel):
+    def __init__(self, parent, game_config, logfile, functions):
         # Create the game logger
         self.logfile = logfile
         self.game_config = game_config
         self.functions = functions
-        self.button_panel = button_panel
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
         self.score = 0
@@ -53,9 +52,12 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.food = ClassicFood(self.logfile, self.snake_canvas, game_config)
         self.create_instance()
         self.game_labels_panel = GameLabelsPanel(self.logfile, parent, self.game_config)
+        self.create_button_panel = ClickButtonPanel(parent, self.logfile, self.functions)
         #self.movement_off_snake = MovementOffSnake(self.snake_canvas, self.game_config, self.logfile)
         self.game_labels_panel.create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
+
+        
 
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
@@ -116,13 +118,12 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
                 
-
         # Start the game loop
         self.start_screen()
         self.bind_and_unbind_keys()
 
     def create_instance(self):
-        self.disabeling_buttons = DisabelingButtons(self.button_panel)
+        # self.disabeling_buttons = DisabelingButtons(self.button_panel)
         self.game_config = GameConfig(self.logfile, 'classic_snake')
         
 

@@ -141,12 +141,11 @@ class ButtonCommands:
 
 # Class for creating the button panel
 class ClickButtonPanel:
-    def __init__(self, parent, logfile, functions, home_button=None):
+    def __init__(self, parent, logfile, functions, button_canvas=None):
         # Initializing variables
         self.parent = parent
         self.logfile = logfile
         self.functions = functions
-        self.home_button = home_button
         self.theme_updater = ThemeUpdater(self.logfile)
        
         # Managing the buttons height and width
@@ -156,8 +155,12 @@ class ClickButtonPanel:
         self.button_commands = ButtonCommands(self.logfile, self.functions)
         
         # Creating a separate canvas for the buttons
-        self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5)
-        self.button_canvas.pack(side='left', fill='both')
+        if button_canvas is not None:
+            self.button_canvas = button_canvas
+        else:
+            # Creating a separate canvas for the buttons
+            self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5)
+            self.button_canvas.pack(side='left', fill='both')
 
 
     # Methods to create specific buttons    
@@ -266,6 +269,12 @@ class ClickButtonPanel:
         if self.home_button_ref:
             self.home_button_ref.configure(state=state)
 
+    def disable_buttons(self):
+        self.home_button.configure(state="disabled")
+       
+    def enable_buttons(self):
+        self.home_button.configure(state="normal")
+
 # Class for creating the option button panel
 class OptionButtonPanel:
     def __init__(self, root, settings_canvas, logfile):
@@ -360,22 +369,19 @@ class OptionButtonPanel:
         except Exception as e:
             print("Error:", e)
 
-class DisabelingButtons:
-    def __init__(self, button_panel):
-        self.button_panel = button_panel
-    
-    def disable_buttons(self):
-        self.button_panel.home_button.configure(state="disabled")
-       
-       
-    def enable_buttons(self):
-        if hasattr(self.button_panel, 'return_home'):
-            self.button_panel.home_button.configure(state="normal")
-            print("Buttons enabled")
-        else:
-            print("Home button not found")
+# class DisabelingButtons():
+#     def __init__(self, button_panel):
+#         self.button_panel = button_panel
 
-
+#     def disable_buttons(self):
+#         self.button_panel.home_button.configure(state="disabled")
+       
+#     def enable_buttons(self):
+#         if hasattr(self.button_panel, 'return_home'):
+#             self.button_panel.home_button.configure(state="normal")
+#             print("Buttons enabled")
+#         else:
+#             print("Home button not found")
 
 # *****************************************
 # Wims Snake Button Panel File

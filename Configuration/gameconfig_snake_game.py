@@ -1,6 +1,9 @@
 # *****************************************
 # Wims Snake Game Config File
 # *****************************************
+import configparser
+from os import path
+
 
 # Class for the game configuration
 class GameConfig:
@@ -8,6 +11,19 @@ class GameConfig:
         # Initializing variables
         self.logfile = logfile
         self.TIME_PLAYED = 0
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..','config.ini')
+        self.config = configparser.ConfigParser()
+        self.config.read(self.config_path)
+        if not self.config.has_section('Settings'):
+            self.config.add_section('Settings')
+       
+        if not self.config.has_option('Settings', 'snake_color'):
+            self.config.set('Classic_Snake_Values','snake_color', 'Green')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        self.snake_color = self.config.get('Settings', 'snake_color', fallback='Green')
+
         
         # Set the game configuration
         try:
@@ -24,7 +40,7 @@ class GameConfig:
                 self.SPEED = 10
                 self.CELL_SIZE = 20
                 self.SNAKE_LENGTH = 3
-                self.SNAKE_COLOR = 'White'
+                self.SNAKE_COLOR = self.snake_color
                 self.SNAKE_OUTLINE = 'Black'
                 self.FOOD_COLOR = 'Red'
                 self.SPECIAL_FOOD_COLOR = 'Blue'
@@ -40,7 +56,7 @@ class GameConfig:
                 self.SPEED = 10
                 self.CELL_SIZE = 20
                 self.SNAKE_LENGTH = 5
-                self.SNAKE_COLOR = 'Green'
+                self.SNAKE_COLOR = self.snake_color
                 self.SNAKE_OUTLINE = 'White'
                 self.FOOD_COLOR = 'Red'
                 self.SPECIAL_FOOD_COLOR = 'Purple'
@@ -56,7 +72,7 @@ class GameConfig:
                 self.SPEED = 20
                 self.CELL_SIZE = 20
                 self.SNAKE_LENGTH = 5
-                self.SNAKE_COLOR = 'Green'
+                self.SNAKE_COLOR = self.snake_color
                 self.SNAKE_OUTLINE = 'White'
                 self.FOOD_COLOR = 'Red'
                 self.SPECIAL_FOOD_COLOR = 'Purple'
@@ -72,7 +88,7 @@ class GameConfig:
                 self.SPEED = 40
                 self.CELL_SIZE = 10
                 self.SNAKE_LENGTH = 2
-                self.SNAKE_COLOR = 'Red'
+                self.SNAKE_COLOR = self.snake_color
                 self.SNAKE_OUTLINE = 'White'
                 self.FOOD_COLOR = 'Green'
                 self.SPECIAL_FOOD_COLOR = 'Purple'

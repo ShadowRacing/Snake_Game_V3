@@ -70,11 +70,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.config.set('Classic_Snake_Values','score', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        elif self.config.has_option('Classic_Snake_Values', 'score'):
-            self.config.set('Classic_Snake_Values','score', '0')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
-        
+
         if not self.config.has_option('Classic_Snake_Values', 'high_score'):
             self.config.set('Classic_Snake_Values','high_score', '0')
             with open('config.ini', 'w') as configfile:
@@ -84,11 +80,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.config.set('Classic_Snake_Values','time_score', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        elif self.config.has_option('Classic_Snake_Values', 'time_score'):
-            self.config.set('Classic_Snake_Values','time_score', '0')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
-        
+
         if not self.config.has_option('Classic_Snake_Values', 'high_score_time'):
             self.config.set('Classic_Snake_Values','high_score_time', '0')
             print("high_score_time added")
@@ -96,10 +88,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
                 self.config.write(configfile)
 
         if not self.config.has_option('Classic_Snake_Values', 'snake_length'):
-            self.config.set('Classic_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
-        elif self.config.has_option('Classic_Snake_Values', 'snake_length'):
             self.config.set('Classic_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)

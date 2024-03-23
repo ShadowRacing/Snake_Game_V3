@@ -94,6 +94,17 @@ class SettingsOptionButtonLabels:
                                            anchor='w'
                                            )
         self.contrast_label.place(x=600, y=10)
+    
+    def snake_color_options_label(self):
+        self.snake_color_label = ctk.CTkLabel(self.settings_canvas, 
+                                              width=160,
+                                              height=30,
+                                              corner_radius=6,
+                                              text="Snake Color", 
+                                              font=FONT_LIST[11],
+                                              anchor='w'
+                                              )
+        self.snake_color_label.place(x=800, y=10)
 
     def create_theme_label(self):
         config_dir = path.dirname(__file__)

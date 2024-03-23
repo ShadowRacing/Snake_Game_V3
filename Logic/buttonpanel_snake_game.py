@@ -133,6 +133,7 @@ class ClickButtonPanel:
         self.home_button = home_button
         self.theme_updater = ThemeUpdater(self.logfile)
        
+       
         # Managing the buttons height and width
         self.button_width = GameConstants.BUTTON_WIDTH
         self.button_height = GameConstants.BUTTON_HEIGHT
@@ -261,10 +262,6 @@ class ClickButtonPanel:
                                 command=self.button_commands.snake_speed_command)
         snake_speed_button.grid(in_=self.button_canvas, row=9, column=0, padx=10, pady=10, sticky="w")
 
-    def set_home_button_state(self, state):
-        if self.home_button_ref:
-            self.home_button_ref.configure(state=state)
-
 # Class for creating the option button panel
 class OptionButtonPanel:
     def __init__(self, root, settings_canvas, logfile):
@@ -320,6 +317,11 @@ class OptionButtonPanel:
         self.updating_config_ini()
         self.contrast_updater.apply_contrast(selected_value)
 
+    def snake_color_callback(self, selected_value):
+        # Handle snake color change
+        self.config.set('Settings', 'snake_color', selected_value)
+        self.updating_config_ini()
+       
     # Method to create an option button
     def create_option_button(self, command, values, config, x, y):
         option_button = ctk.CTkOptionMenu(self.settings_canvas,
@@ -355,9 +357,17 @@ class OptionButtonPanel:
             self.create_option_button(self.contrast_callback, ["Default", "Dark", "Light", "System"],
                                       self.contrast_config, 600, 50)
 
+            # Creating the option buttons for snake color
+            self.snake_color_config = self.config.get('Settings', 'snake_color', fallback='Green')
+            self.create_option_button(self.snake_color_callback,
+                                    ["Black", "Blue", "Green", "Orange", "Purple", "Red", "White", "Yellow"],
+                                    self.snake_color_config, 800, 50
+                                    )
+
         # Handle exceptions appropriately
         except Exception as e:
             print("Error:", e)
+
 
 
 

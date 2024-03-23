@@ -16,6 +16,8 @@ with open(os.path.join(script_dir, '..', 'Themes', 'colors.json'), 'r') as f:
 config = configparser.ConfigParser()
 config.read('config.ini')
 
+
+
 # Get the screen size from the config.ini file
 screen_size = config.get('Settings', 'screen_size', fallback='Default')
 if screen_size.lower() == 'fullscreen' or screen_size.lower()== 'default':

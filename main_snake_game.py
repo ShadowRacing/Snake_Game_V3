@@ -56,7 +56,7 @@ class SnakeGameApp:
         self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5))
 
         # Creating the main canvas for the app
-        self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5)
+        self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20')
         self.main_canvas.pack(expand=True, fill="both")
         self.original_main_canvas = self.main_canvas
 
@@ -364,6 +364,7 @@ class SnakeGameApp:
         self.settings_labels.create_theme_options_label()
         self.settings_labels.create_contrast_options_label()
         self.settings_labels.create_theme_label()
+        self.settings_labels.snake_color_options_label()
     
     def reset_high_score(self):
         if self.button_press_variable_high_score == 0:

@@ -82,7 +82,7 @@ class SnakeGameApp:
             'confirm_quit': self.confirm_quit,
             'destroy_canvas': self.destroy_canvas,
             'reset_button_press_variable': self.reset_button_press_variable,
-            'reset_snake_length': self.reset_snake_length,
+            'reset_high_score_snake_length': self.reset_snake_length,
             'reset_high_score_time': self.reset_high_score_time,
             'reset_high_score': self.reset_high_score,
             'open_settings': self.open_settings,
@@ -224,7 +224,7 @@ class SnakeGameApp:
                                                         )
 
         # Pack buttons and labels
-        self.create_button_panel.home_button()
+        self.create_button_panel.create_home_button()
         self.create_button_panel.snake_color_button()
         self.create_button_panel.snake_outline_button()
         self.create_button_panel.snake_length_button()
@@ -270,7 +270,7 @@ class SnakeGameApp:
                                                         )
 
         # Pack buttons and labels
-        self.create_button_panel.home_button()
+        self.create_button_panel.create_home_button()
         self.create_button_panel.snake_color_button()
         self.create_button_panel.snake_outline_button()
         self.create_button_panel.game_size_button()
@@ -315,7 +315,7 @@ class SnakeGameApp:
         # Create information labels and buttons
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_info_label()
-        self.create_button_panel.home_button()
+        self.create_button_panel.create_home_button()
         self.create_button_panel.patchnotes_button()
     
     # Open the settings screen
@@ -365,7 +365,7 @@ class SnakeGameApp:
         # Create settings labels, buttons, and options
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_settings_label()
-        self.create_button_panel.home_button()
+        self.create_button_panel.create_home_button()
         self.create_option_button_panel.show_options()
         self.settings_labels.create_screen_options_label()
         self.settings_labels.create_theme_options_label()

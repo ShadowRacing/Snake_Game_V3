@@ -2,17 +2,15 @@
 # Wims Snake Game Snake Classic Game File
 # *****************************************
 
-import customtkinter as ctk, time, uuid, configparser
+import customtkinter as ctk, time, configparser
 from os import path
 
 # Importing thhe necessary modules from other folders
-from Configuration.constants_snake_game import  COLORS_DICT, FONT_LIST
+from Configuration.constants_snake_game import FONT_LIST
 from Configuration.gameconfig_snake_game import GameConfig
 from Logic.food_logic_snake_game import ClassicFood
 from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
-from Logic.buttonpanel_snake_game import ClickButtonPanel #, DisabelingButtons
-from Logic.key_logic_snake_game import MovementOffSnake
 
 #global variabels
 
@@ -44,7 +42,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         
 
         self.snake_canvas = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
-        #self.snake_canvas.pack(side="right", fill="both", expand=True)
         self.snake_canvas.place(x=500, y=50)
         
 
@@ -53,7 +50,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.food = ClassicFood(self.logfile, self.snake_canvas, game_config)
         self.game_labels_panel = GameLabelsPanel(self.logfile, parent, self.game_config)
         self.game_config = GameConfig(self.logfile, 'classic_snake')
-        self.game_labels_panel.create_game_labels()
+        self.game_labels_panel.classic_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
 
         
@@ -108,14 +105,12 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         # Start the game loop
         self.start_screen()
         self.bind_and_unbind_keys()
-
-
-                 
+ 
     def delete_game_labels(self):
-        self.game_labels_panel.delete_labels()
+        self.game_labels_panel.classic_delete_labels()
     
     def update_high_score_labels_(self):
-        self.game_labels_panel.update_high_score_labels()
+        self.game_labels_panel.classic_update_high_score_labels()
     
     def start_screen(self):
         self.state = 'start_game'
@@ -128,12 +123,11 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.snake_canvas.delete("all")
         self.snake_canvas.create_text(self.width / 2, self.height / 2,
                          font= FONT_LIST[12], text="Press 'Space' to start", fill="white", tag="start")
-        #self.snake_canvas.bind('<space>', self.start_game, self.games_focused)
         self.snake_canvas.focus_set()
         self.games_focused()
         self.bind_and_unbind_keys()
-        self.game_labels_panel.update_game_labels()
-        self.game_labels_panel.update_high_score_labels()
+        self.game_labels_panel.classic_update_game_labels()
+        self.game_labels_panel.classic_update_high_score_labels()
 
     def pause_game(self, event=None):
         if self.state == 'game':
@@ -153,7 +147,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.paused_time = None
         self.bind_and_unbind_keys()
 
-        
     def paused_label(self):
         self.snake_canvas.create_text(self.width / 2, self.height / 2,
                          font= FONT_LIST[12], text="Game Paused", fill="white", tag="pause")
@@ -170,12 +163,11 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.high_score = int(self.config.get('Classic_Snake_Values', 'high_score', fallback='0'))
         self.high_score_time = int(self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0'))
         self.snake_length_high_score = int(self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0'))
-        self.game_labels_panel.update_high_score_labels()
+        self.game_labels_panel.classic_update_high_score_labels()
         self.config.set('Classic_Snake_Settings', 'state', 'game')
 
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
-        #self.movement_off_snake.bind_and_unbind_keys()
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.start_time = time.time()
         self.total_paused_time = 0
@@ -258,10 +250,9 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         else:
             delay = int(110 - self.game_config.SPEED) 
             self.snake_canvas.after(delay, self.next_turn, snake, food)
-            #self.logfile.log_game_event("snake has no collision")
-        
-        self.game_labels_panel.update_game_labels()
-        self.game_labels_panel.update_high_score_labels()
+            
+        self.game_labels_panel.classic_update_game_labels()
+        self.game_labels_panel.classic_update_high_score_labels()
         
         self.snake_canvas.update()
 
@@ -327,11 +318,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             
         with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        
-
-        #self.delete_game_labels()
-        # Bind the 'r' key to the restart_game method
-
 
     def restart_game(self, event=None):
         self.bind_and_unbind_keys()
@@ -355,13 +341,10 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             # start the game again
             self.state = 'start_game'
         self.score = 0
-        self.game_labels_panel.update_game_labels()
+        self.game_labels_panel.classic_update_game_labels()
         self.start_game()
 
-
-
     def bind_and_unbind_keys(self):
-        # Unbind all events to avoid conflicts
         # Unbind all events to avoid conflicts
         self.snake_canvas.unbind('<space>') # start the game
         self.snake_canvas.unbind('<Escape>') # pause the game
@@ -375,8 +358,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.snake_canvas.unbind('<d>') # change direction
         self.snake_canvas.unbind('<w>') # change direction
         self.snake_canvas.unbind('<s>') # change direction
-
-
 
         if self.state == 'start_game':
             self.snake_canvas.bind('<space>', self.start_game)
@@ -397,8 +378,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.snake_canvas.bind('<Escape>',self.pause_game)
         elif self.state == 'settings_menu':
             self.snake_canvas.unbind('<Escape>')
-
-
 
 # *****************************************
 # Wims Snake Game Snake Classic Game File

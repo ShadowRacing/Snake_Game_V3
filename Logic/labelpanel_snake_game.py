@@ -146,10 +146,15 @@ class GameLabelsPanel:
         self.width = game_config.GAME_WIDTH
         self.height = game_config.GAME_HEIGHT
 
-        self.score_label_flag = False
-        self.time_label_flag = False
-        self.high_score_label_flag = False
-        self.high_score_time_label_flag = True
+        self.classic_score_label_flag = False
+        self.classic_time_label_flag = False
+        self.classic_high_score_label_flag = False
+        self.classic_high_score_time_label_flag = True
+
+        self.endless_score_label_flag = False
+        self.endless_time_label_flag = False
+        self.endless_high_score_label_flag = False
+        self.endless_high_score_time_label_flag = True
 
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..', 'config.ini')
@@ -157,114 +162,114 @@ class GameLabelsPanel:
         self.config.read(self.config_path)
 
         #Get the score from the config file
-        self.score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
+        self.classic_score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
+        self.endless_score_label_ = self.config.get('Endless_Snake_Values', 'score', fallback='0')
 
-    def create_game_labels(self):
-        self.create_score_label()
-        self.create_high_score_label()
-        self.create_time_label()
-        self.create_high_score_time_label()
-        self.create_high_scores_label()
-        self.create_snake_length_label()
-        self.create_high_score_snake_length_label()
+    def classic_create_game_labels(self):
+        self.classic_create_score_label()
+        self.classic_create_high_score_label()
+        self.classic_create_time_label()
+        self.classic_create_high_score_time_label()
+        self.classic_create_high_scores_label()
+        self.classic_create_snake_length_label()
+        self.classic_create_high_score_snake_length_label()
     
-    def update_high_score_labels(self):
-        self.update_high_score_label()
-        self.update_high_score_time_label()
-        self.update_high_score_snake_length_label()
+    def classic_update_high_score_labels(self):
+        self.classic_update_high_score_label()
+        self.classic_update_high_score_time_label()
+        self.classic_update_high_score_snake_length_label()
     
-    def update_game_labels(self):
-        self.update_score_label()
-        self.update_time_label()
-        self.update_snake_length_label()
+    def classic_update_game_labels(self):
+        self.classic_update_score_label()
+        self.classic_update_time_label()
+        self.classic_update_snake_length_label()
 
-
-    def create_score_label(self):
-        self.score_label = ctk.CTkLabel(self.snake_canvas, 
+    def classic_create_score_label(self):
+        self.classic_score_label = ctk.CTkLabel(self.snake_canvas, 
                                             height=30,
                                             width=275,
                                             corner_radius=10,
-                                            text=f"Score:{self.score_label_} Food eaten", 
+                                            text=f"Score:{self.classic_score_label_} Food eaten", 
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
                                             anchor='w'
                                             )
-        self.score_label.place(x=200, y=50)
+        self.classic_score_label.place(x=200, y=50)
     
-    def update_score_label(self):
+    def classic_update_score_label(self):
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..', 'config.ini')
         self.config = configparser.RawConfigParser()
         self.config.read(self.config_path)
-        self.score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
+        self.classic_score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
         #update the score label on the screen
-        self.score_label.configure(text=f"Score: {self.score_label_} Food eaten")
+        self.classic_score_label.configure(text=f"Score: {self.classic_score_label_} Food eaten")
     
-    def create_high_score_label(self):
-        self.high_score_label = ctk.CTkLabel(self.snake_canvas,
+    def classic_create_high_score_label(self):
+        self.classic_high_score_label = ctk.CTkLabel(self.snake_canvas,
                                              height=30,
                                              width=275,
                                              corner_radius=10, 
-                                             text=f"Score: {self.score_label_} Food eaten", 
+                                             text=f"Score: {self.classic_score_label_} Food eaten", 
                                              font=FONT_LIST[11],
                                              bg_color='grey20',
                                              anchor='w'
                                              )
-        self.high_score_label.place(x=200, y=550)
+        self.classic_high_score_label.place(x=200, y=550)
     
-    def update_high_score_label(self):
+    def classic_update_high_score_label(self):
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..', 'config.ini')
         self.config = configparser.RawConfigParser()
         self.config.read(self.config_path)
-        self.high_score_label_ = self.config.get('Classic_Snake_Values', 'high_score', fallback='0')
+        self.classic_high_score_label_ = self.config.get('Classic_Snake_Values', 'high_score', fallback='0')
         #update the high score label on the screen
-        self.high_score_label.configure(text=f"Score: {self.high_score_label_} Food eaten")
+        self.classic_high_score_label.configure(text=f"Score: {self.classic_high_score_label_} Food eaten")
 
-    def create_time_label(self):
-        self.time_label = ctk.CTkLabel(self.snake_canvas, 
+    def classic_create_time_label(self):
+        self.classic_time_label = ctk.CTkLabel(self.snake_canvas, 
                                         height=30,
                                         width=275,
                                         corner_radius=10,
-                                        text=f"Time: {self.score_label_} Seconds", 
+                                        text=f"Time: {self.classic_score_label_} Seconds", 
                                         font=FONT_LIST[11],
                                         bg_color='grey20',
                                         anchor='w'
                                         )
-        self.time_label.place(x=200, y=100)
+        self.classic_time_label.place(x=200, y=100)
 
-    def update_time_label(self):
+    def classic_update_time_label(self):
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..', 'config.ini')
         self.config = configparser.RawConfigParser()
         self.config.read(self.config_path)
-        self.time_label_ = self.config.get('Classic_Snake_Values', 'time_score', fallback='0')
+        self.classic_time_label_ = self.config.get('Classic_Snake_Values', 'time_score', fallback='0')
         #update the time label on the screen
-        self.time_label.configure(text=f"Time: {self.time_label_} Seconds")
+        self.classic_time_label.configure(text=f"Time: {self.classic_time_label_} Seconds")
 
-    def create_high_score_time_label(self):
-        self.high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
+    def classic_create_high_score_time_label(self):
+        self.classic_high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
                                                     height=30,
                                                     width=275,
                                                     corner_radius=10,
-                                                    text=f"Score Time: {self.score_label_} Seconds", 
+                                                    text=f"Score Time: {self.classic_score_label_} Seconds", 
                                                     font=FONT_LIST[11],
                                                     bg_color='grey20',
                                                     anchor='w'
                                                     )
-        self.high_score_time_label.place(x=200, y=600)
+        self.classic_high_score_time_label.place(x=200, y=600)
 
-    def update_high_score_time_label(self):
+    def classic_update_high_score_time_label(self):
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..', 'config.ini')
         self.config = configparser.RawConfigParser()
         self.config.read(self.config_path)
-        self.high_score_time_label_ = self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0')
+        self.classic_high_score_time_label_ = self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0')
         #update the high score time label on the screen
-        self.high_score_time_label.configure(text=f"Score Time: {self.high_score_time_label_} Seconds")
+        self.classic_high_score_time_label.configure(text=f"Score Time: {self.classic_high_score_time_label_} Seconds")
 
-    def create_snake_length_label(self):
-        self.snake_length_label = ctk.CTkLabel(self.snake_canvas,
+    def classic_create_snake_length_label(self):
+        self.classic_snake_length_label = ctk.CTkLabel(self.snake_canvas,
                                                 height=30,
                                                 width=275, 
                                                 corner_radius=10,
@@ -273,19 +278,19 @@ class GameLabelsPanel:
                                                 bg_color='grey20',
                                                 anchor='w'
                                                 )
-        self.snake_length_label.place(x=200, y=150)
+        self.classic_snake_length_label.place(x=200, y=150)
     
-    def update_snake_length_label(self):
+    def classic_update_snake_length_label(self):
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..', 'config.ini')
         self.config = configparser.RawConfigParser()
         self.config.read(self.config_path)
-        self.snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length', fallback='0')
+        self.classic_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length', fallback='0')
         #update the high score time label on the screen
-        self.snake_length_label.configure(text=f"Snake Length: {self.snake_length_label_}")
+        self.classic_snake_length_label.configure(text=f"Snake Length: {self.classic_snake_length_label_}")
 
-    def create_high_score_snake_length_label(self):
-        self.high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
+    def classic_create_high_score_snake_length_label(self):
+        self.classic_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
                                                             height=30,
                                                             width=275,
                                                             corner_radius=10,
@@ -294,19 +299,19 @@ class GameLabelsPanel:
                                                             bg_color='grey20',
                                                             anchor='w'
                                                             )
-        self.high_score_snake_length_label.place(x=200, y=650)
+        self.classic_high_score_snake_length_label.place(x=200, y=650)
     
-    def update_high_score_snake_length_label(self):
+    def classic_update_high_score_snake_length_label(self):
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..', 'config.ini')
         self.config = configparser.RawConfigParser()
         self.config.read(self.config_path)
-        self.high_score_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0')
+        self.classic_high_score_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0')
         #update the high score time label on the screen
-        self.high_score_snake_length_label.configure(text=f"Snake Length: {self.high_score_snake_length_label_}")
+        self.classic_high_score_snake_length_label.configure(text=f"Snake Length: {self.classic_high_score_snake_length_label_}")
 
-    def create_high_scores_label(self):
-        self.high_scores_label = ctk.CTkLabel(self.snake_canvas, 
+    def classic_create_high_scores_label(self):
+        self.classic_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
                                                 height=30,
                                                 width=275,
                                                 corner_radius=10,
@@ -315,23 +320,196 @@ class GameLabelsPanel:
                                                 bg_color='grey20',
                                                 anchor='w'
                                                 )
-        self.high_scores_label.place(x=200, y=500)
+        self.classic_high_scores_label.place(x=200, y=500)
 
-    def reset_labels(self):
-        self.score_label.configure(text='0')
-        self.time_label.configure(text='0')
+    def classic_reset_labels(self):
+        self.classic_score_label.configure(text='0')
+        self.classic_time_label.configure(text='0')
 
-    
-    def delete_labels(self):
+    def classic_delete_labels(self):
         try:
             print("delete_labels method called")
-            self.score_label.destroy()
-            self.time_label.destroy()
-            self.high_score_label.destroy()
-            self.high_score_time_label.destroy()
-            self.high_scores_label.destroy()
-            self.snake_length_label.destroy()
-            self.high_score_snake_length_label.destroy()
+            self.classic_score_label.destroy()
+            self.classic_time_label.destroy()
+            self.classic_high_score_label.destroy()
+            self.classic_high_score_time_label.destroy()
+            self.classic_high_scores_label.destroy()
+            self.classic_snake_length_label.destroy()
+            self.classic_high_score_snake_length_label.destroy()
+        except Exception as e:
+            print(f"Error occurred: {e}")
+
+    def endless_create_game_labels(self):
+        self.endless_create_score_label()
+        self.endless_create_high_score_label()
+        self.endless_create_time_label()
+        self.endless_create_high_score_time_label()
+        self.endless_create_high_scores_label()
+        self.endless_create_snake_length_label()
+        self.endless_create_high_score_snake_length_label()
+    
+    def endless_update_high_score_labels(self):
+        self.endless_update_high_score_label()
+        self.endless_update_high_score_time_label()
+        self.endless_update_high_score_snake_length_label()
+    
+    def endless_update_game_labels(self):
+        self.endless_update_score_label()
+        self.endless_update_time_label()
+        self.endless_update_snake_length_label()
+
+    def endless_create_score_label(self):
+        self.endless_score_label = ctk.CTkLabel(self.snake_canvas, 
+                                            height=30,
+                                            width=275,
+                                            corner_radius=10,
+                                            text=f"Score:{self.endless_score_label_} Food eaten", 
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor='w'
+                                            )
+        self.endless_score_label.place(x=200, y=50)
+    
+    def endless_update_score_label(self):
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..', 'config.ini')
+        self.config = configparser.RawConfigParser()
+        self.config.read(self.config_path)
+        self.endless_score_label_ = self.config.get('Endless_Snake_Values', 'score', fallback='0')
+        #update the score label on the screen
+        self.endless_score_label.configure(text=f"Score: {self.endless_score_label_} Food eaten")
+    
+    def endless_create_high_score_label(self):
+        self.endless_high_score_label = ctk.CTkLabel(self.snake_canvas,
+                                             height=30,
+                                             width=275,
+                                             corner_radius=10, 
+                                             text=f"Score: {self.endless_score_label_} Food eaten", 
+                                             font=FONT_LIST[11],
+                                             bg_color='grey20',
+                                             anchor='w'
+                                             )
+        self.endless_high_score_label.place(x=200, y=550)
+    
+    def endless_update_high_score_label(self):
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..', 'config.ini')
+        self.config = configparser.RawConfigParser()
+        self.config.read(self.config_path)
+        self.endless_high_score_label_ = self.config.get('endless_Snake_Values', 'high_score', fallback='0')
+        #update the high score label on the screen
+        self.endless_high_score_label.configure(text=f"Score: {self.endless_high_score_label_} Food eaten")
+
+    def endless_create_time_label(self):
+        self.endless_time_label = ctk.CTkLabel(self.snake_canvas, 
+                                        height=30,
+                                        width=275,
+                                        corner_radius=10,
+                                        text=f"Time: {self.endless_score_label_} Seconds", 
+                                        font=FONT_LIST[11],
+                                        bg_color='grey20',
+                                        anchor='w'
+                                        )
+        self.endless_time_label.place(x=200, y=100)
+
+    def endless_update_time_label(self):
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..', 'config.ini')
+        self.config = configparser.RawConfigParser()
+        self.config.read(self.config_path)
+        self.endless_time_label_ = self.config.get('Endless_Snake_Values', 'time_score', fallback='0')
+        #update the time label on the screen
+        self.endless_time_label.configure(text=f"Time: {self.endless_time_label_} Seconds")
+
+    def endless_create_high_score_time_label(self):
+        self.endless_high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
+                                                    height=30,
+                                                    width=275,
+                                                    corner_radius=10,
+                                                    text=f"Score Time: {self.endless_score_label_} Seconds", 
+                                                    font=FONT_LIST[11],
+                                                    bg_color='grey20',
+                                                    anchor='w'
+                                                    )
+        self.endless_high_score_time_label.place(x=200, y=600)
+
+    def endless_update_high_score_time_label(self):
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..', 'config.ini')
+        self.config = configparser.RawConfigParser()
+        self.config.read(self.config_path)
+        self.endless_high_score_time_label_ = self.config.get('Endless_Snake_Values', 'high_score_time', fallback='0')
+        #update the high score time label on the screen
+        self.endless_high_score_time_label.configure(text=f"Score Time: {self.endless_high_score_time_label_} Seconds")
+
+    def endless_create_snake_length_label(self):
+        self.endless_snake_length_label = ctk.CTkLabel(self.snake_canvas,
+                                                height=30,
+                                                width=275, 
+                                                corner_radius=10,
+                                                text="Snake Length:", 
+                                                font=FONT_LIST[11],
+                                                bg_color='grey20',
+                                                anchor='w'
+                                                )
+        self.endless_snake_length_label.place(x=200, y=150)
+    
+    def endless_update_snake_length_label(self):
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..', 'config.ini')
+        self.config = configparser.RawConfigParser()
+        self.config.read(self.config_path)
+        self.endless_snake_length_label_ = self.config.get('Endless_Snake_Values', 'snake_length', fallback='0')
+        #update the high score time label on the screen
+        self.endless_snake_length_label.configure(text=f"Snake Length: {self.endless_snake_length_label_}")
+
+    def endless_create_high_score_snake_length_label(self):
+        self.endless_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
+                                                            height=30,
+                                                            width=275,
+                                                            corner_radius=10,
+                                                            text="Snake Length:", 
+                                                            font=FONT_LIST[11],
+                                                            bg_color='grey20',
+                                                            anchor='w'
+                                                            )
+        self.endless_high_score_snake_length_label.place(x=200, y=650)
+    
+    def endless_update_high_score_snake_length_label(self):
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..', 'config.ini')
+        self.config = configparser.RawConfigParser()
+        self.config.read(self.config_path)
+        self.endless_high_score_snake_length_label_ = self.config.get('Endless_Snake_Values', 'snake_length_high_score', fallback='0')
+        #update the high score time label on the screen
+        self.endless_high_score_snake_length_label.configure(text=f"Snake Length: {self.endless_high_score_snake_length_label_}")
+
+    def endless_create_high_scores_label(self):
+        self.endless_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
+                                                height=30,
+                                                width=275,
+                                                corner_radius=10,
+                                                text="High Scores:", 
+                                                font=FONT_LIST[11],
+                                                bg_color='grey20',
+                                                anchor='w'
+                                                )
+        self.endless_high_scores_label.place(x=200, y=500)
+
+    def endless_reset_labels(self):
+        self.endless_score_label.configure(text='0')
+        self.endless_time_label.configure(text='0')
+
+    def endless_delete_labels(self):
+        try:
+            print("delete_labels method called")
+            self.endless_score_label.destroy()
+            self.endless_time_label.destroy()
+            self.endless_high_score_label.destroy()
+            self.endless_high_score_time_label.destroy()
+            self.endless_high_scores_label.destroy()
+            self.endless_snake_length_label.destroy()
+            self.endless_high_score_snake_length_label.destroy()
         except Exception as e:
             print(f"Error occurred: {e}")
 

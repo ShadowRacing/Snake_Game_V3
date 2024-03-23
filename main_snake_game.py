@@ -123,7 +123,7 @@ class SnakeGameApp:
         self.create_button_panel.info_button()
         self.create_button_panel.settings_button()
         self.create_button_panel.quit_button()
-        self.game_labels_panel.delete_labels()
+        self.game_labels_panel.classic_delete_labels()
         self.reset_button_press_variable()
     
     def classic_snake(self):
@@ -183,24 +183,23 @@ class SnakeGameApp:
         # Reset the button press variable
         self.reset_button_press_variable()
 
-
-
-
-        
-
         self.game_config.set_configuration("snake_endless")
-        self.endless_snake_canvas = Snake_endless(self.root, self.game_config)
+        self.endless_snake_canvas = Snake_endless(self.root, 
+                                                        self.game_config, 
+                                                        self.logfile,
+                                                        self.functions,
+                                                        self.create_button_panel
+                                                        )
         self.endless_snake_canvas.pack(expand=True, fill="both")
 
         # Update the main canvas attribute
         self.main_canvas = self.endless_snake_canvas
 
-        # Update the button panel
+        #Update the button panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas,
                                                         self.logfile, 
                                                         self.functions
                                                         )
-        
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
@@ -211,16 +210,13 @@ class SnakeGameApp:
                                                         )
         
         # Update the game labels panel
-        self.game_labels_panel = GameLabelsPanel(self.main_canvas, 
+        self.game_labels_panel_2 = GameLabelsPanel(self.main_canvas, 
                                                         self.logfile, 
                                                         self.game_config
                                                         )
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
-        self.create_button_panel.snake_color_button()
-        self.create_button_panel.snake_outline_button()
-        self.create_button_panel.snake_length_button()
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_endless_snake_label()

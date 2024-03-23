@@ -195,6 +195,11 @@ class SnakeGameApp:
         # Reset the button press variable
         self.reset_button_press_variable()
 
+
+
+
+        
+
         self.game_config.set_configuration("snake_endless")
         self.endless_snake_canvas = Snake_endless(self.root, self.game_config)
         self.endless_snake_canvas.pack(expand=True, fill="both")

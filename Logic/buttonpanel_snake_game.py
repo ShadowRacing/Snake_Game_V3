@@ -86,21 +86,39 @@ class ButtonCommands:
         else:
             print("No function assigned to 'snake_length'")
 
-    def reset_high_score_command(self):
-        if 'reset_high_score' in self.functions:
-            self.functions['reset_high_score']()
+    def classic_reset_high_score_command(self):
+        if 'classic_reset_high_score' in self.functions:
+            self.functions['classic_reset_high_score']()
         else:
             print("No function assigned to 'reset_high_score'")
 
-    def reset_high_score_time_command(self):
-        if 'reset_high_score_time' in self.functions:
-            self.functions['reset_high_score_time']()
+    def classic_reset_high_score_time_command(self):
+        if 'classic_reset_high_score_time' in self.functions:
+            self.functions['classic_reset_high_score_time']()
         else:
             print("No function assigned to 'reset_high_score_time'")
 
-    def reset_high_score_snake_length_command(self):
-        if 'reset_high_score_snake_length' in self.functions:
-            self.functions['reset_high_score_snake_length']()
+    def classic_reset_high_score_snake_length_command(self):
+        if 'classic_reset_high_score_snake_length' in self.functions:
+            self.functions['classic_reset_high_score_snake_length']()
+        else:
+            print("No function assigned to 'reset_high_score_snake_length'")
+
+    def endless_reset_high_score_command(self):
+        if 'endless_reset_high_score' in self.functions:
+            self.functions['endless_reset_high_score']()
+        else:
+            print("No function assigned to 'endless_reset_high_score'")
+    
+    def endless_reset_high_score_time_command(self):
+        if 'endless_reset_high_score_time' in self.functions:
+            self.functions['endless_reset_high_score_time']()
+        else:
+            print("No function assigned to 'reset_high_score_time'")
+    
+    def endless_reset_high_score_snake_length_command(self):
+        if 'endless_reset_high_score_snake_length' in self.functions:
+            self.functions['endless_reset_high_score_snake_length']()
         else:
             print("No function assigned to 'reset_high_score_snake_length'")
 
@@ -161,7 +179,7 @@ class ClickButtonPanel:
             self.first_click_time = time.time()
         # If it's the second click, check if it's within the time limit
         elif self.home_button_clicks == 1:
-            if time.time() - self.first_click_time > 0.5:  # 2 seconds
+            if time.time() - self.first_click_time > 2:  # 2 seconds
                 # If it's not within the time limit, reset the counter
                 self.home_button_clicks = 0
                 return
@@ -211,7 +229,6 @@ class ClickButtonPanel:
                                 command=self.button_commands.snake_special_command)
         snake_special_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
 
-    # in-game buttons
     def snake_color_button(self):
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
@@ -224,29 +241,54 @@ class ClickButtonPanel:
                                 command=self.button_commands.snake_outline_command)
         snake_outline_button.grid(in_=self.button_canvas, row=7, column=0, padx=10, pady=10, sticky="w")
 
-    def snake_length_button(self):
-        snake_length_button = ctk.CTkButton(self.button_canvas, text="Snake Length", font=FONT_LIST[11],
+    def classic_snake_length_button(self):
+        classic_snake_length_button = ctk.CTkButton(self.button_canvas, text="Snake Length", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.snake_length_command)
-        snake_length_button.grid(in_=self.button_canvas, row=8, column=0, padx=10, pady=10, sticky="w")
+        classic_snake_length_button.grid(in_=self.button_canvas, row=8, column=0, padx=10, pady=10, sticky="w")
 
-    def reset_high_score_button(self):
-        reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Score\n Highscore", font=FONT_LIST[11],
+    def classic_reset_high_score_button(self):
+        classic_reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Score\n Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_high_score_command)
-        reset_high_score_button.grid(in_=self.button_canvas, row=10, column=0, padx=10, pady=10, sticky="w")
+                                command=self.button_commands.classic_reset_high_score_command)
+        classic_reset_high_score_button.grid(in_=self.button_canvas, row=10, column=0, padx=10, pady=10, sticky="w")
 
-    def reset_high_score_time_button(self):
-        reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Time\n Highscore", font=FONT_LIST[11],
+    def classic_reset_high_score_time_button(self):
+        classic_reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Time\n Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_high_score_time_command)
-        reset_high_score_button.grid(in_=self.button_canvas, row=11, column=0, padx=10, pady=10, sticky="w")
+                                command=self.button_commands.classic_reset_high_score_time_command)
+        classic_reset_high_score_button.grid(in_=self.button_canvas, row=11, column=0, padx=10, pady=10, sticky="w")
 
-    def reset_high_score_snake_length(self):
-        reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset length\n Highscore", font=FONT_LIST[11],
+    def classic_reset_high_score_snake_length(self):
+        classic_reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset length\n Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_high_score_snake_length_command)
-        reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=12, column=0, padx=10, pady=10, sticky="w")
+                                command=self.button_commands.classic_reset_high_score_snake_length_command)
+        classic_reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=12, column=0, padx=10, pady=10, sticky="w")
+
+    def endless_snake_length_button(self):
+        endless_snake_length_button = ctk.CTkButton(self.button_canvas, text="Snake Length", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.snake_length_command)
+        endless_snake_length_button.grid(in_=self.button_canvas, row=8, column=0, padx=10, pady=10, sticky="w")
+
+    def endless_reset_high_score_button(self):
+        endless_reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Score\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.endless_reset_high_score_command)
+        endless_reset_high_score_button.grid(in_=self.button_canvas, row=10, column=0, padx=10, pady=10, sticky="w")
+
+    def endless_reset_high_score_time_button(self):
+        endless_reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Time\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.endless_reset_high_score_time_command)
+        endless_reset_high_score_button.grid(in_=self.button_canvas, row=11, column=0, padx=10, pady=10, sticky="w")
+
+    def endless_reset_high_score_snake_length(self):
+        endless_reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset length\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.endless_reset_high_score_snake_length_command)
+        endless_reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=12, column=0, padx=10, pady=10, sticky="w")
+
 
     # only in the special game mode
     def game_size_button(self):

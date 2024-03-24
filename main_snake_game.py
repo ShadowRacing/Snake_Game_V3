@@ -51,8 +51,10 @@ class SnakeGameApp:
             self.config.write(configfile)
         
         # Button press variables
-        self.button_press_variable_high_score = 0
-        self.button_press_variable_high_score_time = 0
+        self.classic_button_press_variable_high_score = 0
+        self.classic_button_press_variable_high_score_time = 0
+        self.endless_button_press_variable_high_score = 0
+        self.endless_button_press_variable_high_score_time = 0
         self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5))
 
         # Creating the main canvas for the app
@@ -81,10 +83,13 @@ class SnakeGameApp:
             'return_home': self.return_home,
             'confirm_quit': self.confirm_quit,
             'destroy_canvas': self.destroy_canvas,
-            'reset_button_press_variable': self.reset_button_press_variable,
-            'reset_high_score_snake_length': self.reset_snake_length,
-            'reset_high_score_time': self.reset_high_score_time,
-            'reset_high_score': self.reset_high_score,
+            'classic_reset_button_press_variable': self.classic_reset_button_press_variable,
+            'classic_reset_high_score_snake_length': self.classic_reset_snake_length,
+            'classic_reset_high_score_time': self.classic_reset_high_score_time,
+            'classic_reset_high_score': self.classic_reset_high_score,
+            'endless_reset_high_score': self.endless_reset_high_score,
+            'endless_reset_high_score_time': self.endless_reset_high_score_time,
+            'endless_reset_snake_length': self.endless_reset_snake_length,
             'open_settings': self.open_settings,
             'open_info': self.open_info,
             'snake_special': self.snake_special,
@@ -124,14 +129,15 @@ class SnakeGameApp:
         self.create_button_panel.settings_button()
         self.create_button_panel.quit_button()
         self.game_labels_panel.classic_delete_labels()
-        self.reset_button_press_variable()
+        self.classic_reset_button_press_variable()
+        self.endless_reset_button_press_variable()
     
     def classic_snake(self):
         # Hide the main canvas
         self.original_main_canvas.pack_forget()
 
         # Reset the button press variable
-        self.reset_button_press_variable()
+        self.classic_reset_button_press_variable()
 
         # Create a new canvas for the classic snake game
         self.game_config.set_configuration("classic_snake")
@@ -168,9 +174,9 @@ class SnakeGameApp:
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
-        self.create_button_panel.reset_high_score_button()
-        self.create_button_panel.reset_high_score_time_button()
-        self.create_button_panel.reset_high_score_snake_length()
+        self.create_button_panel.classic_reset_high_score_button()
+        self.create_button_panel.classic_reset_high_score_time_button()
+        self.create_button_panel.classic_reset_high_score_snake_length()
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_classic_snake_label()
@@ -181,7 +187,7 @@ class SnakeGameApp:
         self.original_main_canvas.pack_forget()
 
         # Reset the button press variable
-        self.reset_button_press_variable()
+        self.classic_reset_button_press_variable()
 
         self.game_config.set_configuration("snake_endless")
         self.endless_snake_canvas = Snake_endless(self.root, 
@@ -217,6 +223,9 @@ class SnakeGameApp:
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
+        self.create_button_panel.endless_reset_high_score_button()
+        self.create_button_panel.endless_reset_high_score_time_button()
+        self.create_button_panel.endless_reset_high_score_snake_length()
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_endless_snake_label()
@@ -226,7 +235,7 @@ class SnakeGameApp:
         self.original_main_canvas.pack_forget()
 
         # Reset the button press variable
-        self.reset_button_press_variable()
+        self.endless_reset_button_press_variable()
 
 
         self.game_config.set_configuration("snake_special")
@@ -260,11 +269,6 @@ class SnakeGameApp:
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
-        self.create_button_panel.snake_color_button()
-        self.create_button_panel.snake_outline_button()
-        self.create_button_panel.game_size_button()
-        self.create_button_panel.snake_length_button()
-        self.create_button_panel.snake_speed_button()
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_special_snake_label()
@@ -362,11 +366,11 @@ class SnakeGameApp:
         self.settings_labels.create_theme_label()
         self.settings_labels.snake_color_options_label()
     
-    def reset_high_score(self):
-        if self.button_press_variable_high_score == 0:
+    def classic_reset_high_score(self):
+        if self.classic_button_press_variable_high_score == 0:
             self.first_button_press_time = time.time()
-            self.button_press_variable_high_score += 1
-        elif self.button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            self.classic_button_press_variable_high_score += 1
+        elif self.classic_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             self.config.read(self.config_path)
             self.config.set('Classic_Snake_Values', 'high_score', '0')
             with open('config.ini', 'w') as configfile:
@@ -374,14 +378,14 @@ class SnakeGameApp:
             self.config.read(self.config_path)
             self.classic_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore reset to 0")
-            self.button_press_variable_high_score = 0
+            self.classic_button_press_variable_high_score = 0
             self.first_button_press_time = None
 
-    def reset_high_score_time(self):
-        if self.button_press_variable_high_score_time == 0:
+    def classic_reset_high_score_time(self):
+        if self.classic_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
-            self.button_press_variable_high_score_time += 1
-        elif self.button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            self.classic_button_press_variable_high_score_time += 1
+        elif self.classic_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             self.config.read(self.config_path)
             self.config.set('Classic_Snake_Values', 'high_score_time', '0')
             with open('config.ini', 'w') as configfile:
@@ -389,14 +393,14 @@ class SnakeGameApp:
             self.config.read(self.config_path)
             self.classic_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore time reset to 0")
-            self.button_press_variable_high_score_time = 0
+            self.classic_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
     
-    def reset_snake_length(self):
-        if self.button_press_variable_high_score_time == 0:
+    def classic_reset_snake_length(self):
+        if self.classic_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
-            self.button_press_variable_high_score_time += 1
-        elif self.button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            self.classic_button_press_variable_high_score_time += 1
+        elif self.classic_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             self.config.read(self.config_path)
             self.config.set('Classic_Snake_Values', 'snake_length_high_score', '0')
             with open('config.ini', 'w') as configfile:
@@ -404,12 +408,61 @@ class SnakeGameApp:
             self.config.read(self.config_path)
             self.classic_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore time reset to 0")
-            self.button_press_variable_high_score_time = 0
+            self.classic_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
     
-    def reset_button_press_variable(self):
-        self.button_press_variable_high_score = 0
-        self.button_press_variable_high_score_time = 0
+    def classic_reset_button_press_variable(self):
+        self.classic_button_press_variable_high_score = 0
+        self.classic_button_press_variable_high_score_time = 0
+
+    def endless_reset_high_score(self):
+        if self.endless_button_press_variable_high_score == 0:
+            self.first_button_press_time = time.time()
+            self.endless_button_press_variable_high_score += 1
+        elif self.endless_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            self.config.read(self.config_path)
+            self.config.set('Endless_Snake_Values', 'high_score', '0')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+            self.config.read(self.config_path)
+            self.endless_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore reset to 0")
+            self.endless_button_press_variable_high_score = 0
+            self.first_button_press_time = None
+
+    def endless_reset_high_score_time(self):
+        if self.endless_button_press_variable_high_score_time == 0:
+            self.first_button_press_time = time.time()
+            self.endless_button_press_variable_high_score_time += 1
+        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            self.config.read(self.config_path)
+            self.config.set('Endless_Snake_Values', 'high_score_time', '0')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+            self.config.read(self.config_path)
+            self.endless_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore time reset to 0")
+            self.endless_button_press_variable_high_score_time = 0
+            self.first_button_press_time = None
+    
+    def endless_reset_snake_length(self):
+        if self.endless_button_press_variable_high_score_time == 0:
+            self.first_button_press_time = time.time()
+            self.endless_button_press_variable_high_score_time += 1
+        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            self.config.read(self.config_path)
+            self.config.set('Endless_Snake_Values', 'snake_length_high_score', '0')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+            self.config.read(self.config_path)
+            self.endless_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore time reset to 0")
+            self.endless_button_press_variable_high_score_time = 0
+            self.first_button_press_time = None
+    
+    def endless_reset_button_press_variable(self):
+        self.endless_button_press_variable_high_score = 0
+        self.endless_button_press_variable_high_score_time = 0
 
     # Destroy the current canvas
     def destroy_canvas(self, canvas, canvas_name):
@@ -429,6 +482,8 @@ class SnakeGameApp:
     def return_home(self):
         if self.main_canvas == self.classic_snake_canvas:
             self.classic_snake_canvas.delete_game_labels()
+        if self.main_canvas == self.endless_snake_canvas:
+            self.endless_snake_canvas.delete_game_labels_()
         time.sleep(0.1)
         # Destroy all game canvases
         self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")

@@ -44,7 +44,7 @@ class Snake_endless(ctk.CTkCanvas):
         self.snake = Snake(self.logfile, self.snake_canvas, game_config)
         self.food = ClassicFood(self.logfile, self.snake_canvas, game_config)
         self.game_labels_panel_2 = GameLabelsPanel(self.logfile, parent, self.game_config)
-        self.game_config = GameConfig(self.logfile, 'classic_snake')
+        self.game_config = GameConfig(self.logfile, 'snake_endless')
         self.game_labels_panel_2.endless_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
 
@@ -101,9 +101,7 @@ class Snake_endless(ctk.CTkCanvas):
         self.start_screen()
         self.bind_and_unbind_keys()
 
-
-                 
-    def delete_game_labels(self):
+    def delete_game_labels_(self):
         self.game_labels_panel_2.endless_delete_labels()
     
     def update_high_score_labels_(self):

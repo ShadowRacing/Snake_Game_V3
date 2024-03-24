@@ -162,8 +162,16 @@ class GameLabelsPanel:
         self.config.read(self.config_path)
 
         #Get the score from the config file
-        self.classic_score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
-        self.endless_score_label_ = self.config.get('Endless_Snake_Values', 'score', fallback='0')
+        self.classic_score_label_ = self.config.set('Classic_Snake_Values', 'score', '0')
+        self.classic_time_label_ = self.config.set('Classic_Snake_Values', 'time_score', '0')
+        self.classic_snake_length_label_ = self.config.set('Classic_Snake_Values', 'snake_length', '0')
+        self.endless_score_label_ = self.config.set('Endless_Snake_Values', 'score', '0')
+        self.endless_time_label_ = self.config.set('Endless_Snake_Values', 'time_score', '0')
+        self.endless_snake_length_label_ = self.config.set('Endless_Snake_Values', 'snake_length', '0')
+        
+        with open('config.ini', 'w') as configfile:
+            self.config.write(configfile)
+
 
     def classic_create_game_labels(self):
         self.classic_create_score_label()

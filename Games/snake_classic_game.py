@@ -80,7 +80,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
 
         if not self.config.has_option('Classic_Snake_Values', 'high_score_time'):
             self.config.set('Classic_Snake_Values','high_score_time', '0')
-            print("high_score_time added")
+            self.logfile.log_game_event("high_score_time added")
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
 
@@ -193,7 +193,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         if not self.paused:
             self.current_time = time.time()
             self.total_time_played = int(self.current_time - self.start_time - self.total_paused_time)
-            print(self.total_time_played)
+            self.logfile.log_game_event(self.total_time_played)
             self.config.set('Classic_Snake_Values', 'time_score', str(self.total_time_played))
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
@@ -237,7 +237,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
 
         self.current_time = time.time()
         self.total_time_played = int(self.current_time - self.start_time)
-        print(self.total_time_played)
         self.config.set('Classic_Snake_Values', 'time_score', str(self.total_time_played))
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)

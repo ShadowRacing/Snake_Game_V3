@@ -38,15 +38,15 @@ class ThemeUpdater:
 
         # Set the 'initial_theme' option to the current theme
         current_theme = self.config.get('Settings', 'theme', fallback='Default')
-        print(current_theme)
+        self.logfile.log_game_event(current_theme)
         self.config.set('Settings', 'initial_theme', current_theme)
 
         # Write the changes to the config file
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
 
-        print(f"Updated initial_theme in config.ini to {current_theme}")
-        print(f"Current initial_theme in config.ini: {self.config.get('Settings', 'initial_theme')}")
+        self.logfile.log_game_event(f"Updated initial_theme in config.ini to {current_theme}")
+        self.logfile.log_game_event(f"Current initial_theme in config.ini: {self.config.get('Settings', 'initial_theme')}")
         # The load_theme method loads a theme from a JSON file. If the file is not found, it logs an error and uses the default theme.
 
     def load_theme(self, theme_name):

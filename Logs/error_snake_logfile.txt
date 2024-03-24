@@ -251,3 +251,501 @@ TypeError: ConfigParser.add_section() takes 2 positional arguments but 3 were gi
 
 
 
+[2024-03-24 13:12:50] 
+
+
+[2024-03-24 13:12:50] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 569, in endless_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+[2024-03-24 13:15:46] 
+
+
+[2024-03-24 13:15:46] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+[2024-03-24 13:15:53] 
+
+
+[2024-03-24 13:15:53] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 569, in endless_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+[2024-03-24 13:22:40] 
+
+
+[2024-03-24 13:22:40] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 569, in endless_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+[2024-03-24 13:23:11] 
+
+
+[2024-03-24 13:23:11] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
+    self.endless_snake_canvas.delete_game_labels_()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
+[2024-03-24 13:23:33] No errors occurred
+[2024-03-24 13:23:33] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:24:08] 
+
+
+[2024-03-24 13:24:08] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+[2024-03-24 13:25:45] 
+
+
+[2024-03-24 13:25:45] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CTkCanvas' object has no attribute 'log_game_event'
+[2024-03-24 13:26:42] 
+
+
+[2024-03-24 13:26:42] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CTkCanvas' object has no attribute 'log_game_event'
+[2024-03-24 13:26:44] No errors occurred
+[2024-03-24 13:26:44] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:28:34] 
+
+
+[2024-03-24 13:28:34] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.logfile.log_game_event("delete_labels method called")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CTkCanvas' object has no attribute 'log_game_event'
+[2024-03-24 13:28:40] No errors occurred
+[2024-03-24 13:28:40] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:29:14] 
+
+
+[2024-03-24 13:29:14] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    self.classic_score_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'classic_score_label'
+[2024-03-24 13:29:18] No errors occurred
+[2024-03-24 13:29:18] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:31:56] 
+
+
+[2024-03-24 13:31:56] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 394, in classic_delete_labels
+    self.classic_score_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-03-24 13:31:57] No errors occurred
+[2024-03-24 13:31:57] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:34:00] 
+
+
+[2024-03-24 13:34:00] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    if self.classic_score_label is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'classic_score_label'
+[2024-03-24 13:34:01] No errors occurred
+[2024-03-24 13:34:01] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:35:17] 
+
+
+[2024-03-24 13:35:17] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
+    if self.classic_score_label is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'classic_score_label'
+[2024-03-24 13:35:18] No errors occurred
+[2024-03-24 13:35:18] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:37:56] 
+
+
+[2024-03-24 13:37:56] Started the Error Log File
+[2024-03-24 13:37:57] No errors occurred
+[2024-03-24 13:37:57] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:38:04] 
+
+
+[2024-03-24 13:38:04] Started the Error Log File
+[2024-03-24 13:38:07] No errors occurred
+[2024-03-24 13:38:07] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:38:22] 
+
+
+[2024-03-24 13:38:22] Started the Error Log File
+[2024-03-24 13:38:23] No errors occurred
+[2024-03-24 13:38:23] Closed the Error Log File
+
+
+
+
+[2024-03-24 13:40:00] 
+
+
+[2024-03-24 13:40:00] Started the Error Log File

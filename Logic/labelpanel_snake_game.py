@@ -1,5 +1,5 @@
 import customtkinter as ctk
-import configparser, time
+import configparser, traceback
 from os import path
 from Configuration.constants_snake_game import FONT_LIST
 
@@ -23,11 +23,14 @@ class NameOffFrameLabelPanel:
         }
     
     def create_label_with_border(self, text):
-        label_border = ctk.CTkFrame(self.label_canvas, border_color='Grey10', border_width=5)
-        label = ctk.CTkLabel(label_border, text=text, font=FONT_LIST[20])
-        label.pack(fill="both", expand=True, padx=1, pady=1)
-        label_border.pack(side="bottom", padx=10, pady=10, fill="x")
-        return label
+        try:
+            label_border = ctk.CTkFrame(self.label_canvas, border_color='Grey10', border_width=5)
+            label = ctk.CTkLabel(label_border, text=text, font=FONT_LIST[20])
+            label.pack(fill="both", expand=True, padx=1, pady=1)
+            label_border.pack(side="bottom", padx=10, pady=10, fill="x")
+            return label
+        except:
+            traceback.print_exc()
 
     def create_label_canvas(self, label_type):
         if self.create_label_canvas_flag:
@@ -107,44 +110,73 @@ class SettingsOptionButtonLabels:
         self.snake_color_label.place(x=800, y=10)
 
     def create_theme_label(self):
-        config_dir = path.dirname(__file__)
-        config_path = path.join(config_dir, '..','config.ini')
-        config = configparser.ConfigParser()
-        config.read(config_path)
+        try:
+            config_dir = path.dirname(__file__)
+            config_path = path.join(config_dir, '..','config.ini')
+            config = configparser.ConfigParser()
+            config.read(config_path)
 
-        current_theme = config.get('Settings', 'theme')
-        initial_theme = config.get('Settings', 'initial_theme')
+            current_theme = config.get('Settings', 'theme')
+            initial_theme = config.get('Settings', 'initial_theme')
+        except:
+            traceback.print_exc()
 
         # Check if the 'label_needed' option exists, if not, add it
-        if not config.has_option('Settings', 'label_needed'):
-            config.set('Settings', 'label_needed', 'False')
+        try:    
+            if not config.has_option('Settings', 'label_needed'):
+                config.set('Settings', 'label_needed', 'False')
+        except:
+            traceback.print_exc()
 
-        if current_theme != initial_theme:
-            if hasattr(self, 'restart_game_label'):
-                self.restart_game_label.destroy()
-            self.restart_game_label = ctk.CTkLabel(self.settings_canvas, text="You need to restart to apply the theme", font=FONT_LIST[11])
-            self.restart_game_label.place(x=400, y=100)
-            config.set('Settings', 'label_needed', 'True')
-        else:
-            if hasattr(self, 'restart_game_label'):
-                self.restart_game_label.destroy()
-                del self.restart_game_label
-            config.set('Settings', 'label_needed', 'False')
+        try:
+            if current_theme != initial_theme:
+                if hasattr(self, 'restart_game_label'):
+                    self.restart_game_label.destroy()
+                self.restart_game_label = ctk.CTkLabel(self.settings_canvas, text="You need to restart to apply the theme", font=FONT_LIST[11])
+                self.restart_game_label.place(x=400, y=100)
+                config.set('Settings', 'label_needed', 'True')
+            else:
+                if hasattr(self, 'restart_game_label'):
+                    self.restart_game_label.destroy()
+                    del self.restart_game_label
+                config.set('Settings', 'label_needed', 'False')
+        except:
+            traceback.print_exc()
 
-        # Write the changes to the config file
-        with open(config_path, 'w') as configfile:
-            config.write(configfile)
+        try:
+            # Write the changes to the config file
+            with open(config_path, 'w') as configfile:
+                config.write(configfile)
+        except: 
+            traceback.print_exc()
 
     def set_create_label_canvas_flag(self, value=True):
         self.create_label_canvas_flag = value
 
 class GameLabelsPanel:
     def __init__(self, logfile, snake_canvas, game_config):
-        self.lofile = logfile
+        self.logfile = logfile
         self.snake_canvas = snake_canvas
         self.game_config = game_config
         self.width = game_config.GAME_WIDTH
         self.height = game_config.GAME_HEIGHT
+
+        self.classic_score_label = None
+        self.classic_high_score_label = None
+        self.classic_time_label = None
+        self.classic_high_score_time_label = None
+        self.classic_high_scores_label = None
+        self.classic_snake_length_label = None
+        self.classic_high_score_snake_length_label = None
+
+        self.endless_score_label = None
+        self.endless_high_score_label = None
+        self.endless_time_label = None
+        self.endless_high_score_time_label = None
+        self.endless_high_scores_label = None
+        self.endless_snake_length_label = None
+        self.endless_high_score_snake_length_label = None
+
 
         self.classic_score_label_flag = False
         self.classic_time_label_flag = False
@@ -156,22 +188,27 @@ class GameLabelsPanel:
         self.endless_high_score_label_flag = False
         self.endless_high_score_time_label_flag = True
 
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+        except:
+            traceback.print_exc()
 
         #Get the score from the config file
-        self.classic_score_label_ = self.config.set('Classic_Snake_Values', 'score', '0')
-        self.classic_time_label_ = self.config.set('Classic_Snake_Values', 'time_score', '0')
-        self.classic_snake_length_label_ = self.config.set('Classic_Snake_Values', 'snake_length', '0')
-        self.endless_score_label_ = self.config.set('Endless_Snake_Values', 'score', '0')
-        self.endless_time_label_ = self.config.set('Endless_Snake_Values', 'time_score', '0')
-        self.endless_snake_length_label_ = self.config.set('Endless_Snake_Values', 'snake_length', '0')
-        
-        with open('config.ini', 'w') as configfile:
-            self.config.write(configfile)
-
+        try:
+            self.classic_score_label_ = self.config.set('Classic_Snake_Values', 'score', '0')
+            self.classic_time_label_ = self.config.set('Classic_Snake_Values', 'time_score', '0')
+            self.classic_snake_length_label_ = self.config.set('Classic_Snake_Values', 'snake_length', '0')
+            self.endless_score_label_ = self.config.set('Endless_Snake_Values', 'score', '0')
+            self.endless_time_label_ = self.config.set('Endless_Snake_Values', 'time_score', '0')
+            self.endless_snake_length_label_ = self.config.set('Endless_Snake_Values', 'snake_length', '0')
+            
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        except:
+            traceback.print_exc()
 
     def classic_create_game_labels(self):
         self.classic_create_score_label()
@@ -205,14 +242,17 @@ class GameLabelsPanel:
         self.classic_score_label.place(x=200, y=50)
     
     def classic_update_score_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.classic_score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
-        #update the score label on the screen
-        self.classic_score_label.configure(text=f"Score: {self.classic_score_label_} Food eaten")
-    
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.classic_score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
+            #update the score label on the screen
+            self.classic_score_label.configure(text=f"Score: {self.classic_score_label_} Food eaten")
+        except:
+            traceback.print_exc()
+
     def classic_create_high_score_label(self):
         self.classic_high_score_label = ctk.CTkLabel(self.snake_canvas,
                                              height=30,
@@ -226,13 +266,16 @@ class GameLabelsPanel:
         self.classic_high_score_label.place(x=200, y=550)
     
     def classic_update_high_score_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.classic_high_score_label_ = self.config.get('Classic_Snake_Values', 'high_score', fallback='0')
-        #update the high score label on the screen
-        self.classic_high_score_label.configure(text=f"Score: {self.classic_high_score_label_} Food eaten")
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.classic_high_score_label_ = self.config.get('Classic_Snake_Values', 'high_score', fallback='0')
+            #update the high score label on the screen
+            self.classic_high_score_label.configure(text=f"Score: {self.classic_high_score_label_} Food eaten")
+        except:
+            traceback.print_exc()
 
     def classic_create_time_label(self):
         self.classic_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -247,13 +290,16 @@ class GameLabelsPanel:
         self.classic_time_label.place(x=200, y=100)
 
     def classic_update_time_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.classic_time_label_ = self.config.get('Classic_Snake_Values', 'time_score', fallback='0')
-        #update the time label on the screen
-        self.classic_time_label.configure(text=f"Time: {self.classic_time_label_} Seconds")
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.classic_time_label_ = self.config.get('Classic_Snake_Values', 'time_score', fallback='0')
+            #update the time label on the screen
+            self.classic_time_label.configure(text=f"Time: {self.classic_time_label_} Seconds")
+        except:
+            traceback.print_exc()
 
     def classic_create_high_score_time_label(self):
         self.classic_high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -268,13 +314,16 @@ class GameLabelsPanel:
         self.classic_high_score_time_label.place(x=200, y=600)
 
     def classic_update_high_score_time_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.classic_high_score_time_label_ = self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0')
-        #update the high score time label on the screen
-        self.classic_high_score_time_label.configure(text=f"Score Time: {self.classic_high_score_time_label_} Seconds")
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.classic_high_score_time_label_ = self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0')
+            #update the high score time label on the screen
+            self.classic_high_score_time_label.configure(text=f"Score Time: {self.classic_high_score_time_label_} Seconds")
+        except:
+            traceback.print_exc()
 
     def classic_create_snake_length_label(self):
         self.classic_snake_length_label = ctk.CTkLabel(self.snake_canvas,
@@ -289,13 +338,16 @@ class GameLabelsPanel:
         self.classic_snake_length_label.place(x=200, y=150)
     
     def classic_update_snake_length_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.classic_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length', fallback='0')
-        #update the high score time label on the screen
-        self.classic_snake_length_label.configure(text=f"Snake Length: {self.classic_snake_length_label_}")
+        try:   
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.classic_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length', fallback='0')
+            #update the high score time label on the screen
+            self.classic_snake_length_label.configure(text=f"Snake Length: {self.classic_snake_length_label_}")
+        except:
+            traceback.print_exc()    
 
     def classic_create_high_score_snake_length_label(self):
         self.classic_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
@@ -310,13 +362,16 @@ class GameLabelsPanel:
         self.classic_high_score_snake_length_label.place(x=200, y=650)
     
     def classic_update_high_score_snake_length_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.classic_high_score_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0')
-        #update the high score time label on the screen
-        self.classic_high_score_snake_length_label.configure(text=f"Snake Length: {self.classic_high_score_snake_length_label_}")
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.classic_high_score_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0')
+            #update the high score time label on the screen
+            self.classic_high_score_snake_length_label.configure(text=f"Snake Length: {self.classic_high_score_snake_length_label_}")
+        except:
+            traceback.print_exc()
 
     def classic_create_high_scores_label(self):
         self.classic_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
@@ -336,16 +391,22 @@ class GameLabelsPanel:
 
     def classic_delete_labels(self):
         try:
-            print("delete_labels method called")
-            self.classic_score_label.destroy()
-            self.classic_time_label.destroy()
-            self.classic_high_score_label.destroy()
-            self.classic_high_score_time_label.destroy()
-            self.classic_high_scores_label.destroy()
-            self.classic_snake_length_label.destroy()
-            self.classic_high_score_snake_length_label.destroy()
-        except Exception as e:
-            print(f"Error occurred: {e}")
+            if self.classic_score_label is not None:
+                self.classic_score_label.destroy()
+            if self.classic_time_label is not None:
+                self.classic_time_label.destroy()
+            if self.classic_high_score_label is not None:
+                self.classic_high_score_label.destroy()
+            if self.classic_high_score_time_label is not None:
+                self.classic_high_score_time_label.destroy()
+            if self.classic_high_scores_label is not None:
+                self.classic_high_scores_label.destroy()
+            if self.classic_snake_length_label is not None:
+                self.classic_snake_length_label.destroy()
+            if self.classic_high_score_snake_length_label is not None:
+                self.classic_high_score_snake_length_label.destroy()
+        except:
+            traceback.print_exc()
 
     def endless_create_game_labels(self):
         self.endless_create_score_label()
@@ -379,14 +440,17 @@ class GameLabelsPanel:
         self.endless_score_label.place(x=200, y=50)
     
     def endless_update_score_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.endless_score_label_ = self.config.get('Endless_Snake_Values', 'score', fallback='0')
-        #update the score label on the screen
-        self.endless_score_label.configure(text=f"Score: {self.endless_score_label_} Food eaten")
-    
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.endless_score_label_ = self.config.get('Endless_Snake_Values', 'score', fallback='0')
+            #update the score label on the screen
+            self.endless_score_label.configure(text=f"Score: {self.endless_score_label_} Food eaten")
+        except:
+            traceback.print_exc()
+
     def endless_create_high_score_label(self):
         self.endless_high_score_label = ctk.CTkLabel(self.snake_canvas,
                                              height=30,
@@ -400,13 +464,16 @@ class GameLabelsPanel:
         self.endless_high_score_label.place(x=200, y=550)
     
     def endless_update_high_score_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.endless_high_score_label_ = self.config.get('endless_Snake_Values', 'high_score', fallback='0')
-        #update the high score label on the screen
-        self.endless_high_score_label.configure(text=f"Score: {self.endless_high_score_label_} Food eaten")
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.endless_high_score_label_ = self.config.get('endless_Snake_Values', 'high_score', fallback='0')
+            #update the high score label on the screen
+            self.endless_high_score_label.configure(text=f"Score: {self.endless_high_score_label_} Food eaten")
+        except:
+            traceback.print_exc()
 
     def endless_create_time_label(self):
         self.endless_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -421,13 +488,16 @@ class GameLabelsPanel:
         self.endless_time_label.place(x=200, y=100)
 
     def endless_update_time_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.endless_time_label_ = self.config.get('Endless_Snake_Values', 'time_score', fallback='0')
-        #update the time label on the screen
-        self.endless_time_label.configure(text=f"Time: {self.endless_time_label_} Seconds")
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.endless_time_label_ = self.config.get('Endless_Snake_Values', 'time_score', fallback='0')
+            #update the time label on the screen
+            self.endless_time_label.configure(text=f"Time: {self.endless_time_label_} Seconds")
+        except:
+            traceback.print_exc()
 
     def endless_create_high_score_time_label(self):
         self.endless_high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -442,13 +512,16 @@ class GameLabelsPanel:
         self.endless_high_score_time_label.place(x=200, y=600)
 
     def endless_update_high_score_time_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.endless_high_score_time_label_ = self.config.get('Endless_Snake_Values', 'high_score_time', fallback='0')
-        #update the high score time label on the screen
-        self.endless_high_score_time_label.configure(text=f"Score Time: {self.endless_high_score_time_label_} Seconds")
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.endless_high_score_time_label_ = self.config.get('Endless_Snake_Values', 'high_score_time', fallback='0')
+            #update the high score time label on the screen
+            self.endless_high_score_time_label.configure(text=f"Score Time: {self.endless_high_score_time_label_} Seconds")
+        except:
+            traceback.print_exc()
 
     def endless_create_snake_length_label(self):
         self.endless_snake_length_label = ctk.CTkLabel(self.snake_canvas,
@@ -463,13 +536,16 @@ class GameLabelsPanel:
         self.endless_snake_length_label.place(x=200, y=150)
     
     def endless_update_snake_length_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.endless_snake_length_label_ = self.config.get('Endless_Snake_Values', 'snake_length', fallback='0')
-        #update the high score time label on the screen
-        self.endless_snake_length_label.configure(text=f"Snake Length: {self.endless_snake_length_label_}")
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.endless_snake_length_label_ = self.config.get('Endless_Snake_Values', 'snake_length', fallback='0')
+            #update the high score time label on the screen
+            self.endless_snake_length_label.configure(text=f"Snake Length: {self.endless_snake_length_label_}")
+        except:
+            traceback.print_exc()
 
     def endless_create_high_score_snake_length_label(self):
         self.endless_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
@@ -484,13 +560,16 @@ class GameLabelsPanel:
         self.endless_high_score_snake_length_label.place(x=200, y=650)
     
     def endless_update_high_score_snake_length_label(self):
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..', 'config.ini')
-        self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
-        self.endless_high_score_snake_length_label_ = self.config.get('Endless_Snake_Values', 'snake_length_high_score', fallback='0')
-        #update the high score time label on the screen
-        self.endless_high_score_snake_length_label.configure(text=f"Snake Length: {self.endless_high_score_snake_length_label_}")
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.endless_high_score_snake_length_label_ = self.config.get('Endless_Snake_Values', 'snake_length_high_score', fallback='0')
+            #update the high score time label on the screen
+            self.endless_high_score_snake_length_label.configure(text=f"Snake Length: {self.endless_high_score_snake_length_label_}")
+        except:
+            traceback.print_exc()
 
     def endless_create_high_scores_label(self):
         self.endless_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
@@ -510,14 +589,19 @@ class GameLabelsPanel:
 
     def endless_delete_labels(self):
         try:
-            print("delete_labels method called")
-            self.endless_score_label.destroy()
-            self.endless_time_label.destroy()
-            self.endless_high_score_label.destroy()
-            self.endless_high_score_time_label.destroy()
-            self.endless_high_scores_label.destroy()
-            self.endless_snake_length_label.destroy()
-            self.endless_high_score_snake_length_label.destroy()
-        except Exception as e:
-            print(f"Error occurred: {e}")
-
+            if self.endless_score_label is not None:
+                self.endless_score_label.destroy()
+            if self.endless_time_label is not None:
+                self.endless_time_label.destroy()
+            if self.endless_high_score_label is not None:
+                self.endless_high_score_label.destroy()
+            if self.endless_high_score_time_label is not None:
+                self.endless_high_score_time_label.destroy()
+            if self.endless_high_scores_label is not None:
+                self.endless_high_scores_label.destroy()
+            if self.endless_snake_length_label is not None:
+                self.endless_snake_length_label.destroy()
+            if self.endless_high_score_snake_length_label is not None:
+                self.endless_high_score_snake_length_label.destroy()
+        except:
+            traceback.print_exc()

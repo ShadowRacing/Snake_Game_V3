@@ -4,7 +4,7 @@
 
 
 # Importing necessary modules
-import customtkinter as ctk, configparser, time
+import customtkinter as ctk, configparser, time, traceback
 from os import path
 
 # Importing necessary modules from other folders
@@ -13,7 +13,6 @@ from Themes.theme_updater_snake_game import ThemeUpdater
 from Configuration.constants_snake_game import GameConstants, FONT_LIST, COLORS_DICT
 from Logic.Screen_size_Changer_snake_game import Screen_size
 from Logic.labelpanel_snake_game import SettingsOptionButtonLabels
-
 
 class ButtonCommands:
     def __init__(self, logfile, functions):
@@ -24,122 +23,121 @@ class ButtonCommands:
         if 'return_home' in self.functions:
             self.functions['return_home']()
         else:
-            print("No function assigned to 'home'")
+            self.logfile.log_game_event("No function assigned to 'home'")
 
     def quit_command(self):
         if 'confirm_quit' in self.functions:
             self.functions['confirm_quit']()
         else:
-            print("No function assigned to 'confirm_quit'")
+            self.logfile.log_game_event("No function assigned to 'confirm_quit'")
 
     def settings_command(self):
         if 'open_settings' in self.functions:
             self.functions['open_settings']()
         else:
-            print("No function assigned to 'open_settings'")
+            self.logfile.log_game_event("No function assigned to 'open_settings'")
 
     def info_command(self):
         if 'open_info' in self.functions:
             self.functions['open_info']()
         else:
-            print("No function assigned to 'info'")
+            self.logfile.log_game_event("No function assigned to 'info'")
 
     def patchnotes_command(self):
         if 'patchnotes' in self.functions:
             self.functions['patchnotes']()
         else:
-            print("No function assigned to 'patchnotes'")
+            self.logfile.log_game_event("No function assigned to 'patchnotes'")
 
     def classic_snake_command(self):
         if 'classic_snake' in self.functions:
             self.functions['classic_snake']()
         else:
-            print("No function assigned to 'classic_snake'")
+            self.logfile.log_game_event("No function assigned to 'classic_snake'")
 
     def snake_endless_command(self):
         if 'snake_endless' in self.functions:
             self.functions['snake_endless']()
         else:
-            print("No function assigned to 'snake_endless'")
+            self.logfile.log_game_event("No function assigned to 'snake_endless'")
 
     def snake_special_command(self):
         if 'snake_special' in self.functions:
             self.functions['snake_special']()
         else:
-            print("No function assigned to 'snake_special'")
+            self.logfile.log_game_event("No function assigned to 'snake_special'")
 
     def snake_color_command(self):
         if 'snake_color' in self.functions:
             self.functions['snake_color']()
         else:
-            print("No function assigned to 'snake_color'")
+            self.logfile.log_game_event("No function assigned to 'snake_color'")
 
     def snake_outline_command(self):
         if 'snake_outline' in self.functions:
             self.functions['snake_outline']()
         else:
-            print("No function assigned to 'snake_outline'")
+            self.logfile.log_game_event("No function assigned to 'snake_outline'")
 
     def snake_length_command(self):
         if 'snake_length' in self.functions:
             self.functions['snake_length']()
         else:
-            print("No function assigned to 'snake_length'")
+            self.logfile.log_game_event("No function assigned to 'snake_length'")
 
     def classic_reset_high_score_command(self):
         if 'classic_reset_high_score' in self.functions:
             self.functions['classic_reset_high_score']()
         else:
-            print("No function assigned to 'reset_high_score'")
+            self.logfile.log_game_event("No function assigned to 'reset_high_score'")
 
     def classic_reset_high_score_time_command(self):
         if 'classic_reset_high_score_time' in self.functions:
             self.functions['classic_reset_high_score_time']()
         else:
-            print("No function assigned to 'reset_high_score_time'")
+            self.logfile.log_game_event("No function assigned to 'reset_high_score_time'")
 
     def classic_reset_high_score_snake_length_command(self):
         if 'classic_reset_high_score_snake_length' in self.functions:
             self.functions['classic_reset_high_score_snake_length']()
         else:
-            print("No function assigned to 'reset_high_score_snake_length'")
+            self.logfile.log_game_event("No function assigned to 'reset_high_score_snake_length'")
 
     def endless_reset_high_score_command(self):
         if 'endless_reset_high_score' in self.functions:
             self.functions['endless_reset_high_score']()
         else:
-            print("No function assigned to 'endless_reset_high_score'")
+            self.logfile.log_game_event("No function assigned to 'endless_reset_high_score'")
     
     def endless_reset_high_score_time_command(self):
         if 'endless_reset_high_score_time' in self.functions:
             self.functions['endless_reset_high_score_time']()
         else:
-            print("No function assigned to 'reset_high_score_time'")
+            self.logfile.log_game_event("No function assigned to 'reset_high_score_time'")
     
     def endless_reset_high_score_snake_length_command(self):
         if 'endless_reset_high_score_snake_length' in self.functions:
             self.functions['endless_reset_high_score_snake_length']()
         else:
-            print("No function assigned to 'reset_high_score_snake_length'")
+            self.logfile.log_game_event("No function assigned to 'reset_high_score_snake_length'")
 
     def game_size_command(self):
         if 'game_size' in self.functions:
             self.functions['game_size']()
         else:
-            print("No function assigned to 'game_size'")
+            self.logfile.log_game_event("No function assigned to 'game_size'")
 
     def snake_speed_command(self):
         if 'snake_speed' in self.functions:
             self.functions['snake_speed']()
         else:
-            print("No function assigned to 'snake_speed'")
+            self.logfile.log_game_event("No function assigned to 'snake_speed'")
 
     def destroy_canvas(self):
         if 'destroy_canvas' in self.functions:
             self.functions['destroy_canvas']()
         else:
-            print("No function assigned to 'destroy_canvas'")
-
+            self.logfile.log_game_event("No function assigned to 'destroy_canvas'")
 
 # Class for creating the button panel
 class ClickButtonPanel:
@@ -314,30 +312,45 @@ class OptionButtonPanel:
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.RawConfigParser()
-        self.config.read(self.config_path)
+        try:
+            self.config.read(self.config_path)
+        except:
+            traceback.print_exc()
 
         # Setting up screen size changer
-        self.screen_size_config = self.config.get('Settings', 'screen_size', fallback='Default')
-        self.screen_size_var = ctk.StringVar()  # Variable to track the selected value
-        self.screen_size_var.set(self.screen_size_config)  # Set the default value
-        self.screen_size_changer = Screen_size(root, self.logfile, self.screen_size_var, self.config, self.screen_size_config)
+        try:
+            self.screen_size_config = self.config.get('Settings', 'screen_size', fallback='Default')
+            self.screen_size_var = ctk.StringVar()  # Variable to track the selected value
+            self.screen_size_var.set(self.screen_size_config)  # Set the default value
+            self.screen_size_changer = Screen_size(root, self.logfile, self.screen_size_var, self.config, self.screen_size_config)
+        except:
+            traceback.print_exc()
 
         # Setting up theme changer
-        self.theme_config = self.config.get('Settings', 'theme', fallback='Default')
-        self.theme_var = ctk.StringVar()  # Variable to track the selected value
-        self.theme_var.set(self.theme_config)
-        self.theme_changer = ThemeUpdater(self.logfile)
+        try:
+            self.theme_config = self.config.get('Settings', 'theme', fallback='Default')
+            self.theme_var = ctk.StringVar()  # Variable to track the selected value
+            self.theme_var.set(self.theme_config)
+            self.theme_changer = ThemeUpdater(self.logfile)
+        except:
+            traceback.print_exc()
 
         # Setting up contrast updater
-        self.contrast_config = self.config.get('Settings', 'contrast', fallback='Default')
-        self.contrast_mode = ctk.StringVar()
-        self.contrast_mode.set(self.contrast_config)
-        self.contrast_updater = UpdateContrast(self.logfile)
+        try:
+            self.contrast_config = self.config.get('Settings', 'contrast', fallback='Default')
+            self.contrast_mode = ctk.StringVar()
+            self.contrast_mode.set(self.contrast_config)
+            self.contrast_updater = UpdateContrast(self.logfile)
+        except:
+            traceback.print_exc()
 
     # Method to update the config.ini file
     def updating_config_ini(self):
-        with open(self.config_path, 'w') as configfile:
-            self.config.write(configfile)
+        try:
+            with open(self.config_path, 'w') as configfile:
+                self.config.write(configfile)
+        except:
+            traceback.print_exc()
 
     # Callback methods for handling changes in screen size, theme, and contrast
     def screen_size_callback(self, selected_value):
@@ -361,7 +374,10 @@ class OptionButtonPanel:
 
     def snake_color_callback(self, selected_value):
         # Handle snake color change
-        self.config.set('Settings', 'snake_color', selected_value)
+        try:
+            self.config.set('Settings', 'snake_color', selected_value)
+        except:
+            traceback.print_exc()
         self.updating_config_ini()
         self.snake_color_rgb = COLORS_DICT.get(selected_value)
 
@@ -375,7 +391,10 @@ class OptionButtonPanel:
                                           values=values,
                                           command=command)
         option_button.place(x=x, y=y)
-        option_button.set(config)
+        try:
+            option_button.set(config)
+        except:
+            traceback.print_exc()
 
     # Method to show the options
     def show_options(self):
@@ -409,11 +428,8 @@ class OptionButtonPanel:
                                     )
 
         # Handle exceptions appropriately
-        except Exception as e:
-            print("Error:", e)
-
-
-
+        except:
+            traceback.print_exc()
 
 # *****************************************
 # Wims Snake Button Panel File

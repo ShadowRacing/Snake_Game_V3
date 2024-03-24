@@ -474,3 +474,317 @@ delete_labels method called
 8
 8
 8
+[2024-03-24 13:12:50] Started the app
+[2024-03-24 13:12:50] Started the app
+[2024-03-24 13:12:50] Started the GameApp Class
+[2024-03-24 13:12:50] Game mode: initial config
+[2024-03-24 13:12:50] Default
+[2024-03-24 13:12:50] Updated initial_theme in config.ini to Default
+[2024-03-24 13:12:50] Current initial_theme in config.ini: Default
+[2024-03-24 13:12:50] Contrast mode set to dark
+[2024-03-24 13:12:50] Reset snake length
+[2024-03-24 13:12:50] start_screen method called
+[2024-03-24 13:12:51] Game mode: classic_snake
+[2024-03-24 13:12:51] start_game
+[2024-03-24 13:12:51] Reset snake length
+[2024-03-24 13:12:51] Game mode: classic_snake
+[2024-03-24 13:12:51] Game state: start_game
+[2024-03-24 13:12:51] Game focused
+[2024-03-24 13:12:52] Game mode: snake_endless
+[2024-03-24 13:12:52] start_game
+[2024-03-24 13:12:52] Reset snake length
+[2024-03-24 13:12:52] Game mode: snake_endless
+[2024-03-24 13:12:52] Game state: start_game
+[2024-03-24 13:12:52] Game focused
+[2024-03-24 13:15:46] Started the app
+[2024-03-24 13:15:46] Started the app
+[2024-03-24 13:15:46] Started the GameApp Class
+[2024-03-24 13:15:46] Game mode: initial config
+[2024-03-24 13:15:46] Default
+[2024-03-24 13:15:46] Updated initial_theme in config.ini to Default
+[2024-03-24 13:15:46] Current initial_theme in config.ini: Default
+[2024-03-24 13:15:46] Contrast mode set to dark
+[2024-03-24 13:15:46] Reset snake length
+[2024-03-24 13:15:46] start_screen method called
+[2024-03-24 13:15:47] Game mode: classic_snake
+[2024-03-24 13:15:47] start_game
+[2024-03-24 13:15:47] Reset snake length
+[2024-03-24 13:15:47] Game mode: classic_snake
+[2024-03-24 13:15:47] Game state: start_game
+[2024-03-24 13:15:47] Game focused
+[2024-03-24 13:15:53] Started the app
+[2024-03-24 13:15:53] Started the app
+[2024-03-24 13:15:53] Started the GameApp Class
+[2024-03-24 13:15:53] Game mode: initial config
+[2024-03-24 13:15:53] Default
+[2024-03-24 13:15:53] Updated initial_theme in config.ini to Default
+[2024-03-24 13:15:53] Current initial_theme in config.ini: Default
+[2024-03-24 13:15:53] Contrast mode set to dark
+[2024-03-24 13:15:53] Reset snake length
+[2024-03-24 13:15:53] start_screen method called
+[2024-03-24 13:15:54] Game mode: snake_endless
+[2024-03-24 13:15:54] start_game
+[2024-03-24 13:15:54] Reset snake length
+[2024-03-24 13:15:54] Game mode: snake_endless
+[2024-03-24 13:15:54] Game state: start_game
+[2024-03-24 13:15:54] Game focused
+[2024-03-24 13:22:40] Started the app
+[2024-03-24 13:22:40] Started the app
+[2024-03-24 13:22:40] Started the GameApp Class
+[2024-03-24 13:22:40] Game mode: initial config
+[2024-03-24 13:22:40] Default
+[2024-03-24 13:22:40] Updated initial_theme in config.ini to Default
+[2024-03-24 13:22:40] Current initial_theme in config.ini: Default
+[2024-03-24 13:22:40] Contrast mode set to dark
+[2024-03-24 13:22:40] Reset snake length
+[2024-03-24 13:22:40] start_screen method called
+[2024-03-24 13:22:41] Game mode: classic_snake
+[2024-03-24 13:22:41] start_game
+[2024-03-24 13:22:41] Reset snake length
+[2024-03-24 13:22:41] Game mode: classic_snake
+[2024-03-24 13:22:41] Game state: start_game
+[2024-03-24 13:22:41] Game focused
+[2024-03-24 13:22:50] Game mode: snake_endless
+[2024-03-24 13:22:50] start_game
+[2024-03-24 13:22:50] Reset snake length
+[2024-03-24 13:22:50] Game mode: snake_endless
+[2024-03-24 13:22:50] Game state: start_game
+[2024-03-24 13:22:50] Game focused
+[2024-03-24 13:23:11] Started the app
+[2024-03-24 13:23:11] Started the GameApp Class
+[2024-03-24 13:23:11] Game mode: initial config
+[2024-03-24 13:23:11] Default
+[2024-03-24 13:23:11] Updated initial_theme in config.ini to Default
+[2024-03-24 13:23:11] Current initial_theme in config.ini: Default
+[2024-03-24 13:23:11] Contrast mode set to dark
+[2024-03-24 13:23:11] Reset snake length
+[2024-03-24 13:23:11] start_screen method called
+[2024-03-24 13:23:12] Game mode: classic_snake
+[2024-03-24 13:23:12] start_game
+[2024-03-24 13:23:12] Reset snake length
+[2024-03-24 13:23:12] Game mode: classic_snake
+[2024-03-24 13:23:12] Game state: start_game
+[2024-03-24 13:23:12] Game focused
+[2024-03-24 13:23:33] Closed the app
+
+
+
+
+[2024-03-24 13:23:11] Started the app
+[2024-03-24 13:24:08] Started the app
+[2024-03-24 13:24:08] Started the app
+[2024-03-24 13:24:08] Started the GameApp Class
+[2024-03-24 13:24:08] Game mode: initial config
+[2024-03-24 13:24:08] Default
+[2024-03-24 13:24:08] Updated initial_theme in config.ini to Default
+[2024-03-24 13:24:08] Current initial_theme in config.ini: Default
+[2024-03-24 13:24:08] Contrast mode set to dark
+[2024-03-24 13:24:08] Reset snake length
+[2024-03-24 13:24:08] start_screen method called
+[2024-03-24 13:24:09] Game mode: classic_snake
+[2024-03-24 13:24:09] start_game
+[2024-03-24 13:24:09] Reset snake length
+[2024-03-24 13:24:09] Game mode: classic_snake
+[2024-03-24 13:24:09] Game state: start_game
+[2024-03-24 13:24:09] Game focused
+[2024-03-24 13:25:45] Started the app
+[2024-03-24 13:25:45] Started the app
+[2024-03-24 13:25:45] Started the GameApp Class
+[2024-03-24 13:25:45] Game mode: initial config
+[2024-03-24 13:25:45] Default
+[2024-03-24 13:25:45] Updated initial_theme in config.ini to Default
+[2024-03-24 13:25:45] Current initial_theme in config.ini: Default
+[2024-03-24 13:25:45] Contrast mode set to dark
+[2024-03-24 13:25:45] Reset snake length
+[2024-03-24 13:25:45] start_screen method called
+[2024-03-24 13:25:46] Game mode: classic_snake
+[2024-03-24 13:25:46] start_game
+[2024-03-24 13:25:46] Reset snake length
+[2024-03-24 13:25:46] Game mode: classic_snake
+[2024-03-24 13:25:46] Game state: start_game
+[2024-03-24 13:25:46] Game focused
+[2024-03-24 13:25:47] delete_labels method called
+[2024-03-24 13:25:48] Game mode: snake_endless
+[2024-03-24 13:25:48] start_game
+[2024-03-24 13:25:48] Reset snake length
+[2024-03-24 13:25:48] Game mode: snake_endless
+[2024-03-24 13:25:48] Game state: start_game
+[2024-03-24 13:25:48] Game focused
+[2024-03-24 13:25:49] delete_labels method called
+[2024-03-24 13:26:42] Started the app
+[2024-03-24 13:26:42] Started the GameApp Class
+[2024-03-24 13:26:42] Game mode: initial config
+[2024-03-24 13:26:42] Default
+[2024-03-24 13:26:42] Updated initial_theme in config.ini to Default
+[2024-03-24 13:26:42] Current initial_theme in config.ini: Default
+[2024-03-24 13:26:42] Contrast mode set to dark
+[2024-03-24 13:26:42] Reset snake length
+[2024-03-24 13:26:42] start_screen method called
+[2024-03-24 13:26:43] Game mode: classic_snake
+[2024-03-24 13:26:43] start_game
+[2024-03-24 13:26:43] Reset snake length
+[2024-03-24 13:26:43] Game mode: classic_snake
+[2024-03-24 13:26:43] Game state: start_game
+[2024-03-24 13:26:43] Game focused
+[2024-03-24 13:26:43] delete_labels method called
+[2024-03-24 13:26:44] Closed the app
+
+
+
+
+[2024-03-24 13:26:42] Started the app
+[2024-03-24 13:28:34] Started the app
+[2024-03-24 13:28:34] Started the GameApp Class
+[2024-03-24 13:28:34] Game mode: initial config
+[2024-03-24 13:28:34] Default
+[2024-03-24 13:28:34] Updated initial_theme in config.ini to Default
+[2024-03-24 13:28:34] Current initial_theme in config.ini: Default
+[2024-03-24 13:28:34] Contrast mode set to dark
+[2024-03-24 13:28:34] Reset snake length
+[2024-03-24 13:28:34] start_screen method called
+[2024-03-24 13:28:35] Game mode: snake_endless
+[2024-03-24 13:28:35] start_game
+[2024-03-24 13:28:35] Reset snake length
+[2024-03-24 13:28:35] Game mode: snake_endless
+[2024-03-24 13:28:35] Game state: start_game
+[2024-03-24 13:28:35] Game focused
+[2024-03-24 13:28:40] Closed the app
+
+
+
+
+[2024-03-24 13:28:34] Started the app
+[2024-03-24 13:29:14] Started the app
+[2024-03-24 13:29:14] Started the GameApp Class
+[2024-03-24 13:29:14] Game mode: initial config
+[2024-03-24 13:29:14] Default
+[2024-03-24 13:29:14] Updated initial_theme in config.ini to Default
+[2024-03-24 13:29:14] Current initial_theme in config.ini: Default
+[2024-03-24 13:29:14] Contrast mode set to dark
+[2024-03-24 13:29:14] Reset snake length
+[2024-03-24 13:29:14] start_screen method called
+[2024-03-24 13:29:16] Game mode: classic_snake
+[2024-03-24 13:29:16] start_game
+[2024-03-24 13:29:16] Reset snake length
+[2024-03-24 13:29:16] Game mode: classic_snake
+[2024-03-24 13:29:16] Game state: start_game
+[2024-03-24 13:29:16] Game focused
+[2024-03-24 13:29:18] Closed the app
+
+
+
+
+[2024-03-24 13:29:14] Started the app
+[2024-03-24 13:31:56] Started the app
+[2024-03-24 13:31:56] Started the GameApp Class
+[2024-03-24 13:31:56] Game mode: initial config
+[2024-03-24 13:31:56] Default
+[2024-03-24 13:31:56] Updated initial_theme in config.ini to Default
+[2024-03-24 13:31:56] Current initial_theme in config.ini: Default
+[2024-03-24 13:31:56] Contrast mode set to dark
+[2024-03-24 13:31:56] Reset snake length
+[2024-03-24 13:31:56] start_screen method called
+[2024-03-24 13:31:57] Closed the app
+
+
+
+
+[2024-03-24 13:31:56] Started the app
+[2024-03-24 13:34:00] Started the app
+[2024-03-24 13:34:00] Started the GameApp Class
+[2024-03-24 13:34:00] Game mode: initial config
+[2024-03-24 13:34:00] Default
+[2024-03-24 13:34:00] Updated initial_theme in config.ini to Default
+[2024-03-24 13:34:00] Current initial_theme in config.ini: Default
+[2024-03-24 13:34:00] Contrast mode set to dark
+[2024-03-24 13:34:00] Reset snake length
+[2024-03-24 13:34:00] start_screen method called
+[2024-03-24 13:34:01] Closed the app
+
+
+
+
+[2024-03-24 13:34:00] Started the app
+[2024-03-24 13:35:17] Started the app
+[2024-03-24 13:35:17] Started the GameApp Class
+[2024-03-24 13:35:17] Game mode: initial config
+[2024-03-24 13:35:17] Default
+[2024-03-24 13:35:17] Updated initial_theme in config.ini to Default
+[2024-03-24 13:35:17] Current initial_theme in config.ini: Default
+[2024-03-24 13:35:17] Contrast mode set to dark
+[2024-03-24 13:35:17] Reset snake length
+[2024-03-24 13:35:17] start_screen method called
+[2024-03-24 13:35:18] Closed the app
+
+
+
+
+[2024-03-24 13:35:17] Started the app
+[2024-03-24 13:37:56] Started the app
+[2024-03-24 13:37:56] Started the GameApp Class
+[2024-03-24 13:37:56] Game mode: initial config
+[2024-03-24 13:37:56] Default
+[2024-03-24 13:37:56] Updated initial_theme in config.ini to Default
+[2024-03-24 13:37:56] Current initial_theme in config.ini: Default
+[2024-03-24 13:37:56] Contrast mode set to dark
+[2024-03-24 13:37:56] Reset snake length
+[2024-03-24 13:37:56] start_screen method called
+[2024-03-24 13:37:57] Closed the app
+
+
+
+
+[2024-03-24 13:37:56] Started the app
+[2024-03-24 13:38:04] Started the app
+[2024-03-24 13:38:04] Started the GameApp Class
+[2024-03-24 13:38:04] Game mode: initial config
+[2024-03-24 13:38:04] Default
+[2024-03-24 13:38:04] Updated initial_theme in config.ini to Default
+[2024-03-24 13:38:04] Current initial_theme in config.ini: Default
+[2024-03-24 13:38:04] Contrast mode set to dark
+[2024-03-24 13:38:04] Reset snake length
+[2024-03-24 13:38:04] start_screen method called
+[2024-03-24 13:38:05] Game mode: classic_snake
+[2024-03-24 13:38:05] start_game
+[2024-03-24 13:38:05] Reset snake length
+[2024-03-24 13:38:05] Game mode: classic_snake
+[2024-03-24 13:38:05] Game state: start_game
+[2024-03-24 13:38:05] Game focused
+[2024-03-24 13:38:07] Closed the app
+
+
+
+
+[2024-03-24 13:38:04] Started the app
+[2024-03-24 13:38:22] Started the app
+[2024-03-24 13:38:22] Started the GameApp Class
+[2024-03-24 13:38:22] Game mode: initial config
+[2024-03-24 13:38:22] Default
+[2024-03-24 13:38:22] Updated initial_theme in config.ini to Default
+[2024-03-24 13:38:22] Current initial_theme in config.ini: Default
+[2024-03-24 13:38:22] Contrast mode set to dark
+[2024-03-24 13:38:22] Reset snake length
+[2024-03-24 13:38:22] start_screen method called
+[2024-03-24 13:38:23] Closed the app
+
+
+
+
+[2024-03-24 13:38:22] Started the app
+[2024-03-24 13:40:00] Started the app
+[2024-03-24 13:40:00] Started the app
+[2024-03-24 13:40:00] Started the GameApp Class
+[2024-03-24 13:40:00] Game mode: initial config
+[2024-03-24 13:40:00] Default
+[2024-03-24 13:40:00] Updated initial_theme in config.ini to Default
+[2024-03-24 13:40:00] Current initial_theme in config.ini: Default
+[2024-03-24 13:40:00] Contrast mode set to dark
+[2024-03-24 13:40:00] Reset snake length
+[2024-03-24 13:40:00] start_screen method called
+[2024-03-24 13:40:01] Game mode: snake_endless
+[2024-03-24 13:40:01] start_game
+[2024-03-24 13:40:01] Reset snake length
+[2024-03-24 13:40:01] Game mode: snake_endless
+[2024-03-24 13:40:01] Game state: start_game
+[2024-03-24 13:40:01] Game focused
+[2024-03-24 13:40:03] Game mode: snake_special

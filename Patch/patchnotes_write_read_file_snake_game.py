@@ -3,7 +3,7 @@
 # *****************************************
 
 # Import the json module
-import json
+import json, traceback
 
 # Define the patchnotes list
 patchnotes = [
@@ -27,15 +27,21 @@ patchnotes = [
 
 # Save the patchnotes to a JSON file
 filename = "patchnotes.json"
-with open(filename, "w") as file:
-    json.dump(patchnotes, file)
+try:
+    with open(filename, "w") as file:
+        json.dump(patchnotes, file)
+except: 
+    traceback.print_exc()
 
 # Read the patchnotes from the JSON file
-with open(filename, "r") as file:
-    patchnotes = json.load(file)
+try:
+    with open(filename, "r") as file:
+        patchnotes = json.load(file)
+except:
+    traceback.print_exc()
 
 # Print the patchnotes
-print(patchnotes)
+
 
 # *****************************************
 # Wims Snake Patchnotes File

@@ -2,6 +2,8 @@
 # Wims Snake Game Snake Logic File
 # *****************************************
 
+import traceback
+
 class Snake:
     def __init__(self, logfile, canvas, game_config):
         self.logfile = logfile
@@ -14,18 +16,21 @@ class Snake:
 
     def reset_length(self):
         # delete the existing squares from the canvas
-        for square in self.squares:
-            self.canvas.delete(square)
+        try:
+            for square in self.squares:
+                self.canvas.delete(square)
 
-        self.coordinates = [[0, 0] for _ in range(self.body_size)]
-        self.squares = []
+            self.coordinates = [[0, 0] for _ in range(self.body_size)]
+            self.squares = []
 
-        for x, y in self.coordinates:
-            square = self.canvas.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, tag="snake", outline= self.game_config.SNAKE_OUTLINE, width=0.5)
-            self.squares.append(square)
-        
-        self.logfile.log_game_event("Reset snake length")
-    
+            for x, y in self.coordinates:
+                square = self.canvas.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, tag="snake", outline= self.game_config.SNAKE_OUTLINE, width=0.5)
+                self.squares.append(square)
+            
+            self.logfile.log_game_event("Reset snake length")
+        except:
+            traceback.print_exc()
+
     def get_coordinates(self):
         return self.coordinates
 

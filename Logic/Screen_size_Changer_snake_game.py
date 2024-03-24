@@ -35,7 +35,7 @@ class Screen_size:
             self.logfile.log_game_event(f"Changing screen size to {selected_value}")
             self.update_config(selected_value)
         else:
-            print(f"Invalid screen size: {selected_value}")
+            self.logfile.log_game_event(f"Invalid screen size: {selected_value}")
 
 
     # The set_fullscreen_size method sets the screen size for fullscreen mode.

@@ -218,7 +218,7 @@ class SnakeGameApp:
                                                         )
 
         # Update the frame label panel
-        self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
+        self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas,
                                                         self.logfile, 
                                                         self.game_config, 
                                                         self.open_info, 

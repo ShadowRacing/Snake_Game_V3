@@ -2,13 +2,13 @@
 # Wims Snake Game Snake Endless Game File
 # *****************************************
 
-import customtkinter as ctk, time, configparser
+import customtkinter as ctk, time, configparser, traceback
 from os import path
 
 # Importing thhe necessary modules from other folders
 from Configuration.constants_snake_game import FONT_LIST
 from Configuration.gameconfig_snake_game import GameConfig
-from Logic.food_logic_snake_game import ClassicFood
+from Logic.food_logic_snake_game import EndlessFood
 from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
 
@@ -42,60 +42,89 @@ class Snake_endless(ctk.CTkCanvas):
         
         # Create the snake and the food
         self.snake = Snake(self.logfile, self.snake_canvas, game_config)
-        self.food = ClassicFood(self.logfile, self.snake_canvas, game_config)
+        self.food = EndlessFood(self.logfile, self.snake_canvas, game_config)
         self.game_labels_panel_2 = GameLabelsPanel(self.logfile, parent, self.game_config)
         self.game_config = GameConfig(self.logfile, 'snake_endless')
         self.game_labels_panel_2.endless_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
 
-        
-
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.ConfigParser()
-        self.config.read(self.config_path)
+        try:
+            self.config.read(self.config_path)
+        except:
+            traceback.print_exc()
 
-        if not self.config.has_section('Endless_Snake_Values'):
-            self.config.add_section('Endless_Snake_Values')
-       
-        if not self.config.has_option('Endless_Snake_Values', 'score'):
-            self.config.set('Endless_Snake_Values','score', '0')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
-
-        if not self.config.has_option('Endless_Snake_Values', 'high_score'):
-            self.config.set('Endless_Snake_Values','high_score', '0')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
+        # Check if the config file has the necessary sections and options If not, add them
+        try:
+            if not self.config.has_section('Endless_Snake_Values'):
+                self.config.add_section('Endless_Snake_Values')
+        except:
+            traceback.print_exc()
         
-        if not self.config.has_option('Endless_Snake_Values', 'time_score'):
-            self.config.set('Endless_Snake_Values','time_score', '0')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
-
-        if not self.config.has_option('Endless_Snake_Values', 'high_score_time'):
-            self.config.set('Endless_Snake_Values','high_score_time', '0')
-            print("high_score_time added")
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
-
-        if not self.config.has_option('Endless_Snake_Values', 'snake_length'):
-            self.config.set('Endless_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
+        try:
+            if not self.config.has_option('Endless_Snake_Values', 'score'):
+                self.config.set('Endless_Snake_Values','score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+        except:
+            traceback.print_exc()
         
-        if not self.config.has_option('Endless_Snake_Values', 'snake_length_high_score'):
-            self.config.set('Endless_Snake_Values','snake_length_high_score', '0')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
-
-        if not self.config.has_section('Endless_Snake_Settings'):
-            self.config.add_section('Endless_Snake_Settings')
+        try:
+            if not self.config.has_option('Endless_Snake_Values', 'high_score'):
+                self.config.set('Endless_Snake_Values','high_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+        except:
+            traceback.print_exc()      
         
-        if not self.config.has_option('Endless_Snake_Settings', 'state'):
-            self.config.set('Endless_Snake_Settings', 'state', 'start_screen')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
+        try:
+            if not self.config.has_option('Endless_Snake_Values', 'time_score'):
+                self.config.set('Endless_Snake_Values','time_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+        except:
+            traceback.print_exc()
+
+        try:
+            if not self.config.has_option('Endless_Snake_Values', 'high_score_time'):
+                self.config.set('Endless_Snake_Values','high_score_time', '0')
+                print("high_score_time added")
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+        except:
+            traceback.print_exc()
+
+        try:
+            if not self.config.has_option('Endless_Snake_Values', 'snake_length'):
+                self.config.set('Endless_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+        except:
+            traceback.print_exc()
+        
+        try:
+            if not self.config.has_option('Endless_Snake_Values', 'snake_length_high_score'):
+                self.config.set('Endless_Snake_Values','snake_length_high_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+        except:
+            traceback.print_exc()
+
+        try:
+            if not self.config.has_section('Endless_Snake_Settings'):
+                self.config.add_section('Endless_Snake_Settings')
+        except:
+            traceback.print_exc()
+        
+        try:
+            if not self.config.has_option('Endless_Snake_Settings', 'state'):
+                self.config.set('Endless_Snake_Settings', 'state', 'start_screen')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+        except:
+            traceback.print_exc()
                 
         # Start the game loop
         self.start_screen()
@@ -109,10 +138,16 @@ class Snake_endless(ctk.CTkCanvas):
     
     def start_screen(self):
         self.state = 'start_game'
-        self.config.set('Endless_Snake_Settings', 'state', 'start_game')
-       
-        with open('config.ini', 'w') as configfile:
-            self.config.write(configfile)
+        try:
+            self.config.set('Endless_Snake_Settings', 'state', 'start_game')
+        except:
+            traceback.print_exc()
+        
+        try:
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        except:
+            traceback.print_exc()
 
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.snake_canvas.delete("all")
@@ -154,15 +189,31 @@ class Snake_endless(ctk.CTkCanvas):
         self.bind_and_unbind_keys()
         self.state = 'game'
         self.bind_and_unbind_keys()
-        self.config.read(self.config_path)
-        self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0'))
-        self.high_score_time = int(self.config.get('Endless_Snake_Values', 'high_score_time', fallback='0'))
-        self.snake_length_high_score = int(self.config.get('Endless_Snake_Values', 'snake_length_high_score', fallback='0'))
+        
+        try:
+            self.config.read(self.config_path)
+        except:
+            traceback.print_exc()
+        
+        try:
+            self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0'))
+            self.high_score_time = int(self.config.get('Endless_Snake_Values', 'high_score_time', fallback='0'))
+            self.snake_length_high_score = int(self.config.get('Endless_Snake_Values', 'snake_length_high_score', fallback='0'))
+        except:
+            traceback.print_exc()
         self.game_labels_panel_2.endless_update_high_score_labels()
-        self.config.set('Endless_Snake_Settings', 'state', 'game')
-
-        with open('config.ini', 'w') as configfile:
-            self.config.write(configfile)
+        
+        try:    
+            self.config.set('Endless_Snake_Settings', 'state', 'game')
+        except:
+            traceback.print_exc()
+        
+        try:
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        except:
+            traceback.print_exc()
+        
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.start_time = time.time()
         self.total_paused_time = 0
@@ -171,7 +222,11 @@ class Snake_endless(ctk.CTkCanvas):
         self.snake_canvas.delete("all")
 
         #Spawn food and look for the snakes coordinates
-        snake_coordinates = self.snake.get_coordinates()
+        try:
+            snake_coordinates = self.snake.get_coordinates()
+        except:
+            traceback.print_exc()
+        
         self.food.spawn_food(snake_coordinates, len(snake_coordinates))
 
         self.logfile.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
@@ -189,9 +244,12 @@ class Snake_endless(ctk.CTkCanvas):
             self.current_time = time.time()
             self.total_time_played = int(self.current_time - self.start_time - self.total_paused_time)
             print(self.total_time_played)
-            self.config.set('Endless_Snake_Values', 'time_score', str(self.total_time_played))
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
+            try:
+                self.config.set('Endless_Snake_Values', 'time_score', str(self.total_time_played))
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            except:
+                traceback.print_exc()
 
         food_eaten = False
         for food_id in list(food.food_items.keys()):
@@ -206,10 +264,13 @@ class Snake_endless(ctk.CTkCanvas):
             self.snake_length += 1
             if len(food.food_coordinates) < 2:
                 food.spawn_food(snake.get_coordinates(), self.score)
-                self.config.set('Endless_Snake_Values', 'score', str(self.score))
-                self.config.set('Endless_Snake_Values', 'snake_length', str(self.snake_length))
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
+                try:
+                    self.config.set('Endless_Snake_Values', 'score', str(self.score))
+                    self.config.set('Endless_Snake_Values', 'snake_length', str(self.snake_length))
+                    with open('config.ini', 'w') as configfile:
+                        self.config.write(configfile)
+                except:
+                    traceback.print_exc()
             
         else:
             del snake.coordinates[-1]
@@ -232,9 +293,13 @@ class Snake_endless(ctk.CTkCanvas):
         self.current_time = time.time()
         self.total_time_played = int(self.current_time - self.start_time)
         print(self.total_time_played)
-        self.config.set('Endless_Snake_Values', 'time_score', str(self.total_time_played))
-        with open('config.ini', 'w') as configfile:
-            self.config.write(configfile)
+        
+        try:
+            self.config.set('Endless_Snake_Values', 'time_score', str(self.total_time_played))
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        except:
+            traceback.print_exc()
 
         if self.check_collisions(snake):
             self.logfile.log_game_event("snake has a collision")
@@ -263,7 +328,6 @@ class Snake_endless(ctk.CTkCanvas):
         self.direction = new_direction
         self.last_direction_change_time = current_time
         
-    
     def check_collisions(self, snake):
         x, y = snake.coordinates[0]
 
@@ -279,7 +343,10 @@ class Snake_endless(ctk.CTkCanvas):
     def game_over(self):
         self.state = 'game_over'
         self.bind_and_unbind_keys()
-        self.config.set('Endless_Snake_Settings', 'state', 'game_over')
+        try:
+            self.config.set('Endless_Snake_Settings', 'state', 'game_over')
+        except:
+            traceback.print_exc()
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")
         self.snake_canvas.delete("all")
@@ -290,26 +357,38 @@ class Snake_endless(ctk.CTkCanvas):
         # Unbind any previous bindings to avoid conflicts
         self.snake_canvas.unbind('<space>')
         self.bind_and_unbind_keys()
-        self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0'))
+        try:   
+            self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0'))
+        except:
+            traceback.print_exc()
         self.logfile.log_game_event(f"High score: {self.high_score}")
         self.logfile.log_game_event(f"Score: {self.score}")
         if self.score > self.high_score:
-            self.config.set('Endless_Snake_Values', 'high_score', str(self.score))
-
+            try:
+                self.config.set('Endless_Snake_Values', 'high_score', str(self.score))
+            except:
+                traceback.print_exc()
 
         self.get_time_score = int(self.config.get('Endless_Snake_Values', 'high_score_time', fallback='0'))
         if self.total_time_played > self.get_time_score:
-            self.config.set('Endless_Snake_Values', 'high_score_time', str(self.total_time_played))
-            self.logfile.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
-
+            try:
+                self.config.set('Endless_Snake_Values', 'high_score_time', str(self.total_time_played))
+                self.logfile.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
+            except:
+                traceback.print_exc()
         
         self.get_snake_length = int(self.config.get('Endless_Snake_Values', 'snake_length_high_score', fallback='0'))
         if self.snake_length > self.get_snake_length:
-            self.config.set('Endless_Snake_Values', 'snake_length_high_score', str(self.snake_length))
-            self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
-            
-        with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
+            try:
+                self.config.set('Endless_Snake_Values', 'snake_length_high_score', str(self.snake_length))
+                self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
+            except:
+                traceback.print_exc()
+        try:    
+            with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+        except:
+            traceback.print_exc()
 
     def restart_game(self, event=None):
         self.bind_and_unbind_keys()
@@ -321,57 +400,60 @@ class Snake_endless(ctk.CTkCanvas):
         
         # Create a new Snake object
         self.snake = Snake(self.logfile, self.snake_canvas, self.game_config)
-        self.food = ClassicFood(self.logfile, self.snake_canvas, self.game_config)
+        self.food = EndlessFood(self.logfile, self.snake_canvas, self.game_config)
         self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.get_coordinates()}")
 
-        self.config.read('config.ini')
-
-        self.config.set('Endless_Snake_Values', 'score', '0')
-        self.config.set('Endless_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
-        with open('config.ini', 'w') as configfile:
-            self.config.write(configfile)
-            # start the game again
-            self.state = 'start_game'
+        try:
+            self.config.read('config.ini')
+            self.config.set('Endless_Snake_Values', 'score', '0')
+            self.config.set('Endless_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+                # start the game again
+                self.state = 'start_game'
+        except:
+            traceback.print_exc()
         self.score = 0
         self.game_labels_panel_2.endless_update_game_labels()
         self.start_game()
 
-
-
     def bind_and_unbind_keys(self):
-        # Unbind all events to avoid conflicts
-        self.snake_canvas.unbind('<space>') # start the game
-        self.snake_canvas.unbind('<Escape>') # pause the game
-        self.snake_canvas.unbind('<left>') # change direction
-        self.snake_canvas.unbind('<Right>') # change direction
-        self.snake_canvas.unbind('<Up>') # change direction
-        self.snake_canvas.unbind('<Down>') # change direction
-        self.snake_canvas.unbind('<r>') # restart the game
-        self.snake_canvas.unbind('<R>') # restart the game
-        self.snake_canvas.unbind('<a>') # change direction
-        self.snake_canvas.unbind('<d>') # change direction
-        self.snake_canvas.unbind('<w>') # change direction
-        self.snake_canvas.unbind('<s>') # change direction
+        try: 
+            # Unbind all events to avoid conflicts
+            self.snake_canvas.unbind('<space>') # start the game
+            self.snake_canvas.unbind('<Escape>') # pause the game
+            self.snake_canvas.unbind('<left>') # change direction
+            self.snake_canvas.unbind('<Right>') # change direction
+            self.snake_canvas.unbind('<Up>') # change direction
+            self.snake_canvas.unbind('<Down>') # change direction
+            self.snake_canvas.unbind('<r>') # restart the game
+            self.snake_canvas.unbind('<R>') # restart the game
+            self.snake_canvas.unbind('<a>') # change direction
+            self.snake_canvas.unbind('<d>') # change direction
+            self.snake_canvas.unbind('<w>') # change direction
+            self.snake_canvas.unbind('<s>') # change direction
 
-        if self.state == 'start_game':
-            self.snake_canvas.bind('<space>', self.start_game)
-        elif self.state == 'game_over':
-            self.snake_canvas.bind("<r>", self.restart_game)
-            self.snake_canvas.bind("<R>", self.restart_game)
-        elif self.state == 'game':
-            self.snake_canvas.bind("<Escape>", self.pause_game)
-            self.snake_canvas.bind('<Left>', lambda event: self.change_direction('left'))
-            self.snake_canvas.bind('<Right>', lambda event: self.change_direction('right'))
-            self.snake_canvas.bind('<Up>', lambda event: self.change_direction('up'))
-            self.snake_canvas.bind('<Down>', lambda event: self.change_direction('down'))
-            self.snake_canvas.bind('<a>', lambda event: self.change_direction('left'))
-            self.snake_canvas.bind('<d>', lambda event: self.change_direction('right'))
-            self.snake_canvas.bind('<w>', lambda event: self.change_direction('up'))
-            self.snake_canvas.bind('<s>', lambda event: self.change_direction('down'))
-        elif self.state == 'pause':
-            self.snake_canvas.bind('<Escape>',self.pause_game)
-        elif self.state == 'settings_menu':
-            self.snake_canvas.unbind('<Escape>')
+            if self.state == 'start_game':
+                self.snake_canvas.bind('<space>', self.start_game)
+            elif self.state == 'game_over':
+                self.snake_canvas.bind("<r>", self.restart_game)
+                self.snake_canvas.bind("<R>", self.restart_game)
+            elif self.state == 'game':
+                self.snake_canvas.bind("<Escape>", self.pause_game)
+                self.snake_canvas.bind('<Left>', lambda event: self.change_direction('left'))
+                self.snake_canvas.bind('<Right>', lambda event: self.change_direction('right'))
+                self.snake_canvas.bind('<Up>', lambda event: self.change_direction('up'))
+                self.snake_canvas.bind('<Down>', lambda event: self.change_direction('down'))
+                self.snake_canvas.bind('<a>', lambda event: self.change_direction('left'))
+                self.snake_canvas.bind('<d>', lambda event: self.change_direction('right'))
+                self.snake_canvas.bind('<w>', lambda event: self.change_direction('up'))
+                self.snake_canvas.bind('<s>', lambda event: self.change_direction('down'))
+            elif self.state == 'pause':
+                self.snake_canvas.bind('<Escape>',self.pause_game)
+            elif self.state == 'settings_menu':
+                self.snake_canvas.unbind('<Escape>')
+        except:
+            traceback.print_exc()
 
 # *****************************************
 # Wims Snake Game Snake Endless Game File

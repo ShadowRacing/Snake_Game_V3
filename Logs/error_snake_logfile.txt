@@ -1,0 +1,253 @@
+[2024-03-24 09:16:55] Started the Error Log File
+[2024-03-24 09:18:35] Started the Error Log File
+[2024-03-24 09:18:41] Closed the Error Log File
+
+
+
+
+[2024-03-24 09:19:02] Started the Error Log File
+[2024-03-24 09:19:03] Closed the Error Log File
+
+
+
+
+[2024-03-24 09:21:24] Started the Error Log File
+[2024-03-24 09:32:44] Started the Error Log File
+[2024-03-24 09:40:34] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 332, in open_settings
+    self.reset_button_press_variable()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'reset_button_press_variable'
+[2024-03-24 09:43:12] Started the Error Log File
+[2024-03-24 09:46:21] Started the Error Log File
+[2024-03-24 09:46:23] Closed the Error Log File
+
+
+
+
+[2024-03-24 09:47:47] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 333, in open_settings
+    self.geeral_reset_button_press_variable()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'geeral_reset_button_press_variable'
+[2024-03-24 09:49:01] Started the Error Log File
+[2024-03-24 09:49:26] Started the Error Log File
+[2024-03-24 09:49:26] Closed the Error Log File
+
+
+
+
+
+[2024-03-24 09:55:06] Started the Error Log File
+[2024-03-24 09:55:14] Closed the Error Log File
+
+
+
+
+[2024-03-24 09:55:35] Started the Error Log File
+[2024-03-24 09:55:37] Closed the Error Log File
+
+
+
+
+[2024-03-24 09:56:05] Started the Error Log File
+[2024-03-24 09:56:14] Closed the Error Log File
+
+
+
+
+[2024-03-24 09:57:03] Started the Error Log File
+[2024-03-24 09:57:05] No error occurred
+
+
+
+
+[2024-03-24 09:57:05] Closed the Error Log File
+
+
+
+
+[2024-03-24 09:57:17] Started the Error Log File
+[2024-03-24 09:57:17] No error occurred
+[2024-03-24 09:57:17] Closed the Error Log File
+
+
+
+
+[2024-03-24 10:11:19] Started the Error Log File
+[2024-03-24 10:11:31] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 61, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 203, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Snake_endless.__init__() missing 1 required positional argument: 'error_logfile'
+[2024-03-24 10:28:20] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 61, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 200, in snake_endless
+    self.classic_eset_button_press_variable()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'classic_eset_button_press_variable'
+[2024-03-24 10:29:36] 
+
+
+[2024-03-24 10:29:36] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 61, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 200, in snake_endless
+    self.classic_eset_button_press_variable()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'classic_eset_button_press_variable'
+[2024-03-24 10:30:30] 
+
+
+[2024-03-24 10:30:30] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 61, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 203, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Snake_endless.__init__() missing 1 required positional argument: 'error_logfile'
+
+
+[2024-03-24 10:30:44] 
+
+
+[2024-03-24 10:30:44] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 61, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 203, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Snake_endless.__init__() missing 1 required positional argument: 'error_logfile'
+[2024-03-24 10:31:22] 
+
+
+[2024-03-24 10:31:22] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 55, in __init__
+    self.config.read(self.cofig_path)
+                     ^^^^^^^^^^^^^^^
+AttributeError: 'Snake_endless' object has no attribute 'cofig_path'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 61, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 229, in snake_endless
+    self.game_labels_panel_2 = GameLabelsPanel(self.main_canvas,
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 165, in __init__
+    self.classic_score_label_ = self.config.set('Classic_Snake_Values', 'score', '0')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Classic_Snake_Values'
+[2024-03-24 10:45:07] 
+
+
+[2024-03-24 10:45:07] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 26, in __init__
+    self.config.set('Classic_Snake_Values','snake_color', 'Green')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Classic_Snake_Values'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 588, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 39, in __init__
+    self.theme_updater.set_initial_theme()
+  File "e:\Snake_game_V3\Snake_Game_V3\Themes\theme_updater_snake_game.py", line 37, in set_initial_theme
+    self.config.add_section('Settings', 'theme') 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ConfigParser.add_section() takes 2 positional arguments but 3 were given
+[2024-03-24 10:47:20] 
+
+
+[2024-03-24 10:47:20] Started the Error Log File
+[2024-03-24 10:48:40] 
+
+
+[2024-03-24 10:48:40] Started the Error Log File
+[2024-03-24 10:49:07] 
+
+
+[2024-03-24 10:49:07] Started the Error Log File
+[2024-03-24 10:49:08] No errors occurred
+[2024-03-24 10:49:08] Closed the Error Log File
+
+
+
+
+[2024-03-24 10:49:57] 
+
+
+[2024-03-24 10:49:57] Started the Error Log File
+[2024-03-24 10:50:18] No errors occurred
+[2024-03-24 10:50:18] Closed the Error Log File
+
+
+
+

@@ -3,7 +3,7 @@
 # *****************************************
 
 #Importing the required modules
-import uuid, random, time
+import uuid, random, time, traceback
 
 # Importing thhe necessary modules from other folders
 from Configuration.constants_snake_game import GameConstants, COLORS_DICT, FONT_SIZE_LIST, FONT_LIST
@@ -26,15 +26,18 @@ class ClassicFood:
         num_food_items = min(score // 50 + 1, 10)
         self.game_logger.log_game_event(f"Number off food items: {num_food_items}")
 
-        while len(self.food_items) < num_food_items:
-            x, y = self.generate_random_coordinates(snake_coordinates)
-            food_id = str(uuid.uuid4())
-            self.game_logger.log_game_event("Food ID:")
-            self.game_logger.log_game_event(food_id)
-            tag = "food" + food_id
-            oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
-            self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
-            self.game_logger.log_game_event(self.food_items)
+        try:
+            while len(self.food_items) < num_food_items:
+                x, y = self.generate_random_coordinates(snake_coordinates)
+                food_id = str(uuid.uuid4())
+                self.game_logger.log_game_event("Food ID:")
+                self.game_logger.log_game_event(food_id)
+                tag = "food" + food_id
+                oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
+                self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
+                self.game_logger.log_game_event(self.food_items)
+        except:
+            traceback.print_exc()
 
     #Creating the food oval
     def create_food_oval(self, x, y, fill_color, tag):
@@ -43,13 +46,16 @@ class ClassicFood:
 
     #Creating random coordinates for the food to spawn, and also chechking where the snake is.
     def generate_random_coordinates(self, snake_coordinates):
-        while True:
-            x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-            y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-            collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
-            if not collision:
-                break
-        return x, y
+        try:
+            while True:
+                x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
+                if not collision:
+                    break
+            return x, y
+        except:
+            traceback.print_exc()
 
 class EndlessFood:
     def __init__(self, game_logger, canvas, game_config):
@@ -71,30 +77,35 @@ class EndlessFood:
         self.game_logger.log_game_event("Number off food items: ")
         self.game_logger.log_game_event(num_food_items)
 
-        while len(self.food_items) < num_food_items:
-            x, y = self.generate_random_coordinates(snake_coordinates)
-            food_id = str(uuid.uuid4())
-            self.game_logger.log_game_event("Food ID:")
-            self.game_logger.log_game_event(food_id)
-            tag = "food" + food_id
-            oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
-            self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
-            self.game_logger.log_game_event(self.food_items)
-
+        try:
+            while len(self.food_items) < num_food_items:
+                x, y = self.generate_random_coordinates(snake_coordinates)
+                food_id = str(uuid.uuid4())
+                self.game_logger.log_game_event("Food ID:")
+                self.game_logger.log_game_event(food_id)
+                tag = "food" + food_id
+                oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
+                self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
+                self.game_logger.log_game_event(self.food_items)
+        except:
+            traceback.print_exc()
 
     #Special food logic
     def special_spawn_food(self, snake_coordinates, score):
         num_special_food_items = 1
 
-        while len(self.special_food_items) < num_special_food_items:
-            x, y = self.generate_random_coordinates(snake_coordinates)
-            special_food_id = str(uuid.uuid4())
-            self.game_logger.log_game_event(special_food_id)
-            tag = "specialfood" + special_food_id
-            special_oval_id = self.create_food_oval(x, y, self.game_config.SPECIAL_FOOD_COLOR, tag)
-            self.special_food_items[special_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': special_oval_id}
-            self.game_logger.log_game_event("Special Food ID:")
-            self.game_logger.log_game_event(special_food_id)
+        try:
+            while len(self.special_food_items) < num_special_food_items:
+                x, y = self.generate_random_coordinates(snake_coordinates)
+                special_food_id = str(uuid.uuid4())
+                self.game_logger.log_game_event(special_food_id)
+                tag = "specialfood" + special_food_id
+                special_oval_id = self.create_food_oval(x, y, self.game_config.SPECIAL_FOOD_COLOR, tag)
+                self.special_food_items[special_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': special_oval_id}
+                self.game_logger.log_game_event("Special Food ID:")
+                self.game_logger.log_game_event(special_food_id)
+        except:
+            traceback.print_exc()
 
     #Creating the food oval
     def create_food_oval(self, x, y, fill_color, tag):
@@ -103,14 +114,17 @@ class EndlessFood:
 
     #Creating random coordinates for the food to spawn, and also chechking where the snake is.
     def generate_random_coordinates(self, snake_coordinates):
-        while True:
-            x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-            y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-            collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
-            if not collision:
-                break
-        return x, y
-    
+        try:
+            while True:
+                x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
+                if not collision:
+                    break
+            return x, y
+        except:
+            traceback.print_exc()
+        
 class SpecialFood:
     def __init__(self, game_logger, canvas, game_config):
         #Initializing variables
@@ -131,30 +145,35 @@ class SpecialFood:
         self.game_logger.log_game_event("Number off food items: ")
         self.game_logger.log_game_event(num_food_items)
 
-        while len(self.food_items) < num_food_items:
-            x, y = self.generate_random_coordinates(snake_coordinates)
-            food_id = str(uuid.uuid4())
-            self.game_logger.log_game_event("Food ID:")
-            self.game_logger.log_game_event(food_id)
-            tag = "food" + food_id
-            oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
-            self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
-            self.game_logger.log_game_event(self.food_items)
-
+        try:
+            while len(self.food_items) < num_food_items:
+                x, y = self.generate_random_coordinates(snake_coordinates)
+                food_id = str(uuid.uuid4())
+                self.game_logger.log_game_event("Food ID:")
+                self.game_logger.log_game_event(food_id)
+                tag = "food" + food_id
+                oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
+                self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
+                self.game_logger.log_game_event(self.food_items)
+        except:
+            traceback.print_exc()
 
     #Special food logic
     def special_spawn_food(self, snake_coordinates, score):
         num_special_food_items = 1
 
-        while len(self.special_food_items) < num_special_food_items:
-            x, y = self.generate_random_coordinates(snake_coordinates)
-            special_food_id = str(uuid.uuid4())
-            self.game_logger.log_game_event(special_food_id)
-            tag = "specialfood" + special_food_id
-            special_oval_id = self.create_food_oval(x, y, self.game_config.SPECIAL_FOOD_COLOR, tag)
-            self.special_food_items[special_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': special_oval_id}
-            self.game_logger.log_game_event("Special Food ID:")
-            self.game_logger.log_game_event(special_food_id)
+        try:
+            while len(self.special_food_items) < num_special_food_items:
+                x, y = self.generate_random_coordinates(snake_coordinates)
+                special_food_id = str(uuid.uuid4())
+                self.game_logger.log_game_event(special_food_id)
+                tag = "specialfood" + special_food_id
+                special_oval_id = self.create_food_oval(x, y, self.game_config.SPECIAL_FOOD_COLOR, tag)
+                self.special_food_items[special_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': special_oval_id}
+                self.game_logger.log_game_event("Special Food ID:")
+                self.game_logger.log_game_event(special_food_id)
+        except:
+            traceback.print_exc()
 
     #Creating the food oval
     def create_food_oval(self, x, y, fill_color, tag):
@@ -163,13 +182,16 @@ class SpecialFood:
 
     #Creating random coordinates for the food to spawn, and also chechking where the snake is.
     def generate_random_coordinates(self, snake_coordinates):
-        while True:
-            x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-            y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-            collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
-            if not collision:
-                break
-        return x, y
+        try:
+            while True:
+                x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
+                if not collision:
+                    break
+            return x, y
+        except:
+            traceback.print_exc()
 
 # *****************************************
 # Wims Snake Food Logic File

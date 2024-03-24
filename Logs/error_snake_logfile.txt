@@ -749,3 +749,395 @@ AttributeError: 'GameLabelsPanel' object has no attribute 'classic_score_label'
 
 
 [2024-03-24 13:40:00] Started the Error Log File
+[2024-03-24 18:48:44] 
+
+
+[2024-03-24 18:48:44] Started the Error Log File
+[2024-03-24 19:03:21] 
+
+
+[2024-03-24 19:03:21] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 180, in start_game
+    self.food.spawn_food(snake_coordinates, len(snake_coordinates))
+TypeError: ClassicFood.spawn_food() takes 2 positional arguments but 3 were given
+[2024-03-24 19:04:27] 
+
+
+[2024-03-24 19:04:27] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 180, in start_game
+    self.food.spawn_food(snake_coordinates, len(snake_coordinates))
+TypeError: ClassicFood.spawn_food() takes 2 positional arguments but 3 were given
+[2024-03-24 19:05:49] 
+
+
+[2024-03-24 19:05:49] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 213, in next_turn
+    food.spawn_food(snake.get_coordinates(), self.score)
+TypeError: ClassicFood.spawn_food() takes 2 positional arguments but 3 were given
+[2024-03-24 19:06:55] 
+
+
+[2024-03-24 19:06:55] Started the Error Log File
+[2024-03-24 19:07:22] 
+
+
+[2024-03-24 19:07:22] Started the Error Log File
+[2024-03-24 19:07:23] No errors occurred
+[2024-03-24 19:07:23] Closed the Error Log File
+
+
+
+
+[2024-03-24 19:09:36] 
+
+
+[2024-03-24 19:09:36] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 231, in start_game
+    self.food.special_spawn_food(snake_coordinates, len(snake_coordinates))
+TypeError: EndlessFood.special_spawn_food() takes 2 positional arguments but 3 were given
+[2024-03-24 19:10:00] 
+
+
+[2024-03-24 19:10:00] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 231, in start_game
+    self.food.special_spawn_food(snake_coordinates)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\food_logic_snake_game.py", line 91, in special_spawn_food
+    if self.score % 50 == 0:
+       ^^^^^^^^^^
+AttributeError: 'EndlessFood' object has no attribute 'score'
+[2024-03-24 19:10:50] 
+
+
+[2024-03-24 19:10:50] Started the Error Log File
+[2024-03-24 19:11:15] 
+
+
+[2024-03-24 19:11:15] Started the Error Log File
+[2024-03-24 19:11:16] No errors occurred
+[2024-03-24 19:11:16] Closed the Error Log File
+
+
+
+
+[2024-03-24 19:14:41] 
+
+
+[2024-03-24 19:14:41] Started the Error Log File
+[2024-03-24 19:19:52] 
+
+
+[2024-03-24 19:19:52] Started the Error Log File
+[2024-03-24 19:35:31] 
+
+
+[2024-03-24 19:35:31] Started the Error Log File
+[2024-03-24 19:39:40] 
+
+
+[2024-03-24 19:39:40] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 132, in __init__
+    if not self.config.has_option('Endless_Snake_Settings', 'next_special_food_score', fallback='50'):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RawConfigParser.has_option() got an unexpected keyword argument 'fallback'
+[2024-03-24 19:42:20] No errors occurred
+[2024-03-24 19:42:20] Closed the Error Log File
+
+
+
+
+[2024-03-24 19:42:23] 
+
+
+[2024-03-24 19:42:23] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 132, in __init__
+    if not self.config.has_section('Endless_Snake_Settings', 'next_special_food_score', fallback='50'):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RawConfigParser.has_section() got an unexpected keyword argument 'fallback'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 138, in __init__
+    if not self.config.has_option('Endless_Snake_Settings', 'next_special_food_score', fallback='50'):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RawConfigParser.has_option() got an unexpected keyword argument 'fallback'
+[2024-03-24 19:42:59] 
+
+
+[2024-03-24 19:42:59] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 132, in __init__
+    if not self.config.has_section('Endless_Snake_Settings', 'next_special_food_score', fallback='50'):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RawConfigParser.has_section() got an unexpected keyword argument 'fallback'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 138, in __init__
+    if not self.config.has_option('Endless_Snake_Settings', 'next_special_food_score', fallback='50'):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RawConfigParser.has_option() got an unexpected keyword argument 'fallback'
+[2024-03-24 19:43:06] No errors occurred
+[2024-03-24 19:43:06] Closed the Error Log File
+
+
+
+
+[2024-03-24 19:45:59] 
+
+
+[2024-03-24 19:45:59] Started the Error Log File
+[2024-03-24 19:46:58] 
+
+
+[2024-03-24 19:46:58] Started the Error Log File
+[2024-03-24 19:55:05] 
+
+
+[2024-03-24 19:55:05] Started the Error Log File
+[2024-03-24 19:57:20] 
+
+
+[2024-03-24 19:57:20] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 327, in next_turn
+    self.food.special_spawn_food(self.snake.get_coordinates(), self.score)
+TypeError: EndlessFood.special_spawn_food() takes 2 positional arguments but 3 were given
+[2024-03-24 20:00:53] 
+
+
+[2024-03-24 20:00:53] Started the Error Log File
+[2024-03-24 20:01:20] 
+
+
+[2024-03-24 20:01:20] Started the Error Log File
+[2024-03-24 20:03:12] 
+
+
+[2024-03-24 20:03:12] Started the Error Log File
+[2024-03-24 20:06:07] 
+
+
+[2024-03-24 20:06:07] Started the Error Log File
+[2024-03-24 20:07:40] No errors occurred
+[2024-03-24 20:07:40] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:07:59] 
+
+
+[2024-03-24 20:07:59] Started the Error Log File
+[2024-03-24 20:11:03] No errors occurred
+[2024-03-24 20:11:03] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:11:04] 
+
+
+[2024-03-24 20:11:04] Started the Error Log File
+[2024-03-24 20:11:26] No errors occurred
+[2024-03-24 20:11:26] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:11:28] 
+
+
+[2024-03-24 20:11:28] Started the Error Log File
+[2024-03-24 20:14:50] No errors occurred
+[2024-03-24 20:14:50] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:14:56] 
+
+
+[2024-03-24 20:14:56] Started the Error Log File
+[2024-03-24 20:17:24] No errors occurred
+[2024-03-24 20:17:24] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:17:26] 
+
+
+[2024-03-24 20:17:26] Started the Error Log File
+[2024-03-24 20:17:44] No errors occurred
+[2024-03-24 20:17:44] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:17:46] 
+
+
+[2024-03-24 20:17:46] Started the Error Log File
+[2024-03-24 20:18:06] No errors occurred
+[2024-03-24 20:18:06] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:19:25] 
+
+
+[2024-03-24 20:19:25] Started the Error Log File
+[2024-03-24 20:19:56] No errors occurred
+[2024-03-24 20:19:56] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:19:57] 
+
+
+[2024-03-24 20:19:57] Started the Error Log File
+[2024-03-24 20:20:06] No errors occurred
+[2024-03-24 20:20:06] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:20:08] 
+
+
+[2024-03-24 20:20:08] Started the Error Log File
+[2024-03-24 20:20:57] 
+
+
+[2024-03-24 20:20:57] Started the Error Log File
+[2024-03-24 20:23:56] No errors occurred
+[2024-03-24 20:23:56] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:24:04] 
+
+
+[2024-03-24 20:24:04] Started the Error Log File
+[2024-03-24 20:24:48] No errors occurred
+[2024-03-24 20:24:48] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:28:37] 
+
+
+[2024-03-24 20:28:37] Started the Error Log File
+[2024-03-24 20:32:28] 
+
+
+[2024-03-24 20:32:28] Started the Error Log File
+[2024-03-24 20:34:22] No errors occurred
+[2024-03-24 20:34:22] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:34:25] 
+
+
+[2024-03-24 20:34:25] Started the Error Log File
+[2024-03-24 20:37:26] No errors occurred
+[2024-03-24 20:37:26] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:37:27] 
+
+
+[2024-03-24 20:37:27] Started the Error Log File
+[2024-03-24 20:38:02] No errors occurred
+[2024-03-24 20:38:02] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:47:50] 
+
+
+[2024-03-24 20:47:50] Started the Error Log File
+[2024-03-24 20:51:28] 
+
+
+[2024-03-24 20:51:28] Started the Error Log File
+[2024-03-24 20:52:02] No errors occurred
+[2024-03-24 20:52:02] Closed the Error Log File
+
+
+
+
+[2024-03-24 20:58:03] 
+
+
+[2024-03-24 20:58:03] Started the Error Log File
+[2024-03-24 20:58:08] No errors occurred
+[2024-03-24 20:58:08] Closed the Error Log File
+
+
+
+
+[2024-03-24 21:00:56] 
+
+
+[2024-03-24 21:00:56] Started the Error Log File
+[2024-03-24 21:06:51] 
+
+
+[2024-03-24 21:06:51] Started the Error Log File
+[2024-03-24 21:07:12] No errors occurred
+[2024-03-24 21:07:12] Closed the Error Log File
+
+
+
+
+[2024-03-24 21:07:15] 
+
+
+[2024-03-24 21:07:15] Started the Error Log File
+[2024-03-24 21:07:41] No errors occurred
+[2024-03-24 21:07:41] Closed the Error Log File
+
+
+
+

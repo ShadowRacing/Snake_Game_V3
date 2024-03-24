@@ -3,7 +3,7 @@
 # *****************************************
 
 #Importing the required modules
-import uuid, random, time, traceback
+import uuid, random, time, traceback, configparser
 
 # Importing thhe necessary modules from other folders
 from Configuration.constants_snake_game import GameConstants
@@ -64,11 +64,16 @@ class EndlessFood:
         self.food_coordinates = {}
         self.special_food_coordinates = {}
         self.game_config = game_config
+        try:
+            self.config = configparser.ConfigParser()
+            self.config.read('config.ini')
+            self.score = int(self.config.get('Endless_Snake_Values', 'score', fallback='0'))
+        except:
+            traceback.print_exc()
 
 
     #Food logic
     def spawn_food(self, snake_coordinates, score):
-        self.time 
         num_food_items = min(score // 50 + 1, 10)
         self.game_logger.log_game_event("Number off food items: ")
         self.game_logger.log_game_event(num_food_items)
@@ -87,7 +92,7 @@ class EndlessFood:
             traceback.print_exc()
     
     #Special food logic
-    def special_spawn_food(self, snake_coordinates, score):
+    def special_spawn_food(self, snake_coordinates):
         num_special_food_items = 1
         try:
             while len(self.special_food_items) < num_special_food_items:
@@ -131,7 +136,7 @@ class SpecialFood:
         self.food_coordinates = {}
         self.special_food_coordinates = {}
         self.game_config = game_config
-
+        
 
     #Food logic
     def spawn_food(self, snake_coordinates, score):

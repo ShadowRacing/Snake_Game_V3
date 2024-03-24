@@ -121,6 +121,12 @@ class ButtonCommands:
         else:
             self.logfile.log_game_event("No function assigned to 'reset_high_score_snake_length'")
 
+    def endless_reset_high_special_score_command(self):
+        if 'endless_reset_high_score_special_score' in self.functions:
+            self.functions['endless_reset_high_score_special_score']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'reset_high_special_score'")
+
     def game_size_command(self):
         if 'game_size' in self.functions:
             self.functions['game_size']()
@@ -287,13 +293,18 @@ class ClickButtonPanel:
                                 command=self.button_commands.endless_reset_high_score_snake_length_command)
         endless_reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=12, column=0, padx=10, pady=10, sticky="w")
 
+    def endless_reset_high_score_special_score_button(self):
+        endless_reset_high_score_special_score_button = ctk.CTkButton(self.button_canvas, text="Reset Special \n Score Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.endless_reset_high_special_score_command)
+        endless_reset_high_score_special_score_button.grid(in_=self.button_canvas, row=13, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def game_size_button(self):
         game_size_button = ctk.CTkButton(self.button_canvas, text="Game Size", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.game_size_command)
-        game_size_button.grid(in_=self.button_canvas, row=13, column=0, padx=10, pady=10, sticky="w")
+        game_size_button.grid(in_=self.button_canvas, row=14, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def snake_speed_button(self):

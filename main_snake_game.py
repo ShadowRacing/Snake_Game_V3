@@ -98,6 +98,7 @@ class SnakeGameApp:
             'endless_reset_high_score': self.endless_reset_high_score,
             'endless_reset_high_score_time': self.endless_reset_high_score_time,
             'endless_reset_high_score_snake_length': self.endless_reset_snake_length,
+            'endless_reset_high_score_special_score': self.endless_reset_special_score,
             'open_settings': self.open_settings,
             'open_info': self.open_info,
             'snake_special': self.snake_special,
@@ -236,6 +237,7 @@ class SnakeGameApp:
         self.create_button_panel.endless_reset_high_score_button()
         self.create_button_panel.endless_reset_high_score_time_button()
         self.create_button_panel.endless_reset_high_score_snake_length()
+        self.create_button_panel.endless_reset_high_score_special_score_button()
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_endless_snake_label()
@@ -530,6 +532,30 @@ class SnakeGameApp:
                 traceback.print_exc()
             self.endless_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore time reset to 0")
+            self.endless_button_press_variable_high_score_time = 0
+            self.first_button_press_time = None
+    
+    def endless_reset_special_score(self):
+        if self.endless_button_press_variable_high_score_time == 0:
+            self.first_button_press_time = time.time()
+            self.endless_button_press_variable_high_score_time += 1
+        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            try:
+                self.config.read(self.config_path)
+            except:
+                traceback.print_exc()
+            try:
+                self.config.set('Endless_Snake_Values', 'special_high_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            except:
+                traceback.print_exc()
+            try:
+                self.config.read(self.config_path)
+            except:
+                traceback.print_exc()
+            self.endless_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore special reset to 0")
             self.endless_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
     

@@ -177,7 +177,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
 
         #Spawn food and look for the snakes coordinates
         snake_coordinates = self.snake.get_coordinates()
-        self.food.spawn_food(snake_coordinates, len(snake_coordinates))
+        self.food.spawn_food(snake_coordinates)
 
         self.logfile.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
         self.next_turn(self.snake, self.food)
@@ -210,7 +210,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.score += 1
             self.snake_length += 1
             if len(food.food_coordinates) < 2:
-                food.spawn_food(snake.get_coordinates(), self.score)
+                food.spawn_food(snake.get_coordinates())
                 self.config.set('Classic_Snake_Values', 'score', str(self.score))
                 self.config.set('Classic_Snake_Values', 'snake_length', str(self.snake_length))
                 with open('config.ini', 'w') as configfile:

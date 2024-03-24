@@ -82528,3 +82528,38 @@ Error occurred: 'GameLabelsPanel' object has no attribute 'classic_score_label'
 
 
 
+[2024-03-24 08:57:59] Started the app
+[2024-03-24 08:57:59] Started the GameApp Class
+[2024-03-24 08:57:59] Game mode: initial config
+Default
+Updated initial_theme in config.ini to Default
+Current initial_theme in config.ini: Default
+[2024-03-24 08:57:59] Contrast mode set to dark
+[2024-03-24 08:57:59] Reset snake length
+delete_labels method called
+Error occurred: 'GameLabelsPanel' object has no attribute 'classic_score_label'
+[2024-03-24 08:57:59] start_screen method called
+[2024-03-24 08:58:35] Game mode: snake_endless
+[2024-03-24 08:58:35] start_game
+[2024-03-24 08:58:35] Reset snake length
+[2024-03-24 08:58:35] Game mode: snake_endless
+[2024-03-24 08:58:35] Game state: start_game
+[2024-03-24 08:58:35] Game focused
+[2024-03-24 08:58:37] Highscore reset to 0
+[2024-03-24 08:58:40] Highscore time reset to 0
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+No function assigned to 'reset_high_score_snake_length'
+[2024-03-24 09:00:21] Closed the app
+
+
+
+

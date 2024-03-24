@@ -89,7 +89,7 @@ class SnakeGameApp:
             'classic_reset_high_score': self.classic_reset_high_score,
             'endless_reset_high_score': self.endless_reset_high_score,
             'endless_reset_high_score_time': self.endless_reset_high_score_time,
-            'endless_reset_snake_length': self.endless_reset_snake_length,
+            'endless_reset_high_score_snake_length': self.endless_reset_snake_length,
             'open_settings': self.open_settings,
             'open_info': self.open_info,
             'snake_special': self.snake_special,

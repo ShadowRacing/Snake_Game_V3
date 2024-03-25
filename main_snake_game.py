@@ -26,6 +26,9 @@ from Themes.contrast_updater_snake_game import UpdateContrast
 class SnakeGameApp:
     def __init__ (self, root, game_width, game_height):
         #Initialize the game app values
+        self.config_ini = ConfigIni()
+        self.config_ini.set_config()
+        time.sleep(1)
         self.root = root
         self.logfile = LogFile(root)
         self.error_logfile = ErrorLogFile()
@@ -33,8 +36,7 @@ class SnakeGameApp:
         self.game_config = GameConfig(logfile=self.logfile, game_mode = "initial_config")
         self.update_contrast = UpdateContrast(self.logfile)
         self.theme_updater = ThemeUpdater(self.logfile)
-        self.config_ini = ConfigIni()
-        time.sleep(1)
+
         self.game_width = game_width
         self.game_height = game_height
         # self.previous_width = root.winfo_width()
@@ -601,7 +603,6 @@ class SnakeGameApp:
             self.original_main_canvas.pack(expand=True, fill="both")
         except:
             traceback.print_exc()
-
 
     # Confirm quitting the game
     def confirm_quit(self):

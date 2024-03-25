@@ -4,16 +4,19 @@
 import configparser, traceback
 from os import path
 
+from Logic.config_ini_Initials import ConfigIni
+
 # Class for the game configuration
 class GameConfig:
     def __init__(self, logfile, game_mode):
         # Initializing variables
+        self.config_ini = ConfigIni()
+        self.config_ini.set_config()
         self.logfile = logfile
         self.TIME_PLAYED = 0
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.ConfigParser()
-
 
         try:
             if not self.config.has_option('Settings', 'snake_color'):

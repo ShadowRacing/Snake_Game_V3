@@ -17,16 +17,20 @@ class GameConfig:
 
         try:
             if not self.config.has_option('Settings', 'snake_color'):
-                self.config.set('Settings','snake_color', 'Green')
+                self.config.set('Settings','snake_color', 'Default')
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
         except:
             traceback.print_exc()
         
+        # Set the snake color from the configuration file
         try:
             self.snake_color = self.config.get('Settings', 'snake_color', fallback='Green')
-            if self.snake_color in ['Red', 'Blue', 'Green', 'Yellow', 'Black', 'White', 'Grey', 'Olive', 'Purple', 'Orange', 'Silver', 'Gold', 'OrangeRed', 'MidnightPurple']:
-                if self.snake_color == 'Red':
+            if self.snake_color in ['Default','Red', 'Blue', 'Green', 'Yellow', 'Black', 'White', 'Grey', 'Olive', 'Purple', 'Orange', 'Silver', 'Gold', 'OrangeRed', 'MidnightPurple']:
+                if self.snake_color == 'Default':
+                    self.SNAKE_OUTLINE = "#000000"
+                    self.snake_color = "#00FF00"
+                elif self.snake_color == 'Red':
                     self.SNAKE_OUTLINE = "#FFFFFF"
                     self.snake_color = "#FF0000"
                 elif self.snake_color == 'Blue':

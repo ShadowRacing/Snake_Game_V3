@@ -15,6 +15,7 @@ from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, Bu
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel
 from Logic.snake_logic_snake_game import Snake
 from Logic.food_logic_snake_game import ClassicFood, SpecialFood, EndlessFood
+from Logic.config_ini_initials import ConfigIniInitials
 from Games.snake_classic_game import Snake_Classic_Game
 from Games.snake_endless_game import Snake_endless
 from Games.snake_special_game import Snake_Special

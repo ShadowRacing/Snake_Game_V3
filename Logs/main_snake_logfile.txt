@@ -30443,3 +30443,41 @@ Special High Score: 0 Food eaten
 
 [2024-03-24 21:07:15] Started the app
 Special High Score: 0 Food eaten
+[2024-03-25 19:22:24] Started the app
+[2024-03-25 19:22:24] Started the app
+[2024-03-25 19:22:24] Started the GameApp Class
+[2024-03-25 19:22:24] Game mode: initial config
+[2024-03-25 19:22:24] Default
+[2024-03-25 19:22:24] Updated initial_theme in config.ini to Default
+[2024-03-25 19:22:24] Current initial_theme in config.ini: Default
+[2024-03-25 19:22:24] Contrast mode set to dark
+[2024-03-25 19:22:24] Reset snake length
+[2024-03-25 19:22:24] start_screen method called
+[2024-03-25 19:25:19] Started the app
+[2024-03-25 19:25:19] Started the app
+[2024-03-25 19:25:19] Started the GameApp Class
+[2024-03-25 19:25:19] Game mode: initial config
+[2024-03-25 19:27:38] Started the app
+[2024-03-25 19:27:38] Started the app
+[2024-03-25 19:27:38] Started the GameApp Class
+[2024-03-25 19:27:38] Game mode: initial config
+[2024-03-25 19:27:38] Default
+[2024-03-25 19:27:38] Updated initial_theme in config.ini to Default
+[2024-03-25 19:27:38] Current initial_theme in config.ini: Default
+[2024-03-25 19:27:38] Contrast mode set to dark
+[2024-03-25 19:27:38] Reset snake length
+[2024-03-25 19:27:38] start_screen method called
+[2024-03-25 19:28:17] Started the app
+[2024-03-25 19:28:17] Started the app
+[2024-03-25 19:28:17] Started the GameApp Class
+[2024-03-25 19:28:17] Game mode: initial config
+[2024-03-25 19:28:17] Default
+[2024-03-25 19:28:17] Updated initial_theme in config.ini to Default
+[2024-03-25 19:28:17] Current initial_theme in config.ini: Default
+[2024-03-25 19:28:17] Contrast mode set to dark
+[2024-03-25 19:28:17] Reset snake length
+[2024-03-25 19:28:17] start_screen method called
+[2024-03-25 19:29:19] Game mode: classic_snake
+[2024-03-25 19:29:19] start_game
+[2024-03-25 19:29:19] Reset snake length
+[2024-03-25 19:29:19] Game mode: classic_snake

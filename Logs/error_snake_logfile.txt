@@ -1141,3 +1141,67 @@ TypeError: EndlessFood.special_spawn_food() takes 2 positional arguments but 3 w
 
 
 
+[2024-03-25 19:22:24] 
+
+
+[2024-03-25 19:22:24] Started the Error Log File
+[2024-03-25 19:25:19] 
+
+
+[2024-03-25 19:25:19] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 614, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 39, in __init__
+    self.theme_updater.set_initial_theme()
+  File "e:\Snake_game_V3\Snake_Game_V3\Themes\theme_updater_snake_game.py", line 37, in set_initial_theme
+    self.config.set('Settings', 'theme') 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+[2024-03-25 19:27:38] 
+
+
+[2024-03-25 19:27:38] Started the Error Log File
+[2024-03-25 19:28:17] 
+
+
+[2024-03-25 19:28:17] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 202, in __init__
+    self.classic_score_label_ = self.config.set('Classic_Snake_Values', 'score', '0')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Classic_Snake_Values'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 202, in __init__
+    self.classic_score_label_ = self.config.set('Classic_Snake_Values', 'score', '0')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Classic_Snake_Values'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 54, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 156, in classic_snake
+    self.classic_snake_canvas = Snake_Classic_Game(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 53, in __init__
+    self.game_labels_panel.classic_create_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 215, in classic_create_game_labels
+    self.classic_create_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 238, in classic_create_score_label
+    text=f"Score:{self.classic_score_label_} Food eaten",
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'classic_score_label_'

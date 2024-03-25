@@ -1205,3 +1205,148 @@ Traceback (most recent call last):
     text=f"Score:{self.classic_score_label_} Food eaten",
                  ^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'GameLabelsPanel' object has no attribute 'classic_score_label_'
+[2024-03-25 19:59:56] 
+
+
+[2024-03-25 19:59:56] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 202, in __init__
+    self.classic_score_label_ = self.config.set('Classic_Snake_Values', 'score', '0')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Classic_Snake_Values'
+[2024-03-25 20:00:45] No errors occurred
+[2024-03-25 20:00:45] Closed the Error Log File
+
+
+
+
+[2024-03-25 20:00:49] 
+
+
+[2024-03-25 20:00:49] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 205, in __init__
+    self.endless_score_label_ = self.config.set('Endless_Snake_Values', 'score', '0')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Endless_Snake_Values'
+[2024-03-25 20:01:53] No errors occurred
+[2024-03-25 20:01:53] Closed the Error Log File
+
+
+
+
+[2024-03-25 20:01:55] 
+
+
+[2024-03-25 20:01:55] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 616, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 36, in __init__
+    self.config_ini = ConfigIni()
+                      ^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\config_ini_Initials.py", line 14, in __init__
+    self.set_classic_snake_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\config_ini_Initials.py", line 60, in set_classic_snake_settings
+    self.config.set('Classic_Snake_Settings', 'state', 'start_game')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Classic_Snake_Settings'
+[2024-03-25 20:05:37] 
+
+
+[2024-03-25 20:05:37] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 617, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 36, in __init__
+    self.config_ini = ConfigIni()
+                      ^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\config_ini_Initials.py", line 14, in __init__
+    self.set_classic_snake_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\config_ini_Initials.py", line 60, in set_classic_snake_settings
+    self.config.set('Classic_Snake_Settings', 'state', 'start_game')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Classic_Snake_Settings'
+[2024-03-25 20:06:44] 
+
+
+[2024-03-25 20:06:44] Started the Error Log File
+[2024-03-25 20:08:26] 
+
+
+[2024-03-25 20:08:26] Started the Error Log File
+[2024-03-25 20:14:43] 
+
+
+[2024-03-25 20:14:43] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 20, in __init__
+    self.config.set('Settings','snake_color', 'Green')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 617, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 54, in __init__
+    self.update_contrast.apply_contrast(selected_value=None)
+  File "e:\Snake_game_V3\Snake_Game_V3\Themes\contrast_updater_snake_game.py", line 23, in apply_contrast
+    self.update_config_contrast(selected_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Themes\contrast_updater_snake_game.py", line 39, in update_config_contrast
+    self.config.set('Settings', 'contrast', selected_value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-03-25 20:15:00] 
+
+
+[2024-03-25 20:15:00] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 20, in __init__
+    self.config.set('Settings','snake_color', 'Green')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 20, in __init__
+    self.config.set('Settings','snake_color', 'Green')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 20, in __init__
+    self.config.set('Settings','snake_color', 'Green')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 20, in __init__
+    self.config.set('Settings','snake_color', 'Green')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'

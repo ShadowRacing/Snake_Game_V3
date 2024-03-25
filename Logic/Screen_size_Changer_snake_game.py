@@ -69,8 +69,6 @@ class Screen_size:
 
     # The update_config method updates the screen size in the configuration file and writes the changes to the file.
     def update_config(self, selected_value):
-        if not self.config.has_section('Settings'):
-            self.config.add_section('Settings')
         self.config.set('Settings', 'screen_size', selected_value)
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)

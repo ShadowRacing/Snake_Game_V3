@@ -36,9 +36,6 @@ class UpdateContrast:
     
     #Method to update the config.ini file
     def update_config_contrast(self, selected_value):
-        if not self.config.has_section('Settings'):
-            self.config.add_section('Settings')
-        
         self.config.set('Settings', 'contrast', selected_value)
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)

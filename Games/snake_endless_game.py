@@ -60,12 +60,7 @@ class Snake_endless(ctk.CTkCanvas):
             traceback.print_exc()
 
         # Check if the config file has the necessary sections and options If not, add them
-        try:
-            if not self.config.has_section('Endless_Snake_Values'):
-                self.config.add_section('Endless_Snake_Values')
-        except:
-            traceback.print_exc()
-        
+
         try:
             if not self.config.has_option('Endless_Snake_Values', 'score'):
                 self.config.set('Endless_Snake_Values','score', '0')
@@ -131,12 +126,6 @@ class Snake_endless(ctk.CTkCanvas):
         except:
             traceback.print_exc()
 
-        try:
-            if not self.config.has_section('Endless_Snake_Settings'):
-                self.config.add_section('Endless_Snake_Settings')
-        except:
-            traceback.print_exc()
-        
         try:
             if not self.config.has_option('Endless_Snake_Settings', 'state'):
                 self.config.set('Endless_Snake_Settings', 'state', 'start_screen')

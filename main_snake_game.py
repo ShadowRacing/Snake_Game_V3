@@ -15,7 +15,7 @@ from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, Bu
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel
 from Logic.snake_logic_snake_game import Snake
 from Logic.food_logic_snake_game import ClassicFood, SpecialFood, EndlessFood
-from Logic.config_ini_initials import ConfigIniInitials
+from Logic.config_ini_Initials import ConfigIni
 from Games.snake_classic_game import Snake_Classic_Game
 from Games.snake_endless_game import Snake_endless
 from Games.snake_special_game import Snake_Special
@@ -33,6 +33,8 @@ class SnakeGameApp:
         self.game_config = GameConfig(logfile=self.logfile, game_mode = "initial_config")
         self.update_contrast = UpdateContrast(self.logfile)
         self.theme_updater = ThemeUpdater(self.logfile)
+        self.config_ini = ConfigIni()
+        time.sleep(1)
         self.game_width = game_width
         self.game_height = game_height
         # self.previous_width = root.winfo_width()

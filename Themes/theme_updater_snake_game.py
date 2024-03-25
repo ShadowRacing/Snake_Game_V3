@@ -31,8 +31,6 @@ class ThemeUpdater:
     def set_initial_theme(self):
         self.config.read("config.ini")
         # Check if the 'Settings' section exists in the config file
-        if not self.config.has_section('Settings'):
-            self.config.add_section('Settings')
         if not self.config.has_option('Settings', 'theme'):
             self.config.set('Settings', 'theme', 'Default') 
 
@@ -63,10 +61,6 @@ class ThemeUpdater:
 
     # The update_config_theme method updates the theme in the configuration file and writes the changes to the file.
     def update_config_theme(self, selected_value):
-        if not self.config.has_section('Settings'):
-            self.config.add_section('Settings')
-        if not self.config.has_option('Settings', 'theme'):
-            self.config.add_section('theme') 
         self.config.set('Settings', 'theme', selected_value)
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)

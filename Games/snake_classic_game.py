@@ -59,10 +59,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.ConfigParser()
         self.config.read(self.config_path)
-
-        if not self.config.has_section('Classic_Snake_Values'):
-            self.config.add_section('Classic_Snake_Values')
-       
+        
         if not self.config.has_option('Classic_Snake_Values', 'score'):
             self.config.set('Classic_Snake_Values','score', '0')
             with open('config.ini', 'w') as configfile:
@@ -94,9 +91,6 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
 
-        if not self.config.has_section('Classic_Snake_Settings'):
-            self.config.add_section('Classic_Snake_Settings')
-        
         if not self.config.has_option('Classic_Snake_Settings', 'state'):
             self.config.set('Classic_Snake_Settings', 'state', 'start_screen')
             with open('config.ini', 'w') as configfile:

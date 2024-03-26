@@ -14,6 +14,8 @@ class Snake:
         self.canvas = canvas
         self.reset_length()
 
+        #HEllo
+
     def reset_length(self):
         # delete the existing squares from the canvas
         try:

@@ -370,7 +370,7 @@ class OptionButtonPanel:
             traceback.print_exc()
 
         try: 
-            self.high_score_label_showing_config = self.config.get('Settings', 'label_needed', fallback='True')
+            self.high_score_label_showing_config = self.config.get('Settings', 'label_needed_high_score', fallback='Default')
             self.high_score_var = ctk.StringVar()
             self.high_score_var.set(self.high_score_label_showing_config)
         except:
@@ -415,7 +415,7 @@ class OptionButtonPanel:
 
     def high_score_label_showing_callback(self, selected_value):
         try:
-            self.config.set('Settings', 'label_needed', selected_value)
+            self.config.set('Settings', 'label_needed_high_score', selected_value)
         except:
             traceback.print_exc()
         self.updating_config_ini()
@@ -465,9 +465,9 @@ class OptionButtonPanel:
                                       ["Red", "Blue", "Green", "Yellow", "Black", "White", "Grey", "Olive", "Purple", "Orange", "Silver", "Gold", "OrangeRed", "MidnightPurple"],
                                       self.snake_color_config, 800, 50)
             
-            self.high_score_label_showing_config = self.config.get('Settings', 'label_needed', fallback='False')
-            self.create_option_button(self.label_panel.label_showing_callback,
-                                      ["True", "False"],
+            self.high_score_label_showing_config = self.config.get('Settings', 'label_needed_high_score', fallback='False')
+            self.create_option_button(self.high_score_label_showing_callback,
+                                      ["Default", "True", "False"],
                                       self.high_score_label_showing_config, 1000, 50)
 
         # Handle exceptions appropriately

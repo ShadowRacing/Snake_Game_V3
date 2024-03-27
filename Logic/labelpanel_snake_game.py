@@ -217,18 +217,27 @@ class GameLabelsPanel:
             traceback.print_exc()
 
     def classic_create_game_labels(self):
+        self.config.read(self.config_path)
+        self.high_score_label_needed = self.config.get('Settings', 'label_needed_high_score', fallback='Default')
+        
         self.classic_create_score_label()
-        self.classic_create_high_score_label()
         self.classic_create_time_label()
-        self.classic_create_high_score_time_label()
-        self.classic_create_high_scores_label()
         self.classic_create_snake_length_label()
-        self.classic_create_high_score_snake_length_label()
-    
+        if self.high_score_label_needed == 'True' or self.high_score_label_needed == 'Default':
+            self.classic_create_high_score_label()
+            self.classic_create_high_score_time_label()
+            self.classic_create_high_scores_label()
+            self.classic_create_high_score_snake_length_label()
+        
+
     def classic_update_high_score_labels(self):
-        self.classic_update_high_score_label()
-        self.classic_update_high_score_time_label()
-        self.classic_update_high_score_snake_length_label()
+        self.config.read(self.config_path)
+        self.high_score_label_needed = self.config.get('Settings', 'label_needed_high_score', fallback='Default')
+    
+        if self.high_score_label_needed == 'True' or self.high_score_label_needed == 'Default':
+            self.classic_update_high_score_label()
+            self.classic_update_high_score_time_label()
+            self.classic_update_high_score_snake_length_label()
     
     def classic_update_game_labels(self):
         self.classic_update_score_label()
@@ -416,24 +425,33 @@ class GameLabelsPanel:
 
 
     def endless_create_game_labels(self):
+        self.config.read(self.config_path)
+        self.high_score_label_needed = self.config.get('Settings', 'label_needed_high_score', fallback='Default')
         self.endless_create_score_label()
-        self.endless_create_high_score_label()
         self.endless_create_time_label()
-        self.endless_create_high_score_time_label()
-        self.endless_create_high_scores_label()
         self.endless_create_snake_length_label()
-        self.endless_create_high_score_snake_length_label()
         self.endless_create_special_score_label()
-        self.endless_create_special_high_score_label()
         self.endless_create_shorten_score_label()
-        self.endless_create_shorten_high_score_label()
+        
+        if self.high_score_label_needed == 'True' or self.high_score_label_needed == 'Default':
+            self.endless_create_high_score_label()
+            self.endless_create_high_score_time_label()
+            self.endless_create_high_scores_label()
+            self.endless_create_high_score_snake_length_label()
+            self.endless_create_special_high_score_label()
+            self.endless_create_shorten_high_score_label()
+
+
 
     def endless_update_high_score_labels(self):
-        self.endless_update_high_score_label()
-        self.endless_update_high_score_time_label()
-        self.endless_update_high_score_snake_length_label()
-        self.endless_update_special_high_score_label()
-        self.endless_update_shorten_high_score_label()
+        self.config.read(self.config_path)
+        self.high_score_label_needed = self.config.get('Settings', 'label_needed_high_score', fallback='Default')
+        if self.high_score_label_needed == 'True' or self.high_score_label_needed == 'Default':    
+            self.endless_update_high_score_label()
+            self.endless_update_high_score_time_label()
+            self.endless_update_high_score_snake_length_label()
+            self.endless_update_special_high_score_label()
+            self.endless_update_shorten_high_score_label()
 
     def endless_update_game_labels(self):
         self.endless_update_score_label()

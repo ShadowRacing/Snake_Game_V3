@@ -39,6 +39,8 @@ class ConfigIni:
                 self.config.set('Settings', 'button_press_time_limit', '0.5')
             if not self.config.has_option('Settings', 'label_needed'):
                 self.config.set('Settings', 'label_needed', 'True')
+            if not self.config.has_option('Settings', 'label_needed_high_score'):
+                self.config.set('Settings', 'label_needed_high_score', 'Default')
             if not self.config.has_option('Settings', 'game_mode'):
                 self.config.set('Settings', 'game_mode', 'classic_snake')
             with open('config.ini', 'w') as configfile:

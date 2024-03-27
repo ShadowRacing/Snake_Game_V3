@@ -496,7 +496,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.endless_high_score_label_ = self.config.get('endless_Snake_Values', 'high_score', fallback='0')
+            self.endless_high_score_label_ = self.config.get('Endless_Snake_Values', 'high_score', fallback='0')
             #update the high score label on the screen
             self.endless_high_score_label.configure(text=f"Score: {self.endless_high_score_label_} ")
         except:
@@ -507,7 +507,7 @@ class GameLabelsPanel:
                                         height=30,
                                         width=275,
                                         corner_radius=10,
-                                        text=f"Time: {self.endless_score_label_} Seconds", 
+                                        text=f"Time: {self.endless_time_label_} Seconds", 
                                         font=FONT_LIST[11],
                                         bg_color='grey20',
                                         anchor='w'
@@ -531,7 +531,7 @@ class GameLabelsPanel:
                                                     height=30,
                                                     width=275,
                                                     corner_radius=10,
-                                                    text=f"Score Time: {self.endless_score_label_} Seconds", 
+                                                    text=f"Score Time: {self.endless_time_label_} Seconds", 
                                                     font=FONT_LIST[11],
                                                     bg_color='grey20',
                                                     anchor='w'

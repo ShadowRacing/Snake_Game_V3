@@ -2803,3 +2803,58 @@ AttributeError: 'EndlessFood' object has no attribute 'shorten_food_coordinates'
 
 
 
+[2024-03-27 20:47:16] 
+
+
+[2024-03-27 20:47:16] Started the Error Log File
+[2024-03-27 20:47:52] No errors occurred
+[2024-03-27 20:47:52] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:50:21] 
+
+
+[2024-03-27 20:50:21] Started the Error Log File
+[2024-03-27 20:55:27] 
+
+
+[2024-03-27 20:55:27] Started the Error Log File
+[2024-03-27 20:59:50] No errors occurred
+[2024-03-27 20:59:50] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:59:52] 
+
+
+[2024-03-27 20:59:52] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 477, in endless_update_score_label
+    self.endless_score_label.configure(text=f"Score: {self.endless_high_score_label_} ")
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_high_score_label_'
+[2024-03-27 21:00:16] No errors occurred
+[2024-03-27 21:00:16] Closed the Error Log File
+
+
+
+
+[2024-03-27 21:01:01] 
+
+
+[2024-03-27 21:01:01] Started the Error Log File
+[2024-03-27 21:03:54] 
+
+
+[2024-03-27 21:03:54] Started the Error Log File
+[2024-03-27 21:12:05] 
+
+
+[2024-03-27 21:12:05] Started the Error Log File
+[2024-03-27 21:12:35] 
+
+
+[2024-03-27 21:12:35] Started the Error Log File

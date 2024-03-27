@@ -462,13 +462,11 @@ class Snake_endless(ctk.CTkCanvas):
         # Unbind any previous bindings to avoid conflicts
         self.snake_canvas.unbind('<space>')
         self.bind_and_unbind_keys()
-        try:   
-            self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0'))
-
-        except:
-            traceback.print_exc()
+          
         self.logfile.log_game_event(f"High score: {self.high_score}")
         self.logfile.log_game_event(f"Score: {self.score}")
+        self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0'))
+
         if self.score > self.high_score:
             try:
                 self.config.set('Endless_Snake_Values', 'high_score', str(self.score))
@@ -503,6 +501,14 @@ class Snake_endless(ctk.CTkCanvas):
                 self.config.set('Endless_Snake_Values', 'special_score_high_score', str(self.special_score))
             except:
                 traceback.print_exc()
+        
+        self.shorten_high_score = int(self.config.get('Endless_Snake_Values', 'shorten_snake_high_score', fallback='0'))
+        if self.shorten_score > self.shorten_high_score:
+            try:
+                self.config.set('Endless_Snake_Values', 'shorten_snake_high_score', str(self.shorten_score))
+            except:
+                traceback.print_exc()
+
         try:   
             with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
@@ -520,6 +526,7 @@ class Snake_endless(ctk.CTkCanvas):
                 self.config.write(configfile)
         except:
             traceback.print_exc()
+        self.game_labels_panel_2.endless_update_game_labels()
 
     def restart_game(self, event=None):
         self.bind_and_unbind_keys()

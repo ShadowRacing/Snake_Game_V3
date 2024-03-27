@@ -27,6 +27,7 @@ class Screen_size:
             "1920x1080": lambda: self.set_custom_size(1920, 1080),
             "1920x1200": lambda: self.set_custom_size(1920, 1200),
             "2560x1440": lambda: self.set_custom_size(2560, 1440),
+            "3480x2160": lambda: self.set_custom_size(3480, 2160),
         }
 
         if selected_value in screen_sizes:

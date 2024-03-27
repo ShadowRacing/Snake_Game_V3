@@ -150,6 +150,17 @@ class SettingsOptionButtonLabels:
         except: 
             traceback.print_exc()
 
+    def create_high_score_label(self):
+        self.high_score_label = ctk.CTkLabel(self.settings_canvas, 
+                                             width=160,
+                                             height=30,
+                                             corner_radius=6,
+                                             text="High Score", 
+                                             font=FONT_LIST[11],
+                                             anchor='w'
+                                             )
+        self.high_score_label.place(x=1000, y=10)
+
     def set_create_label_canvas_flag(self, value=True):
         self.create_label_canvas_flag = value
 

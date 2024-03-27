@@ -383,6 +383,7 @@ class SnakeGameApp:
         self.settings_labels.create_theme_options_label()
         self.settings_labels.create_contrast_options_label()
         self.settings_labels.create_theme_label()
+        self.settings_labels.create_high_score_label()
         self.settings_labels.snake_color_options_label()
     
     def classic_reset_high_score(self):

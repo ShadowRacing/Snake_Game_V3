@@ -419,7 +419,6 @@ class OptionButtonPanel:
         except:
             traceback.print_exc()
         self.updating_config_ini()
-        self.label_panel.endless_update_high_score_labels()
 
     # Method to create an option button
     def create_option_button(self, command, values, config, x, y):

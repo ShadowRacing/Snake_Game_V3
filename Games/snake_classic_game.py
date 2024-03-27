@@ -2,7 +2,7 @@
 # Wims Snake Game Snake Classic Game File
 # *****************************************
 
-import customtkinter as ctk, time, configparser
+import customtkinter as ctk, time, configparser, traceback
 from os import path
 
 # Importing thhe necessary modules from other folders
@@ -59,6 +59,11 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.ConfigParser()
         self.config.read(self.config_path)
+
+        try:  
+            self.config.set('Settings', 'game_mode', 'classic_snake')
+        except:
+            traceback.print_exc()
         
         if not self.config.has_option('Classic_Snake_Values', 'score'):
             self.config.set('Classic_Snake_Values','score', '0')

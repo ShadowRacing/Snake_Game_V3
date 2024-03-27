@@ -62,44 +62,42 @@ class Snake_endless(ctk.CTkCanvas):
             traceback.print_exc()
 
         # Check if the config file has the necessary sections and options If not, add them
+        try:  
+            self.config.set('Settings', 'game_mode', 'endless_snake')
+        except:
+            traceback.print_exc()
 
         try:
             if not self.config.has_option('Endless_Snake_Values', 'score'):
                 self.config.set('Endless_Snake_Values','score', '0')
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
+
         except:
             traceback.print_exc()
         
         try:
             if not self.config.has_option('Endless_Snake_Values', 'special_score'):
                 self.config.set('Endless_Snake_Values','special_score', '0')
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
+
         except:
             traceback.print_exc()
         
         try:
             if not self.config.has_option('Endless_Snake_Values', 'special_score_high_score'):
                 self.config.set('Endless_Snake_Values','special_score_high_score', '0')
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
+
         except:
             traceback.print_exc()
         
         try:
             if not self.config.has_option('Endless_Snake_Values', 'high_score'):
                 self.config.set('Endless_Snake_Values','high_score', '0')
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
+
         except:
             traceback.print_exc()      
         
         try:
             if not self.config.has_option('Endless_Snake_Values', 'time_score'):
                 self.config.set('Endless_Snake_Values','time_score', '0')
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
         except:
             traceback.print_exc()
 
@@ -107,40 +105,31 @@ class Snake_endless(ctk.CTkCanvas):
             if not self.config.has_option('Endless_Snake_Values', 'high_score_time'):
                 self.config.set('Endless_Snake_Values','high_score_time', '0')
                 self.logfile.log_game_event("high_score_time added")
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
         except:
             traceback.print_exc()
 
         try:
             if not self.config.has_option('Endless_Snake_Values', 'snake_length'):
                 self.config.set('Endless_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
         except:
             traceback.print_exc()
         
         try:
             if not self.config.has_option('Endless_Snake_Values', 'snake_length_high_score'):
                 self.config.set('Endless_Snake_Values','snake_length_high_score', '0')
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
+
         except:
             traceback.print_exc()
 
         try:
             if not self.config.has_option('Endless_Snake_Settings', 'state'):
                 self.config.set('Endless_Snake_Settings', 'state', 'start_screen')
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
         except:
             traceback.print_exc()
         
         try:
             if not self.config.has_option('Endless_Snake_Values', 'next_special_food_score'):
                 self.config.set('Endless_Snake_Values', 'next_special_food_score', '50')
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
             else:
                 self.config.set('Endless_Snake_Values', 'next_special_food_score', '50')
         except:
@@ -149,13 +138,19 @@ class Snake_endless(ctk.CTkCanvas):
         try:
             if not self.config.has_option('Endless_Snake_Values', 'next_shorten_food_score'):
                 self.config.set('Endless_Snake_Values', 'next_shorten_food_score', '100')
-                with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
+                
             else:
                 self.config.set('Endless_Snake_Values', 'next_shorten_food_score', '100')
         except:
             traceback.print_exc()
-                
+        
+        try:
+            with open(self.config_path, 'w') as configfile:
+                self.config.write(configfile)
+        except:
+            traceback.print_exc()
+            
+
         # Start the game loop
         self.start_screen()
         self.bind_and_unbind_keys()

@@ -335,6 +335,8 @@ class OptionButtonPanel:
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.RawConfigParser()
+
+
         try:
             self.config.read(self.config_path)
         except:
@@ -364,6 +366,13 @@ class OptionButtonPanel:
             self.contrast_mode = ctk.StringVar()
             self.contrast_mode.set(self.contrast_config)
             self.contrast_updater = UpdateContrast(self.logfile)
+        except:
+            traceback.print_exc()
+
+        try: 
+            self.high_score_label_showing_config = self.config.get('Settings', 'label_needed', fallback='True')
+            self.high_score_var = ctk.StringVar()
+            self.high_score_var.set(self.high_score_label_showing_config)
         except:
             traceback.print_exc()
 
@@ -403,6 +412,14 @@ class OptionButtonPanel:
             traceback.print_exc()
         self.updating_config_ini()
         self.snake_color_rgb = COLORS_DICT.get(selected_value)
+
+    def high_score_label_showing_callback(self, selected_value):
+        try:
+            self.config.set('Settings', 'label_needed', selected_value)
+        except:
+            traceback.print_exc()
+        self.updating_config_ini()
+        self.label_panel.endless_update_high_score_labels()
 
     # Method to create an option button
     def create_option_button(self, command, values, config, x, y):
@@ -446,9 +463,12 @@ class OptionButtonPanel:
             self.snake_color_config = self.config.get('Settings', 'snake_color', fallback='Green')
             self.create_option_button(self.snake_color_callback,
                                       ["Red", "Blue", "Green", "Yellow", "Black", "White", "Grey", "Olive", "Purple", "Orange", "Silver", "Gold", "OrangeRed", "MidnightPurple"],
-                                      self.snake_color_config, 800, 50
-                                      
-                                    )
+                                      self.snake_color_config, 800, 50)
+            
+            self.high_score_label_showing_config = self.config.get('Settings', 'label_needed', fallback='False')
+            self.create_option_button(self.label_panel.label_showing_callback,
+                                      ["True", "False"],
+                                      self.high_score_label_showing_config, 1000, 50)
 
         # Handle exceptions appropriately
         except:

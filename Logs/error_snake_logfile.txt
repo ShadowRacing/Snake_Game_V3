@@ -2892,3 +2892,79 @@ AttributeError: 'GameLabelsPanel' object has no attribute 'endless_high_score_la
 
 
 [2024-03-27 21:36:54] Started the Error Log File
+[2024-03-27 21:37:36] 
+
+
+[2024-03-27 21:37:36] Started the Error Log File
+[2024-03-27 21:41:34] No errors occurred
+[2024-03-27 21:41:34] Closed the Error Log File
+
+
+
+
+[2024-03-27 21:41:37] 
+
+
+[2024-03-27 21:41:37] Started the Error Log File
+[2024-03-27 21:44:09] No errors occurred
+[2024-03-27 21:44:09] Closed the Error Log File
+
+
+
+
+[2024-03-27 21:53:31] 
+
+
+[2024-03-27 21:53:31] Started the Error Log File
+[2024-03-27 21:53:34] No errors occurred
+[2024-03-27 21:53:34] Closed the Error Log File
+
+
+
+
+[2024-03-27 21:55:37] 
+
+
+[2024-03-27 21:55:37] Started the Error Log File
+[2024-03-27 21:55:52] No errors occurred
+[2024-03-27 21:55:52] Closed the Error Log File
+
+
+
+
+[2024-03-27 21:56:14] 
+
+
+[2024-03-27 21:56:14] Started the Error Log File
+[2024-03-27 21:58:11] 
+
+
+[2024-03-27 21:58:11] Started the Error Log File
+[2024-03-27 21:58:15] No errors occurred
+[2024-03-27 21:58:15] Closed the Error Log File
+
+
+
+
+[2024-03-27 22:03:12] 
+
+
+[2024-03-27 22:03:12] Started the Error Log File
+[2024-03-27 22:03:47] No errors occurred
+[2024-03-27 22:03:47] Closed the Error Log File
+
+
+
+
+[2024-03-27 22:03:55] 
+
+
+[2024-03-27 22:03:55] Started the Error Log File
+[2024-03-27 22:04:35] 
+
+
+[2024-03-27 22:04:35] Started the Error Log File
+[2024-03-27 22:06:08] 
+
+
+[2024-03-27 22:06:08] Started the Error Log File

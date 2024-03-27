@@ -37,6 +37,10 @@ class ConfigIni:
                 self.config.set('Settings', 'label_needed', 'False')
             if not self.config.has_option('Settings', 'button_press_time_limit'):
                 self.config.set('Settings', 'button_press_time_limit', '0.5')
+            if not self.config.has_option('Settings', 'label_needed'):
+                self.config.set('Settings', 'label_needed', 'True')
+            if not self.config.has_option('Settings', 'game_mode'):
+                self.config.set('Settings', 'game_mode', 'classic_snake')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except:
@@ -102,6 +106,7 @@ class ConfigIni:
                 self.config.set('Endless_Snake_Values', 'next_special_food_score', '50')
             if not self.config.has_option('Endless_Snake_Values', 'next_shorten_food_score'):
                 self.config.set('Endless_Snake_Values', 'next_shorten_food_score', '100')
+
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except:

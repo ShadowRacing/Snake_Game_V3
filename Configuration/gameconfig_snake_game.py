@@ -17,6 +17,10 @@ class GameConfig:
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.ConfigParser()
+        try:
+            self.config.read(self.config_path)
+        except:
+            traceback.print_exc()
 
         try:
             if not self.config.has_option('Settings', 'snake_color'):

@@ -32859,3 +32859,2438 @@ Special High Score: 0 Food eaten
 [2024-03-25 21:23:50] start_game
 [2024-03-25 21:23:50] Reset snake length
 [2024-03-25 21:23:50] Game mode: snake_endless
+[2024-03-27 17:09:58] Started the app
+[2024-03-27 17:09:58] Started the app
+[2024-03-27 17:09:58] Started the GameApp Class
+[2024-03-27 17:09:58] Game mode: initial config
+[2024-03-27 17:09:58] Default
+[2024-03-27 17:09:58] Updated initial_theme in config.ini to Default
+[2024-03-27 17:09:58] Current initial_theme in config.ini: Default
+[2024-03-27 17:09:58] Contrast mode set to dark
+[2024-03-27 17:09:58] Reset snake length
+[2024-03-27 17:09:58] start_screen method called
+[2024-03-27 17:09:59] Game mode: snake_endless
+[2024-03-27 17:09:59] start_game
+[2024-03-27 17:09:59] Reset snake length
+[2024-03-27 17:09:59] Game mode: snake_endless
+[2024-03-27 17:09:59] Game state: start_game
+[2024-03-27 17:09:59] Game focused
+[2024-03-27 17:11:52] Started the app
+[2024-03-27 17:11:52] Started the app
+[2024-03-27 17:11:52] Started the GameApp Class
+[2024-03-27 17:11:52] Game mode: initial config
+[2024-03-27 17:11:52] Default
+[2024-03-27 17:11:52] Updated initial_theme in config.ini to Default
+[2024-03-27 17:11:52] Current initial_theme in config.ini: Default
+[2024-03-27 17:11:52] Contrast mode set to dark
+[2024-03-27 17:11:52] Reset snake length
+[2024-03-27 17:11:52] start_screen method called
+[2024-03-27 17:11:53] Game mode: snake_endless
+[2024-03-27 17:11:53] start_game
+[2024-03-27 17:11:53] Reset snake length
+[2024-03-27 17:11:53] Game mode: snake_endless
+[2024-03-27 17:11:53] Game state: start_game
+[2024-03-27 17:11:53] Game focused
+[2024-03-27 17:13:06] Started the app
+[2024-03-27 17:13:06] Started the app
+[2024-03-27 17:13:06] Started the GameApp Class
+[2024-03-27 17:13:06] Game mode: initial config
+[2024-03-27 17:13:06] Default
+[2024-03-27 17:13:06] Updated initial_theme in config.ini to Default
+[2024-03-27 17:13:06] Current initial_theme in config.ini: Default
+[2024-03-27 17:13:06] Contrast mode set to dark
+[2024-03-27 17:13:06] Reset snake length
+[2024-03-27 17:13:06] start_screen method called
+[2024-03-27 17:13:07] Game mode: snake_endless
+[2024-03-27 17:13:07] start_game
+[2024-03-27 17:13:07] Reset snake length
+[2024-03-27 17:13:07] Game mode: snake_endless
+[2024-03-27 17:14:36] Started the app
+[2024-03-27 17:14:36] Started the app
+[2024-03-27 17:14:36] Started the GameApp Class
+[2024-03-27 17:14:36] Game mode: initial config
+[2024-03-27 17:14:36] Default
+[2024-03-27 17:14:36] Updated initial_theme in config.ini to Default
+[2024-03-27 17:14:36] Current initial_theme in config.ini: Default
+[2024-03-27 17:14:36] Contrast mode set to dark
+[2024-03-27 17:14:36] Reset snake length
+[2024-03-27 17:14:36] start_screen method called
+[2024-03-27 17:14:37] Game mode: snake_endless
+[2024-03-27 17:14:37] start_game
+[2024-03-27 17:14:37] Reset snake length
+[2024-03-27 17:14:37] Game mode: snake_endless
+[2024-03-27 17:14:37] Game state: start_game
+[2024-03-27 17:14:37] Game focused
+[2024-03-27 17:15:35] Started the app
+[2024-03-27 17:15:35] Started the app
+[2024-03-27 17:15:35] Started the GameApp Class
+[2024-03-27 17:15:35] Game mode: initial config
+[2024-03-27 17:15:35] Default
+[2024-03-27 17:15:35] Updated initial_theme in config.ini to Default
+[2024-03-27 17:15:35] Current initial_theme in config.ini: Default
+[2024-03-27 17:15:35] Contrast mode set to dark
+[2024-03-27 17:15:35] Reset snake length
+[2024-03-27 17:15:35] start_screen method called
+[2024-03-27 17:15:35] Game mode: snake_endless
+[2024-03-27 17:15:35] start_game
+[2024-03-27 17:15:35] Reset snake length
+[2024-03-27 17:15:35] Game mode: snake_endless
+[2024-03-27 17:15:36] Game state: start_game
+[2024-03-27 17:15:36] Game focused
+[2024-03-27 17:17:47] Started the app
+[2024-03-27 17:17:47] Started the app
+[2024-03-27 17:17:47] Started the GameApp Class
+[2024-03-27 17:17:47] Game mode: initial config
+[2024-03-27 17:17:47] Default
+[2024-03-27 17:17:47] Updated initial_theme in config.ini to Default
+[2024-03-27 17:17:47] Current initial_theme in config.ini: Default
+[2024-03-27 17:17:47] Contrast mode set to dark
+[2024-03-27 17:17:47] Reset snake length
+[2024-03-27 17:17:47] start_screen method called
+[2024-03-27 17:17:48] Game mode: snake_endless
+[2024-03-27 17:17:48] start_game
+[2024-03-27 17:17:48] Reset snake length
+[2024-03-27 17:17:48] Game mode: snake_endless
+[2024-03-27 17:17:48] Game state: start_game
+[2024-03-27 17:17:48] Game focused
+[2024-03-27 17:20:58] Started the app
+[2024-03-27 17:20:58] Started the GameApp Class
+[2024-03-27 17:20:58] Game mode: initial config
+[2024-03-27 17:20:58] Default
+[2024-03-27 17:20:58] Updated initial_theme in config.ini to Default
+[2024-03-27 17:20:58] Current initial_theme in config.ini: Default
+[2024-03-27 17:20:58] Contrast mode set to dark
+[2024-03-27 17:20:58] Reset snake length
+[2024-03-27 17:20:58] start_screen method called
+[2024-03-27 17:20:59] Game mode: snake_endless
+[2024-03-27 17:20:59] start_game
+[2024-03-27 17:20:59] Reset snake length
+[2024-03-27 17:20:59] Game mode: snake_endless
+[2024-03-27 17:20:59] Game state: start_game
+[2024-03-27 17:20:59] Game focused
+[2024-03-27 17:23:24] Game state: game
+[2024-03-27 17:23:24] Number off food items: 
+[2024-03-27 17:23:24] 1
+[2024-03-27 17:23:24] Food ID:
+[2024-03-27 17:23:24] a3c18565-9b54-4257-aae0-7b0e0a99434e
+[2024-03-27 17:23:24] {'a3c18565-9b54-4257-aae0-7b0e0a99434e': {'x': 120, 'y': 20, 'tag': 'fooda3c18565-9b54-4257-aae0-7b0e0a99434e', 'oval_id': 7}}
+[2024-03-27 17:23:24] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] Number off food items: 
+[2024-03-27 17:23:24] 1
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] Number off food items: 
+[2024-03-27 17:23:24] 1
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] Number off food items: 
+[2024-03-27 17:23:24] 1
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] Number off food items: 
+[2024-03-27 17:23:24] 1
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] Number off food items: 
+[2024-03-27 17:23:24] 1
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] Number off food items: 
+[2024-03-27 17:23:24] 1
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:24] Number off food items: 
+[2024-03-27 17:23:24] 1
+[2024-03-27 17:23:24] 0
+[2024-03-27 17:23:25] 0
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 0
+[2024-03-27 17:23:25] 0
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 0
+[2024-03-27 17:23:25] 0
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 0
+[2024-03-27 17:23:25] 0
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 0
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] Number off food items: 
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:25] 1
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] Food ID:
+[2024-03-27 17:23:26] 0c160e8c-83ae-4056-abbc-93068b6a9460
+[2024-03-27 17:23:26] {'0c160e8c-83ae-4056-abbc-93068b6a9460': {'x': 80, 'y': 140, 'tag': 'food0c160e8c-83ae-4056-abbc-93068b6a9460', 'oval_id': 31}}
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:26] Number off food items: 
+[2024-03-27 17:23:26] 1
+[2024-03-27 17:23:26] 2
+[2024-03-27 17:23:27] 2
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 2
+[2024-03-27 17:23:27] 2
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 2
+[2024-03-27 17:23:27] 2
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] Food ID:
+[2024-03-27 17:23:27] 1b34baa7-abe1-4ea1-9013-7060ab868a41
+[2024-03-27 17:23:27] {'1b34baa7-abe1-4ea1-9013-7060ab868a41': {'x': 200, 'y': 240, 'tag': 'food1b34baa7-abe1-4ea1-9013-7060ab868a41', 'oval_id': 40}}
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 2
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:27] Number off food items: 
+[2024-03-27 17:23:27] 1
+[2024-03-27 17:23:27] 3
+[2024-03-27 17:23:28] 3
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 3
+[2024-03-27 17:23:28] 3
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 3
+[2024-03-27 17:23:28] 3
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 3
+[2024-03-27 17:23:28] 3
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 3
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] Food ID:
+[2024-03-27 17:23:28] 264591c5-4b9a-4b3e-865c-a9aa9def521c
+[2024-03-27 17:23:28] {'264591c5-4b9a-4b3e-865c-a9aa9def521c': {'x': 80, 'y': 120, 'tag': 'food264591c5-4b9a-4b3e-865c-a9aa9def521c', 'oval_id': 54}}
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:28] Number off food items: 
+[2024-03-27 17:23:28] 1
+[2024-03-27 17:23:28] 4
+[2024-03-27 17:23:29] 4
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 4
+[2024-03-27 17:23:29] 4
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 4
+[2024-03-27 17:23:29] 4
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 4
+[2024-03-27 17:23:29] 4
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 4
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] Food ID:
+[2024-03-27 17:23:29] cc298d15-ed34-4c07-b007-b81f8c8a1d66
+[2024-03-27 17:23:29] {'cc298d15-ed34-4c07-b007-b81f8c8a1d66': {'x': 160, 'y': 20, 'tag': 'foodcc298d15-ed34-4c07-b007-b81f8c8a1d66', 'oval_id': 67}}
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:29] Number off food items: 
+[2024-03-27 17:23:29] 1
+[2024-03-27 17:23:29] 5
+[2024-03-27 17:23:30] 5
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 1
+[2024-03-27 17:23:30] 5
+[2024-03-27 17:23:30] 5
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 1
+[2024-03-27 17:23:30] 5
+[2024-03-27 17:23:30] 5
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 1
+[2024-03-27 17:23:30] 5
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 1
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 2
+[2024-03-27 17:23:30] Food ID:
+[2024-03-27 17:23:30] e44bbbbf-0951-4d5b-84cd-7313466e6377
+[2024-03-27 17:23:30] {'e44bbbbf-0951-4d5b-84cd-7313466e6377': {'x': 180, 'y': 340, 'tag': 'foode44bbbbf-0951-4d5b-84cd-7313466e6377', 'oval_id': 77}}
+[2024-03-27 17:23:30] Food ID:
+[2024-03-27 17:23:30] 2273c0aa-076a-40cf-9cad-b4ad3fd8cbe0
+[2024-03-27 17:23:30] {'e44bbbbf-0951-4d5b-84cd-7313466e6377': {'x': 180, 'y': 340, 'tag': 'foode44bbbbf-0951-4d5b-84cd-7313466e6377', 'oval_id': 77}, '2273c0aa-076a-40cf-9cad-b4ad3fd8cbe0': {'x': 0, 'y': 340, 'tag': 'food2273c0aa-076a-40cf-9cad-b4ad3fd8cbe0', 'oval_id': 78}}
+[2024-03-27 17:23:30] e045e8e1-65ac-4393-a62a-95266575f7ec
+[2024-03-27 17:23:30] Special Food ID:
+[2024-03-27 17:23:30] e045e8e1-65ac-4393-a62a-95266575f7ec
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 2
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 2
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 2
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 2
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 2
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:30] Number off food items: 
+[2024-03-27 17:23:30] 2
+[2024-03-27 17:23:30] 6
+[2024-03-27 17:23:31] 6
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 6
+[2024-03-27 17:23:31] 6
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 6
+[2024-03-27 17:23:31] 6
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 6
+[2024-03-27 17:23:31] 6
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 6
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:31] Number off food items: 
+[2024-03-27 17:23:31] 2
+[2024-03-27 17:23:31] 7
+[2024-03-27 17:23:32] 7
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 7
+[2024-03-27 17:23:32] 7
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 7
+[2024-03-27 17:23:32] 7
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 7
+[2024-03-27 17:23:32] 7
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 7
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:32] Number off food items: 
+[2024-03-27 17:23:32] 2
+[2024-03-27 17:23:32] 8
+[2024-03-27 17:23:33] 8
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 8
+[2024-03-27 17:23:33] 8
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 8
+[2024-03-27 17:23:33] 8
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 8
+[2024-03-27 17:23:33] 8
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 8
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:33] Number off food items: 
+[2024-03-27 17:23:33] 2
+[2024-03-27 17:23:33] 9
+[2024-03-27 17:23:34] 9
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 9
+[2024-03-27 17:23:34] 9
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 9
+[2024-03-27 17:23:34] 9
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 9
+[2024-03-27 17:23:34] 9
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 9
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:34] Number off food items: 
+[2024-03-27 17:23:34] 2
+[2024-03-27 17:23:34] 10
+[2024-03-27 17:23:35] 10
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 10
+[2024-03-27 17:23:35] 10
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 10
+[2024-03-27 17:23:35] 10
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 10
+[2024-03-27 17:23:35] 10
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 10
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:35] Number off food items: 
+[2024-03-27 17:23:35] 2
+[2024-03-27 17:23:35] 11
+[2024-03-27 17:23:36] 11
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 11
+[2024-03-27 17:23:36] 11
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 11
+[2024-03-27 17:23:36] 11
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 11
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:36] Number off food items: 
+[2024-03-27 17:23:36] 2
+[2024-03-27 17:23:36] 12
+[2024-03-27 17:23:37] 12
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 12
+[2024-03-27 17:23:37] 12
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 12
+[2024-03-27 17:23:37] 12
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 12
+[2024-03-27 17:23:37] 12
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 12
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:37] Number off food items: 
+[2024-03-27 17:23:37] 2
+[2024-03-27 17:23:37] 13
+[2024-03-27 17:23:38] 13
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 13
+[2024-03-27 17:23:38] 13
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 13
+[2024-03-27 17:23:38] 13
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 13
+[2024-03-27 17:23:38] 13
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 13
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:38] Number off food items: 
+[2024-03-27 17:23:38] 2
+[2024-03-27 17:23:38] 14
+[2024-03-27 17:23:39] 14
+[2024-03-27 17:23:39] Number off food items: 
+[2024-03-27 17:23:39] 2
+[2024-03-27 17:23:39] 14
+[2024-03-27 17:23:39] snake has a collision
+[2024-03-27 17:23:39] Game state: game_over
+[2024-03-27 17:23:39] Snake coordinates after reset: [(400, 160), (380, 160), (360, 160), (340, 160), (320, 160), (300, 160), (280, 160), (280, 180), (280, 200), (280, 220), (260, 220)]
+[2024-03-27 17:23:39] High score: 0
+[2024-03-27 17:23:39] Score: 55
+[2024-03-27 17:23:39] high_score_time updated to: 14
+[2024-03-27 17:23:39] snake_length_high_score updated to: 10
+[2024-03-27 17:23:41] Game restarted
+[2024-03-27 17:23:41] Game state: game_over
+[2024-03-27 17:23:41] Reset snake length
+[2024-03-27 17:23:41] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-27 17:23:41] Game state: game
+[2024-03-27 17:23:41] Number off food items: 
+[2024-03-27 17:23:41] 1
+[2024-03-27 17:23:41] Food ID:
+[2024-03-27 17:23:41] 4baec4b8-4e2f-49e3-8799-1b5f529d65a0
+[2024-03-27 17:23:41] {'4baec4b8-4e2f-49e3-8799-1b5f529d65a0': {'x': 160, 'y': 120, 'tag': 'food4baec4b8-4e2f-49e3-8799-1b5f529d65a0', 'oval_id': 180}}
+[2024-03-27 17:23:41] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-27 17:23:41] 0
+[2024-03-27 17:23:41] Number off food items: 
+[2024-03-27 17:23:41] 1
+[2024-03-27 17:23:41] 0
+[2024-03-27 17:23:41] 0
+[2024-03-27 17:23:41] Number off food items: 
+[2024-03-27 17:23:41] 1
+[2024-03-27 17:23:41] 0
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 0
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] Number off food items: 
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:42] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] Number off food items: 
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] Number off food items: 
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] Number off food items: 
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] Number off food items: 
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] Number off food items: 
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] 1
+[2024-03-27 17:23:43] snake has a collision
+[2024-03-27 17:23:43] Game state: game_over
+[2024-03-27 17:23:43] Snake coordinates after reset: [(-20, 140), (0, 140), (20, 140), (40, 140), (60, 140)]
+[2024-03-27 17:23:43] High score: 55
+[2024-03-27 17:23:43] Score: 0
+[2024-03-27 17:25:16] Closed the app
+
+
+
+
+[2024-03-27 17:20:58] Started the app
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+Special High Score: 0 Food eaten
+0
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+1
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+[2024-03-27 17:25:21] Started the app
+[2024-03-27 17:25:21] Started the app
+[2024-03-27 17:25:21] Started the GameApp Class
+[2024-03-27 17:25:21] Game mode: initial config
+[2024-03-27 17:25:21] Default
+[2024-03-27 17:25:21] Updated initial_theme in config.ini to Default
+[2024-03-27 17:25:21] Current initial_theme in config.ini: Default
+[2024-03-27 17:25:21] Contrast mode set to dark
+[2024-03-27 17:25:21] Reset snake length
+[2024-03-27 17:25:21] start_screen method called
+[2024-03-27 17:25:23] Game mode: snake_endless
+[2024-03-27 17:25:23] start_game
+[2024-03-27 17:25:23] Reset snake length
+[2024-03-27 17:25:23] Game mode: snake_endless
+[2024-03-27 17:28:14] Started the app
+[2024-03-27 17:28:14] Started the GameApp Class
+[2024-03-27 17:28:14] Game mode: initial config
+[2024-03-27 17:28:14] Default
+[2024-03-27 17:28:14] Updated initial_theme in config.ini to Default
+[2024-03-27 17:28:14] Current initial_theme in config.ini: Default
+[2024-03-27 17:28:14] Contrast mode set to dark
+[2024-03-27 17:28:14] Reset snake length
+[2024-03-27 17:28:14] start_screen method called
+[2024-03-27 17:28:23] Game mode: snake_endless
+[2024-03-27 17:28:23] start_game
+[2024-03-27 17:28:23] Reset snake length
+[2024-03-27 17:28:23] Game mode: snake_endless
+[2024-03-27 17:28:23] Game state: start_game
+[2024-03-27 17:28:23] Game focused
+[2024-03-27 17:29:21] Closed the app
+
+
+
+
+[2024-03-27 17:28:14] Started the app
+Special High Score: 1 Food eaten
+[2024-03-27 17:29:26] Started the app
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+Special High Score: 1 Food eaten
+1
+Special High Score: 1 Food eaten
+[2024-03-27 17:29:26] Started the app
+[2024-03-27 17:29:26] Started the GameApp Class
+[2024-03-27 17:29:26] Game mode: initial config
+[2024-03-27 17:29:26] Default
+[2024-03-27 17:29:26] Updated initial_theme in config.ini to Default
+[2024-03-27 17:29:26] Current initial_theme in config.ini: Default
+[2024-03-27 17:29:26] Contrast mode set to dark
+[2024-03-27 17:29:26] Reset snake length
+[2024-03-27 17:29:26] start_screen method called
+[2024-03-27 17:29:27] Game mode: snake_endless
+[2024-03-27 17:29:27] start_game
+[2024-03-27 17:29:27] Reset snake length
+[2024-03-27 17:29:27] Game mode: snake_endless
+[2024-03-27 17:29:27] Game state: start_game
+[2024-03-27 17:29:27] Game focused
+[2024-03-27 18:13:22] Game state: game
+[2024-03-27 18:13:22] Number off food items: 
+[2024-03-27 18:13:22] 1
+[2024-03-27 18:13:22] Food ID:
+[2024-03-27 18:13:22] 1e589574-1521-411c-9316-5c301fb5e1ca
+[2024-03-27 18:13:22] {'1e589574-1521-411c-9316-5c301fb5e1ca': {'x': 40, 'y': 100, 'tag': 'food1e589574-1521-411c-9316-5c301fb5e1ca', 'oval_id': 7}}
+[2024-03-27 18:13:22] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] Number off food items: 
+[2024-03-27 18:13:22] 1
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] Number off food items: 
+[2024-03-27 18:13:22] 1
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] Number off food items: 
+[2024-03-27 18:13:22] 1
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] Number off food items: 
+[2024-03-27 18:13:22] 1
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] Number off food items: 
+[2024-03-27 18:13:22] 1
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:22] Number off food items: 
+[2024-03-27 18:13:22] 1
+[2024-03-27 18:13:22] 0
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] Food ID:
+[2024-03-27 18:13:23] 45dd6d9c-1a81-4776-aefa-1b5f1b385b64
+[2024-03-27 18:13:23] {'45dd6d9c-1a81-4776-aefa-1b5f1b385b64': {'x': 200, 'y': 280, 'tag': 'food45dd6d9c-1a81-4776-aefa-1b5f1b385b64', 'oval_id': 15}}
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 0
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] Number off food items: 
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:23] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] Food ID:
+[2024-03-27 18:13:24] c494d47a-04fe-4d9c-9d37-beacc8c883fd
+[2024-03-27 18:13:24] {'c494d47a-04fe-4d9c-9d37-beacc8c883fd': {'x': 260, 'y': 100, 'tag': 'foodc494d47a-04fe-4d9c-9d37-beacc8c883fd', 'oval_id': 35}}
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:24] Number off food items: 
+[2024-03-27 18:13:24] 1
+[2024-03-27 18:13:24] 2
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 2
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:25] Number off food items: 
+[2024-03-27 18:13:25] 1
+[2024-03-27 18:13:25] 3
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 3
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] Food ID:
+[2024-03-27 18:13:26] 8ce79cd1-ff6e-4c39-988e-6d4c8065015b
+[2024-03-27 18:13:26] {'8ce79cd1-ff6e-4c39-988e-6d4c8065015b': {'x': 60, 'y': 360, 'tag': 'food8ce79cd1-ff6e-4c39-988e-6d4c8065015b', 'oval_id': 58}}
+[2024-03-27 18:13:26] Number off food items: 
+[2024-03-27 18:13:26] 1
+[2024-03-27 18:13:26] 4
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 4
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:27] Number off food items: 
+[2024-03-27 18:13:27] 1
+[2024-03-27 18:13:27] 5
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 5
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:28] Number off food items: 
+[2024-03-27 18:13:28] 1
+[2024-03-27 18:13:28] 6
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] Food ID:
+[2024-03-27 18:13:29] 6c951b40-99db-45b9-a0a8-ad6c58985714
+[2024-03-27 18:13:29] {'6c951b40-99db-45b9-a0a8-ad6c58985714': {'x': 60, 'y': 180, 'tag': 'food6c951b40-99db-45b9-a0a8-ad6c58985714', 'oval_id': 82}}
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 6
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:29] Number off food items: 
+[2024-03-27 18:13:29] 1
+[2024-03-27 18:13:29] 7
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 1
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 1
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 1
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 1
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 1
+[2024-03-27 18:13:30] 7
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 1
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 1
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 1
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 1
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 2
+[2024-03-27 18:13:30] Food ID:
+[2024-03-27 18:13:30] 64a89a84-0661-4ac9-86f6-85fa802d0dcd
+[2024-03-27 18:13:30] {'64a89a84-0661-4ac9-86f6-85fa802d0dcd': {'x': 180, 'y': 240, 'tag': 'food64a89a84-0661-4ac9-86f6-85fa802d0dcd', 'oval_id': 102}}
+[2024-03-27 18:13:30] Food ID:
+[2024-03-27 18:13:30] fd8c3da7-0367-46b3-b3f5-71aea423a296
+[2024-03-27 18:13:30] {'64a89a84-0661-4ac9-86f6-85fa802d0dcd': {'x': 180, 'y': 240, 'tag': 'food64a89a84-0661-4ac9-86f6-85fa802d0dcd', 'oval_id': 102}, 'fd8c3da7-0367-46b3-b3f5-71aea423a296': {'x': 120, 'y': 60, 'tag': 'foodfd8c3da7-0367-46b3-b3f5-71aea423a296', 'oval_id': 103}}
+[2024-03-27 18:13:30] 95bc9f55-6832-44e6-8703-e735de9c7ad0
+[2024-03-27 18:13:30] Special Food ID:
+[2024-03-27 18:13:30] 95bc9f55-6832-44e6-8703-e735de9c7ad0
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 2
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] Number off food items: 
+[2024-03-27 18:13:30] 2
+[2024-03-27 18:13:30] 8
+[2024-03-27 18:13:30] snake has a collision
+[2024-03-27 18:13:30] Game state: game_over
+[2024-03-27 18:13:30] Snake coordinates after reset: [(60, 220), (60, 200), (60, 180), (60, 160), (40, 160), (40, 180), (40, 200), (40, 220), (60, 220), (80, 220)]
+[2024-03-27 18:13:30] High score: 55
+[2024-03-27 18:13:30] Score: 50
+[2024-03-27 18:20:00] Started the app
+[2024-03-27 18:20:00] Started the app
+[2024-03-27 18:20:00] Started the GameApp Class
+[2024-03-27 18:20:00] Game mode: initial config
+[2024-03-27 18:20:00] Default
+[2024-03-27 18:20:00] Updated initial_theme in config.ini to Default
+[2024-03-27 18:20:00] Current initial_theme in config.ini: Default
+[2024-03-27 18:20:00] Contrast mode set to dark
+[2024-03-27 18:20:00] Reset snake length
+[2024-03-27 18:20:00] start_screen method called
+[2024-03-27 18:20:02] Game mode: snake_endless
+[2024-03-27 18:20:02] start_game
+[2024-03-27 18:20:02] Reset snake length
+[2024-03-27 18:20:02] Game mode: snake_endless
+[2024-03-27 18:21:51] Started the app
+[2024-03-27 18:21:51] Started the GameApp Class
+[2024-03-27 18:21:51] Game mode: initial config
+[2024-03-27 18:21:51] Default
+[2024-03-27 18:21:51] Updated initial_theme in config.ini to Default
+[2024-03-27 18:21:51] Current initial_theme in config.ini: Default
+[2024-03-27 18:21:51] Contrast mode set to dark
+[2024-03-27 18:21:51] Reset snake length
+[2024-03-27 18:21:51] start_screen method called
+[2024-03-27 18:23:33] Game mode: snake_endless
+[2024-03-27 18:23:33] start_game
+[2024-03-27 18:23:33] Reset snake length
+[2024-03-27 18:23:33] Game mode: snake_endless
+[2024-03-27 18:23:33] Game state: start_game
+[2024-03-27 18:23:33] Game focused
+[2024-03-27 18:23:54] Closed the app
+
+
+
+
+[2024-03-27 18:21:51] Started the app
+[2024-03-27 18:26:21] Started the app
+[2024-03-27 18:26:21] Started the GameApp Class
+[2024-03-27 18:26:21] Game mode: initial config
+[2024-03-27 18:26:21] Default
+[2024-03-27 18:26:21] Updated initial_theme in config.ini to Default
+[2024-03-27 18:26:21] Current initial_theme in config.ini: Default
+[2024-03-27 18:26:21] Contrast mode set to dark
+[2024-03-27 18:26:21] Reset snake length
+[2024-03-27 18:26:21] start_screen method called
+[2024-03-27 18:26:26] Game mode: snake_endless
+[2024-03-27 18:26:26] start_game
+[2024-03-27 18:26:26] Reset snake length
+[2024-03-27 18:26:26] Game mode: snake_endless
+[2024-03-27 18:26:26] Game state: start_game
+[2024-03-27 18:26:26] Game focused
+[2024-03-27 18:26:29] Game mode: classic_snake
+[2024-03-27 18:26:29] start_game
+[2024-03-27 18:26:29] Reset snake length
+[2024-03-27 18:26:29] Game mode: classic_snake
+[2024-03-27 18:26:29] Game state: start_game
+[2024-03-27 18:26:29] Game focused
+[2024-03-27 18:26:30] Closed the app
+
+
+
+
+[2024-03-27 18:26:21] Started the app
+[2024-03-27 18:31:10] Started the app
+[2024-03-27 18:31:10] Started the app
+[2024-03-27 18:31:10] Started the GameApp Class
+[2024-03-27 18:31:10] Game mode: initial config
+[2024-03-27 18:31:10] Default
+[2024-03-27 18:31:10] Updated initial_theme in config.ini to Default
+[2024-03-27 18:31:10] Current initial_theme in config.ini: Default
+[2024-03-27 18:31:10] Contrast mode set to dark
+[2024-03-27 18:31:10] Reset snake length
+[2024-03-27 18:31:10] start_screen method called
+[2024-03-27 18:31:10] Game mode: snake_endless
+[2024-03-27 18:31:10] start_game
+[2024-03-27 18:31:10] Reset snake length
+[2024-03-27 18:31:10] Game mode: snake_endless
+[2024-03-27 18:31:10] Game state: start_game
+[2024-03-27 18:31:10] Game focused
+[2024-03-27 18:32:21] Started the app
+[2024-03-27 18:32:21] Started the GameApp Class
+[2024-03-27 18:32:21] Game mode: initial config
+[2024-03-27 18:32:21] Default
+[2024-03-27 18:32:21] Updated initial_theme in config.ini to Default
+[2024-03-27 18:32:21] Current initial_theme in config.ini: Default
+[2024-03-27 18:32:21] Contrast mode set to dark
+[2024-03-27 18:32:21] Reset snake length
+[2024-03-27 18:32:21] start_screen method called
+[2024-03-27 18:32:22] Game mode: snake_endless
+[2024-03-27 18:32:22] start_game
+[2024-03-27 18:32:22] Reset snake length
+[2024-03-27 18:32:22] Game mode: snake_endless
+[2024-03-27 18:32:22] Game state: start_game
+[2024-03-27 18:32:22] Game focused
+[2024-03-27 18:32:25] Closed the app
+
+
+
+
+[2024-03-27 18:32:21] Started the app
+[2024-03-27 18:33:43] Started the app
+[2024-03-27 18:33:43] Started the app
+[2024-03-27 18:33:43] Started the GameApp Class
+[2024-03-27 18:33:43] Game mode: initial config
+[2024-03-27 18:33:43] Default
+[2024-03-27 18:33:43] Updated initial_theme in config.ini to Default
+[2024-03-27 18:33:43] Current initial_theme in config.ini: Default
+[2024-03-27 18:33:43] Contrast mode set to dark
+[2024-03-27 18:33:43] Reset snake length
+[2024-03-27 18:33:43] start_screen method called
+[2024-03-27 18:33:44] Game mode: snake_endless
+[2024-03-27 18:33:44] start_game
+[2024-03-27 18:33:44] Reset snake length
+[2024-03-27 18:33:44] Game mode: snake_endless
+[2024-03-27 18:33:44] Game state: start_game
+[2024-03-27 18:33:44] Game focused
+[2024-03-27 18:35:51] Started the app
+[2024-03-27 18:35:51] Started the GameApp Class
+[2024-03-27 18:35:51] Game mode: initial config
+[2024-03-27 18:35:51] Default
+[2024-03-27 18:35:51] Updated initial_theme in config.ini to Default
+[2024-03-27 18:35:51] Current initial_theme in config.ini: Default
+[2024-03-27 18:35:51] Contrast mode set to dark
+[2024-03-27 18:35:51] Reset snake length
+[2024-03-27 18:35:51] start_screen method called
+[2024-03-27 18:35:52] Game mode: classic_snake
+[2024-03-27 18:35:52] start_game
+[2024-03-27 18:35:52] Reset snake length
+[2024-03-27 18:35:52] Game mode: classic_snake
+[2024-03-27 18:35:52] Game state: start_game
+[2024-03-27 18:35:52] Game focused
+[2024-03-27 18:35:57] Game mode: snake_endless
+[2024-03-27 18:35:57] start_game
+[2024-03-27 18:35:57] Reset snake length
+[2024-03-27 18:35:57] Game mode: snake_endless
+[2024-03-27 18:35:57] Game state: start_game
+[2024-03-27 18:35:57] Game focused
+[2024-03-27 18:36:00] Closed the app
+
+
+
+
+[2024-03-27 18:35:51] Started the app
+[2024-03-27 18:39:17] Started the app
+[2024-03-27 18:39:17] Started the GameApp Class
+[2024-03-27 18:39:17] Game mode: initial config
+[2024-03-27 18:39:17] Default
+[2024-03-27 18:39:17] Updated initial_theme in config.ini to Default
+[2024-03-27 18:39:17] Current initial_theme in config.ini: Default
+[2024-03-27 18:39:17] Contrast mode set to dark
+[2024-03-27 18:39:17] Reset snake length
+[2024-03-27 18:39:17] start_screen method called
+[2024-03-27 18:39:18] Game mode: snake_endless
+[2024-03-27 18:39:18] start_game
+[2024-03-27 18:39:18] Reset snake length
+[2024-03-27 18:39:18] Game mode: snake_endless
+[2024-03-27 18:39:18] Game state: start_game
+[2024-03-27 18:39:18] Game focused
+[2024-03-27 18:39:26] Game mode: snake_endless
+[2024-03-27 18:39:26] start_game
+[2024-03-27 18:39:26] Reset snake length
+[2024-03-27 18:39:26] Game mode: snake_endless
+[2024-03-27 18:39:26] Game state: start_game
+[2024-03-27 18:39:26] Game focused
+[2024-03-27 18:39:30] Setting custom size: 1600x900
+[2024-03-27 18:39:30] Changing screen size to 1600x900
+[2024-03-27 18:39:30] Updated the config.ini
+[2024-03-27 18:39:33] Game mode: snake_endless
+[2024-03-27 18:39:33] start_game
+[2024-03-27 18:39:33] Reset snake length
+[2024-03-27 18:39:33] Game mode: snake_endless
+[2024-03-27 18:39:33] Game state: start_game
+[2024-03-27 18:39:33] Game focused
+[2024-03-27 18:39:36] Closed the app
+
+
+
+
+[2024-03-27 18:39:17] Started the app
+[2024-03-27 18:41:05] Started the app
+[2024-03-27 18:41:05] Started the GameApp Class
+[2024-03-27 18:41:05] Game mode: initial config
+[2024-03-27 18:41:05] Default
+[2024-03-27 18:41:05] Updated initial_theme in config.ini to Default
+[2024-03-27 18:41:05] Current initial_theme in config.ini: Default
+[2024-03-27 18:41:05] Contrast mode set to dark
+[2024-03-27 18:41:05] Reset snake length
+[2024-03-27 18:41:05] start_screen method called
+[2024-03-27 18:41:06] Game mode: snake_endless
+[2024-03-27 18:41:06] start_game
+[2024-03-27 18:41:06] Reset snake length
+[2024-03-27 18:41:06] Game mode: snake_endless
+[2024-03-27 18:41:06] Game state: start_game
+[2024-03-27 18:41:06] Game focused
+[2024-03-27 18:41:12] Closed the app
+
+
+
+
+[2024-03-27 18:41:05] Started the app
+[2024-03-27 18:43:01] Started the app
+[2024-03-27 18:43:01] Started the GameApp Class
+[2024-03-27 18:43:01] Game mode: initial config
+[2024-03-27 18:43:01] Default
+[2024-03-27 18:43:01] Updated initial_theme in config.ini to Default
+[2024-03-27 18:43:01] Current initial_theme in config.ini: Default
+[2024-03-27 18:43:01] Contrast mode set to dark
+[2024-03-27 18:43:01] Reset snake length
+[2024-03-27 18:43:01] start_screen method called
+[2024-03-27 18:43:02] Game mode: snake_endless
+[2024-03-27 18:43:02] start_game
+[2024-03-27 18:43:02] Reset snake length
+[2024-03-27 18:43:02] Game mode: snake_endless
+[2024-03-27 18:43:02] Game state: start_game
+[2024-03-27 18:43:02] Game focused
+[2024-03-27 18:43:07] Closed the app
+
+
+
+
+[2024-03-27 18:43:01] Started the app
+[2024-03-27 18:43:52] Started the app
+[2024-03-27 18:43:52] Started the GameApp Class
+[2024-03-27 18:43:52] Game mode: initial config
+[2024-03-27 18:43:52] Default
+[2024-03-27 18:43:52] Updated initial_theme in config.ini to Default
+[2024-03-27 18:43:52] Current initial_theme in config.ini: Default
+[2024-03-27 18:43:52] Contrast mode set to dark
+[2024-03-27 18:43:52] Reset snake length
+[2024-03-27 18:43:52] start_screen method called
+[2024-03-27 18:43:52] Game mode: snake_endless
+[2024-03-27 18:43:52] start_game
+[2024-03-27 18:43:52] Reset snake length
+[2024-03-27 18:43:52] Game mode: snake_endless
+[2024-03-27 18:43:52] Game state: start_game
+[2024-03-27 18:43:52] Game focused
+[2024-03-27 18:43:56] Closed the app
+
+
+
+
+[2024-03-27 18:43:52] Started the app
+[2024-03-27 18:45:51] Started the app
+[2024-03-27 18:45:51] Started the GameApp Class
+[2024-03-27 18:45:51] Game mode: initial config
+[2024-03-27 18:45:51] Default
+[2024-03-27 18:45:51] Updated initial_theme in config.ini to Default
+[2024-03-27 18:45:51] Current initial_theme in config.ini: Default
+[2024-03-27 18:45:51] Contrast mode set to dark
+[2024-03-27 18:45:51] Reset snake length
+[2024-03-27 18:45:51] start_screen method called
+[2024-03-27 18:45:52] Game mode: snake_endless
+[2024-03-27 18:45:52] start_game
+[2024-03-27 18:45:52] Reset snake length
+[2024-03-27 18:45:52] Game mode: snake_endless
+[2024-03-27 18:45:52] Game state: start_game
+[2024-03-27 18:45:52] Game focused
+[2024-03-27 18:46:06] Setting custom size: 1200x800
+[2024-03-27 18:46:06] Changing screen size to Default
+[2024-03-27 18:46:06] Updated the config.ini
+[2024-03-27 18:46:08] Game mode: snake_endless
+[2024-03-27 18:46:08] start_game
+[2024-03-27 18:46:08] Reset snake length
+[2024-03-27 18:46:08] Game mode: snake_endless
+[2024-03-27 18:46:08] Game state: start_game
+[2024-03-27 18:46:08] Game focused
+[2024-03-27 18:47:15] Closed the app
+
+
+
+
+[2024-03-27 18:45:51] Started the app
+[2024-03-27 18:47:19] Started the app
+[2024-03-27 18:47:19] Started the GameApp Class
+[2024-03-27 18:47:19] Game mode: initial config
+[2024-03-27 18:47:19] Default
+[2024-03-27 18:47:19] Updated initial_theme in config.ini to Default
+[2024-03-27 18:47:19] Current initial_theme in config.ini: Default
+[2024-03-27 18:47:19] Contrast mode set to dark
+[2024-03-27 18:47:19] Reset snake length
+[2024-03-27 18:47:19] start_screen method called
+[2024-03-27 18:47:20] Game mode: snake_endless
+[2024-03-27 18:47:20] start_game
+[2024-03-27 18:47:20] Reset snake length
+[2024-03-27 18:47:20] Game mode: snake_endless
+[2024-03-27 18:47:20] Game state: start_game
+[2024-03-27 18:47:20] Game focused
+[2024-03-27 18:49:43] Closed the app
+
+
+
+
+[2024-03-27 18:47:19] Started the app
+[2024-03-27 18:49:48] Started the app
+[2024-03-27 18:49:48] Started the GameApp Class
+[2024-03-27 18:49:48] Game mode: initial config
+[2024-03-27 18:49:48] Default
+[2024-03-27 18:49:48] Updated initial_theme in config.ini to Default
+[2024-03-27 18:49:48] Current initial_theme in config.ini: Default
+[2024-03-27 18:49:48] Contrast mode set to dark
+[2024-03-27 18:49:48] Reset snake length
+[2024-03-27 18:49:48] start_screen method called
+[2024-03-27 18:49:49] Game mode: snake_endless
+[2024-03-27 18:49:49] start_game
+[2024-03-27 18:49:49] Reset snake length
+[2024-03-27 18:49:49] Game mode: snake_endless
+[2024-03-27 18:49:49] Game state: start_game
+[2024-03-27 18:49:49] Game focused
+[2024-03-27 18:51:53] Closed the app
+
+
+
+
+[2024-03-27 18:49:48] Started the app
+[2024-03-27 18:51:57] Started the app
+[2024-03-27 18:51:57] Started the GameApp Class
+[2024-03-27 18:51:57] Game mode: initial config
+[2024-03-27 18:51:57] Default
+[2024-03-27 18:51:57] Updated initial_theme in config.ini to Default
+[2024-03-27 18:51:57] Current initial_theme in config.ini: Default
+[2024-03-27 18:51:57] Contrast mode set to dark
+[2024-03-27 18:51:57] Reset snake length
+[2024-03-27 18:51:57] start_screen method called
+[2024-03-27 18:51:58] Game mode: snake_endless
+[2024-03-27 18:51:58] start_game
+[2024-03-27 18:51:58] Reset snake length
+[2024-03-27 18:51:58] Game mode: snake_endless
+[2024-03-27 18:51:58] Game state: start_game
+[2024-03-27 18:51:58] Game focused
+[2024-03-27 18:52:07] Closed the app
+
+
+
+
+[2024-03-27 18:51:57] Started the app
+[2024-03-27 18:52:46] Started the app
+[2024-03-27 18:52:46] Started the app
+[2024-03-27 18:52:46] Started the GameApp Class
+[2024-03-27 18:52:46] Game mode: initial config
+[2024-03-27 18:52:46] Default
+[2024-03-27 18:52:46] Updated initial_theme in config.ini to Default
+[2024-03-27 18:52:46] Current initial_theme in config.ini: Default
+[2024-03-27 18:52:46] Contrast mode set to dark
+[2024-03-27 18:52:46] Reset snake length
+[2024-03-27 18:52:46] start_screen method called
+[2024-03-27 18:53:33] Started the app
+[2024-03-27 18:53:33] Started the GameApp Class
+[2024-03-27 18:53:33] Game mode: initial config
+[2024-03-27 18:53:33] Default
+[2024-03-27 18:53:33] Updated initial_theme in config.ini to Default
+[2024-03-27 18:53:33] Current initial_theme in config.ini: Default
+[2024-03-27 18:53:33] Contrast mode set to dark
+[2024-03-27 18:53:33] Reset snake length
+[2024-03-27 18:53:33] start_screen method called
+[2024-03-27 18:53:34] Game mode: snake_endless
+[2024-03-27 18:53:34] start_game
+[2024-03-27 18:53:34] Reset snake length
+[2024-03-27 18:53:34] Game mode: snake_endless
+[2024-03-27 18:53:34] Game state: start_game
+[2024-03-27 18:53:34] Game focused
+[2024-03-27 19:15:00] Closed the app
+
+
+
+
+[2024-03-27 18:53:33] Started the app
+[2024-03-27 19:27:42] Started the app
+[2024-03-27 19:27:42] Started the GameApp Class
+[2024-03-27 19:27:42] Game mode: initial config
+[2024-03-27 19:27:42] Default
+[2024-03-27 19:27:42] Updated initial_theme in config.ini to Default
+[2024-03-27 19:27:42] Current initial_theme in config.ini: Default
+[2024-03-27 19:27:42] Contrast mode set to dark
+[2024-03-27 19:27:42] Reset snake length
+[2024-03-27 19:27:42] start_screen method called
+[2024-03-27 19:27:44] Game mode: snake_endless
+[2024-03-27 19:27:44] start_game
+[2024-03-27 19:27:44] Reset snake length
+[2024-03-27 19:27:44] Game mode: snake_endless
+[2024-03-27 19:27:44] Game state: start_game
+[2024-03-27 19:27:44] Game focused
+[2024-03-27 19:30:28] Closed the app
+
+
+
+
+[2024-03-27 19:27:42] Started the app
+[2024-03-27 19:30:31] Started the app
+[2024-03-27 19:30:31] Started the GameApp Class
+[2024-03-27 19:30:31] Game mode: initial config
+[2024-03-27 19:30:31] Default
+[2024-03-27 19:30:31] Updated initial_theme in config.ini to Default
+[2024-03-27 19:30:31] Current initial_theme in config.ini: Default
+[2024-03-27 19:30:31] Contrast mode set to dark
+[2024-03-27 19:30:31] Reset snake length
+[2024-03-27 19:30:31] start_screen method called
+[2024-03-27 19:30:32] Game mode: snake_endless
+[2024-03-27 19:30:32] start_game
+[2024-03-27 19:30:32] Reset snake length
+[2024-03-27 19:30:32] Game mode: snake_endless
+[2024-03-27 19:30:32] Game state: start_game
+[2024-03-27 19:30:32] Game focused
+[2024-03-27 19:30:53] Closed the app
+
+
+
+
+[2024-03-27 19:30:31] Started the app
+[2024-03-27 19:35:01] Started the app
+[2024-03-27 19:35:01] Started the GameApp Class
+[2024-03-27 19:35:01] Game mode: initial config
+[2024-03-27 19:35:01] Default
+[2024-03-27 19:35:01] Updated initial_theme in config.ini to Default
+[2024-03-27 19:35:01] Current initial_theme in config.ini: Default
+[2024-03-27 19:35:01] Contrast mode set to dark
+[2024-03-27 19:35:01] Reset snake length
+[2024-03-27 19:35:01] start_screen method called
+[2024-03-27 19:35:02] Game mode: snake_endless
+[2024-03-27 19:35:02] start_game
+[2024-03-27 19:35:02] Reset snake length
+[2024-03-27 19:35:02] Game mode: snake_endless
+[2024-03-27 19:35:02] Game state: start_game
+[2024-03-27 19:35:02] Game focused
+[2024-03-27 19:35:04] Highscore special reset to 0
+[2024-03-27 19:35:24] Closed the app
+
+
+
+
+[2024-03-27 19:35:01] Started the app
+[2024-03-27 19:35:26] Started the app
+[2024-03-27 19:35:26] Started the GameApp Class
+[2024-03-27 19:35:26] Game mode: initial config
+[2024-03-27 19:35:26] Default
+[2024-03-27 19:35:26] Updated initial_theme in config.ini to Default
+[2024-03-27 19:35:26] Current initial_theme in config.ini: Default
+[2024-03-27 19:35:26] Contrast mode set to dark
+[2024-03-27 19:35:26] Reset snake length
+[2024-03-27 19:35:26] start_screen method called
+[2024-03-27 19:35:27] Game mode: snake_endless
+[2024-03-27 19:35:27] start_game
+[2024-03-27 19:35:27] Reset snake length
+[2024-03-27 19:35:27] Game mode: snake_endless
+[2024-03-27 19:35:27] Game state: start_game
+[2024-03-27 19:35:27] Game focused
+[2024-03-27 19:35:29] Highscore shorten snake reset to 0
+[2024-03-27 19:35:43] Game mode: snake_endless
+[2024-03-27 19:35:43] start_game
+[2024-03-27 19:35:43] Reset snake length
+[2024-03-27 19:35:43] Game mode: snake_endless
+[2024-03-27 19:35:43] Game state: start_game
+[2024-03-27 19:35:43] Game focused
+[2024-03-27 19:35:44] Highscore shorten snake reset to 0
+[2024-03-27 19:35:52] Highscore shorten snake reset to 0
+[2024-03-27 19:35:53] Highscore shorten snake reset to 0
+[2024-03-27 19:35:53] Highscore shorten snake reset to 0
+[2024-03-27 19:35:54] Highscore shorten snake reset to 0
+[2024-03-27 19:35:54] Highscore shorten snake reset to 0
+[2024-03-27 19:36:01] Highscore reset to 0
+[2024-03-27 19:36:43] Game mode: classic_snake
+[2024-03-27 19:36:43] start_game
+[2024-03-27 19:36:43] Reset snake length
+[2024-03-27 19:36:43] Game mode: classic_snake
+[2024-03-27 19:36:43] Game state: start_game
+[2024-03-27 19:36:43] Game focused
+[2024-03-27 19:36:55] Game mode: classic_snake
+[2024-03-27 19:36:55] start_game
+[2024-03-27 19:36:55] Reset snake length
+[2024-03-27 19:36:55] Game mode: classic_snake
+[2024-03-27 19:36:55] Game state: start_game
+[2024-03-27 19:36:55] Game focused
+[2024-03-27 19:36:56] Highscore time reset to 0
+[2024-03-27 19:36:56] Highscore time reset to 0
+[2024-03-27 19:36:57] Highscore reset to 0
+[2024-03-27 19:37:04] Game mode: snake_endless
+[2024-03-27 19:37:04] start_game
+[2024-03-27 19:37:04] Reset snake length
+[2024-03-27 19:37:04] Game mode: snake_endless
+[2024-03-27 19:37:04] Game state: start_game
+[2024-03-27 19:37:04] Game focused
+[2024-03-27 19:37:08] Closed the app
+
+
+
+
+[2024-03-27 19:35:26] Started the app
+[2024-03-27 19:41:34] Started the app
+[2024-03-27 19:41:34] Started the GameApp Class
+[2024-03-27 19:41:34] Game mode: initial config
+[2024-03-27 19:41:34] Default
+[2024-03-27 19:41:34] Updated initial_theme in config.ini to Default
+[2024-03-27 19:41:34] Current initial_theme in config.ini: Default
+[2024-03-27 19:41:34] Contrast mode set to dark
+[2024-03-27 19:41:34] Reset snake length
+[2024-03-27 19:41:34] start_screen method called
+[2024-03-27 19:41:34] Game mode: snake_endless
+[2024-03-27 19:41:34] start_game
+[2024-03-27 19:41:34] Reset snake length
+[2024-03-27 19:41:34] Game mode: snake_endless
+[2024-03-27 19:41:34] Game state: start_game
+[2024-03-27 19:41:34] Game focused
+[2024-03-27 19:41:37] Highscore reset to 0
+[2024-03-27 19:41:44] Highscore shorten snake reset to 0
+[2024-03-27 19:41:44] Highscore special reset to 0
+[2024-03-27 19:41:45] Highscore time reset to 0
+[2024-03-27 19:41:48] Highscore shorten snake reset to 0
+[2024-03-27 19:42:10] Highscore shorten snake reset to 0
+[2024-03-27 19:42:17] Highscore time reset to 0
+[2024-03-27 19:42:18] Highscore time reset to 0
+[2024-03-27 19:42:33] Game mode: classic_snake
+[2024-03-27 19:42:33] start_game
+[2024-03-27 19:42:33] Reset snake length
+[2024-03-27 19:42:33] Game mode: classic_snake
+[2024-03-27 19:42:33] Game state: start_game
+[2024-03-27 19:42:33] Game focused
+[2024-03-27 19:42:34] Game mode: snake_endless
+[2024-03-27 19:42:34] start_game
+[2024-03-27 19:42:34] Reset snake length
+[2024-03-27 19:42:34] Game mode: snake_endless
+[2024-03-27 19:42:34] Game state: start_game
+[2024-03-27 19:42:34] Game focused
+[2024-03-27 19:42:39] Highscore special reset to 0
+[2024-03-27 19:43:06] Game mode: snake_endless
+[2024-03-27 19:43:06] start_game
+[2024-03-27 19:43:06] Reset snake length
+[2024-03-27 19:43:06] Game mode: snake_endless
+[2024-03-27 19:43:06] Game state: start_game
+[2024-03-27 19:43:06] Game focused
+[2024-03-27 19:43:44] Closed the app
+
+
+
+
+[2024-03-27 19:41:34] Started the app
+[2024-03-27 19:43:46] Started the app
+[2024-03-27 19:43:46] Started the GameApp Class
+[2024-03-27 19:43:46] Game mode: initial config
+[2024-03-27 19:43:46] Default
+[2024-03-27 19:43:46] Updated initial_theme in config.ini to Default
+[2024-03-27 19:43:46] Current initial_theme in config.ini: Default
+[2024-03-27 19:43:46] Contrast mode set to dark
+[2024-03-27 19:43:46] Reset snake length
+[2024-03-27 19:43:46] start_screen method called
+[2024-03-27 19:43:53] Game mode: classic_snake
+[2024-03-27 19:43:53] start_game
+[2024-03-27 19:43:53] Reset snake length
+[2024-03-27 19:43:53] Game mode: classic_snake
+[2024-03-27 19:43:53] Game state: start_game
+[2024-03-27 19:43:53] Game focused
+[2024-03-27 19:44:00] Game mode: snake_endless
+[2024-03-27 19:44:00] start_game
+[2024-03-27 19:44:00] Reset snake length
+[2024-03-27 19:44:00] Game mode: snake_endless
+[2024-03-27 19:44:00] Game state: start_game
+[2024-03-27 19:44:00] Game focused
+[2024-03-27 19:45:55] Closed the app
+
+
+
+
+[2024-03-27 19:43:46] Started the app
+[2024-03-27 19:45:57] Started the app
+[2024-03-27 19:45:57] Started the GameApp Class
+[2024-03-27 19:45:57] Game mode: initial config
+[2024-03-27 19:45:57] Default
+[2024-03-27 19:45:57] Updated initial_theme in config.ini to Default
+[2024-03-27 19:45:57] Current initial_theme in config.ini: Default
+[2024-03-27 19:45:57] Contrast mode set to dark
+[2024-03-27 19:45:57] Reset snake length
+[2024-03-27 19:45:57] start_screen method called
+[2024-03-27 19:46:01] Game mode: snake_endless
+[2024-03-27 19:46:01] start_game
+[2024-03-27 19:46:01] Reset snake length
+[2024-03-27 19:46:02] Game mode: snake_endless
+[2024-03-27 19:46:02] Game state: start_game
+[2024-03-27 19:46:02] Game focused
+[2024-03-27 19:46:04] Highscore shorten snake reset to 0
+[2024-03-27 19:46:07] Highscore shorten snake reset to 0
+[2024-03-27 19:47:56] Closed the app
+
+
+
+
+[2024-03-27 19:45:57] Started the app
+[2024-03-27 19:48:04] Started the app
+[2024-03-27 19:48:04] Started the GameApp Class
+[2024-03-27 19:48:04] Game mode: initial config
+[2024-03-27 19:48:04] Default
+[2024-03-27 19:48:04] Updated initial_theme in config.ini to Default
+[2024-03-27 19:48:04] Current initial_theme in config.ini: Default
+[2024-03-27 19:48:04] Contrast mode set to dark
+[2024-03-27 19:48:04] Reset snake length
+[2024-03-27 19:48:04] start_screen method called
+[2024-03-27 19:48:07] Game mode: snake_endless
+[2024-03-27 19:48:07] start_game
+[2024-03-27 19:48:07] Reset snake length
+[2024-03-27 19:48:07] Game mode: snake_endless
+[2024-03-27 19:48:07] Game state: start_game
+[2024-03-27 19:48:07] Game focused
+[2024-03-27 19:48:10] Highscore special reset to 0
+[2024-03-27 19:48:42] Closed the app
+
+
+
+
+[2024-03-27 19:48:04] Started the app
+[2024-03-27 19:48:48] Started the app
+[2024-03-27 19:48:48] Started the app
+[2024-03-27 19:48:48] Started the GameApp Class
+[2024-03-27 19:48:48] Game mode: initial config
+[2024-03-27 19:48:48] Default
+[2024-03-27 19:48:48] Updated initial_theme in config.ini to Default
+[2024-03-27 19:48:48] Current initial_theme in config.ini: Default
+[2024-03-27 19:48:48] Contrast mode set to dark
+[2024-03-27 19:48:48] Reset snake length
+[2024-03-27 19:48:48] start_screen method called
+[2024-03-27 19:48:49] Game mode: snake_endless
+[2024-03-27 19:48:49] start_game
+[2024-03-27 19:48:49] Reset snake length
+[2024-03-27 19:48:49] Game mode: snake_endless
+[2024-03-27 19:48:49] Game state: start_game
+[2024-03-27 19:48:49] Game focused
+[2024-03-27 19:48:50] Highscore special reset to 0
+[2024-03-27 19:48:53] Highscore reset to 0
+[2024-03-27 19:48:54] Highscore time reset to 0
+[2024-03-27 19:48:54] Highscore time reset to 0
+[2024-03-27 19:48:55] Highscore special reset to 0
+[2024-03-27 19:48:55] Highscore shorten snake reset to 0
+[2024-03-27 19:48:55] Highscore shorten snake reset to 0
+[2024-03-27 19:48:56] Highscore shorten snake reset to 0
+[2024-03-27 19:48:56] Highscore shorten snake reset to 0
+[2024-03-27 19:48:56] Highscore shorten snake reset to 0
+[2024-03-27 19:48:57] Highscore shorten snake reset to 0
+[2024-03-27 19:48:57] Highscore shorten snake reset to 0
+[2024-03-27 19:48:58] Highscore shorten snake reset to 0
+[2024-03-27 19:48:58] Highscore shorten snake reset to 0
+[2024-03-27 19:48:58] Highscore shorten snake reset to 0
+[2024-03-27 19:48:59] Highscore shorten snake reset to 0

@@ -78,8 +78,8 @@ class Snake_endless(ctk.CTkCanvas):
             traceback.print_exc()
         
         try:
-            if not self.config.has_option('Endless_Snake_Values', 'special_high_score'):
-                self.config.set('Endless_Snake_Values','special_high_score', '0')
+            if not self.config.has_option('Endless_Snake_Values', 'special_score_high_score'):
+                self.config.set('Endless_Snake_Values','special_score_high_score', '0')
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
         except:
@@ -451,11 +451,11 @@ class Snake_endless(ctk.CTkCanvas):
             traceback.print_exc()
 
           
-        self.special_high_score = int(self.config.get('Endless_Snake_Values', 'special_high_score', fallback='0'))
+        self.special_high_score = int(self.config.get('Endless_Snake_Values', 'special_score_high_score', fallback='0'))
         print(self.special_high_score)
         if self.special_score > self.special_high_score:
             try:
-                self.config.set('Endless_Snake_Values', 'special_high_score', str(self.special_score))
+                self.config.set('Endless_Snake_Values', 'special_score_high_score', str(self.special_score))
             except:
                 traceback.print_exc()
         try:   

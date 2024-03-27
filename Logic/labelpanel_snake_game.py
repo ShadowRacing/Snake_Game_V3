@@ -176,10 +176,10 @@ class GameLabelsPanel:
         self.endless_high_scores_label = None
         self.endless_snake_length_label = None
         self.endless_high_score_snake_length_label = None
-        self.endless_special_score = None
-        self.endless_special_high_score = None
-        self.endless_shorten_score = None
-        self.endless_shorten_high_score = None
+        self.endless_special_score_label = None
+        self.endless_special_high_score_label = None
+        self.endless_shorten_score_label = None
+        self.endless_shorten_high_score_label = None
 
         self.classic_score_label_flag = False
         self.classic_time_label_flag = False
@@ -190,8 +190,8 @@ class GameLabelsPanel:
         self.endless_time_label_flag = False
         self.endless_high_score_label_flag = False
         self.endless_high_score_time_label_flag = False
-        self.endless_special_score_flag = False
-        self.endless_shorten_score_flag = False
+        self.endless_special_score_label_flag = False
+        self.endless_shorten_score_label_flag = False
 
         try:
             self.config_dir = path.dirname(__file__)
@@ -209,8 +209,8 @@ class GameLabelsPanel:
             self.endless_score_label_ = self.config.set('Endless_Snake_Values', 'score', '0')
             self.endless_time_label_ = self.config.set('Endless_Snake_Values', 'time_score', '0')
             self.endless_snake_length_label_ = self.config.set('Endless_Snake_Values', 'snake_length', '0')
-            self.endless_special_score_ = self.config.set('Endless_Snake_Values', 'special_score', '0')
-            self.endless_shorten_food_score_label_ = self.config.set('Endless_Snake_Values', 'shorten_food_score', '0')
+            self.endless_special_score_label_ = self.config.set('Endless_Snake_Values', 'special_score', '0')
+            self.endless_shorten_score_label_ = self.config.set('Endless_Snake_Values', 'shorten_score', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except:
@@ -240,7 +240,7 @@ class GameLabelsPanel:
                                             height=30,
                                             width=275,
                                             corner_radius=10,
-                                            text=f"Score:{self.classic_score_label_} Food eaten", 
+                                            text=f"Score:{self.classic_score_label_} ", 
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
                                             anchor='w'
@@ -255,7 +255,7 @@ class GameLabelsPanel:
             self.config.read(self.config_path)
             self.classic_score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
             #update the score label on the screen
-            self.classic_score_label.configure(text=f"Score: {self.classic_score_label_} Food eaten")
+            self.classic_score_label.configure(text=f"Score: {self.classic_score_label_} ")
         except:
             traceback.print_exc()
 
@@ -264,7 +264,7 @@ class GameLabelsPanel:
                                              height=30,
                                              width=275,
                                              corner_radius=10, 
-                                             text=f"Score: {self.classic_score_label_} Food eaten", 
+                                             text=f"Score: {self.classic_score_label_} ", 
                                              font=FONT_LIST[11],
                                              bg_color='grey20',
                                              anchor='w'
@@ -279,7 +279,7 @@ class GameLabelsPanel:
             self.config.read(self.config_path)
             self.classic_high_score_label_ = self.config.get('Classic_Snake_Values', 'high_score', fallback='0')
             #update the high score label on the screen
-            self.classic_high_score_label.configure(text=f"Score: {self.classic_high_score_label_} Food eaten")
+            self.classic_high_score_label.configure(text=f"Score: {self.classic_high_score_label_} ")
         except:
             traceback.print_exc()
 
@@ -414,6 +414,7 @@ class GameLabelsPanel:
         except:
             traceback.print_exc()
 
+
     def endless_create_game_labels(self):
         self.endless_create_score_label()
         self.endless_create_high_score_label()
@@ -425,28 +426,40 @@ class GameLabelsPanel:
         self.endless_create_special_score_label()
         self.endless_create_special_high_score_label()
         self.endless_create_shorten_score_label()
-        self.endless_update_shorten_high_score_label()
-    
+        self.endless_create_shorten_high_score_label()
+
     def endless_update_high_score_labels(self):
         self.endless_update_high_score_label()
         self.endless_update_high_score_time_label()
         self.endless_update_high_score_snake_length_label()
         self.endless_update_special_high_score_label()
-        self.endless_update_shorten_food_high_score_label()
-    
+        self.endless_update_shorten_high_score_label()
+
     def endless_update_game_labels(self):
         self.endless_update_score_label()
         self.endless_update_time_label()
         self.endless_update_snake_length_label()
         self.endless_update_special_score_label()
-        self.endless_update_shorten_food_score_label()
+        self.endless_update_shorten_score_label()
+
+    def endless_create_high_scores_label(self):
+        self.endless_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
+                                                height=30,
+                                                width=275,
+                                                corner_radius=10,
+                                                text="High Scores:", 
+                                                font=FONT_LIST[11],
+                                                bg_color='grey20',
+                                                anchor='w'
+                                                )
+        self.endless_high_scores_label.place(x=200, y=400)
 
     def endless_create_score_label(self):
         self.endless_score_label = ctk.CTkLabel(self.snake_canvas, 
                                             height=30,
                                             width=275,
                                             corner_radius=10,
-                                            text=f"Score:{self.endless_score_label_} Food eaten", 
+                                            text=f"Score:{self.endless_score_label_} ", 
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
                                             anchor='w'
@@ -461,7 +474,7 @@ class GameLabelsPanel:
             self.config.read(self.config_path)
             self.endless_score_label_ = self.config.get('Endless_Snake_Values', 'score', fallback='0')
             #update the score label on the screen
-            self.endless_score_label.configure(text=f"Score: {self.endless_score_label_} Food eaten")
+            self.endless_score_label.configure(text=f"Score: {self.endless_score_label_} ")
         except:
             traceback.print_exc()
 
@@ -470,12 +483,12 @@ class GameLabelsPanel:
                                              height=30,
                                              width=275,
                                              corner_radius=10, 
-                                             text=f"Score: {self.endless_score_label_} Food eaten", 
+                                             text=f"Score: {self.endless_score_label_} ", 
                                              font=FONT_LIST[11],
                                              bg_color='grey20',
                                              anchor='w'
                                              )
-        self.endless_high_score_label.place(x=200, y=550)
+        self.endless_high_score_label.place(x=200, y=450)
     
     def endless_update_high_score_label(self):
         try:
@@ -485,7 +498,7 @@ class GameLabelsPanel:
             self.config.read(self.config_path)
             self.endless_high_score_label_ = self.config.get('endless_Snake_Values', 'high_score', fallback='0')
             #update the high score label on the screen
-            self.endless_high_score_label.configure(text=f"Score: {self.endless_high_score_label_} Food eaten")
+            self.endless_high_score_label.configure(text=f"Score: {self.endless_high_score_label_} ")
         except:
             traceback.print_exc()
 
@@ -523,7 +536,7 @@ class GameLabelsPanel:
                                                     bg_color='grey20',
                                                     anchor='w'
                                                     )
-        self.endless_high_score_time_label.place(x=200, y=600)
+        self.endless_high_score_time_label.place(x=200, y=500)
 
     def endless_update_high_score_time_label(self):
         try:
@@ -571,7 +584,7 @@ class GameLabelsPanel:
                                                             bg_color='grey20',
                                                             anchor='w'
                                                             )
-        self.endless_high_score_snake_length_label.place(x=200, y=650)
+        self.endless_high_score_snake_length_label.place(x=200, y=550)
     
     def endless_update_high_score_snake_length_label(self):
         try:
@@ -585,29 +598,17 @@ class GameLabelsPanel:
         except:
             traceback.print_exc()
 
-    def endless_create_high_scores_label(self):
-        self.endless_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
-                                                height=30,
-                                                width=275,
-                                                corner_radius=10,
-                                                text="High Scores:", 
-                                                font=FONT_LIST[11],
-                                                bg_color='grey20',
-                                                anchor='w'
-                                                )
-        self.endless_high_scores_label.place(x=200, y=500)
-
     def endless_create_special_score_label(self):
-        self.endless_special_score = ctk.CTkLabel(self.snake_canvas, 
+        self.endless_special_score_label = ctk.CTkLabel(self.snake_canvas, 
                                             height=30,
                                             width=275,
                                             corner_radius=10,
-                                            text=f"Special Score:{self.endless_special_score_} Food eaten", 
+                                            text=f"Special Score:{self.endless_special_score_label} ", 
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
                                             anchor='w'
                                             )
-        self.endless_special_score.place(x=200, y=200)
+        self.endless_special_score_label.place(x=200, y=200)
     
     def endless_update_special_score_label(self):
         try:
@@ -615,23 +616,23 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.endless_special_score_ = self.config.get('Endless_Snake_Values', 'special_score', fallback='0')
+            self.endless_special_score_label_ = self.config.get('Endless_Snake_Values', 'special_score', fallback='0')
             #update the score label on the screen
-            self.endless_special_score.configure(text=f"Special Score: {self.endless_special_score_} Food eaten")
+            self.endless_special_score_label.configure(text=f"Special Score: {self.endless_special_score_label_} ")
         except:
             traceback.print_exc()
     
     def endless_create_special_high_score_label(self):
-        self.endless_special_high_score = ctk.CTkLabel(self.snake_canvas,
+        self.endless_special_high_score_label = ctk.CTkLabel(self.snake_canvas,
                                              height=30,
                                              width=275,
                                              corner_radius=10, 
-                                             text=f"Special Score: {self.endless_special_score_} Food eaten", 
+                                             text=f"Special Score: {self.endless_special_high_score_label} ", 
                                              font=FONT_LIST[11],
                                              bg_color='grey20',
                                              anchor='w'
                                              )
-        self.endless_special_high_score.place(x=200, y=600)
+        self.endless_special_high_score_label.place(x=200, y=600)
     
     def endless_update_special_high_score_label(self):
         try:
@@ -639,24 +640,23 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.endless_special_high_score_ = self.config.get('Endless_Snake_Values', 'special_high_score', fallback='0')
-            print(f"Special High Score: {self.endless_special_high_score_} Food eaten")
+            self.endless_special_high_score_label_ = self.config.get('Endless_Snake_Values', 'special_high_score', fallback='0')
             #update the high score label on the screen
-            self.endless_special_high_score.configure(text=f"Special Score: {self.endless_special_high_score_} Food eaten")
+            self.endless_special_high_score_label.configure(text=f"Special Score: {self.endless_special_high_score_label_} ")
         except:
             traceback.print_exc()
     
     def endless_create_shorten_score_label(self):
-        self.endless_shorten_score = ctk.CTkLabel(self.snake_canvas, 
-                                            height=30,
-                                            width=275,
-                                            corner_radius=10,
-                                            text=f"Shorten Score:{self.endless_shorten_score_} Food eaten", 
-                                            font=FONT_LIST[11],
-                                            bg_color='grey20',
-                                            anchor='w'
-                                            )
-        self.endless_shorten_score.place(x=200, y=300)
+        self.endless_shorten_score_label = ctk.CTkLabel(self.snake_canvas,
+                                                  height=30,
+                                                  width=275,
+                                                    corner_radius=10,
+                                                    text=f"Shorten Score: {self.endless_shorten_score_label} ",
+                                                    font=FONT_LIST[11],
+                                                    bg_color='grey20',
+                                                    anchor='w'
+                                                    )
+        self.endless_shorten_score_label.place(x=200, y=250)
     
     def endless_update_shorten_score_label(self):
         try:
@@ -664,23 +664,23 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.endless_shorten_score_ = self.config.get('Endless_Snake_Values', 'shorten_food_score', fallback='0')
-            #update the score label on the screen
-            self.endless_shorten_score.configure(text=f"Shorten Score: {self.endless_shorten_score_} Food eaten")
+            self.endless_shorten_score_label_ = self.config.get('Endless_Snake_Values', 'shorten_score', fallback='0')
+            #update the high score label on the screen
+            self.endless_shorten_score_label.configure(text=f"Shorten Score: {self.endless_shorten_score_label_} ")
         except:
             traceback.print_exc()
-    
+        
     def endless_create_shorten_high_score_label(self):
-        self.endless_shorten_high_score = ctk.CTkLabel(self.snake_canvas,
-                                             height=30,
-                                             width=275,
-                                             corner_radius=10, 
-                                             text=f"Shorten Score: {self.endless_shorten_score_} Food eaten", 
-                                             font=FONT_LIST[11],
-                                             bg_color='grey20',
-                                             anchor='w'
-                                             )
-        self.endless_shorten_high_score.place(x=200, y=800)
+        self.endless_shorten_high_score_label = ctk.CTkLabel(self.snake_canvas,
+                                                  height=30,
+                                                  width=275,
+                                                    corner_radius=10,
+                                                    text=f"Shorten Score: {self.endless_shorten_high_score_label} ",
+                                                    font=FONT_LIST[11],
+                                                    bg_color='grey20',
+                                                    anchor='w'
+                                                    )
+        self.endless_shorten_high_score_label.place(x=200, y=650)
     
     def endless_update_shorten_high_score_label(self):
         try:
@@ -688,12 +688,12 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.endless_shorten_high_score_ = self.config.get('Endless_Snake_Values', 'shorten_food_high_score', fallback='0')
+            self.endless_shorten_high_score_label_ = self.config.get('Endless_Snake_Values', 'shorten_snake_high_score', fallback='0')
             #update the high score label on the screen
-            self.endless_shorten_high_score.configure(text=f"Shorten Score: {self.endless_shorten_high_score_} Food eaten")
+            self.endless_shorten_high_score_label.configure(text=f"Shorten Score: {self.endless_shorten_high_score_label_} ")
         except:
             traceback.print_exc()
-    
+
     def endless_reset_labels(self):
         self.endless_score_label.configure(text='0')
         self.endless_time_label.configure(text='0')
@@ -714,13 +714,13 @@ class GameLabelsPanel:
                 self.endless_snake_length_label.destroy()
             if self.endless_high_score_snake_length_label is not None:
                 self.endless_high_score_snake_length_label.destroy()
-            if self.endless_special_score is not None:
-                self.endless_special_score.destroy()
-            if self.endless_special_high_score is not None:
-                self.endless_special_high_score.destroy()
-            if self.endless_shorten_food_score is not None:
-                self.endless_shorten_food_score.destroy()
-            if self.endless_shorten_food_high_score is not None:
-                self.endless_shorten_food_high_score.destroy()
+            if self.endless_special_score_label is not None:
+                self.endless_special_score_label.destroy()
+            if self.endless_special_high_score_label is not None:
+                self.endless_special_high_score_label.destroy()
+            if self.endless_shorten_score_label is not None:
+                self.endless_shorten_score_label.destroy()
+            if self.endless_shorten_high_score_label is not None:
+                self.endless_shorten_high_score_label.destroy()
         except:
             traceback.print_exc()

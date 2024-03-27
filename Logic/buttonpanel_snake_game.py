@@ -126,6 +126,12 @@ class ButtonCommands:
             self.functions['endless_reset_high_score_special_score']()
         else:
             self.logfile.log_game_event("No function assigned to 'reset_high_special_score'")
+    
+    def endless_reset_high_score_shorten_snake_command(self):
+        if 'endless_reset_high_score_shorten_snake' in self.functions:
+            self.functions['endless_reset_high_score_shorten_snake']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'reset_high_score_shorten_snake'")
 
     def game_size_command(self):
         if 'game_size' in self.functions:
@@ -211,7 +217,7 @@ class ClickButtonPanel:
 
     def patchnotes_button(self):
         patchnotes_button = ctk.CTkButton(self.button_canvas, text="Patchnotes", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal",
+                                width=self.button_width, height=self.button_height, state="disabled", #Should ne normal
                                 command=self.button_commands.patchnotes_command)
         patchnotes_button.grid(in_=self.button_canvas, row=14, column=0, padx=10, pady=10, sticky="w")
 
@@ -229,7 +235,7 @@ class ClickButtonPanel:
 
     def snake_special_button(self):
         snake_special_button = ctk.CTkButton(self.button_canvas, text="Classic Snake", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="normal",
+                                width=self.button_width, height=self.button_height, state="disabled",#Should ne normal
                                 command=self.button_commands.snake_special_command)
         snake_special_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
 
@@ -294,17 +300,23 @@ class ClickButtonPanel:
         endless_reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=12, column=0, padx=10, pady=10, sticky="w")
 
     def endless_reset_high_score_special_score_button(self):
-        endless_reset_high_score_special_score_button = ctk.CTkButton(self.button_canvas, text="Reset Special \n Score Highscore", font=FONT_LIST[11],
+        endless_reset_high_score_special_score_button = ctk.CTkButton(self.button_canvas, text="Reset Special\n Highscore", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.endless_reset_high_special_score_command)
         endless_reset_high_score_special_score_button.grid(in_=self.button_canvas, row=13, column=0, padx=10, pady=10, sticky="w")
+
+    def endless_reset_high_score_shorten_snake_button(self):
+        endless_reset_high_score_shorten_snake_button = ctk.CTkButton(self.button_canvas, text="Reset Shorten\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.endless_reset_high_score_shorten_snake_command)
+        endless_reset_high_score_shorten_snake_button.grid(in_=self.button_canvas, row=14, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def game_size_button(self):
         game_size_button = ctk.CTkButton(self.button_canvas, text="Game Size", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.game_size_command)
-        game_size_button.grid(in_=self.button_canvas, row=14, column=0, padx=10, pady=10, sticky="w")
+        game_size_button.grid(in_=self.button_canvas, row=15, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def snake_speed_button(self):

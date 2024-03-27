@@ -1806,3 +1806,864 @@ Traceback (most recent call last):
     text=f"Shorten Score:{self.endless_shorten_score_} Food eaten",
                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'GameLabelsPanel' object has no attribute 'endless_shorten_score_'
+[2024-03-27 17:09:58] 
+
+
+[2024-03-27 17:09:58] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 693, in endless_update_shorten_high_score_label
+    self.endless_shorten_high_score.configure(text=f"Shorten Score: {self.endless_shorten_high_score_} Food eaten")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 148, in __init__
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 177, in start_screen
+    self.game_labels_panel_2.endless_update_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 442, in endless_update_game_labels
+    self.endless_update_shorten_food_score_label()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_update_shorten_food_score_label'
+[2024-03-27 17:11:52] 
+
+
+[2024-03-27 17:11:52] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 693, in endless_update_shorten_high_score_label
+    self.endless_shorten_food_score_label.configure(text=f"Shorten Score: {self.endless_shorten_high_score_} Food eaten")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'configure'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 148, in __init__
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 177, in start_screen
+    self.game_labels_panel_2.endless_update_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 442, in endless_update_game_labels
+    self.endless_update_shorten_food_score_label()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_update_shorten_food_score_label'
+[2024-03-27 17:13:06] 
+
+
+[2024-03-27 17:13:06] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 51, in __init__
+    self.game_labels_panel_2.endless_create_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 427, in endless_create_game_labels
+    self.endless_create_shorten_score_label()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_create_shorten_score_label'
+[2024-03-27 17:14:36] 
+
+
+[2024-03-27 17:14:36] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 148, in __init__
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 177, in start_screen
+    self.game_labels_panel_2.endless_update_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 442, in endless_update_game_labels
+    self.endless_update_shorten_food_score_label()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_update_shorten_food_score_label'
+[2024-03-27 17:15:35] 
+
+
+[2024-03-27 17:15:35] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 148, in __init__
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 177, in start_screen
+    self.game_labels_panel_2.endless_update_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 442, in endless_update_game_labels
+    self.endless_update_shorten_food_score_label()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_update_shorten_food_score_label'
+[2024-03-27 17:17:47] 
+
+
+[2024-03-27 17:17:47] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 148, in __init__
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 177, in start_screen
+    self.game_labels_panel_2.endless_update_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 442, in endless_update_game_labels
+    self.endless_update_shorten_food_score_label()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_update_shorten_food_score_label'
+[2024-03-27 17:20:58] 
+
+
+[2024-03-27 17:20:58] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-03-27 17:25:16] No errors occurred
+[2024-03-27 17:25:16] Closed the Error Log File
+
+
+
+
+[2024-03-27 17:25:21] 
+
+
+[2024-03-27 17:25:21] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 51, in __init__
+    self.game_labels_panel_2.endless_create_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 425, in endless_create_game_labels
+    self.endless_create_special_score_label()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_create_special_score_label'
+[2024-03-27 17:28:14] 
+
+
+[2024-03-27 17:28:14] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-03-27 17:29:21] No errors occurred
+[2024-03-27 17:29:21] Closed the Error Log File
+
+
+
+
+[2024-03-27 17:29:26] 
+
+
+[2024-03-27 17:29:26] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-03-27 18:20:00] 
+
+
+[2024-03-27 18:20:00] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 51, in __init__
+    self.game_labels_panel_2.endless_create_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 425, in endless_create_game_labels
+    self.endless_create_special_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 605, in endless_create_special_score_label
+    text=f"Special Score:{self.endless_special_score_label} Food eaten",
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_special_score_label'
+[2024-03-27 18:21:51] 
+
+
+[2024-03-27 18:21:51] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 23, in __init__
+    self.config.set('Settings','snake_color', 'Default')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-03-27 18:23:54] No errors occurred
+[2024-03-27 18:23:54] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:26:21] 
+
+
+[2024-03-27 18:26:21] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 683, in endless_delete_labels
+    if self.endless_shorten_food_score is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_shorten_food_score'
+[2024-03-27 18:26:30] No errors occurred
+[2024-03-27 18:26:30] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:31:10] 
+
+
+[2024-03-27 18:31:10] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 620, in endless_update_special_score_label
+    self.endless_special_score.configure(text=f"Special Score: {self.endless_special_score_label_} Food eaten")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_special_score'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 644, in endless_update_special_high_score_label
+    self.endless_special_high_score_label.configure(text=f"Special Score: {self.endless_special_high_score_label} Food eaten")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'configure'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 682, in endless_delete_labels
+    self.endless_special_high_score_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'destroy'
+[2024-03-27 18:32:21] 
+
+
+[2024-03-27 18:32:21] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 620, in endless_update_special_score_label
+    self.endless_special_score.configure(text=f"Special Score: {self.endless_special_score_label_} Food eaten")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_special_score'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 644, in endless_update_special_high_score_label
+    self.endless_special_high_score_label.configure(text=f"Special Score: {self.endless_special_high_score_label} Food eaten")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'configure'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 682, in endless_delete_labels
+    self.endless_special_high_score_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'destroy'
+[2024-03-27 18:32:25] No errors occurred
+[2024-03-27 18:32:25] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:33:43] 
+
+
+[2024-03-27 18:33:43] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 644, in endless_update_special_high_score_label
+    self.endless_special_high_score_label.configure(text=f"Special Score: {self.endless_special_high_score_label} Food eaten")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'configure'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 682, in endless_delete_labels
+    self.endless_special_high_score_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'destroy'
+[2024-03-27 18:35:51] 
+
+
+[2024-03-27 18:35:51] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 683, in endless_delete_labels
+    if self.endless_shorten_food_score is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_shorten_food_score'
+[2024-03-27 18:36:00] No errors occurred
+[2024-03-27 18:36:00] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:39:17] 
+
+
+[2024-03-27 18:39:17] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 720, in endless_delete_labels
+    if self.endless_shorten_food_score is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_shorten_food_score'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 720, in endless_delete_labels
+    if self.endless_shorten_food_score is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_shorten_food_score'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 720, in endless_delete_labels
+    if self.endless_shorten_food_score is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'endless_shorten_food_score'
+[2024-03-27 18:39:36] No errors occurred
+[2024-03-27 18:39:36] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:41:05] 
+
+
+[2024-03-27 18:41:05] Started the Error Log File
+[2024-03-27 18:41:12] No errors occurred
+[2024-03-27 18:41:12] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:43:01] 
+
+
+[2024-03-27 18:43:01] Started the Error Log File
+[2024-03-27 18:43:07] No errors occurred
+[2024-03-27 18:43:07] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:43:52] 
+
+
+[2024-03-27 18:43:52] Started the Error Log File
+[2024-03-27 18:43:56] No errors occurred
+[2024-03-27 18:43:56] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:45:51] 
+
+
+[2024-03-27 18:45:51] Started the Error Log File
+[2024-03-27 18:47:15] No errors occurred
+[2024-03-27 18:47:15] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:47:19] 
+
+
+[2024-03-27 18:47:19] Started the Error Log File
+[2024-03-27 18:49:43] No errors occurred
+[2024-03-27 18:49:43] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:49:48] 
+
+
+[2024-03-27 18:49:48] Started the Error Log File
+[2024-03-27 18:51:53] No errors occurred
+[2024-03-27 18:51:53] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:51:57] 
+
+
+[2024-03-27 18:51:57] Started the Error Log File
+[2024-03-27 18:52:07] No errors occurred
+[2024-03-27 18:52:07] Closed the Error Log File
+
+
+
+
+[2024-03-27 18:52:46] 
+
+
+[2024-03-27 18:52:46] Started the Error Log File
+[2024-03-27 18:53:33] 
+
+
+[2024-03-27 18:53:33] Started the Error Log File
+[2024-03-27 19:15:00] No errors occurred
+[2024-03-27 19:15:00] Closed the Error Log File
+
+
+
+
+[2024-03-27 19:27:42] 
+
+
+[2024-03-27 19:27:42] Started the Error Log File
+[2024-03-27 19:30:28] No errors occurred
+[2024-03-27 19:30:28] Closed the Error Log File
+
+
+
+
+[2024-03-27 19:30:31] 
+
+
+[2024-03-27 19:30:31] Started the Error Log File
+[2024-03-27 19:30:53] No errors occurred
+[2024-03-27 19:30:53] Closed the Error Log File
+
+
+
+
+[2024-03-27 19:35:01] 
+
+
+[2024-03-27 19:35:01] Started the Error Log File
+[2024-03-27 19:35:24] No errors occurred
+[2024-03-27 19:35:24] Closed the Error Log File
+
+
+
+
+[2024-03-27 19:35:26] 
+
+
+[2024-03-27 19:35:26] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 114, in endless_reset_high_score_time_command
+    self.functions['endless_reset_high_score_time']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 501, in endless_reset_high_score_time
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 114, in endless_reset_high_score_time_command
+    self.functions['endless_reset_high_score_time']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 501, in endless_reset_high_score_time
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 114, in endless_reset_high_score_time_command
+    self.functions['endless_reset_high_score_time']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 501, in endless_reset_high_score_time
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 114, in endless_reset_high_score_time_command
+    self.functions['endless_reset_high_score_time']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 501, in endless_reset_high_score_time
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 114, in endless_reset_high_score_time_command
+    self.functions['endless_reset_high_score_time']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 501, in endless_reset_high_score_time
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 114, in endless_reset_high_score_time_command
+    self.functions['endless_reset_high_score_time']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 501, in endless_reset_high_score_time
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 114, in endless_reset_high_score_time_command
+    self.functions['endless_reset_high_score_time']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 501, in endless_reset_high_score_time
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 114, in endless_reset_high_score_time_command
+    self.functions['endless_reset_high_score_time']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 501, in endless_reset_high_score_time
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 120, in endless_reset_high_score_snake_length_command
+    self.functions['endless_reset_high_score_snake_length']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 525, in endless_reset_high_score_snake_length
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 120, in endless_reset_high_score_snake_length_command
+    self.functions['endless_reset_high_score_snake_length']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 525, in endless_reset_high_score_snake_length
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 126, in endless_reset_high_special_score_command
+    self.functions['endless_reset_high_score_special_score']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 549, in endless_reset_high_score_special_score
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 126, in endless_reset_high_special_score_command
+    self.functions['endless_reset_high_score_special_score']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 549, in endless_reset_high_score_special_score
+    elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+                                                                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+[2024-03-27 19:37:08] No errors occurred
+[2024-03-27 19:37:08] Closed the Error Log File
+
+
+
+
+[2024-03-27 19:41:34] 
+
+
+[2024-03-27 19:41:34] Started the Error Log File
+[2024-03-27 19:43:44] No errors occurred
+[2024-03-27 19:43:44] Closed the Error Log File
+
+
+
+
+[2024-03-27 19:43:46] 
+
+
+[2024-03-27 19:43:46] Started the Error Log File
+[2024-03-27 19:45:55] No errors occurred
+[2024-03-27 19:45:55] Closed the Error Log File
+
+
+
+
+[2024-03-27 19:45:57] 
+
+
+[2024-03-27 19:45:57] Started the Error Log File
+[2024-03-27 19:47:56] No errors occurred
+[2024-03-27 19:47:56] Closed the Error Log File
+
+
+
+
+[2024-03-27 19:48:04] 
+
+
+[2024-03-27 19:48:04] Started the Error Log File
+[2024-03-27 19:48:42] No errors occurred
+[2024-03-27 19:48:42] Closed the Error Log File
+
+
+
+
+[2024-03-27 19:48:48] 
+
+
+[2024-03-27 19:48:48] Started the Error Log File

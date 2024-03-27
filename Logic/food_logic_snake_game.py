@@ -61,8 +61,10 @@ class EndlessFood:
         self.canvas = canvas
         self.food_items = {}
         self.special_food_items = {}
+        self.shorten_food_items = {}
         self.food_coordinates = {}
         self.special_food_coordinates = {}
+        self.shorten_food_coordinates = {}
         self.game_config = game_config
         try:
             self.config = configparser.ConfigParser()
@@ -104,6 +106,21 @@ class EndlessFood:
                 self.special_food_items[special_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': special_oval_id}
                 self.game_logger.log_game_event("Special Food ID:")
                 self.game_logger.log_game_event(special_food_id)
+        except:
+            traceback.print_exc()
+
+    def shorten_spawn_food(self, snake_coordinates):
+        num_shorten_food_items = 1
+        try:
+            while len(self.shorten_food_items) < num_shorten_food_items:
+                x, y = self.generate_random_coordinates(snake_coordinates)
+                shorten_food_id = str(uuid.uuid4())
+                self.game_logger.log_game_event(shorten_food_id)
+                tag = "shortenfood" + shorten_food_id
+                shorten_oval_id = self.create_food_oval(x, y, self.game_config.SHORTEN_FOOD_COLOR, tag)
+                self.shorten_food_items[shorten_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': shorten_oval_id}
+                self.game_logger.log_game_event("Shorten Food ID:")
+                self.game_logger.log_game_event(shorten_food_id)
         except:
             traceback.print_exc()
 

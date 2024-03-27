@@ -2667,3 +2667,139 @@ TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
 
 
 [2024-03-27 19:48:48] Started the Error Log File
+[2024-03-27 19:52:20] 
+
+
+[2024-03-27 19:52:20] Started the Error Log File
+[2024-03-27 19:53:10] No errors occurred
+[2024-03-27 19:53:10] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:13:35] 
+
+
+[2024-03-27 20:13:35] Started the Error Log File
+[2024-03-27 20:17:19] 
+
+
+[2024-03-27 20:17:19] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 354, in next_turn
+    if len(food.shorten_food_coordinates) < 1:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EndlessFood' object has no attribute 'shorten_food_coordinates'
+[2024-03-27 20:18:08] No errors occurred
+[2024-03-27 20:18:08] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:21:02] 
+
+
+[2024-03-27 20:21:02] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 354, in next_turn
+    if len(food.shorten_food_coordinates) < 1:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EndlessFood' object has no attribute 'shorten_food_coordinates'
+[2024-03-27 20:21:23] No errors occurred
+[2024-03-27 20:21:23] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:22:15] 
+
+
+[2024-03-27 20:22:15] Started the Error Log File
+[2024-03-27 20:23:05] No errors occurred
+[2024-03-27 20:23:05] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:24:18] 
+
+
+[2024-03-27 20:24:18] Started the Error Log File
+[2024-03-27 20:25:08] No errors occurred
+[2024-03-27 20:25:08] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:30:05] 
+
+
+[2024-03-27 20:30:05] Started the Error Log File
+[2024-03-27 20:30:29] No errors occurred
+[2024-03-27 20:30:29] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:34:36] 
+
+
+[2024-03-27 20:34:36] Started the Error Log File
+[2024-03-27 20:36:11] No errors occurred
+[2024-03-27 20:36:11] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:36:53] 
+
+
+[2024-03-27 20:36:53] Started the Error Log File
+[2024-03-27 20:37:47] No errors occurred
+[2024-03-27 20:37:47] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:39:34] 
+
+
+[2024-03-27 20:39:34] Started the Error Log File
+[2024-03-27 20:40:14] No errors occurred
+[2024-03-27 20:40:14] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:41:25] 
+
+
+[2024-03-27 20:41:25] Started the Error Log File
+[2024-03-27 20:42:21] No errors occurred
+[2024-03-27 20:42:21] Closed the Error Log File
+
+
+
+
+[2024-03-27 20:44:00] 
+
+
+[2024-03-27 20:44:00] Started the Error Log File
+[2024-03-27 20:44:01] No errors occurred
+[2024-03-27 20:44:01] Closed the Error Log File
+
+
+
+

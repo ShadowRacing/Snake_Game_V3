@@ -133,6 +133,7 @@ class GameConfig:
                 self.SNAKE_OUTLINE = 'White'
                 self.FOOD_COLOR = 'Red'
                 self.SPECIAL_FOOD_COLOR = 'Purple'
+                self.SHORTEN_FOOD_COLOR = 'yellow'
                 self.BACKGROUND_COLOR = 'Black'
                 self.HIGHLIGHTTHICKNESS = 5
                 self.HIGHLIGHTBACKGROUND = 'Black'

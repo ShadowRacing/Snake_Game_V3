@@ -2,7 +2,7 @@
 # Wims Snake Game Snake Endless Game File
 # *****************************************
 
-import customtkinter as ctk, time, configparser, traceback
+import customtkinter as ctk, time, configparser, traceback, random
 from os import path
 
 # Importing thhe necessary modules from other folders
@@ -23,12 +23,14 @@ class Snake_endless(ctk.CTkCanvas):
         self.logfile.log_game_event(self.state)
         self.score = 0
         self.special_score = 0
+        self.shorten_score = 0
         self.start_time = None
         self.paused_time = None
         self.total_paused_time = 0
         self.total_time_played = 0
         self.total_time_paused = 0
         self.next_special_food_score = 50
+        self.next_shorten_food_score = 100
         self.next_food_score = 0
         self.game_over_flag = False
         self.paused = False
@@ -141,6 +143,16 @@ class Snake_endless(ctk.CTkCanvas):
                     self.config.write(configfile)
             else:
                 self.config.set('Endless_Snake_Values', 'next_special_food_score', '50')
+        except:
+            traceback.print_exc()
+        
+        try:
+            if not self.config.has_option('Endless_Snake_Values', 'next_shorten_food_score'):
+                self.config.set('Endless_Snake_Values', 'next_shorten_food_score', '100')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            else:
+                self.config.set('Endless_Snake_Values', 'next_shorten_food_score', '100')
         except:
             traceback.print_exc()
                 
@@ -256,6 +268,7 @@ class Snake_endless(ctk.CTkCanvas):
             self.config.read('config.ini')
             self.score = int(self.config.get('Endless_Snake_Values', 'score', fallback='0'))
             self.next_special_food_score = int(self.config.get('Endless_Snake_Values', 'next_special_food_score', fallback='50'))
+            self.next_shorten_food_score = int(self.config.get('Endless_Snake_Values', 'next_shorten_food_score', fallback='100'))
         except:
             traceback.print_exc()
 
@@ -290,6 +303,14 @@ class Snake_endless(ctk.CTkCanvas):
                 special_food_eaten = True
                 del food.special_food_items[special_food_id]
                 self.snake_canvas.delete(special_food_item['tag'])
+        
+        shorten_food_eaten = False
+        for shorten_food_id in list(food.shorten_food_items.keys()):
+            shorten_food_item = food.shorten_food_items[shorten_food_id]
+            if x == shorten_food_item['x'] and y == shorten_food_item['y']:
+                shorten_food_eaten = True
+                del food.shorten_food_items[shorten_food_id]
+                self.snake_canvas.delete(shorten_food_item['tag'])
 
         if food_eaten:
             self.score += 10 #should be 1
@@ -303,7 +324,6 @@ class Snake_endless(ctk.CTkCanvas):
                         self.config.write(configfile)
                 except:
                     traceback.print_exc()
-        
         
         elif special_food_eaten:
             self.score += 5
@@ -319,6 +339,25 @@ class Snake_endless(ctk.CTkCanvas):
                 except:
                     traceback.print_exc()
 
+        elif shorten_food_eaten:
+            self.random_number_off_shorten_food = random.randint(0, 10)
+            self.snake_length -= self.random_number_off_shorten_food
+            self.shorten_score += 1
+
+            for _ in range(self.random_number_off_shorten_food):
+                del snake.coordinates[-1]
+                self.snake_canvas.delete(snake.squares[-1])
+                del snake.squares[-1]
+
+            if len(food.shorten_food_coordinates) < 1:
+                #food.shorten_spawn_food(snake.get_coordinates())
+                try:
+                    self.config.set('Endless_Snake_Values', 'snake_length', str(self.snake_length))
+                    self.config.set('Endless_Snake_Values', 'shorten_score', str(self.shorten_score))
+                    with open('config.ini', 'w') as configfile:
+                        self.config.write(configfile)
+                except:
+                    traceback.print_exc()
 
         else:
             del snake.coordinates[-1]
@@ -329,6 +368,13 @@ class Snake_endless(ctk.CTkCanvas):
             self.food.special_spawn_food(self.snake.get_coordinates())
             self.next_special_food_score += 50
             self.config.set('Endless_Snake_Values', 'next_special_food_score', str(self.next_special_food_score))
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        
+        if self.score >= self.next_shorten_food_score:
+            self.food.shorten_spawn_food(self.snake.get_coordinates())
+            self.next_shorten_food_score += 100
+            self.config.set('Endless_Snake_Values', 'next_shorten_food_score', str(self.next_shorten_food_score))
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
 
@@ -449,8 +495,7 @@ class Snake_endless(ctk.CTkCanvas):
                     self.config.write(configfile)
         except:
             traceback.print_exc()
-
-          
+ 
         self.special_high_score = int(self.config.get('Endless_Snake_Values', 'special_score_high_score', fallback='0'))
         print(self.special_high_score)
         if self.special_score > self.special_high_score:
@@ -463,9 +508,14 @@ class Snake_endless(ctk.CTkCanvas):
                     self.config.write(configfile)
         except:
             traceback.print_exc()
-
         try:
             self.config.set('Endless_Snake_Values', 'next_special_food_score', '50')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        except:
+            traceback.print_exc()
+        try:
+            self.config.set('Endless_Snake_Values', 'next_shorten_food_score', '100')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except:

@@ -98,6 +98,10 @@ class ConfigIni:
                 self.config.set('Endless_Snake_Values', 'shorten_score', '0')
             if not self.config.has_option('Endless_Snake_Values', 'shorten_snake_high_score'):
                 self.config.set('Endless_Snake_Values', 'shorten_snake_high_score', '0')
+            if not self.config.has_option('Endless_Snake_Values', 'next_special_food_score'):
+                self.config.set('Endless_Snake_Values', 'next_special_food_score', '50')
+            if not self.config.has_option('Endless_Snake_Values', 'next_shorten_food_score'):
+                self.config.set('Endless_Snake_Values', 'next_shorten_food_score', '100')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except:

@@ -229,7 +229,8 @@ class Snake_endless(ctk.CTkCanvas):
             self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0'))
             self.high_score_time = int(self.config.get('Endless_Snake_Values', 'high_score_time', fallback='0'))
             self.snake_length_high_score = int(self.config.get('Endless_Snake_Values', 'snake_length_high_score', fallback='0'))
-            
+            self.special_score_high_score = int(self.config.get('Endless_Snake_Values', 'special_score_high_score', fallback='0'))
+            self.shorten_score_high_score = int(self.config.get('Endless_Snake_Values', 'shorten_score_high_score', fallback='0'))
         except:
             traceback.print_exc()
         self.game_labels_panel_2.endless_update_high_score_labels()
@@ -488,32 +489,21 @@ class Snake_endless(ctk.CTkCanvas):
                 self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
             except:
                 traceback.print_exc()
-        try:    
-            with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
-        except:
-            traceback.print_exc()
- 
-        self.special_high_score = int(self.config.get('Endless_Snake_Values', 'special_score_high_score', fallback='0'))
-        print(self.special_high_score)
-        if self.special_score > self.special_high_score:
+
+        self.get_special_high_score = int(self.config.get('Endless_Snake_Values', 'special_score_high_score', fallback='0'))
+        print(self.get_special_high_score)
+        if self.special_score > self.get_special_high_score:
             try:
                 self.config.set('Endless_Snake_Values', 'special_score_high_score', str(self.special_score))
             except:
                 traceback.print_exc()
         
-        self.shorten_high_score = int(self.config.get('Endless_Snake_Values', 'shorten_snake_high_score', fallback='0'))
-        if self.shorten_score > self.shorten_high_score:
+        self.get_shorten_high_score = int(self.config.get('Endless_Snake_Values', 'shorten_snake_high_score', fallback='0'))
+        if self.shorten_score > self.get_shorten_high_score:
             try:
                 self.config.set('Endless_Snake_Values', 'shorten_snake_high_score', str(self.shorten_score))
             except:
                 traceback.print_exc()
-
-        try:   
-            with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
-        except:
-            traceback.print_exc()
         try:
             self.config.set('Endless_Snake_Values', 'next_special_food_score', '50')
             with open('config.ini', 'w') as configfile:
@@ -522,10 +512,15 @@ class Snake_endless(ctk.CTkCanvas):
             traceback.print_exc()
         try:
             self.config.set('Endless_Snake_Values', 'next_shorten_food_score', '100')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
         except:
             traceback.print_exc()
+        
+        try:   
+            with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+        except:
+            traceback.print_exc()
+        
         self.game_labels_panel_2.endless_update_game_labels()
 
     def restart_game(self, event=None):

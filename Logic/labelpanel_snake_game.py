@@ -640,7 +640,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.endless_special_high_score_label_ = self.config.get('Endless_Snake_Values', 'special_high_score', fallback='0')
+            self.endless_special_high_score_label_ = self.config.get('Endless_Snake_Values', 'special_score_high_score', fallback='0')
             #update the high score label on the screen
             self.endless_special_high_score_label.configure(text=f"Special Score: {self.endless_special_high_score_label_} ")
         except:

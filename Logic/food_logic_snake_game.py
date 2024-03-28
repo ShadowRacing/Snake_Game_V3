@@ -66,6 +66,7 @@ class EndlessFood:
         self.special_food_coordinates = {}
         self.shorten_food_coordinates = {}
         self.game_config = game_config
+        self.occupied_coordinates = set()
         try:
             self.config = configparser.ConfigParser()
             self.config.read('config.ini')
@@ -73,6 +74,15 @@ class EndlessFood:
         except:
             traceback.print_exc()
 
+    def add_occuppied_coordinates(self, x, y):
+        self.occupied_coordinates.add((x, y))
+        print(self.occupied_coordinates)
+
+    def remove_occuppied_coordinates(self, x, y):
+        self.occupied_coordinates.remove((x, y))
+    
+    def is_occupied(self, x, y):
+        return (x, y) in self.occupied_coordinates
 
     #Food logic
     def spawn_food(self, snake_coordinates, score):
@@ -83,6 +93,7 @@ class EndlessFood:
         try:
             while len(self.food_items) < num_food_items:
                 x, y = self.generate_random_coordinates(snake_coordinates)
+                self.add_occuppied_coordinates(x, y)
                 food_id = str(uuid.uuid4())
                 self.game_logger.log_game_event("Food ID:")
                 self.game_logger.log_game_event(food_id)
@@ -99,6 +110,7 @@ class EndlessFood:
         try:
             while len(self.special_food_items) < num_special_food_items:
                 x, y = self.generate_random_coordinates(snake_coordinates)
+                self.add_occuppied_coordinates(x, y)
                 special_food_id = str(uuid.uuid4())
                 self.game_logger.log_game_event(special_food_id)
                 tag = "specialfood" + special_food_id
@@ -114,6 +126,7 @@ class EndlessFood:
         try:
             while len(self.shorten_food_items) < num_shorten_food_items:
                 x, y = self.generate_random_coordinates(snake_coordinates)
+                self.add_occuppied_coordinates(x, y)
                 shorten_food_id = str(uuid.uuid4())
                 self.game_logger.log_game_event(shorten_food_id)
                 tag = "shortenfood" + shorten_food_id
@@ -128,6 +141,11 @@ class EndlessFood:
     def create_food_oval(self, x, y, fill_color, tag):
         return self.canvas.create_oval(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, fill=fill_color, tag=tag)
 
+    def reset_food(self):
+        self.food_items.clear()
+        self.special_food_items.clear()
+        self.shorten_food_items.clear()
+        self.occupied_coordinates.clear()
 
     #Creating random coordinates for the food to spawn, and also chechking where the snake is.
     def generate_random_coordinates(self, snake_coordinates):
@@ -136,7 +154,7 @@ class EndlessFood:
                 x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
                 y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
                 collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
-                if not collision:
+                if not collision and not self.is_occupied(x, y):
                     break
             return x, y
         except:

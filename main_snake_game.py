@@ -39,6 +39,7 @@ class SnakeGameApp:
 
         self.game_width = game_width
         self.game_height = game_height
+        self.snake_color = None
         # self.previous_width = root.winfo_width()
         # self.previous_height = root.winfo_height()
         self.theme_updater.set_initial_theme()
@@ -373,7 +374,9 @@ class SnakeGameApp:
             self.logfile, 
             self.settings_canvas
         )
-        
+
+        self.get_color_from_config()
+
         # Create settings labels, buttons, and options
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_settings_label()
@@ -385,7 +388,35 @@ class SnakeGameApp:
         self.settings_labels.create_theme_label()
         self.settings_labels.create_high_score_label()
         self.settings_labels.snake_color_options_label()
-    
+
+    def get_color_from_config(self):
+        self.config.read(self.config_path)
+        new_snake_color = self.config.get('Settings', 'snake_color', fallback='Default')
+        if new_snake_color.lower() == 'default':
+            new_snake_color = '#00FF00'
+        if new_snake_color.lower() == 'midnightpurple':
+            new_snake_color = "#210F28"
+        if new_snake_color != self.snake_color:
+            self.snake_color = new_snake_color
+            self.draw_snake_with_color(self.snake_color)
+        self.root.after(50, self.get_color_from_config)
+    def draw_snake_with_color(self, color):
+        
+        x1, y1, x2, y2 = 825, 125, 800, 100
+        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+        #800, 50
+        x1, y1, x2, y2 = 830, 125, 855, 100
+        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+
+        x1, y1, x2, y2 = 860, 125, 885, 100
+        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+
+        x1, y1, x2, y2 = 890, 125, 915, 100
+        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+
+        x1, y1, x2, y2 = 920, 125, 945, 100
+        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+
     def classic_reset_high_score(self):
         if self.classic_button_press_variable_high_score == 0:
             self.first_button_press_time = time.time()

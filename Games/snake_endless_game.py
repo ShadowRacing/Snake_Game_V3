@@ -211,6 +211,7 @@ class Snake_endless(ctk.CTkCanvas):
         self.logfile.log_game_event("Game focused")
 
     def start_game(self, event=None):
+        self.food.reset_food()
         self.bind_and_unbind_keys()
         self.state = 'game'
         self.bind_and_unbind_keys()
@@ -309,6 +310,7 @@ class Snake_endless(ctk.CTkCanvas):
                 self.snake_canvas.delete(shorten_food_item['tag'])
 
         if food_eaten:
+            self.food.remove_occuppied_coordinates(food_item['x'], food_item['y'])
             self.score += 10 #should be 1
             self.snake_length += 1
             if len(food.food_coordinates) < 2:
@@ -322,6 +324,7 @@ class Snake_endless(ctk.CTkCanvas):
                     traceback.print_exc()
         
         elif special_food_eaten:
+            self.food.remove_occuppied_coordinates(special_food_item['x'], special_food_item['y'])
             self.score += 5
             self.special_score += 1
             if len(food.special_food_coordinates) < 1:
@@ -336,6 +339,7 @@ class Snake_endless(ctk.CTkCanvas):
                     traceback.print_exc()
 
         elif shorten_food_eaten:
+            self.food.remove_occuppied_coordinates(shorten_food_item['x'], shorten_food_item['y'])
             self.random_number_off_shorten_food = random.randint(0, 10)
             self.snake_length -= self.random_number_off_shorten_food
             self.shorten_score += 1
@@ -444,6 +448,7 @@ class Snake_endless(ctk.CTkCanvas):
     def game_over(self):
         self.state = 'game_over'
         self.bind_and_unbind_keys()
+        self.food.reset_food()
         try:
             self.config.set('Endless_Snake_Settings', 'state', 'game_over')
         except:

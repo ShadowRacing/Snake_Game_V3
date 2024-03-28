@@ -43,6 +43,7 @@ class SnakeGameApp:
         # self.previous_width = root.winfo_width()
         # self.previous_height = root.winfo_height()
         self.theme_updater.set_initial_theme()
+        
 
         # Read the config file and load it
         self.config_dir = path.dirname(__file__)
@@ -124,6 +125,9 @@ class SnakeGameApp:
         
         self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.logfile,  self.game_config)
         
+        self.settings_labels = SettingsOptionButtonLabels(self.logfile, self.main_canvas)
+
+        self.settings_labels.update_initial_game_size()
         # Create the home screen
         self.create_home_screen()
         self.logfile.log_game_event("start_screen method called")
@@ -374,20 +378,18 @@ class SnakeGameApp:
             self.logfile, 
             self.settings_canvas
         )
-
+        self.settings_labels.create_theme_label()
         self.get_color_from_config()
+        self.draw_snake_with_color(self.snake_color)
+
 
         # Create settings labels, buttons, and options
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_settings_label()
         self.create_button_panel.create_home_button()
         self.create_option_button_panel.show_options()
-        self.settings_labels.create_screen_options_label()
-        self.settings_labels.create_theme_options_label()
-        self.settings_labels.create_contrast_options_label()
-        self.settings_labels.create_theme_label()
-        self.settings_labels.create_high_score_label()
-        self.settings_labels.snake_color_options_label()
+        self.settings_labels.create_settings_labels()
+
 
     def get_color_from_config(self):
         self.config.read(self.config_path)
@@ -400,22 +402,23 @@ class SnakeGameApp:
             self.snake_color = new_snake_color
             self.draw_snake_with_color(self.snake_color)
         self.root.after(50, self.get_color_from_config)
+
     def draw_snake_with_color(self, color):
-        
-        x1, y1, x2, y2 = 825, 125, 800, 100
-        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
-        #800, 50
-        x1, y1, x2, y2 = 830, 125, 855, 100
-        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+        if not None:
+            x1, y1, x2, y2 = 825, 125, 800, 100
+            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            #800, 50
+            x1, y1, x2, y2 = 830, 125, 855, 100
+            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
-        x1, y1, x2, y2 = 860, 125, 885, 100
-        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            x1, y1, x2, y2 = 860, 125, 885, 100
+            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
-        x1, y1, x2, y2 = 890, 125, 915, 100
-        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            x1, y1, x2, y2 = 890, 125, 915, 100
+            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
-        x1, y1, x2, y2 = 920, 125, 945, 100
-        self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            x1, y1, x2, y2 = 920, 125, 945, 100
+            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
     def classic_reset_high_score(self):
         if self.classic_button_press_variable_high_score == 0:

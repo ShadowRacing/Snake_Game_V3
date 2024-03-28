@@ -246,7 +246,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.logfile.log_game_event("snake has a collision")
             self.game_over()
         else:
-            delay = int(110 - self.game_config.SPEED) 
+            delay = 150 - int(self.game_config.SPEED) 
             self.snake_canvas.after(delay, self.next_turn, snake, food)
             
         self.game_labels_panel.classic_update_game_labels()

@@ -38,6 +38,8 @@ class Snake_endless(ctk.CTkCanvas):
         self.last_direction_change_time = 0
         self.width = game_config.GAME_WIDTH
         self.height = game_config.GAME_HEIGHT
+        print(f"Width: {self.width}")
+        print(f"Height: {self.height}")
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
@@ -410,7 +412,7 @@ class Snake_endless(ctk.CTkCanvas):
             self.logfile.log_game_event("snake has a collision")
             self.game_over()
         else:
-            delay = int(110 - self.game_config.SPEED) 
+            delay = 150 - int(self.game_config.SPEED) 
             self.snake_canvas.after(delay, self.next_turn, snake, food)
             
         self.game_labels_panel_2.endless_update_game_labels()

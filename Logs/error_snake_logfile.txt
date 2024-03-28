@@ -11817,3 +11817,621 @@ _tkinter.TclError: unknown color name "MidnightPurple"
 
 
 
+[2024-03-28 15:55:02] 
+
+
+[2024-03-28 15:55:02] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 260, in start_game
+    self.next_turn(self.snake, self.food)
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 413, in next_turn
+    delay = int(110 - self.game_config.SPEED)
+               ~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'int' and 'str'
+[2024-03-28 15:55:13] No errors occurred
+[2024-03-28 15:55:13] Closed the Error Log File
+
+
+
+
+[2024-03-28 15:58:07] 
+
+
+[2024-03-28 15:58:07] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 182, in start_game
+    self.next_turn(self.snake, self.food)
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 249, in next_turn
+    delay = int(110 - self.game_config.SPEED)
+               ~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'int' and 'str'
+[2024-03-28 16:04:00] 
+
+
+[2024-03-28 16:04:00] Started the Error Log File
+[2024-03-28 16:05:00] No errors occurred
+[2024-03-28 16:05:00] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:05:05] 
+
+
+[2024-03-28 16:05:05] Started the Error Log File
+[2024-03-28 16:06:28] 
+
+
+[2024-03-28 16:06:28] Started the Error Log File
+[2024-03-28 16:06:43] No errors occurred
+[2024-03-28 16:06:43] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:07:12] 
+
+
+[2024-03-28 16:07:12] Started the Error Log File
+[2024-03-28 16:07:37] No errors occurred
+[2024-03-28 16:07:37] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:07:44] 
+
+
+[2024-03-28 16:07:44] Started the Error Log File
+[2024-03-28 16:08:44] 
+
+
+[2024-03-28 16:08:44] Started the Error Log File
+[2024-03-28 16:10:09] 
+
+
+[2024-03-28 16:10:09] Started the Error Log File
+[2024-03-28 16:17:19] 
+
+
+[2024-03-28 16:17:19] Started the Error Log File
+[2024-03-28 16:18:15] 
+
+
+[2024-03-28 16:18:15] Started the Error Log File
+[2024-03-28 16:20:06] No errors occurred
+[2024-03-28 16:20:06] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:20:10] 
+
+
+[2024-03-28 16:20:10] Started the Error Log File
+[2024-03-28 16:20:20] No errors occurred
+[2024-03-28 16:20:20] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:21:36] 
+
+
+[2024-03-28 16:21:36] Started the Error Log File
+[2024-03-28 16:22:42] 
+
+
+[2024-03-28 16:22:42] Started the Error Log File
+[2024-03-28 16:23:17] 
+
+
+[2024-03-28 16:23:17] Started the Error Log File
+[2024-03-28 16:24:32] No errors occurred
+[2024-03-28 16:24:32] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:24:39] 
+
+
+[2024-03-28 16:24:39] Started the Error Log File
+[2024-03-28 16:24:59] 
+
+
+[2024-03-28 16:24:59] Started the Error Log File
+[2024-03-28 16:25:57] No errors occurred
+[2024-03-28 16:25:57] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:26:00] 
+
+
+[2024-03-28 16:26:00] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 36, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 379, in open_settings
+    self.draw_snake_with_color()
+TypeError: SnakeGameApp.draw_snake_with_color() missing 1 required positional argument: 'color'
+[2024-03-28 16:26:43] 
+
+
+[2024-03-28 16:26:43] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 399, in get_color_from_config
+    self.draw_snake_with_color(self.snake_color)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 405, in draw_snake_with_color
+    self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'create_rectangle'
+[2024-03-28 16:27:57] No errors occurred
+[2024-03-28 16:27:57] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:28:01] 
+
+
+[2024-03-28 16:28:01] Started the Error Log File
+[2024-03-28 16:28:49] No errors occurred
+[2024-03-28 16:28:49] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:28:52] 
+
+
+[2024-03-28 16:28:52] Started the Error Log File
+[2024-03-28 16:31:54] No errors occurred
+[2024-03-28 16:31:54] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:31:58] 
+
+
+[2024-03-28 16:31:58] Started the Error Log File
+[2024-03-28 16:37:43] 
+
+
+[2024-03-28 16:37:43] Started the Error Log File
+[2024-03-28 16:37:44] No errors occurred
+[2024-03-28 16:37:44] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:41:02] 
+
+
+[2024-03-28 16:41:02] Started the Error Log File
+[2024-03-28 16:41:22] 
+
+
+[2024-03-28 16:41:22] Started the Error Log File
+[2024-03-28 16:42:09] No errors occurred
+[2024-03-28 16:42:09] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:42:14] 
+
+
+[2024-03-28 16:42:14] Started the Error Log File
+[2024-03-28 16:43:13] No errors occurred
+[2024-03-28 16:43:13] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:54:27] 
+
+
+[2024-03-28 16:54:27] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 61, in __init__
+    width, height = self.game_size.split('x')
+    ^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+[2024-03-28 16:54:33] 
+
+
+[2024-03-28 16:54:33] Started the Error Log File
+[2024-03-28 16:55:49] No errors occurred
+[2024-03-28 16:55:49] Closed the Error Log File
+
+
+
+
+[2024-03-28 16:55:53] 
+
+
+[2024-03-28 16:55:53] Started the Error Log File
+[2024-03-28 16:56:10] No errors occurred
+[2024-03-28 16:56:10] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:08:35] 
+
+
+[2024-03-28 17:08:35] Started the Error Log File
+[2024-03-28 17:09:35] 
+
+
+[2024-03-28 17:09:35] Started the Error Log File
+[2024-03-28 17:09:44] No errors occurred
+[2024-03-28 17:09:44] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:10:22] 
+
+
+[2024-03-28 17:10:22] Started the Error Log File
+[2024-03-28 17:10:28] No errors occurred
+[2024-03-28 17:10:28] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:10:41] 
+
+
+[2024-03-28 17:10:41] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 211, in snake_endless
+    self.endless_snake_canvas = Snake_endless(self.root,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 41, in __init__
+    print(f"Height: {self.height}")
+                     ^^^^^^^^^^^
+AttributeError: 'Snake_endless' object has no attribute 'height'
+[2024-03-28 17:11:10] 
+
+
+[2024-03-28 17:11:10] Started the Error Log File
+[2024-03-28 17:11:16] No errors occurred
+[2024-03-28 17:11:16] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:11:39] 
+
+
+[2024-03-28 17:11:39] Started the Error Log File
+[2024-03-28 17:11:47] 
+
+
+[2024-03-28 17:11:47] Started the Error Log File
+[2024-03-28 17:11:48] No errors occurred
+[2024-03-28 17:11:48] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:11:50] 
+
+
+[2024-03-28 17:11:50] Started the Error Log File
+[2024-03-28 17:11:53] No errors occurred
+[2024-03-28 17:11:53] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:15:04] 
+
+
+[2024-03-28 17:15:04] Started the Error Log File
+[2024-03-28 17:16:32] 
+
+
+[2024-03-28 17:16:32] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 173, in set_configuration
+    self.GAME_WIDTH = self.game_width
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'GameConfig' object has no attribute 'game_width'
+[2024-03-28 17:17:44] 
+
+
+[2024-03-28 17:17:44] Started the Error Log File
+[2024-03-28 17:18:46] No errors occurred
+[2024-03-28 17:18:46] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:18:50] 
+
+
+[2024-03-28 17:18:50] Started the Error Log File
+[2024-03-28 17:19:39] No errors occurred
+[2024-03-28 17:19:39] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:20:05] 
+
+
+[2024-03-28 17:20:05] Started the Error Log File
+[2024-03-28 17:20:23] No errors occurred
+[2024-03-28 17:20:23] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:20:26] 
+
+
+[2024-03-28 17:20:26] Started the Error Log File
+[2024-03-28 17:20:37] No errors occurred
+[2024-03-28 17:20:37] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:20:40] 
+
+
+[2024-03-28 17:20:40] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 391, in get_color_from_config
+    self.config.read(self.config_path)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 713, in read
+    self._read(fp, filename)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1132, in _read
+    raise e
+configparser.ParsingError: Source contains parsing errors: 'e:\\Snake_game_V3\\Snake_Game_V3\\config.ini'
+	[line 12]: 'label_needed_game_size\n'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 391, in get_color_from_config
+    self.config.read(self.config_path)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 713, in read
+    self._read(fp, filename)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1132, in _read
+    raise e
+configparser.ParsingError: Source contains parsing errors: 'e:\\Snake_game_V3\\Snake_Game_V3\\config.ini'
+	[line 12]: 'label_needed_game_size\n'
+[2024-03-28 17:24:15] No errors occurred
+[2024-03-28 17:24:15] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:29:24] 
+
+
+[2024-03-28 17:29:24] Started the Error Log File
+[2024-03-28 17:30:11] No errors occurred
+[2024-03-28 17:30:11] Closed the Error Log File
+
+
+
+
+[2024-03-28 17:30:14] 
+
+
+[2024-03-28 17:30:14] Started the Error Log File
+[2024-03-28 17:30:17] No errors occurred
+[2024-03-28 17:30:17] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:25:36] 
+
+
+[2024-03-28 18:25:36] Started the Error Log File
+[2024-03-28 18:25:51] No errors occurred
+[2024-03-28 18:25:51] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:26:22] 
+
+
+[2024-03-28 18:26:22] Started the Error Log File
+[2024-03-28 18:26:55] No errors occurred
+[2024-03-28 18:26:55] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:26:57] 
+
+
+[2024-03-28 18:26:57] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 679, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 130, in __init__
+    self.settings_labels.update_initial_game_size()
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'settings_labels'. Did you mean: 'settings_canvas'?
+[2024-03-28 18:27:02] 
+
+
+[2024-03-28 18:27:02] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 679, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 130, in __init__
+    self.settings_labels.update_initial_game_size()
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'settings_labels'. Did you mean: 'settings_canvas'?
+[2024-03-28 18:27:25] 
+
+
+[2024-03-28 18:27:25] Started the Error Log File
+[2024-03-28 18:27:59] 
+
+
+[2024-03-28 18:27:59] Started the Error Log File
+[2024-03-28 18:28:20] 
+
+
+[2024-03-28 18:28:20] Started the Error Log File
+[2024-03-28 18:28:35] 
+
+
+[2024-03-28 18:28:35] Started the Error Log File
+[2024-03-28 18:28:43] No errors occurred
+[2024-03-28 18:28:43] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:28:45] 
+
+
+[2024-03-28 18:28:45] Started the Error Log File
+[2024-03-28 18:28:54] 
+
+
+[2024-03-28 18:28:54] Started the Error Log File
+[2024-03-28 18:29:08] 
+
+
+[2024-03-28 18:29:08] Started the Error Log File
+[2024-03-28 18:30:46] 
+
+
+[2024-03-28 18:30:46] Started the Error Log File
+[2024-03-28 18:32:03] No errors occurred
+[2024-03-28 18:32:03] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:32:07] 
+
+
+[2024-03-28 18:32:07] Started the Error Log File
+[2024-03-28 18:32:11] No errors occurred
+[2024-03-28 18:32:11] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:38:20] 
+
+
+[2024-03-28 18:38:20] Started the Error Log File
+[2024-03-28 18:38:41] 
+
+
+[2024-03-28 18:38:41] Started the Error Log File
+[2024-03-28 18:42:09] No errors occurred
+[2024-03-28 18:42:09] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:42:13] 
+
+
+[2024-03-28 18:42:13] Started the Error Log File
+[2024-03-28 18:42:23] 
+
+
+[2024-03-28 18:42:23] Started the Error Log File
+[2024-03-28 18:43:15] No errors occurred
+[2024-03-28 18:43:15] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:43:24] 
+
+
+[2024-03-28 18:43:24] Started the Error Log File
+[2024-03-28 18:45:48] No errors occurred
+[2024-03-28 18:45:48] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:47:14] 
+
+
+[2024-03-28 18:47:14] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 148, in create_theme_label
+    self.config.write(configfile)
+    ^^^^^^^^^^^
+AttributeError: 'SettingsOptionButtonLabels' object has no attribute 'config'
+[2024-03-28 18:47:44] 
+
+
+[2024-03-28 18:47:44] Started the Error Log File
+[2024-03-28 18:48:46] No errors occurred
+[2024-03-28 18:48:46] Closed the Error Log File
+
+
+
+
+[2024-03-28 18:48:48] 
+
+
+[2024-03-28 18:48:48] Started the Error Log File
+[2024-03-28 18:49:23] 
+
+
+[2024-03-28 18:49:23] Started the Error Log File

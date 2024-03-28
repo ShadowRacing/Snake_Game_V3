@@ -30,6 +30,70 @@ class GameConfig:
         except:
             traceback.print_exc()
         
+        try:
+            self.snake_speed = self.config.get('Settings', 'snake_speed', fallback='20')
+            if self.snake_speed in ['10', '20', '30', '40', '50', '60', '70', '80', '90', '100']:
+                if self.snake_speed == '10':
+                    self.SPEED = 10
+                elif self.snake_speed == '20':
+                    self.SPEED = 20
+                elif self.snake_speed == '30':
+                    self.SPEED = 30
+                elif self.snake_speed == '40':
+                    self.SPEED = 40
+                elif self.snake_speed == '50':
+                    self.SPEED = 50
+                elif self.snake_speed == '60':
+                    self.SPEED = 60
+                elif self.snake_speed == '70':
+                    self.SPEED = 70
+                elif self.snake_speed == '80':
+                    self.SPEED = 80
+                elif self.snake_speed == '90':
+                    self.SPEED = 90
+                elif self.snake_speed == '100':
+                    self.SPEED = 100
+        except:
+            traceback.print_exc()
+
+        self.config.read(self.config_path)
+
+        try:
+            self.game_size = self.config.get('Settings', 'game_size', fallback='500x500')
+            if self.game_size in ["100x100", "200x200", "300x300", "400x400", "500x500", "600x600", "700x700", "800x800","900x900", "1000x1000"]:
+                if self.game_size == "100x100":
+                    self.game_width = 100
+                    self.game_height = 100
+                elif self.game_size == "200x200":
+                    self.game_width = 200
+                    self.game_height = 200
+                elif self.game_size == "300x300":
+                    self.game_width = 300
+                    self.game_height = 300
+                elif self.game_size == "400x400":
+                    self.game_width = 400
+                    self.game_height = 400
+                elif self.game_size == "500x500":
+                    self.game_width = 500
+                    self.game_height = 500
+                elif self.game_size == "600x600":
+                    self.game_width = 600
+                    self.game_height = 600
+                elif self.game_size == "700x700":
+                    self.game_width = 700
+                    self.game_height = 700
+                elif self.game_size == "800x800":
+                    self.game_width = 800
+                    self.game_height = 800
+                elif self.game_size == "900x900":
+                    self.game_width = 900
+                    self.game_height = 900
+                elif self.game_size == "1000x1000":
+                    self.game_width = 1000
+                    self.game_height = 1000
+        except:
+            traceback.print_exc()
+
         # Set the snake color from the configuration file
         try:
             self.snake_color = self.config.get('Settings', 'snake_color', fallback='Green')
@@ -94,7 +158,7 @@ class GameConfig:
             if game_mode == "initial_config":
                 self.GAME_WIDTH = 300
                 self.GAME_HEIGHT = 300
-                self.SPEED = 10
+                self.SPEED = self.snake_speed
                 self.CELL_SIZE = 20
                 self.SNAKE_LENGTH = 3
                 self.SNAKE_COLOR = self.snake_color
@@ -108,9 +172,9 @@ class GameConfig:
                 self.logfile.log_game_event("Game mode: initial config")
 
             elif game_mode == "classic_snake":
-                self.GAME_WIDTH = 500
-                self.GAME_HEIGHT = 500
-                self.SPEED = 10
+                self.GAME_WIDTH = self.game_width
+                self.GAME_HEIGHT = self.game_height
+                self.SPEED = self.snake_speed
                 self.CELL_SIZE = 20
                 self.SNAKE_LENGTH = 5
                 self.SNAKE_COLOR = self.snake_color
@@ -124,9 +188,9 @@ class GameConfig:
                 self.logfile.log_game_event("Game mode: classic_snake")
 
             elif game_mode == "snake_endless":
-                self.GAME_WIDTH = 400
-                self.GAME_HEIGHT = 400
-                self.SPEED = 20
+                self.GAME_WIDTH = self.game_width
+                self.GAME_HEIGHT = self.game_height
+                self.SPEED = self.snake_speed
                 self.CELL_SIZE = 20
                 self.SNAKE_LENGTH = 5
                 self.SNAKE_COLOR = self.snake_color
@@ -143,7 +207,7 @@ class GameConfig:
             elif game_mode == "snake_special":
                 self.GAME_WIDTH = 400
                 self.GAME_HEIGHT = 400
-                self.SPEED = 40
+                self.SPEED = self.snake_speed
                 self.CELL_SIZE = 10
                 self.SNAKE_LENGTH = 2
                 self.SNAKE_COLOR = self.snake_color

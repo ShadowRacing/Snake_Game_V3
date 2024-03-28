@@ -67,6 +67,15 @@ class SettingsOptionButtonLabels:
         self.logfile = logfile
         self.settings_canvas = settings_canvas
 
+    def create_settings_labels(self):
+        self.create_screen_options_label()
+        self.create_theme_options_label()
+        self.create_contrast_options_label()
+        self.snake_color_options_label()
+        self.create_high_score_label()
+        self.snake_speed_options_label()
+        self.game_size_options_label()
+
     def create_screen_options_label(self):
         self.screen_label = ctk.CTkLabel(self.settings_canvas, 
                                         width=160,
@@ -135,11 +144,74 @@ class SettingsOptionButtonLabels:
                 self.restart_game_label = ctk.CTkLabel(self.settings_canvas, text="You need to restart to apply the theme", font=FONT_LIST[11])
                 self.restart_game_label.place(x=400, y=100)
                 config.set('Settings', 'label_needed', 'True')
+                with open('config.ini', 'w') as configfile:
+                    config.write(configfile)
             else:
                 if hasattr(self, 'restart_game_label'):
                     self.restart_game_label.destroy()
                     del self.restart_game_label
                 config.set('Settings', 'label_needed', 'False')
+                with open('config.ini', 'w') as configfile:
+                    config.write(configfile)
+        except:
+            traceback.print_exc()
+
+    def update_initial_game_size(self):
+        config_dir = path.dirname(__file__)
+        config_path = path.join(config_dir, '..','config.ini')
+        config = configparser.ConfigParser()
+        config.read(config_path)
+        # Check if the 'Settings' section exists in the config file
+        if not config.has_option('Settings', 'game_size'):
+            config.set('Settings', 'game_size', '500x500') 
+
+        # Set the 'initial_game_size' option to the current theme
+        current_game_size = config.get('Settings', 'game_size', fallback='Default')
+        self.logfile.log_game_event(current_game_size)
+        config.set('Settings', 'initial_game_size', current_game_size)
+
+        # Write the changes to the config file
+        with open('config.ini', 'w') as configfile:
+            config.write(configfile)
+
+        self.logfile.log_game_event(f"Updated initial_game_size in config.ini to {current_game_size}")
+        self.logfile.log_game_event(f"Current initial_game_size in config.ini: {config.get('Settings', 'initial_game_size')}")
+        # The load_theme method loads a theme from a JSON file. If the file is not found, it logs an error and uses the default theme.
+
+
+    def create_game_size_label(self):
+        try:
+            config_dir = path.dirname(__file__)
+            config_path = path.join(config_dir, '..','config.ini')
+            config = configparser.ConfigParser()
+            config.read(config_path)
+
+            current_game_size = config.get('Settings', 'game_size')
+            initial_game_size = config.get('Settings', 'initial_game_size')
+            print(f"Current game size: {current_game_size}")
+            print(f"Initial game size: {initial_game_size}")
+        except:
+            traceback.print_exc()
+
+
+        try: 
+            if not config.has_option('Settings', 'label_needed_game_size'):
+                config.set('Settings', 'label_needed_game_size', 'False')
+        except:
+            traceback.print_exc()
+        
+        try:
+            if current_game_size != initial_game_size:
+                if hasattr(self, 'restart_game_label'):
+                    self.restart_game_label.destroy()
+                self.restart_game_label = ctk.CTkLabel(self.settings_canvas, text="You need to restart to apply the game size", font=FONT_LIST[11])
+                self.restart_game_label.place(x=400, y=300)
+                config.set('Settings', 'label_needed_game_size', 'True')
+            else:
+                if hasattr(self, 'restart_game_label'):
+                    self.restart_game_label.destroy()
+                    del self.restart_game_label
+                config.set('Settings', 'label_needed_game_size', 'False')
         except:
             traceback.print_exc()
 
@@ -160,6 +232,48 @@ class SettingsOptionButtonLabels:
                                              anchor='w'
                                              )
         self.high_score_label.place(x=1000, y=10)
+
+    def snake_speed_options_label(self):
+        self.snake_speed_label = ctk.CTkLabel(self.settings_canvas, 
+                                              width=160,
+                                              height=30,
+                                              corner_radius=6,
+                                              text="Snake Speed", 
+                                              font=FONT_LIST[11],
+                                              anchor='w'
+                                              )
+        self.snake_speed_label.place(x=200, y=160)
+
+        self.snake_default_speed_label = ctk.CTkLabel(self.settings_canvas,
+                                                         width=160,
+                                                         height=30,
+                                                         corner_radius=6,
+                                                         text="Default: 50", 
+                                                         font=FONT_LIST[11],
+                                                         anchor='w'
+                                                         )
+        self.snake_default_speed_label.place(x=200, y=250)
+    
+    def game_size_options_label(self):
+        self.game_size_label = ctk.CTkLabel(self.settings_canvas, 
+                                            width=160,
+                                            height=30,
+                                            corner_radius=6,
+                                            text="Game Size", 
+                                            font=FONT_LIST[11],
+                                            anchor='w'
+                                            )
+        self.game_size_label.place(x=400, y=160)
+
+        self.game_size_default_label = ctk.CTkLabel(self.settings_canvas,
+                                                         width=160,
+                                                         height=30,
+                                                         corner_radius=6,
+                                                         text="Default:500x500", 
+                                                         font=FONT_LIST[11],
+                                                         anchor='w'
+                                                         )
+        self.game_size_default_label.place(x=400, y=250)
 
     def set_create_label_canvas_flag(self, value=True):
         self.create_label_canvas_flag = value

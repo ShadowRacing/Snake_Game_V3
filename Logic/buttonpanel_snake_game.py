@@ -234,7 +234,7 @@ class ClickButtonPanel:
         snake_endless_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
 
     def snake_special_button(self):
-        snake_special_button = ctk.CTkButton(self.button_canvas, text="Classic Snake", font=FONT_LIST[11],
+        snake_special_button = ctk.CTkButton(self.button_canvas, text="Special Snake", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="disabled",#Should ne normal
                                 command=self.button_commands.snake_special_command)
         snake_special_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
@@ -413,11 +413,23 @@ class OptionButtonPanel:
         self.updating_config_ini()
         self.snake_color_rgb = COLORS_DICT.get(selected_value)
         
-
-
     def high_score_label_showing_callback(self, selected_value):
         try:
             self.config.set('Settings', 'label_needed_high_score', selected_value)
+        except:
+            traceback.print_exc()
+        self.updating_config_ini()
+
+    def snake_speed_callback(self, selected_value):
+        try:
+            self.config.set('Settings', 'snake_speed', selected_value)
+        except:
+            traceback.print_exc()
+        self.updating_config_ini()
+    
+    def game_size_callback(self, selected_value):
+        try:
+            self.config.set('Settings', 'game_size', selected_value)
         except:
             traceback.print_exc()
         self.updating_config_ini()
@@ -470,6 +482,18 @@ class OptionButtonPanel:
             self.create_option_button(self.high_score_label_showing_callback,
                                       ["Default", "True", "False"],
                                       self.high_score_label_showing_config, 1000, 50)
+
+            self.snake_speed_config = self.config.get('Settings', 'snake_speed', fallback='20')
+            self.create_option_button(self.snake_speed_callback,
+                                      ["2","4","6","8","10", "20", "30", "40", "50", "60", "70", "80", "90", "100"],
+                                      self.snake_speed_config, 200, 200)
+
+            self.game_size_config = self.config.get('Settings', 'game_size', fallback='Default')
+            self.create_option_button(self.game_size_callback,
+                                      ["100x100", "200x200", "300x300", "400x400", "500x500", 
+                                       "600x600", "700x700", "800x800","900x900", "1000x1000"],
+                                      self.game_size_config, 400, 200)
+          
 
         # Handle exceptions appropriately
         except:

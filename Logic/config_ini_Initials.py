@@ -37,12 +37,18 @@ class ConfigIni:
                 self.config.set('Settings', 'label_needed', 'False')
             if not self.config.has_option('Settings', 'button_press_time_limit'):
                 self.config.set('Settings', 'button_press_time_limit', '0.5')
-            if not self.config.has_option('Settings', 'label_needed'):
-                self.config.set('Settings', 'label_needed', 'True')
             if not self.config.has_option('Settings', 'label_needed_high_score'):
                 self.config.set('Settings', 'label_needed_high_score', 'Default')
+            if not self.config.has_option('Settings', 'label_needed_game_size'):
+                self.config.set('Settings', 'label_needed_game_size', 'False')
             if not self.config.has_option('Settings', 'game_mode'):
                 self.config.set('Settings', 'game_mode', 'classic_snake')
+            if not self.config.has_option('Settings', 'snake_speed'):
+                self.config.set('Settings', 'snake_speed', '50') # 50 is default
+            if not self.config.has_option('Settings', 'initial_game_size'):
+                self.config.set('Settings', 'initial_game_size', '500x500') # 500x500 is default
+            if not self.config.has_option('Settings', 'game_size'):
+                self.config.set('Settings', 'game_size', '500x500') # 500x500 is default
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except:

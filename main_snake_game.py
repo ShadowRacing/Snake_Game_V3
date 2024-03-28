@@ -378,7 +378,7 @@ class SnakeGameApp:
             self.logfile, 
             self.settings_canvas
         )
-        self.settings_labels.create_theme_label()
+        
         self.get_color_from_config()
         self.draw_snake_with_color(self.snake_color)
 
@@ -389,6 +389,9 @@ class SnakeGameApp:
         self.create_button_panel.create_home_button()
         self.create_option_button_panel.show_options()
         self.settings_labels.create_settings_labels()
+        self.settings_labels.create_theme_label()
+        self.settings_labels.create_game_size_label()
+
 
 
     def get_color_from_config(self):

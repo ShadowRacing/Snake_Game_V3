@@ -178,7 +178,6 @@ class SettingsOptionButtonLabels:
         self.logfile.log_game_event(f"Current initial_game_size in config.ini: {config.get('Settings', 'initial_game_size')}")
         # The load_theme method loads a theme from a JSON file. If the file is not found, it logs an error and uses the default theme.
 
-
     def create_game_size_label(self):
         try:
             config_dir = path.dirname(__file__)
@@ -188,38 +187,33 @@ class SettingsOptionButtonLabels:
 
             current_game_size = config.get('Settings', 'game_size')
             initial_game_size = config.get('Settings', 'initial_game_size')
-            print(f"Current game size: {current_game_size}")
-            print(f"Initial game size: {initial_game_size}")
         except:
             traceback.print_exc()
 
-
-        try: 
-            if not config.has_option('Settings', 'label_needed_game_size'):
-                config.set('Settings', 'label_needed_game_size', 'False')
+        # Check if the 'label_needed' option exists, if not, add it
+        try:    
+            if not config.has_option('Settings', 'label_needed'):
+                config.set('Settings', 'label_needed', 'False')
         except:
             traceback.print_exc()
-        
+
         try:
             if current_game_size != initial_game_size:
                 if hasattr(self, 'restart_game_label'):
-                    self.restart_game_label.destroy()
-                self.restart_game_label = ctk.CTkLabel(self.settings_canvas, text="You need to restart to apply the game size", font=FONT_LIST[11])
-                self.restart_game_label.place(x=400, y=300)
+                    restart_game_label.destroy()
+                restart_game_label = ctk.CTkLabel(self.settings_canvas, text="You need to restart to apply the game_size", font=FONT_LIST[11])
+                restart_game_label.place(x=400, y=250)
                 config.set('Settings', 'label_needed_game_size', 'True')
+                with open('config.ini', 'w') as configfile:
+                    config.write(configfile)
             else:
                 if hasattr(self, 'restart_game_label'):
-                    self.restart_game_label.destroy()
-                    del self.restart_game_label
+                    restart_game_label.destroy()
+                    del restart_game_label
                 config.set('Settings', 'label_needed_game_size', 'False')
+                with open('config.ini', 'w') as configfile:
+                    config.write(configfile)
         except:
-            traceback.print_exc()
-
-        try:
-            # Write the changes to the config file
-            with open(config_path, 'w') as configfile:
-                config.write(configfile)
-        except: 
             traceback.print_exc()
 
     def create_high_score_label(self):

@@ -430,9 +430,13 @@ class OptionButtonPanel:
     def game_size_callback(self, selected_value):
         try:
             self.config.set('Settings', 'game_size', selected_value)
+            print("Game size changed")
+            self.updating_config_ini()
+            self.label_panel.create_game_size_label()
+            print("Game size changed2")
         except:
             traceback.print_exc()
-        self.updating_config_ini()
+        
 
     # Method to create an option button
     def create_option_button(self, command, values, config, x, y):

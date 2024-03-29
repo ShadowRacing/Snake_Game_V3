@@ -462,7 +462,7 @@ class OptionButtonPanel:
             self.screen_size_config = self.config.get('Settings', 'screen_size', fallback='Default')
             self.create_option_button(self.screen_size_callback,
                                       ["Fullscreen", "Default","600x800", "1600x900", "1800x1080",
-                                       "1800x1200", "1920x1080", "1920x1200", "2560x1440", "3480x2160"],
+                                       "1800x1200", "1920x1080", "1920x1200", "2560x1440"],
                                       self.screen_size_config, 200, 50)
 
             # Theme Option

@@ -12742,3 +12742,37 @@ UnboundLocalError: cannot access local variable 'restart_game_label' where it is
 
 
 [2024-03-29 11:07:25] Started the Error Log File
+[2024-03-29 11:09:39] 
+
+
+[2024-03-29 11:09:39] Started the Error Log File
+[2024-03-29 11:13:29] 
+
+
+[2024-03-29 11:13:29] Started the Error Log File
+[2024-03-29 11:13:34] No errors occurred
+[2024-03-29 11:13:34] Closed the Error Log File
+
+
+
+
+[2024-03-29 11:14:46] 
+
+
+[2024-03-29 11:14:46] Started the Error Log File
+[2024-03-29 11:19:49] 
+
+
+[2024-03-29 11:19:49] Started the Error Log File
+[2024-03-29 11:20:00] 
+
+
+[2024-03-29 11:20:00] Started the Error Log File
+[2024-03-29 11:20:06] 
+
+
+[2024-03-29 11:20:06] Started the Error Log File
+[2024-03-29 11:20:25] 
+
+
+[2024-03-29 11:20:25] Started the Error Log File

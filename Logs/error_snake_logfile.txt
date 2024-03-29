@@ -12704,3 +12704,41 @@ TypeError: OptionButtonPanel.updating_config_ini() takes 1 positional argument b
 
 
 [2024-03-28 20:22:23] Started the Error Log File
+[2024-03-29 10:55:13] 
+
+
+[2024-03-29 10:55:13] Started the Error Log File
+[2024-03-29 11:01:59] No errors occurred
+[2024-03-29 11:01:59] Closed the Error Log File
+
+
+
+
+[2024-03-29 11:02:02] 
+
+
+[2024-03-29 11:02:02] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 203, in create_game_size_label
+    restart_game_label.destroy()
+    ^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'restart_game_label' where it is not associated with a value
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 203, in create_game_size_label
+    restart_game_label.destroy()
+    ^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'restart_game_label' where it is not associated with a value
+[2024-03-29 11:02:53] 
+
+
+[2024-03-29 11:02:53] Started the Error Log File
+[2024-03-29 11:07:21] No errors occurred
+[2024-03-29 11:07:21] Closed the Error Log File
+
+
+
+
+[2024-03-29 11:07:25] 
+
+
+[2024-03-29 11:07:25] Started the Error Log File

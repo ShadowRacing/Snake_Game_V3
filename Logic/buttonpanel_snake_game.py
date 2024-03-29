@@ -431,7 +431,8 @@ class OptionButtonPanel:
         try:
             self.config.set('Settings', 'game_size', selected_value)
             print("Game size changed")
-            self.updating_config_ini()
+            with open(self.config_path, 'w') as configfile:
+                self.config.write(configfile)
             self.label_panel.create_game_size_label()
             print("Game size changed2")
         except:

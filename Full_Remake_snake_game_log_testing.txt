@@ -1,9 +1,0 @@
-[2024-03-23 18:26:17] Started the app
-[2024-03-23 18:26:17] Started the GameApp Class
-[2024-03-23 18:26:17] Reset snake length
-[2024-03-23 18:26:17] start_screen method called
-[2024-03-23 18:26:23] Closed the app
-
-
-
-

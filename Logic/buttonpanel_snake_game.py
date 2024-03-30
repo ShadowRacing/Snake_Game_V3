@@ -61,11 +61,11 @@ class ButtonCommands:
         else:
             self.logfile.log_game_event("No function assigned to 'snake_endless'")
 
-    def snake_special_command(self):
-        if 'snake_special' in self.functions:
-            self.functions['snake_special']()
+    def snake_leveling_command(self):
+        if 'snake_leveling' in self.functions:
+            self.functions['snake_leveling']()
         else:
-            self.logfile.log_game_event("No function assigned to 'snake_special'")
+            self.logfile.log_game_event("No function assigned to 'snake_leveling'")
 
     def snake_color_command(self):
         if 'snake_color' in self.functions:
@@ -233,11 +233,11 @@ class ClickButtonPanel:
                                 command=self.button_commands.snake_endless_command)
         snake_endless_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
 
-    def snake_special_button(self):
-        snake_special_button = ctk.CTkButton(self.button_canvas, text="Special Snake", font=FONT_LIST[11],
-                                width=self.button_width, height=self.button_height, state="disabled",#Should ne normal
-                                command=self.button_commands.snake_special_command)
-        snake_special_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
+    def snake_leveling_button(self):
+        snake_leveling_button = ctk.CTkButton(self.button_canvas, text="Leveling Snake", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",#Should ne normal
+                                command=self.button_commands.snake_leveling_command)
+        snake_leveling_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
 
     def snake_color_button(self):
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],

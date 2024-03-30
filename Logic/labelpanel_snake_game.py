@@ -17,7 +17,7 @@ class NameOffFrameLabelPanel:
             "main_menu": "Main Menu",
             "classic_snake": "Classic Snake",
             "endless_snake": "Endless Snake",
-            "special_snake": "Special Snake",
+            "leveling_snake": "Leveling Snake",
             "info": "Game Information",
             "settings": "Settings"
         }
@@ -50,8 +50,8 @@ class NameOffFrameLabelPanel:
     def create_endless_snake_label(self):
         self.create_label_canvas("endless_snake")
 
-    def create_special_snake_label(self):
-        self.create_label_canvas("special_snake")
+    def create_leveling_snake_label(self):
+        self.create_label_canvas("leveling_snake")
 
     def create_info_label(self):
         self.create_label_canvas("info")

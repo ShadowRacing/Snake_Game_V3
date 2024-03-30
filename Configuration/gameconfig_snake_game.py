@@ -204,7 +204,7 @@ class GameConfig:
                 self.DIRECTIONOFFSNAKE = "down"
                 self.logfile.log_game_event("Game mode: snake_endless")
 
-            elif game_mode == "snake_special":
+            elif game_mode == "snake_leveling":
                 self.GAME_WIDTH = 400
                 self.GAME_HEIGHT = 400
                 self.SPEED = self.snake_speed

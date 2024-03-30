@@ -160,7 +160,7 @@ class EndlessFood:
         except:
             traceback.print_exc()
     
-class SpecialFood:
+class LevelingFood:
     def __init__(self, game_logger, canvas, game_config):
         #Initializing variables
         self.time = time.time()

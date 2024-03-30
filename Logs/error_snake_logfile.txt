@@ -12816,3 +12816,125 @@ UnboundLocalError: cannot access local variable 'restart_game_label' where it is
 
 
 
+[2024-03-30 11:40:14] 
+
+
+[2024-03-30 11:40:14] Started the Error Log File
+[2024-03-30 11:49:58] 
+
+
+[2024-03-30 11:49:58] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 682, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 132, in __init__
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 150, in create_home_screen
+    self.create_button_panel.snake_special_button()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ClickButtonPanel' object has no attribute 'snake_special_button'. Did you mean: 'snake_speed_button'?
+[2024-03-30 11:50:03] 
+
+
+[2024-03-30 11:50:03] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 682, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 132, in __init__
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 150, in create_home_screen
+    self.create_button_panel.snake_special_button()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ClickButtonPanel' object has no attribute 'snake_special_button'. Did you mean: 'snake_speed_button'?
+[2024-03-30 11:50:35] 
+
+
+[2024-03-30 11:50:35] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 298, in snake_leveling
+    self.framelabel_panel.create_special_snake_label()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NameOffFrameLabelPanel' object has no attribute 'create_special_snake_label'
+[2024-03-30 11:51:13] 
+
+
+[2024-03-30 11:51:13] Started the Error Log File
+[2024-03-30 11:51:36] 
+
+
+[2024-03-30 11:51:36] Started the Error Log File
+[2024-03-30 11:52:24] 
+
+
+[2024-03-30 11:52:24] Started the Error Log File
+[2024-03-30 11:57:18] 
+
+
+[2024-03-30 11:57:18] Started the Error Log File
+[2024-03-30 12:00:58] 
+
+
+[2024-03-30 12:00:58] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 266, in snake_leveling
+    self.leveling_snake_canvas = Snake_Leveling(self.root,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Snake_Leveling.__init__() missing 3 required positional arguments: 'logfile', 'functions', and 'create_button_panel'
+[2024-03-30 12:02:14] 
+
+
+[2024-03-30 12:02:14] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 266, in snake_leveling
+    self.leveling_snake_canvas = Snake_Leveling(self.root,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_leveling_game.py", line 44, in __init__
+    self.snake = Snake(self.logfile, self.snake_canvas, game_config)
+                                     ^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'snake_canvas'
+[2024-03-30 12:03:27] 
+
+
+[2024-03-30 12:03:27] Started the Error Log File
+[2024-03-30 12:03:43] No errors occurred
+[2024-03-30 12:03:43] Closed the Error Log File
+
+
+
+
+[2024-03-30 12:03:46] 
+
+
+[2024-03-30 12:03:46] Started the Error Log File
+[2024-03-30 12:03:57] No errors occurred
+[2024-03-30 12:03:57] Closed the Error Log File
+
+
+
+

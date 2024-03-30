@@ -14,11 +14,11 @@ from Configuration.gameconfig_snake_game import GameConfig
 from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel
 from Logic.snake_logic_snake_game import Snake
-from Logic.food_logic_snake_game import ClassicFood, SpecialFood, EndlessFood
+from Logic.food_logic_snake_game import ClassicFood, LevelingFood, EndlessFood
 from Logic.config_ini_Initials import ConfigIni
 from Games.snake_classic_game import Snake_Classic_Game
 from Games.snake_endless_game import Snake_endless
-from Games.snake_special_game import Snake_Special
+from Games.snake_leveling_game import Snake_Leveling
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
 
@@ -80,7 +80,7 @@ class SnakeGameApp:
         # All the game canvases
         self.classic_snake_canvas = None
         self.endless_snake_canvas = None
-        self.special_snake_canvas = None
+        self.leveling_snake_canvas = None
         self.info_canvas = None
         self.settings_canvas = None
 
@@ -90,7 +90,7 @@ class SnakeGameApp:
         # Create the snake and food objects
         self.snake = Snake(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
         self.classicfood = ClassicFood(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
-        self.special_food = SpecialFood(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
+        self.leveling_food = LevelingFood(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
         self.endless_food = EndlessFood(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
 
         #create the functions dictionary
@@ -109,7 +109,7 @@ class SnakeGameApp:
             'endless_reset_high_score_shorten_snake' : self.endless_reset_high_score_shorten_snake,
             'open_settings': self.open_settings,
             'open_info': self.open_info,
-            'snake_special': self.snake_special,
+            'snake_leveling': self.snake_leveling,
             'snake_endless': self.snake_endless,
             'classic_snake': self.classic_snake,
         }
@@ -147,7 +147,7 @@ class SnakeGameApp:
         self.framelabel_panel.create_main_menu_label()
         self.create_button_panel.classic_snake_button()
         self.create_button_panel.snake_endless_button()
-        self.create_button_panel.snake_special_button()
+        self.create_button_panel.snake_leveling_button()
         self.create_button_panel.info_button()
         self.create_button_panel.settings_button()
         self.create_button_panel.quit_button()
@@ -254,22 +254,25 @@ class SnakeGameApp:
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_endless_snake_label()
     
-    # Start the special snake game
-    def snake_special(self):
+    # Start the leveling snake game
+    def snake_leveling(self):
         self.original_main_canvas.pack_forget()
 
         # Reset the button press variable
         self.endless_reset_button_press_variable()
 
 
-        self.game_config.set_configuration("snake_special")
-        self.special_snake_canvas = Snake_Special(self.root, 
-                                                  self.game_config
+        self.game_config.set_configuration("snake_leveling")
+        self.leveling_snake_canvas = Snake_Leveling(self.root, 
+                                                  self.game_config, 
+                                                        self.logfile,
+                                                        self.functions,
+                                                        self.create_button_panel
                                                   )
-        self.special_snake_canvas.pack(expand=True, fill="both")
+        self.leveling_snake_canvas.pack(expand=True, fill="both")
 
         # Update the main canvas attribute
-        self.main_canvas = self.special_snake_canvas
+        self.main_canvas = self.leveling_snake_canvas
 
         # Update the button panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas,
@@ -295,7 +298,7 @@ class SnakeGameApp:
         self.create_button_panel.create_home_button()
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
-        self.framelabel_panel.create_special_snake_label()
+        self.framelabel_panel.create_leveling_snake_label()
     
     # Open the information screen
     def open_info(self):
@@ -659,7 +662,7 @@ class SnakeGameApp:
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
             self.endless_snake_canvas = self.destroy_canvas(self.endless_snake_canvas, "self.endless_snake_canvas")
-            self.special_snake_canvas = self.destroy_canvas(self.special_snake_canvas, "self.special_snake_canvas")
+            self.leveling_snake_canvas = self.destroy_canvas(self.leveling_snake_canvas, "self.leveling_snake_canvas")
             self.info_canvas = self.destroy_canvas(self.info_canvas, "self.info_canvas")
             self.settings_canvas = self.destroy_canvas(self.settings_canvas, "self.settings_canvas")
             

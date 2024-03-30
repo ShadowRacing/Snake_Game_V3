@@ -313,7 +313,7 @@ class Snake_endless(ctk.CTkCanvas):
 
         if food_eaten:
             self.food.remove_occuppied_coordinates(food_item['x'], food_item['y'])
-            self.score += 1 #should be 1
+            self.score += 10 #should be 1
             self.snake_length += 1
             if len(food.food_coordinates) < 2:
                 food.spawn_food(snake.get_coordinates(), self.score)

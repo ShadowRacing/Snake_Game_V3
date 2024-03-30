@@ -16,6 +16,8 @@ class ConfigIni:
         self.set_classic_snake_settings()
         self.set_endless_snake_values()
         self.set_endless_snake_settings()
+        self.set_leveling_snake_values()
+        self.set_leveling_snake_settings()
     
     def set_settings_initials(self):
         try:
@@ -130,6 +132,52 @@ class ConfigIni:
                 self.config.write(configfile)
         except:
             traceback.print_exc()
+
+    def set_leveling_snake_values(self):
+        try:
+            if not self.config.has_section('Leveling_Snake_Values'):
+                self.config.add_section('Leveling_Snake_Values')
+            if not self.config.has_option('Leveling_Snake_Values', 'score'):
+                self.config.set('Leveling_Snake_Values', 'score', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'high_score'):
+                self.config.set('Leveling_Snake_Values', 'high_score', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'special_score'):
+                self.config.set('Leveling_Snake_Values', 'special_score', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'special_score_high_score'):
+                self.config.set('Leveling_Snake_Values', 'special_score_high_score', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'snake_length'):
+                self.config.set('Leveling_Snake_Values', 'snake_length', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'snake_length_high_score'):
+                self.config.set('Leveling_Snake_Values', 'snake_length_high_score', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'time_scpre'):
+                self.config.set('Leveling_Snake_Values', 'time_score', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'high_score_time'):
+                self.config.set('Leveling_Snake_Values', 'high_score_time', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'shorten_score'):
+                self.config.set('Leveling_Snake_Values', 'shorten_score', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'shorten_snake_high_score'):
+                self.config.set('Leveling_Snake_Values', 'shorten_snake_high_score', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'next_special_food_score'):
+                self.config.set('Leveling_Snake_Values', 'next_special_food_score', '50')
+            if not self.config.has_option('Leveling_Snake_Values', 'next_shorten_food_score'):
+                self.config.set('Leveling_Snake_Values', 'next_shorten_food_score', '100')
+
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        except:
+            traceback.print_exc()
+
+    def set_leveling_snake_settings(self):
+        try:
+            if not self.config.has_section('Leveling_Snake_Settings'):
+                self.config.add_section('Leveling_Snake_Settings')
+            if not self.config.has_option('Leveling_Snake_Settings', 'state'):
+                self.config.set('Leveling_Snake_Settings', 'state', 'start_game')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        except:
+            traceback.print_exc()
+
 
 #****************************************************
 # Initializing the Config.ini file

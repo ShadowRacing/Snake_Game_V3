@@ -70,6 +70,8 @@ class SnakeGameApp:
         self.classic_button_press_variable_high_score_time = 0
         self.endless_button_press_variable_high_score = 0
         self.endless_button_press_variable_high_score_time = 0
+        self.leveling_button_press_variable_high_score = 0
+        self.leveling_button_press_variable_high_score_time = 0
         self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5))
 
         # Creating the main canvas for the app
@@ -154,6 +156,7 @@ class SnakeGameApp:
         self.game_labels_panel.classic_delete_labels()
         self.classic_reset_button_press_variable()
         self.endless_reset_button_press_variable()
+        self.leveling_reset_button_press_variable()
     
     def classic_snake(self):
         # Hide the main canvas
@@ -259,7 +262,7 @@ class SnakeGameApp:
         self.original_main_canvas.pack_forget()
 
         # Reset the button press variable
-        self.endless_reset_button_press_variable()
+        self.leveling_reset_button_press_variable()
 
 
         self.game_config.set_configuration("snake_leveling")
@@ -289,7 +292,7 @@ class SnakeGameApp:
                                                         )
         
         # Update the game labels panel
-        self.game_labels_panel = GameLabelsPanel(self.main_canvas, 
+        self.game_labels_panel_3 = GameLabelsPanel(self.main_canvas, 
                                                         self.logfile, 
                                                         self.game_config
                                                         )
@@ -635,6 +638,10 @@ class SnakeGameApp:
         self.endless_button_press_variable_high_score = 0
         self.endless_button_press_variable_high_score_time = 0
 
+    def leveling_reset_button_press_variable(self):
+        self.leveling_button_press_variable_high_score = 0
+        self.leveling_button_press_variable_high_score_time = 0
+
     def general_reset_button_press_variable(self):
         self.button_press_variable = 0
 
@@ -658,6 +665,8 @@ class SnakeGameApp:
                 self.classic_snake_canvas.delete_game_labels()
             if self.main_canvas == self.endless_snake_canvas:
                 self.endless_snake_canvas.delete_game_labels_()
+            if self.main_canvas == self.leveling_snake_canvas:
+                self.leveling_snake_canvas.delete_game_labels__()
             time.sleep(0.1)
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")

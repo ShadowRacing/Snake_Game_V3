@@ -208,7 +208,7 @@ class GameConfig:
                 self.GAME_WIDTH = 400
                 self.GAME_HEIGHT = 400
                 self.SPEED = self.snake_speed
-                self.CELL_SIZE = 10
+                self.CELL_SIZE = 20
                 self.SNAKE_LENGTH = 2
                 self.SNAKE_COLOR = self.snake_color
                 self.SNAKE_OUTLINE = 'White'

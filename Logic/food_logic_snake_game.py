@@ -167,21 +167,14 @@ class LevelingFood:
         self.game_logger = game_logger
         self.canvas = canvas
         self.food_items = {}
-        self.special_food_items = {}
         self.food_coordinates = {}
-        self.special_food_coordinates = {}
         self.game_config = game_config
-        
+
 
     #Food logic
-    def spawn_food(self, snake_coordinates, score):
-        self.time 
-        num_food_items = min(score // 50 + 1, 10)
-        self.game_logger.log_game_event("Number off food items: ")
-        self.game_logger.log_game_event(num_food_items)
-
+    def spawn_food(self, snake_coordinates):
         try:
-            while len(self.food_items) < num_food_items:
+            if len(self.food_items) == 0:  # Check if no food items are currently on the screen
                 x, y = self.generate_random_coordinates(snake_coordinates)
                 food_id = str(uuid.uuid4())
                 self.game_logger.log_game_event("Food ID:")
@@ -190,23 +183,6 @@ class LevelingFood:
                 oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
                 self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
                 self.game_logger.log_game_event(self.food_items)
-        except:
-            traceback.print_exc()
-
-    #Special food logic
-    def special_spawn_food(self, snake_coordinates, score):
-        num_special_food_items = 1
-
-        try:
-            while len(self.special_food_items) < num_special_food_items:
-                x, y = self.generate_random_coordinates(snake_coordinates)
-                special_food_id = str(uuid.uuid4())
-                self.game_logger.log_game_event(special_food_id)
-                tag = "specialfood" + special_food_id
-                special_oval_id = self.create_food_oval(x, y, self.game_config.SPECIAL_FOOD_COLOR, tag)
-                self.special_food_items[special_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': special_oval_id}
-                self.game_logger.log_game_event("Special Food ID:")
-                self.game_logger.log_game_event(special_food_id)
         except:
             traceback.print_exc()
 
@@ -227,6 +203,7 @@ class LevelingFood:
             return x, y
         except:
             traceback.print_exc()
+
 
 # *****************************************
 # Wims Snake Food Logic File

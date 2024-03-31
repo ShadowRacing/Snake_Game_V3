@@ -13062,3 +13062,1390 @@ configparser.NoSectionError: No section: 'leveling_Snake_Values'
 
 
 [2024-03-30 13:00:50] Started the Error Log File
+[2024-03-30 13:20:45] 
+
+
+[2024-03-30 13:20:45] Started the Error Log File
+[2024-03-30 13:20:48] No errors occurred
+[2024-03-30 13:20:48] Closed the Error Log File
+
+
+
+
+[2024-03-30 13:39:03] 
+
+
+[2024-03-30 13:39:03] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 694, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 128, in __init__
+    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.logfile,  self.game_config)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 342, in __init__
+    self.leveling_system = LevelingSystem()
+                           ^^^^^^^^^^^^^^^^
+TypeError: LevelingSystem.__init__() missing 1 required positional argument: 'logfile'
+[2024-03-30 13:39:49] 
+
+
+[2024-03-30 13:39:49] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_leveling_game.py", line 165, in start_game
+    self.game_labels_panel.leveling_update_high_score_labels()
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'game_labels_panel'
+[2024-03-30 13:40:05] No errors occurred
+[2024-03-30 13:40:05] Closed the Error Log File
+
+
+
+
+[2024-03-30 13:40:34] 
+
+
+[2024-03-30 13:40:34] Started the Error Log File
+[2024-03-30 13:42:38] No errors occurred
+[2024-03-30 13:42:38] Closed the Error Log File
+
+
+
+
+[2024-03-30 13:51:10] 
+
+
+[2024-03-30 13:51:10] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1103, in leveling_create_xp_label
+    self.leveling_xp_label = ctk.CTkLabel(self.snake_canvas,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-30 13:51:21] No errors occurred
+[2024-03-30 13:51:21] Closed the Error Log File
+
+
+
+
+[2024-03-30 13:52:23] 
+
+
+[2024-03-30 13:52:23] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1103, in leveling_create_xp_label
+    self.leveling_xp_label = ctk.CTkLabel(self.snake_canvas,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-30 13:54:08] 
+
+
+[2024-03-30 13:54:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1103, in leveling_create_xp_label
+    self.leveling_xp_label = ctk.CTkLabel(self.snake_canvas,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 14:28:00] 
+
+
+[2024-03-31 14:28:00] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1103, in leveling_create_xp_label
+    self.leveling_xp_label = ctk.CTkLabel(self.snake_canvas,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 14:29:31] No errors occurred
+[2024-03-31 14:29:31] Closed the Error Log File
+
+
+
+
+[2024-03-31 14:29:35] 
+
+
+[2024-03-31 14:29:35] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1105, in leveling_create_xp_label
+    self.leveling_xp_label = ctk.CTkLabel(self.snake_canvas,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 14:31:52] No errors occurred
+[2024-03-31 14:31:52] Closed the Error Log File
+
+
+
+
+[2024-03-31 14:31:59] 
+
+
+[2024-03-31 14:31:59] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1105, in leveling_create_xp_label
+    self.leveling_xp_label = ctk.CTkLabel(self.snake_canvas,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 14:48:11] 
+
+
+[2024-03-31 14:48:11] Started the Error Log File
+[2024-03-31 14:48:14] No errors occurred
+[2024-03-31 14:48:14] Closed the Error Log File
+
+
+
+
+[2024-03-31 14:51:28] 
+
+
+[2024-03-31 14:51:28] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1105, in leveling_create_xp_label
+    self.leveling_xp_label = ctk.CTkLabel(self.snake_canvas,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 14:51:48] 
+
+
+[2024-03-31 14:51:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1105, in leveling_create_xp_label
+    self.leveling_xp_label = ctk.CTkLabel(self.snake_canvas,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 14:52:36] 
+
+
+[2024-03-31 14:52:36] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1105, in leveling_create_xp_label
+    self.leveling_xp_label = ctk.CTkLabel(self.snake_canvas,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:05:22] 
+
+
+[2024-03-31 15:05:22] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1112, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:07:51] No errors occurred
+[2024-03-31 15:07:51] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:07:58] 
+
+
+[2024-03-31 15:07:58] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1114, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:09:10] No errors occurred
+[2024-03-31 15:09:10] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:09:12] 
+
+
+[2024-03-31 15:09:12] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1114, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:12:02] No errors occurred
+[2024-03-31 15:12:02] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:12:43] 
+
+
+[2024-03-31 15:12:43] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1092, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1092, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:16:47] No errors occurred
+[2024-03-31 15:16:47] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:16:53] 
+
+
+[2024-03-31 15:16:53] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1092, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:17:35] No errors occurred
+[2024-03-31 15:17:35] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:17:40] 
+
+
+[2024-03-31 15:17:40] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1092, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:18:11] No errors occurred
+[2024-03-31 15:18:11] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:18:16] 
+
+
+[2024-03-31 15:18:16] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1092, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:18:49] No errors occurred
+[2024-03-31 15:18:49] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:18:54] 
+
+
+[2024-03-31 15:18:54] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1092, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1092, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:25:42] 
+
+
+[2024-03-31 15:25:42] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:26:43] 
+
+
+[2024-03-31 15:26:43] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:29:29] 
+
+
+[2024-03-31 15:29:29] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:32:06] 
+
+
+[2024-03-31 15:32:06] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:32:36] 
+
+
+[2024-03-31 15:32:36] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:32:54] 
+
+
+[2024-03-31 15:32:54] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:33:36] 
+
+
+[2024-03-31 15:33:36] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:48:51] No errors occurred
+[2024-03-31 15:48:51] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:49:00] 
+
+
+[2024-03-31 15:49:00] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:49:57] No errors occurred
+[2024-03-31 15:49:57] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:50:00] 
+
+
+[2024-03-31 15:50:00] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 269, in snake_leveling
+    self.leveling_snake_canvas = Snake_Leveling(self.root,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_leveling_game.py", line 65, in __init__
+    self.initial_xp_needed = int(self.config.get('Leveling_Snake_Values', 'initial_xp_needed', fallback='100'))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '10 #100'
+[2024-03-31 15:50:19] 
+
+
+[2024-03-31 15:50:19] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 269, in snake_leveling
+    self.leveling_snake_canvas = Snake_Leveling(self.root,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_leveling_game.py", line 65, in __init__
+    self.initial_xp_needed = int(self.config.get('Leveling_Snake_Values', 'initial_xp_needed', fallback='100'))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '10 #100'
+[2024-03-31 15:51:02] 
+
+
+[2024-03-31 15:51:02] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:51:47] No errors occurred
+[2024-03-31 15:51:47] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:52:04] 
+
+
+[2024-03-31 15:52:04] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:52:06] No errors occurred
+[2024-03-31 15:52:06] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:53:09] 
+
+
+[2024-03-31 15:53:09] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:53:11] No errors occurred
+[2024-03-31 15:53:11] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:53:22] 
+
+
+[2024-03-31 15:53:22] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 15:53:47] No errors occurred
+[2024-03-31 15:53:47] Closed the Error Log File
+
+
+
+
+[2024-03-31 15:54:00] 
+
+
+[2024-03-31 15:54:00] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 16:36:08] 
+
+
+[2024-03-31 16:36:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 17:17:25] 
+
+
+[2024-03-31 17:17:25] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_leveling_game.py", line 234, in next_turn
+    self.level_up()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_leveling_game.py", line 289, in level_up
+    self.config.write('config.ini')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 938, in write
+    self._write_section(fp, section,
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 943, in _write_section
+    fp.write("[{}]\n".format(section_name))
+    ^^^^^^^^
+AttributeError: 'str' object has no attribute 'write'
+[2024-03-31 17:18:49] No errors occurred
+[2024-03-31 17:18:49] Closed the Error Log File
+
+
+
+
+[2024-03-31 17:19:44] 
+
+
+[2024-03-31 17:19:44] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 17:21:47] 
+
+
+[2024-03-31 17:21:47] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-03-31 17:22:10] 
+
+
+[2024-03-31 17:22:10] Started the Error Log File
+[2024-03-31 17:22:55] 
+
+
+[2024-03-31 17:22:55] Started the Error Log File
+[2024-03-31 17:23:00] No errors occurred
+[2024-03-31 17:23:00] Closed the Error Log File
+
+
+
+

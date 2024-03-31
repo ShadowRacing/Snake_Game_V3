@@ -2,6 +2,7 @@ import customtkinter as ctk
 import configparser, traceback
 from os import path
 from Configuration.constants_snake_game import FONT_LIST
+from Logic.leveling_system import LevelingSystem
 
 class NameOffFrameLabelPanel:
     def __init__(self, parent, logfile, info_callback, settings_callback, game_config):
@@ -320,6 +321,10 @@ class GameLabelsPanel:
         self.leveling_high_scores_label = None
         self.leveling_snake_length_label = None
         self.leveling_high_score_snake_length_label = None
+        self.xp_score_label = None
+        self.xp_high_score_label = None
+        self.level_score_label = None
+        self.level_high_score_label = None
 
         self.classic_score_label_flag = False
         self.classic_time_label_flag = False
@@ -337,6 +342,8 @@ class GameLabelsPanel:
         self.leveling_time_label_flag = False
         self.leveling_high_score_label_flag = False
         self.leveling_high_score_time_label_flag = False
+
+        self.leveling_system = LevelingSystem()
 
         try:
             self.config_dir = path.dirname(__file__)
@@ -897,11 +904,16 @@ class GameLabelsPanel:
         self.leveling_create_score_label()
         self.leveling_create_time_label()
         self.leveling_create_snake_length_label()
+        self.leveling_create_xp_label()
+        self.leveling_create_level_label()
+
         if self.high_score_label_needed == 'True' or self.high_score_label_needed == 'Default':
             self.leveling_create_high_score_label()
             self.leveling_create_high_score_time_label()
             self.leveling_create_high_scores_label()
             self.leveling_create_high_score_snake_length_label()
+            self.leveling_create_xp_high_score_label()
+            self.leveling_create_level_high_score_label()
 
     def leveling_update_high_score_labels(self):
         self.config.read(self.config_path)
@@ -911,11 +923,27 @@ class GameLabelsPanel:
             self.leveling_update_high_score_label()
             self.leveling_update_high_score_time_label()
             self.leveling_update_high_score_snake_length_label()
-    
+            self.leveling_update_xp_high_score_label()
+            self.leveling_update_level_high_score_label()
+
+    def leveling_create_high_scores_label(self):
+        self.leveling_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
+                                                height=30,
+                                                width=275,
+                                                corner_radius=10,
+                                                text="High Scores:", 
+                                                font=FONT_LIST[11],
+                                                bg_color='grey20',
+                                                anchor='w'
+                                                )
+        self.leveling_high_scores_label.place(x=200, y=300)
+
     def leveling_update_game_labels(self):
         self.leveling_update_score_label()
         self.leveling_update_time_label()
         self.leveling_update_snake_length_label()
+        self.leveling_update_xp_label()
+        self.leveling_update_level_label()
 
     def leveling_create_score_label(self):
         self.leveling_score_label = ctk.CTkLabel(self.snake_canvas, 
@@ -951,7 +979,7 @@ class GameLabelsPanel:
                                              bg_color='grey20',
                                              anchor='w'
                                              )
-        self.leveling_high_score_label.place(x=200, y=550)
+        self.leveling_high_score_label.place(x=200, y=350)
     
     def leveling_update_high_score_label(self):
         try:
@@ -999,7 +1027,7 @@ class GameLabelsPanel:
                                                     bg_color='grey20',
                                                     anchor='w'
                                                     )
-        self.leveling_high_score_time_label.place(x=200, y=600)
+        self.leveling_high_score_time_label.place(x=200, y=400)
 
     def leveling_update_high_score_time_label(self):
         try:
@@ -1047,7 +1075,7 @@ class GameLabelsPanel:
                                                             bg_color='grey20',
                                                             anchor='w'
                                                             )
-        self.leveling_high_score_snake_length_label.place(x=200, y=650)
+        self.leveling_high_score_snake_length_label.place(x=200, y=450)
     
     def leveling_update_high_score_snake_length_label(self):
         try:
@@ -1061,17 +1089,103 @@ class GameLabelsPanel:
         except:
             traceback.print_exc()
 
-    def leveling_create_high_scores_label(self):
-        self.leveling_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
+
+    def leveling_create_xp_label(self):
+        self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
                                                 height=30,
                                                 width=275,
                                                 corner_radius=10,
-                                                text="High Scores:", 
+                                                text="XP hello:",
                                                 font=FONT_LIST[11],
                                                 bg_color='grey20',
                                                 anchor='w'
                                                 )
-        self.leveling_high_scores_label.place(x=200, y=500)
+        self.xp_score_label.place(x=500, y=10)
+
+    def leveling_update_xp_label(self):
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.xp_score_label_ = self.config.get('Leveling_Snake_Values', 'xp', fallback='0')
+            #update the high score time label on the screen
+            self.xp_score_label.configure(text=f"XP Hello: {self.xp_score_label_}")
+        except:
+            traceback.print_exc()
+    
+    def leveling_create_xp_high_score_label(self):
+        self.xp_high_score_label = ctk.CTkLabel(self.snake_canvas,
+                                                    height=30,
+                                                    width=275,
+                                                    corner_radius=10,
+                                                    text="XP:",
+                                                    font=FONT_LIST[11],
+                                                    bg_color='grey20',
+                                                    anchor='w'
+                                                    )
+        self.xp_high_score_label.place(x=200, y=500)
+
+    def leveling_update_xp_high_score_label(self):
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.xp_high_score_label_ = self.config.get('Leveling_Snake_Values', 'high_score_xp', fallback='0')
+            #update the high score time label on the screen
+            self.xp_high_score_label.configure(text=f"XP: {self.xp_high_score_label_}")
+        except:
+            traceback.print_exc()
+
+    def leveling_create_level_label(self):
+        self.level_score_label = ctk.CTkLabel(self.snake_canvas,
+                                                    height=30,
+                                                    width=275,
+                                                    corner_radius=10,
+                                                    text="Level:",
+                                                    font=FONT_LIST[11],
+                                                    bg_color='grey20',
+                                                    anchor='w'
+                                                    )
+        self.level_score_label.place(x=800, y=10)
+
+    def leveling_update_level_label(self):
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.level_score_label_ = self.config.get('Leveling_Snake_Values', 'level', fallback='0')
+            #update the high score time label on the screen
+            self.level_score_label.configure(text=f"Level: {self.level_score_label_}")
+        except:
+            traceback.print_exc()
+    
+    def leveling_create_level_high_score_label(self):
+        self.level_high_score_label = ctk.CTkLabel(self.snake_canvas,
+                                                    height=30,
+                                                    width=275,
+                                                    corner_radius=10,
+                                                    text="Level:",
+                                                    font=FONT_LIST[11],
+                                                    bg_color='grey20',
+                                                    anchor='w'
+                                                    )
+        self.level_high_score_label.place(x=200, y=550)
+        
+    def leveling_update_level_high_score_label(self):
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.level_high_score_label_ = self.config.get('Leveling_Snake_Values', 'high_score_level', fallback='0')
+            #update the high score time label on the screen
+            self.level_high_score_label.configure(text=f"level: {self.level_high_score_label_}")
+        except:
+            traceback.print_exc()
+
 
     def leveling_reset_labels(self):
         self.leveling_score_label.configure(text='0')
@@ -1093,5 +1207,13 @@ class GameLabelsPanel:
                 self.leveling_snake_length_label.destroy()
             if self.leveling_high_score_snake_length_label is not None:
                 self.leveling_high_score_snake_length_label.destroy()
+            if self.xp_score_label is not None:
+                self.xp_score_label.destroy()
+            if self.xp_high_score_label is not None:
+                self.xp_high_score_label.destroy()
+            if self.level_score_label is not None:
+                self.level_score_label.destroy()
+            if self.level_high_score_label is not None:
+                self.level_high_score_label.destroy()
         except:
             traceback.print_exc()

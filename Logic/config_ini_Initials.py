@@ -161,7 +161,20 @@ class ConfigIni:
                 self.config.set('Leveling_Snake_Values', 'next_special_food_score', '50')
             if not self.config.has_option('Leveling_Snake_Values', 'next_shorten_food_score'):
                 self.config.set('Leveling_Snake_Values', 'next_shorten_food_score', '100')
-
+            if not self.config.has_option('Leveling_Snake_Values', 'level'):
+                self.config.set('Leveling_Snake_Values', 'level', '1')
+            if not self.config.has_option('Leveling_Snake_Values', 'level_high_score'):
+                self.config.set('Leveling_Snake_Values', 'level_high_score', '1')
+            if not self.config.has_option('Leveling_Snake_Values', 'xp'):
+                self.config.set('Leveling_Snake_Values', 'xp', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'high_score_xp'):
+                self.config.set('Leveling_Snake_Values', 'high_score_xp', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'initial_xp_needed'):
+                self.config.set('Leveling_Snake_Values', 'initial_xp_needed', '100')
+            if not self.config.has_option('Leveling_Snake_Values', 'levels_to_increase_xp'):
+                self.config.set('Leveling_Snake_Values', 'levels_to_increase_xp', '10')
+            if not self.config.has_option('Leveling_Snake_Values', 'xp_increase_amount'):
+                self.config.set('Leveling_Snake_Values', 'xp_increase_amount', '50')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except:

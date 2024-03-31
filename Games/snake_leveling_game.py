@@ -11,6 +11,7 @@ from Configuration.gameconfig_snake_game import GameConfig
 from Logic.food_logic_snake_game import LevelingFood
 from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
+from Logic.leveling_system import LevelingSystem
 
 class Snake_Leveling(ctk.CTkCanvas):
     def __init__(self, parent, game_config, logfile, functions, create_button_panel):
@@ -22,6 +23,8 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
         self.score = 0
+        self.xp = 0
+        self.level = 1
         self.start_time = None
         self.paused_time = None
         self.total_paused_time = 0
@@ -48,6 +51,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.food = LevelingFood(self.logfile, self.snake_canvas, game_config)
         self.game_labels_panel_3 = GameLabelsPanel(self.logfile, parent, self.game_config)
         self.game_config = GameConfig(self.logfile, 'snake_leveling')
+        self.leveling_system = LevelingSystem()
         self.game_labels_panel_3.leveling_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
 
@@ -57,6 +61,11 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.ConfigParser()
         self.config.read(self.config_path)
+
+        self.initial_xp_needed = int(self.config.get('Leveling_Snake_Values', 'initial_xp_needed', fallback='100'))
+        self.levels_to_increase_xp = int(self.config.get('Leveling_Snake_Values', 'levels_to_increase_xp', fallback='5'))
+        self.xp_increase_amount = int(self.config.get('Leveling_Snake_Values', 'xp_increase_amount', fallback='10'))
+
 
         try:  
             self.config.set('Settings', 'game_mode', 'leveling_snake')
@@ -96,6 +105,16 @@ class Snake_Leveling(ctk.CTkCanvas):
 
         if not self.config.has_option('Leveling_Snake_Settings', 'state'):
             self.config.set('Leveling_Snake_Settings', 'state', 'start_screen')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        
+        if not self.config.has_option('Leveling_Snake_Values', 'xp'):
+            self.config.set('Leveling_Snake_Values','xp', '0')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        
+        if not self.config.has_option('Leveling_Snake_Values', 'level'):
+            self.config.set('Leveling_Snake_Values','level', '1')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
                 
@@ -160,7 +179,9 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.high_score = int(self.config.get('Leveling_Snake_Values', 'high_score', fallback='0'))
         self.high_score_time = int(self.config.get('Leveling_Snake_Values', 'high_score_time', fallback='0'))
         self.snake_length_high_score = int(self.config.get('Leveling_Snake_Values', 'snake_length_high_score', fallback='0'))
-        self.game_labels_panel.leveling_update_high_score_labels()
+        self.high_score_xp = int(self.config.get('Leveling_Snake_Values', 'high_score_xp', fallback='0'))
+        self.level_high_score = int(self.config.get('Leveling_Snake_Values', 'level_high_score', fallback='0'))
+        self.game_labels_panel_3.leveling_update_high_score_labels()
         self.config.set('Leveling_Snake_Settings', 'state', 'game')
 
         with open('config.ini', 'w') as configfile:
@@ -169,6 +190,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.start_time = time.time()
         self.total_paused_time = 0
         self.score = 0
+        self.xp = 0
         self.snake_length = self.game_config.SNAKE_LENGTH
         self.snake_canvas.delete("all")
 
@@ -205,11 +227,17 @@ class Snake_Leveling(ctk.CTkCanvas):
         
         if food_eaten:
             self.score += 1
+            self.xp += 1
             self.snake_length += 1
+
+            if self.xp >= self.initial_xp_needed:
+                self.level_up()
+
             if len(food.food_coordinates) < 2:
                 food.spawn_food(snake.get_coordinates())
                 self.config.set('Leveling_Snake_Values', 'score', str(self.score))
                 self.config.set('Leveling_Snake_Values', 'snake_length', str(self.snake_length))
+                self.config.set('Leveling_Snake_Values', 'xp', str(self.xp))
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
             
@@ -249,8 +277,18 @@ class Snake_Leveling(ctk.CTkCanvas):
             
         self.game_labels_panel_3.leveling_update_game_labels()
         self.game_labels_panel_3.leveling_update_high_score_labels()
-        
         self.snake_canvas.update()
+
+    def level_up(self):
+        self.level += 1
+        self.xp = 0
+        if self.level % self.levels_to_increase_xp == 0:
+            self.initial_xp_needed += self.xp_increase_amount
+        self.config.set('Leveling_Snake_Values', 'level', str(self.level))
+        self.config.set('Leveling_Snake_Values', 'xp', str(self.xp))
+        with open('config.ini', 'w') as configfile:
+            self.config.write(configfile)
+
 
     def change_direction(self, new_direction):
 
@@ -300,6 +338,11 @@ class Snake_Leveling(ctk.CTkCanvas):
         if self.score > self.high_score:
             self.config.set('Leveling_Snake_Values', 'high_score', str(self.score))
 
+        if self.xp > self.high_score_xp:
+            self.config.set('Leveling_Snake_Values', 'high_score_xp', str(self.xp))
+
+        if self.level > self.level_high_score:
+            self.config.set('Leveling_Snake_Values', 'level_high_score', str(self.level))
 
         self.get_time_score = int(self.config.get('Leveling_Snake_Values', 'high_score_time', fallback='0'))
         if self.total_time_played > self.get_time_score:
@@ -331,12 +374,15 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.config.read('config.ini')
 
         self.config.set('Leveling_Snake_Values', 'score', '0')
+        self.config.set('Leveling_Snake_Values', 'xp', '0')
+        self.config.set('Leveling_Snake_Values', 'level', '1')
         self.config.set('Leveling_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
             # start the game again
             self.state = 'start_game'
         self.score = 0
+        self.xp = 0
         self.game_labels_panel_3.leveling_update_game_labels()
         self.start_game()
 
@@ -374,6 +420,22 @@ class Snake_Leveling(ctk.CTkCanvas):
             self.snake_canvas.bind('<Escape>',self.pause_game)
         elif self.state == 'settings_menu':
             self.snake_canvas.unbind('<Escape>')
+    
+    def get_current_level(self):
+        return self.leveling_system.get_level(self.score)
+    
+    def xp_needed_for_current_level(self):
+        return self.leveling_system.xp_needed_for_level(self.get_current_level())
+    
+    def next_level_xp_needed(self):
+        return self.leveling_system.xp_needed_for_level(self.get_current_level() + 1)
+    
+    # def update_game_labels(self):
+        # Your existing code for updating game labels
+        #current_level = self.get_current_level()
+        #xp_needed = self.xp_needed_for_current_level()
+        #next_level_xp = self.next_level_xp_needed()
+        # Update labels with current level, XP needed, and XP needed for next level
 
 # *****************************************
 # Wims Snake Game Snake Leveling Game File

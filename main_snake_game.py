@@ -302,6 +302,8 @@ class SnakeGameApp:
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_leveling_snake_label()
+        self.game_labels_panel_3.leveling_create_xp_label()
+        self.game_labels_panel_3.leveling_create_level_label()
     
     # Open the information screen
     def open_info(self):

@@ -1180,7 +1180,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.level_high_score_label_ = self.config.get('Leveling_Snake_Values', 'high_score_level', fallback='0')
+            self.level_high_score_label_ = self.config.get('Leveling_Snake_Values', 'level_high_score', fallback='0')
             #update the high score time label on the screen
             self.level_high_score_label.configure(text=f"level: {self.level_high_score_label_}")
         except:

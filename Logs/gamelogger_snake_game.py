@@ -45,7 +45,6 @@ class ErrorLogFile:
     def __init__(self):
         # Initializing variables
         self.current_datetime = datetime.datetime.now()
-        self.logfile = LogFile(self)
         # Get the directory of the current script
         script_dir = os.path.dirname(os.path.abspath(__file__))
 

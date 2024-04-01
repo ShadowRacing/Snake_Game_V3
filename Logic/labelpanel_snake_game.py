@@ -133,31 +133,31 @@ class SettingsOptionButtonLabels:
 
         # Check if the 'label_needed' option exists, if not, add it
         try:    
-            if not config.has_option('Settings', 'label_needed'):
-                config.set('Settings', 'label_needed', 'False')
+            if not config.has_option('Settings', 'label_needed_theme'):
+                config.set('Settings', 'label_needed_theme', 'False')
         except:
             traceback.print_exc()
 
         try:
             if current_theme != initial_theme:
-                if hasattr(self, 'restart_game_label'):
-                    self.restart_game_label.destroy()
-                self.restart_game_label = ctk.CTkLabel(self.settings_canvas,
+                if hasattr(self, 'restart_game_theme_label'):
+                    self.restart_game_theme_label.destroy()
+                self.restart_game_theme_label = ctk.CTkLabel(self.settings_canvas,
                                                         width=160,
                                                         height=30,
                                                         corner_radius=6,  
                                                         text="You need to restart to apply the theme", 
                                                         font=FONT_LIST[11],
                                                         anchor='w')
-                self.restart_game_label.place(x=400, y=100)
-                config.set('Settings', 'label_needed', 'True')
+                self.restart_game_theme_label.place(x=400, y=100)
+                config.set('Settings', 'label_needed_theme', 'True')
                 with open('config.ini', 'w') as configfile:
                     config.write(configfile)
             else:
-                if hasattr(self, 'restart_game_label'):
-                    self.restart_game_label.destroy()
-                    del self.restart_game_label
-                config.set('Settings', 'label_needed', 'False')
+                if hasattr(self, 'restart_game_theme_label'):
+                    self.restart_game_theme_label.destroy()
+                    del self.restart_game_theme_label
+                config.set('Settings', 'label_needed_theme', 'False')
                 with open('config.ini', 'w') as configfile:
                     config.write(configfile)
         except:
@@ -199,31 +199,31 @@ class SettingsOptionButtonLabels:
 
         # Check if the 'label_needed' option exists, if not, add it
         try:    
-            if not config.has_option('Settings', 'label_needed'):
-                config.set('Settings', 'label_needed', 'False')
+            if not config.has_option('Settings', 'label_needed_game_size'):
+                config.set('Settings', 'label_needed_game_size', 'False')
         except:
             traceback.print_exc()
 
         try:
             if current_game_size != initial_game_size:
-                if hasattr(self, 'restart_game_label'):
-                    self.restart_game_label.destroy()
-                self.restart_game_label = ctk.CTkLabel(self.settings_canvas,
+                if hasattr(self, 'restart_game_game_size_label'):
+                    self.restart_game_game_size_label.destroy()
+                self.restart_game_game_size_label = ctk.CTkLabel(self.settings_canvas,
                                                         width=160,
                                                         height=30,
                                                         corner_radius=6, 
                                                         text="You need to restart to apply the game_size", 
                                                         font=FONT_LIST[11],
                                                         anchor='w')
-                self.restart_game_label.place(x=400, y=250)
+                self.restart_game_game_size_label.place(x=400, y=250)
                 config.set('Settings', 'label_needed_game_size', 'True')
                 with open('config.ini', 'w') as configfile:
                     config.write(configfile)
             else:
                 if current_game_size == initial_game_size:
-                    if hasattr(self, 'restart_game_label'):
-                        self.restart_game_label.destroy()
-                        del self.restart_game_label
+                    if hasattr(self, 'restart_game_game_size_label'):
+                        self.restart_game_game_size_label.destroy()
+                        del self.restart_game_game_size_label
                 config.set('Settings', 'label_needed_game_size', 'False')
                 with open('config.ini', 'w') as configfile:
                     config.write(configfile)

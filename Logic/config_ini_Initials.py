@@ -35,8 +35,8 @@ class ConfigIni:
                 self.config.set('Settings', 'snake_color', 'Default')
             if not self.config.has_option('Settings', 'screen_size'):
                 self.config.set('Settings', 'screen_size', 'Default')
-            if not self.config.has_option('Settings', 'label_needed'):
-                self.config.set('Settings', 'label_needed', 'False')
+            if not self.config.has_option('Settings', 'label_needed_theme'):
+                self.config.set('Settings', 'label_needed_theme', 'False')
             if not self.config.has_option('Settings', 'button_press_time_limit'):
                 self.config.set('Settings', 'button_press_time_limit', '0.5')
             if not self.config.has_option('Settings', 'label_needed_high_score'):

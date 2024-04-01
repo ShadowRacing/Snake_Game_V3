@@ -9,7 +9,7 @@ from os import path
 
 # Importing thhe necessary modules from other folders
 from Logs.gamelogger_snake_game import LogFile , ErrorLogFile
-from Configuration.constants_snake_game import GameConstants
+from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSCREEN
 from Configuration.gameconfig_snake_game import GameConfig
 from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel
@@ -696,6 +696,8 @@ if __name__ == "__main__":
     app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
     root.title("Wims Snake Game")
     root.geometry(f"{GameConstants.MIN_WIDTH}x{GameConstants.MIN_HEIGHT}")
+    if SCREEN_SIZE_FULLSCREEN == 'fullscreen':
+        root.attributes('-fullscreen', True)
     root.resizable(False, False)
 
     # Center the window on the screen

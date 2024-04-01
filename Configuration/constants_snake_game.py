@@ -28,11 +28,17 @@ try:
 except:
     traceback.print_exc()
 
+SCREEN_SIZE_FULLSCREEN = None
+
 # Get the screen size from the config.ini file
 try:
     screen_size = config.get('Settings', 'screen_size', fallback='Default')
-    if screen_size.lower() == 'fullscreen' or screen_size.lower()== 'default':
+    if screen_size.lower()== 'default':
         # Get the actual size of the monitor
+        width = 1200
+        height = 800
+    elif screen_size.lower() == 'fullscreen':
+        SCREEN_SIZE_FULLSCREEN = 'fullscreen'
         width = 1200
         height = 800
     else:

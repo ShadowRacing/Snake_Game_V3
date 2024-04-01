@@ -34,6 +34,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.paused = False
         self.direction = self.game_config.DIRECTIONOFFSNAKE
         self.last_direction_change_time = 0
+        self.has_changed_direction = False
         self.width = game_config.GAME_WIDTH
         self.height = game_config.GAME_HEIGHT
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
@@ -49,7 +50,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         
         self.snake = Snake(self.logfile, self.snake_canvas, game_config)
         self.food = LevelingFood(self.logfile, self.snake_canvas, game_config)
-        self.game_labels_panel_3 = GameLabelsPanel(self.logfile, parent, self.game_config)
+        self.game_labels_panel_3 = GameLabelsPanel(parent, self.logfile,  self.game_config)
         self.game_config = GameConfig(self.logfile, 'snake_leveling')
         self.leveling_system = LevelingSystem()
         self.game_labels_panel_3.leveling_create_game_labels()
@@ -274,7 +275,9 @@ class Snake_Leveling(ctk.CTkCanvas):
         else:
             delay = 150 - int(self.game_config.SPEED) 
             self.snake_canvas.after(delay, self.next_turn, snake, food)
-            
+
+        self.has_changed_direction = False
+
         self.game_labels_panel_3.leveling_update_game_labels()
         self.game_labels_panel_3.leveling_update_high_score_labels()
         self.snake_canvas.update()
@@ -291,19 +294,21 @@ class Snake_Leveling(ctk.CTkCanvas):
 
 
     def change_direction(self, new_direction):
+        if not self.has_changed_direction:
+        
+            current_time = time.time()
+            if current_time - self.last_direction_change_time < 0.01:
+                return
 
-        current_time = time.time()
-        if current_time - self.last_direction_change_time < 0.01:
-            return
+            opposite_directions = [('up', 'down'), ('down', 'up'), ('left', 'right'), ('right', 'left'),
+                                ('w', 's'), ('s', 'w'), ('a', 'd'), ('d', 'a')]
 
-        opposite_directions = [('up', 'down'), ('down', 'up'), ('left', 'right'), ('right', 'left'),
-                            ('w', 's'), ('s', 'w'), ('a', 'd'), ('d', 'a')]
+            if any([self.direction == current and new_direction == opposite for current, opposite in opposite_directions]):
+                return
 
-        if any([self.direction == current and new_direction == opposite for current, opposite in opposite_directions]):
-            return
-
-        self.direction = new_direction
-        self.last_direction_change_time = current_time
+            self.direction = new_direction
+            self.last_direction_change_time = current_time
+            self.has_changed_direction = True
         
     
     def check_collisions(self, snake):

@@ -287,9 +287,10 @@ class SettingsOptionButtonLabels:
         self.create_label_canvas_flag = value
 
 class GameLabelsPanel:
-    def __init__(self, logfile, snake_canvas, game_config):
-        self.logfile = logfile
+    def __init__(self, snake_canvas, logfile, game_config):
+        
         self.snake_canvas = snake_canvas
+        self.logfile = logfile
         self.game_config = game_config
         self.width = game_config.GAME_WIDTH
         self.height = game_config.GAME_HEIGHT

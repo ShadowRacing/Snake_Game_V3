@@ -66,6 +66,12 @@ class ButtonCommands:
             self.functions['snake_leveling']()
         else:
             self.logfile.log_game_event("No function assigned to 'snake_leveling'")
+    
+    def multiplayer_snake_command(self):
+        if 'snake_multiplayer' in self.functions:
+            self.functions['snake_multiplayer']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'snake_multiplayer'")
 
     def snake_color_command(self):
         if 'snake_color' in self.functions:
@@ -238,6 +244,12 @@ class ClickButtonPanel:
                                 width=self.button_width, height=self.button_height, state="normal",#Should ne normal
                                 command=self.button_commands.snake_leveling_command)
         snake_leveling_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
+
+    def multiplayer_snake_button(self):
+        multiplayer_snake_button = ctk.CTkButton(self.button_canvas, text="Multiplayer Snake", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.multiplayer_snake_command)
+        multiplayer_snake_button.grid(in_=self.button_canvas, row=13, column=0, padx=10, pady=10, sticky="w")
 
     def snake_color_button(self):
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],

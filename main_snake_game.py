@@ -19,6 +19,7 @@ from Logic.config_ini_Initials import ConfigIni
 from Games.snake_classic_game import Snake_Classic_Game
 from Games.snake_endless_game import Snake_endless
 from Games.snake_leveling_game import Snake_Leveling
+from Games.multiplayer import MultiPlayer
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
 
@@ -72,6 +73,8 @@ class SnakeGameApp:
         self.endless_button_press_variable_high_score_time = 0
         self.leveling_button_press_variable_high_score = 0
         self.leveling_button_press_variable_high_score_time = 0
+        self.multiplayer_button_press_variable_high_score = 0
+        self.multiplayer_button_press_variable_high_score_time = 0
         self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5))
 
         # Creating the main canvas for the app
@@ -83,6 +86,7 @@ class SnakeGameApp:
         self.classic_snake_canvas = None
         self.endless_snake_canvas = None
         self.leveling_snake_canvas = None
+        self.multiplayer_snake_canvas = None
         self.info_canvas = None
         self.settings_canvas = None
 
@@ -111,6 +115,7 @@ class SnakeGameApp:
             'endless_reset_high_score_shorten_snake' : self.endless_reset_high_score_shorten_snake,
             'open_settings': self.open_settings,
             'open_info': self.open_info,
+            'snake_multiplayer': self.snake_multiplayer,
             'snake_leveling': self.snake_leveling,
             'snake_endless': self.snake_endless,
             'classic_snake': self.classic_snake,
@@ -150,6 +155,7 @@ class SnakeGameApp:
         self.create_button_panel.classic_snake_button()
         self.create_button_panel.snake_endless_button()
         self.create_button_panel.snake_leveling_button()
+        self.create_button_panel.multiplayer_snake_button()
         self.create_button_panel.info_button()
         self.create_button_panel.settings_button()
         self.create_button_panel.quit_button()
@@ -157,6 +163,7 @@ class SnakeGameApp:
         self.classic_reset_button_press_variable()
         self.endless_reset_button_press_variable()
         self.leveling_reset_button_press_variable()
+        self.multiplayer_reset_button_press_variable()
     
     def classic_snake(self):
         # Hide the main canvas
@@ -305,6 +312,52 @@ class SnakeGameApp:
         self.game_labels_panel_3.leveling_create_xp_label()
         self.game_labels_panel_3.leveling_create_level_label()
     
+    def snake_multiplayer(self):
+        self.original_main_canvas.pack_forget()
+
+        # Reset the button press variable
+        self.multiplayer_reset_button_press_variable()
+
+
+        self.game_config.set_configuration("snake_leveling")
+        self.multiplayer_snake_canvas = Snake_Leveling(self.root, 
+                                                  self.game_config, 
+                                                        self.logfile,
+                                                        self.functions,
+                                                        self.create_button_panel
+                                                  )
+        self.multiplayer_snake_canvas.pack(expand=True, fill="both")
+
+        # Update the main canvas attribute
+        self.main_canvas = self.multiplayer_snake_canvas
+
+        # Update the button panel
+        self.create_button_panel = ClickButtonPanel(self.main_canvas,
+                                                    self.logfile, 
+                                                    self.functions
+                                                    )
+
+        # Update the frame label panel
+        self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
+                                                        self.logfile, 
+                                                        self.game_config, 
+                                                        self.open_info, 
+                                                        self.open_settings
+                                                        )
+        
+        # Update the game labels panel
+        self.game_labels_panel_4 = GameLabelsPanel(self.main_canvas, 
+                                                        self.logfile, 
+                                                        self.game_config
+                                                        )
+
+        # Pack buttons and labels
+        self.create_button_panel.create_home_button()
+        self.create_button_panel.quit_button()
+        self.framelabel_panel.set_create_label_canvas_flag(True)
+        self.framelabel_panel.create_multiplayer_snake_label()
+    
+
     # Open the information screen
     def open_info(self):
         self.original_main_canvas.pack_forget()
@@ -643,6 +696,10 @@ class SnakeGameApp:
     def leveling_reset_button_press_variable(self):
         self.leveling_button_press_variable_high_score = 0
         self.leveling_button_press_variable_high_score_time = 0
+    
+    def multiplayer_reset_button_press_variable(self):
+        self.multiplayer_button_press_variable_high_score = 0
+        self.multiplayer_button_press_variable_high_score_time = 0
 
     def general_reset_button_press_variable(self):
         self.button_press_variable = 0
@@ -669,11 +726,14 @@ class SnakeGameApp:
                 self.endless_snake_canvas.delete_game_labels_()
             if self.main_canvas == self.leveling_snake_canvas:
                 self.leveling_snake_canvas.delete_game_labels__()
+            if self.main_canvas == self.multiplayer_snake_canvas:
+                self.multiplayer_snake_canvas.delete_game_labels___()
             time.sleep(0.1)
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
             self.endless_snake_canvas = self.destroy_canvas(self.endless_snake_canvas, "self.endless_snake_canvas")
             self.leveling_snake_canvas = self.destroy_canvas(self.leveling_snake_canvas, "self.leveling_snake_canvas")
+            self.multiplayer_snake_canvas = self.destroy_canvas(self.multiplayer_snake_canvas, "self.multiplayer_snake_canvas")
             self.info_canvas = self.destroy_canvas(self.info_canvas, "self.info_canvas")
             self.settings_canvas = self.destroy_canvas(self.settings_canvas, "self.settings_canvas")
             

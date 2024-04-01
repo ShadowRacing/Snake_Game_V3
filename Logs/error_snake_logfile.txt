@@ -15039,3 +15039,61 @@ AttributeError: 'LogFile' object has no attribute 'tk'
 
 
 
+[2024-04-01 19:45:54] 
+
+
+[2024-04-01 19:45:54] Started the Error Log File
+[2024-04-01 19:46:19] No errors occurred
+[2024-04-01 19:46:19] Closed the Error Log File
+
+
+
+
+[2024-04-01 19:46:56] 
+
+
+[2024-04-01 19:46:56] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 755, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 138, in __init__
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 157, in create_home_screen
+    self.create_button_panel.multiplayer_button()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ClickButtonPanel' object has no attribute 'multiplayer_button'. Did you mean: 'multiplayer_snake_button'?
+[2024-04-01 19:47:11] 
+
+
+[2024-04-01 19:47:11] Started the Error Log File
+[2024-04-01 19:47:16] No errors occurred
+[2024-04-01 19:47:16] Closed the Error Log File
+
+
+
+
+[2024-04-01 19:47:19] 
+
+
+[2024-04-01 19:47:19] Started the Error Log File
+[2024-04-01 19:48:02] No errors occurred
+[2024-04-01 19:48:02] Closed the Error Log File
+
+
+
+
+[2024-04-01 19:48:05] 
+
+
+[2024-04-01 19:48:05] Started the Error Log File
+[2024-04-01 19:48:13] No errors occurred
+[2024-04-01 19:48:13] Closed the Error Log File
+
+
+
+
+[2024-04-01 19:48:25] 
+
+
+[2024-04-01 19:48:25] Started the Error Log File

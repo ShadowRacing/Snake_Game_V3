@@ -15019,3 +15019,23 @@ AttributeError: 'LogFile' object has no attribute 'tk'
 
 
 
+[2024-04-01 18:43:31] 
+
+
+[2024-04-01 18:43:31] Started the Error Log File
+[2024-04-01 18:43:37] No errors occurred
+[2024-04-01 18:43:37] Closed the Error Log File
+
+
+
+
+[2024-04-01 18:43:40] 
+
+
+[2024-04-01 18:43:40] Started the Error Log File
+[2024-04-01 18:44:42] No errors occurred
+[2024-04-01 18:44:42] Closed the Error Log File
+
+
+
+

@@ -16967,3 +16967,76 @@ Height: 1000
 
 
 
+[2024-04-01 18:43:31] Started the app
+[2024-04-01 18:43:31] Started the GameApp Class
+[2024-04-01 18:43:31] Game mode: initial config
+[2024-04-01 18:43:31] Dark-Blue
+[2024-04-01 18:43:31] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-01 18:43:31] Current initial_theme in config.ini: Dark-Blue
+[2024-04-01 18:43:31] Contrast mode set to dark
+[2024-04-01 18:43:31] Reset snake length
+[2024-04-01 18:43:31] 1000x1000
+[2024-04-01 18:43:31] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-01 18:43:31] Current initial_game_size in config.ini: 1000x1000
+[2024-04-01 18:43:31] start_screen method called
+[2024-04-01 18:43:35] Changing screen size to Fullscreen
+[2024-04-01 18:43:35] Updated the config.ini
+[2024-04-01 18:43:37] Closed the app
+
+
+
+
+[2024-04-01 18:43:40] Started the app
+[2024-04-01 18:43:40] Started the GameApp Class
+[2024-04-01 18:43:40] Game mode: initial config
+[2024-04-01 18:43:40] Dark-Blue
+[2024-04-01 18:43:40] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-01 18:43:40] Current initial_theme in config.ini: Dark-Blue
+[2024-04-01 18:43:40] Contrast mode set to dark
+[2024-04-01 18:43:40] Reset snake length
+[2024-04-01 18:43:40] 1000x1000
+[2024-04-01 18:43:40] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-01 18:43:40] Current initial_game_size in config.ini: 1000x1000
+[2024-04-01 18:43:40] start_screen method called
+[2024-04-01 18:43:44] Setting custom size: 1200x800
+[2024-04-01 18:43:44] Changing screen size to Default
+[2024-04-01 18:43:44] Updated the config.ini
+[2024-04-01 18:43:50] Contrast mode set to dark
+[2024-04-01 18:43:52] Contrast mode set to light
+[2024-04-01 18:43:53] Contrast mode set to dark
+[2024-04-01 18:44:37] Game mode: snake_special
+[2024-04-01 18:44:37] start_game
+[2024-04-01 18:44:37] Reset snake length
+[2024-04-01 18:44:37] Game mode: snake_special
+[2024-04-01 18:44:37] Game state: start_game
+[2024-04-01 18:44:37] Game focused
+[2024-04-01 18:44:39] Game state: game
+[2024-04-01 18:44:39] Food ID:
+[2024-04-01 18:44:39] 0c917aa3-eeb8-4a47-9da8-bf5016349902
+[2024-04-01 18:44:39] {'0c917aa3-eeb8-4a47-9da8-bf5016349902': {'x': 360, 'y': 60, 'tag': 'food0c917aa3-eeb8-4a47-9da8-bf5016349902', 'oval_id': 7}}
+[2024-04-01 18:44:39] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:39] 0
+[2024-04-01 18:44:40] 0
+[2024-04-01 18:44:40] 1
+[2024-04-01 18:44:40] 1
+[2024-04-01 18:44:40] 1
+[2024-04-01 18:44:40] 1
+[2024-04-01 18:44:40] snake has a collision
+[2024-04-01 18:44:40] Game state: game_over
+[2024-04-01 18:44:40] Snake coordinates after reset: [(-20, 120), (0, 120), (20, 120), (20, 140), (40, 140)]
+[2024-04-01 18:44:40] High score: 52
+[2024-04-01 18:44:40] Score: 0
+[2024-04-01 18:44:42] Closed the app
+
+
+
+

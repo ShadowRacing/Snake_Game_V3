@@ -377,7 +377,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.config.set('Leveling_Snake_Values', 'xp', '0')
         self.config.set('Leveling_Snake_Values', 'level', '1')
         self.config.set('Leveling_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
-        self.initial_xp_needed = self.original_xp_needed
+        self.initial_xp_needed = int(self.config.get('Leveling_Snake_Values', 'initial_xp_needed', fallback='100'))
         self.current_xp_threshold = self.initial_xp_needed
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)

@@ -14631,3 +14631,69 @@ Traceback (most recent call last):
     self.tk = master.tk
               ^^^^^^^^^
 AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-04-01 11:03:37] 
+
+
+[2024-04-01 11:03:37] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-04-01 11:03:49] 
+
+
+[2024-04-01 11:03:49] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 66, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in snake_leveling
+    self.game_labels_panel_3.leveling_create_xp_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1094, in leveling_create_xp_label
+    self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 45, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'LogFile' object has no attribute 'tk'
+[2024-04-01 11:05:13] No errors occurred
+[2024-04-01 11:05:13] Closed the Error Log File
+
+
+
+

@@ -40,8 +40,6 @@ class SnakeGameApp:
         self.game_width = game_width
         self.game_height = game_height
         self.snake_color = None
-        # self.previous_width = root.winfo_width()
-        # self.previous_height = root.winfo_height()
         self.theme_updater.set_initial_theme()
 
         # Read the config file and load it
@@ -133,6 +131,7 @@ class SnakeGameApp:
         self.settings_labels = SettingsOptionButtonLabels(self.logfile, self.main_canvas)
 
         self.settings_labels.update_initial_game_size()
+        
         # Create the home screen
         self.create_home_screen()
         self.logfile.log_game_event("start_screen method called")
@@ -172,6 +171,7 @@ class SnakeGameApp:
 
         # Create a new canvas for the classic snake game
         self.game_config.set_configuration("classic_snake")
+
         self.classic_snake_canvas = Snake_Classic_Game(self.root,
                                                         self.game_config,
                                                         self.logfile,

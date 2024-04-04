@@ -10,12 +10,13 @@ from Logic.labelpanel_snake_game import GameLabelsPanel
 
 
 
-class MultiPlayer:
+class MultiPlayer(ctk.CTkCanvas):
     def __init__ (self, parent, game_config, logfile, functions, create_button_panel):
         self.game_config = game_config
         self.logfile = logfile
         self.functions = functions
         self.create_button_panel = create_button_panel
+        self.game_config = game_config
 
 
         self.state = 'start_game'
@@ -34,7 +35,7 @@ class MultiPlayer:
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
 
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
-        self.game_config = game_config
+        
         # Create the snake and the food
 
         self.snake_canvas_1 = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)

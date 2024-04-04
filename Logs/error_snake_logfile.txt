@@ -15097,3 +15097,195 @@ AttributeError: 'ClickButtonPanel' object has no attribute 'multiplayer_button'.
 
 
 [2024-04-01 19:48:25] Started the Error Log File
+[2024-04-04 19:51:21] 
+
+
+[2024-04-04 19:51:21] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+[2024-04-04 19:51:33] No errors occurred
+[2024-04-04 19:51:33] Closed the Error Log File
+
+
+
+
+[2024-04-04 19:53:17] 
+
+
+[2024-04-04 19:53:17] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Leveling' object has no attribute 'delete_game_labels___'
+[2024-04-04 19:53:26] No errors occurred
+[2024-04-04 19:53:26] Closed the Error Log File
+
+
+
+
+[2024-04-04 19:55:08] 
+
+
+[2024-04-04 19:55:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in multiplayer_snake_command
+    self.functions['snake_multiplayer']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 321, in snake_multiplayer
+    self.multiplayer_snake_canvas = MultiPlayer(self.root,
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\multiplayer.py", line 36, in __init__
+    super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+[2024-04-04 20:06:20] 
+
+
+[2024-04-04 20:06:20] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in multiplayer_snake_command
+    self.functions['snake_multiplayer']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 321, in snake_multiplayer
+    self.multiplayer_snake_canvas = MultiPlayer(self.root,
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\multiplayer.py", line 37, in __init__
+    super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+[2024-04-04 20:10:13] 
+
+
+[2024-04-04 20:10:13] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 726, in return_home
+    self.multiplayer_snake_canvas.delete_game_labels__()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MultiPlayer' object has no attribute 'delete_game_labels__'

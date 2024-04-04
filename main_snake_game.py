@@ -317,8 +317,8 @@ class SnakeGameApp:
         self.multiplayer_reset_button_press_variable()
 
 
-        self.game_config.set_configuration("snake_leveling")
-        self.multiplayer_snake_canvas = Snake_Leveling(self.root,
+        self.game_config.set_configuration("snake_multiplayer")
+        self.multiplayer_snake_canvas = MultiPlayer(self.root,
                                                   self.game_config,
                                                         self.logfile,
                                                         self.functions,
@@ -723,7 +723,7 @@ class SnakeGameApp:
             if self.main_canvas == self.leveling_snake_canvas:
                 self.leveling_snake_canvas.delete_game_labels__()
             if self.main_canvas == self.multiplayer_snake_canvas:
-                self.multiplayer_snake_canvas.delete_game_labels___()
+                self.multiplayer_snake_canvas.delete_game_labels__()
             time.sleep(0.1)
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")

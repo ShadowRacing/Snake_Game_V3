@@ -127,7 +127,7 @@ class SnakeGameApp:
                                       self.open_settings)
         
         self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.logfile,  self.game_config)
-        
+
         self.settings_labels = SettingsOptionButtonLabels(self.logfile, self.main_canvas)
 
         self.settings_labels.update_initial_game_size()
@@ -487,21 +487,21 @@ class SnakeGameApp:
         elif self.classic_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.set('Classic_Snake_Values', 'high_score', '0')
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             self.classic_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore reset to 0")
             self.classic_button_press_variable_high_score = 0
@@ -514,21 +514,21 @@ class SnakeGameApp:
         elif self.classic_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.set('Classic_Snake_Values', 'high_score_time', '0')
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             self.classic_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore time reset to 0")
             self.classic_button_press_variable_high_score_time = 0
@@ -541,21 +541,21 @@ class SnakeGameApp:
         elif self.classic_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             try:
                 self.config.read(self.config_path)
-            except :
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.set('Classic_Snake_Values', 'snake_length_high_score', '0')
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except: 
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             self.classic_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore time reset to 0")
             self.classic_button_press_variable_high_score_time = 0
@@ -572,18 +572,18 @@ class SnakeGameApp:
         elif self.endless_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'high_score', '0')
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore reset to 0")
             self.endless_button_press_variable_high_score = 0
@@ -596,18 +596,18 @@ class SnakeGameApp:
         elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'high_score_time', '0')
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore time reset to 0")
             self.endless_button_press_variable_high_score_time = 0
@@ -620,18 +620,18 @@ class SnakeGameApp:
         elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'snake_length_high_score', '0')
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore time reset to 0")
             self.endless_button_press_variable_high_score_time = 0
@@ -644,18 +644,18 @@ class SnakeGameApp:
         elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'special_score_high_score', '0')
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore special reset to 0")
             self.endless_button_press_variable_high_score_time = 0
@@ -668,18 +668,18 @@ class SnakeGameApp:
         elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'shorten_snake_high_score', '0')
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except:
-                traceback.print_exc()
+            except Exception as e:
+                traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
             self.logfile.log_game_event("Highscore shorten snake reset to 0")
             self.endless_button_press_variable_high_score_time = 0
@@ -709,8 +709,8 @@ class SnakeGameApp:
                 return None
             return canvas
         
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
             return canvas
 
     # Return to the home screen
@@ -743,8 +743,8 @@ class SnakeGameApp:
         try:
             self.logfile.on_closing()
             self.error_logfile.on_closing()
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
 
 # Main function

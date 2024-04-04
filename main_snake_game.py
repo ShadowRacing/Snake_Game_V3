@@ -37,14 +37,12 @@ class SnakeGameApp:
         self.game_config = GameConfig(logfile=self.logfile, game_mode = "initial_config")
         self.update_contrast = UpdateContrast(self.logfile)
         self.theme_updater = ThemeUpdater(self.logfile)
-
         self.game_width = game_width
         self.game_height = game_height
         self.snake_color = None
         # self.previous_width = root.winfo_width()
         # self.previous_height = root.winfo_height()
         self.theme_updater.set_initial_theme()
-        
 
         # Read the config file and load it
         self.config_dir = path.dirname(__file__)
@@ -52,9 +50,9 @@ class SnakeGameApp:
         self.config = configparser.ConfigParser()
         try:
             self.config.read(self.config_path)
-        except:
-            traceback.print_exc()
-        
+        except Exception as e:
+            traceback.print_exc(e)
+
         self.apply_theme()
         self.update_contrast.apply_contrast(selected_value=None)
 
@@ -62,9 +60,9 @@ class SnakeGameApp:
         try:
             with open(self.config_path, 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
-        
+        except Exception as e:
+            traceback.print_exc(e)
+
         # Button press variables
         self.button_press_variable = 0
         self.classic_button_press_variable_high_score = 0
@@ -174,8 +172,8 @@ class SnakeGameApp:
 
         # Create a new canvas for the classic snake game
         self.game_config.set_configuration("classic_snake")
-        self.classic_snake_canvas = Snake_Classic_Game(self.root, 
-                                                        self.game_config, 
+        self.classic_snake_canvas = Snake_Classic_Game(self.root,
+                                                        self.game_config,
                                                         self.logfile,
                                                         self.functions,
                                                         self.create_button_panel
@@ -187,21 +185,21 @@ class SnakeGameApp:
 
         #Update the button panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                        self.logfile, 
+                                                        self.logfile,
                                                         self.functions
                                                         )
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
-                                                        self.logfile, 
-                                                        self.game_config, 
-                                                        self.open_info, 
+                                                        self.logfile,
+                                                        self.game_config,
+                                                        self.open_info,
                                                         self.open_settings
                                                         )
-        
+
         # Update the game labels panel
-        self.game_labels_panel = GameLabelsPanel(self.main_canvas, 
-                                                        self.logfile, 
+        self.game_labels_panel = GameLabelsPanel(self.main_canvas,
+                                                        self.logfile,
                                                         self.game_config
                                                         )
 
@@ -222,8 +220,8 @@ class SnakeGameApp:
         self.classic_reset_button_press_variable()
 
         self.game_config.set_configuration("snake_endless")
-        self.endless_snake_canvas = Snake_endless(self.root, 
-                                                        self.game_config, 
+        self.endless_snake_canvas = Snake_endless(self.root,
+                                                        self.game_config,
                                                         self.logfile,
                                                         self.functions,
                                                         self.create_button_panel
@@ -235,21 +233,21 @@ class SnakeGameApp:
 
         #Update the button panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                        self.logfile, 
+                                                        self.logfile,
                                                         self.functions
                                                         )
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas,
-                                                        self.logfile, 
-                                                        self.game_config, 
-                                                        self.open_info, 
+                                                        self.logfile,
+                                                        self.game_config,
+                                                        self.open_info,
                                                         self.open_settings
                                                         )
-        
+
         # Update the game labels panel
-        self.game_labels_panel_2 = GameLabelsPanel(self.main_canvas, 
-                                                        self.logfile, 
+        self.game_labels_panel_2 = GameLabelsPanel(self.main_canvas,
+                                                        self.logfile,
                                                         self.game_config
                                                         )
 
@@ -263,7 +261,7 @@ class SnakeGameApp:
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_endless_snake_label()
-    
+
     # Start the leveling snake game
     def snake_leveling(self):
         self.original_main_canvas.pack_forget()
@@ -273,8 +271,8 @@ class SnakeGameApp:
 
 
         self.game_config.set_configuration("snake_leveling")
-        self.leveling_snake_canvas = Snake_Leveling(self.root, 
-                                                  self.game_config, 
+        self.leveling_snake_canvas = Snake_Leveling(self.root,
+                                                  self.game_config,
                                                         self.logfile,
                                                         self.functions,
                                                         self.create_button_panel
@@ -286,21 +284,21 @@ class SnakeGameApp:
 
         # Update the button panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                    self.logfile, 
+                                                    self.logfile,
                                                     self.functions
                                                     )
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
-                                                        self.logfile, 
-                                                        self.game_config, 
-                                                        self.open_info, 
+                                                        self.logfile,
+                                                        self.game_config,
+                                                        self.open_info,
                                                         self.open_settings
                                                         )
         
         # Update the game labels panel
-        self.game_labels_panel_3 = GameLabelsPanel(self.main_canvas, 
-                                                        self.logfile, 
+        self.game_labels_panel_3 = GameLabelsPanel(self.main_canvas,
+                                                        self.logfile,
                                                         self.game_config
                                                         )
 
@@ -311,7 +309,7 @@ class SnakeGameApp:
         self.framelabel_panel.create_leveling_snake_label()
         self.game_labels_panel_3.leveling_create_xp_label()
         self.game_labels_panel_3.leveling_create_level_label()
-    
+
     def snake_multiplayer(self):
         self.original_main_canvas.pack_forget()
 
@@ -320,8 +318,8 @@ class SnakeGameApp:
 
 
         self.game_config.set_configuration("snake_leveling")
-        self.multiplayer_snake_canvas = Snake_Leveling(self.root, 
-                                                  self.game_config, 
+        self.multiplayer_snake_canvas = Snake_Leveling(self.root,
+                                                  self.game_config,
                                                         self.logfile,
                                                         self.functions,
                                                         self.create_button_panel
@@ -333,21 +331,21 @@ class SnakeGameApp:
 
         # Update the button panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                    self.logfile, 
+                                                    self.logfile,
                                                     self.functions
                                                     )
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
-                                                        self.logfile, 
-                                                        self.game_config, 
-                                                        self.open_info, 
+                                                        self.logfile,
+                                                        self.game_config,
+                                                        self.open_info,
                                                         self.open_settings
                                                         )
         
         # Update the game labels panel
-        self.game_labels_panel_4 = GameLabelsPanel(self.main_canvas, 
-                                                        self.logfile, 
+        self.game_labels_panel_4 = GameLabelsPanel(self.main_canvas,
+                                                        self.logfile,
                                                         self.game_config
                                                         )
 
@@ -356,7 +354,6 @@ class SnakeGameApp:
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_multiplayer_snake_label()
-    
 
     # Open the information screen
     def open_info(self):
@@ -367,26 +364,26 @@ class SnakeGameApp:
 
         self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         self.info_canvas.pack(expand=True, fill="both")
-        
+
         self.main_canvas = self.info_canvas
 
         # Update the button panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                    self.logfile, 
+                                                    self.logfile,
                                                     self.functions
                                                     )
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
-                                                        self.logfile, 
-                                                        self.game_config, 
-                                                        self.open_info, 
+                                                        self.logfile,
+                                                        self.game_config,
+                                                        self.open_info,
                                                         self.open_settings
                                                         )
-        
+
         # Update the game labels panel
-        self.game_labels_panel = GameLabelsPanel(self.main_canvas, 
-                                                        self.logfile, 
+        self.game_labels_panel = GameLabelsPanel(self.main_canvas,
+                                                        self.logfile,
                                                         self.game_config
                                                         )
 
@@ -405,44 +402,43 @@ class SnakeGameApp:
 
         self.settings_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         self.settings_canvas.pack(expand=True, fill="both")
-        
+
         # Update the main canvas attribute
         self.main_canvas = self.settings_canvas
 
         self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                        self.logfile, 
+                                                        self.logfile,
                                                         self.functions
                                                         )
-        
+
         self.create_option_button_panel = OptionButtonPanel(
-            self.root, 
-            self.settings_canvas, 
+            self.root,
+            self.settings_canvas,
             self.logfile
         )
 
         # Update the frame label panel
         self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
-                                                        self.logfile, 
-                                                        self.game_config, 
-                                                        self.open_info, 
+                                                        self.logfile,
+                                                        self.game_config,
+                                                        self.open_info,
                                                         self.open_settings
                                                         )
         
         # Update the game labels panel
-        self.game_labels_panel = GameLabelsPanel(self.main_canvas, 
-                                                        self.logfile, 
+        self.game_labels_panel = GameLabelsPanel(self.main_canvas,
+                                                        self.logfile,
                                                         self.game_config
                                                         )
 
         # Create the settings labels
         self.settings_labels = SettingsOptionButtonLabels(
-            self.logfile, 
+            self.logfile,
             self.settings_canvas
         )
-        
+
         self.get_color_from_config()
         self.draw_snake_with_color(self.snake_color)
-
 
         # Create settings labels, buttons, and options
         self.framelabel_panel.set_create_label_canvas_flag(True)
@@ -749,6 +745,7 @@ class SnakeGameApp:
             self.error_logfile.on_closing()
         except:
             traceback.print_exc()
+
 
 # Main function
 if __name__ == "__main__":

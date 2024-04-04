@@ -125,7 +125,7 @@ class SnakeGameApp:
 
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.logfile,  self.game_config, self.open_info,
                                       self.open_settings)
-        
+
         self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.logfile,  self.game_config)
 
         self.settings_labels = SettingsOptionButtonLabels(self.logfile, self.main_canvas)
@@ -135,7 +135,7 @@ class SnakeGameApp:
         # Create the home screen
         self.create_home_screen()
         self.logfile.log_game_event("start_screen method called")
-    
+
     # Apply theme from the configuration
     def apply_theme(self):
         theme_name = self.config.get('Settings', 'theme', fallback='Default')
@@ -145,7 +145,7 @@ class SnakeGameApp:
             ctk.set_default_color_theme(theme_path)
         except Exception as e:
             traceback.print_exc(e)
-    
+
     def create_home_screen(self):
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_main_menu_label()
@@ -735,8 +735,8 @@ class SnakeGameApp:
             
             # Show the original main canvas (home screen)
             self.original_main_canvas.pack(expand=True, fill="both")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+                traceback.print_exc(e)
 
     # Confirm quitting the game
     def confirm_quit(self):

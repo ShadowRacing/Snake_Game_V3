@@ -161,199 +161,65 @@ class SnakeGameApp:
         self.endless_reset_button_press_variable()
         self.leveling_reset_button_press_variable()
         self.multiplayer_reset_button_press_variable()
-    
+
     def classic_snake(self):
+       self.start_game("classic_snake")
+
+    # Start the endless snake game
+    def snake_endless(self):
+        self.start_game("snake_endless")
+
+    # Start the leveling snake game
+    def snake_leveling(self):
+        self.start_game("snake_leveling")
+
+    def snake_multiplayer(self):
+        self.start_game("snake_multiplayer")
+
+    def start_game(self, game_type):
         # Hide the main canvas
         self.original_main_canvas.pack_forget()
 
         # Reset the button press variable
-        self.classic_reset_button_press_variable()
+        self.general_reset_button_press_variable()
 
-        # Create a new canvas for the classic snake game
-        self.game_config.set_configuration("classic_snake")
+        # Set the configuration based on the game type
+        self.game_config.set_configuration(game_type)
 
-        self.classic_snake_canvas = Snake_Classic_Game(self.root,
-                                                        self.game_config,
-                                                        self.logfile,
-                                                        self.functions,
-                                                        self.create_button_panel
-                                                        )
-        self.classic_snake_canvas.pack(expand=True, fill="both")
+        # Create a new canvas for the specified game type
+        if game_type == "classic_snake":
+            canvas = Snake_Classic_Game(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+        elif game_type == "snake_endless":
+            canvas = Snake_endless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+        elif game_type == "snake_leveling":
+            canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+        elif game_type == "snake_multiplayer":
+            canvas = MultiPlayer(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+        else:
+            return
 
-        # Update the main canvas attribute
-        self.main_canvas = self.classic_snake_canvas
-
-        #Update the button panel
-        self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                        self.logfile,
-                                                        self.functions
-                                                        )
-
-        # Update the frame label panel
-        self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
-                                                        self.logfile,
-                                                        self.game_config,
-                                                        self.open_info,
-                                                        self.open_settings
-                                                        )
-
-        # Update the game labels panel
-        self.game_labels_panel = GameLabelsPanel(self.main_canvas,
-                                                        self.logfile,
-                                                        self.game_config
-                                                        )
-
-        # Pack buttons and labels
-        self.create_button_panel.create_home_button()
-        self.create_button_panel.classic_reset_high_score_button()
-        self.create_button_panel.classic_reset_high_score_time_button()
-        self.create_button_panel.classic_reset_high_score_snake_length()
-        self.create_button_panel.quit_button()
-        self.framelabel_panel.set_create_label_canvas_flag(True)
-        self.framelabel_panel.create_classic_snake_label()
-    
-    # Start the endless snake game
-    def snake_endless(self):
-        self.original_main_canvas.pack_forget()
-
-        # Reset the button press variable
-        self.classic_reset_button_press_variable()
-
-        self.game_config.set_configuration("snake_endless")
-        self.endless_snake_canvas = Snake_endless(self.root,
-                                                        self.game_config,
-                                                        self.logfile,
-                                                        self.functions,
-                                                        self.create_button_panel
-                                                        )
-        self.endless_snake_canvas.pack(expand=True, fill="both")
+        # Pack the canvas
+        canvas.pack(expand=True, fill="both")
 
         # Update the main canvas attribute
-        self.main_canvas = self.endless_snake_canvas
-
-        #Update the button panel
-        self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                        self.logfile,
-                                                        self.functions
-                                                        )
-
-        # Update the frame label panel
-        self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas,
-                                                        self.logfile,
-                                                        self.game_config,
-                                                        self.open_info,
-                                                        self.open_settings
-                                                        )
-
-        # Update the game labels panel
-        self.game_labels_panel_2 = GameLabelsPanel(self.main_canvas,
-                                                        self.logfile,
-                                                        self.game_config
-                                                        )
-
-        # Pack buttons and labels
-        self.create_button_panel.create_home_button()
-        self.create_button_panel.endless_reset_high_score_button()
-        self.create_button_panel.endless_reset_high_score_time_button()
-        self.create_button_panel.endless_reset_high_score_snake_length()
-        self.create_button_panel.endless_reset_high_score_special_score_button()
-        self.create_button_panel.endless_reset_high_score_shorten_snake_button()
-        self.create_button_panel.quit_button()
-        self.framelabel_panel.set_create_label_canvas_flag(True)
-        self.framelabel_panel.create_endless_snake_label()
-
-    # Start the leveling snake game
-    def snake_leveling(self):
-        self.original_main_canvas.pack_forget()
-
-        # Reset the button press variable
-        self.leveling_reset_button_press_variable()
-
-
-        self.game_config.set_configuration("snake_leveling")
-        self.leveling_snake_canvas = Snake_Leveling(self.root,
-                                                  self.game_config,
-                                                        self.logfile,
-                                                        self.functions,
-                                                        self.create_button_panel
-                                                  )
-        self.leveling_snake_canvas.pack(expand=True, fill="both")
-
-        # Update the main canvas attribute
-        self.main_canvas = self.leveling_snake_canvas
+        self.main_canvas = canvas
 
         # Update the button panel
-        self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                    self.logfile,
-                                                    self.functions
-                                                    )
+        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
 
         # Update the frame label panel
-        self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
-                                                        self.logfile,
-                                                        self.game_config,
-                                                        self.open_info,
-                                                        self.open_settings
-                                                        )
-        
+        self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.logfile, self.game_config, self.open_info, self.open_settings)
+
         # Update the game labels panel
-        self.game_labels_panel_3 = GameLabelsPanel(self.main_canvas,
-                                                        self.logfile,
-                                                        self.game_config
-                                                        )
+        self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.logfile, self.game_config)
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
+        #self.create_button_panel.reset_high_score_buttons(game_type)
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
-        self.framelabel_panel.create_leveling_snake_label()
-        self.game_labels_panel_3.leveling_create_xp_label()
-        self.game_labels_panel_3.leveling_create_level_label()
+        #self.framelabel_panel.create_game_label(game_type)
 
-    def snake_multiplayer(self):
-        self.original_main_canvas.pack_forget()
-
-        # Reset the button press variable
-        self.multiplayer_reset_button_press_variable()
-
-
-        self.game_config.set_configuration("snake_multiplayer")
-        self.multiplayer_snake_canvas = MultiPlayer(self.root,
-                                                  self.game_config,
-                                                        self.logfile,
-                                                        self.functions,
-                                                        self.create_button_panel
-                                                  )
-        self.multiplayer_snake_canvas.pack(expand=True, fill="both")
-
-        # Update the main canvas attribute
-        self.main_canvas = self.multiplayer_snake_canvas
-
-        # Update the button panel
-        self.create_button_panel = ClickButtonPanel(self.main_canvas,
-                                                    self.logfile,
-                                                    self.functions
-                                                    )
-
-        # Update the frame label panel
-        self.framelabel_panel = NameOffFrameLabelPanel( self.main_canvas,
-                                                        self.logfile,
-                                                        self.game_config,
-                                                        self.open_info,
-                                                        self.open_settings
-                                                        )
-        
-        # Update the game labels panel
-        self.game_labels_panel_4 = GameLabelsPanel(self.main_canvas,
-                                                        self.logfile,
-                                                        self.game_config
-                                                        )
-
-        # Pack buttons and labels
-        self.create_button_panel.create_home_button()
-        self.create_button_panel.quit_button()
-        self.framelabel_panel.set_create_label_canvas_flag(True)
-        self.framelabel_panel.create_multiplayer_snake_label()
 
     # Open the information screen
     def open_info(self):
@@ -736,7 +602,7 @@ class SnakeGameApp:
             # Show the original main canvas (home screen)
             self.original_main_canvas.pack(expand=True, fill="both")
         except Exception as e:
-                traceback.print_exc(e)
+            traceback.print_exc(e)
 
     # Confirm quitting the game
     def confirm_quit(self):

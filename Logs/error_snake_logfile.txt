@@ -15289,3 +15289,33 @@ Traceback (most recent call last):
     self.multiplayer_snake_canvas.delete_game_labels__()
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'MultiPlayer' object has no attribute 'delete_game_labels__'
+[2024-04-04 20:46:17] 
+
+
+[2024-04-04 20:46:17] Started the Error Log File
+[2024-04-04 20:46:26] 
+
+
+[2024-04-04 20:46:26] Started the Error Log File
+[2024-04-04 20:48:05] 
+
+
+[2024-04-04 20:48:05] Started the Error Log File
+[2024-04-04 20:49:12] 
+
+
+[2024-04-04 20:49:12] Started the Error Log File
+[2024-04-04 20:49:23] No errors occurred
+[2024-04-04 20:49:23] Closed the Error Log File
+
+
+
+
+[2024-04-04 20:49:35] 
+
+
+[2024-04-04 20:49:35] Started the Error Log File
+[2024-04-04 20:50:03] 
+
+
+[2024-04-04 20:50:03] Started the Error Log File

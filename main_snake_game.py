@@ -119,7 +119,7 @@ class SnakeGameApp:
 
         # Initializing the button panel and label panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
-        
+
         # And then create the ButtonCommands instance
         self.button_commands = ButtonCommands(self.logfile, self.functions)
 
@@ -131,7 +131,7 @@ class SnakeGameApp:
         self.settings_labels = SettingsOptionButtonLabels(self.logfile, self.main_canvas)
 
         self.settings_labels.update_initial_game_size()
-        
+
         # Create the home screen
         self.create_home_screen()
         self.logfile.log_game_event("start_screen method called")
@@ -143,8 +143,8 @@ class SnakeGameApp:
         theme_path = path.join(theme_dir, 'themes', f"{theme_name}.json")
         try:
             ctk.set_default_color_theme(theme_path)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
     
     def create_home_screen(self):
         self.framelabel_panel.set_create_label_canvas_flag(True)
@@ -523,7 +523,7 @@ class SnakeGameApp:
             try:
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            except: 
+            except:
                 traceback.print_exc()
             try:
                 self.config.read(self.config_path)

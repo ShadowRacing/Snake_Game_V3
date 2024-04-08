@@ -188,22 +188,32 @@ class SnakeGameApp:
 
         # Create a new canvas for the specified game type
         if game_type == "classic_snake":
-            canvas = Snake_Classic_Game(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.classic_snake_canvas = Snake_Classic_Game(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_endless":
-            canvas = Snake_endless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.endless_snake_canvas = Snake_endless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_leveling":
-            canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.leveling_snake_canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_multiplayer":
-            canvas = MultiPlayer(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.multiplayer_snake_canvas = MultiPlayer(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         else:
             return
 
         # Pack the canvas
-        canvas.pack(expand=True, fill="both")
+        if game_type == "classic_snake":
+            self.classic_snake_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.classic_snake_canvas
+        elif game_type == "snake_endless":
+            self.endless_snake_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.endless_snake_canvas
+        elif game_type == "snake_leveling":
+            self.leveling_snake_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.leveling_snake_canvas
+        elif game_type == "snake_multiplayer":
+            self.multiplayer_snake_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.multiplayer_snake_canvas
 
         # Update the main canvas attribute
-        self.main_canvas = canvas
-
+        
         # Update the button panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
 
@@ -218,7 +228,8 @@ class SnakeGameApp:
         #self.create_button_panel.reset_high_score_buttons(game_type)
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
-        #self.framelabel_panel.create_game_label(game_type)
+
+
 
 
     # Open the information screen
@@ -589,7 +600,7 @@ class SnakeGameApp:
             if self.main_canvas == self.leveling_snake_canvas:
                 self.leveling_snake_canvas.delete_game_labels__()
             if self.main_canvas == self.multiplayer_snake_canvas:
-                self.multiplayer_snake_canvas.delete_game_labels__()
+              self.multiplayer_snake_canvas.delete_game_labels___()
             time.sleep(0.1)
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
@@ -598,6 +609,8 @@ class SnakeGameApp:
             self.multiplayer_snake_canvas = self.destroy_canvas(self.multiplayer_snake_canvas, "self.multiplayer_snake_canvas")
             self.info_canvas = self.destroy_canvas(self.info_canvas, "self.info_canvas")
             self.settings_canvas = self.destroy_canvas(self.settings_canvas, "self.settings_canvas")
+
+            self.classic_snake_canvas = self.destroy_canvas(self.main_canvas, "self.main_canvas")
             
             # Show the original main canvas (home screen)
             self.original_main_canvas.pack(expand=True, fill="both")

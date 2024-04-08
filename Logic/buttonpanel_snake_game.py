@@ -228,25 +228,25 @@ class ClickButtonPanel:
         patchnotes_button.grid(in_=self.button_canvas, row=14, column=0, padx=10, pady=10, sticky="w")
 
     def classic_snake_button(self):
-        classic_snake_button = ctk.CTkButton(self.button_canvas, text="Classic Snake", font=FONT_LIST[11],
+        classic_snake_button = ctk.CTkButton(self.button_canvas, text="Classic", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.classic_snake_command)
         classic_snake_button.grid(in_=self.button_canvas, row=1, column=0, padx=10, pady=10, sticky="w")
 
     def snake_endless_button(self):
-        snake_endless_button = ctk.CTkButton(self.button_canvas, text="Endless Snake", font=FONT_LIST[11],
+        snake_endless_button = ctk.CTkButton(self.button_canvas, text="Endless", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.snake_endless_command)
         snake_endless_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
 
     def snake_leveling_button(self):
-        snake_leveling_button = ctk.CTkButton(self.button_canvas, text="Leveling Snake", font=FONT_LIST[11],
+        snake_leveling_button = ctk.CTkButton(self.button_canvas, text="Leveling", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",#Should ne normal
                                 command=self.button_commands.snake_leveling_command)
         snake_leveling_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
 
     def multiplayer_snake_button(self):
-        multiplayer_snake_button = ctk.CTkButton(self.button_canvas, text="Multiplayer Snake", font=FONT_LIST[11],
+        multiplayer_snake_button = ctk.CTkButton(self.button_canvas, text="Multiplayer", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.multiplayer_snake_command)
         multiplayer_snake_button.grid(in_=self.button_canvas, row=13, column=0, padx=10, pady=10, sticky="w")

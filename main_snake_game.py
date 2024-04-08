@@ -212,16 +212,17 @@ class SnakeGameApp:
             self.multiplayer_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.multiplayer_snake_canvas
 
-        # Update the main canvas attribute
-        
-        # Update the button panel
+        # Initializing the button panel and label panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
-
-        # Update the frame label panel
+        self.button_commands = ButtonCommands(self.logfile, self.functions)
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.logfile, self.game_config, self.open_info, self.open_settings)
-
-        # Update the game labels panel
         self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.logfile, self.game_config)
+        self.settings_labels = SettingsOptionButtonLabels(self.logfile, self.main_canvas)
+        self.settings_labels.update_initial_game_size()
+
+        # Create the home screen
+        self.create_home_screen()
+        self.logfile.log_game_event("start_screen method called")
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()

@@ -15776,3 +15776,155 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 
 
 [2024-04-08 20:01:16] Started the Error Log File
+[2024-04-08 20:17:42] 
+
+
+[2024-04-08 20:17:42] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 617, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 120, in __init__
+    self.settings_labels.update_initial_game_size()
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'settings_labels'. Did you mean: 'settings_canvas'?
+[2024-04-08 20:25:27] 
+
+
+[2024-04-08 20:25:27] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 617, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 120, in __init__
+    self.start_game()
+TypeError: SnakeGameApp.start_game() missing 1 required positional argument: 'game_type'
+[2024-04-08 20:28:42] 
+
+
+[2024-04-08 20:28:42] Started the Error Log File
+[2024-04-08 20:29:11] 
+
+
+[2024-04-08 20:29:11] Started the Error Log File
+[2024-04-08 20:30:39] 
+
+
+[2024-04-08 20:30:39] Started the Error Log File
+[2024-04-08 20:32:34] 
+
+
+[2024-04-08 20:32:34] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 610, in return_home
+    self.original_main_canvas.pack(expand=True, fill="both")
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2452, in pack_configure
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 204, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 612, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TclError' and 'int'
+[2024-04-08 20:32:41] 
+
+
+[2024-04-08 20:32:41] Started the Error Log File
+[2024-04-08 20:33:29] 
+
+
+[2024-04-08 20:33:29] Started the Error Log File
+[2024-04-08 20:34:03] 
+
+
+[2024-04-08 20:34:03] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 60, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 154, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 202, in start_game
+    self.create_button_panel.create_home_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 187, in create_home_button
+    self.home_button = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11],
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas3.!ctkcanvas"
+[2024-04-08 20:34:36] 
+
+
+[2024-04-08 20:34:36] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 628, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 120, in __init__
+    self.start_game('Home_Screen')
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 190, in start_game
+    self.create_button_panel.create_home_button()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'create_button_panel'
+[2024-04-08 20:34:58] 
+
+
+[2024-04-08 20:34:58] Started the Error Log File
+[2024-04-08 20:48:54] 
+
+
+[2024-04-08 20:48:54] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 619, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 120, in __init__
+    self.start_game('Home_Screen')
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 175, in start_game
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 134, in create_home_screen
+    self.framelabel_panel.set_create_label_canvas_flag(True)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'framelabel_panel'
+[2024-04-08 20:49:14] 
+
+
+[2024-04-08 20:49:14] Started the Error Log File
+[2024-04-08 20:50:06] 
+
+
+[2024-04-08 20:50:06] Started the Error Log File

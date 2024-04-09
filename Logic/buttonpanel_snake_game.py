@@ -213,13 +213,13 @@ class ClickButtonPanel:
         settings_button = ctk.CTkButton(self.button_canvas, text="Settings", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.settings_command)
-        settings_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
+        settings_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
     def info_button(self):
         info_button = ctk.CTkButton(self.button_canvas, text="Information", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.info_command)
-        info_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
+        info_button.grid(in_=self.button_canvas, row=6, column=0, padx=10, pady=10, sticky="w")
 
     def patchnotes_button(self):
         patchnotes_button = ctk.CTkButton(self.button_canvas, text="Patchnotes", font=FONT_LIST[11],
@@ -249,7 +249,7 @@ class ClickButtonPanel:
         multiplayer_snake_button = ctk.CTkButton(self.button_canvas, text="Multiplayer", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.multiplayer_snake_command)
-        multiplayer_snake_button.grid(in_=self.button_canvas, row=13, column=0, padx=10, pady=10, sticky="w")
+        multiplayer_snake_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
 
     def snake_color_button(self):
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],

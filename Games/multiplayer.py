@@ -9,7 +9,6 @@ from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
 
 
-
 class MultiPlayer(ctk.CTkCanvas):
     def __init__ (self, parent, game_config, logfile, functions, create_button_panel):
         self.game_config = game_config

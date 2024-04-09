@@ -251,7 +251,6 @@ class ConfigIni:
         except:
             traceback.print_exc()
 
-
 #****************************************************
 # Initializing the Config.ini file
 #****************************************************

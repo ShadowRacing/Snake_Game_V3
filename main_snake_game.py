@@ -232,6 +232,12 @@ class SnakeGameApp:
         elif game_type == "info":
             self.info_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.info_canvas
+            self.root.update_idletasks()  # update canvas before getting its dimensions
+            canvas_width = self.info_canvas.winfo_width() // 2 + 80
+            canvas_height = self.info_canvas.winfo_height() // 2 - 50
+            self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Wim's Snake Game", font=("Helvetica", 50), fill="white")
+            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.5", font=("Helvetica", 30), fill="white")
+            self.info_canvas.create_text(canvas_width, canvas_height + 50, text="Developer: Shadow", font=("Helvetica", 30), fill="white")
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.settings_canvas

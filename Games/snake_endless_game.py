@@ -152,7 +152,6 @@ class Snake_endless(ctk.CTkCanvas):
                 self.config.write(configfile)
         except:
             traceback.print_exc()
-            
 
         # Start the game loop
         self.start_screen()

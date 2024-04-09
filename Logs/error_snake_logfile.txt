@@ -16094,3 +16094,153 @@ AttributeError: 'SnakeGameApp' object has no attribute 'open_info'
 
 
 [2024-04-09 20:11:19] Started the Error Log File
+[2024-04-09 20:13:35] 
+
+
+[2024-04-09 20:13:35] Started the Error Log File
+[2024-04-09 20:15:28] 
+
+
+[2024-04-09 20:15:28] Started the Error Log File
+[2024-04-09 20:15:57] No errors occurred
+[2024-04-09 20:15:57] Closed the Error Log File
+
+
+
+
+[2024-04-09 20:15:59] 
+
+
+[2024-04-09 20:15:59] Started the Error Log File
+[2024-04-09 20:16:50] 
+
+
+[2024-04-09 20:16:50] Started the Error Log File
+[2024-04-09 20:17:09] 
+
+
+[2024-04-09 20:17:09] Started the Error Log File
+[2024-04-09 20:18:18] 
+
+
+[2024-04-09 20:18:18] Started the Error Log File
+[2024-04-09 20:19:14] 
+
+
+[2024-04-09 20:19:14] Started the Error Log File
+[2024-04-09 20:19:43] 
+
+
+[2024-04-09 20:19:43] Started the Error Log File
+[2024-04-09 20:20:35] 
+
+
+[2024-04-09 20:20:35] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 42, in info_command
+    self.functions['open_info']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 187, in open_info
+    self.start_game("info")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 240, in start_game
+    self.info_canvas.create_text(f"{window_width}x{window_height}+{x}+{y}", screen_width, screen_height, text="Wim's Snake Game", font=("Helvetica", 50), fill="white")
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2866, in create_text
+    return self._create('text', args, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2832, in _create
+    return self.tk.getint(self.tk.call(
+                          ^^^^^^^^^^^^^
+_tkinter.TclError: bad screen distance "1x1+1279+719"
+[2024-04-09 20:22:36] 
+
+
+[2024-04-09 20:22:36] Started the Error Log File
+[2024-04-09 20:24:15] No errors occurred
+[2024-04-09 20:24:15] Closed the Error Log File
+
+
+
+
+[2024-04-09 20:24:17] 
+
+
+[2024-04-09 20:24:17] Started the Error Log File
+[2024-04-09 20:27:28] No errors occurred
+[2024-04-09 20:27:28] Closed the Error Log File
+
+
+
+
+[2024-04-09 20:27:37] 
+
+
+[2024-04-09 20:27:37] Started the Error Log File
+[2024-04-09 20:27:49] No errors occurred
+[2024-04-09 20:27:49] Closed the Error Log File
+
+
+
+
+[2024-04-09 20:27:51] 
+
+
+[2024-04-09 20:27:51] Started the Error Log File
+[2024-04-09 20:28:01] No errors occurred
+[2024-04-09 20:28:01] Closed the Error Log File
+
+
+
+
+[2024-04-09 20:28:03] 
+
+
+[2024-04-09 20:28:03] Started the Error Log File
+[2024-04-09 20:28:13] 
+
+
+[2024-04-09 20:28:13] Started the Error Log File
+[2024-04-09 20:28:20] 
+
+
+[2024-04-09 20:28:20] Started the Error Log File
+[2024-04-09 20:28:27] 
+
+
+[2024-04-09 20:28:27] Started the Error Log File
+[2024-04-09 20:28:35] 
+
+
+[2024-04-09 20:28:35] Started the Error Log File
+[2024-04-09 20:28:42] 
+
+
+[2024-04-09 20:28:42] Started the Error Log File
+[2024-04-09 20:28:50] 
+
+
+[2024-04-09 20:28:50] Started the Error Log File
+[2024-04-09 20:29:00] 
+
+
+[2024-04-09 20:29:00] Started the Error Log File
+[2024-04-09 20:29:10] 
+
+
+[2024-04-09 20:29:10] Started the Error Log File
+[2024-04-09 20:29:16] 
+
+
+[2024-04-09 20:29:16] Started the Error Log File
+[2024-04-09 20:29:36] 
+
+
+[2024-04-09 20:29:36] Started the Error Log File
+[2024-04-09 20:30:07] 
+
+
+[2024-04-09 20:30:07] Started the Error Log File

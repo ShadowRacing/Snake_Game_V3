@@ -30,6 +30,10 @@ class NameOffFrameLabelPanel:
             label = ctk.CTkLabel(label_border, text=text, font=FONT_LIST[20])
             label.pack(fill="both", expand=True, padx=1, pady=1)
             label_border.pack(side="bottom", padx=10, pady=10, fill="x")
+            label_border_width = label_border.winfo_width()
+            print(label_border_width)
+            label_border_height = label_border.winfo_height()
+            print(label_border_height)
             return label
         except:
             traceback.print_exc()

@@ -169,8 +169,8 @@ class ConfigIni:
                 self.config.set('Leveling_Snake_Values', 'level_high_score', '1')
             if not self.config.has_option('Leveling_Snake_Values', 'xp'):
                 self.config.set('Leveling_Snake_Values', 'xp', '0')
-            if not self.config.has_option('Leveling_Snake_Values', 'high_score_xp'):
-                self.config.set('Leveling_Snake_Values', 'high_score_xp', '0')
+            if not self.config.has_option('Leveling_Snake_Values', 'xp_high_score'):
+                self.config.set('Leveling_Snake_Values', 'xp_high_score', '0')
             if not self.config.has_option('Leveling_Snake_Values', 'initial_xp_needed'):
                 self.config.set('Leveling_Snake_Values', 'initial_xp_needed', '100')
             if not self.config.has_option('Leveling_Snake_Values', 'levels_to_increase_xp'):
@@ -227,8 +227,8 @@ class ConfigIni:
                 self.config.set('Multiplayer_Snake_Values', 'level_high_score', '1')
             if not self.config.has_option('Multiplayer_Snake_Values', 'xp'):
                 self.config.set('Multiplayer_Snake_Values', 'xp', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'high_score_xp'):
-                self.config.set('Multiplayer_Snake_Values', 'high_score_xp', '0')
+            if not self.config.has_option('Multiplayer_Snake_Values', 'xp_high_score'):
+                self.config.set('Multiplayer_Snake_Values', 'xp_high_score', '0')
             if not self.config.has_option('Multiplayer_Snake_Values', 'initial_xp_needed'):
                 self.config.set('Multiplayer_Snake_Values', 'initial_xp_needed', '100')
             if not self.config.has_option('Multiplayer_Snake_Values', 'levels_to_increase_xp'):

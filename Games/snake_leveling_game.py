@@ -180,7 +180,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.high_score = int(self.config.get('Leveling_Snake_Values', 'high_score', fallback='0'))
         self.high_score_time = int(self.config.get('Leveling_Snake_Values', 'high_score_time', fallback='0'))
         self.snake_length_high_score = int(self.config.get('Leveling_Snake_Values', 'snake_length_high_score', fallback='0'))
-        self.high_score_xp = int(self.config.get('Leveling_Snake_Values', 'high_score_xp', fallback='0'))
+        self.xp_high_score = int(self.config.get('Leveling_Snake_Values', 'xp_high_score', fallback='0'))
         self.level_high_score = int(self.config.get('Leveling_Snake_Values', 'level_high_score', fallback='0'))
         self.game_labels_panel_3.leveling_update_high_score_labels()
         self.config.set('Leveling_Snake_Settings', 'state', 'game')
@@ -292,7 +292,6 @@ class Snake_Leveling(ctk.CTkCanvas):
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
 
-
     def change_direction(self, new_direction):
         if not self.has_changed_direction:
         
@@ -309,8 +308,7 @@ class Snake_Leveling(ctk.CTkCanvas):
             self.direction = new_direction
             self.last_direction_change_time = current_time
             self.has_changed_direction = True
-        
-    
+           
     def check_collisions(self, snake):
         x, y = snake.coordinates[0]
 
@@ -343,8 +341,8 @@ class Snake_Leveling(ctk.CTkCanvas):
         if self.score > self.high_score:
             self.config.set('Leveling_Snake_Values', 'high_score', str(self.score))
 
-        if self.xp > self.high_score_xp:
-            self.config.set('Leveling_Snake_Values', 'high_score_xp', str(self.xp))
+        if self.xp > self.xp_high_score:
+            self.config.set('Leveling_Snake_Values', 'xp_high_score', str(self.xp))
 
         if self.level > self.level_high_score:
             self.config.set('Leveling_Snake_Values', 'level_high_score', str(self.level))

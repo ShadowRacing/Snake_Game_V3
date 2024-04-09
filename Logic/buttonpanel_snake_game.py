@@ -139,6 +139,48 @@ class ButtonCommands:
         else:
             self.logfile.log_game_event("No function assigned to 'reset_high_score_shorten_snake'")
 
+    def leveling_reset_high_score_command(self):
+        if 'leveling_reset_high_score' in self.functions:
+            self.functions['leveling_reset_high_score']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'reset_high_score'")
+
+    def leveling_reset_high_score_time_command(self):
+        if 'leveling_reset_high_score_time' in self.functions:
+            self.functions['leveling_reset_high_score_time']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'reset_high_score_time'")
+    
+    def leveling_reset_high_score_snake_length_command(self):
+        if 'leveling_reset_high_score_snake_length' in self.functions:
+            self.functions['leveling_reset_high_score_snake_length']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'reset_high_score_snake_length'")
+    
+    def leveling_reset_high_score_special_score_command(self):
+        if 'leveling_reset_high_score_special_score' in self.functions:
+            self.functions['leveling_reset_high_score_special_score']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'reset_high_special_score'")
+    
+    def leveling_reset_high_score_shorten_snake_command(self):
+        if 'leveling_reset_high_score_shorten_snake' in self.functions:
+            self.functions['leveling_reset_high_score_shorten_snake']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'reset_high_score_shorten_snake'")
+    
+    def leveling_reset_high_scores_xp_command(self):
+        if 'leveling_reset_high_scores_xp' in self.functions:
+            self.functions['leveling_reset_high_scores_xp']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'reset_high_scores_xp'")
+    
+    def leveling_reset_high_score_level_command(self):
+        if 'leveling_reset_high_score_level' in self.functions:
+            self.functions['leveling_reset_high_score_level']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'reset_high_score_level'")
+
     def game_size_command(self):
         if 'game_size' in self.functions:
             self.functions['game_size']()
@@ -322,6 +364,48 @@ class ClickButtonPanel:
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.endless_reset_high_score_shorten_snake_command)
         endless_reset_high_score_shorten_snake_button.grid(in_=self.button_canvas, row=14, column=0, padx=10, pady=10, sticky="w")
+
+    def leveling_reset_high_score_button(self):
+        leveling_reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Score\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.leveling_reset_high_score_command)
+        leveling_reset_high_score_button.grid(in_=self.button_canvas, row=10, column=0, padx=10, pady=10, sticky="w")
+    
+    def leveling_reset_high_score_time_button(self):
+        leveling_reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Time\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.leveling_reset_high_score_time_command)
+        leveling_reset_high_score_button.grid(in_=self.button_canvas, row=11, column=0, padx=10, pady=10, sticky="w")
+    
+    def leveling_reset_high_score_snake_length_button(self):
+        leveling_reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset length\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.leveling_reset_high_score_snake_length_command)
+        leveling_reset_high_score_snake_length_button.grid(in_=self.button_canvas, row=12, column=0, padx=10, pady=10, sticky="w")
+    
+    def leveling_reset_high_score_special_score_button(self):
+        leveling_reset_high_score_special_score_button = ctk.CTkButton(self.button_canvas, text="Reset Special\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.leveling_reset_high_score_special_score_command)
+        leveling_reset_high_score_special_score_button.grid(in_=self.button_canvas, row=13, column=0, padx=10, pady=10, sticky="w")
+    
+    def leveling_reset_high_score_shorten_snake_button(self):
+        leveling_reset_high_score_shorten_snake_button = ctk.CTkButton(self.button_canvas, text="Reset Shorten\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.leveling_reset_high_score_shorten_snake_command)
+        leveling_reset_high_score_shorten_snake_button.grid(in_=self.button_canvas, row=14, column=0, padx=10, pady=10, sticky="w")
+    
+    def leveling_reset_high_scores_xp_button(self):
+        leveling_reset_high_scores_xp_button = ctk.CTkButton(self.button_canvas, text="Reset XP\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.leveling_reset_high_scores_xp_command)
+        leveling_reset_high_scores_xp_button.grid(in_=self.button_canvas, row=15, column=0, padx=10, pady=10, sticky="w")
+    
+    def leveling_reset_high_score_level_button(self):
+        leveling_reset_high_score_level_button = ctk.CTkButton(self.button_canvas, text="Reset Level\n Highscore", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.leveling_reset_high_score_level_command)
+        leveling_reset_high_score_level_button.grid(in_=self.button_canvas, row=16, column=0, padx=10, pady=10, sticky="w")
 
     # only in the special game mode
     def game_size_button(self):

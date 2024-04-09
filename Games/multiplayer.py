@@ -133,7 +133,7 @@ class MultiPlayer(ctk.CTkCanvas):
         self.high_score = int(self.config.get('Multiplayer_Snake_Values', 'high_score', fallback='0'))
         self.high_score_time = int(self.config.get('Multiplayer_Snake_Values', 'high_score_time', fallback='0'))
         self.snake_length_high_score = int(self.config.get('Multiplayer_Snake_Values', 'snake_length_high_score', fallback='0'))
-        self.high_score_xp = int(self.config.get('Multiplayer_Snake_Values', 'high_score_xp', fallback='0'))
+        self.xp_high_score = int(self.config.get('Multiplayer_Snake_Values', 'xp_high_score', fallback='0'))
         self.level_high_score = int(self.config.get('Multiplayer_Snake_Values', 'level_high_score', fallback='0'))
         self.game_labels_panel_4.leveling_update_high_score_labels()
         self.config.set('Multiplayer_Snake_Values', 'state', 'game')
@@ -299,8 +299,8 @@ class MultiPlayer(ctk.CTkCanvas):
         if self.score > self.high_score:
             self.config.set('Multiplayer_Snake_Values', 'high_score', str(self.score))
 
-        if self.xp > self.high_score_xp:
-            self.config.set('Multiplayer_Snake_Values', 'high_score_xp', str(self.xp))
+        if self.xp > self.xp_high_score:
+            self.config.set('Multiplayer_Snake_Values', 'xp_high_score', str(self.xp))
 
         if self.level > self.level_high_score:
             self.config.set('Multiplayer_Snake_Values', 'level_high_score', str(self.level))

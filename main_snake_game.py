@@ -109,6 +109,13 @@ class SnakeGameApp:
             'endless_reset_high_score_snake_length': self.endless_reset_high_score_snake_length,
             'endless_reset_high_score_special_score': self.endless_reset_high_score_special_score,
             'endless_reset_high_score_shorten_snake' : self.endless_reset_high_score_shorten_snake,
+            'leveling_reset_high_score': self.leveling_reset_high_score,
+            'leveling_reset_high_score_time': self.leveling_reset_high_score_time,
+            'leveling_reset_high_score_snake_length': self.leveling_reset_high_score_snake_length,
+            'leveling_reset_high_score_special_score': self.leveling_reset_high_score_special_score,
+            'leveling_reset_high_score_shorten_snake': self.leveling_reset_high_score_shorten_snake,
+            'leveling_reset_high_scores_xp': self.leveling_reset_high_scores_xp,
+            'leveling_reset_high_score_level': self.leveling_reset_high_score_level,
             'open_settings': self.open_settings,
             'open_info': self.open_info,
             'snake_multiplayer': self.snake_multiplayer,
@@ -245,9 +252,8 @@ class SnakeGameApp:
             self.create_button_panel.classic_reset_high_score_snake_length()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_classic_snake_label()
-            
+
         elif game_type == "snake_endless":
-            
             self.create_button_panel.endless_reset_high_score_button()
             self.create_button_panel.endless_reset_high_score_time_button()
             self.create_button_panel.endless_reset_high_score_snake_length()
@@ -255,17 +261,25 @@ class SnakeGameApp:
             self.create_button_panel.endless_reset_high_score_shorten_snake_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_endless_snake_label()
-            
+
         elif game_type == "snake_leveling":
-            #self.create_button_panel.leveling_reset_high_score_button()
-            #self.create_button_panel.leveling_reset_high_score_time_button()
+            self.create_button_panel.leveling_reset_high_score_button()
+            self.create_button_panel.leveling_reset_high_score_time_button()
+            self.create_button_panel.leveling_reset_high_score_snake_length_button()
+            self.create_button_panel.leveling_reset_high_score_special_score_button()
+            self.create_button_panel.leveling_reset_high_score_shorten_snake_button()
+            self.create_button_panel.leveling_reset_high_scores_xp_button()
+            self.create_button_panel.leveling_reset_high_score_level_button()
+            
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_leveling_snake_label()
+
         elif game_type == "snake_multiplayer":
             #self.create_button_panel.multiplayer_reset_high_score_button()
             #self.create_button_panel.multiplayer_reset_high_score_time_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_multiplayer_snake_label()
+
         elif game_type == "info":
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_label()
@@ -523,6 +537,174 @@ class SnakeGameApp:
     def endless_reset_button_press_variable(self):
         self.endless_button_press_variable_high_score = 0
         self.endless_button_press_variable_high_score_time = 0
+
+    def leveling_reset_high_score(self):
+        if self.leveling_button_press_variable_high_score == 0:
+            self.first_button_press_time = time.time()
+            self.leveling_button_press_variable_high_score += 1
+        elif self.leveling_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.set('Leveling_Snake_Values', 'high_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            self.leveling_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore reset to 0")
+            self.leveling_button_press_variable_high_score = 0
+            self.first_button_press_time = None
+    
+    def leveling_reset_high_score_time(self):
+        if self.leveling_button_press_variable_high_score_time == 0:
+            self.first_button_press_time = time.time()
+            self.leveling_button_press_variable_high_score_time += 1
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.set('Leveling_Snake_Values', 'high_score_time', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            self.leveling_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore time reset to 0")
+            self.leveling_button_press_variable_high_score_time = 0
+            self.first_button_press_time = None
+    
+    def leveling_reset_high_score_snake_length(self):
+        if self.leveling_button_press_variable_high_score_time == 0:
+            self.first_button_press_time = time.time()
+            self.leveling_button_press_variable_high_score_time += 1
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.set('Leveling_Snake_Values', 'snake_length_high_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            self.leveling_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore time reset to 0")
+            self.leveling_button_press_variable_high_score_time = 0
+            self.first_button_press_time = None
+    
+    def leveling_reset_high_score_special_score(self):
+        if self.leveling_button_press_variable_high_score_time == 0:
+            self.first_button_press_time = time.time()
+            self.leveling_button_press_variable_high_score_time += 1
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.set('Leveling_Snake_Values', 'special_score_high_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            self.leveling_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore special reset to 0")
+            self.leveling_button_press_variable_high_score_time = 0
+            self.first_button_press_time = None
+    
+    def leveling_reset_high_score_shorten_snake(self):
+        if self.leveling_button_press_variable_high_score_time == 0:
+            self.first_button_press_time = time.time()
+            self.leveling_button_press_variable_high_score_time += 1
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.set('Leveling_Snake_Values', 'shorten_snake_high_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            self.leveling_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore shorten snake reset to 0")
+            self.leveling_button_press_variable_high_score_time = 0
+            self.first_button_press_time = None
+    
+    def leveling_reset_high_scores_xp(self):
+        if self.leveling_button_press_variable_high_score_time == 0:
+            self.first_button_press_time = time.time()
+            self.leveling_button_press_variable_high_score_time += 1
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.set('Leveling_Snake_Values', 'xp_high_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            self.leveling_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore xp reset to 0")
+            self.leveling_button_press_variable_high_score_time = 0
+            self.first_button_press_time = None
+    
+    def leveling_reset_high_score_level(self):
+        if self.leveling_button_press_variable_high_score_time == 0:
+            self.first_button_press_time = time.time()
+            self.leveling_button_press_variable_high_score_time += 1
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.set('Leveling_Snake_Values', 'level_high_score', '0')
+                with open('config.ini', 'w') as configfile:
+                    self.config.write(configfile)
+            except Exception as e:
+                traceback.print_exc(e)
+            try:
+                self.config.read(self.config_path)
+            except Exception as e:
+                traceback.print_exc(e)
+            self.leveling_snake_canvas.update_high_score_labels_()
+            self.logfile.log_game_event("Highscore level reset to 0")
+            self.leveling_button_press_variable_high_score_time = 0
+            self.first_button_press_time = None
 
     def leveling_reset_button_press_variable(self):
         self.leveling_button_press_variable_high_score = 0

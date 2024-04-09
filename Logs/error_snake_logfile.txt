@@ -15928,3 +15928,53 @@ AttributeError: 'SnakeGameApp' object has no attribute 'framelabel_panel'
 
 
 [2024-04-08 20:50:06] Started the Error Log File
+[2024-04-09 18:09:35] 
+
+
+[2024-04-09 18:09:35] Started the Error Log File
+[2024-04-09 18:09:46] No errors occurred
+[2024-04-09 18:09:46] Closed the Error Log File
+
+
+
+
+[2024-04-09 18:11:00] 
+
+
+[2024-04-09 18:11:00] Started the Error Log File
+[2024-04-09 18:11:35] 
+
+
+[2024-04-09 18:11:35] Started the Error Log File
+[2024-04-09 18:13:58] No errors occurred
+[2024-04-09 18:13:58] Closed the Error Log File
+
+
+
+
+[2024-04-09 18:14:01] 
+
+
+[2024-04-09 18:14:01] Started the Error Log File
+[2024-04-09 18:14:42] 
+
+
+[2024-04-09 18:14:42] Started the Error Log File
+[2024-04-09 18:15:05] 
+
+
+[2024-04-09 18:15:05] Started the Error Log File
+[2024-04-09 18:16:13] 
+
+
+[2024-04-09 18:16:13] Started the Error Log File
+[2024-04-09 18:17:22] 
+
+
+[2024-04-09 18:17:22] Started the Error Log File
+[2024-04-09 18:18:18] No errors occurred
+[2024-04-09 18:18:18] Closed the Error Log File
+
+
+
+

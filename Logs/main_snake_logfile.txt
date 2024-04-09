@@ -18875,3 +18875,234 @@ Height: 1000
 [2024-04-08 20:50:14] Updated initial_game_size in config.ini to 1000x1000
 [2024-04-08 20:50:14] Current initial_game_size in config.ini: 1000x1000
 [2024-04-08 20:50:14] start_screen method called
+[2024-04-09 18:09:35] Started the app
+[2024-04-09 18:09:35] Started the GameApp Class
+[2024-04-09 18:09:35] Game mode: initial config
+[2024-04-09 18:09:35] Dark-Blue
+[2024-04-09 18:09:35] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-09 18:09:35] Current initial_theme in config.ini: Dark-Blue
+[2024-04-09 18:09:35] Contrast mode set to dark
+[2024-04-09 18:09:35] Reset snake length
+[2024-04-09 18:09:35] 1000x1000
+[2024-04-09 18:09:35] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:09:35] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:09:35] start_screen method called
+[2024-04-09 18:09:37] Game mode: classic_snake
+[2024-04-09 18:09:37] start_game
+[2024-04-09 18:09:37] Reset snake length
+[2024-04-09 18:09:37] Game mode: classic_snake
+[2024-04-09 18:09:37] Game state: start_game
+[2024-04-09 18:09:37] Game focused
+[2024-04-09 18:09:37] 1000x1000
+[2024-04-09 18:09:37] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:09:37] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:09:37] start_screen method called
+[2024-04-09 18:09:41] Game mode: classic_snake
+[2024-04-09 18:09:41] start_game
+[2024-04-09 18:09:41] Reset snake length
+[2024-04-09 18:09:41] Game mode: classic_snake
+[2024-04-09 18:09:41] Game state: start_game
+[2024-04-09 18:09:41] Game focused
+[2024-04-09 18:09:41] 1000x1000
+[2024-04-09 18:09:41] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:09:41] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:09:41] start_screen method called
+[2024-04-09 18:09:46] Closed the app
+
+
+
+
+[2024-04-09 18:11:00] Started the app
+[2024-04-09 18:11:00] Started the GameApp Class
+[2024-04-09 18:11:00] Game mode: initial config
+[2024-04-09 18:11:00] Dark-Blue
+[2024-04-09 18:11:00] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-09 18:11:00] Current initial_theme in config.ini: Dark-Blue
+[2024-04-09 18:11:00] Contrast mode set to dark
+[2024-04-09 18:11:00] Reset snake length
+[2024-04-09 18:11:00] 1000x1000
+[2024-04-09 18:11:00] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:11:00] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:11:00] start_screen method called
+[2024-04-09 18:11:01] Game mode: classic_snake
+[2024-04-09 18:11:01] start_game
+[2024-04-09 18:11:01] Reset snake length
+[2024-04-09 18:11:01] Game mode: classic_snake
+[2024-04-09 18:11:01] Game state: start_game
+[2024-04-09 18:11:01] Game focused
+[2024-04-09 18:11:01] start_screen method called
+[2024-04-09 18:11:35] Started the app
+[2024-04-09 18:11:35] Started the GameApp Class
+[2024-04-09 18:11:35] Game mode: initial config
+[2024-04-09 18:11:35] Dark-Blue
+[2024-04-09 18:11:35] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-09 18:11:35] Current initial_theme in config.ini: Dark-Blue
+[2024-04-09 18:11:35] Contrast mode set to dark
+[2024-04-09 18:11:35] Reset snake length
+[2024-04-09 18:11:35] 1000x1000
+[2024-04-09 18:11:35] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:11:35] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:11:35] start_screen method called
+[2024-04-09 18:11:35] Game mode: classic_snake
+[2024-04-09 18:11:35] start_game
+[2024-04-09 18:11:35] Reset snake length
+[2024-04-09 18:11:35] Game mode: classic_snake
+[2024-04-09 18:11:35] Game state: start_game
+[2024-04-09 18:11:35] Game focused
+[2024-04-09 18:11:35] 1000x1000
+[2024-04-09 18:11:35] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:11:35] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:11:37] Game mode: snake_endless
+[2024-04-09 18:11:37] start_game
+Width: 1000
+Height: 1000
+[2024-04-09 18:11:37] Reset snake length
+[2024-04-09 18:11:37] Game mode: snake_endless
+[2024-04-09 18:11:37] Game state: start_game
+[2024-04-09 18:11:37] Game focused
+[2024-04-09 18:11:37] 1000x1000
+[2024-04-09 18:11:37] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:11:37] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:11:38] Game mode: snake_leveling
+[2024-04-09 18:11:38] start_game
+[2024-04-09 18:11:38] Reset snake length
+[2024-04-09 18:11:38] Game mode: snake_leveling
+[2024-04-09 18:11:38] Game state: start_game
+[2024-04-09 18:11:38] Game focused
+[2024-04-09 18:11:38] 1000x1000
+[2024-04-09 18:11:38] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:11:38] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:13:58] Closed the app
+
+
+
+
+[2024-04-09 18:14:01] Started the app
+[2024-04-09 18:14:01] Started the GameApp Class
+[2024-04-09 18:14:01] Game mode: initial config
+[2024-04-09 18:14:01] Dark-Blue
+[2024-04-09 18:14:01] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-09 18:14:01] Current initial_theme in config.ini: Dark-Blue
+[2024-04-09 18:14:01] Contrast mode set to dark
+[2024-04-09 18:14:01] Reset snake length
+[2024-04-09 18:14:01] 1000x1000
+[2024-04-09 18:14:01] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:14:01] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:14:01] start_screen method called
+[2024-04-09 18:14:02] Game mode: classic_snake
+[2024-04-09 18:14:02] start_game
+[2024-04-09 18:14:02] Reset snake length
+[2024-04-09 18:14:02] Game mode: classic_snake
+[2024-04-09 18:14:02] Game state: start_game
+[2024-04-09 18:14:02] Game focused
+[2024-04-09 18:14:02] 1000x1000
+[2024-04-09 18:14:02] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:14:02] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:14:42] Started the app
+[2024-04-09 18:14:42] Started the GameApp Class
+[2024-04-09 18:14:42] Game mode: initial config
+[2024-04-09 18:14:42] Dark-Blue
+[2024-04-09 18:14:42] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-09 18:14:42] Current initial_theme in config.ini: Dark-Blue
+[2024-04-09 18:14:42] Contrast mode set to dark
+[2024-04-09 18:14:42] Reset snake length
+[2024-04-09 18:14:42] 1000x1000
+[2024-04-09 18:14:42] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:14:42] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:14:42] start_screen method called
+[2024-04-09 18:14:43] Game mode: classic_snake
+[2024-04-09 18:14:43] start_game
+[2024-04-09 18:14:43] Reset snake length
+[2024-04-09 18:14:43] Game mode: classic_snake
+[2024-04-09 18:14:43] Game state: start_game
+[2024-04-09 18:14:43] Game focused
+[2024-04-09 18:14:43] 1000x1000
+[2024-04-09 18:14:43] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:14:43] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:14:48] Highscore reset to 0
+[2024-04-09 18:15:05] Started the app
+[2024-04-09 18:15:05] Started the GameApp Class
+[2024-04-09 18:15:05] Game mode: initial config
+[2024-04-09 18:15:05] Dark-Blue
+[2024-04-09 18:15:05] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-09 18:15:05] Current initial_theme in config.ini: Dark-Blue
+[2024-04-09 18:15:05] Contrast mode set to dark
+[2024-04-09 18:15:05] Reset snake length
+[2024-04-09 18:15:05] 1000x1000
+[2024-04-09 18:15:05] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:15:05] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:15:05] start_screen method called
+[2024-04-09 18:15:06] Game mode: classic_snake
+[2024-04-09 18:15:06] start_game
+[2024-04-09 18:15:06] Reset snake length
+[2024-04-09 18:15:06] Game mode: classic_snake
+[2024-04-09 18:15:06] Game state: start_game
+[2024-04-09 18:15:06] Game focused
+[2024-04-09 18:15:06] 1000x1000
+[2024-04-09 18:15:06] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:15:06] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:16:13] Started the app
+[2024-04-09 18:16:13] Started the GameApp Class
+[2024-04-09 18:16:13] Game mode: initial config
+[2024-04-09 18:16:13] Dark-Blue
+[2024-04-09 18:16:13] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-09 18:16:13] Current initial_theme in config.ini: Dark-Blue
+[2024-04-09 18:16:13] Contrast mode set to dark
+[2024-04-09 18:16:13] Reset snake length
+[2024-04-09 18:16:13] 1000x1000
+[2024-04-09 18:16:13] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:16:13] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:16:13] start_screen method called
+[2024-04-09 18:16:14] Game mode: classic_snake
+[2024-04-09 18:16:14] start_game
+[2024-04-09 18:16:14] Reset snake length
+[2024-04-09 18:16:14] Game mode: classic_snake
+[2024-04-09 18:16:14] Game state: start_game
+[2024-04-09 18:16:14] Game focused
+[2024-04-09 18:16:14] 1000x1000
+[2024-04-09 18:16:14] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:16:14] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:16:15] Highscore time reset to 0
+[2024-04-09 18:16:16] Highscore time reset to 0
+[2024-04-09 18:17:22] Started the app
+[2024-04-09 18:17:22] Started the GameApp Class
+[2024-04-09 18:17:22] Game mode: initial config
+[2024-04-09 18:17:22] Dark-Blue
+[2024-04-09 18:17:22] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-09 18:17:22] Current initial_theme in config.ini: Dark-Blue
+[2024-04-09 18:17:22] Contrast mode set to dark
+[2024-04-09 18:17:22] Reset snake length
+[2024-04-09 18:17:22] 1000x1000
+[2024-04-09 18:17:22] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:17:22] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:17:22] start_screen method called
+[2024-04-09 18:17:23] Game mode: snake_endless
+[2024-04-09 18:17:23] start_game
+Width: 1000
+Height: 1000
+[2024-04-09 18:17:23] Reset snake length
+[2024-04-09 18:17:23] Game mode: snake_endless
+[2024-04-09 18:17:23] Game state: start_game
+[2024-04-09 18:17:23] Game focused
+[2024-04-09 18:17:23] 1000x1000
+[2024-04-09 18:17:23] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:17:23] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:17:34] Highscore shorten snake reset to 0
+[2024-04-09 18:17:35] Highscore special reset to 0
+[2024-04-09 18:17:36] Highscore time reset to 0
+[2024-04-09 18:17:37] Highscore time reset to 0
+[2024-04-09 18:17:37] Highscore reset to 0
+[2024-04-09 18:17:42] Game mode: snake_leveling
+[2024-04-09 18:17:42] start_game
+[2024-04-09 18:17:42] Reset snake length
+[2024-04-09 18:17:42] Game mode: snake_leveling
+[2024-04-09 18:17:42] Game state: start_game
+[2024-04-09 18:17:42] Game focused
+[2024-04-09 18:17:42] 1000x1000
+[2024-04-09 18:17:42] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-09 18:17:42] Current initial_game_size in config.ini: 1000x1000
+[2024-04-09 18:18:18] Closed the app
+
+
+
+

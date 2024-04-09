@@ -220,9 +220,27 @@ class SnakeGameApp:
         self.settings_labels = SettingsOptionButtonLabels(self.logfile, self.main_canvas)
         self.settings_labels.update_initial_game_size()
 
+        if game_type == "classic_snake":
+            self.create_button_panel.classic_reset_high_score_button()
+            self.create_button_panel.classic_reset_high_score_time_button()
+            self.create_button_panel.classic_reset_high_score_snake_length()
+        elif game_type == "snake_endless":
+            self.create_button_panel.endless_reset_high_score_button()
+            self.create_button_panel.endless_reset_high_score_time_button()
+            self.create_button_panel.endless_reset_high_score_snake_length()
+            self.create_button_panel.endless_reset_high_score_special_score_button()
+            self.create_button_panel.endless_reset_high_score_shorten_snake_button()
+        elif game_type == "snake_leveling":
+            #self.create_button_panel.leveling_reset_high_score_button()
+            #self.create_button_panel.leveling_reset_high_score_time_button()
+            pass
+        elif game_type == "snake_multiplayer":
+            #self.create_button_panel.multiplayer_reset_high_score_button()
+            #self.create_button_panel.multiplayer_reset_high_score_time_button()
+            pass
+
         # Create the home screen
-        self.create_home_screen()
-        self.logfile.log_game_event("start_screen method called")
+    
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()

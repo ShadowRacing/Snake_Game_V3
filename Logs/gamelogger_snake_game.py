@@ -1,5 +1,5 @@
 # ************************************
-# Wims Snake Game Logger File
+# Shadows Snake Game Logger File
 # ************************************
 
 # Importing the necessary modules
@@ -76,5 +76,5 @@ class ErrorLogFile:
 
 
 # *****************************************
-# Wims Snake Game Logger File
+# Shadows Snake Game Logger File
 # *****************************************

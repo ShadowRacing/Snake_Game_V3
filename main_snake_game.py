@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Main File
+# Shadows Snake Main File
 # *****************************************
 
 # Import all the necessary libraries
@@ -19,7 +19,6 @@ from Logic.config_ini_Initials import ConfigIni
 from Games.snake_classic_game import Snake_Classic_Game
 from Games.snake_endless_game import Snake_endless
 from Games.snake_leveling_game import Snake_Leveling
-from Games.multiplayer import MultiPlayer
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
 
@@ -69,8 +68,6 @@ class SnakeGameApp:
         self.endless_button_press_variable_high_score_time = 0
         self.leveling_button_press_variable_high_score = 0
         self.leveling_button_press_variable_high_score_time = 0
-        self.multiplayer_button_press_variable_high_score = 0
-        self.multiplayer_button_press_variable_high_score_time = 0
         self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5))
 
         # Creating the main canvas for the app
@@ -82,7 +79,6 @@ class SnakeGameApp:
         self.classic_snake_canvas = None
         self.endless_snake_canvas = None
         self.leveling_snake_canvas = None
-        self.multiplayer_snake_canvas = None
         self.info_canvas = None
         self.settings_canvas = None
 
@@ -118,7 +114,6 @@ class SnakeGameApp:
             'leveling_reset_high_score_level': self.leveling_reset_high_score_level,
             'open_settings': self.open_settings,
             'open_info': self.open_info,
-            'snake_multiplayer': self.snake_multiplayer,
             'snake_leveling': self.snake_leveling,
             'snake_endless': self.snake_endless,
             'classic_snake': self.classic_snake,
@@ -159,7 +154,6 @@ class SnakeGameApp:
         self.create_button_panel.classic_snake_button()
         self.create_button_panel.snake_endless_button()
         self.create_button_panel.snake_leveling_button()
-        self.create_button_panel.multiplayer_snake_button()
         self.create_button_panel.info_button()
         self.create_button_panel.settings_button()
         self.create_button_panel.quit_button()
@@ -167,7 +161,6 @@ class SnakeGameApp:
         self.classic_reset_button_press_variable()
         self.endless_reset_button_press_variable()
         self.leveling_reset_button_press_variable()
-        self.multiplayer_reset_button_press_variable()
 
     def classic_snake(self):
        self.start_game("classic_snake")
@@ -180,9 +173,6 @@ class SnakeGameApp:
     def snake_leveling(self):
         self.start_game("snake_leveling")
 
-    def snake_multiplayer(self):
-        self.start_game("snake_multiplayer")
-    
     def open_info(self):
         self.start_game("info")
 
@@ -207,8 +197,6 @@ class SnakeGameApp:
             self.endless_snake_canvas = Snake_endless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
-        elif game_type == "snake_multiplayer":
-            self.multiplayer_snake_canvas = MultiPlayer(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "info":
             self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         elif game_type == "settings":
@@ -226,17 +214,14 @@ class SnakeGameApp:
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.leveling_snake_canvas
-        elif game_type == "snake_multiplayer":
-            self.multiplayer_snake_canvas.pack(expand=True, fill="both")
-            self.main_canvas = self.multiplayer_snake_canvas
         elif game_type == "info":
             self.info_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.info_canvas
             self.root.update_idletasks()  # update canvas before getting its dimensions
             canvas_width = self.info_canvas.winfo_width() // 2 + 80
             canvas_height = self.info_canvas.winfo_height() // 2 - 50
-            self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Wim's Snake Game", font=("Helvetica", 50), fill="white")
-            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.5", font=("Helvetica", 30), fill="white")
+            self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Shadow's Snake Game", font=("Helvetica", 50), fill="white")
+            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.6", font=("Helvetica", 30), fill="white")
             self.info_canvas.create_text(canvas_width, canvas_height + 50, text="Developer: Shadow", font=("Helvetica", 30), fill="white")
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")
@@ -279,12 +264,6 @@ class SnakeGameApp:
             
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_leveling_snake_label()
-
-        elif game_type == "snake_multiplayer":
-            #self.create_button_panel.multiplayer_reset_high_score_button()
-            #self.create_button_panel.multiplayer_reset_high_score_time_button()
-            self.framelabel_panel.set_create_label_canvas_flag(True)
-            self.framelabel_panel.create_multiplayer_snake_label()
 
         elif game_type == "info":
             self.framelabel_panel.set_create_label_canvas_flag(True)
@@ -715,10 +694,6 @@ class SnakeGameApp:
     def leveling_reset_button_press_variable(self):
         self.leveling_button_press_variable_high_score = 0
         self.leveling_button_press_variable_high_score_time = 0
-    
-    def multiplayer_reset_button_press_variable(self):
-        self.multiplayer_button_press_variable_high_score = 0
-        self.multiplayer_button_press_variable_high_score_time = 0
 
     def general_reset_button_press_variable(self):
         self.button_press_variable = 0
@@ -745,14 +720,12 @@ class SnakeGameApp:
                 self.endless_snake_canvas.delete_game_labels_()
             if self.main_canvas == self.leveling_snake_canvas:
                 self.leveling_snake_canvas.delete_game_labels__()
-            if self.main_canvas == self.multiplayer_snake_canvas:
-              self.multiplayer_snake_canvas.delete_game_labels___()
+
             time.sleep(0.1)
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
             self.endless_snake_canvas = self.destroy_canvas(self.endless_snake_canvas, "self.endless_snake_canvas")
             self.leveling_snake_canvas = self.destroy_canvas(self.leveling_snake_canvas, "self.leveling_snake_canvas")
-            self.multiplayer_snake_canvas = self.destroy_canvas(self.multiplayer_snake_canvas, "self.multiplayer_snake_canvas")
             self.info_canvas = self.destroy_canvas(self.info_canvas, "self.info_canvas")
             self.settings_canvas = self.destroy_canvas(self.settings_canvas, "self.settings_canvas")
 
@@ -776,7 +749,7 @@ class SnakeGameApp:
 if __name__ == "__main__":
     root = ctk.CTk()
     app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
-    root.title("Wims Snake Game")
+    root.title("Shadows Snake Game")
     root.geometry(f"{GameConstants.MIN_WIDTH}x{GameConstants.MIN_HEIGHT}")
     if SCREEN_SIZE_FULLSCREEN == 'fullscreen':
         root.attributes('-fullscreen', True)
@@ -797,5 +770,5 @@ if __name__ == "__main__":
     root.mainloop()
 
 # *****************************************
-# Wims Snake Main File
+# Shadows Snake Main File
 # *****************************************

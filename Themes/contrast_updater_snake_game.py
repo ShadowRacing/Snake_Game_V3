@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Contrast Updating File
+# Shadows Snake Contrast Updating File
 # *****************************************
 
 #Importing the custom tkinter module
@@ -41,5 +41,5 @@ class UpdateContrast:
             self.config.write(configfile)
 
 # *****************************************
-# Wims Snake Contrast Updating File
+# Shadows Snake Contrast Updating File
 # *****************************************

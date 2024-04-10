@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Theme Updater File
+# Shadows Snake Theme Updater File
 # *****************************************
 
 
@@ -67,5 +67,5 @@ class ThemeUpdater:
         self.logfile.log_game_event(f"Updated the config.ini of theme")
 
 # *****************************************
-# Wims Snake Theme Updater File
+# Shadows Snake Theme Updater File
 # *****************************************

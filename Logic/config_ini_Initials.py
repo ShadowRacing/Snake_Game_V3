@@ -18,8 +18,6 @@ class ConfigIni:
         self.set_endless_snake_settings()
         self.set_leveling_snake_values()
         self.set_leveling_snake_settings()
-        self.set_multiplayer_snake_values()
-        self.set_multiplayer_snake_settings()
     
     def set_settings_initials(self):
         try:
@@ -177,64 +175,6 @@ class ConfigIni:
                 self.config.set('Leveling_Snake_Values', 'levels_to_increase_xp', '10')
             if not self.config.has_option('Leveling_Snake_Values', 'xp_increase_amount'):
                 self.config.set('Leveling_Snake_Values', 'xp_increase_amount', '50')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
-        except:
-            traceback.print_exc()
-
-    def set_multiplayer_snake_settings(self):
-        try:
-            if not self.config.has_section('Multiplayer_Snake_Settings'):
-                self.config.add_section('Multiplayer_Snake_Settings')
-            if not self.config.has_option('Multiplayer_Snake_Settings', 'state'):
-                self.config.set('Multiplayer_Snake_Settings', 'state', 'start_game')
-            with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
-        except:
-            traceback.print_exc()
-
-    def set_multiplayer_snake_values(self):
-        try:
-            if not self.config.has_section('Multiplayer_Snake_Values'):
-                self.config.add_section('Multiplayer_Snake_Values')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'score'):
-                self.config.set('Multiplayer_Snake_Values', 'score', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'high_score'):
-                self.config.set('Multiplayer_Snake_Values', 'high_score', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'special_score'):
-                self.config.set('Multiplayer_Snake_Values', 'special_score', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'special_score_high_score'):
-                self.config.set('Multiplayer_Snake_Values', 'special_score_high_score', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'snake_length'):
-                self.config.set('Multiplayer_Snake_Values', 'snake_length', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'snake_length_high_score'):
-                self.config.set('Multiplayer_Snake_Values', 'snake_length_high_score', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'time_scpre'):
-                self.config.set('Multiplayer_Snake_Values', 'time_score', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'high_score_time'):
-                self.config.set('Multiplayer_Snake_Values', 'high_score_time', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'shorten_score'):
-                self.config.set('Multiplayer_Snake_Values', 'shorten_score', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'shorten_snake_high_score'):
-                self.config.set('Multiplayer_Snake_Values', 'shorten_snake_high_score', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'next_special_food_score'):
-                self.config.set('Multiplayer_Snake_Values', 'next_special_food_score', '50')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'next_shorten_food_score'):
-                self.config.set('Multiplayer_Snake_Values', 'next_shorten_food_score', '100')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'level'):
-                self.config.set('Multiplayer_Snake_Values', 'level', '1')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'level_high_score'):
-                self.config.set('Multiplayer_Snake_Values', 'level_high_score', '1')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'xp'):
-                self.config.set('Multiplayer_Snake_Values', 'xp', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'xp_high_score'):
-                self.config.set('Multiplayer_Snake_Values', 'xp_high_score', '0')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'initial_xp_needed'):
-                self.config.set('Multiplayer_Snake_Values', 'initial_xp_needed', '100')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'levels_to_increase_xp'):
-                self.config.set('Multiplayer_Snake_Values', 'levels_to_increase_xp', '10')
-            if not self.config.has_option('Multiplayer_Snake_Values', 'xp_increase_amount'):
-                self.config.set('Multiplayer_Snake_Values', 'xp_increase_amount', '50')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except:

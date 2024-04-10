@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Patchnotes File
+# Shadows Snake Patchnotes File
 # *****************************************
 
 # Import the json module
@@ -44,5 +44,5 @@ except:
 
 
 # *****************************************
-# Wims Snake Patchnotes File
+# Shadows Snake Patchnotes File
 # *****************************************

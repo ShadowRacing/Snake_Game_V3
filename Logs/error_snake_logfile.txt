@@ -16148,7 +16148,7 @@ Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 187, in open_info
     self.start_game("info")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 240, in start_game
-    self.info_canvas.create_text(f"{window_width}x{window_height}+{x}+{y}", screen_width, screen_height, text="Wim's Snake Game", font=("Helvetica", 50), fill="white")
+    self.info_canvas.create_text(f"{window_width}x{window_height}+{x}+{y}", screen_width, screen_height, text="Shadows Snake Game", font=("Helvetica", 50), fill="white")
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2866, in create_text
     return self._create('text', args, kw)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -16244,3 +16244,31 @@ _tkinter.TclError: bad screen distance "1x1+1279+719"
 
 
 [2024-04-09 20:30:07] Started the Error Log File
+[2024-04-10 18:42:40] 
+
+
+[2024-04-10 18:42:40] Started the Error Log File
+[2024-04-10 18:43:51] 
+
+
+[2024-04-10 18:43:51] Started the Error Log File
+[2024-04-10 18:49:36] 
+
+
+[2024-04-10 18:49:36] Started the Error Log File
+[2024-04-10 18:55:36] 
+
+
+[2024-04-10 18:55:36] Started the Error Log File
+[2024-04-10 18:56:30] 
+
+
+[2024-04-10 18:56:30] Started the Error Log File
+[2024-04-10 18:57:13] 
+
+
+[2024-04-10 18:57:13] Started the Error Log File
+[2024-04-10 18:57:26] 
+
+
+[2024-04-10 18:57:26] Started the Error Log File

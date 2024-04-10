@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Game Snake Classic Game File
+# Shadows Snake Game Snake Classic Game File
 # *****************************************
 
 import customtkinter as ctk, time, configparser, traceback
@@ -381,5 +381,5 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.snake_canvas.unbind('<Escape>')
 
 # *****************************************
-# Wims Snake Game Snake Classic Game File
+# Shadows Snake Game Snake Classic Game File
 # *****************************************

@@ -1,5 +1,5 @@
 # ************************************
-# Wims Snake Screen Size File
+# Shadows Snake Screen Size File
 # ************************************
 
 class Screen_size:
@@ -74,5 +74,5 @@ class Screen_size:
             self.config.write(configfile)
         self.logfile.log_game_event(f"Updated the config.ini")
 # ************************************
-# Wims Snake Screen Size File
+# Shadows Snake Screen Size File
 # ************************************

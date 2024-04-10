@@ -389,5 +389,5 @@ class MultiPlayer(ctk.CTkCanvas):
     
 
 # *****************************************
-# Wims Snake Game Snake Leveling Game File
+# Shadows Snake Game Snake Leveling Game File
 # *****************************************

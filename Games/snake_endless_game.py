@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Game Snake Endless Game File
+# Shadows Snake Game Snake Endless Game File
 # *****************************************
 
 import customtkinter as ctk, time, configparser, traceback, random
@@ -595,5 +595,5 @@ class Snake_endless(ctk.CTkCanvas):
             traceback.print_exc()
 
 # *****************************************
-# Wims Snake Game Snake Endless Game File
+# Shadows Snake Game Snake Endless Game File
 # *****************************************

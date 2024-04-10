@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Game key logic File
+# Shadows Snake Game key logic File
 # *****************************************
 
 

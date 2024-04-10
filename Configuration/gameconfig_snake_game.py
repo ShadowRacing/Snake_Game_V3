@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Game Config File
+# Shadows Snake Game Config File
 # *****************************************
 import configparser, traceback
 from os import path
@@ -220,27 +220,11 @@ class GameConfig:
                 self.DIRECTIONOFFSNAKE = "down"
                 self.logfile.log_game_event("Game mode: snake_leveling")
             
-            elif game_mode == "snake_multiplayer":
-                self.GAME_WIDTH = 400
-                self.GAME_HEIGHT = 400
-                self.SPEED = self.snake_speed
-                self.CELL_SIZE = 20
-                self.SNAKE_LENGTH = 5
-                self.SNAKE_COLOR = self.snake_color
-                self.SNAKE_OUTLINE = 'White'
-                self.FOOD_COLOR = 'Red'
-                self.SPECIAL_FOOD_COLOR = 'Purple'
-                self.BACKGROUND_COLOR = 'Black'
-                self.HIGHLIGHTTHICKNESS = 5
-                self.HIGHLIGHTBACKGROUND = 'Black'
-                self.DIRECTIONOFFSNAKE = "down"
-                self.logfile.log_game_event("Game mode: snake_multiplayer")
-
         except:
             traceback.print_exc()
 
             
 
 # *****************************************
-# Wims Snake Game Config File
+# Shadows Snake Game Config File
 # *****************************************

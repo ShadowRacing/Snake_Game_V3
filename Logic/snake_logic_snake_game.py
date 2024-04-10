@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Game Snake Logic File
+# Shadows Snake Game Snake Logic File
 # *****************************************
 
 import traceback
@@ -39,5 +39,5 @@ class Snake:
     
 
 # *****************************************
-# Wims Snake Game Snake Logic File
+# Shadows Snake Game Snake Logic File
 # *****************************************

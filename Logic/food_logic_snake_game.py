@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Food Logic File
+# Shadows Snake Food Logic File
 # *****************************************
 
 #Importing the required modules
@@ -206,5 +206,5 @@ class LevelingFood:
 
 
 # *****************************************
-# Wims Snake Food Logic File
+# Shadows Snake Food Logic File
 # *****************************************

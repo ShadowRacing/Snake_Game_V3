@@ -1,5 +1,5 @@
 # *****************************************
-# Wims Snake Game Snake Leveling Game File
+# Shadows Snake Game Snake Leveling Game File
 # *****************************************
 
 import customtkinter as ctk, time, configparser, traceback
@@ -444,5 +444,5 @@ class Snake_Leveling(ctk.CTkCanvas):
         # Update labels with current level, XP needed, and XP needed for next level
 
 # *****************************************
-# Wims Snake Game Snake Leveling Game File
+# Shadows Snake Game Snake Leveling Game File
 # *****************************************

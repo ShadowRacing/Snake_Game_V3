@@ -60,23 +60,9 @@ class GameConfig:
 
         try:
             self.game_size = self.config.get('Settings', 'game_size', fallback='500x500')
-            if self.game_size in ["100x100", "200x200", "300x300", "400x400", "500x500", "600x600", "700x700", "800x800","900x900", "1000x1000"]:
-                if self.game_size == "100x100":
-                    self.game_width = 100
-                    self.game_height = 100
-                elif self.game_size == "200x200":
-                    self.game_width = 200
-                    self.game_height = 200
-                elif self.game_size == "300x300":
-                    self.game_width = 300
-                    self.game_height = 300
-                elif self.game_size == "400x400":
-                    self.game_width = 400
-                    self.game_height = 400
-                elif self.game_size == "500x500":
-                    self.game_width = 500
-                    self.game_height = 500
-                elif self.game_size == "600x600":
+            if self.game_size in ["600x600", "700x700", "800x800", "900x900", "1000x1000", 
+                                       "1100x1100", "1200x1200", "1300x1300","1400x1400", "1500x1500"]:
+                if self.game_size == "600x600":
                     self.game_width = 600
                     self.game_height = 600
                 elif self.game_size == "700x700":
@@ -91,6 +77,21 @@ class GameConfig:
                 elif self.game_size == "1000x1000":
                     self.game_width = 1000
                     self.game_height = 1000
+                elif self.game_size == "1100x1100":
+                    self.game_width = 1100
+                    self.game_height = 1100
+                elif self.game_size == "1200x1200":
+                    self.game_width = 1200
+                    self.game_height = 1200
+                elif self.game_size == "1300x1300":
+                    self.game_width = 1300
+                    self.game_height = 1300
+                elif self.game_size == "1400x1400":
+                    self.game_width = 1400
+                    self.game_height = 1400
+                elif self.game_size == "1500x1500":
+                    self.game_width = 1500
+                    self.game_height = 1500
         except:
             traceback.print_exc()
 

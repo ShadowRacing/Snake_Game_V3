@@ -217,7 +217,7 @@ class SnakeGameApp:
         elif game_type == "info":
             self.info_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.info_canvas
-            self.root.update_idletasks()  # update canvas before getting its dimensions
+            self.info_canvas.update_idletasks()  # update canvas before getting its dimensions
             canvas_width = self.info_canvas.winfo_width() // 2 + 80
             canvas_height = self.info_canvas.winfo_height() // 2 - 50
             self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Shadow's Snake Game", font=("Helvetica", 50), fill="white")
@@ -227,7 +227,6 @@ class SnakeGameApp:
             self.settings_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.settings_canvas
         
-
         # Initializing the button panel and label panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.logfile)

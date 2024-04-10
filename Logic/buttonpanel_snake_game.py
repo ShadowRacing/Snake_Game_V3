@@ -579,8 +579,8 @@ class OptionButtonPanel:
 
             self.game_size_config = self.config.get('Settings', 'game_size', fallback='Default')
             self.create_option_button(self.game_size_callback,
-                                      ["100x100", "200x200", "300x300", "400x400", "500x500", 
-                                       "600x600", "700x700", "800x800","900x900", "1000x1000"],
+                                      ["600x600", "700x700", "800x800", "900x900", "1000x1000", 
+                                       "1100x1100", "1200x1200", "1300x1300","1400x1400", "1500x1500"],
                                       self.game_size_config, 400, 200)
           
 

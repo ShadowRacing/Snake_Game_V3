@@ -281,7 +281,7 @@ class SettingsOptionButtonLabels:
                                                          width=160,
                                                          height=30,
                                                          corner_radius=6,
-                                                         text="Default:500x500", 
+                                                         text="Default:600x600", 
                                                          font=FONT_LIST[11],
                                                          anchor='w'
                                                          )

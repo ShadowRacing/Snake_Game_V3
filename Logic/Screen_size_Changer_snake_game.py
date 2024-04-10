@@ -2,6 +2,7 @@
 # Shadows Snake Screen Size File
 # ************************************
 
+
 class Screen_size:
     # The constructor initializes the logger, the root window, the screen size variable, the configuration parser, and the screen size.
     def __init__(self, root, logfile, screen_size_var, config, screen_size):
@@ -13,14 +14,12 @@ class Screen_size:
 
     # The change_screen_size method changes the screen size based on the selected value.
     
-
     def change_screen_size(self, selected_value):
         self.screen_size = selected_value
         self.root.attributes('-fullscreen', False)
         screen_sizes = {
             "Fullscreen": self.set_fullscreen_size,
             "Default": lambda: self.set_custom_size(1200, 800),
-            "600x800": lambda: self.set_custom_size(600, 800),
             "1600x900": lambda: self.set_custom_size(1600, 900),
             "1800x1080": lambda: self.set_custom_size(1800, 1080),
             "1800x1200": lambda: self.set_custom_size(1800, 1200),
@@ -36,7 +35,6 @@ class Screen_size:
             self.update_config(selected_value)
         else:
             self.logfile.log_game_event(f"Invalid screen size: {selected_value}")
-
 
     # The set_fullscreen_size method sets the screen size for fullscreen mode.
     def set_fullscreen_size(self):
@@ -73,6 +71,8 @@ class Screen_size:
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
         self.logfile.log_game_event(f"Updated the config.ini")
+
+
 # ************************************
 # Shadows Snake Screen Size File
 # ************************************

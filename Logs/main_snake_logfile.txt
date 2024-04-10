@@ -21689,3 +21689,691 @@ Game size changed2
 
 
 
+[2024-04-10 19:06:16] Started the app
+[2024-04-10 19:06:16] Started the GameApp Class
+[2024-04-10 19:06:16] Game mode: initial config
+[2024-04-10 19:06:16] Dark-Blue
+[2024-04-10 19:06:16] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:06:16] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:06:16] Contrast mode set to dark
+[2024-04-10 19:06:16] Reset snake length
+[2024-04-10 19:06:16] 600x600
+[2024-04-10 19:06:16] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:06:16] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:06:16] start_screen method called
+[2024-04-10 19:06:18] Game mode: classic_snake
+[2024-04-10 19:06:18] start_game
+[2024-04-10 19:06:18] Reset snake length
+[2024-04-10 19:06:18] Game mode: classic_snake
+[2024-04-10 19:06:18] Game state: start_game
+[2024-04-10 19:06:18] Game focused
+[2024-04-10 19:06:18] 600x600
+[2024-04-10 19:06:18] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:06:18] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:03:59] Started the app
+[2024-04-10 19:03:59] Started the GameApp Class
+[2024-04-10 19:03:59] Game mode: initial config
+[2024-04-10 19:03:59] Dark-Blue
+[2024-04-10 19:03:59] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:03:59] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:03:59] Contrast mode set to dark
+[2024-04-10 19:03:59] Reset snake length
+[2024-04-10 19:03:59] 600x600
+[2024-04-10 19:03:59] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:03:59] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:03:59] start_screen method called
+[2024-04-10 19:04:00] Game mode: classic_snake
+[2024-04-10 19:04:00] start_game
+[2024-04-10 19:04:00] Reset snake length
+[2024-04-10 19:04:00] Game mode: classic_snake
+[2024-04-10 19:04:00] Game state: start_game
+[2024-04-10 19:04:00] Game focused
+[2024-04-10 19:04:00] 600x600
+[2024-04-10 19:04:00] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:04:00] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:04:02] 600x600
+[2024-04-10 19:04:02] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:04:02] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:04:37] Game mode: snake_endless
+[2024-04-10 19:04:37] start_game
+Width: 600
+Height: 600
+[2024-04-10 19:04:37] Reset snake length
+[2024-04-10 19:04:37] Game mode: snake_endless
+[2024-04-10 19:04:37] Game state: start_game
+[2024-04-10 19:04:37] Game focused
+[2024-04-10 19:04:37] 600x600
+[2024-04-10 19:04:37] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:04:37] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:07:16] Started the app
+[2024-04-10 19:07:16] Started the GameApp Class
+[2024-04-10 19:07:16] Game mode: initial config
+[2024-04-10 19:07:16] Dark-Blue
+[2024-04-10 19:07:16] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:07:16] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:07:16] Contrast mode set to dark
+[2024-04-10 19:07:16] Reset snake length
+[2024-04-10 19:07:16] 600x600
+[2024-04-10 19:07:16] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:07:16] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:07:16] start_screen method called
+[2024-04-10 19:07:18] Game mode: classic_snake
+[2024-04-10 19:07:18] start_game
+[2024-04-10 19:07:18] Reset snake length
+[2024-04-10 19:07:18] Game mode: classic_snake
+[2024-04-10 19:07:18] Game state: start_game
+[2024-04-10 19:07:18] Game focused
+[2024-04-10 19:07:18] 600x600
+[2024-04-10 19:07:18] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:07:18] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:07:33] Game state: game
+[2024-04-10 19:07:33] Food ID:
+[2024-04-10 19:07:33] 91e0f3c3-ca77-459f-b83c-f56b249b1ba6
+[2024-04-10 19:07:33] {'91e0f3c3-ca77-459f-b83c-f56b249b1ba6': {'x': 100, 'y': 20, 'tag': 'food91e0f3c3-ca77-459f-b83c-f56b249b1ba6', 'oval_id': 7}}
+[2024-04-10 19:07:33] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-10 19:07:33] 0
+[2024-04-10 19:07:33] 0
+[2024-04-10 19:07:33] 0
+[2024-04-10 19:07:33] 0
+[2024-04-10 19:07:34] 0
+[2024-04-10 19:07:34] 0
+[2024-04-10 19:07:34] 0
+[2024-04-10 19:07:34] 0
+[2024-04-10 19:07:34] 0
+[2024-04-10 19:07:34] 0
+[2024-04-10 19:07:34] 0
+[2024-04-10 19:07:34] 1
+[2024-04-10 19:07:34] 1
+[2024-04-10 19:07:34] 1
+[2024-04-10 19:07:34] 1
+[2024-04-10 19:07:35] 1
+[2024-04-10 19:07:35] 1
+[2024-04-10 19:07:35] 1
+[2024-04-10 19:07:35] 1
+[2024-04-10 19:07:35] 1
+[2024-04-10 19:07:35] 1
+[2024-04-10 19:07:35] 1
+[2024-04-10 19:07:35] 2
+[2024-04-10 19:07:35] 2
+[2024-04-10 19:07:35] 2
+[2024-04-10 19:07:35] Food ID:
+[2024-04-10 19:07:35] 6c99b346-86a4-4b42-a874-603fe47d12a4
+[2024-04-10 19:07:35] {'6c99b346-86a4-4b42-a874-603fe47d12a4': {'x': 260, 'y': 20, 'tag': 'food6c99b346-86a4-4b42-a874-603fe47d12a4', 'oval_id': 32}}
+[2024-04-10 19:07:35] 2
+[2024-04-10 19:07:36] 2
+[2024-04-10 19:07:36] 2
+[2024-04-10 19:07:36] 2
+[2024-04-10 19:07:36] 2
+[2024-04-10 19:07:36] 2
+[2024-04-10 19:07:36] 2
+[2024-04-10 19:07:36] 2
+[2024-04-10 19:07:36] 3
+[2024-04-10 19:07:36] 3
+[2024-04-10 19:07:36] 3
+[2024-04-10 19:07:36] 3
+[2024-04-10 19:07:37] 3
+[2024-04-10 19:07:37] 3
+[2024-04-10 19:07:37] 3
+[2024-04-10 19:07:37] 3
+[2024-04-10 19:07:37] Food ID:
+[2024-04-10 19:07:37] 277f1d47-4048-49f7-af1b-658394e58ad0
+[2024-04-10 19:07:37] {'277f1d47-4048-49f7-af1b-658394e58ad0': {'x': 80, 'y': 200, 'tag': 'food277f1d47-4048-49f7-af1b-658394e58ad0', 'oval_id': 49}}
+[2024-04-10 19:07:37] 3
+[2024-04-10 19:07:37] 3
+[2024-04-10 19:07:37] 4
+[2024-04-10 19:07:37] 4
+[2024-04-10 19:07:37] 4
+[2024-04-10 19:07:37] 4
+[2024-04-10 19:07:38] 4
+[2024-04-10 19:07:38] 4
+[2024-04-10 19:07:38] 4
+[2024-04-10 19:07:38] 4
+[2024-04-10 19:07:38] 4
+[2024-04-10 19:07:38] 4
+[2024-04-10 19:07:38] 4
+[2024-04-10 19:07:38] 5
+[2024-04-10 19:07:38] 5
+[2024-04-10 19:07:38] 5
+[2024-04-10 19:07:38] 5
+[2024-04-10 19:07:39] 5
+[2024-04-10 19:07:39] 5
+[2024-04-10 19:07:39] 5
+[2024-04-10 19:07:39] 5
+[2024-04-10 19:07:39] 5
+[2024-04-10 19:07:39] 5
+[2024-04-10 19:07:39] 5
+[2024-04-10 19:07:39] Food ID:
+[2024-04-10 19:07:39] 97281c59-8a32-41d4-b69e-a986468c529e
+[2024-04-10 19:07:39] {'97281c59-8a32-41d4-b69e-a986468c529e': {'x': 240, 'y': 360, 'tag': 'food97281c59-8a32-41d4-b69e-a986468c529e', 'oval_id': 74}}
+[2024-04-10 19:07:39] 6
+[2024-04-10 19:07:39] 6
+[2024-04-10 19:07:39] 6
+[2024-04-10 19:07:39] 6
+[2024-04-10 19:07:40] 6
+[2024-04-10 19:07:40] 6
+[2024-04-10 19:07:40] 6
+[2024-04-10 19:07:40] 6
+[2024-04-10 19:07:40] 6
+[2024-04-10 19:07:40] 6
+[2024-04-10 19:07:40] 7
+[2024-04-10 19:07:40] 7
+[2024-04-10 19:07:40] 7
+[2024-04-10 19:07:40] 7
+[2024-04-10 19:07:40] 7
+[2024-04-10 19:07:41] 7
+[2024-04-10 19:07:41] Food ID:
+[2024-04-10 19:07:41] 711d15af-2214-4af5-9f9e-f327d9971a03
+[2024-04-10 19:07:41] {'711d15af-2214-4af5-9f9e-f327d9971a03': {'x': 340, 'y': 0, 'tag': 'food711d15af-2214-4af5-9f9e-f327d9971a03', 'oval_id': 91}}
+[2024-04-10 19:07:41] 7
+[2024-04-10 19:07:41] 7
+[2024-04-10 19:07:41] 7
+[2024-04-10 19:07:41] 7
+[2024-04-10 19:07:41] 7
+[2024-04-10 19:07:41] 8
+[2024-04-10 19:07:41] 8
+[2024-04-10 19:07:41] 8
+[2024-04-10 19:07:41] 8
+[2024-04-10 19:07:42] 8
+[2024-04-10 19:07:42] 8
+[2024-04-10 19:07:42] 8
+[2024-04-10 19:07:42] 8
+[2024-04-10 19:07:42] snake has a collision
+[2024-04-10 19:07:42] Game state: game_over
+[2024-04-10 19:07:42] Snake coordinates after reset: [(-20, 340), (0, 340), (20, 340), (40, 340), (60, 340), (80, 340), (100, 340), (120, 340), (140, 340)]
+[2024-04-10 19:07:42] High score: 21
+[2024-04-10 19:07:42] Score: 4
+[2024-04-10 19:07:45] Highscore time reset to 0
+[2024-04-10 19:07:45] Highscore time reset to 0
+[2024-04-10 19:07:46] Highscore reset to 0
+[2024-04-10 19:07:46] Game restarted
+[2024-04-10 19:07:46] Game state: game_over
+[2024-04-10 19:07:46] Reset snake length
+[2024-04-10 19:07:46] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-10 19:07:46] Game state: game
+[2024-04-10 19:07:46] Food ID:
+[2024-04-10 19:07:46] 39d57772-3c5d-478f-be1b-30020af2b185
+[2024-04-10 19:07:46] {'39d57772-3c5d-478f-be1b-30020af2b185': {'x': 240, 'y': 360, 'tag': 'food39d57772-3c5d-478f-be1b-30020af2b185', 'oval_id': 113}}
+[2024-04-10 19:07:46] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-10 19:07:46] 0
+[2024-04-10 19:07:46] 0
+[2024-04-10 19:07:47] 0
+[2024-04-10 19:07:47] 0
+[2024-04-10 19:07:47] 0
+[2024-04-10 19:07:47] 0
+[2024-04-10 19:07:47] 0
+[2024-04-10 19:07:47] 0
+[2024-04-10 19:07:47] 0
+[2024-04-10 19:07:47] 0
+[2024-04-10 19:07:47] 0
+[2024-04-10 19:07:47] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 1
+[2024-04-10 19:07:48] 2
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] Food ID:
+[2024-04-10 19:07:49] 36f2f117-d49f-40ea-b12e-67a1a4d7ae2a
+[2024-04-10 19:07:49] {'36f2f117-d49f-40ea-b12e-67a1a4d7ae2a': {'x': 260, 'y': 100, 'tag': 'food36f2f117-d49f-40ea-b12e-67a1a4d7ae2a', 'oval_id': 144}}
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] 2
+[2024-04-10 19:07:49] 3
+[2024-04-10 19:07:50] 3
+[2024-04-10 19:07:50] 3
+[2024-04-10 19:07:50] 3
+[2024-04-10 19:07:50] 3
+[2024-04-10 19:07:50] 3
+[2024-04-10 19:07:50] 3
+[2024-04-10 19:07:50] 3
+[2024-04-10 19:07:50] 3
+[2024-04-10 19:07:50] 3
+[2024-04-10 19:07:50] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 4
+[2024-04-10 19:07:51] 5
+[2024-04-10 19:07:51] Food ID:
+[2024-04-10 19:07:51] a5e60405-1a8a-4504-8254-014486dcbc8e
+[2024-04-10 19:07:51] {'a5e60405-1a8a-4504-8254-014486dcbc8e': {'x': 380, 'y': 280, 'tag': 'fooda5e60405-1a8a-4504-8254-014486dcbc8e', 'oval_id': 169}}
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 5
+[2024-04-10 19:07:52] 6
+[2024-04-10 19:07:53] 6
+[2024-04-10 19:07:53] 6
+[2024-04-10 19:07:53] 6
+[2024-04-10 19:07:53] 6
+[2024-04-10 19:07:53] 6
+[2024-04-10 19:07:53] 6
+[2024-04-10 19:07:53] 6
+[2024-04-10 19:07:53] 6
+[2024-04-10 19:07:53] 6
+[2024-04-10 19:07:53] 7
+[2024-04-10 19:07:53] 7
+[2024-04-10 19:07:54] 7
+[2024-04-10 19:07:54] Food ID:
+[2024-04-10 19:07:54] 388082bb-d536-4b01-97fe-d6f8c425e8d7
+[2024-04-10 19:07:54] {'388082bb-d536-4b01-97fe-d6f8c425e8d7': {'x': 300, 'y': 80, 'tag': 'food388082bb-d536-4b01-97fe-d6f8c425e8d7', 'oval_id': 193}}
+[2024-04-10 19:07:54] 7
+[2024-04-10 19:07:54] 7
+[2024-04-10 19:07:54] 7
+[2024-04-10 19:07:54] 7
+[2024-04-10 19:07:54] 7
+[2024-04-10 19:07:54] 7
+[2024-04-10 19:07:54] 7
+[2024-04-10 19:07:54] 7
+[2024-04-10 19:07:54] 8
+[2024-04-10 19:07:55] 8
+[2024-04-10 19:07:55] 8
+[2024-04-10 19:07:55] 8
+[2024-04-10 19:07:55] 8
+[2024-04-10 19:07:55] 8
+[2024-04-10 19:07:55] 8
+[2024-04-10 19:07:55] snake has a collision
+[2024-04-10 19:07:55] Game state: game_over
+[2024-04-10 19:07:55] Snake coordinates after reset: [(380, 600), (380, 580), (380, 560), (380, 540), (380, 520), (380, 500), (380, 480), (380, 460)]
+[2024-04-10 19:07:55] High score: 0
+[2024-04-10 19:07:55] Score: 3
+[2024-04-10 19:07:55] high_score_time updated to: 8
+[2024-04-10 19:07:55] snake_length_high_score updated to: 8
+[2024-04-10 19:08:01] Game mode: classic_snake
+[2024-04-10 19:08:01] start_game
+[2024-04-10 19:08:01] Reset snake length
+[2024-04-10 19:08:01] Game mode: classic_snake
+[2024-04-10 19:08:01] Game state: start_game
+[2024-04-10 19:08:01] Game focused
+[2024-04-10 19:08:01] 600x600
+[2024-04-10 19:08:01] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:08:01] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:08:03] Game mode: snake_endless
+[2024-04-10 19:08:03] start_game
+Width: 600
+Height: 600
+[2024-04-10 19:08:03] Reset snake length
+[2024-04-10 19:08:03] Game mode: snake_endless
+[2024-04-10 19:08:03] Game state: start_game
+[2024-04-10 19:08:03] Game focused
+[2024-04-10 19:08:03] 600x600
+[2024-04-10 19:08:03] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:08:03] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:08:04] Highscore reset to 0
+[2024-04-10 19:08:05] Highscore time reset to 0
+[2024-04-10 19:08:05] Highscore time reset to 0
+[2024-04-10 19:08:06] Highscore special reset to 0
+[2024-04-10 19:08:06] Highscore shorten snake reset to 0
+[2024-04-10 19:08:08] 600x600
+[2024-04-10 19:08:08] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:08:08] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:08:10] Game mode: snake_leveling
+[2024-04-10 19:08:10] start_game
+[2024-04-10 19:08:10] Reset snake length
+[2024-04-10 19:08:10] Game mode: snake_leveling
+[2024-04-10 19:08:10] Game state: start_game
+[2024-04-10 19:08:10] Game focused
+[2024-04-10 19:08:10] 600x600
+[2024-04-10 19:08:10] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:08:10] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:08:19] Highscore level reset to 0
+[2024-04-10 19:08:20] Highscore xp reset to 0
+[2024-04-10 19:08:20] Highscore shorten snake reset to 0
+[2024-04-10 19:08:21] Highscore special reset to 0
+[2024-04-10 19:08:21] Highscore time reset to 0
+[2024-04-10 19:08:21] Highscore time reset to 0
+[2024-04-10 19:08:22] Highscore reset to 0
+[2024-04-10 19:08:25] 600x600
+[2024-04-10 19:08:25] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:08:25] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:08:33] Closed the app
+
+
+
+
+[2024-04-10 19:19:37] Started the app
+[2024-04-10 19:19:37] Started the GameApp Class
+[2024-04-10 19:19:37] Game mode: initial config
+[2024-04-10 19:19:37] Dark-Blue
+[2024-04-10 19:19:37] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:19:37] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:19:37] Contrast mode set to dark
+[2024-04-10 19:19:37] Reset snake length
+[2024-04-10 19:19:37] 600x600
+[2024-04-10 19:19:37] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:19:37] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:19:37] start_screen method called
+[2024-04-10 19:19:39] 600x600
+[2024-04-10 19:19:39] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:19:39] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:19:42] Changing screen size to Fullscreen
+[2024-04-10 19:19:42] Updated the config.ini
+[2024-04-10 19:19:44] Setting custom size: 600x800
+[2024-04-10 19:19:44] Contrast mode set to dark
+[2024-04-10 19:19:44] Changing screen size to 600x800
+[2024-04-10 19:19:44] Updated the config.ini
+[2024-04-10 19:20:02] Closed the app
+
+
+
+
+[2024-04-10 19:20:10] Started the app
+[2024-04-10 19:20:10] Started the GameApp Class
+[2024-04-10 19:20:10] Game mode: initial config
+[2024-04-10 19:20:10] Dark-Blue
+[2024-04-10 19:20:10] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:20:10] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:20:10] Contrast mode set to dark
+[2024-04-10 19:20:10] Reset snake length
+[2024-04-10 19:20:10] 600x600
+[2024-04-10 19:20:10] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:20:10] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:20:10] start_screen method called
+[2024-04-10 19:20:53] Started the app
+[2024-04-10 19:20:53] Started the GameApp Class
+[2024-04-10 19:20:53] Game mode: initial config
+[2024-04-10 19:20:53] Dark-Blue
+[2024-04-10 19:20:53] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:20:53] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:20:53] Contrast mode set to dark
+[2024-04-10 19:20:53] Reset snake length
+[2024-04-10 19:20:53] 600x600
+[2024-04-10 19:20:53] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:20:53] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:20:53] start_screen method called
+[2024-04-10 19:20:55] 600x600
+[2024-04-10 19:20:55] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:20:55] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:20:56] Changing screen size to Fullscreen
+[2024-04-10 19:20:56] Updated the config.ini
+[2024-04-10 19:20:58] Setting custom size: 1800x1200
+[2024-04-10 19:20:58] Contrast mode set to dark
+[2024-04-10 19:20:58] Changing screen size to 1800x1200
+[2024-04-10 19:20:58] Updated the config.ini
+[2024-04-10 19:22:34] Started the app
+[2024-04-10 19:22:34] Started the GameApp Class
+[2024-04-10 19:22:34] Game mode: initial config
+[2024-04-10 19:22:34] Dark-Blue
+[2024-04-10 19:22:34] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:22:34] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:22:34] Contrast mode set to dark
+[2024-04-10 19:22:34] Reset snake length
+[2024-04-10 19:22:34] 600x600
+[2024-04-10 19:22:34] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:22:34] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:22:34] start_screen method called
+[2024-04-10 19:22:36] 600x600
+[2024-04-10 19:22:36] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:22:36] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:22:37] Changing screen size to Fullscreen
+[2024-04-10 19:22:37] Updated the config.ini
+[2024-04-10 19:22:39] Setting custom size: 1800x1200
+[2024-04-10 19:22:39] Contrast mode set to dark
+[2024-04-10 19:22:39] Changing screen size to 1800x1200
+[2024-04-10 19:22:39] Updated the config.ini
+[2024-04-10 19:22:43] Setting custom size: 1920x1080
+[2024-04-10 19:22:44] Contrast mode set to dark
+[2024-04-10 19:22:44] Changing screen size to 1920x1080
+[2024-04-10 19:22:44] Updated the config.ini
+[2024-04-10 19:32:55] Started the app
+[2024-04-10 19:32:55] Started the GameApp Class
+[2024-04-10 19:32:55] Game mode: initial config
+[2024-04-10 19:32:55] Dark-Blue
+[2024-04-10 19:32:55] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:32:55] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:32:55] Contrast mode set to dark
+[2024-04-10 19:32:55] Reset snake length
+[2024-04-10 19:32:55] 600x600
+[2024-04-10 19:32:55] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:32:55] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:32:55] start_screen method called
+[2024-04-10 19:32:59] 600x600
+[2024-04-10 19:32:59] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:32:59] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:33:01] Changing screen size to Fullscreen
+[2024-04-10 19:33:01] Updated the config.ini
+[2024-04-10 19:33:03] Setting custom size: 1200x800
+[2024-04-10 19:33:04] Contrast mode set to dark
+[2024-04-10 19:33:04] Changing screen size to Default
+[2024-04-10 19:33:04] Updated the config.ini
+[2024-04-10 19:33:11] Contrast mode set to dark
+[2024-04-10 19:33:13] Contrast mode set to dark
+[2024-04-10 19:33:53] Started the app
+[2024-04-10 19:33:53] Started the GameApp Class
+[2024-04-10 19:33:53] Game mode: initial config
+[2024-04-10 19:33:53] Dark-Blue
+[2024-04-10 19:33:53] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:33:53] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:33:53] Contrast mode set to dark
+[2024-04-10 19:33:53] Reset snake length
+[2024-04-10 19:33:53] 600x600
+[2024-04-10 19:33:53] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:33:53] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-10 19:33:53] start_screen method called
+[2024-04-10 19:33:57] 600x600
+[2024-04-10 19:33:57] Updated initial_game_size in config.ini to 600x600
+[2024-04-10 19:33:57] Current initial_game_size in config.ini: 600x600
+1
+1
+Game size changed
+Game size changed2
+[2024-04-10 19:34:03] Started the app
+[2024-04-10 19:34:03] Started the GameApp Class
+[2024-04-10 19:34:03] Game mode: initial config
+[2024-04-10 19:34:03] Dark-Blue
+[2024-04-10 19:34:03] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:34:03] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:34:03] Contrast mode set to dark
+[2024-04-10 19:34:03] Reset snake length
+[2024-04-10 19:34:03] 1500x1500
+[2024-04-10 19:34:03] Updated initial_game_size in config.ini to 1500x1500
+[2024-04-10 19:34:03] Current initial_game_size in config.ini: 1500x1500
+1
+1
+[2024-04-10 19:34:03] start_screen method called
+[2024-04-10 19:34:04] Game mode: classic_snake
+[2024-04-10 19:34:04] start_game
+[2024-04-10 19:34:04] Reset snake length
+[2024-04-10 19:34:04] Game mode: classic_snake
+[2024-04-10 19:34:04] Game state: start_game
+[2024-04-10 19:34:04] Game focused
+[2024-04-10 19:34:04] 1500x1500
+[2024-04-10 19:34:04] Updated initial_game_size in config.ini to 1500x1500
+[2024-04-10 19:34:04] Current initial_game_size in config.ini: 1500x1500
+1
+1
+[2024-04-10 19:34:08] 1500x1500
+[2024-04-10 19:34:08] Updated initial_game_size in config.ini to 1500x1500
+[2024-04-10 19:34:08] Current initial_game_size in config.ini: 1500x1500
+1
+1
+[2024-04-10 19:34:11] Setting custom size: 2560x1440
+[2024-04-10 19:34:11] Changing screen size to 2560x1440
+[2024-04-10 19:34:11] Updated the config.ini
+[2024-04-10 19:34:13] Game mode: classic_snake
+[2024-04-10 19:34:13] start_game
+[2024-04-10 19:34:13] Reset snake length
+[2024-04-10 19:34:13] Game mode: classic_snake
+[2024-04-10 19:34:13] Game state: start_game
+[2024-04-10 19:34:13] Game focused
+[2024-04-10 19:34:13] 1500x1500
+[2024-04-10 19:34:13] Updated initial_game_size in config.ini to 1500x1500
+[2024-04-10 19:34:13] Current initial_game_size in config.ini: 1500x1500
+1
+1
+[2024-04-10 19:34:25] 1500x1500
+[2024-04-10 19:34:25] Updated initial_game_size in config.ini to 1500x1500
+[2024-04-10 19:34:25] Current initial_game_size in config.ini: 1500x1500
+1
+1
+Game size changed
+Game size changed2
+[2024-04-10 19:34:32] Started the app
+[2024-04-10 19:34:32] Started the GameApp Class
+[2024-04-10 19:34:32] Game mode: initial config
+[2024-04-10 19:34:32] Dark-Blue
+[2024-04-10 19:34:32] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:34:32] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:34:32] Contrast mode set to dark
+[2024-04-10 19:34:32] Reset snake length
+[2024-04-10 19:34:32] 1300x1300
+[2024-04-10 19:34:32] Updated initial_game_size in config.ini to 1300x1300
+[2024-04-10 19:34:32] Current initial_game_size in config.ini: 1300x1300
+1
+1
+[2024-04-10 19:34:32] start_screen method called
+[2024-04-10 19:34:33] Game mode: classic_snake
+[2024-04-10 19:34:33] start_game
+[2024-04-10 19:34:33] Reset snake length
+[2024-04-10 19:34:33] Game mode: classic_snake
+[2024-04-10 19:34:33] Game state: start_game
+[2024-04-10 19:34:33] Game focused
+[2024-04-10 19:34:33] 1300x1300
+[2024-04-10 19:34:33] Updated initial_game_size in config.ini to 1300x1300
+[2024-04-10 19:34:33] Current initial_game_size in config.ini: 1300x1300
+1
+1
+[2024-04-10 19:34:36] 1300x1300
+[2024-04-10 19:34:36] Updated initial_game_size in config.ini to 1300x1300
+[2024-04-10 19:34:36] Current initial_game_size in config.ini: 1300x1300
+1
+1
+Game size changed
+Game size changed2
+[2024-04-10 19:34:40] Closed the app
+
+
+
+
+[2024-04-10 19:34:42] Started the app
+[2024-04-10 19:34:42] Started the GameApp Class
+[2024-04-10 19:34:42] Game mode: initial config
+[2024-04-10 19:34:42] Dark-Blue
+[2024-04-10 19:34:42] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:34:42] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:34:42] Contrast mode set to dark
+[2024-04-10 19:34:42] Reset snake length
+[2024-04-10 19:34:42] 1000x1000
+[2024-04-10 19:34:42] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-10 19:34:42] Current initial_game_size in config.ini: 1000x1000
+1
+1
+[2024-04-10 19:34:42] start_screen method called
+[2024-04-10 19:34:43] Game mode: classic_snake
+[2024-04-10 19:34:43] start_game
+[2024-04-10 19:34:43] Reset snake length
+[2024-04-10 19:34:43] Game mode: classic_snake
+[2024-04-10 19:34:43] Game state: start_game
+[2024-04-10 19:34:43] Game focused
+[2024-04-10 19:34:43] 1000x1000
+[2024-04-10 19:34:43] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-10 19:34:43] Current initial_game_size in config.ini: 1000x1000
+1
+1
+[2024-04-10 19:34:47] 1000x1000
+[2024-04-10 19:34:47] Updated initial_game_size in config.ini to 1000x1000
+[2024-04-10 19:34:47] Current initial_game_size in config.ini: 1000x1000
+1
+1
+Game size changed
+Game size changed2
+[2024-04-10 19:34:52] Started the app
+[2024-04-10 19:34:52] Started the GameApp Class
+[2024-04-10 19:34:52] Game mode: initial config
+[2024-04-10 19:34:52] Dark-Blue
+[2024-04-10 19:34:52] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-10 19:34:52] Current initial_theme in config.ini: Dark-Blue
+[2024-04-10 19:34:52] Contrast mode set to dark
+[2024-04-10 19:34:52] Reset snake length
+[2024-04-10 19:34:52] 1200x1200
+[2024-04-10 19:34:52] Updated initial_game_size in config.ini to 1200x1200
+[2024-04-10 19:34:52] Current initial_game_size in config.ini: 1200x1200
+1
+1
+[2024-04-10 19:34:52] start_screen method called
+[2024-04-10 19:34:54] 1200x1200
+[2024-04-10 19:34:54] Updated initial_game_size in config.ini to 1200x1200
+[2024-04-10 19:34:54] Current initial_game_size in config.ini: 1200x1200
+1
+1
+[2024-04-10 19:34:56] Game mode: classic_snake
+[2024-04-10 19:34:56] start_game
+[2024-04-10 19:34:56] Reset snake length
+[2024-04-10 19:34:56] Game mode: classic_snake
+[2024-04-10 19:34:56] Game state: start_game
+[2024-04-10 19:34:56] Game focused
+[2024-04-10 19:34:56] 1200x1200
+[2024-04-10 19:34:56] Updated initial_game_size in config.ini to 1200x1200
+[2024-04-10 19:34:56] Current initial_game_size in config.ini: 1200x1200
+1
+1

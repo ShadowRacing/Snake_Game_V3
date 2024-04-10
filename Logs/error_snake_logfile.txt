@@ -16294,3 +16294,73 @@ _tkinter.TclError: bad screen distance "1x1+1279+719"
 
 
 
+[2024-04-10 19:06:16] 
+
+
+[2024-04-10 19:06:16] Started the Error Log File
+[2024-04-10 19:03:59] 
+
+
+[2024-04-10 19:03:59] Started the Error Log File
+[2024-04-10 19:07:16] 
+
+
+[2024-04-10 19:07:16] Started the Error Log File
+[2024-04-10 19:08:33] No errors occurred
+[2024-04-10 19:08:33] Closed the Error Log File
+
+
+
+
+[2024-04-10 19:19:37] 
+
+
+[2024-04-10 19:19:37] Started the Error Log File
+[2024-04-10 19:20:02] No errors occurred
+[2024-04-10 19:20:02] Closed the Error Log File
+
+
+
+
+[2024-04-10 19:20:10] 
+
+
+[2024-04-10 19:20:10] Started the Error Log File
+[2024-04-10 19:20:53] 
+
+
+[2024-04-10 19:20:53] Started the Error Log File
+[2024-04-10 19:22:34] 
+
+
+[2024-04-10 19:22:34] Started the Error Log File
+[2024-04-10 19:32:55] 
+
+
+[2024-04-10 19:32:55] Started the Error Log File
+[2024-04-10 19:33:53] 
+
+
+[2024-04-10 19:33:53] Started the Error Log File
+[2024-04-10 19:34:03] 
+
+
+[2024-04-10 19:34:03] Started the Error Log File
+[2024-04-10 19:34:32] 
+
+
+[2024-04-10 19:34:32] Started the Error Log File
+[2024-04-10 19:34:40] No errors occurred
+[2024-04-10 19:34:40] Closed the Error Log File
+
+
+
+
+[2024-04-10 19:34:42] 
+
+
+[2024-04-10 19:34:42] Started the Error Log File
+[2024-04-10 19:34:52] 
+
+
+[2024-04-10 19:34:52] Started the Error Log File

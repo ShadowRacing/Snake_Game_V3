@@ -30,8 +30,8 @@ class Snake:
                 self.squares.append(square)
             
             self.logfile.log_game_event("Reset snake length")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def get_coordinates(self):
         return self.coordinates

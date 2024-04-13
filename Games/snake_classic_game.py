@@ -63,8 +63,8 @@ class Snake_Classic_Game(ctk.CTkCanvas):
 
         try:  
             self.config.set('Settings', 'game_mode', 'classic_snake')
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
         
         if not self.config.has_option('Classic_Snake_Values', 'score'):
             self.config.set('Classic_Snake_Values','score', '0')

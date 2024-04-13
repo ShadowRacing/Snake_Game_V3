@@ -19,16 +19,16 @@ class GameConfig:
         self.config = configparser.ConfigParser()
         try:
             self.config.read(self.config_path)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         try:
             if not self.config.has_option('Settings', 'snake_color'):
                 self.config.set('Settings','snake_color', 'Default')
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
         
         try:
             self.snake_speed = self.config.get('Settings', 'snake_speed', fallback='20')
@@ -53,8 +53,8 @@ class GameConfig:
                     self.SPEED = 90
                 elif self.snake_speed == '100':
                     self.SPEED = 100
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         self.config.read(self.config_path)
 
@@ -92,8 +92,8 @@ class GameConfig:
                 elif self.game_size == "1500x1500":
                     self.game_width = 1500
                     self.game_height = 1500
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         # Set the snake color from the configuration file
         try:
@@ -144,14 +144,14 @@ class GameConfig:
                 elif self.snake_color == 'MidnightPurple':
                     self.SNAKE_OUTLINE = "#000000"
                     self.snake_color = "#210F28"
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         # Set the game configuration
         try:
             self.set_configuration(game_mode)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     # Method to set the game configuration
     def set_configuration(self, game_mode):
@@ -221,8 +221,24 @@ class GameConfig:
                 self.DIRECTIONOFFSNAKE = "down"
                 self.logfile.log_game_event("Game mode: snake_leveling")
             
-        except:
-            traceback.print_exc()
+            elif game_mode == "snake_challange":
+                self.GAME_WIDTH = self.game_width
+                self.GAME_HEIGHT = self.game_height
+                self.SPEED = self.snake_speed
+                self.CELL_SIZE = 20
+                self.SNAKE_LENGTH = 5
+                self.SNAKE_COLOR = self.snake_color
+                self.SNAKE_OUTLINE = 'White'
+                self.FOOD_COLOR = 'Red'
+                self.SPECIAL_FOOD_COLOR = 'Purple'
+                self.BACKGROUND_COLOR = 'Black'
+                self.HIGHLIGHTTHICKNESS = 5
+                self.HIGHLIGHTBACKGROUND = 'Black'
+                self.DIRECTIONOFFSNAKE = "down"
+                self.logfile.log_game_event("Game mode: snake_challange")
+            
+        except Exception as e:
+            traceback.print_exc(e)
 
             
 

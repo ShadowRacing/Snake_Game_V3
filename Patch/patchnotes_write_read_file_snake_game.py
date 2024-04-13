@@ -30,15 +30,15 @@ filename = "patchnotes.json"
 try:
     with open(filename, "w") as file:
         json.dump(patchnotes, file)
-except: 
-    traceback.print_exc()
+except Exception as e:
+            traceback.print_exc(e)
 
 # Read the patchnotes from the JSON file
 try:
     with open(filename, "r") as file:
         patchnotes = json.load(file)
-except:
-    traceback.print_exc()
+except Exception as e:
+            traceback.print_exc(e)
 
 # Print the patchnotes
 

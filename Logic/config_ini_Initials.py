@@ -9,7 +9,7 @@ class ConfigIni:
         self.config = configparser.ConfigParser()
         self.config.read('config.ini')
         self.set_config()
-    
+
     def set_config(self):
         self.set_settings_initials()
         self.set_classic_snake_values()
@@ -18,7 +18,9 @@ class ConfigIni:
         self.set_endless_snake_settings()
         self.set_leveling_snake_values()
         self.set_leveling_snake_settings()
-    
+        self.set_challange_snake_values()
+        self.set_challange_snake_settings()
+
     def set_settings_initials(self):
         try:
             if not self.config.has_section('Settings'):
@@ -53,8 +55,8 @@ class ConfigIni:
                 self.config.set('Settings', 'game_size', '500x500') # 500x500 is default
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def set_classic_snake_values(self):
         try:
@@ -74,8 +76,8 @@ class ConfigIni:
                 self.config.set('Classic_Snake_Values', 'high_score_time', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def set_classic_snake_settings(self):
         try:
@@ -85,8 +87,8 @@ class ConfigIni:
                 self.config.set('Classic_Snake_Settings', 'state', 'start_game')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def set_endless_snake_values(self):
         try:
@@ -119,8 +121,8 @@ class ConfigIni:
 
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def set_endless_snake_settings(self):
         try:
@@ -130,8 +132,8 @@ class ConfigIni:
                 self.config.set('Endless_Snake_Settings', 'state', 'start_game')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def set_leveling_snake_values(self):
         try:
@@ -177,8 +179,8 @@ class ConfigIni:
                 self.config.set('Leveling_Snake_Values', 'xp_increase_amount', '50')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def set_leveling_snake_settings(self):
         try:
@@ -188,8 +190,67 @@ class ConfigIni:
                 self.config.set('Leveling_Snake_Settings', 'state', 'start_game')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
+
+    def set_challange_snake_values(self):
+        try:
+            if not self.config.has_section('Challange_Snake_Values'):
+                self.config.add_section('Challange_Snake_Values')
+            if not self.config.has_option('Challange_Snake_Values', 'score'):
+                self.config.set('Challange_Snake_Values', 'score', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'high_score'):
+                self.config.set('Challange_Snake_Values', 'high_score', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'special_score'):
+                self.config.set('Challange_Snake_Values', 'special_score', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'special_score_high_score'):
+                self.config.set('Challange_Snake_Values', 'special_score_high_score', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'snake_length'):
+                self.config.set('Challange_Snake_Values', 'snake_length', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'snake_length_high_score'):
+                self.config.set('Challange_Snake_Values', 'snake_length_high_score', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'time_scpre'):
+                self.config.set('Challange_Snake_Values', 'time_score', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'high_score_time'):
+                self.config.set('Challange_Snake_Values', 'high_score_time', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'shorten_score'):
+                self.config.set('Challange_Snake_Values', 'shorten_score', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'shorten_snake_high_score'):
+                self.config.set('Challange_Snake_Values', 'shorten_snake_high_score', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'next_special_food_score'):
+                self.config.set('Challange_Snake_Values', 'next_special_food_score', '50')
+            if not self.config.has_option('Challange_Snake_Values', 'next_shorten_food_score'):
+                self.config.set('Challange_Snake_Values', 'next_shorten_food_score', '100')
+            if not self.config.has_option('Challange_Snake_Values', 'level'):
+                self.config.set('Challange_Snake_Values', 'level', '1')
+            if not self.config.has_option('Challange_Snake_Values', 'level_high_score'):
+                self.config.set('Challange_Snake_Values', 'level_high_score', '1')
+            if not self.config.has_option('Challange_Snake_Values', 'xp'):
+                self.config.set('Challange_Snake_Values', 'xp', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'xp_high_score'):
+                self.config.set('Challange_Snake_Values', 'xp_high_score', '0')
+            if not self.config.has_option('Challange_Snake_Values', 'initial_xp_needed'):
+                self.config.set('Challange_Snake_Values', 'initial_xp_needed', '100')
+            if not self.config.has_option('Challange_Snake_Values', 'levels_to_increase_xp'):
+                self.config.set('Challange_Snake_Values', 'levels_to_increase_xp', '10')
+            if not self.config.has_option('Challange_Snake_Values', 'xp_increase_amount'):
+                self.config.set('Challange_Snake_Values', 'xp_increase_amount', '50')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        except Exception as e:
+            traceback.print_exc(e)
+
+    def set_challange_snake_settings(self):
+        try:
+            if not self.config.has_section('Challange_Snake_Settings'):
+                self.config.add_section('Challange_Snake_Settings')
+            if not self.config.has_option('Challange_Snake_Settings', 'state'):
+                self.config.set('Challange_Snake_Settings', 'state', 'start_game')
+            with open('config.ini', 'w') as configfile:
+                self.config.write(configfile)
+        except Exception as e:
+            traceback.print_exc(e)
+
 
 #****************************************************
 # Initializing the Config.ini file

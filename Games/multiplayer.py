@@ -59,8 +59,8 @@ class MultiPlayer(ctk.CTkCanvas):
 
         try:  
             self.config.set('Settings', 'game_mode', 'multiplayer')
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
                 
         # Start the game loop
         self.start_screen()

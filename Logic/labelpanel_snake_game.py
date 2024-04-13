@@ -34,8 +34,8 @@ class NameOffFrameLabelPanel:
             label_border_height = label_border.winfo_height()
             print(label_border_height)
             return label
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def create_label_canvas(self, label_type):
         if self.create_label_canvas_flag:
@@ -132,15 +132,15 @@ class SettingsOptionButtonLabels:
 
             current_theme = config.get('Settings', 'theme')
             initial_theme = config.get('Settings', 'initial_theme')
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         # Check if the 'label_needed' option exists, if not, add it
         try:    
             if not config.has_option('Settings', 'label_needed_theme'):
                 config.set('Settings', 'label_needed_theme', 'False')
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         try:
             if current_theme != initial_theme:
@@ -164,8 +164,8 @@ class SettingsOptionButtonLabels:
                 config.set('Settings', 'label_needed_theme', 'False')
                 with open('config.ini', 'w') as configfile:
                     config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def update_initial_game_size(self):
         config_dir = path.dirname(__file__)
@@ -198,15 +198,15 @@ class SettingsOptionButtonLabels:
 
             current_game_size = config.get('Settings', 'game_size')
             initial_game_size = config.get('Settings', 'initial_game_size')
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         # Check if the 'label_needed' option exists, if not, add it
         try:    
             if not config.has_option('Settings', 'label_needed_game_size'):
                 config.set('Settings', 'label_needed_game_size', 'False')
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         try:
             if current_game_size != initial_game_size:
@@ -231,8 +231,8 @@ class SettingsOptionButtonLabels:
                 config.set('Settings', 'label_needed_game_size', 'False')
                 with open('config.ini', 'w') as configfile:
                     config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def create_high_score_label(self):
         self.high_score_label = ctk.CTkLabel(self.settings_canvas, 
@@ -331,6 +331,9 @@ class GameLabelsPanel:
         self.level_score_label = None
         self.level_high_score_label = None
 
+        self.challange_score_label = None
+        self.challange_high_score_label = None
+
         self.classic_score_label_flag = False
         self.classic_time_label_flag = False
         self.classic_high_score_label_flag = False
@@ -348,6 +351,9 @@ class GameLabelsPanel:
         self.leveling_high_score_label_flag = False
         self.leveling_high_score_time_label_flag = False
 
+        self.challange_score_label_flag = False
+        self.challange_high_score_label_flag = False
+
         self.leveling_system = LevelingSystem()
 
         try:
@@ -355,8 +361,8 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         #Get the score from the config file
         try:
@@ -371,10 +377,11 @@ class GameLabelsPanel:
             self.leveling_score_label_ = self.config.set('Leveling_Snake_Values', 'score', '0')
             self.leveling_time_label_ = self.config.set('Leveling_Snake_Values', 'time_score', '0')
             self.leveling_snake_length_label_ = self.config.set('Leveling_Snake_Values', 'snake_length', '0')
+            self.challange_score_label_ = self.config.set('Challange_Snake_Values', 'score', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
 
     def classic_create_game_labels(self):
@@ -425,8 +432,8 @@ class GameLabelsPanel:
             self.classic_score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
             #update the score label on the screen
             self.classic_score_label.configure(text=f"Score: {self.classic_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def classic_create_high_score_label(self):
         self.classic_high_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -449,8 +456,8 @@ class GameLabelsPanel:
             self.classic_high_score_label_ = self.config.get('Classic_Snake_Values', 'high_score', fallback='0')
             #update the high score label on the screen
             self.classic_high_score_label.configure(text=f"Score: {self.classic_high_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def classic_create_time_label(self):
         self.classic_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -473,8 +480,8 @@ class GameLabelsPanel:
             self.classic_time_label_ = self.config.get('Classic_Snake_Values', 'time_score', fallback='0')
             #update the time label on the screen
             self.classic_time_label.configure(text=f"Time: {self.classic_time_label_} Seconds")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def classic_create_high_score_time_label(self):
         self.classic_high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -497,8 +504,8 @@ class GameLabelsPanel:
             self.classic_high_score_time_label_ = self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0')
             #update the high score time label on the screen
             self.classic_high_score_time_label.configure(text=f"Score Time: {self.classic_high_score_time_label_} Seconds")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def classic_create_snake_length_label(self):
         self.classic_snake_length_label = ctk.CTkLabel(self.snake_canvas,
@@ -521,8 +528,8 @@ class GameLabelsPanel:
             self.classic_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length', fallback='0')
             #update the high score time label on the screen
             self.classic_snake_length_label.configure(text=f"Snake Length: {self.classic_snake_length_label_}")
-        except:
-            traceback.print_exc()    
+        except Exception as e:
+            traceback.print_exc(e)   
 
     def classic_create_high_score_snake_length_label(self):
         self.classic_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
@@ -545,8 +552,8 @@ class GameLabelsPanel:
             self.classic_high_score_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0')
             #update the high score time label on the screen
             self.classic_high_score_snake_length_label.configure(text=f"Snake Length: {self.classic_high_score_snake_length_label_}")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def classic_create_high_scores_label(self):
         self.classic_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
@@ -580,8 +587,8 @@ class GameLabelsPanel:
                 self.classic_snake_length_label.destroy()
             if self.classic_high_score_snake_length_label is not None:
                 self.classic_high_score_snake_length_label.destroy()
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
 
     def endless_create_game_labels(self):
@@ -651,8 +658,8 @@ class GameLabelsPanel:
             self.endless_score_label_ = self.config.get('Endless_Snake_Values', 'score', fallback='0')
             #update the score label on the screen
             self.endless_score_label.configure(text=f"Score: {self.endless_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def endless_create_high_score_label(self):
         self.endless_high_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -675,8 +682,8 @@ class GameLabelsPanel:
             self.endless_high_score_label_ = self.config.get('Endless_Snake_Values', 'high_score', fallback='0')
             #update the high score label on the screen
             self.endless_high_score_label.configure(text=f"Score: {self.endless_high_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def endless_create_time_label(self):
         self.endless_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -699,8 +706,8 @@ class GameLabelsPanel:
             self.endless_time_label_ = self.config.get('Endless_Snake_Values', 'time_score', fallback='0')
             #update the time label on the screen
             self.endless_time_label.configure(text=f"Time: {self.endless_time_label_} Seconds")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def endless_create_high_score_time_label(self):
         self.endless_high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -723,8 +730,8 @@ class GameLabelsPanel:
             self.endless_high_score_time_label_ = self.config.get('Endless_Snake_Values', 'high_score_time', fallback='0')
             #update the high score time label on the screen
             self.endless_high_score_time_label.configure(text=f"Score Time: {self.endless_high_score_time_label_} Seconds")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def endless_create_snake_length_label(self):
         self.endless_snake_length_label = ctk.CTkLabel(self.snake_canvas,
@@ -747,8 +754,8 @@ class GameLabelsPanel:
             self.endless_snake_length_label_ = self.config.get('Endless_Snake_Values', 'snake_length', fallback='0')
             #update the high score time label on the screen
             self.endless_snake_length_label.configure(text=f"Snake Length: {self.endless_snake_length_label_}")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def endless_create_high_score_snake_length_label(self):
         self.endless_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
@@ -771,8 +778,8 @@ class GameLabelsPanel:
             self.endless_high_score_snake_length_label_ = self.config.get('Endless_Snake_Values', 'snake_length_high_score', fallback='0')
             #update the high score time label on the screen
             self.endless_high_score_snake_length_label.configure(text=f"Snake Length: {self.endless_high_score_snake_length_label_}")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def endless_create_special_score_label(self):
         self.endless_special_score_label = ctk.CTkLabel(self.snake_canvas, 
@@ -795,8 +802,8 @@ class GameLabelsPanel:
             self.endless_special_score_label_ = self.config.get('Endless_Snake_Values', 'special_score', fallback='0')
             #update the score label on the screen
             self.endless_special_score_label.configure(text=f"Special Score: {self.endless_special_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
     
     def endless_create_special_high_score_label(self):
         self.endless_special_high_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -819,8 +826,8 @@ class GameLabelsPanel:
             self.endless_special_high_score_label_ = self.config.get('Endless_Snake_Values', 'special_score_high_score', fallback='0')
             #update the high score label on the screen
             self.endless_special_high_score_label.configure(text=f"Special Score: {self.endless_special_high_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
     
     def endless_create_shorten_score_label(self):
         self.endless_shorten_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -843,8 +850,8 @@ class GameLabelsPanel:
             self.endless_shorten_score_label_ = self.config.get('Endless_Snake_Values', 'shorten_score', fallback='0')
             #update the high score label on the screen
             self.endless_shorten_score_label.configure(text=f"Shorten Score: {self.endless_shorten_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
         
     def endless_create_shorten_high_score_label(self):
         self.endless_shorten_high_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -867,8 +874,8 @@ class GameLabelsPanel:
             self.endless_shorten_high_score_label_ = self.config.get('Endless_Snake_Values', 'shorten_snake_high_score', fallback='0')
             #update the high score label on the screen
             self.endless_shorten_high_score_label.configure(text=f"Shorten Score: {self.endless_shorten_high_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def endless_reset_labels(self):
         self.endless_score_label.configure(text='0')
@@ -898,8 +905,8 @@ class GameLabelsPanel:
                 self.endless_shorten_score_label.destroy()
             if self.endless_shorten_high_score_label is not None:
                 self.endless_shorten_high_score_label.destroy()
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
 
     def leveling_create_game_labels(self):
@@ -971,8 +978,8 @@ class GameLabelsPanel:
             self.leveling_score_label_ = self.config.get('Leveling_Snake_Values', 'score', fallback='0')
             #update the score label on the screen
             self.leveling_score_label.configure(text=f"Score: {self.leveling_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def leveling_create_high_score_label(self):
         self.leveling_high_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -995,8 +1002,8 @@ class GameLabelsPanel:
             self.leveling_high_score_label_ = self.config.get('Leveling_Snake_Values', 'high_score', fallback='0')
             #update the high score label on the screen
             self.leveling_high_score_label.configure(text=f"Score: {self.leveling_high_score_label_} ")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def leveling_create_time_label(self):
         self.leveling_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -1019,8 +1026,8 @@ class GameLabelsPanel:
             self.leveling_time_label_ = self.config.get('Leveling_Snake_Values', 'time_score', fallback='0')
             #update the time label on the screen
             self.leveling_time_label.configure(text=f"Time: {self.leveling_time_label_} Seconds")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def leveling_create_high_score_time_label(self):
         self.leveling_high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
@@ -1043,8 +1050,8 @@ class GameLabelsPanel:
             self.leveling_high_score_time_label_ = self.config.get('Leveling_Snake_Values', 'high_score_time', fallback='0')
             #update the high score time label on the screen
             self.leveling_high_score_time_label.configure(text=f"Score Time: {self.leveling_high_score_time_label_} Seconds")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def leveling_create_snake_length_label(self):
         self.leveling_snake_length_label = ctk.CTkLabel(self.snake_canvas,
@@ -1067,8 +1074,8 @@ class GameLabelsPanel:
             self.leveling_snake_length_label_ = self.config.get('Leveling_Snake_Values', 'snake_length', fallback='0')
             #update the high score time label on the screen
             self.leveling_snake_length_label.configure(text=f"Snake Length: {self.leveling_snake_length_label_}")
-        except:
-            traceback.print_exc()    
+        except Exception as e:
+            traceback.print_exc(e)   
 
     def leveling_create_high_score_snake_length_label(self):
         self.leveling_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
@@ -1091,9 +1098,8 @@ class GameLabelsPanel:
             self.leveling_high_score_snake_length_label_ = self.config.get('Leveling_Snake_Values', 'snake_length_high_score', fallback='0')
             #update the high score time label on the screen
             self.leveling_high_score_snake_length_label.configure(text=f"Snake Length: {self.leveling_high_score_snake_length_label_}")
-        except:
-            traceback.print_exc()
-
+        except Exception as e:
+            traceback.print_exc(e)
 
     def leveling_create_xp_label(self):
         self.xp_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -1116,8 +1122,8 @@ class GameLabelsPanel:
             self.xp_score_label_ = self.config.get('Leveling_Snake_Values', 'xp', fallback='0')
             #update the high score time label on the screen
             self.xp_score_label.configure(text=f"XP Hello: {self.xp_score_label_}")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
     
     def leveling_create_xp_high_score_label(self):
         self.xp_high_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -1140,8 +1146,8 @@ class GameLabelsPanel:
             self.xp_high_score_label_ = self.config.get('Leveling_Snake_Values', 'xp_high_score', fallback='0')
             #update the high score time label on the screen
             self.xp_high_score_label.configure(text=f"XP: {self.xp_high_score_label_}")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def leveling_create_level_label(self):
         self.level_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -1164,8 +1170,8 @@ class GameLabelsPanel:
             self.level_score_label_ = self.config.get('Leveling_Snake_Values', 'level', fallback='0')
             #update the high score time label on the screen
             self.level_score_label.configure(text=f"Level: {self.level_score_label_}")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
     
     def leveling_create_level_high_score_label(self):
         self.level_high_score_label = ctk.CTkLabel(self.snake_canvas,
@@ -1188,9 +1194,8 @@ class GameLabelsPanel:
             self.level_high_score_label_ = self.config.get('Leveling_Snake_Values', 'level_high_score', fallback='0')
             #update the high score time label on the screen
             self.level_high_score_label.configure(text=f"level: {self.level_high_score_label_}")
-        except:
-            traceback.print_exc()
-
+        except Exception as e:
+            traceback.print_exc(e)
 
     def leveling_reset_labels(self):
         self.leveling_score_label.configure(text='0')
@@ -1220,5 +1225,84 @@ class GameLabelsPanel:
                 self.level_score_label.destroy()
             if self.level_high_score_label is not None:
                 self.level_high_score_label.destroy()
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
+
+
+    def challange_create_game_labels(self):
+        self.config.read(self.config_path)
+        self.score_label_needed = self.config.get('Settings', 'label_needed_score', fallback='Default')
+        self.challange_create_score_label()
+
+        if self.score_label_needed == 'True' or self.score_label_needed == 'Default':
+            self.challange_create_high_score_label()
+    
+    def challange_update_game_labels(self):
+        self.challange_update_score_label()
+
+    def challange_update_high_score_labels(self):
+        self.config.read(self.config_path)
+        self.score_label_needed = self.config.get('Settings', 'label_needed_score', fallback='Default')
+
+        if self.score_label_needed == 'True' or self.score_label_needed == 'Default':
+            self.challange_update_high_score_label()
+
+    def challange_create_score_label(self):
+        self.challange_score_label = ctk.CTkLabel(self.snake_canvas,
+                                                height=30,
+                                                width=275,
+                                                corner_radius=10,
+                                                text=f"Score:{self.challange_score_label_} ",
+                                                font=FONT_LIST[11],
+                                                bg_color='grey20',
+                                                anchor='w'
+                                                )
+        self.challange_score_label.place(x=200, y=500)  # adjust the position as needed
+
+    def challange_update_score_label(self):
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.challange_score_label_ = self.config.get('Challange_Snake_Values', 'score', fallback='0')
+            #update the high score time label on the screen
+            self.challange_score_label.configure(text=f"Score: {self.challange_score_label_}")
+        except Exception as e:
+            traceback.print_exc(e)
+    
+    def challange_create_high_score_label(self):
+        self.challange_high_score_label = ctk.CTkLabel(self.snake_canvas,
+                                                    height=30,
+                                                    width=275,
+                                                    corner_radius=10,
+                                                    text=f"Score:{self.challange_score_label_} ",
+                                                    font=FONT_LIST[11],
+                                                    bg_color='grey20',
+                                                    anchor='w'
+                                                    )
+        self.challange_high_score_label.place(x=200, y=550)
+        
+    def challange_update_high_score_label(self):
+        try:
+            self.config_dir = path.dirname(__file__)
+            self.config_path = path.join(self.config_dir, '..', 'config.ini')
+            self.config = configparser.RawConfigParser()
+            self.config.read(self.config_path)
+            self.challange_high_score_label_ = self.config.get('Challange_Snake_Values', 'high_score', fallback='0')
+            #update the high score time label on the screen
+            self.challange_high_score_label.configure(text=f"level: {self.challange_score_label_}")
+        except Exception as e:
+            traceback.print_exc(e)
+    
+    def challange_reset_labels(self):
+        self.challange_score_label.configure(text='0')
+    
+    def challange_delete_labels(self):
+        try:
+            if self.challange_score_label is not None:
+                self.challange_score_label.destroy()
+            if self.challange_high_score_label is not None:
+                self.challange_high_score_label.destroy()
+        except Exception as e:
+            traceback.print_exc(e)

@@ -32,8 +32,8 @@ class ClassicFood:
                 oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
                 self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
                 self.game_logger.log_game_event(self.food_items)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     #Creating the food oval
     def create_food_oval(self, x, y, fill_color, tag):
@@ -50,8 +50,8 @@ class ClassicFood:
                 if not collision:
                     break
             return x, y
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
 class EndlessFood:
     def __init__(self, game_logger, canvas, game_config):
@@ -71,8 +71,8 @@ class EndlessFood:
             self.config = configparser.ConfigParser()
             self.config.read('config.ini')
             self.score = int(self.config.get('Endless_Snake_Values', 'score', fallback='0'))
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def add_occuppied_coordinates(self, x, y):
         self.occupied_coordinates.add((x, y))
@@ -101,8 +101,8 @@ class EndlessFood:
                 oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
                 self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
                 self.game_logger.log_game_event(self.food_items)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
     
     #Special food logic
     def special_spawn_food(self, snake_coordinates):
@@ -118,8 +118,8 @@ class EndlessFood:
                 self.special_food_items[special_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': special_oval_id}
                 self.game_logger.log_game_event("Special Food ID:")
                 self.game_logger.log_game_event(special_food_id)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     def shorten_spawn_food(self, snake_coordinates):
         num_shorten_food_items = 1
@@ -134,8 +134,8 @@ class EndlessFood:
                 self.shorten_food_items[shorten_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': shorten_oval_id}
                 self.game_logger.log_game_event("Shorten Food ID:")
                 self.game_logger.log_game_event(shorten_food_id)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     #Creating the food oval
     def create_food_oval(self, x, y, fill_color, tag):
@@ -157,8 +157,8 @@ class EndlessFood:
                 if not collision and not self.is_occupied(x, y):
                     break
             return x, y
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
     
 class LevelingFood:
     def __init__(self, game_logger, canvas, game_config):
@@ -183,8 +183,8 @@ class LevelingFood:
                 oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
                 self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
                 self.game_logger.log_game_event(self.food_items)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     #Creating the food oval
     def create_food_oval(self, x, y, fill_color, tag):
@@ -201,8 +201,52 @@ class LevelingFood:
                 if not collision:
                     break
             return x, y
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
+
+class ChallangeFood:
+    def __init__(self, game_logger, canvas, game_config):
+        #Initializing variables
+        self.time = time.time()
+        self.game_logger = game_logger
+        self.canvas = canvas
+        self.food_items = {}
+        self.food_coordinates = {}
+        self.game_config = game_config
+
+
+    #Food logic
+    def spawn_food(self, snake_coordinates):
+        try:
+            if len(self.food_items) == 0:  # Check if no food items are currently on the screen
+                x, y = self.generate_random_coordinates(snake_coordinates)
+                food_id = str(uuid.uuid4())
+                self.game_logger.log_game_event("Food ID:")
+                self.game_logger.log_game_event(food_id)
+                tag = "food" + food_id
+                oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
+                self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
+                self.game_logger.log_game_event(self.food_items)
+        except Exception as e:
+            traceback.print_exc(e)
+
+    #Creating the food oval
+    def create_food_oval(self, x, y, fill_color, tag):
+        return self.canvas.create_oval(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, fill=fill_color, tag=tag)
+
+
+    #Creating random coordinates for the food to spawn, and also chechking where the snake is.
+    def generate_random_coordinates(self, snake_coordinates):
+        try: 
+            while True:
+                x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
+                if not collision:
+                    break
+            return x, y
+        except Exception as e:
+            traceback.print_exc(e)
 
 
 # *****************************************

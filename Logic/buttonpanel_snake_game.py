@@ -67,6 +67,12 @@ class ButtonCommands:
         else:
             self.logfile.log_game_event("No function assigned to 'snake_leveling'")
     
+    def challange_snake_command(self):
+        if 'challange_snake' in self.functions:
+            self.functions['challange_snake']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'challange_snake'")
+
     def snake_color_command(self):
         if 'snake_color' in self.functions:
             self.functions['snake_color']()
@@ -280,6 +286,12 @@ class ClickButtonPanel:
                                 width=self.button_width, height=self.button_height, state="normal",#Should ne normal
                                 command=self.button_commands.snake_leveling_command)
         snake_leveling_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
+    
+    def challange_snake_button(self):
+        challange_snake_button = ctk.CTkButton(self.button_canvas, text="Challange", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.challange_snake_command)
+        challange_snake_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
 
     def snake_color_button(self):
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],
@@ -423,8 +435,8 @@ class OptionButtonPanel:
 
         try:
             self.config.read(self.config_path)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         # Setting up screen size changer
         try:
@@ -432,8 +444,8 @@ class OptionButtonPanel:
             self.screen_size_var = ctk.StringVar()  # Variable to track the selected value
             self.screen_size_var.set(self.screen_size_config)  # Set the default value
             self.screen_size_changer = Screen_size(root, self.logfile, self.screen_size_var, self.config, self.screen_size_config)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         # Setting up theme changer
         try:
@@ -441,8 +453,8 @@ class OptionButtonPanel:
             self.theme_var = ctk.StringVar()  # Variable to track the selected value
             self.theme_var.set(self.theme_config)
             self.theme_changer = ThemeUpdater(self.logfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         # Setting up contrast updater
         try:
@@ -450,23 +462,23 @@ class OptionButtonPanel:
             self.contrast_mode = ctk.StringVar()
             self.contrast_mode.set(self.contrast_config)
             self.contrast_updater = UpdateContrast(self.logfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
         try: 
             self.high_score_label_showing_config = self.config.get('Settings', 'label_needed_high_score', fallback='Default')
             self.high_score_var = ctk.StringVar()
             self.high_score_var.set(self.high_score_label_showing_config)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     # Method to update the config.ini file
     def updating_config_ini(self):
         try:
             with open(self.config_path, 'w') as configfile:
                 self.config.write(configfile)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     # Callback methods for handling changes in screen size, theme, and contrast
     def screen_size_callback(self, selected_value):
@@ -492,23 +504,23 @@ class OptionButtonPanel:
         # Handle snake color change
         try:
             self.config.set('Settings', 'snake_color', selected_value)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
         self.updating_config_ini()
         self.snake_color_rgb = COLORS_DICT.get(selected_value)
         
     def high_score_label_showing_callback(self, selected_value):
         try:
             self.config.set('Settings', 'label_needed_high_score', selected_value)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
         self.updating_config_ini()
 
     def snake_speed_callback(self, selected_value):
         try:
             self.config.set('Settings', 'snake_speed', selected_value)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
         self.updating_config_ini()
     
     def game_size_callback(self, selected_value):
@@ -519,8 +531,8 @@ class OptionButtonPanel:
                 self.config.write(configfile)
             self.label_panel.create_game_size_label()
             print("Game size changed2")
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
         
 
     # Method to create an option button
@@ -535,8 +547,8 @@ class OptionButtonPanel:
         option_button.place(x=x, y=y)
         try:
             option_button.set(config)
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
     # Method to show the options
     def show_options(self):
@@ -585,8 +597,8 @@ class OptionButtonPanel:
           
 
         # Handle exceptions appropriately
-        except:
-            traceback.print_exc()
+        except Exception as e:
+            traceback.print_exc(e)
 
 # *****************************************
 # Shadows Snake Button Panel File

@@ -19,6 +19,7 @@ from Logic.config_ini_Initials import ConfigIni
 from Games.snake_classic_game import Snake_Classic_Game
 from Games.snake_endless_game import Snake_endless
 from Games.snake_leveling_game import Snake_Leveling
+from Games.snake_challange_games import Snake_Challange
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
 
@@ -117,6 +118,7 @@ class SnakeGameApp:
             'snake_leveling': self.snake_leveling,
             'snake_endless': self.snake_endless,
             'classic_snake': self.classic_snake,
+            'challange_snake': self.challange_snake
         }
 
         # Initializing the button panel and label panel
@@ -154,6 +156,7 @@ class SnakeGameApp:
         self.create_button_panel.classic_snake_button()
         self.create_button_panel.snake_endless_button()
         self.create_button_panel.snake_leveling_button()
+        self.create_button_panel.challange_snake_button()
         self.create_button_panel.info_button()
         self.create_button_panel.settings_button()
         self.create_button_panel.quit_button()
@@ -172,6 +175,9 @@ class SnakeGameApp:
     # Start the leveling snake game
     def snake_leveling(self):
         self.start_game("snake_leveling")
+    
+    def challange_snake(self):
+        self.start_game("challange_snake")
 
     def open_info(self):
         self.start_game("info")
@@ -197,6 +203,8 @@ class SnakeGameApp:
             self.endless_snake_canvas = Snake_endless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+        elif game_type == "challange_snake":
+            self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "info":
             self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         elif game_type == "settings":
@@ -214,6 +222,9 @@ class SnakeGameApp:
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.leveling_snake_canvas
+        elif game_type == "challange_snake":
+            self.challange_snake_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.challange_snake_canvas
         elif game_type == "info":
             self.info_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.info_canvas
@@ -719,12 +730,15 @@ class SnakeGameApp:
                 self.endless_snake_canvas.delete_game_labels_()
             if self.main_canvas == self.leveling_snake_canvas:
                 self.leveling_snake_canvas.delete_game_labels__()
+            if self.main_canvas == self.challange_snake_canvas:
+                self.challange_snake_canvas.delete_game_labels___()
 
             time.sleep(0.1)
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
             self.endless_snake_canvas = self.destroy_canvas(self.endless_snake_canvas, "self.endless_snake_canvas")
             self.leveling_snake_canvas = self.destroy_canvas(self.leveling_snake_canvas, "self.leveling_snake_canvas")
+            self.challange_snake_canvas = self.destroy_canvas(self.challange_snake_canvas, "self.challange_snake_canvas")
             self.info_canvas = self.destroy_canvas(self.info_canvas, "self.info_canvas")
             self.settings_canvas = self.destroy_canvas(self.settings_canvas, "self.settings_canvas")
 

@@ -19656,3 +19656,61 @@ AttributeError: 'Snake_Challange' object has no attribute 'game_labels_panel'
 
 
 [2024-04-15 20:53:48] Started the Error Log File
+[2024-04-15 20:54:39] 
+
+
+[2024-04-15 20:54:39] Started the Error Log File
+[2024-04-15 20:56:45] 
+
+
+[2024-04-15 20:56:45] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: Snake_Challange.start_game() takes 1 positional argument but 2 were given
+[2024-04-15 20:58:17] 
+
+
+[2024-04-15 20:58:17] Started the Error Log File
+[2024-04-15 20:58:38] No errors occurred
+[2024-04-15 20:58:38] Closed the Error Log File
+
+
+
+
+[2024-04-15 20:58:41] 
+
+
+[2024-04-15 20:58:41] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 42, in info_command
+    self.functions['open_info']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 175, in open_info
+    self.start_game("info")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 227, in start_game
+    self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.7.3", font=("Helvetica", 30), fill="white", pady=10)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2866, in create_text
+    return self._create('text', args, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2832, in _create
+    return self.tk.getint(self.tk.call(
+                          ^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-pady"
+[2024-04-15 20:59:41] 
+
+
+[2024-04-15 20:59:41] Started the Error Log File
+[2024-04-15 21:00:01] No errors occurred
+[2024-04-15 21:00:01] Closed the Error Log File
+
+
+
+

@@ -116,9 +116,9 @@ class Snake_Challange(ctk.CTkCanvas):
         self.game_labels_panel_4.challange_update_high_score_labels()
     
     def start_screen(self):
-        self.state = 'start_screen'
+        self.state = 'start_game'
         self.logfile.log_game_event(self.state)
-        self.config.set('Challange_Snake_Values', 'state', 'start_screen')
+        self.config.set('Challange_Snake_Values', 'state', 'start_game')
 
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)

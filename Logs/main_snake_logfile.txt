@@ -25267,3 +25267,116 @@ Game height: 600
 [2024-04-15 20:53:58] Current initial_game_size in config.ini: 600x600
 1
 1
+[2024-04-15 20:54:39] Started the app
+[2024-04-15 20:54:39] Started the GameApp Class
+[2024-04-15 20:54:39] Game mode: initial config
+[2024-04-15 20:54:39] Dark-Blue
+[2024-04-15 20:54:39] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-15 20:54:39] Current initial_theme in config.ini: Dark-Blue
+[2024-04-15 20:54:39] Contrast mode set to dark
+[2024-04-15 20:54:39] 600x600
+[2024-04-15 20:54:39] Updated initial_game_size in config.ini to 600x600
+[2024-04-15 20:54:39] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-15 20:54:39] start_screen method called
+[2024-04-15 20:54:40] Game mode: snake_challange
+[2024-04-15 20:54:40] start_game
+[2024-04-15 20:54:40] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-15 20:54:40] Reset snake length
+[2024-04-15 20:54:40] Game mode: snake_challange
+[2024-04-15 20:54:40] start_screen
+[2024-04-15 20:54:40] 600x600
+[2024-04-15 20:54:40] Updated initial_game_size in config.ini to 600x600
+[2024-04-15 20:54:40] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-15 20:56:45] Started the app
+[2024-04-15 20:56:45] Started the GameApp Class
+[2024-04-15 20:56:45] Game mode: initial config
+[2024-04-15 20:56:45] Dark-Blue
+[2024-04-15 20:56:45] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-15 20:56:45] Current initial_theme in config.ini: Dark-Blue
+[2024-04-15 20:56:45] Contrast mode set to dark
+[2024-04-15 20:56:45] 600x600
+[2024-04-15 20:56:45] Updated initial_game_size in config.ini to 600x600
+[2024-04-15 20:56:45] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-15 20:56:45] start_screen method called
+[2024-04-15 20:56:46] Game mode: snake_challange
+[2024-04-15 20:56:46] start_game
+[2024-04-15 20:56:46] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-15 20:56:46] Reset snake length
+[2024-04-15 20:56:46] Game mode: snake_challange
+[2024-04-15 20:56:46] start_game
+[2024-04-15 20:56:46] 600x600
+[2024-04-15 20:56:46] Updated initial_game_size in config.ini to 600x600
+[2024-04-15 20:56:46] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-15 20:58:17] Started the app
+[2024-04-15 20:58:17] Started the GameApp Class
+[2024-04-15 20:58:17] Game mode: initial config
+[2024-04-15 20:58:17] Dark-Blue
+[2024-04-15 20:58:17] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-15 20:58:17] Current initial_theme in config.ini: Dark-Blue
+[2024-04-15 20:58:17] Contrast mode set to dark
+[2024-04-15 20:58:17] 600x600
+[2024-04-15 20:58:17] Updated initial_game_size in config.ini to 600x600
+[2024-04-15 20:58:17] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-15 20:58:17] start_screen method called
+[2024-04-15 20:58:18] 600x600
+[2024-04-15 20:58:18] Updated initial_game_size in config.ini to 600x600
+[2024-04-15 20:58:18] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-15 20:58:38] Closed the app
+
+
+
+
+[2024-04-15 20:58:41] Started the app
+[2024-04-15 20:58:41] Started the GameApp Class
+[2024-04-15 20:58:41] Game mode: initial config
+[2024-04-15 20:58:41] Dark-Blue
+[2024-04-15 20:58:41] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-15 20:58:41] Current initial_theme in config.ini: Dark-Blue
+[2024-04-15 20:58:41] Contrast mode set to dark
+[2024-04-15 20:58:41] 600x600
+[2024-04-15 20:58:41] Updated initial_game_size in config.ini to 600x600
+[2024-04-15 20:58:41] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-15 20:58:41] start_screen method called
+[2024-04-15 20:59:41] Started the app
+[2024-04-15 20:59:41] Started the GameApp Class
+[2024-04-15 20:59:41] Game mode: initial config
+[2024-04-15 20:59:41] Dark-Blue
+[2024-04-15 20:59:41] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-15 20:59:41] Current initial_theme in config.ini: Dark-Blue
+[2024-04-15 20:59:41] Contrast mode set to dark
+[2024-04-15 20:59:41] 600x600
+[2024-04-15 20:59:41] Updated initial_game_size in config.ini to 600x600
+[2024-04-15 20:59:41] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-15 20:59:41] start_screen method called
+[2024-04-15 20:59:42] 600x600
+[2024-04-15 20:59:42] Updated initial_game_size in config.ini to 600x600
+[2024-04-15 20:59:42] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-15 21:00:01] Closed the app
+
+
+
+

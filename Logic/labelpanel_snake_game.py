@@ -1302,8 +1302,10 @@ class GameLabelsPanel:
         try:
             if self.challange_score_label is not None:
                 self.challange_score_label.destroy()
+                print('Deleted score challange')
             if self.challange_high_score_label is not None:
                 self.challange_high_score_label.destroy()
-
+                print('Deleted high score challange')
+            print('Deleted Labels challange')
         except Exception as e:
             traceback.print_exc(e)

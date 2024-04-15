@@ -127,7 +127,7 @@ class Snake_Challange(ctk.CTkCanvas):
         self.snake_canvas.create_text(self.width/2, self.height/2, text="Press 's' to start the game", font=FONT_LIST[12], fill='white')
         self.snake_canvas.focus_set()
         self.bind_and_unbind_keys()
-        self.game_labels_panel_4.challange_create_game_labels()
+        self.game_labels_panel_4.challange_update_game_labels()
         self.game_labels_panel_4.challange_update_high_score_labels()
     
     def start_game(self):

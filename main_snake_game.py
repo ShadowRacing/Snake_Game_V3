@@ -84,15 +84,6 @@ class SnakeGameApp:
         self.info_canvas = None
         self.settings_canvas = None
 
-        # The current game canvas
-        #self.current_classic_snake_canvas = None
-
-        # Create the snake and food objects
-        self.snake = Snake(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
-        self.classicfood = ClassicFood(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
-        self.leveling_food = LevelingFood(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
-        self.endless_food = EndlessFood(self.logfile, canvas=self.main_canvas, game_config=self.game_config)
-
         #create the functions dictionary
         self.functions = {
             'return_home': self.return_home,
@@ -233,7 +224,7 @@ class SnakeGameApp:
             canvas_width = self.info_canvas.winfo_width() // 2 + 80
             canvas_height = self.info_canvas.winfo_height() // 2 - 50
             self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Shadow's Snake Game", font=("Helvetica", 50), fill="white")
-            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.7.1", font=("Helvetica", 30), fill="white")
+            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.7.2", font=("Helvetica", 30), fill="white")
             self.info_canvas.create_text(canvas_width, canvas_height + 50, text="Developer: Shadow", font=("Helvetica", 30), fill="white")
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")

@@ -19634,3 +19634,25 @@ AttributeError: 'Snake_Challange' object has no attribute 'game_labels_panel'
 
 
 [2024-04-15 20:17:48] Started the Error Log File
+[2024-04-15 20:20:12] 
+
+
+[2024-04-15 20:20:12] Started the Error Log File
+[2024-04-15 20:46:49] 
+
+
+[2024-04-15 20:46:49] Started the Error Log File
+[2024-04-15 20:46:52] No errors occurred
+[2024-04-15 20:46:52] Closed the Error Log File
+
+
+
+
+[2024-04-15 20:49:39] 
+
+
+[2024-04-15 20:49:39] Started the Error Log File
+[2024-04-15 20:53:48] 
+
+
+[2024-04-15 20:53:48] Started the Error Log File

@@ -178,7 +178,7 @@ class SnakeGameApp:
         self.start_game("snake_leveling")
     
     def challange_snake(self):
-        self.start_game("challange_snake")
+        self.start_game("snake_challange")
 
     def open_info(self):
         self.start_game("info")
@@ -204,7 +204,7 @@ class SnakeGameApp:
             self.endless_snake_canvas = Snake_endless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
-        elif game_type == "challange_snake":
+        elif game_type == "snake_challange":
             self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "info":
             self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
@@ -223,7 +223,7 @@ class SnakeGameApp:
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.leveling_snake_canvas
-        elif game_type == "challange_snake":
+        elif game_type == "snake_challange":
             self.challange_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.challange_snake_canvas
         elif game_type == "info":
@@ -233,7 +233,7 @@ class SnakeGameApp:
             canvas_width = self.info_canvas.winfo_width() // 2 + 80
             canvas_height = self.info_canvas.winfo_height() // 2 - 50
             self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Shadow's Snake Game", font=("Helvetica", 50), fill="white")
-            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.7", font=("Helvetica", 30), fill="white")
+            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.7.1", font=("Helvetica", 30), fill="white")
             self.info_canvas.create_text(canvas_width, canvas_height + 50, text="Developer: Shadow", font=("Helvetica", 30), fill="white")
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")
@@ -273,6 +273,10 @@ class SnakeGameApp:
             self.create_button_panel.leveling_reset_high_scores_xp_button()
             self.create_button_panel.leveling_reset_high_score_level_button()
             
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.framelabel_panel.create_leveling_snake_label()
+        
+        elif game_type == "snake_challange":
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_leveling_snake_label()
 
@@ -743,8 +747,6 @@ class SnakeGameApp:
             self.info_canvas = self.destroy_canvas(self.info_canvas, "self.info_canvas")
             self.settings_canvas = self.destroy_canvas(self.settings_canvas, "self.settings_canvas")
 
-            self.classic_snake_canvas = self.destroy_canvas(self.main_canvas, "self.main_canvas")
-            
             # Show the original main canvas (home screen)
             self.original_main_canvas.pack(expand=True, fill="both")
         except Exception as e:

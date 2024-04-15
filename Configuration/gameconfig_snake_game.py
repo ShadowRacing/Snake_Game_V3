@@ -222,8 +222,8 @@ class GameConfig:
                 self.logfile.log_game_event("Game mode: snake_leveling")
             
             elif game_mode == "snake_challange":
-                self.GAME_WIDTH = 1000
-                self.GAME_HEIGHT = 1000
+                self.GAME_WIDTH = self.game_width
+                self.GAME_HEIGHT = self.game_height
                 self.SPEED = self.snake_speed
                 self.CELL_SIZE = 20
                 self.SNAKE_LENGTH = 5

@@ -1298,11 +1298,12 @@ class GameLabelsPanel:
     def challange_reset_labels(self):
         self.challange_score_label.configure(text='0')
     
-    def challange_delete_labels(self):
+    def challange_delete_labels__(self):
         try:
             if self.challange_score_label is not None:
                 self.challange_score_label.destroy()
             if self.challange_high_score_label is not None:
                 self.challange_high_score_label.destroy()
+
         except Exception as e:
             traceback.print_exc(e)

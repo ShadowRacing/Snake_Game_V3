@@ -25,6 +25,7 @@ class Snake_Challange(ctk.CTkCanvas):
 
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
+        self.logfile.log_game_event("Snake challange game started")
         self.score = 0
         self.start_time = None
         self.paused_time = None
@@ -33,7 +34,14 @@ class Snake_Challange(ctk.CTkCanvas):
         self.last_direction_change_time = 0
         self.has_changed_direction = False
         self.width = game_config.GAME_WIDTH
+        print(
+            f"Game width: {self.width}"
+        )
         self.height = game_config.GAME_HEIGHT
+        print(
+            f"Game height: {self.height}"
+        )
+        print(game_config.SNAKE_LENGTH)
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
@@ -44,9 +52,9 @@ class Snake_Challange(ctk.CTkCanvas):
         # Create the snake and the food
         self.snake = Snake(self.logfile, self.snake_canvas, game_config)
         self.food = ChallangeFood(self.logfile, self.snake_canvas, game_config)
-        self.game_labels_panel = GameLabelsPanel(parent, self.logfile,  self.game_config)
+        self.game_labels_panel_4 = GameLabelsPanel(parent, self.logfile,  self.game_config)
         self.game_config = GameConfig(self.logfile, 'snake_challange')
-        self.game_labels_panel.classic_create_game_labels()
+        self.game_labels_panel_4.challange_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
 
         
@@ -102,10 +110,10 @@ class Snake_Challange(ctk.CTkCanvas):
         self.bind_and_unbind_keys()
     
     def delete_game_labels___(self):
-        self.game_labels_panel.challange_delete_labels()
+        self.game_labels_panel_4.challange_delete_labels__()
     
     def update_high_score_labels(self):
-        self.game_labels_panel.challange_update_high_score_labels()
+        self.game_labels_panel_4.challange_update_high_score_labels()
     
     def start_screen(self):
         self.state = 'start_screen'
@@ -119,8 +127,8 @@ class Snake_Challange(ctk.CTkCanvas):
         self.snake_canvas.create_text(self.width/2, self.height/2, text="Press 's' to start the game", font=FONT_LIST[12], fill='white')
         self.snake_canvas.focus_set()
         self.bind_and_unbind_keys()
-        self.game_labels_panel.challange_create_game_labels()
-        self.game_labels_panel.challange_update_high_score_labels()
+        self.game_labels_panel_4.challange_create_game_labels()
+        self.game_labels_panel_4.challange_update_high_score_labels()
     
     def start_game(self):
         self.bind_and_unbind_keys()
@@ -130,7 +138,7 @@ class Snake_Challange(ctk.CTkCanvas):
         self.high_score = int(self.config.get('Challange_Snake_Values', 'high_score'))
         self.high_score_time = int(self.config.get('Challange_Snake_Values', 'high_score_time'))
         self.snake_length_high_score = int(self.config.get('Challange_Snake_Values', 'snake_length_high_score'))
-        self.game_labels_panel.challange_update_game_labels()
+        self.game_labels_panel_4.challange_update_game_labels()
 
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
@@ -202,8 +210,8 @@ class Snake_Challange(ctk.CTkCanvas):
             self.snake_canvas.after(delay, self.next_turn, snake, food)
         
         self.has_changed_direction = False
-        self.game_labels_panel.classic_update_game_labels()
-        self.game_labels_panel.classic_update_high_score_labels()
+        self.game_labels_panel_4.challange_update_game_labels()
+        self.game_labels_panel_4.challange_update_high_score_labels()
         
         self.snake_canvas.update()
 
@@ -293,7 +301,7 @@ class Snake_Challange(ctk.CTkCanvas):
             # start the game again
             self.state = 'start_game'
         self.score = 0
-        self.game_labels_panel.classic_update_game_labels()
+        self.game_labels_panel_4.challange_update_game_labels()
         self.start_game()
 
     def bind_and_unbind_keys(self):

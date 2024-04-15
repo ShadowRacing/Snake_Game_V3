@@ -427,22 +427,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         elif self.state == 'settings_menu':
             self.snake_canvas.unbind('<Escape>')
     
-    def get_current_level(self):
-        return self.leveling_system.get_level(self.score)
     
-    def xp_needed_for_current_level(self):
-        return self.leveling_system.xp_needed_for_level(self.get_current_level())
-    
-    def next_level_xp_needed(self):
-        return self.leveling_system.xp_needed_for_level(self.get_current_level() + 1)
-    
-    # def update_game_labels(self):
-        # Your existing code for updating game labels
-        #current_level = self.get_current_level()
-        #xp_needed = self.xp_needed_for_current_level()
-        #next_level_xp = self.next_level_xp_needed()
-        # Update labels with current level, XP needed, and XP needed for next level
-
 # *****************************************
 # Shadows Snake Game Snake Leveling Game File
 # *****************************************

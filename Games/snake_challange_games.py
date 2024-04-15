@@ -17,15 +17,17 @@ from Logic.labelpanel_snake_game import GameLabelsPanel
 
 class Snake_Challange(ctk.CTkCanvas):
     def __init__(self, parent, game_config, logfile, functions, create_button_panel):
-        self.logfile = logfile
+        self.parent = parent
         self.game_config = game_config
+        self.logfile = logfile
         self.functions = functions
         self.create_button_panel = create_button_panel
+
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
         self.score = 0
         self.start_time = None
-        self.time_limit = 60
+        self.paused_time = None
         self.game_over_flag = False
         self.direction = self.game_config.DIRECTIONOFFSNAKE
         self.last_direction_change_time = 0
@@ -36,16 +38,18 @@ class Snake_Challange(ctk.CTkCanvas):
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
         
-
         self.snake_canvas = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
         self.snake_canvas.place(x=500, y=50)
 
+        # Create the snake and the food
         self.snake = Snake(self.logfile, self.snake_canvas, game_config)
         self.food = ChallangeFood(self.logfile, self.snake_canvas, game_config)
-        self.game_labels_panel_4 = GameLabelsPanel(parent, self.logfile,  self.game_config)
+        self.game_labels_panel = GameLabelsPanel(parent, self.logfile,  self.game_config)
         self.game_config = GameConfig(self.logfile, 'snake_challange')
-        self.game_labels_panel_4.challange_create_game_labels()
+        self.game_labels_panel.classic_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
+
+        
 
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
@@ -53,7 +57,7 @@ class Snake_Challange(ctk.CTkCanvas):
         self.config.read(self.config_path)
 
         try:  
-            self.config.set('Settings', 'game_mode', 'snake_challange')
+            self.config.set('Settings', 'game_mode', 'challange_snake')
         except Exception as e:
             traceback.print_exc(e)
         
@@ -88,53 +92,45 @@ class Snake_Challange(ctk.CTkCanvas):
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
 
-        if not self.config.has_option('Challange_Snake_Settings', 'state'):
-            self.config.set('Challange_Snake_Settings', 'state', 'start_screen')
+        if not self.config.has_option('Challange_Snake_Values', 'state'):
+            self.config.set('Challange_Snake_Values', 'state', 'start_screen')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
                 
-
-         # Start the game loop
+        # Start the game loop
         self.start_screen()
         self.bind_and_unbind_keys()
     
     def delete_game_labels___(self):
-        self.game_labels_panel_4.challange_delete_labels()
+        self.game_labels_panel.challange_delete_labels()
     
-    def update_high_score_labels_(self):
-        self.game_labels_panel_4.challange_update_high_score_labels()
+    def update_high_score_labels(self):
+        self.game_labels_panel.challange_update_high_score_labels()
     
     def start_screen(self):
-        self.state = 'start_game'
-        self.config.set('Challange_Snake_Settings', 'state', 'start_game')
-       
+        self.state = 'start_screen'
+        self.logfile.log_game_event(self.state)
+        self.config.set('Challange_Snake_Values', 'state', 'start_screen')
+
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
-
-        self.logfile.log_game_event(f"Game state: {self.state}")
-        self.snake_canvas.delete("all")
-        self.snake_canvas.create_text(self.width / 2, self.height / 2,
-                         font= FONT_LIST[12], text="Press 'Space' to start", fill="white", tag="start")
+        
+        self.snake_canvas.delete('all')
+        self.snake_canvas.create_text(self.width/2, self.height/2, text="Press 's' to start the game", font=FONT_LIST[12], fill='white')
         self.snake_canvas.focus_set()
-        self.games_focused()
         self.bind_and_unbind_keys()
-        self.game_labels_panel_4.challange_update_game_labels()
-        self.game_labels_panel_4.challange_update_high_score_labels()
+        self.game_labels_panel.challange_create_game_labels()
+        self.game_labels_panel.challange_update_high_score_labels()
     
-    def games_focused(self, event=None):
-        self.snake_canvas.configure(highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
-        self.logfile.log_game_event("Game focused")
-    
-    def start_game(self, event=None):
+    def start_game(self):
         self.bind_and_unbind_keys()
         self.state = 'game'
         self.bind_and_unbind_keys()
-        self.config.read(self.config_path)
-        self.high_score = int(self.config.get('Challange_Snake_Values', 'high_score', fallback='0'))
-        self.high_score_time = int(self.config.get('Challange_Snake_Values', 'high_score_time', fallback='0'))
-        self.snake_length_high_score = int(self.config.get('Challange_Snake_Values', 'snake_length_high_score', fallback='0'))
-        self.game_labels_panel_4.challange_update_high_score_labels()
-        self.config.set('Challange_Snake_Settings', 'state', 'game')
+        self.config.read('Challange_Snake_Values', 'state', 'game')
+        self.high_score = int(self.config.get('Challange_Snake_Values', 'high_score'))
+        self.high_score_time = int(self.config.get('Challange_Snake_Values', 'high_score_time'))
+        self.snake_length_high_score = int(self.config.get('Challange_Snake_Values', 'snake_length_high_score'))
+        self.game_labels_panel.challange_update_game_labels()
 
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
@@ -144,14 +140,12 @@ class Snake_Challange(ctk.CTkCanvas):
         self.score = 0
         self.snake_length = self.game_config.SNAKE_LENGTH
         self.snake_canvas.delete("all")
-
-        #Spawn food and look for the snakes coordinates
         snake_coordinates = self.snake.get_coordinates()
         self.food.spawn_food(snake_coordinates)
 
         self.logfile.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
         self.next_turn(self.snake, self.food)
-    
+
     def next_turn(self, snake, food):
         x, y = snake.coordinates[0]
 
@@ -198,6 +192,8 @@ class Snake_Challange(ctk.CTkCanvas):
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
 
+        
+
         if self.check_collisions(snake):
             self.logfile.log_game_event("snake has a collision")
             self.game_over()
@@ -206,8 +202,8 @@ class Snake_Challange(ctk.CTkCanvas):
             self.snake_canvas.after(delay, self.next_turn, snake, food)
         
         self.has_changed_direction = False
-        self.game_labels_panel_4.challange_update_game_labels()
-        self.game_labels_panel_4.challange_update_high_score_labels()
+        self.game_labels_panel.classic_update_game_labels()
+        self.game_labels_panel.classic_update_high_score_labels()
         
         self.snake_canvas.update()
 
@@ -297,7 +293,7 @@ class Snake_Challange(ctk.CTkCanvas):
             # start the game again
             self.state = 'start_game'
         self.score = 0
-        self.game_labels_panel_4.challange_update_game_labels()
+        self.game_labels_panel.classic_update_game_labels()
         self.start_game()
 
     def bind_and_unbind_keys(self):
@@ -331,8 +327,3 @@ class Snake_Challange(ctk.CTkCanvas):
             self.snake_canvas.bind('<s>', lambda event: self.change_direction('down'))
         elif self.state == 'settings_menu':
             self.snake_canvas.unbind('<Escape>')
-
-# *****************************************
-# Shadows Snake Challange File
-# *****************************************
-        

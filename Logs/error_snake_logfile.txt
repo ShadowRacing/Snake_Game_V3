@@ -18215,3 +18215,1290 @@ AttributeError: 'Snake_Challange' object has no attribute 'game_labels_panel'
 
 
 [2024-04-13 21:11:55] Started the Error Log File
+[2024-04-15 18:57:36] 
+
+
+[2024-04-15 18:57:36] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 18:57:44] No errors occurred
+[2024-04-15 18:57:44] Closed the Error Log File
+
+
+
+
+[2024-04-15 18:57:47] 
+
+
+[2024-04-15 18:57:47] Started the Error Log File
+[2024-04-15 19:06:22] 
+
+
+[2024-04-15 19:06:22] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
+    self.functions['challange_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
+    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
+    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 32, in __init__
+    self.direction = self.game_config.DIRECTIONOFSNAKE
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameConfig' object has no attribute 'DIRECTIONOFSNAKE'
+[2024-04-15 19:06:47] 
+
+
+[2024-04-15 19:06:47] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
+    self.functions['challange_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
+    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
+    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 37, in __init__
+    super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+                                                ^^^^^^^^^^
+AttributeError: 'Snake_Challange' object has no attribute 'width'
+[2024-04-15 19:07:19] 
+
+
+[2024-04-15 19:07:19] Started the Error Log File
+[2024-04-15 19:11:31] 
+
+
+[2024-04-15 19:11:31] Started the Error Log File
+[2024-04-15 19:12:11] No errors occurred
+[2024-04-15 19:12:11] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:12:15] 
+
+
+[2024-04-15 19:12:15] Started the Error Log File
+[2024-04-15 19:12:29] 
+
+
+[2024-04-15 19:12:29] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:12:33] No errors occurred
+[2024-04-15 19:12:33] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:13:02] 
+
+
+[2024-04-15 19:13:02] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 734, in return_home
+    self.challange_snake_canvas.delete_game_labels___()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Challange' object has no attribute 'delete_game_labels___'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:13:06] No errors occurred
+[2024-04-15 19:13:06] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:13:08] 
+
+
+[2024-04-15 19:13:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:13:11] No errors occurred
+[2024-04-15 19:13:11] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:14:02] 
+
+
+[2024-04-15 19:14:02] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:14:08] No errors occurred
+[2024-04-15 19:14:08] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:14:14] 
+
+
+[2024-04-15 19:14:14] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 734, in return_home
+    self.challange_snake_canvas.delete_game_labels___()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 105, in delete_game_labels___
+    self.game_labels_panel.challange_delete_score_labels()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'challange_delete_score_labels'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:14:19] No errors occurred
+[2024-04-15 19:14:19] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:14:54] 
+
+
+[2024-04-15 19:14:54] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:14:56] No errors occurred
+[2024-04-15 19:14:56] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:14:58] 
+
+
+[2024-04-15 19:14:58] Started the Error Log File
+[2024-04-15 19:15:08] 
+
+
+[2024-04-15 19:15:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:15:11] No errors occurred
+[2024-04-15 19:15:11] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:15:30] 
+
+
+[2024-04-15 19:15:30] Started the Error Log File
+[2024-04-15 19:15:48] 
+
+
+[2024-04-15 19:15:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:15:51] No errors occurred
+[2024-04-15 19:15:51] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:19:38] 
+
+
+[2024-04-15 19:19:38] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:19:41] No errors occurred
+[2024-04-15 19:19:41] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:19:44] 
+
+
+[2024-04-15 19:19:44] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
+    self.functions['challange_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
+    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
+    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 101, in __init__
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 121, in start_screen
+    self.bind_and_unbind_keys()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Snake_Challange' object has no attribute 'bind_and_unbind_keys'
+[2024-04-15 19:21:53] 
+
+
+[2024-04-15 19:21:53] Started the Error Log File
+[2024-04-15 19:25:59] 
+
+
+[2024-04-15 19:25:59] Started the Error Log File
+[2024-04-15 19:27:27] 
+
+
+[2024-04-15 19:27:27] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
+    if self.main_canvas == self.challange_snake_canvas:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 246, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-15 19:27:35] No errors occurred
+[2024-04-15 19:27:35] Closed the Error Log File
+
+
+
+
+[2024-04-15 19:29:13] 
+
+
+[2024-04-15 19:29:13] Started the Error Log File
+[2024-04-15 19:29:48] 
+
+
+[2024-04-15 19:29:48] Started the Error Log File
+[2024-04-15 19:33:23] 
+
+
+[2024-04-15 19:33:23] Started the Error Log File
+[2024-04-15 19:37:58] 
+
+
+[2024-04-15 19:37:58] Started the Error Log File
+[2024-04-15 19:38:29] 
+
+
+[2024-04-15 19:38:29] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
+    self.functions['challange_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 181, in challange_snake
+    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 208, in start_game
+    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 50, in __init__
+    self.snake_length = self.game_config.SNAKE_LENGTH
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameConfig' object has no attribute 'SNAKE_LENGTH'
+[2024-04-15 19:38:50] 
+
+
+[2024-04-15 19:38:50] Started the Error Log File
+[2024-04-15 19:41:22] 
+
+
+[2024-04-15 19:41:22] Started the Error Log File

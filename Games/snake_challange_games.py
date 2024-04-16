@@ -13,8 +13,6 @@ from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
 
 
-
-
 class Snake_Challange(ctk.CTkCanvas):
     def __init__(self, parent, game_config, logfile, functions, create_button_panel):
         self.parent = parent
@@ -118,7 +116,7 @@ class Snake_Challange(ctk.CTkCanvas):
     def start_screen(self):
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
-        self.config.set('Challange_Snake_Values', 'state', 'start_game')
+        self.config.set('Challange_Snake_Settings', 'state', 'start_game')
 
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
@@ -130,11 +128,14 @@ class Snake_Challange(ctk.CTkCanvas):
         self.game_labels_panel_4.challange_update_game_labels()
         self.game_labels_panel_4.challange_update_high_score_labels()
     
-    def start_game(self):
+    def start_game(self, event=None):
         self.bind_and_unbind_keys()
         self.state = 'game'
+        self.config.set('Challange_Snake_Settings', 'state', 'game')
+        with open('config.ini', 'w') as configfile:
+            self.config.write(configfile)
         self.bind_and_unbind_keys()
-        self.config.read('Challange_Snake_Values', 'state', 'game')
+        self.config.read(self.config_path)
         self.high_score = int(self.config.get('Challange_Snake_Values', 'high_score'))
         self.high_score_time = int(self.config.get('Challange_Snake_Values', 'high_score_time'))
         self.snake_length_high_score = int(self.config.get('Challange_Snake_Values', 'snake_length_high_score'))
@@ -199,10 +200,11 @@ class Snake_Challange(ctk.CTkCanvas):
         self.config.set('Challange_Snake_Values', 'time_score', str(self.total_time_played))
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
-
         
+        if self.score == 10:
+            self.win_condition()
 
-        if self.check_collisions(snake):
+        elif self.check_collisions(snake):
             self.logfile.log_game_event("snake has a collision")
             self.game_over()
         else:
@@ -277,7 +279,7 @@ class Snake_Challange(ctk.CTkCanvas):
             self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
             
         with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
+            self.config.write(configfile)
 
     def restart_game(self, event=None):
         self.bind_and_unbind_keys()
@@ -296,13 +298,30 @@ class Snake_Challange(ctk.CTkCanvas):
 
         self.config.set('Challange_Snake_Values', 'score', '0')
         self.config.set('Challange_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
+
+        self.state = 'start_game'
+        self.config.set('Challange_Snake_Settings', 'state', 'start_game')
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
             # start the game again
-            self.state = 'start_game'
         self.score = 0
         self.game_labels_panel_4.challange_update_game_labels()
         self.start_game()
+    
+    def win_condition(self):
+        self.state = 'win'
+        self.bind_and_unbind_keys()
+        self.config.set('Challange_Snake_Settings', 'state', 'win')
+        with open('config.ini', 'w') as configfile:
+            self.config.write(configfile)
+        self.snake_canvas.delete('all')
+        self.snake_canvas.create_text(self.snake_canvas.winfo_width()/2, self.snake_canvas.winfo_height()/2,
+                        font= FONT_LIST[16], text="YOU WIN", fill="green", tag="win")
+        self.snake_canvas.create_text(self.snake_canvas.winfo_width()/2, self.snake_canvas.winfo_height()/2 + 100,
+                        font= FONT_LIST[10], text="Press R to play again", fill="white", tag="win")
+        self.bind_and_unbind_keys()
+        self.logfile.log_game_event("You win")
+        self.logfile.log_game_event(f"Game state: {self.state}")
 
     def bind_and_unbind_keys(self):
         # Unbind all events to avoid conflicts
@@ -335,3 +354,6 @@ class Snake_Challange(ctk.CTkCanvas):
             self.snake_canvas.bind('<s>', lambda event: self.change_direction('down'))
         elif self.state == 'settings_menu':
             self.snake_canvas.unbind('<Escape>')
+        elif self.state == 'win':
+            self.snake_canvas.bind("<r>", self.restart_game)
+            self.snake_canvas.bind("<R>", self.restart_game)

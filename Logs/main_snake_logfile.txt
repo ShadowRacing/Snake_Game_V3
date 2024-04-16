@@ -25380,3 +25380,767 @@ Game height: 600
 
 
 
+[2024-04-16 17:30:25] Started the app
+[2024-04-16 17:30:25] Started the GameApp Class
+[2024-04-16 17:30:25] Game mode: initial config
+[2024-04-16 17:30:25] Dark-Blue
+[2024-04-16 17:30:25] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:30:25] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:30:25] Contrast mode set to dark
+[2024-04-16 17:30:25] 600x600
+[2024-04-16 17:30:25] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:30:25] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:30:25] start_screen method called
+[2024-04-16 17:30:27] Game mode: snake_challange
+[2024-04-16 17:30:27] start_game
+[2024-04-16 17:30:27] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:30:27] Reset snake length
+[2024-04-16 17:30:27] Game mode: snake_challange
+[2024-04-16 17:30:27] start_game
+[2024-04-16 17:30:27] 600x600
+[2024-04-16 17:30:27] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:30:27] Current initial_game_size in config.ini: 600x600
+1
+1
+Deleted score challange
+Deleted high score challange
+Deleted Labels challange
+[2024-04-16 17:32:02] Started the app
+[2024-04-16 17:32:02] Started the GameApp Class
+[2024-04-16 17:32:02] Game mode: initial config
+[2024-04-16 17:32:02] Dark-Blue
+[2024-04-16 17:32:02] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:32:02] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:32:02] Contrast mode set to dark
+[2024-04-16 17:32:02] 600x600
+[2024-04-16 17:32:02] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:32:02] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:32:02] start_screen method called
+[2024-04-16 17:32:04] Game mode: snake_challange
+[2024-04-16 17:32:04] start_game
+[2024-04-16 17:32:04] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:32:04] Reset snake length
+[2024-04-16 17:32:04] Game mode: snake_challange
+[2024-04-16 17:32:04] start_game
+[2024-04-16 17:32:04] 600x600
+[2024-04-16 17:32:04] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:32:04] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:33:28] Started the app
+[2024-04-16 17:33:28] Started the GameApp Class
+[2024-04-16 17:33:28] Game mode: initial config
+[2024-04-16 17:33:28] Dark-Blue
+[2024-04-16 17:33:28] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:33:28] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:33:28] Contrast mode set to dark
+[2024-04-16 17:33:28] 600x600
+[2024-04-16 17:33:28] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:33:28] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:33:28] start_screen method called
+[2024-04-16 17:33:29] Game mode: snake_challange
+[2024-04-16 17:33:29] start_game
+[2024-04-16 17:33:29] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:33:29] Reset snake length
+[2024-04-16 17:33:29] Game mode: snake_challange
+[2024-04-16 17:33:29] start_game
+[2024-04-16 17:33:29] 600x600
+[2024-04-16 17:33:29] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:33:29] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:33:30] Game state: game
+[2024-04-16 17:33:30] Food ID:
+[2024-04-16 17:33:30] 0541ccd6-4e20-4b31-be96-76fd1b78248c
+[2024-04-16 17:33:30] {'0541ccd6-4e20-4b31-be96-76fd1b78248c': {'x': 240, 'y': 240, 'tag': 'food0541ccd6-4e20-4b31-be96-76fd1b78248c', 'oval_id': 7}}
+[2024-04-16 17:33:30] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:33:32] Food ID:
+[2024-04-16 17:33:32] 4c4c8c34-86d4-4b02-8b2c-c011480a693a
+[2024-04-16 17:33:32] {'4c4c8c34-86d4-4b02-8b2c-c011480a693a': {'x': 200, 'y': 240, 'tag': 'food4c4c8c34-86d4-4b02-8b2c-c011480a693a', 'oval_id': 32}}
+[2024-04-16 17:33:33] Food ID:
+[2024-04-16 17:33:33] 35508268-0223-4596-9179-a8b2edd4877a
+[2024-04-16 17:33:33] {'35508268-0223-4596-9179-a8b2edd4877a': {'x': 180, 'y': 160, 'tag': 'food35508268-0223-4596-9179-a8b2edd4877a', 'oval_id': 45}}
+[2024-04-16 17:33:35] Food ID:
+[2024-04-16 17:33:35] a46b263f-a8a7-40d1-8fd8-4d8ce53f7a3d
+[2024-04-16 17:33:35] {'a46b263f-a8a7-40d1-8fd8-4d8ce53f7a3d': {'x': 240, 'y': 160, 'tag': 'fooda46b263f-a8a7-40d1-8fd8-4d8ce53f7a3d', 'oval_id': 63}}
+[2024-04-16 17:33:36] Food ID:
+[2024-04-16 17:33:36] 36d6314f-792a-49c8-97a4-472f54bae8ee
+[2024-04-16 17:33:36] {'36d6314f-792a-49c8-97a4-472f54bae8ee': {'x': 300, 'y': 180, 'tag': 'food36d6314f-792a-49c8-97a4-472f54bae8ee', 'oval_id': 77}}
+[2024-04-16 17:33:36] Food ID:
+[2024-04-16 17:33:36] c5f14d4e-c2b3-4d63-81f7-16f40e503a00
+[2024-04-16 17:33:36] {'c5f14d4e-c2b3-4d63-81f7-16f40e503a00': {'x': 80, 'y': 140, 'tag': 'foodc5f14d4e-c2b3-4d63-81f7-16f40e503a00', 'oval_id': 84}}
+[2024-04-16 17:33:39] Food ID:
+[2024-04-16 17:33:39] a4566087-b80f-4209-a0c6-d8143035766b
+[2024-04-16 17:33:39] {'a4566087-b80f-4209-a0c6-d8143035766b': {'x': 380, 'y': 80, 'tag': 'fooda4566087-b80f-4209-a0c6-d8143035766b', 'oval_id': 118}}
+[2024-04-16 17:33:40] snake has a collision
+[2024-04-16 17:33:40] Game state: game_over
+[2024-04-16 17:33:40] Snake coordinates after reset: [(120, 140), (120, 160), (120, 180), (100, 180), (80, 180), (60, 180), (60, 160), (60, 140), (80, 140), (100, 140), (120, 140)]
+[2024-04-16 17:33:40] High score: 0
+[2024-04-16 17:33:40] Score: 6
+[2024-04-16 17:33:40] high_score_time updated to: 10
+[2024-04-16 17:33:40] snake_length_high_score updated to: 11
+[2024-04-16 17:39:34] Started the app
+[2024-04-16 17:39:34] Started the GameApp Class
+[2024-04-16 17:39:34] Game mode: initial config
+[2024-04-16 17:39:34] Dark-Blue
+[2024-04-16 17:39:34] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:39:34] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:39:34] Contrast mode set to dark
+[2024-04-16 17:39:34] 600x600
+[2024-04-16 17:39:34] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:39:34] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:39:34] start_screen method called
+[2024-04-16 17:39:47] Game mode: snake_challange
+[2024-04-16 17:39:47] start_game
+[2024-04-16 17:39:47] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:39:47] Reset snake length
+[2024-04-16 17:39:47] Game mode: snake_challange
+[2024-04-16 17:39:47] start_game
+[2024-04-16 17:39:47] 600x600
+[2024-04-16 17:39:47] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:39:47] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:39:48] Game state: game
+[2024-04-16 17:39:48] Food ID:
+[2024-04-16 17:39:48] 2759348e-9f8b-4cc5-af17-eef0cb4f8588
+[2024-04-16 17:39:48] {'2759348e-9f8b-4cc5-af17-eef0cb4f8588': {'x': 280, 'y': 200, 'tag': 'food2759348e-9f8b-4cc5-af17-eef0cb4f8588', 'oval_id': 7}}
+[2024-04-16 17:39:48] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:39:50] Food ID:
+[2024-04-16 17:39:50] 8868adf1-605d-43e0-affa-f75643079a72
+[2024-04-16 17:39:50] {'8868adf1-605d-43e0-affa-f75643079a72': {'x': 360, 'y': 320, 'tag': 'food8868adf1-605d-43e0-affa-f75643079a72', 'oval_id': 32}}
+[2024-04-16 17:39:51] Food ID:
+[2024-04-16 17:39:51] 8a56b732-3a63-421f-a970-9539a7563904
+[2024-04-16 17:39:51] {'8a56b732-3a63-421f-a970-9539a7563904': {'x': 180, 'y': 120, 'tag': 'food8a56b732-3a63-421f-a970-9539a7563904', 'oval_id': 43}}
+[2024-04-16 17:39:54] Food ID:
+[2024-04-16 17:39:54] 898834e4-f425-4a93-9195-daa9f841f628
+[2024-04-16 17:39:54] {'898834e4-f425-4a93-9195-daa9f841f628': {'x': 80, 'y': 300, 'tag': 'food898834e4-f425-4a93-9195-daa9f841f628', 'oval_id': 71}}
+[2024-04-16 17:39:56] Food ID:
+[2024-04-16 17:39:56] c41ad34c-10d3-49fa-920d-62a51a8b8a8e
+[2024-04-16 17:39:56] {'c41ad34c-10d3-49fa-920d-62a51a8b8a8e': {'x': 260, 'y': 180, 'tag': 'foodc41ad34c-10d3-49fa-920d-62a51a8b8a8e', 'oval_id': 94}}
+[2024-04-16 17:39:58] Food ID:
+[2024-04-16 17:39:58] 66ff6f8e-0b7d-4791-8486-d1dd88706615
+[2024-04-16 17:39:58] {'66ff6f8e-0b7d-4791-8486-d1dd88706615': {'x': 240, 'y': 220, 'tag': 'food66ff6f8e-0b7d-4791-8486-d1dd88706615', 'oval_id': 116}}
+[2024-04-16 17:39:59] Food ID:
+[2024-04-16 17:39:59] 7c8506cb-63a2-43ad-8362-1cecc2161b4e
+[2024-04-16 17:39:59] {'7c8506cb-63a2-43ad-8362-1cecc2161b4e': {'x': 0, 'y': 220, 'tag': 'food7c8506cb-63a2-43ad-8362-1cecc2161b4e', 'oval_id': 128}}
+[2024-04-16 17:40:01] Food ID:
+[2024-04-16 17:40:01] 087a30da-1383-46ed-8071-e1237f2061b2
+[2024-04-16 17:40:01] {'087a30da-1383-46ed-8071-e1237f2061b2': {'x': 200, 'y': 360, 'tag': 'food087a30da-1383-46ed-8071-e1237f2061b2', 'oval_id': 149}}
+[2024-04-16 17:40:02] Food ID:
+[2024-04-16 17:40:02] 43c27b7c-1750-4c28-bafc-667d2ff68b07
+[2024-04-16 17:40:02] {'43c27b7c-1750-4c28-bafc-667d2ff68b07': {'x': 120, 'y': 360, 'tag': 'food43c27b7c-1750-4c28-bafc-667d2ff68b07', 'oval_id': 167}}
+[2024-04-16 17:40:06] Food ID:
+[2024-04-16 17:40:06] b8e080ac-ddde-4d85-a264-952bf85eafad
+[2024-04-16 17:40:06] {'b8e080ac-ddde-4d85-a264-952bf85eafad': {'x': 180, 'y': 0, 'tag': 'foodb8e080ac-ddde-4d85-a264-952bf85eafad', 'oval_id': 208}}
+[2024-04-16 17:40:09] Food ID:
+[2024-04-16 17:40:09] 3c54581f-6ead-4dd5-8834-ac5408352f24
+[2024-04-16 17:40:09] {'3c54581f-6ead-4dd5-8834-ac5408352f24': {'x': 340, 'y': 320, 'tag': 'food3c54581f-6ead-4dd5-8834-ac5408352f24', 'oval_id': 242}}
+[2024-04-16 17:40:09] You win
+[2024-04-16 17:40:09] Game state: win
+[2024-04-16 17:40:09] You win
+[2024-04-16 17:40:09] Game state: win
+[2024-04-16 17:40:09] You win
+[2024-04-16 17:40:09] Game state: win
+[2024-04-16 17:40:09] You win
+[2024-04-16 17:40:09] Game state: win
+[2024-04-16 17:40:09] You win
+[2024-04-16 17:40:09] Game state: win
+[2024-04-16 17:40:09] You win
+[2024-04-16 17:40:09] Game state: win
+[2024-04-16 17:40:09] You win
+[2024-04-16 17:40:09] Game state: win
+[2024-04-16 17:40:10] You win
+[2024-04-16 17:40:10] Game state: win
+[2024-04-16 17:40:10] You win
+[2024-04-16 17:40:10] Game state: win
+[2024-04-16 17:40:10] You win
+[2024-04-16 17:40:10] Game state: win
+[2024-04-16 17:40:10] snake has a collision
+[2024-04-16 17:40:10] Game state: game_over
+[2024-04-16 17:40:10] Snake coordinates after reset: [(-20, 0), (0, 0), (20, 0), (40, 0), (60, 0), (80, 0), (100, 0), (120, 0), (140, 0), (160, 0), (180, 0), (200, 0), (220, 0), (240, 0), (260, 0)]
+[2024-04-16 17:40:10] High score: 6
+[2024-04-16 17:40:10] Score: 10
+[2024-04-16 17:40:10] high_score_time updated to: 21
+[2024-04-16 17:40:10] snake_length_high_score updated to: 15
+[2024-04-16 17:40:19] Game restarted
+[2024-04-16 17:40:19] Game state: game_over
+[2024-04-16 17:40:19] Reset snake length
+[2024-04-16 17:40:19] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:40:19] Game state: game
+[2024-04-16 17:40:19] Food ID:
+[2024-04-16 17:40:19] c6e745ce-7f23-406f-adfd-2f3e21215553
+[2024-04-16 17:40:19] {'c6e745ce-7f23-406f-adfd-2f3e21215553': {'x': 40, 'y': 60, 'tag': 'foodc6e745ce-7f23-406f-adfd-2f3e21215553', 'oval_id': 280}}
+[2024-04-16 17:40:19] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:40:21] Food ID:
+[2024-04-16 17:40:21] 642f5363-9065-4483-8b3d-4ff78c2c0902
+[2024-04-16 17:40:21] {'642f5363-9065-4483-8b3d-4ff78c2c0902': {'x': 360, 'y': 120, 'tag': 'food642f5363-9065-4483-8b3d-4ff78c2c0902', 'oval_id': 304}}
+[2024-04-16 17:40:23] Food ID:
+[2024-04-16 17:40:23] be65bd39-d2ff-498c-866c-a5e4b29745b3
+[2024-04-16 17:40:23] {'be65bd39-d2ff-498c-866c-a5e4b29745b3': {'x': 160, 'y': 340, 'tag': 'foodbe65bd39-d2ff-498c-866c-a5e4b29745b3', 'oval_id': 324}}
+[2024-04-16 17:40:25] Food ID:
+[2024-04-16 17:40:25] 60f736cd-481d-48ce-b363-8a2e2c1b8c5e
+[2024-04-16 17:40:25] {'60f736cd-481d-48ce-b363-8a2e2c1b8c5e': {'x': 20, 'y': 20, 'tag': 'food60f736cd-481d-48ce-b363-8a2e2c1b8c5e', 'oval_id': 348}}
+[2024-04-16 17:40:27] Food ID:
+[2024-04-16 17:40:27] 516d6845-5e2c-4f34-a5cd-3835efa54042
+[2024-04-16 17:40:27] {'516d6845-5e2c-4f34-a5cd-3835efa54042': {'x': 140, 'y': 160, 'tag': 'food516d6845-5e2c-4f34-a5cd-3835efa54042', 'oval_id': 372}}
+[2024-04-16 17:40:28] Food ID:
+[2024-04-16 17:40:28] fb6f8f0e-5705-4d5d-99b3-12a6695ef9ec
+[2024-04-16 17:40:28] {'fb6f8f0e-5705-4d5d-99b3-12a6695ef9ec': {'x': 220, 'y': 220, 'tag': 'foodfb6f8f0e-5705-4d5d-99b3-12a6695ef9ec', 'oval_id': 386}}
+[2024-04-16 17:40:30] Food ID:
+[2024-04-16 17:40:30] e35c2fcc-2de7-4300-b8e1-b655f86a56b9
+[2024-04-16 17:40:30] {'e35c2fcc-2de7-4300-b8e1-b655f86a56b9': {'x': 140, 'y': 60, 'tag': 'foode35c2fcc-2de7-4300-b8e1-b655f86a56b9', 'oval_id': 410}}
+[2024-04-16 17:40:31] Food ID:
+[2024-04-16 17:40:31] ee819d17-ed2e-43f0-b5e9-ca7fd536ec00
+[2024-04-16 17:40:31] {'ee819d17-ed2e-43f0-b5e9-ca7fd536ec00': {'x': 300, 'y': 360, 'tag': 'foodee819d17-ed2e-43f0-b5e9-ca7fd536ec00', 'oval_id': 423}}
+[2024-04-16 17:40:34] Food ID:
+[2024-04-16 17:40:34] cdd173f6-e0db-45ea-9407-4ddd48b1224a
+[2024-04-16 17:40:34] {'cdd173f6-e0db-45ea-9407-4ddd48b1224a': {'x': 80, 'y': 160, 'tag': 'foodcdd173f6-e0db-45ea-9407-4ddd48b1224a', 'oval_id': 449}}
+[2024-04-16 17:40:37] Food ID:
+[2024-04-16 17:40:37] 7b59dd44-5d31-4353-b4cc-1a64956da8c5
+[2024-04-16 17:40:37] {'7b59dd44-5d31-4353-b4cc-1a64956da8c5': {'x': 120, 'y': 300, 'tag': 'food7b59dd44-5d31-4353-b4cc-1a64956da8c5', 'oval_id': 483}}
+[2024-04-16 17:40:38] Food ID:
+[2024-04-16 17:40:38] b1e36731-bd68-4f40-bd01-873af8818c76
+[2024-04-16 17:40:38] {'b1e36731-bd68-4f40-bd01-873af8818c76': {'x': 200, 'y': 120, 'tag': 'foodb1e36731-bd68-4f40-bd01-873af8818c76', 'oval_id': 499}}
+[2024-04-16 17:40:38] You win
+[2024-04-16 17:40:38] Game state: win
+[2024-04-16 17:40:38] You win
+[2024-04-16 17:40:38] Game state: win
+[2024-04-16 17:40:38] You win
+[2024-04-16 17:40:38] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:39] You win
+[2024-04-16 17:40:39] Game state: win
+[2024-04-16 17:40:40] You win
+[2024-04-16 17:40:40] Game state: win
+[2024-04-16 17:40:40] snake has a collision
+[2024-04-16 17:40:40] Game state: game_over
+[2024-04-16 17:40:40] Snake coordinates after reset: [(120, 600), (120, 580), (120, 560), (120, 540), (120, 520), (120, 500), (120, 480), (120, 460), (120, 440), (120, 420), (120, 400), (120, 380), (120, 360), (120, 340), (120, 320)]
+[2024-04-16 17:40:40] High score: 10
+[2024-04-16 17:40:40] Score: 10
+[2024-04-16 17:41:04] Closed the app
+
+
+
+
+[2024-04-16 17:41:07] Started the app
+[2024-04-16 17:41:07] Started the GameApp Class
+[2024-04-16 17:41:07] Game mode: initial config
+[2024-04-16 17:41:07] Dark-Blue
+[2024-04-16 17:41:07] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:41:07] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:41:07] Contrast mode set to dark
+[2024-04-16 17:41:07] 600x600
+[2024-04-16 17:41:07] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:41:07] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:41:07] start_screen method called
+[2024-04-16 17:41:14] Game mode: snake_challange
+[2024-04-16 17:41:14] start_game
+[2024-04-16 17:41:14] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:41:14] Reset snake length
+[2024-04-16 17:41:14] Game mode: snake_challange
+[2024-04-16 17:41:14] start_game
+[2024-04-16 17:41:14] 600x600
+[2024-04-16 17:41:14] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:41:14] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:41:15] Game state: game
+[2024-04-16 17:41:15] Food ID:
+[2024-04-16 17:41:15] 0ae7e655-d3d7-45cd-b968-92cb0f502681
+[2024-04-16 17:41:15] {'0ae7e655-d3d7-45cd-b968-92cb0f502681': {'x': 0, 'y': 380, 'tag': 'food0ae7e655-d3d7-45cd-b968-92cb0f502681', 'oval_id': 7}}
+[2024-04-16 17:41:15] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:41:18] Food ID:
+[2024-04-16 17:41:18] a1c2f4ef-966a-4965-b5bf-6328bfb561cf
+[2024-04-16 17:41:18] {'a1c2f4ef-966a-4965-b5bf-6328bfb561cf': {'x': 160, 'y': 160, 'tag': 'fooda1c2f4ef-966a-4965-b5bf-6328bfb561cf', 'oval_id': 43}}
+[2024-04-16 17:41:20] Food ID:
+[2024-04-16 17:41:20] eda57345-ff77-4c51-a36a-9f05fd5c8b29
+[2024-04-16 17:41:20] {'eda57345-ff77-4c51-a36a-9f05fd5c8b29': {'x': 300, 'y': 240, 'tag': 'foodeda57345-ff77-4c51-a36a-9f05fd5c8b29', 'oval_id': 63}}
+[2024-04-16 17:41:21] Food ID:
+[2024-04-16 17:41:21] 9f4316d9-2682-4133-a001-60d562721987
+[2024-04-16 17:41:21] {'9f4316d9-2682-4133-a001-60d562721987': {'x': 120, 'y': 0, 'tag': 'food9f4316d9-2682-4133-a001-60d562721987', 'oval_id': 75}}
+[2024-04-16 17:41:24] Food ID:
+[2024-04-16 17:41:24] 02f0fa8a-504c-4019-adc9-137bd1dc1fcc
+[2024-04-16 17:41:24] {'02f0fa8a-504c-4019-adc9-137bd1dc1fcc': {'x': 280, 'y': 20, 'tag': 'food02f0fa8a-504c-4019-adc9-137bd1dc1fcc', 'oval_id': 105}}
+[2024-04-16 17:41:25] Food ID:
+[2024-04-16 17:41:25] 7f9888d2-0080-4733-979e-486fef15f89b
+[2024-04-16 17:41:25] {'7f9888d2-0080-4733-979e-486fef15f89b': {'x': 40, 'y': 180, 'tag': 'food7f9888d2-0080-4733-979e-486fef15f89b', 'oval_id': 121}}
+[2024-04-16 17:41:27] Food ID:
+[2024-04-16 17:41:27] b6d305b1-ed0c-45dd-a8f6-ea3b1246e9ea
+[2024-04-16 17:41:27] {'b6d305b1-ed0c-45dd-a8f6-ea3b1246e9ea': {'x': 300, 'y': 0, 'tag': 'foodb6d305b1-ed0c-45dd-a8f6-ea3b1246e9ea', 'oval_id': 142}}
+[2024-04-16 17:41:29] Food ID:
+[2024-04-16 17:41:29] a1bdc891-d91a-4d24-a448-353487c16c26
+[2024-04-16 17:41:29] {'a1bdc891-d91a-4d24-a448-353487c16c26': {'x': 320, 'y': 60, 'tag': 'fooda1bdc891-d91a-4d24-a448-353487c16c26', 'oval_id': 169}}
+[2024-04-16 17:41:31] Food ID:
+[2024-04-16 17:41:31] fe65fc90-76e7-40fd-b2c5-fce1fa861e4e
+[2024-04-16 17:41:31] {'fe65fc90-76e7-40fd-b2c5-fce1fa861e4e': {'x': 60, 'y': 180, 'tag': 'foodfe65fc90-76e7-40fd-b2c5-fce1fa861e4e', 'oval_id': 194}}
+[2024-04-16 17:41:34] Food ID:
+[2024-04-16 17:41:34] 998a82ea-4ce5-492b-be63-8d2f251e7cd1
+[2024-04-16 17:41:34] {'998a82ea-4ce5-492b-be63-8d2f251e7cd1': {'x': 120, 'y': 200, 'tag': 'food998a82ea-4ce5-492b-be63-8d2f251e7cd1', 'oval_id': 220}}
+[2024-04-16 17:41:35] Food ID:
+[2024-04-16 17:41:35] 932eb839-b30f-49c3-a090-f8d2dd52b790
+[2024-04-16 17:41:35] {'932eb839-b30f-49c3-a090-f8d2dd52b790': {'x': 280, 'y': 40, 'tag': 'food932eb839-b30f-49c3-a090-f8d2dd52b790', 'oval_id': 229}}
+[2024-04-16 17:41:35] You win
+[2024-04-16 17:41:35] Game state: win
+[2024-04-16 17:41:38] Game restarted
+[2024-04-16 17:41:38] Game state: win
+[2024-04-16 17:41:38] Reset snake length
+[2024-04-16 17:41:38] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:41:38] Game state: game
+[2024-04-16 17:41:38] Food ID:
+[2024-04-16 17:41:38] 732fca8a-97f4-4ec4-81d9-4d56bcc6b534
+[2024-04-16 17:41:38] {'732fca8a-97f4-4ec4-81d9-4d56bcc6b534': {'x': 80, 'y': 60, 'tag': 'food732fca8a-97f4-4ec4-81d9-4d56bcc6b534', 'oval_id': 238}}
+[2024-04-16 17:41:38] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:41:39] Food ID:
+[2024-04-16 17:41:39] 620c0149-bc37-485c-a58d-d7d182041f0d
+[2024-04-16 17:41:39] {'620c0149-bc37-485c-a58d-d7d182041f0d': {'x': 260, 'y': 160, 'tag': 'food620c0149-bc37-485c-a58d-d7d182041f0d', 'oval_id': 250}}
+[2024-04-16 17:41:40] Food ID:
+[2024-04-16 17:41:40] 14896d61-b566-4575-9486-a74db3b376e6
+[2024-04-16 17:41:40] {'14896d61-b566-4575-9486-a74db3b376e6': {'x': 80, 'y': 160, 'tag': 'food14896d61-b566-4575-9486-a74db3b376e6', 'oval_id': 265}}
+[2024-04-16 17:41:42] Food ID:
+[2024-04-16 17:41:42] 4124fe1b-e3a8-4806-8863-07d3cb66e6d5
+[2024-04-16 17:41:42] {'4124fe1b-e3a8-4806-8863-07d3cb66e6d5': {'x': 0, 'y': 300, 'tag': 'food4124fe1b-e3a8-4806-8863-07d3cb66e6d5', 'oval_id': 283}}
+[2024-04-16 17:41:44] Food ID:
+[2024-04-16 17:41:44] 82482c0d-e17c-4b98-a59d-d00878451efe
+[2024-04-16 17:41:44] {'82482c0d-e17c-4b98-a59d-d00878451efe': {'x': 240, 'y': 320, 'tag': 'food82482c0d-e17c-4b98-a59d-d00878451efe', 'oval_id': 307}}
+[2024-04-16 17:41:45] Food ID:
+[2024-04-16 17:41:45] 5de26748-a3be-44a9-858c-d1b9b568caa5
+[2024-04-16 17:41:45] {'5de26748-a3be-44a9-858c-d1b9b568caa5': {'x': 120, 'y': 60, 'tag': 'food5de26748-a3be-44a9-858c-d1b9b568caa5', 'oval_id': 325}}
+[2024-04-16 17:41:47] Food ID:
+[2024-04-16 17:41:47] 2b3954ba-ab51-4d59-8763-35df9d283d28
+[2024-04-16 17:41:47] {'2b3954ba-ab51-4d59-8763-35df9d283d28': {'x': 120, 'y': 220, 'tag': 'food2b3954ba-ab51-4d59-8763-35df9d283d28', 'oval_id': 345}}
+[2024-04-16 17:41:49] Food ID:
+[2024-04-16 17:41:49] be473f17-5e47-4998-b3a5-2c42c39d6b8d
+[2024-04-16 17:41:49] {'be473f17-5e47-4998-b3a5-2c42c39d6b8d': {'x': 280, 'y': 180, 'tag': 'foodbe473f17-5e47-4998-b3a5-2c42c39d6b8d', 'oval_id': 366}}
+[2024-04-16 17:41:52] Food ID:
+[2024-04-16 17:41:52] 3fdc27c6-cf59-4ca4-aecd-cd7685193a0d
+[2024-04-16 17:41:52] {'3fdc27c6-cf59-4ca4-aecd-cd7685193a0d': {'x': 100, 'y': 300, 'tag': 'food3fdc27c6-cf59-4ca4-aecd-cd7685193a0d', 'oval_id': 397}}
+[2024-04-16 17:41:54] Food ID:
+[2024-04-16 17:41:54] a1a1e0a1-deb6-4736-92ac-7d1a135019c7
+[2024-04-16 17:41:54] {'a1a1e0a1-deb6-4736-92ac-7d1a135019c7': {'x': 120, 'y': 60, 'tag': 'fooda1a1e0a1-deb6-4736-92ac-7d1a135019c7', 'oval_id': 421}}
+[2024-04-16 17:41:56] Food ID:
+[2024-04-16 17:41:56] 7121cf7f-b139-491f-b990-d78f9b59cec1
+[2024-04-16 17:41:56] {'7121cf7f-b139-491f-b990-d78f9b59cec1': {'x': 0, 'y': 220, 'tag': 'food7121cf7f-b139-491f-b990-d78f9b59cec1', 'oval_id': 447}}
+[2024-04-16 17:41:56] You win
+[2024-04-16 17:41:56] Game state: win
+[2024-04-16 17:45:47] Game restarted
+[2024-04-16 17:45:47] Game state: win
+[2024-04-16 17:45:47] Reset snake length
+[2024-04-16 17:45:47] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:45:47] Game state: game
+[2024-04-16 17:45:47] Food ID:
+[2024-04-16 17:45:47] f28828ab-4449-464c-a8f9-9921238fb56a
+[2024-04-16 17:45:47] {'f28828ab-4449-464c-a8f9-9921238fb56a': {'x': 260, 'y': 300, 'tag': 'foodf28828ab-4449-464c-a8f9-9921238fb56a', 'oval_id': 456}}
+[2024-04-16 17:45:47] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:45:52] Food ID:
+[2024-04-16 17:45:52] 389cbd30-cc2c-4809-abc7-00a36837f5c6
+[2024-04-16 17:45:52] {'389cbd30-cc2c-4809-abc7-00a36837f5c6': {'x': 0, 'y': 380, 'tag': 'food389cbd30-cc2c-4809-abc7-00a36837f5c6', 'oval_id': 505}}
+[2024-04-16 17:45:53] Food ID:
+[2024-04-16 17:45:53] 20cf304a-ea9d-4c5c-a420-e32f42e8d3cf
+[2024-04-16 17:45:53] {'20cf304a-ea9d-4c5c-a420-e32f42e8d3cf': {'x': 180, 'y': 180, 'tag': 'food20cf304a-ea9d-4c5c-a420-e32f42e8d3cf', 'oval_id': 523}}
+[2024-04-16 17:45:55] Food ID:
+[2024-04-16 17:45:55] 0f2e7938-48cf-48db-80ba-8742a583525e
+[2024-04-16 17:45:55] {'0f2e7938-48cf-48db-80ba-8742a583525e': {'x': 220, 'y': 360, 'tag': 'food0f2e7938-48cf-48db-80ba-8742a583525e', 'oval_id': 545}}
+[2024-04-16 17:45:57] Food ID:
+[2024-04-16 17:45:57] 2aaafb52-d9a9-46aa-be90-723b9fb3d2b4
+[2024-04-16 17:45:57] {'2aaafb52-d9a9-46aa-be90-723b9fb3d2b4': {'x': 200, 'y': 40, 'tag': 'food2aaafb52-d9a9-46aa-be90-723b9fb3d2b4', 'oval_id': 559}}
+[2024-04-16 17:45:59] Food ID:
+[2024-04-16 17:45:59] 47d56c8a-4a34-488b-9b93-78b49e593987
+[2024-04-16 17:45:59] {'47d56c8a-4a34-488b-9b93-78b49e593987': {'x': 140, 'y': 160, 'tag': 'food47d56c8a-4a34-488b-9b93-78b49e593987', 'oval_id': 583}}
+[2024-04-16 17:46:00] Food ID:
+[2024-04-16 17:46:00] e07bf2a3-f61d-4f7a-8d2f-c7eb74bd4ad4
+[2024-04-16 17:46:00] {'e07bf2a3-f61d-4f7a-8d2f-c7eb74bd4ad4': {'x': 260, 'y': 140, 'tag': 'foode07bf2a3-f61d-4f7a-8d2f-c7eb74bd4ad4', 'oval_id': 601}}
+[2024-04-16 17:46:01] Food ID:
+[2024-04-16 17:46:01] 3105f70c-b806-407c-aac3-25017a66be85
+[2024-04-16 17:46:01] {'3105f70c-b806-407c-aac3-25017a66be85': {'x': 140, 'y': 20, 'tag': 'food3105f70c-b806-407c-aac3-25017a66be85', 'oval_id': 611}}
+[2024-04-16 17:46:03] Food ID:
+[2024-04-16 17:46:03] 36fbf82d-c880-4b7e-a12f-f7b098862f89
+[2024-04-16 17:46:03] {'36fbf82d-c880-4b7e-a12f-f7b098862f89': {'x': 200, 'y': 260, 'tag': 'food36fbf82d-c880-4b7e-a12f-f7b098862f89', 'oval_id': 634}}
+[2024-04-16 17:46:05] Food ID:
+[2024-04-16 17:46:05] 8b1d8679-9b56-46ff-831c-d0139e955e97
+[2024-04-16 17:46:05] {'8b1d8679-9b56-46ff-831c-d0139e955e97': {'x': 340, 'y': 260, 'tag': 'food8b1d8679-9b56-46ff-831c-d0139e955e97', 'oval_id': 650}}
+[2024-04-16 17:46:07] Food ID:
+[2024-04-16 17:46:07] 829b375c-2c87-4038-add1-77329242278e
+[2024-04-16 17:46:07] {'829b375c-2c87-4038-add1-77329242278e': {'x': 120, 'y': 300, 'tag': 'food829b375c-2c87-4038-add1-77329242278e', 'oval_id': 678}}
+[2024-04-16 17:46:07] You win
+[2024-04-16 17:46:07] Game state: win
+[2024-04-16 17:46:16] Game restarted
+[2024-04-16 17:46:16] Game state: win
+[2024-04-16 17:46:16] Reset snake length
+[2024-04-16 17:46:16] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:46:16] Game state: game
+[2024-04-16 17:46:16] Food ID:
+[2024-04-16 17:46:16] d5b0011e-9297-4c8c-aafc-89bf9df7fe1b
+[2024-04-16 17:46:16] {'d5b0011e-9297-4c8c-aafc-89bf9df7fe1b': {'x': 180, 'y': 360, 'tag': 'foodd5b0011e-9297-4c8c-aafc-89bf9df7fe1b', 'oval_id': 687}}
+[2024-04-16 17:46:16] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:46:18] Food ID:
+[2024-04-16 17:46:18] 4ba5f7a3-6888-4f33-b521-925c47ba71c7
+[2024-04-16 17:46:18] {'4ba5f7a3-6888-4f33-b521-925c47ba71c7': {'x': 380, 'y': 340, 'tag': 'food4ba5f7a3-6888-4f33-b521-925c47ba71c7', 'oval_id': 715}}
+[2024-04-16 17:46:20] Food ID:
+[2024-04-16 17:46:20] d77bde7b-2ecb-452f-bffa-9bccf6728a1c
+[2024-04-16 17:46:20] {'d77bde7b-2ecb-452f-bffa-9bccf6728a1c': {'x': 220, 'y': 60, 'tag': 'foodd77bde7b-2ecb-452f-bffa-9bccf6728a1c', 'oval_id': 731}}
+[2024-04-16 17:46:23] Food ID:
+[2024-04-16 17:46:23] eeca6e85-cee0-4c3f-a629-f46433fd8391
+[2024-04-16 17:46:23] {'eeca6e85-cee0-4c3f-a629-f46433fd8391': {'x': 140, 'y': 160, 'tag': 'foodeeca6e85-cee0-4c3f-a629-f46433fd8391', 'oval_id': 762}}
+[2024-04-16 17:46:24] Food ID:
+[2024-04-16 17:46:24] 2f2a5891-5880-4117-a098-68bf305483d8
+[2024-04-16 17:46:24] {'2f2a5891-5880-4117-a098-68bf305483d8': {'x': 320, 'y': 180, 'tag': 'food2f2a5891-5880-4117-a098-68bf305483d8', 'oval_id': 772}}
+[2024-04-16 17:46:25] Food ID:
+[2024-04-16 17:46:25] c3171ad0-ea6b-455f-87f7-570271580b77
+[2024-04-16 17:46:25] {'c3171ad0-ea6b-455f-87f7-570271580b77': {'x': 340, 'y': 0, 'tag': 'foodc3171ad0-ea6b-455f-87f7-570271580b77', 'oval_id': 791}}
+[2024-04-16 17:46:28] Food ID:
+[2024-04-16 17:46:28] 3f021fdf-ed95-45dc-99ab-2fdfe169cc16
+[2024-04-16 17:46:28] {'3f021fdf-ed95-45dc-99ab-2fdfe169cc16': {'x': 260, 'y': 380, 'tag': 'food3f021fdf-ed95-45dc-99ab-2fdfe169cc16', 'oval_id': 824}}
+[2024-04-16 17:46:31] Food ID:
+[2024-04-16 17:46:31] ee678acb-75c1-4e5d-9244-f288f9be860a
+[2024-04-16 17:46:31] {'ee678acb-75c1-4e5d-9244-f288f9be860a': {'x': 320, 'y': 100, 'tag': 'foodee678acb-75c1-4e5d-9244-f288f9be860a', 'oval_id': 854}}
+[2024-04-16 17:46:33] Food ID:
+[2024-04-16 17:46:33] 11b53993-eea9-4fa8-a919-543693582e6a
+[2024-04-16 17:46:33] {'11b53993-eea9-4fa8-a919-543693582e6a': {'x': 340, 'y': 240, 'tag': 'food11b53993-eea9-4fa8-a919-543693582e6a', 'oval_id': 878}}
+[2024-04-16 17:46:34] Food ID:
+[2024-04-16 17:46:34] e68383a5-de22-409b-b145-69bd1b316541
+[2024-04-16 17:46:34] {'e68383a5-de22-409b-b145-69bd1b316541': {'x': 220, 'y': 300, 'tag': 'foode68383a5-de22-409b-b145-69bd1b316541', 'oval_id': 891}}
+[2024-04-16 17:46:35] Food ID:
+[2024-04-16 17:46:35] cb05ea4f-6d0a-4ce8-97b6-50a3f7a42aa4
+[2024-04-16 17:46:35] {'cb05ea4f-6d0a-4ce8-97b6-50a3f7a42aa4': {'x': 300, 'y': 120, 'tag': 'foodcb05ea4f-6d0a-4ce8-97b6-50a3f7a42aa4', 'oval_id': 901}}
+[2024-04-16 17:46:35] You win
+[2024-04-16 17:46:35] Game state: win
+[2024-04-16 17:46:38] Closed the app
+
+
+
+
+[2024-04-16 17:46:42] Started the app
+[2024-04-16 17:46:42] Started the GameApp Class
+[2024-04-16 17:46:42] Game mode: initial config
+[2024-04-16 17:46:42] Dark-Blue
+[2024-04-16 17:46:42] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:46:42] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:46:42] Contrast mode set to dark
+[2024-04-16 17:46:42] 600x600
+[2024-04-16 17:46:42] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:46:42] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:46:42] start_screen method called
+[2024-04-16 17:46:49] Game mode: snake_challange
+[2024-04-16 17:46:49] start_game
+[2024-04-16 17:46:49] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:46:49] Reset snake length
+[2024-04-16 17:46:49] Game mode: snake_challange
+[2024-04-16 17:46:49] start_game
+[2024-04-16 17:46:49] 600x600
+[2024-04-16 17:46:49] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:46:49] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:47:58] Game state: game
+[2024-04-16 17:47:58] Food ID:
+[2024-04-16 17:47:58] 909d525f-f38b-49a4-8cb6-92942f139f60
+[2024-04-16 17:47:58] {'909d525f-f38b-49a4-8cb6-92942f139f60': {'x': 240, 'y': 140, 'tag': 'food909d525f-f38b-49a4-8cb6-92942f139f60', 'oval_id': 7}}
+[2024-04-16 17:47:58] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:48:00] Food ID:
+[2024-04-16 17:48:00] eb02b75f-7463-4470-a5d0-4d117509cfcd
+[2024-04-16 17:48:00] {'eb02b75f-7463-4470-a5d0-4d117509cfcd': {'x': 120, 'y': 300, 'tag': 'foodeb02b75f-7463-4470-a5d0-4d117509cfcd', 'oval_id': 27}}
+[2024-04-16 17:48:20] Started the app
+[2024-04-16 17:48:20] Started the GameApp Class
+[2024-04-16 17:48:20] Game mode: initial config
+[2024-04-16 17:48:20] Dark-Blue
+[2024-04-16 17:48:20] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:48:20] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:48:20] Contrast mode set to dark
+[2024-04-16 17:48:20] 600x600
+[2024-04-16 17:48:20] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:48:20] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:48:20] start_screen method called
+[2024-04-16 17:48:26] Game mode: snake_challange
+[2024-04-16 17:48:26] start_game
+[2024-04-16 17:48:26] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:48:26] Reset snake length
+[2024-04-16 17:48:26] Game mode: snake_challange
+[2024-04-16 17:48:26] start_game
+[2024-04-16 17:48:26] 600x600
+[2024-04-16 17:48:26] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:48:26] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:48:28] Game state: game
+[2024-04-16 17:48:28] Food ID:
+[2024-04-16 17:48:28] ffcd5c67-ee32-4846-a7c3-fbcc31db9de1
+[2024-04-16 17:48:28] {'ffcd5c67-ee32-4846-a7c3-fbcc31db9de1': {'x': 240, 'y': 380, 'tag': 'foodffcd5c67-ee32-4846-a7c3-fbcc31db9de1', 'oval_id': 7}}
+[2024-04-16 17:48:28] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:48:31] Food ID:
+[2024-04-16 17:48:31] 4f51dc7e-18f7-4e3b-a7b2-d764422d83f5
+[2024-04-16 17:48:31] {'4f51dc7e-18f7-4e3b-a7b2-d764422d83f5': {'x': 240, 'y': 340, 'tag': 'food4f51dc7e-18f7-4e3b-a7b2-d764422d83f5', 'oval_id': 41}}
+[2024-04-16 17:48:31] Food ID:
+[2024-04-16 17:48:31] 7414f9fe-9aff-47ea-8831-9db1f73d635d
+[2024-04-16 17:48:31] {'7414f9fe-9aff-47ea-8831-9db1f73d635d': {'x': 140, 'y': 260, 'tag': 'food7414f9fe-9aff-47ea-8831-9db1f73d635d', 'oval_id': 50}}
+[2024-04-16 17:48:33] Food ID:
+[2024-04-16 17:48:33] 68cf5ac9-fe9a-41c7-890a-19a52fb5d047
+[2024-04-16 17:48:33] {'68cf5ac9-fe9a-41c7-890a-19a52fb5d047': {'x': 380, 'y': 200, 'tag': 'food68cf5ac9-fe9a-41c7-890a-19a52fb5d047', 'oval_id': 68}}
+[2024-04-16 17:48:36] Food ID:
+[2024-04-16 17:48:36] 8d9fa316-6914-49fa-bb1b-d0841b9fc73e
+[2024-04-16 17:48:36] {'8d9fa316-6914-49fa-bb1b-d0841b9fc73e': {'x': 360, 'y': 180, 'tag': 'food8d9fa316-6914-49fa-bb1b-d0841b9fc73e', 'oval_id': 100}}
+[2024-04-16 17:48:37] Food ID:
+[2024-04-16 17:48:37] 5e39e3fc-cf0e-4d98-9c9b-8a1f694acae6
+[2024-04-16 17:48:37] {'5e39e3fc-cf0e-4d98-9c9b-8a1f694acae6': {'x': 140, 'y': 100, 'tag': 'food5e39e3fc-cf0e-4d98-9c9b-8a1f694acae6', 'oval_id': 117}}
+[2024-04-16 17:48:39] Food ID:
+[2024-04-16 17:48:39] c9c100ed-4bdc-46d7-9220-f23da4441513
+[2024-04-16 17:48:39] {'c9c100ed-4bdc-46d7-9220-f23da4441513': {'x': 160, 'y': 240, 'tag': 'foodc9c100ed-4bdc-46d7-9220-f23da4441513', 'oval_id': 133}}
+[2024-04-16 17:48:39] snake has a collision
+[2024-04-16 17:48:39] Game state: game_over
+[2024-04-16 17:48:39] Snake coordinates after reset: [(-20, 100), (0, 100), (20, 100), (40, 100), (60, 100), (80, 100), (100, 100), (120, 100), (140, 100), (160, 100), (180, 100)]
+[2024-04-16 17:48:39] High score: 10
+[2024-04-16 17:48:39] Score: 6
+Deleted score challange
+Deleted high score challange
+Deleted Labels challange
+[2024-04-16 17:48:53] Game mode: classic_snake
+[2024-04-16 17:48:53] start_game
+[2024-04-16 17:48:53] Reset snake length
+[2024-04-16 17:48:53] Game mode: classic_snake
+[2024-04-16 17:48:53] Game state: start_game
+[2024-04-16 17:48:53] Game focused
+[2024-04-16 17:48:53] 600x600
+[2024-04-16 17:48:53] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:48:53] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:48:54] Game state: game
+[2024-04-16 17:48:54] Food ID:
+[2024-04-16 17:48:54] 7417a7a0-ee3d-4a49-bbd5-319b601e15ed
+[2024-04-16 17:48:54] {'7417a7a0-ee3d-4a49-bbd5-319b601e15ed': {'x': 220, 'y': 320, 'tag': 'food7417a7a0-ee3d-4a49-bbd5-319b601e15ed', 'oval_id': 7}}
+[2024-04-16 17:48:54] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:48:54] 0
+[2024-04-16 17:48:54] 0
+[2024-04-16 17:48:54] 0
+[2024-04-16 17:48:54] 0
+[2024-04-16 17:48:54] 0
+[2024-04-16 17:48:55] 0
+[2024-04-16 17:48:55] 0
+[2024-04-16 17:48:55] 0
+[2024-04-16 17:48:55] 0
+[2024-04-16 17:48:55] 0
+[2024-04-16 17:48:55] 0
+[2024-04-16 17:48:55] 1
+[2024-04-16 17:48:55] 1
+[2024-04-16 17:48:55] 1
+[2024-04-16 17:48:55] 1
+[2024-04-16 17:48:55] 1
+[2024-04-16 17:48:56] 1
+[2024-04-16 17:48:56] snake has a collision
+[2024-04-16 17:48:56] Game state: game_over
+[2024-04-16 17:48:56] Snake coordinates after reset: [(-20, 320), (0, 320), (0, 300), (0, 280), (0, 260)]
+[2024-04-16 17:48:56] High score: 3
+[2024-04-16 17:48:56] Score: 0
+[2024-04-16 17:50:02] Started the app
+[2024-04-16 17:50:02] Started the GameApp Class
+[2024-04-16 17:50:02] Game mode: initial config
+[2024-04-16 17:50:02] Dark-Blue
+[2024-04-16 17:50:02] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:50:02] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:50:02] Contrast mode set to dark
+[2024-04-16 17:50:02] 600x600
+[2024-04-16 17:50:02] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:50:02] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:50:02] start_screen method called
+[2024-04-16 17:50:08] Game mode: snake_challange
+[2024-04-16 17:50:08] start_game
+[2024-04-16 17:50:08] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:50:08] Reset snake length
+[2024-04-16 17:50:08] Game mode: snake_challange
+[2024-04-16 17:50:08] start_game
+[2024-04-16 17:50:08] 600x600
+[2024-04-16 17:50:08] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:50:08] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:50:09] Game state: game
+[2024-04-16 17:50:09] Food ID:
+[2024-04-16 17:50:09] d1a72a5b-c9ad-4a4d-81de-20813225adc1
+[2024-04-16 17:50:09] {'d1a72a5b-c9ad-4a4d-81de-20813225adc1': {'x': 380, 'y': 220, 'tag': 'foodd1a72a5b-c9ad-4a4d-81de-20813225adc1', 'oval_id': 7}}
+[2024-04-16 17:50:09] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:50:12] Food ID:
+[2024-04-16 17:50:12] 33489456-f4c7-4d52-bd59-c6618aa09642
+[2024-04-16 17:50:12] {'33489456-f4c7-4d52-bd59-c6618aa09642': {'x': 280, 'y': 260, 'tag': 'food33489456-f4c7-4d52-bd59-c6618aa09642', 'oval_id': 38}}
+[2024-04-16 17:50:13] Food ID:
+[2024-04-16 17:50:13] 8e791743-31e1-4cc0-9155-898e03184c54
+[2024-04-16 17:50:13] {'8e791743-31e1-4cc0-9155-898e03184c54': {'x': 120, 'y': 60, 'tag': 'food8e791743-31e1-4cc0-9155-898e03184c54', 'oval_id': 50}}
+[2024-04-16 17:50:17] Food ID:
+[2024-04-16 17:50:17] 2300593d-5529-4d54-b27d-7e4baf1120a2
+[2024-04-16 17:50:17] {'2300593d-5529-4d54-b27d-7e4baf1120a2': {'x': 0, 'y': 80, 'tag': 'food2300593d-5529-4d54-b27d-7e4baf1120a2', 'oval_id': 95}}
+[2024-04-16 17:50:19] Food ID:
+[2024-04-16 17:50:19] 6490995c-9e79-40fb-9233-63e2e4a22e50
+[2024-04-16 17:50:19] {'6490995c-9e79-40fb-9233-63e2e4a22e50': {'x': 140, 'y': 340, 'tag': 'food6490995c-9e79-40fb-9233-63e2e4a22e50', 'oval_id': 117}}
+[2024-04-16 17:50:21] Food ID:
+[2024-04-16 17:50:21] bf048c3a-3352-437e-af87-dbe667c3730c
+[2024-04-16 17:50:21] {'bf048c3a-3352-437e-af87-dbe667c3730c': {'x': 260, 'y': 120, 'tag': 'foodbf048c3a-3352-437e-af87-dbe667c3730c', 'oval_id': 138}}
+[2024-04-16 17:50:25] Food ID:
+[2024-04-16 17:50:25] 956af039-d394-47d6-be7c-3cf0be904a9c
+[2024-04-16 17:50:25] {'956af039-d394-47d6-be7c-3cf0be904a9c': {'x': 20, 'y': 180, 'tag': 'food956af039-d394-47d6-be7c-3cf0be904a9c', 'oval_id': 178}}
+[2024-04-16 17:50:26] Food ID:
+[2024-04-16 17:50:26] 17fab990-6447-475c-9c3c-1b78a297fbe0
+[2024-04-16 17:50:26] {'17fab990-6447-475c-9c3c-1b78a297fbe0': {'x': 20, 'y': 80, 'tag': 'food17fab990-6447-475c-9c3c-1b78a297fbe0', 'oval_id': 194}}
+[2024-04-16 17:50:26] snake has a collision
+[2024-04-16 17:50:26] Game state: game_over
+[2024-04-16 17:50:26] Snake coordinates after reset: [(-20, 220), (0, 220), (20, 220), (20, 200), (20, 180), (20, 160), (20, 140), (20, 120), (40, 120), (60, 120), (80, 120), (100, 120)]
+[2024-04-16 17:50:26] High score: 10
+[2024-04-16 17:50:26] Score: 7
+[2024-04-16 17:51:20] Started the app
+[2024-04-16 17:51:20] Started the GameApp Class
+[2024-04-16 17:51:20] Game mode: initial config
+[2024-04-16 17:51:20] Dark-Blue
+[2024-04-16 17:51:20] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:51:20] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:51:20] Contrast mode set to dark
+[2024-04-16 17:51:20] 600x600
+[2024-04-16 17:51:20] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:51:20] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:51:20] start_screen method called
+[2024-04-16 17:51:24] Game mode: snake_challange
+[2024-04-16 17:51:24] start_game
+[2024-04-16 17:51:24] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:51:24] Reset snake length
+[2024-04-16 17:51:24] Game mode: snake_challange
+[2024-04-16 17:51:24] start_game
+[2024-04-16 17:51:24] 600x600
+[2024-04-16 17:51:24] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:51:24] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:51:25] Game state: game
+[2024-04-16 17:51:25] Food ID:
+[2024-04-16 17:51:25] 53fda9e3-4d9c-433d-bf4e-b21ef6e55ea2
+[2024-04-16 17:51:25] {'53fda9e3-4d9c-433d-bf4e-b21ef6e55ea2': {'x': 80, 'y': 220, 'tag': 'food53fda9e3-4d9c-433d-bf4e-b21ef6e55ea2', 'oval_id': 7}}
+[2024-04-16 17:51:25] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:51:26] snake has a collision
+[2024-04-16 17:51:26] Game state: game_over
+[2024-04-16 17:51:26] Snake coordinates after reset: [(-20, 260), (0, 260), (0, 240), (0, 220), (0, 200)]
+[2024-04-16 17:51:26] High score: 10
+[2024-04-16 17:51:26] Score: 0
+[2024-04-16 17:52:08] Started the app
+[2024-04-16 17:52:08] Started the GameApp Class
+[2024-04-16 17:52:08] Game mode: initial config
+[2024-04-16 17:52:08] Dark-Blue
+[2024-04-16 17:52:08] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 17:52:08] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 17:52:08] Contrast mode set to dark
+[2024-04-16 17:52:08] 600x600
+[2024-04-16 17:52:08] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:52:08] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:52:08] start_screen method called
+[2024-04-16 17:52:12] Game mode: snake_challange
+[2024-04-16 17:52:12] start_game
+[2024-04-16 17:52:12] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-16 17:52:12] Reset snake length
+[2024-04-16 17:52:12] Game mode: snake_challange
+[2024-04-16 17:52:12] start_game
+[2024-04-16 17:52:12] 600x600
+[2024-04-16 17:52:12] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 17:52:12] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 17:52:12] Game state: game
+[2024-04-16 17:52:12] Food ID:
+[2024-04-16 17:52:12] 48bccf62-c957-4d87-b364-4b07ba90279e
+[2024-04-16 17:52:12] {'48bccf62-c957-4d87-b364-4b07ba90279e': {'x': 200, 'y': 240, 'tag': 'food48bccf62-c957-4d87-b364-4b07ba90279e', 'oval_id': 7}}
+[2024-04-16 17:52:12] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-04-16 17:52:14] Food ID:
+[2024-04-16 17:52:14] dafdac28-5a46-4475-a327-419d4d16cf2f
+[2024-04-16 17:52:14] {'dafdac28-5a46-4475-a327-419d4d16cf2f': {'x': 220, 'y': 180, 'tag': 'fooddafdac28-5a46-4475-a327-419d4d16cf2f', 'oval_id': 30}}
+[2024-04-16 17:52:16] Food ID:
+[2024-04-16 17:52:16] c25884a5-1356-479e-8448-e67b04259ab6
+[2024-04-16 17:52:16] {'c25884a5-1356-479e-8448-e67b04259ab6': {'x': 260, 'y': 20, 'tag': 'foodc25884a5-1356-479e-8448-e67b04259ab6', 'oval_id': 49}}
+[2024-04-16 17:52:18] Food ID:
+[2024-04-16 17:52:18] 895b961c-57c8-4e2c-8456-1950c964763e
+[2024-04-16 17:52:18] {'895b961c-57c8-4e2c-8456-1950c964763e': {'x': 220, 'y': 360, 'tag': 'food895b961c-57c8-4e2c-8456-1950c964763e', 'oval_id': 70}}
+[2024-04-16 17:52:22] Food ID:
+[2024-04-16 17:52:22] 6568d423-2333-4b14-ab86-7bb2af54c6f9
+[2024-04-16 17:52:22] {'6568d423-2333-4b14-ab86-7bb2af54c6f9': {'x': 180, 'y': 20, 'tag': 'food6568d423-2333-4b14-ab86-7bb2af54c6f9', 'oval_id': 110}}
+[2024-04-16 17:52:24] Food ID:
+[2024-04-16 17:52:24] e6b318cc-bb13-40ee-bdb4-fd0b6d9a7567
+[2024-04-16 17:52:24] {'e6b318cc-bb13-40ee-bdb4-fd0b6d9a7567': {'x': 200, 'y': 40, 'tag': 'foode6b318cc-bb13-40ee-bdb4-fd0b6d9a7567', 'oval_id': 138}}
+[2024-04-16 17:52:27] Food ID:
+[2024-04-16 17:52:27] 44cf470b-6bf4-4114-a0be-6089c8ebb6a5
+[2024-04-16 17:52:27] {'44cf470b-6bf4-4114-a0be-6089c8ebb6a5': {'x': 320, 'y': 160, 'tag': 'food44cf470b-6bf4-4114-a0be-6089c8ebb6a5', 'oval_id': 169}}
+[2024-04-16 17:52:28] Food ID:
+[2024-04-16 17:52:28] 4ed326cd-ccba-4274-9b2f-8de7d289be69
+[2024-04-16 17:52:28] {'4ed326cd-ccba-4274-9b2f-8de7d289be69': {'x': 220, 'y': 0, 'tag': 'food4ed326cd-ccba-4274-9b2f-8de7d289be69', 'oval_id': 182}}
+[2024-04-16 17:52:30] Food ID:
+[2024-04-16 17:52:30] 593ac55d-d984-4cf4-9726-c227a6446387
+[2024-04-16 17:52:30] {'593ac55d-d984-4cf4-9726-c227a6446387': {'x': 120, 'y': 260, 'tag': 'food593ac55d-d984-4cf4-9726-c227a6446387', 'oval_id': 202}}
+[2024-04-16 17:52:32] Food ID:
+[2024-04-16 17:52:32] f763e7ff-b4b6-4626-be60-f53665524882
+[2024-04-16 17:52:32] {'f763e7ff-b4b6-4626-be60-f53665524882': {'x': 60, 'y': 340, 'tag': 'foodf763e7ff-b4b6-4626-be60-f53665524882', 'oval_id': 223}}
+[2024-04-16 17:52:34] Food ID:
+[2024-04-16 17:52:34] 5dd482f8-8deb-451e-af27-43be62901259
+[2024-04-16 17:52:34] {'5dd482f8-8deb-451e-af27-43be62901259': {'x': 340, 'y': 0, 'tag': 'food5dd482f8-8deb-451e-af27-43be62901259', 'oval_id': 253}}
+[2024-04-16 17:52:34] You win
+[2024-04-16 17:52:34] Game state: win

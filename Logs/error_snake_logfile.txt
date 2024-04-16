@@ -19714,3 +19714,81 @@ _tkinter.TclError: unknown option "-pady"
 
 
 
+[2024-04-16 17:30:25] 
+
+
+[2024-04-16 17:30:25] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: Snake_Challange.start_game() takes 1 positional argument but 2 were given
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: Snake_Challange.start_game() takes 1 positional argument but 2 were given
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: Snake_Challange.start_game() takes 1 positional argument but 2 were given
+[2024-04-16 17:32:02] 
+
+
+[2024-04-16 17:32:02] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 137, in start_game
+    self.config.read('Challange_Snake_Values', 'state', 'game')
+TypeError: RawConfigParser.read() takes from 2 to 3 positional arguments but 4 were given
+[2024-04-16 17:33:28] 
+
+
+[2024-04-16 17:33:28] Started the Error Log File
+[2024-04-16 17:39:34] 
+
+
+[2024-04-16 17:39:34] Started the Error Log File
+[2024-04-16 17:41:04] No errors occurred
+[2024-04-16 17:41:04] Closed the Error Log File
+
+
+
+
+[2024-04-16 17:41:07] 
+
+
+[2024-04-16 17:41:07] Started the Error Log File
+[2024-04-16 17:46:38] No errors occurred
+[2024-04-16 17:46:38] Closed the Error Log File
+
+
+
+
+[2024-04-16 17:46:42] 
+
+
+[2024-04-16 17:46:42] Started the Error Log File
+[2024-04-16 17:48:20] 
+
+
+[2024-04-16 17:48:20] Started the Error Log File
+[2024-04-16 17:50:02] 
+
+
+[2024-04-16 17:50:02] Started the Error Log File
+[2024-04-16 17:51:20] 
+
+
+[2024-04-16 17:51:20] Started the Error Log File
+[2024-04-16 17:52:08] 
+
+
+[2024-04-16 17:52:08] Started the Error Log File

@@ -13,6 +13,43 @@ from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
 
 
+class ChallengeSelection:
+    def __init__(self, parent, game_config, logfile, functions, create_button_panel):
+        # existing initialization code...
+        self.parent = parent
+        self.game_config = game_config
+        self.logfile = logfile
+        self.functions = functions
+        self.create_button_panel = create_button_panel
+
+        self.width = game_config.GAME_WIDTH
+        print(
+            f"Game width: {self.width}"
+        )
+        self.height = game_config.GAME_HEIGHT
+        print(
+            f"Game height: {self.height}"
+        )
+        print(game_config.SNAKE_LENGTH)
+        self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
+        self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
+        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+        
+        self.snake_canvas = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+        self.snake_canvas.place(x=500, y=50)
+
+        # display the available challenges and settings to the user
+        self.display_challenges_and_settings()
+
+    def display_challenges_and_settings(self):
+        # code to display the available challenges and settings to the user
+        pass
+
+    def start_challenge(self, challenge_type, settings):
+        # code to start the selected challenge with the chosen settings
+        self.challenge_canvas = Snake_Challange(self.parent, self.game_config, self.logfile, self.functions, self.create_button_panel, challenge_type, settings)
+
+
 class Snake_Challange(ctk.CTkCanvas):
     def __init__(self, parent, game_config, logfile, functions, create_button_panel):
         self.parent = parent

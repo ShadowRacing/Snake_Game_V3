@@ -600,6 +600,7 @@ class OptionButtonPanel:
         except Exception as e:
             traceback.print_exc(e)
 
+
 # *****************************************
 # Shadows Snake Button Panel File
 # *****************************************

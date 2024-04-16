@@ -13,13 +13,11 @@ from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSC
 from Configuration.gameconfig_snake_game import GameConfig
 from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel
-from Logic.snake_logic_snake_game import Snake
-from Logic.food_logic_snake_game import ClassicFood, LevelingFood, EndlessFood
 from Logic.config_ini_Initials import ConfigIni
 from Games.snake_classic_game import Snake_Classic_Game
 from Games.snake_endless_game import Snake_endless
 from Games.snake_leveling_game import Snake_Leveling
-from Games.snake_challange_games import Snake_Challange
+from Games.snake_challange_games import Snake_Challange, ChallengeSelection
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
 
@@ -196,7 +194,7 @@ class SnakeGameApp:
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_challange":
-            self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.challange_snake_canvas = ChallengeSelection(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "info":
             self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         elif game_type == "settings":
@@ -215,7 +213,7 @@ class SnakeGameApp:
             self.leveling_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.leveling_snake_canvas
         elif game_type == "snake_challange":
-            self.challange_snake_canvas.pack(expand=True, fill="both")
+            self.challenge_selection_canvas = ChallengeSelection(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
             self.main_canvas = self.challange_snake_canvas
         elif game_type == "info":
             self.info_canvas.pack(expand=True, fill="both")

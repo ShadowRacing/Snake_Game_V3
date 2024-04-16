@@ -26144,3 +26144,51 @@ Game height: 600
 [2024-04-16 17:52:34] {'5dd482f8-8deb-451e-af27-43be62901259': {'x': 340, 'y': 0, 'tag': 'food5dd482f8-8deb-451e-af27-43be62901259', 'oval_id': 253}}
 [2024-04-16 17:52:34] You win
 [2024-04-16 17:52:34] Game state: win
+[2024-04-16 19:24:49] Started the app
+[2024-04-16 19:24:49] Started the GameApp Class
+[2024-04-16 19:24:49] Game mode: initial config
+[2024-04-16 19:24:49] Dark-Blue
+[2024-04-16 19:24:49] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 19:24:49] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 19:24:49] Contrast mode set to dark
+[2024-04-16 19:24:49] 600x600
+[2024-04-16 19:24:49] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 19:24:49] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 19:24:49] start_screen method called
+[2024-04-16 19:24:50] Game mode: snake_challange
+[2024-04-16 19:25:37] Started the app
+[2024-04-16 19:25:37] Started the GameApp Class
+[2024-04-16 19:25:37] Game mode: initial config
+[2024-04-16 19:25:37] Dark-Blue
+[2024-04-16 19:25:37] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 19:25:37] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 19:25:37] Contrast mode set to dark
+[2024-04-16 19:25:37] 600x600
+[2024-04-16 19:25:37] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 19:25:37] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 19:25:37] start_screen method called
+[2024-04-16 19:25:38] Game mode: snake_challange
+Game width: 600
+Game height: 600
+5
+[2024-04-16 19:26:06] Started the app
+[2024-04-16 19:26:06] Started the GameApp Class
+[2024-04-16 19:26:06] Game mode: initial config
+[2024-04-16 19:26:06] Dark-Blue
+[2024-04-16 19:26:06] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-16 19:26:06] Current initial_theme in config.ini: Dark-Blue
+[2024-04-16 19:26:06] Contrast mode set to dark
+[2024-04-16 19:26:06] 600x600
+[2024-04-16 19:26:06] Updated initial_game_size in config.ini to 600x600
+[2024-04-16 19:26:06] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-16 19:26:06] start_screen method called
+[2024-04-16 19:26:07] Game mode: snake_challange
+Game width: 600
+Game height: 600
+5

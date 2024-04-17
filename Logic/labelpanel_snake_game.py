@@ -233,6 +233,7 @@ class SettingsOptionButtonLabels:
                 config.set('Settings', 'label_needed_game_size', 'True')
                 with open('config.ini', 'w') as configfile:
                     config.write(configfile)
+                    
             else:
                 if current_game_size == initial_game_size:
                     if hasattr(self, 'restart_game_game_size_label'):

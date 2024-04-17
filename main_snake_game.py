@@ -229,7 +229,7 @@ class SnakeGameApp:
             canvas_width = self.info_canvas.winfo_width() // 2 + 80
             canvas_height = self.info_canvas.winfo_height() // 2 - 50
             self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Shadow's Snake Game", font=("Helvetica", 50), fill="white")
-            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.7.3", font=("Helvetica", 30), fill="white")
+            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.8", font=("Helvetica", 30), fill="white")
             self.info_canvas.create_text(canvas_width, canvas_height + 50, text="Developer: Shadow", font=("Helvetica", 30), fill="white")
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")

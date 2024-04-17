@@ -14,6 +14,7 @@ class NameOffFrameLabelPanel:
         self.info_callback = info_callback
         self.settings_callback = settings_callback
         self.label_canvas = None
+        self.restart_game_game_size_label = None
         self.label_texts = {
             "main_menu": "Main Menu",
             "classic_snake": "Classic Snake",

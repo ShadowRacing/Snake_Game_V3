@@ -27679,3 +27679,149 @@ Height: 600
 [2024-04-17 20:56:25] Snake coordinates after reset: [(600, 340), (580, 340), (560, 340), (540, 340), (520, 340), (500, 340), (480, 340)]
 [2024-04-17 20:56:25] High score: 3
 [2024-04-17 20:56:25] Score: 2
+[2024-04-17 21:04:13] Started the app
+[2024-04-17 21:04:13] Started the GameApp Class
+[2024-04-17 21:04:13] Game mode: initial config
+[2024-04-17 21:04:13] Dark-Blue
+[2024-04-17 21:04:13] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-17 21:04:13] Current initial_theme in config.ini: Dark-Blue
+[2024-04-17 21:04:13] Contrast mode set to dark
+[2024-04-17 21:04:13] 600x600
+[2024-04-17 21:04:13] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:04:13] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:04:13] start_screen method called
+[2024-04-17 21:04:35] Game mode: classic_snake
+[2024-04-17 21:04:35] start_game
+[2024-04-17 21:04:35] Reset snake length
+[2024-04-17 21:04:35] Game mode: classic_snake
+[2024-04-17 21:04:35] Game state: start_game
+[2024-04-17 21:04:35] Game focused
+[2024-04-17 21:04:35] 600x600
+[2024-04-17 21:04:35] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:04:35] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:05:08] Started the app
+[2024-04-17 21:05:08] Started the GameApp Class
+[2024-04-17 21:05:08] Game mode: initial config
+[2024-04-17 21:05:08] Dark-Blue
+[2024-04-17 21:05:08] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-17 21:05:08] Current initial_theme in config.ini: Dark-Blue
+[2024-04-17 21:05:08] Contrast mode set to dark
+[2024-04-17 21:05:08] 600x600
+[2024-04-17 21:05:08] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:05:08] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:05:08] start_screen method called
+[2024-04-17 21:05:10] Game mode: snake_leveling
+[2024-04-17 21:05:10] start_game
+[2024-04-17 21:05:10] Reset snake length
+[2024-04-17 21:05:10] Game mode: snake_leveling
+[2024-04-17 21:05:10] Game state: start_game
+[2024-04-17 21:05:10] Game focused
+[2024-04-17 21:05:10] 600x600
+[2024-04-17 21:05:10] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:05:10] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:05:14] Started the app
+[2024-04-17 21:05:14] Started the GameApp Class
+[2024-04-17 21:05:14] Game mode: initial config
+[2024-04-17 21:05:14] Dark-Blue
+[2024-04-17 21:05:14] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-17 21:05:14] Current initial_theme in config.ini: Dark-Blue
+[2024-04-17 21:05:14] Contrast mode set to dark
+[2024-04-17 21:05:14] 600x600
+[2024-04-17 21:05:14] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:05:14] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:05:14] start_screen method called
+Game width: 300
+Game height: 300
+3
+[2024-04-17 21:05:15] 600x600
+[2024-04-17 21:05:15] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:05:15] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:09:10] Closed the app
+
+
+
+
+[2024-04-17 21:09:13] Started the app
+[2024-04-17 21:09:13] Started the GameApp Class
+[2024-04-17 21:09:13] Game mode: initial config
+[2024-04-17 21:09:13] Dark-Blue
+[2024-04-17 21:09:13] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-17 21:09:13] Current initial_theme in config.ini: Dark-Blue
+[2024-04-17 21:09:13] Contrast mode set to dark
+[2024-04-17 21:09:13] 600x600
+[2024-04-17 21:09:13] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:09:13] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:09:13] start_screen method called
+[2024-04-17 21:09:14] Game mode: classic_snake
+[2024-04-17 21:09:14] start_game
+[2024-04-17 21:09:14] Reset snake length
+[2024-04-17 21:09:14] Game mode: classic_snake
+[2024-04-17 21:09:14] Game state: start_game
+[2024-04-17 21:09:14] Game focused
+[2024-04-17 21:09:14] 600x600
+[2024-04-17 21:09:14] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:09:14] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:09:15] Game mode: classic_snake
+[2024-04-17 21:09:15] start_game
+[2024-04-17 21:09:15] Reset snake length
+[2024-04-17 21:09:15] Game mode: classic_snake
+[2024-04-17 21:09:15] Game state: start_game
+[2024-04-17 21:09:15] Game focused
+[2024-04-17 21:09:15] 600x600
+[2024-04-17 21:09:15] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:09:15] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:09:16] Game mode: snake_endless
+[2024-04-17 21:09:16] start_game
+Width: 600
+Height: 600
+[2024-04-17 21:09:16] Reset snake length
+[2024-04-17 21:09:16] Game mode: snake_endless
+[2024-04-17 21:09:16] Game state: start_game
+[2024-04-17 21:09:16] Game focused
+[2024-04-17 21:09:16] 600x600
+[2024-04-17 21:09:16] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:09:16] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:09:17] Game mode: snake_leveling
+[2024-04-17 21:09:17] start_game
+[2024-04-17 21:09:17] Reset snake length
+[2024-04-17 21:09:17] Game mode: snake_leveling
+[2024-04-17 21:09:17] Game state: start_game
+[2024-04-17 21:09:17] Game focused
+[2024-04-17 21:09:17] 600x600
+[2024-04-17 21:09:17] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:09:17] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 400
+Game height: 400
+5
+[2024-04-17 21:09:19] 600x600
+[2024-04-17 21:09:19] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:09:19] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-17 21:09:21] 600x600
+[2024-04-17 21:09:21] Updated initial_game_size in config.ini to 600x600
+[2024-04-17 21:09:21] Current initial_game_size in config.ini: 600x600
+1
+1

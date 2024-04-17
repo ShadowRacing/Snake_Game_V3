@@ -3,7 +3,7 @@
 # *****************************************
 
 #Importing the required modules
-import uuid, random, time, traceback, configparser
+import uuid, time, traceback, configparser, secrets
 
 # Importing thhe necessary modules from other folders
 from Configuration.constants_snake_game import GameConstants
@@ -44,8 +44,8 @@ class ClassicFood:
     def generate_random_coordinates(self, snake_coordinates):
         try: 
             while True:
-                x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-                y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                x = secrets.randbelow((GameConstants.GAME_WIDTH // self.game_config.CELL_SIZE)) * self.game_config.CELL_SIZE
+                y = secrets.randbelow((GameConstants.GAME_HEIGHT // self.game_config.CELL_SIZE)) * self.game_config.CELL_SIZE
                 collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
                 if not collision:
                     break
@@ -151,8 +151,8 @@ class EndlessFood:
     def generate_random_coordinates(self, snake_coordinates):
         try:    
             while True:
-                x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-                y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                x = secrets.randbelow((GameConstants.GAME_WIDTH // self.game_config.CELL_SIZE)) * self.game_config.CELL_SIZE
+                y = secrets.randbelow((GameConstants.GAME_HEIGHT // self.game_config.CELL_SIZE)) * self.game_config.CELL_SIZE
                 collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
                 if not collision and not self.is_occupied(x, y):
                     break
@@ -195,8 +195,8 @@ class LevelingFood:
     def generate_random_coordinates(self, snake_coordinates):
         try: 
             while True:
-                x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-                y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                x = secrets.randbelow((GameConstants.GAME_WIDTH // self.game_config.CELL_SIZE)) * self.game_config.CELL_SIZE
+                y = secrets.randbelow((GameConstants.GAME_HEIGHT // self.game_config.CELL_SIZE)) * self.game_config.CELL_SIZE
                 collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
                 if not collision:
                     break
@@ -239,8 +239,8 @@ class ChallangeFood:
     def generate_random_coordinates(self, snake_coordinates):
         try: 
             while True:
-                x = random.randint(0, (GameConstants.GAME_WIDTH / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
-                y = random.randint(0, (GameConstants.GAME_HEIGHT / self.game_config.CELL_SIZE) - 1) * self.game_config.CELL_SIZE
+                x = secrets.randbelow((GameConstants.GAME_WIDTH // self.game_config.CELL_SIZE)) * self.game_config.CELL_SIZE
+                y = secrets.randbelow((GameConstants.GAME_HEIGHT // self.game_config.CELL_SIZE)) * self.game_config.CELL_SIZE
                 collision = any(x == segment[0] and y == segment[1] for segment in snake_coordinates)
                 if not collision:
                     break

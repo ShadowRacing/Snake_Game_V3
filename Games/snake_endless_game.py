@@ -2,7 +2,7 @@
 # Shadows Snake Game Snake Endless Game File
 # *****************************************
 
-import customtkinter as ctk, time, configparser, traceback, random, secrets
+import customtkinter as ctk, time, configparser, traceback, secrets
 from os import path
 
 # Importing thhe necessary modules from other folders

@@ -2,7 +2,7 @@
 # Shadows Snake Game Snake Endless Game File
 # *****************************************
 
-import customtkinter as ctk, time, configparser, traceback, random
+import customtkinter as ctk, time, configparser, traceback, random, secrets
 from os import path
 
 # Importing thhe necessary modules from other folders
@@ -342,7 +342,7 @@ class Snake_endless(ctk.CTkCanvas):
 
         elif shorten_food_eaten:
             self.food.remove_occuppied_coordinates(shorten_food_item['x'], shorten_food_item['y'])
-            self.random_number_off_shorten_food = random.randint(0, 10)
+            self.random_number_off_shorten_food = secrets.randbelow(11)
             self.snake_length -= self.random_number_off_shorten_food
             self.shorten_score += 1
 

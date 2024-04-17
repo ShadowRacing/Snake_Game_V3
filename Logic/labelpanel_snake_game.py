@@ -374,7 +374,8 @@ class GameLabelsPanel:
 
         #Get the score from the config file
         try:
-            self.classic_score_label_ = self.config.set('Classic_Snake_Values', 'score', '0')
+            self.classic_score_label_ = 0
+            self.config.set('Classic_Snake_Values', 'score', '0')
             self.classic_time_label_ = self.config.set('Classic_Snake_Values', 'time_score', '0')
             self.classic_snake_length_label_ = self.config.set('Classic_Snake_Values', 'snake_length', '0')
             self.endless_score_label_ = self.config.set('Endless_Snake_Values', 'score', '0')

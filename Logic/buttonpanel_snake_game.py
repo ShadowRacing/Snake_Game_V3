@@ -67,6 +67,12 @@ class ButtonCommands:
         else:
             self.logfile.log_game_event("No function assigned to 'snake_leveling'")
     
+    def challange_choices_command(self):
+        if 'challange_choices' in self.functions:
+            self.functions['challange_choices']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'challange_choice'")
+
     def challange_snake_command(self):
         if 'challange_snake' in self.functions:
             self.functions['challange_snake']()
@@ -255,7 +261,7 @@ class ClickButtonPanel:
         settings_button = ctk.CTkButton(self.button_canvas, text="Settings", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.settings_command)
-        settings_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
+        settings_button.grid(in_=self.button_canvas, row=9, column=0, padx=10, pady=10, sticky="w")
 
     def info_button(self):
         info_button = ctk.CTkButton(self.button_canvas, text="Information", font=FONT_LIST[11],
@@ -287,11 +293,17 @@ class ClickButtonPanel:
                                 command=self.button_commands.snake_leveling_command)
         snake_leveling_button.grid(in_=self.button_canvas, row=3, column=0, padx=10, pady=10, sticky="w")
     
+    def challange_choice_button(self):
+        challange_choice_button = ctk.CTkButton(self.button_canvas, text="Challanges", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.challange_choices_command)
+        challange_choice_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
+
     def challange_snake_button(self):
         challange_snake_button = ctk.CTkButton(self.button_canvas, text="Challange", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.challange_snake_command)
-        challange_snake_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
+        challange_snake_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
     def snake_color_button(self):
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],

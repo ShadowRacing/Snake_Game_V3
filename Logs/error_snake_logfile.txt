@@ -19792,3 +19792,192 @@ TypeError: RawConfigParser.read() takes from 2 to 3 positional arguments but 4 w
 
 
 [2024-04-16 17:52:08] Started the Error Log File
+[2024-04-17 18:49:27] 
+
+
+[2024-04-17 18:49:27] Started the Error Log File
+[2024-04-17 18:49:35] 
+
+
+[2024-04-17 18:49:35] Started the Error Log File
+[2024-04-17 18:49:59] No errors occurred
+[2024-04-17 18:49:59] Closed the Error Log File
+
+
+
+
+[2024-04-17 19:19:36] 
+
+
+[2024-04-17 19:19:36] Started the Error Log File
+[2024-04-17 19:20:37] 
+
+
+[2024-04-17 19:20:37] Started the Error Log File
+[2024-04-17 19:21:32] 
+
+
+[2024-04-17 19:21:32] Started the Error Log File
+[2024-04-17 19:21:40] No errors occurred
+[2024-04-17 19:21:40] Closed the Error Log File
+
+
+
+
+[2024-04-17 19:21:44] 
+
+
+[2024-04-17 19:21:44] Started the Error Log File
+[2024-04-17 19:22:21] No errors occurred
+[2024-04-17 19:22:21] Closed the Error Log File
+
+
+
+
+[2024-04-17 19:22:29] 
+
+
+[2024-04-17 19:22:29] Started the Error Log File
+[2024-04-17 19:23:45] 
+
+
+[2024-04-17 19:23:45] Started the Error Log File
+[2024-04-17 19:25:49] 
+
+
+[2024-04-17 19:25:49] Started the Error Log File
+[2024-04-17 19:25:53] No errors occurred
+[2024-04-17 19:25:53] Closed the Error Log File
+
+
+
+
+[2024-04-17 19:37:05] 
+
+
+[2024-04-17 19:37:05] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_choice_command
+    self.functions['challange_choice']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 176, in challange_choice
+    self.start_game("challange_choice")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in start_game
+    self.challange_choice_canvas = Challange_Choice(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\snake_challange_choice.py", line 26, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
+                                                ^^^^^^^^^^^^^^^^
+AttributeError: 'Challange_Choice' object has no attribute 'main_canvas'
+[2024-04-17 19:37:52] 
+
+
+[2024-04-17 19:37:52] Started the Error Log File
+[2024-04-17 19:42:54] 
+
+
+[2024-04-17 19:42:54] Started the Error Log File
+[2024-04-17 19:48:25] 
+
+
+[2024-04-17 19:48:25] Started the Error Log File
+[2024-04-17 19:54:49] 
+
+
+[2024-04-17 19:54:49] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 78, in challange_snake_command
+    self.functions['challange_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 173, in challange_snake
+    self.start_game("snake_challange")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 283, in start_game
+    self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas, "self.challange_choice_canvas")
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'challange_choice_canvas'
+[2024-04-17 19:55:41] 
+
+
+[2024-04-17 19:55:41] Started the Error Log File
+[2024-04-17 19:58:12] 
+
+
+[2024-04-17 19:58:12] Started the Error Log File
+[2024-04-17 19:59:14] No errors occurred
+[2024-04-17 19:59:14] Closed the Error Log File
+
+
+
+
+[2024-04-17 19:59:42] 
+
+
+[2024-04-17 19:59:42] Started the Error Log File
+[2024-04-17 20:00:26] 
+
+
+[2024-04-17 20:00:26] Started the Error Log File
+[2024-04-17 20:00:50] 
+
+
+[2024-04-17 20:00:50] Started the Error Log File
+[2024-04-17 20:01:03] No errors occurred
+[2024-04-17 20:01:03] Closed the Error Log File
+
+
+
+
+[2024-04-17 20:02:33] 
+
+
+[2024-04-17 20:02:33] Started the Error Log File
+[2024-04-17 20:03:12] 
+
+
+[2024-04-17 20:03:12] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 776, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 132, in __init__
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 151, in create_home_screen
+    self.create_button_panel.challange_choice_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 299, in challange_choice_button
+    command=self.button_commands.challange_choice_command)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ButtonCommands' object has no attribute 'challange_choice_command'. Did you mean: 'challange_choices_command'?
+[2024-04-17 20:03:35] 
+
+
+[2024-04-17 20:03:35] Started the Error Log File
+[2024-04-17 20:04:52] 
+
+
+[2024-04-17 20:04:52] Started the Error Log File
+[2024-04-17 20:05:36] No errors occurred
+[2024-04-17 20:05:36] Closed the Error Log File
+
+
+
+
+[2024-04-17 20:05:42] 
+
+
+[2024-04-17 20:05:42] Started the Error Log File
+[2024-04-17 20:06:26] No errors occurred
+[2024-04-17 20:06:26] Closed the Error Log File
+
+
+
+

@@ -8,14 +8,11 @@ class NameOffFrameLabelPanel:
     def __init__(self, parent, logfile, info_callback, settings_callback, game_config):
         self.parent = parent
         self.logfile = logfile
-        
         self.game_config = game_config
         self.create_label_canvas_flag = False
         self.info_callback = info_callback
         self.settings_callback = settings_callback
         self.label_canvas = None
-        self.restart_game_game_size_label = None
-        self.restart_game_theme_label = None
         self.label_texts = {
             "main_menu": "Main Menu",
             "classic_snake": "Classic Snake",
@@ -81,6 +78,8 @@ class SettingsOptionButtonLabels:
     def __init__(self, logfile, settings_canvas):
         self.logfile = logfile
         self.settings_canvas = settings_canvas
+        self.restart_game_game_size_label = None
+        self.restart_game_theme_label = None
 
     def create_settings_labels(self):
         self.create_screen_options_label()

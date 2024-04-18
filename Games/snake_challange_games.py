@@ -13,7 +13,7 @@ from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
 
 
-class Snake_Challange(ctk.CTkCanvas):
+class food_time_attack(ctk.CTkCanvas):
     def __init__(self, parent, game_config, logfile, functions, create_button_panel):
         self.parent = parent
         self.game_config = game_config
@@ -51,7 +51,7 @@ class Snake_Challange(ctk.CTkCanvas):
         self.snake = Snake(self.logfile, self.snake_canvas, game_config)
         self.food = ChallangeFood(self.logfile, self.snake_canvas, game_config)
         self.game_labels_panel_4 = GameLabelsPanel(parent, self.logfile,  self.game_config)
-        self.game_config = GameConfig(self.logfile, 'snake_challange')
+        self.game_config = GameConfig(self.logfile, 'food_time_attack')
         self.game_labels_panel_4.challange_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
 
@@ -63,43 +63,43 @@ class Snake_Challange(ctk.CTkCanvas):
         self.config.read(self.config_path)
 
         try:  
-            self.config.set('Settings', 'game_mode', 'challange_snake')
+            self.config.set('Settings', 'game_mode', 'food_time_attack')
         except Exception as e:
             traceback.print_exc(e)
         
-        if not self.config.has_option('Challange_Snake_Values', 'score'):
-            self.config.set('Challange_Snake_Values','score', '0')
+        if not self.config.has_option('food_time_attack_Values', 'score'):
+            self.config.set('food_time_attack_Values','score', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
 
-        if not self.config.has_option('Challange_Snake_Values', 'high_score'):
-            self.config.set('Challange_Snake_Values','high_score', '0')
+        if not self.config.has_option('food_time_attack_Values', 'high_score'):
+            self.config.set('food_time_attack_Values','high_score', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         
-        if not self.config.has_option('Challange_Snake_Values', 'time_score'):
-            self.config.set('Challange_Snake_Values','time_score', '0')
+        if not self.config.has_option('food_time_attack_Values', 'time_score'):
+            self.config.set('food_time_attack_Values','time_score', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
 
-        if not self.config.has_option('Challange_Snake_Values', 'high_score_time'):
-            self.config.set('Challange_Snake_Values','high_score_time', '0')
+        if not self.config.has_option('food_time_attack_Values', 'high_score_time'):
+            self.config.set('food_time_attack_Values','high_score_time', '0')
             self.logfile.log_game_event("high_score_time added")
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
 
-        if not self.config.has_option('Challange_Snake_Values', 'snake_length'):
-            self.config.set('Challange_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
+        if not self.config.has_option('food_time_attack_Values', 'snake_length'):
+            self.config.set('food_time_attack_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         
-        if not self.config.has_option('Challange_Snake_Values', 'snake_length_high_score'):
-            self.config.set('Challange_Snake_Values','snake_length_high_score', '0')
+        if not self.config.has_option('food_time_attack_Values', 'snake_length_high_score'):
+            self.config.set('food_time_attack_Values','snake_length_high_score', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
 
-        if not self.config.has_option('Challange_Snake_Values', 'state'):
-            self.config.set('Challange_Snake_Values', 'state', 'start_screen')
+        if not self.config.has_option('food_time_attack_Values', 'state'):
+            self.config.set('food_time_attack_Values', 'state', 'start_screen')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
                 
@@ -116,7 +116,7 @@ class Snake_Challange(ctk.CTkCanvas):
     def start_screen(self):
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
-        self.config.set('Challange_Snake_Settings', 'state', 'start_game')
+        self.config.set('food_time_attack_Settings', 'state', 'start_game')
 
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
@@ -131,14 +131,14 @@ class Snake_Challange(ctk.CTkCanvas):
     def start_game(self, event=None):
         self.bind_and_unbind_keys()
         self.state = 'game'
-        self.config.set('Challange_Snake_Settings', 'state', 'game')
+        self.config.set('food_time_attack_Settings', 'state', 'game')
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
         self.bind_and_unbind_keys()
         self.config.read(self.config_path)
-        self.high_score = int(self.config.get('Challange_Snake_Values', 'high_score'))
-        self.high_score_time = int(self.config.get('Challange_Snake_Values', 'high_score_time'))
-        self.snake_length_high_score = int(self.config.get('Challange_Snake_Values', 'snake_length_high_score'))
+        self.high_score = int(self.config.get('food_time_attack_Values', 'high_score'))
+        self.high_score_time = int(self.config.get('food_time_attack_Values', 'high_score_time'))
+        self.snake_length_high_score = int(self.config.get('food_time_attack_Values', 'snake_length_high_score'))
         self.game_labels_panel_4.challange_update_game_labels()
 
         with open('config.ini', 'w') as configfile:
@@ -171,8 +171,8 @@ class Snake_Challange(ctk.CTkCanvas):
             self.snake_length += 1
             if len(food.food_coordinates) < 2:
                 food.spawn_food(snake.get_coordinates())
-                self.config.set('Challange_Snake_Values', 'score', str(self.score))
-                self.config.set('Challange_Snake_Values', 'snake_length', str(self.snake_length))
+                self.config.set('food_time_attack_Values', 'score', str(self.score))
+                self.config.set('food_time_attack_Values', 'snake_length', str(self.snake_length))
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
             
@@ -197,7 +197,7 @@ class Snake_Challange(ctk.CTkCanvas):
 
         self.current_time = time.time()
         self.total_time_played = int(self.current_time - self.start_time)
-        self.config.set('Challange_Snake_Values', 'time_score', str(self.total_time_played))
+        self.config.set('food_time_attack_Values', 'time_score', str(self.total_time_played))
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
         
@@ -249,7 +249,7 @@ class Snake_Challange(ctk.CTkCanvas):
     def game_over(self):
         self.state = 'game_over'
         self.bind_and_unbind_keys()
-        self.config.set('Challange_Snake_Settings', 'state', 'game_over')
+        self.config.set('food_time_attack_Settings', 'state', 'game_over')
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")
         self.snake_canvas.delete("all")
@@ -260,22 +260,22 @@ class Snake_Challange(ctk.CTkCanvas):
         # Unbind any previous bindings to avoid conflicts
         self.snake_canvas.unbind('<space>')
         self.bind_and_unbind_keys()
-        self.high_score = int(self.config.get('Challange_Snake_Values', 'high_score', fallback='0'))
+        self.high_score = int(self.config.get('food_time_attack_Values', 'high_score', fallback='0'))
         self.logfile.log_game_event(f"High score: {self.high_score}")
         self.logfile.log_game_event(f"Score: {self.score}")
         if self.score > self.high_score:
-            self.config.set('Challange_Snake_Values', 'high_score', str(self.score))
+            self.config.set('food_time_attack_Values', 'high_score', str(self.score))
 
 
-        self.get_time_score = int(self.config.get('Challange_Snake_Values', 'high_score_time', fallback='0'))
+        self.get_time_score = int(self.config.get('food_time_attack_Values', 'high_score_time', fallback='0'))
         if self.total_time_played > self.get_time_score:
-            self.config.set('Challange_Snake_Values', 'high_score_time', str(self.total_time_played))
+            self.config.set('food_time_attack_Values', 'high_score_time', str(self.total_time_played))
             self.logfile.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
 
         
-        self.get_snake_length = int(self.config.get('Challange_Snake_Values', 'snake_length_high_score', fallback='0'))
+        self.get_snake_length = int(self.config.get('food_time_attack_Values', 'snake_length_high_score', fallback='0'))
         if self.snake_length > self.get_snake_length:
-            self.config.set('Challange_Snake_Values', 'snake_length_high_score', str(self.snake_length))
+            self.config.set('food_time_attack_Values', 'snake_length_high_score', str(self.snake_length))
             self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
             
         with open('config.ini', 'w') as configfile:
@@ -296,11 +296,11 @@ class Snake_Challange(ctk.CTkCanvas):
 
         self.config.read('config.ini')
 
-        self.config.set('Challange_Snake_Values', 'score', '0')
-        self.config.set('Challange_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
+        self.config.set('food_time_attack_Values', 'score', '0')
+        self.config.set('food_time_attack_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
 
         self.state = 'start_game'
-        self.config.set('Challange_Snake_Settings', 'state', 'start_game')
+        self.config.set('food_time_attack_Settings', 'state', 'start_game')
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
             # start the game again
@@ -311,7 +311,7 @@ class Snake_Challange(ctk.CTkCanvas):
     def win_condition(self):
         self.state = 'win'
         self.bind_and_unbind_keys()
-        self.config.set('Challange_Snake_Settings', 'state', 'win')
+        self.config.set('food_time_attack_Settings', 'state', 'win')
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
         self.snake_canvas.delete('all')

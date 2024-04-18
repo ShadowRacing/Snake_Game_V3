@@ -18,8 +18,8 @@ class ConfigIni:
         self.set_endless_snake_settings()
         self.set_leveling_snake_values()
         self.set_leveling_snake_settings()
-        self.set_challange_snake_values()
-        self.set_challange_snake_settings()
+        self.set_food_time_attack_values()
+        self.set_food_time_attack_settings()
 
     def set_settings_initials(self):
         try:
@@ -193,59 +193,59 @@ class ConfigIni:
         except Exception as e:
             traceback.print_exc(e)
 
-    def set_challange_snake_values(self):
+    def set_food_time_attack_values(self):
         try:
-            if not self.config.has_section('Challange_Snake_Values'):
-                self.config.add_section('Challange_Snake_Values')
-            if not self.config.has_option('Challange_Snake_Values', 'score'):
-                self.config.set('Challange_Snake_Values', 'score', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'high_score'):
-                self.config.set('Challange_Snake_Values', 'high_score', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'special_score'):
-                self.config.set('Challange_Snake_Values', 'special_score', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'special_score_high_score'):
-                self.config.set('Challange_Snake_Values', 'special_score_high_score', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'snake_length'):
-                self.config.set('Challange_Snake_Values', 'snake_length', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'snake_length_high_score'):
-                self.config.set('Challange_Snake_Values', 'snake_length_high_score', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'time_scpre'):
-                self.config.set('Challange_Snake_Values', 'time_score', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'high_score_time'):
-                self.config.set('Challange_Snake_Values', 'high_score_time', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'shorten_score'):
-                self.config.set('Challange_Snake_Values', 'shorten_score', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'shorten_snake_high_score'):
-                self.config.set('Challange_Snake_Values', 'shorten_snake_high_score', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'next_special_food_score'):
-                self.config.set('Challange_Snake_Values', 'next_special_food_score', '50')
-            if not self.config.has_option('Challange_Snake_Values', 'next_shorten_food_score'):
-                self.config.set('Challange_Snake_Values', 'next_shorten_food_score', '100')
-            if not self.config.has_option('Challange_Snake_Values', 'level'):
-                self.config.set('Challange_Snake_Values', 'level', '1')
-            if not self.config.has_option('Challange_Snake_Values', 'level_high_score'):
-                self.config.set('Challange_Snake_Values', 'level_high_score', '1')
-            if not self.config.has_option('Challange_Snake_Values', 'xp'):
-                self.config.set('Challange_Snake_Values', 'xp', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'xp_high_score'):
-                self.config.set('Challange_Snake_Values', 'xp_high_score', '0')
-            if not self.config.has_option('Challange_Snake_Values', 'initial_xp_needed'):
-                self.config.set('Challange_Snake_Values', 'initial_xp_needed', '100')
-            if not self.config.has_option('Challange_Snake_Values', 'levels_to_increase_xp'):
-                self.config.set('Challange_Snake_Values', 'levels_to_increase_xp', '10')
-            if not self.config.has_option('Challange_Snake_Values', 'xp_increase_amount'):
-                self.config.set('Challange_Snake_Values', 'xp_increase_amount', '50')
+            if not self.config.has_section('food_time_attack_Values'):
+                self.config.add_section('food_time_attack_Values')
+            if not self.config.has_option('food_time_attack_Values', 'score'):
+                self.config.set('food_time_attack_Values', 'score', '0')
+            if not self.config.has_option('food_time_attack_Values', 'high_score'):
+                self.config.set('food_time_attack_Values', 'high_score', '0')
+            if not self.config.has_option('food_time_attack_Values', 'special_score'):
+                self.config.set('food_time_attack_Values', 'special_score', '0')
+            if not self.config.has_option('food_time_attack_Values', 'special_score_high_score'):
+                self.config.set('food_time_attack_Values', 'special_score_high_score', '0')
+            if not self.config.has_option('food_time_attack_Values', 'snake_length'):
+                self.config.set('food_time_attack_Values', 'snake_length', '0')
+            if not self.config.has_option('food_time_attack_Values', 'snake_length_high_score'):
+                self.config.set('food_time_attack_Values', 'snake_length_high_score', '0')
+            if not self.config.has_option('food_time_attack_Values', 'time_scpre'):
+                self.config.set('food_time_attack_Values', 'time_score', '0')
+            if not self.config.has_option('food_time_attack_Values', 'high_score_time'):
+                self.config.set('food_time_attack_Values', 'high_score_time', '0')
+            if not self.config.has_option('food_time_attack_Values', 'shorten_score'):
+                self.config.set('food_time_attack_Values', 'shorten_score', '0')
+            if not self.config.has_option('food_time_attack_Values', 'shorten_snake_high_score'):
+                self.config.set('food_time_attack_Values', 'shorten_snake_high_score', '0')
+            if not self.config.has_option('food_time_attack_Values', 'next_special_food_score'):
+                self.config.set('food_time_attack_Values', 'next_special_food_score', '50')
+            if not self.config.has_option('food_time_attack_Values', 'next_shorten_food_score'):
+                self.config.set('food_time_attack_Values', 'next_shorten_food_score', '100')
+            if not self.config.has_option('food_time_attack_Values', 'level'):
+                self.config.set('food_time_attack_Values', 'level', '1')
+            if not self.config.has_option('food_time_attack_Values', 'level_high_score'):
+                self.config.set('food_time_attack_Values', 'level_high_score', '1')
+            if not self.config.has_option('food_time_attack_Values', 'xp'):
+                self.config.set('food_time_attack_Values', 'xp', '0')
+            if not self.config.has_option('food_time_attack_Values', 'xp_high_score'):
+                self.config.set('food_time_attack_Values', 'xp_high_score', '0')
+            if not self.config.has_option('food_time_attack_Values', 'initial_xp_needed'):
+                self.config.set('food_time_attack_Values', 'initial_xp_needed', '100')
+            if not self.config.has_option('food_time_attack_Values', 'levels_to_increase_xp'):
+                self.config.set('food_time_attack_Values', 'levels_to_increase_xp', '10')
+            if not self.config.has_option('food_time_attack_Values', 'xp_increase_amount'):
+                self.config.set('food_time_attack_Values', 'xp_increase_amount', '50')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
 
-    def set_challange_snake_settings(self):
+    def set_food_time_attack_settings(self):
         try:
-            if not self.config.has_section('Challange_Snake_Settings'):
-                self.config.add_section('Challange_Snake_Settings')
-            if not self.config.has_option('Challange_Snake_Settings', 'state'):
-                self.config.set('Challange_Snake_Settings', 'state', 'start_game')
+            if not self.config.has_section('food_time_attack_Settings'):
+                self.config.add_section('food_time_attack_Settings')
+            if not self.config.has_option('food_time_attack_Settings', 'state'):
+                self.config.set('food_time_attack_Settings', 'state', 'start_game')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except Exception as e:

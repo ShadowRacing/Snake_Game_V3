@@ -221,7 +221,7 @@ class GameConfig:
                 self.DIRECTIONOFFSNAKE = "down"
                 self.logfile.log_game_event("Game mode: snake_leveling")
             
-            elif game_mode == "snake_challange":
+            elif game_mode == "food_time_attack":
                 self.GAME_WIDTH = self.game_width
                 self.GAME_HEIGHT = self.game_height
                 self.SPEED = self.snake_speed
@@ -235,7 +235,7 @@ class GameConfig:
                 self.HIGHLIGHTTHICKNESS = 5
                 self.HIGHLIGHTBACKGROUND = 'Black'
                 self.DIRECTIONOFFSNAKE = "down"
-                self.logfile.log_game_event("Game mode: snake_challange")
+                self.logfile.log_game_event("Game mode: food_time_attack")
             
         except Exception as e:
             traceback.print_exc(e)

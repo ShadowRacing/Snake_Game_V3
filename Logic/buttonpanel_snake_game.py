@@ -73,11 +73,11 @@ class ButtonCommands:
         else:
             self.logfile.log_game_event("No function assigned to 'challange_choice'")
 
-    def challange_snake_command(self):
-        if 'challange_snake' in self.functions:
-            self.functions['challange_snake']()
+    def food_time_attack_command(self):
+        if 'food_time_attack' in self.functions:
+            self.functions['food_time_attack']()
         else:
-            self.logfile.log_game_event("No function assigned to 'challange_snake'")
+            self.logfile.log_game_event("No function assigned to 'food_time_attack'")
 
     def snake_color_command(self):
         if 'snake_color' in self.functions:
@@ -299,11 +299,11 @@ class ClickButtonPanel:
                                 command=self.button_commands.challange_choices_command)
         challange_choice_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
 
-    def challange_snake_button(self):
-        challange_snake_button = ctk.CTkButton(self.button_canvas, text="Challange", font=FONT_LIST[11],
+    def food_time_attack_button(self):
+        food_time_attack_button = ctk.CTkButton(self.button_canvas, text="Challange", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.challange_snake_command)
-        challange_snake_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
+                                command=self.button_commands.food_time_attack_command)
+        food_time_attack_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
     def snake_color_button(self):
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],

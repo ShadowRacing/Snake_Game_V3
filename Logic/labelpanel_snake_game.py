@@ -22,7 +22,7 @@ class NameOffFrameLabelPanel:
             "endless_snake": "Endless Snake",
             "leveling_snake": "Leveling Snake",
             "challange_choices": "Challange Choices",
-            "challange_snake": "Challange Snake",
+            "food_time_attack": "Challange Snake",
             "info": "Game Information",
             "settings": "Settings"
         }
@@ -65,8 +65,8 @@ class NameOffFrameLabelPanel:
     def create_challange_choices_label(self):
         self.create_label_canvas("challange_choices")
     
-    def create_challange_snake_label(self):
-        self.create_label_canvas("challange_snake")
+    def create_food_time_attack_label(self):
+        self.create_label_canvas("food_time_attack")
 
     def create_info_label(self):
         self.create_label_canvas("info")
@@ -400,7 +400,7 @@ class GameLabelsPanel:
             self.leveling_snake_length_label_ = 0
             self.config.set('Leveling_Snake_Values', 'snake_length', '0')
             self.challange_score_label_ = 0
-            self.config.set('Challange_Snake_Values', 'score', '0')
+            self.config.set('food_time_attack_Values', 'score', '0')
             with open('config.ini', 'w') as configfile:
                 self.config.write(configfile)
         except Exception as e:
@@ -1288,7 +1288,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.challange_score_label_ = self.config.get('Challange_Snake_Values', 'score', fallback='0')
+            self.challange_score_label_ = self.config.get('food_time_attack_Values', 'score', fallback='0')
             #update the high score time label on the screen
             self.challange_score_label.configure(text=f"Score: {self.challange_score_label_}")
         except Exception as e:
@@ -1312,7 +1312,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.challange_high_score_label_ = self.config.get('Challange_Snake_Values', 'high_score', fallback='0')
+            self.challange_high_score_label_ = self.config.get('food_time_attack_Values', 'high_score', fallback='0')
             #update the high score time label on the screen
             self.challange_high_score_label.configure(text=f"level: {self.challange_score_label_}")
         except Exception as e:

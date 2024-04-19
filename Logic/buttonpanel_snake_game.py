@@ -73,6 +73,12 @@ class ButtonCommands:
         else:
             self.logfile.log_game_event("No function assigned to 'challange_choice'")
 
+    def challange_settings_command(self):
+        if 'challange_settings' in self.functions:
+            self.functions['challange_settings']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'challange_settings'")
+
     def food_time_attack_command(self):
         if 'food_time_attack' in self.functions:
             self.functions['food_time_attack']()
@@ -298,6 +304,12 @@ class ClickButtonPanel:
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.challange_choices_command)
         challange_choice_button.grid(in_=self.button_canvas, row=4, column=0, padx=10, pady=10, sticky="w")
+
+    def challange_settings_button(self):
+        challange_settings_button = ctk.CTkButton(self.button_canvas, text="Challange Settings", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.challange_settings_command)
+        challange_settings_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
     def food_time_attack_button(self):
         food_time_attack_button = ctk.CTkButton(self.button_canvas, text="Challange", font=FONT_LIST[11],

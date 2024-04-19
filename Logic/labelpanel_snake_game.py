@@ -22,6 +22,7 @@ class NameOffFrameLabelPanel:
             "endless_snake": "Endless Snake",
             "leveling_snake": "Leveling Snake",
             "challange_choices": "Challange Choices",
+            "challange_settings": "Challange Settings",
             "food_time_attack": "Challange Snake",
             "info": "Game Information",
             "settings": "Settings"
@@ -64,6 +65,9 @@ class NameOffFrameLabelPanel:
     
     def create_challange_choices_label(self):
         self.create_label_canvas("challange_choices")
+    
+    def create_challange_settings_label(self):
+        self.create_label_canvas("challange_settings")
     
     def create_food_time_attack_label(self):
         self.create_label_canvas("food_time_attack")

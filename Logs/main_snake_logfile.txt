@@ -28572,3 +28572,178 @@ Game height: 600
 [2024-04-22 20:36:56] Current initial_game_size in config.ini: 600x600
 1
 1
+[2024-04-22 20:40:11] Started the app
+[2024-04-22 20:40:11] Started the GameApp Class
+[2024-04-22 20:40:11] Game mode: initial config
+[2024-04-22 20:40:11] Dark-Blue
+[2024-04-22 20:40:11] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-22 20:40:11] Current initial_theme in config.ini: Dark-Blue
+[2024-04-22 20:40:11] Contrast mode set to dark
+[2024-04-22 20:40:11] 600x600
+[2024-04-22 20:40:11] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:40:11] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-22 20:40:11] start_screen method called
+Game width: 300
+Game height: 300
+3
+[2024-04-22 20:40:43] 600x600
+[2024-04-22 20:40:43] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:40:43] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 300
+Game height: 300
+3
+[2024-04-22 20:40:44] 600x600
+[2024-04-22 20:40:44] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:40:44] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-22 20:41:34] Started the app
+[2024-04-22 20:41:34] Started the GameApp Class
+[2024-04-22 20:41:34] Game mode: initial config
+[2024-04-22 20:41:34] Dark-Blue
+[2024-04-22 20:41:34] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-22 20:41:34] Current initial_theme in config.ini: Dark-Blue
+[2024-04-22 20:41:34] Contrast mode set to dark
+[2024-04-22 20:41:34] 600x600
+[2024-04-22 20:41:34] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:41:34] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-22 20:41:34] start_screen method called
+Game width: 300
+Game height: 300
+3
+[2024-04-22 20:41:35] 600x600
+[2024-04-22 20:41:35] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:41:35] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 300
+Game height: 300
+3
+[2024-04-22 20:41:36] 600x600
+[2024-04-22 20:41:36] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:41:36] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-22 20:41:37] Game mode: food_time_attack
+[2024-04-22 20:41:37] start_game
+[2024-04-22 20:41:37] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-22 20:41:37] Reset snake length
+[2024-04-22 20:41:37] Game mode: food_time_attack
+[2024-04-22 20:41:37] start_game
+[2024-04-22 20:41:37] 600x600
+[2024-04-22 20:41:37] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:41:37] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-22 20:42:07] Started the app
+[2024-04-22 20:42:07] Started the GameApp Class
+[2024-04-22 20:42:07] Game mode: initial config
+[2024-04-22 20:42:07] Dark-Blue
+[2024-04-22 20:42:07] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-22 20:42:07] Current initial_theme in config.ini: Dark-Blue
+[2024-04-22 20:42:07] Contrast mode set to dark
+[2024-04-22 20:42:07] 600x600
+[2024-04-22 20:42:07] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:07] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-22 20:42:07] start_screen method called
+Game width: 300
+Game height: 300
+3
+[2024-04-22 20:42:09] 600x600
+[2024-04-22 20:42:09] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:09] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 300
+Game height: 300
+3
+[2024-04-22 20:42:10] 600x600
+[2024-04-22 20:42:10] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:10] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-22 20:42:10] Game mode: food_time_attack
+[2024-04-22 20:42:10] start_game
+[2024-04-22 20:42:10] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-22 20:42:10] Reset snake length
+[2024-04-22 20:42:10] Game mode: food_time_attack
+[2024-04-22 20:42:11] start_game
+[2024-04-22 20:42:11] 600x600
+[2024-04-22 20:42:11] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:11] Current initial_game_size in config.ini: 600x600
+1
+1
+Deleted score challange
+Deleted high score challange
+Deleted Labels challange
+Game width: 600
+Game height: 600
+5
+[2024-04-22 20:42:15] 600x600
+[2024-04-22 20:42:15] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:15] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 600
+Game height: 600
+5
+[2024-04-22 20:42:17] 600x600
+[2024-04-22 20:42:17] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:17] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 600
+Game height: 600
+5
+[2024-04-22 20:42:17] 600x600
+[2024-04-22 20:42:17] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:17] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 600
+Game height: 600
+5
+[2024-04-22 20:42:20] 600x600
+[2024-04-22 20:42:20] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:20] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 600
+Game height: 600
+5
+[2024-04-22 20:42:21] 600x600
+[2024-04-22 20:42:21] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:21] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-22 20:42:21] Game mode: food_time_attack
+[2024-04-22 20:42:21] start_game
+[2024-04-22 20:42:21] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-04-22 20:42:21] Reset snake length
+[2024-04-22 20:42:21] Game mode: food_time_attack
+[2024-04-22 20:42:21] start_game
+[2024-04-22 20:42:21] 600x600
+[2024-04-22 20:42:21] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:42:21] Current initial_game_size in config.ini: 600x600
+1
+1
+Deleted score challange
+Deleted high score challange
+Deleted Labels challange

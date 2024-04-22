@@ -20637,3 +20637,15 @@ TypeError: SnakeGameApp.destroy_canvas() missing 1 required positional argument:
 
 
 [2024-04-22 20:36:47] Started the Error Log File
+[2024-04-22 20:40:11] 
+
+
+[2024-04-22 20:40:11] Started the Error Log File
+[2024-04-22 20:41:34] 
+
+
+[2024-04-22 20:41:34] Started the Error Log File
+[2024-04-22 20:42:07] 
+
+
+[2024-04-22 20:42:07] Started the Error Log File

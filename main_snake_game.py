@@ -288,11 +288,11 @@ class SnakeGameApp:
         
         elif game_type == "challange_choices":
             self.create_button_panel.challange_settings_button()
-
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_challange_choices_label()
-        
+
         elif game_type == "challange_settings":
+            
             self.create_button_panel.food_time_attack_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_challange_settings_label()
@@ -768,6 +768,7 @@ class SnakeGameApp:
             self.leveling_snake_canvas = self.destroy_canvas(self.leveling_snake_canvas)
             self.food_time_attack_canvas = self.destroy_canvas(self.food_time_attack_canvas)
             self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas)
+            self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
             self.info_canvas = self.destroy_canvas(self.info_canvas)
             self.settings_canvas = self.destroy_canvas(self.settings_canvas)
 

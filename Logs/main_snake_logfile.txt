@@ -28747,3 +28747,21 @@ Game height: 600
 Deleted score challange
 Deleted high score challange
 Deleted Labels challange
+[2024-04-22 20:43:00] Started the app
+[2024-04-22 20:43:00] Started the GameApp Class
+[2024-04-22 20:43:00] Game mode: initial config
+[2024-04-22 20:43:00] Dark-Blue
+[2024-04-22 20:43:00] Updated initial_theme in config.ini to Dark-Blue
+[2024-04-22 20:43:00] Current initial_theme in config.ini: Dark-Blue
+[2024-04-22 20:43:00] Contrast mode set to dark
+[2024-04-22 20:43:00] 600x600
+[2024-04-22 20:43:00] Updated initial_game_size in config.ini to 600x600
+[2024-04-22 20:43:00] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-04-22 20:43:00] start_screen method called
+[2024-04-22 20:43:02] Closed the app
+
+
+
+

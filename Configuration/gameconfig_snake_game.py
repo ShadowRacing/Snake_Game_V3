@@ -29,7 +29,7 @@ class GameConfig:
                     self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
-        
+
         try:
             self.snake_speed = self.config.get('Settings', 'snake_speed', fallback='20')
             if self.snake_speed in ['10', '20', '30', '40', '50', '60', '70', '80', '90', '100']:
@@ -60,7 +60,7 @@ class GameConfig:
 
         try:
             self.game_size = self.config.get('Settings', 'game_size', fallback='500x500')
-            if self.game_size in ["600x600", "700x700", "800x800", "900x900", "1000x1000", 
+            if self.game_size in ["600x600", "700x700", "800x800", "900x900", "1000x1000",
                                        "1100x1100", "1200x1200", "1300x1300","1400x1400", "1500x1500"]:
                 if self.game_size == "600x600":
                     self.game_width = 600

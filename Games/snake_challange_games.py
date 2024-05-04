@@ -212,7 +212,7 @@ class food_time_attack(ctk.CTkCanvas):
         else:
             delay = 150 - int(self.game_config.SPEED) 
             self.snake_canvas.after(delay, self.next_turn, snake, food)
-        
+
         self.has_changed_direction = False
         self.game_labels_panel_4.challange_update_game_labels()
         self.game_labels_panel_4.challange_update_high_score_labels()

@@ -70,7 +70,7 @@ class Screen_size:
         self.config.set('Settings', 'screen_size', selected_value)
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
-        self.logfile.log_game_event(f"Updated the config.ini")
+        self.logfile.log_game_event(f"Updated the config.ini{"Writing updates"}")
 
 
 # ************************************

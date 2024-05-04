@@ -33,14 +33,17 @@ class MultiPlayer(ctk.CTkCanvas):
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
 
-        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, 
+                         highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
         
         # Create the snake and the food
 
-        self.snake_canvas_1 = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+        self.snake_canvas_1 = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  
+                                            highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
         self.snake_canvas_1.place(x=500, y=50)
 
-        self.snake_canvas_2 = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+        self.snake_canvas_2 = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  
+                                            highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
         self.snake_canvas_2.place(x=1000, y=600)
 
         self.snake = Snake(self.logfile, self.snake_canvas_1, game_config)
@@ -214,8 +217,12 @@ class MultiPlayer(ctk.CTkCanvas):
             x += self.game_config.CELL_SIZE
         
         snake.coordinates.insert(0, (x, y))
-        square = self.snake_canvas_1.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, outline=self.game_config.SNAKE_OUTLINE)
-        square = self.snake_canvas_2.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, outline=self.game_config.SNAKE_OUTLINE)
+        square = self.snake_canvas_1.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + 
+                                                      self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, 
+                                                      outline=self.game_config.SNAKE_OUTLINE)
+        square = self.snake_canvas_2.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + 
+                                                      self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, 
+                                                      outline=self.game_config.SNAKE_OUTLINE)
         snake.squares.insert(0, square)
 
         self.current_time = time.time()
@@ -316,7 +323,7 @@ class MultiPlayer(ctk.CTkCanvas):
             self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
             
         with open('config.ini', 'w') as configfile:
-                self.config.write(configfile)
+            self.config.write(configfile)
 
     def restart_game(self, event=None):
         self.bind_and_unbind_keys()

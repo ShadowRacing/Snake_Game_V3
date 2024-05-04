@@ -23,16 +23,16 @@ class UpdateContrast:
         self.update_config_contrast(selected_value)
         if selected_value == 'Dark':
             ctk.set_appearance_mode('dark')
-            self.logfile.log_game_event(f"Contrast mode set to dark")
+            self.logfile.log_game_event(f"Contrast mode set to {"dark"}")
         elif selected_value == 'Light':
             ctk.set_appearance_mode('light')
-            self.logfile.log_game_event(f"Contrast mode set to light")
+            self.logfile.log_game_event(f"Contrast mode set to {"light"}")
         elif selected_value == 'System':
             ctk.set_appearance_mode('system')
-            self.logfile.log_game_event(f"Contrast mode set to system")
+            self.logfile.log_game_event(f"Contrast mode set to {"system"}")
         else:
             ctk.set_appearance_mode('dark')
-            self.logfile.log_game_event(f"Contrast mode set to dark")
+            self.logfile.log_game_event(f"Contrast mode set to {"dark"}")
     
     #Method to update the config.ini file
     def update_config_contrast(self, selected_value):

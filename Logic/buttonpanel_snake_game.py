@@ -606,7 +606,8 @@ class OptionButtonPanel:
             # Creating the option buttons for snake color
             self.snake_color_config = self.config.get('Settings', 'snake_color', fallback='Green')
             self.create_option_button(self.snake_color_callback,
-                                      ["Default", "Red", "Blue", "Green", "Yellow", "Black", "White", "Grey", "Olive", "Purple", "Orange", "Silver", "Gold", "OrangeRed", "MidnightPurple"],
+                                      ["Default", "Red", "Blue", "Green", "Yellow", "Black", "White", "Grey", "Olive", 
+                                       "Purple", "Orange", "Silver", "Gold", "OrangeRed", "MidnightPurple"],
                                       self.snake_color_config, 800, 50)
             
             self.high_score_label_showing_config = self.config.get('Settings', 'label_needed_high_score', fallback='False')

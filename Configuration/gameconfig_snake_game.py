@@ -98,7 +98,9 @@ class GameConfig:
         # Set the snake color from the configuration file
         try:
             self.snake_color = self.config.get('Settings', 'snake_color', fallback='Green')
-            if self.snake_color in ['Default','Red', 'Blue', 'Green', 'Yellow', 'Black', 'White', 'Grey', 'Olive', 'Purple', 'Orange', 'Silver', 'Gold', 'OrangeRed', 'MidnightPurple']:
+            if self.snake_color in ['Default','Red', 'Blue', 'Green', 'Yellow', 
+                                    'Black', 'White', 'Grey', 'Olive', 'Purple', 
+                                    'Orange', 'Silver', 'Gold', 'OrangeRed', 'MidnightPurple']:
                 if self.snake_color == 'Default':
                     self.SNAKE_OUTLINE = "#000000"
                     self.snake_color = "#00FF00"

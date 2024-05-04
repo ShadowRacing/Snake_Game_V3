@@ -9,7 +9,7 @@ import json, os, configparser, traceback
 try:
     script_dir = os.path.dirname(os.path.abspath(__file__))
 except Exception as e:
-            traceback.print_exc(e)
+    traceback.print_exc(e)
 
 # Load colors from JSON file
 try:
@@ -19,14 +19,14 @@ try:
     with open(os.path.join(script_dir, '..', 'Themes', 'snake_colors.json'), 'r') as f:
         SNAKE_COLOR_DICT = json.load(f)
 except Exception as e:
-            traceback.print_exc(e)
+    traceback.print_exc(e)
 
 # Load the game settings from the config.ini file
 try:
     config = configparser.ConfigParser()
     config.read('config.ini')
 except Exception as e:
-            traceback.print_exc(e)
+    traceback.print_exc(e)
 
 SCREEN_SIZE_FULLSCREEN = None
 
@@ -45,7 +45,7 @@ try:
         # Split the screen size into width and height and convert them to integers
         width, height = map(int, screen_size.split('x'))
 except Exception as e:
-            traceback.print_exc(e)  
+    traceback.print_exc(e)  
 
 # Define other constants
 class GameConstants:
@@ -56,6 +56,7 @@ class GameConstants:
     MIN_HEIGHT = height
     MIN_WIDTH = width
     RESIZING = False
+
 
 # Define the font list
 FONT_SIZE_LIST = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75]

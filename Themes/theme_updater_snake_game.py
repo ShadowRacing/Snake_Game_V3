@@ -51,7 +51,7 @@ class ThemeUpdater:
         theme_dir = path.dirname(__file__)
         try:
             #with open(f"{theme_dir}/{theme_name}.json", "r") as theme_file:
-                #theme = json.load(theme_file)
+                 #theme = json.load(theme_file)
             with open(path.join(theme_dir, f"{theme_name}.json"), "r") as theme_file:
                 theme = json.load(theme_file)
         except FileNotFoundError:
@@ -64,7 +64,7 @@ class ThemeUpdater:
         self.config.set('Settings', 'theme', selected_value)
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
-        self.logfile.log_game_event(f"Updated the config.ini of theme")
+        self.logfile.log_game_event(f"Updated the config.ini of {"theme"}")
 
 # *****************************************
 # Shadows Snake Theme Updater File

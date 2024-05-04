@@ -43,9 +43,11 @@ class Snake_endless(ctk.CTkCanvas):
         print(f"Height: {self.height}")
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
-        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, 
+                         highlightbackground=self.highlightbackground)
         
-        self.snake_canvas = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+        self.snake_canvas = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, 
+                                          highlightbackground=self.highlightbackground)
         self.snake_canvas.place(x=500, y=50)
         
         # Create the snake and the food
@@ -394,7 +396,8 @@ class Snake_endless(ctk.CTkCanvas):
             x += self.game_config.CELL_SIZE
         
         snake.coordinates.insert(0, (x, y))
-        square = self.snake_canvas.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, outline=self.game_config.SNAKE_OUTLINE)
+        square = self.snake_canvas.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + self.game_config.CELL_SIZE, 
+                                                    fill=self.game_config.SNAKE_COLOR, outline=self.game_config.SNAKE_OUTLINE)
         snake.squares.insert(0, square)
 
         self.current_time = time.time()
@@ -524,7 +527,7 @@ class Snake_endless(ctk.CTkCanvas):
         
         try:   
             with open('config.ini', 'w') as configfile:
-                    self.config.write(configfile)
+                self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
         

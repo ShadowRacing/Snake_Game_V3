@@ -1,6 +1,5 @@
 Shadow's Snake Game
 
-
 Introduction
 
 Welcome to Shadow's Snake Game! This classic arcade game brings back the nostalgia of early video gaming. Control a snake as it slithers around the screen, eating food to grow longer while avoiding collisions with walls and itself. With various game modes and customizable settings, this game offers hours of addictive fun!
@@ -54,7 +53,7 @@ Requirements:
 Python 3.11.7 64bit
 customtkinter
 
-clone the repository: https://github.com/ShadowRacing/Snake_Game_V3
+Clone the repository: [https://github.com/ShadowRacing/Snake_Game_V3]
 
 Run the following file: main_snake_game.py
 
@@ -64,4 +63,4 @@ Developed by ShadowRacing
 
 
 License:
-This project is licensed under the [ShadowRacing][License] - Read the License file for the License Terms
+This project is licensed under the [ShadowRacing][https://github.com/ShadowRacing/Snake_Game_V3/blob/main/License.txt] - Read the License file for the License Terms

@@ -20,5 +20,6 @@ class Challange_Choices(ctk.CTkCanvas):
         print(game_config.SNAKE_LENGTH)
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
-        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, 
+                         highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
 

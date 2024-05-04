@@ -1,4 +1,4 @@
-import customtkinter as ctk, time, configparser, traceback
+import configparser
 from os import path
 
 

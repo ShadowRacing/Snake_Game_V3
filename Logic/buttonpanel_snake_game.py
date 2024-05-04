@@ -79,6 +79,12 @@ class ButtonCommands:
         else:
             self.logfile.log_game_event("No function assigned to 'challange_settings'")
 
+    def time_attack_command(self):
+        if 'time_attack' in self.functions:
+            self.functions['time_attack']()
+        else:
+            self.logfile.log_game_event("No function assigned to 'time_attack'")
+
     def food_time_attack_command(self):
         if 'food_time_attack' in self.functions:
             self.functions['food_time_attack']()

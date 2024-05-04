@@ -63,4 +63,4 @@ Developed by ShadowRacing
 
 
 License:
-This project is licensed under the [ShadowRacing][https://github.com/ShadowRacing/Snake_Game_V3/blob/main/License.txt] - Read the License file for the License Terms
+This project is licensed under the [ShadowRacing][https://github.com/ShadowRacing/Snake_Game_V3/blob/main/License.txt] License - Read the License file for the License Terms

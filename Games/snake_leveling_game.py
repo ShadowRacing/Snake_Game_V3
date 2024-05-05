@@ -73,48 +73,48 @@ class Snake_Leveling(ctk.CTkCanvas):
 
         if not self.config.has_option('Leveling_Snake_Values', 'score'):
             self.config.set('Leveling_Snake_Values','score', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Leveling_Snake_Values', 'high_score'):
             self.config.set('Leveling_Snake_Values','high_score', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Leveling_Snake_Values', 'time_score'):
             self.config.set('Leveling_Snake_Values','time_score', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Leveling_Snake_Values', 'high_score_time'):
             self.config.set('Leveling_Snake_Values','high_score_time', '0')
             self.logfile.log_game_event("high_score_time added")
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Leveling_Snake_Values', 'snake_length'):
             self.config.set('Leveling_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Leveling_Snake_Values', 'snake_length_high_score'):
             self.config.set('Leveling_Snake_Values','snake_length_high_score', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Leveling_Snake_Settings', 'state'):
             self.config.set('Leveling_Snake_Settings', 'state', 'start_screen')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Leveling_Snake_Values', 'xp'):
             self.config.set('Leveling_Snake_Values','xp', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Leveling_Snake_Values', 'level'):
             self.config.set('Leveling_Snake_Values','level', '1')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         # Start the game loop
@@ -131,7 +131,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.state = 'start_game'
         self.config.set('Leveling_Snake_Settings', 'state', 'start_game')
 
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
         self.logfile.log_game_event(f"Game state: {self.state}")
@@ -183,7 +183,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.game_labels_panel_3.leveling_update_high_score_labels()
         self.config.set('Leveling_Snake_Settings', 'state', 'game')
 
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.start_time = time.time()
@@ -213,7 +213,7 @@ class Snake_Leveling(ctk.CTkCanvas):
             self.total_time_played = int(self.current_time - self.start_time - self.total_paused_time)
             self.logfile.log_game_event(self.total_time_played)
             self.config.set('Leveling_Snake_Values', 'time_score', str(self.total_time_played))
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         food_eaten = False
@@ -237,7 +237,7 @@ class Snake_Leveling(ctk.CTkCanvas):
                 self.config.set('Leveling_Snake_Values', 'score', str(self.score))
                 self.config.set('Leveling_Snake_Values', 'snake_length', str(self.snake_length))
                 self.config.set('Leveling_Snake_Values', 'xp', str(self.xp))
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
 
         else:
@@ -262,7 +262,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.current_time = time.time()
         self.total_time_played = int(self.current_time - self.start_time)
         self.config.set('Leveling_Snake_Values', 'time_score', str(self.total_time_played))
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
         if self.check_collisions(snake):
@@ -284,7 +284,7 @@ class Snake_Leveling(ctk.CTkCanvas):
             self.initial_xp_needed += self.xp_increase_amount
         self.config.set('Leveling_Snake_Values', 'level', str(self.level))
         self.config.set('Leveling_Snake_Values', 'xp', str(self.xp))
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
     def change_direction(self, new_direction):
@@ -352,7 +352,7 @@ class Snake_Leveling(ctk.CTkCanvas):
             self.config.set('Leveling_Snake_Values', 'snake_length_high_score', str(self.snake_length))
             self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
 
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
     def restart_game(self, event=None):
@@ -376,7 +376,7 @@ class Snake_Leveling(ctk.CTkCanvas):
         self.config.set('Leveling_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
         self.initial_xp_needed = int(self.config.get('Leveling_Snake_Values', 'initial_xp_needed', fallback='100'))
         self.current_xp_threshold = self.initial_xp_needed
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
             # start the game again
             self.state = 'start_game'

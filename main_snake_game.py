@@ -19,7 +19,7 @@ from Logic.snake_challange_settings import Challange_Settings
 from Games.snake_classic_game import Snake_Classic_Game
 from Games.snake_endless_game import Snake_endless
 from Games.snake_leveling_game import Snake_Leveling
-from Games.snake_challange_games import food_time_attack
+from Games.snake_challange_games import FoodTimeAttack 
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
 
@@ -80,8 +80,9 @@ class SnakeGameApp:
         self.classic_snake_canvas = None
         self.endless_snake_canvas = None
         self.leveling_snake_canvas = None
-        self.food_time_attack_canvas = None
+        self.FoodTimeAttack_canvas = None
         self.challange_choice_canvas = None
+        self.challange_settings_canvas = None
         self.info_canvas = None
         self.settings_canvas = None
 
@@ -111,7 +112,7 @@ class SnakeGameApp:
             'snake_leveling': self.snake_leveling,
             'snake_endless': self.snake_endless,
             'classic_snake': self.classic_snake,
-            'food_time_attack': self.food_time_attack,
+            'FoodTimeAttack': self.FoodTimeAttack,
             'challange_choices': self.challange_choices,
             'challange_settings': self.challange_settings
         }
@@ -171,8 +172,8 @@ class SnakeGameApp:
     def snake_leveling(self):
         self.start_game("snake_leveling")
     
-    def food_time_attack(self):
-        self.start_game("food_time_attack")
+    def FoodTimeAttack(self):
+        self.start_game("FoodTimeAttack")
 
     def challange_choices(self):
         self.start_game("challange_choices")
@@ -204,8 +205,8 @@ class SnakeGameApp:
             self.endless_snake_canvas = Snake_endless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
-        elif game_type == "food_time_attack":
-            self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+        elif game_type == "FoodTimeAttack":
+            self.FoodTimeAttack_canvas = FoodTimeAttack(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "info":
             self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         elif game_type == "settings":
@@ -227,9 +228,9 @@ class SnakeGameApp:
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.leveling_snake_canvas
-        elif game_type == "food_time_attack":
-            self.food_time_attack_canvas.pack(expand=True, fill="both")
-            self.main_canvas = self.food_time_attack_canvas
+        elif game_type == "FoodTimeAttack":
+            self.FoodTimeAttack_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.FoodTimeAttack_canvas
         elif game_type == "info":
             self.info_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.info_canvas
@@ -293,14 +294,14 @@ class SnakeGameApp:
 
         elif game_type == "challange_settings":
             self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas)
-            self.create_button_panel.food_time_attack_button()
+            self.create_button_panel.FoodTimeAttack_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_challange_settings_label()
 
-        elif game_type == "food_time_attack":
+        elif game_type == "FoodTimeAttack":
             self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
             self.framelabel_panel.set_create_label_canvas_flag(True)
-            self.framelabel_panel.create_food_time_attack_label()
+            self.framelabel_panel.create_FoodTimeAttack_label()
 
         elif game_type == "info":
             self.framelabel_panel.set_create_label_canvas_flag(True)
@@ -366,7 +367,7 @@ class SnakeGameApp:
             except Exception as e:
                 traceback.print_exc(e)
             try:
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -393,7 +394,7 @@ class SnakeGameApp:
             except Exception as e:
                 traceback.print_exc(e)
             try:
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -420,7 +421,7 @@ class SnakeGameApp:
             except Exception as e:
                 traceback.print_exc(e)
             try:
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -448,7 +449,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -472,7 +473,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'high_score_time', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -496,7 +497,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'snake_length_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -520,7 +521,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'special_score_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -544,7 +545,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'shorten_snake_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -572,7 +573,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -596,7 +597,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'high_score_time', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -620,7 +621,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'snake_length_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -644,7 +645,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'special_score_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -668,7 +669,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'shorten_snake_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -692,7 +693,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'xp_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -716,7 +717,7 @@ class SnakeGameApp:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'level_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -758,15 +759,15 @@ class SnakeGameApp:
                 self.endless_snake_canvas.delete_game_labels_()
             if self.main_canvas == self.leveling_snake_canvas:
                 self.leveling_snake_canvas.delete_game_labels__()
-            if self.main_canvas == self.food_time_attack_canvas:
-                self.food_time_attack_canvas.delete_game_labels___()
+            if self.main_canvas == self.FoodTimeAttack_canvas:
+                self.FoodTimeAttack_canvas.delete_game_labels___()
 
             time.sleep(0.1)
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas)
             self.endless_snake_canvas = self.destroy_canvas(self.endless_snake_canvas)
             self.leveling_snake_canvas = self.destroy_canvas(self.leveling_snake_canvas)
-            self.food_time_attack_canvas = self.destroy_canvas(self.food_time_attack_canvas)
+            self.FoodTimeAttack_canvas = self.destroy_canvas(self.FoodTimeAttack_canvas)
             self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas)
             self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
             self.info_canvas = self.destroy_canvas(self.info_canvas)

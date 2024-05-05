@@ -23,7 +23,7 @@ class NameOffFrameLabelPanel:
             "leveling_snake": "Leveling Snake",
             "challange_choices": "Challange Choices",
             "challange_settings": "Challange Settings",
-            "food_time_attack": "Challange Snake",
+            "FoodTimeAttack": "Challange Snake",
             "info": "Game Information",
             "settings": "Settings"
         }
@@ -69,8 +69,8 @@ class NameOffFrameLabelPanel:
     def create_challange_settings_label(self):
         self.create_label_canvas("challange_settings")
     
-    def create_food_time_attack_label(self):
-        self.create_label_canvas("food_time_attack")
+    def create_FoodTimeAttack_label(self):
+        self.create_label_canvas("FoodTimeAttack")
 
     def create_info_label(self):
         self.create_label_canvas("info")
@@ -171,14 +171,14 @@ class SettingsOptionButtonLabels:
                                                         anchor='w')
                 self.restart_game_theme_label.place(x=400, y=100)
                 config.set('Settings', 'label_needed_theme', 'True')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
             else:
                 if hasattr(self, 'restart_game_theme_label'):
                     self.restart_game_theme_label.destroy()
                     del self.restart_game_theme_label
                 config.set('Settings', 'label_needed_theme', 'False')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -198,7 +198,7 @@ class SettingsOptionButtonLabels:
         config.set('Settings', 'initial_game_size', current_game_size)
 
         # Write the changes to the config file
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             config.write(configfile)
 
         self.logfile.log_game_event(f"Updated initial_game_size in config.ini to {current_game_size}")
@@ -237,7 +237,7 @@ class SettingsOptionButtonLabels:
                                                         anchor='w')
                 self.restart_game_game_size_label.place(x=400, y=250)
                 config.set('Settings', 'label_needed_game_size', 'True')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
                     
             else:
@@ -246,7 +246,7 @@ class SettingsOptionButtonLabels:
                         self.restart_game_game_size_label.destroy()
                         del self.restart_game_game_size_label
                 config.set('Settings', 'label_needed_game_size', 'False')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -406,8 +406,8 @@ class GameLabelsPanel:
             self.leveling_snake_length_label_ = 0
             self.config.set('Leveling_Snake_Values', 'snake_length', '0')
             self.challange_score_label_ = 0
-            self.config.set('food_time_attack_Values', 'score', '0')
-            with open('config.ini', 'w') as configfile:
+            self.config.set('FoodTimeAttack_Values', 'score', '0')
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -1294,7 +1294,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.challange_score_label_ = self.config.get('food_time_attack_Values', 'score', fallback='0')
+            self.challange_score_label_ = self.config.get('FoodTimeAttack_Values', 'score', fallback='0')
             #update the high score time label on the screen
             self.challange_score_label.configure(text=f"Score: {self.challange_score_label_}")
         except Exception as e:
@@ -1318,7 +1318,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.challange_high_score_label_ = self.config.get('food_time_attack_Values', 'high_score', fallback='0')
+            self.challange_high_score_label_ = self.config.get('FoodTimeAttack_Values', 'high_score', fallback='0')
             #update the high score time label on the screen
             self.challange_high_score_label.configure(text=f"level: {self.challange_score_label_}")
         except Exception as e:

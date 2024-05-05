@@ -81,7 +81,7 @@ class MultiPlayer(ctk.CTkCanvas):
         self.state = 'start_game'
         self.config.set('Multiplayer_Snake_Settings', 'state', 'start_game')
 
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
         self.logfile.log_game_event(f"Game state: {self.state}")
@@ -142,7 +142,7 @@ class MultiPlayer(ctk.CTkCanvas):
         self.game_labels_panel_4.leveling_update_high_score_labels()
         self.config.set('Multiplayer_Snake_Values', 'state', 'game')
 
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.start_time = time.time()
@@ -174,7 +174,7 @@ class MultiPlayer(ctk.CTkCanvas):
             self.total_time_played = int(self.current_time - self.start_time - self.total_paused_time)
             self.logfile.log_game_event(self.total_time_played)
             self.config.set('Leveling_Snake_Values', 'time_score', str(self.total_time_played))
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         food_eaten = False
@@ -199,7 +199,7 @@ class MultiPlayer(ctk.CTkCanvas):
                 self.config.set('Multiplayer_Snake_Values', 'score', str(self.score))
                 self.config.set('Multiplayer_Snake_Values', 'snake_length', str(self.snake_length))
                 self.config.set('Multiplayer_Snake_Values', 'xp', str(self.xp))
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
 
         else:
@@ -229,14 +229,14 @@ class MultiPlayer(ctk.CTkCanvas):
         self.current_time = time.time()
         self.total_time_played = int(self.current_time - self.start_time)
         self.config.set('Leveling_Snake_Values', 'time_score', str(self.total_time_played))
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
         if self.check_collisions(snake):
             self.logfile.log_game_event("snake has a collision")
             self.game_over()
         else:
-            delay = 150 - int(self.game_config.SPEED) 
+            delay = 150 - int(self.game_config.SPEED)
             self.snake_canvas_1.after(delay, self.next_turn, snake, food)
             self.snake_canvas_2.after(delay, self.next_turn, snake, food)
 
@@ -319,7 +319,7 @@ class MultiPlayer(ctk.CTkCanvas):
             self.config.set('Multiplayer_Snake_Values', 'snake_length_high_score', str(self.snake_length))
             self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
 
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
     def restart_game(self, event=None):
@@ -346,7 +346,7 @@ class MultiPlayer(ctk.CTkCanvas):
         self.config.set('Multiplayer_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
         self.initial_xp_needed = int(self.config.get('Multiplayer_Snake_Values', 'initial_xp_needed', fallback='100'))
         self.current_xp_threshold = self.initial_xp_needed
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
             # start the game again
             self.state = 'start_game'

@@ -173,7 +173,7 @@ class Snake_endless(ctk.CTkCanvas):
             traceback.print_exc(e)
 
         try:
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -241,7 +241,7 @@ class Snake_endless(ctk.CTkCanvas):
             traceback.print_exc(e)
 
         try:
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -284,7 +284,7 @@ class Snake_endless(ctk.CTkCanvas):
             self.logfile.log_game_event(self.total_time_played)
             try:
                 self.config.set('Endless_Snake_Values', 'time_score', str(self.total_time_played))
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
             except Exception as e:
                 traceback.print_exc(e)
@@ -322,7 +322,7 @@ class Snake_endless(ctk.CTkCanvas):
                 try:
                     self.config.set('Endless_Snake_Values', 'score', str(self.score))
                     self.config.set('Endless_Snake_Values', 'snake_length', str(self.snake_length))
-                    with open('config.ini', 'w') as configfile:
+                    with open('config.ini', 'w', encoding='utf-8') as configfile:
                         self.config.write(configfile)
                 except Exception as e:
                     traceback.print_exc(e)
@@ -337,7 +337,7 @@ class Snake_endless(ctk.CTkCanvas):
                     self.config.set('Endless_Snake_Values', 'score', str(self.score))
                     self.config.set('Endless_Snake_Values', 'snake_length', str(self.snake_length))
                     self.config.set('Endless_Snake_Values', 'special_score', str(self.special_score))
-                    with open('config.ini', 'w') as configfile:
+                    with open('config.ini', 'w', encoding='utf-8') as configfile:
                         self.config.write(configfile)
                 except Exception as e:
                     traceback.print_exc(e)
@@ -358,7 +358,7 @@ class Snake_endless(ctk.CTkCanvas):
                 try:
                     self.config.set('Endless_Snake_Values', 'snake_length', str(self.snake_length))
                     self.config.set('Endless_Snake_Values', 'shorten_score', str(self.shorten_score))
-                    with open('config.ini', 'w') as configfile:
+                    with open('config.ini', 'w', encoding='utf-8') as configfile:
                         self.config.write(configfile)
                 except Exception as e:
                     traceback.print_exc(e)
@@ -372,14 +372,14 @@ class Snake_endless(ctk.CTkCanvas):
             self.food.special_spawn_food(self.snake.get_coordinates())
             self.next_special_food_score += 50
             self.config.set('Endless_Snake_Values', 'next_special_food_score', str(self.next_special_food_score))
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if self.score >= self.next_shorten_food_score:
             self.food.shorten_spawn_food(self.snake.get_coordinates())
             self.next_shorten_food_score += 100
             self.config.set('Endless_Snake_Values', 'next_shorten_food_score', str(self.next_shorten_food_score))
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if self.score >= self.next_food_score:
@@ -405,7 +405,7 @@ class Snake_endless(ctk.CTkCanvas):
 
         try:
             self.config.set('Endless_Snake_Values', 'time_score', str(self.total_time_played))
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -513,7 +513,7 @@ class Snake_endless(ctk.CTkCanvas):
 
         try:
             self.config.set('Endless_Snake_Values', 'next_special_food_score', '50')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -524,7 +524,7 @@ class Snake_endless(ctk.CTkCanvas):
             traceback.print_exc(e)
         
         try:
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -549,7 +549,7 @@ class Snake_endless(ctk.CTkCanvas):
             self.config.set('Endless_Snake_Values', 'score', '0')
             self.config.set('Endless_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
             self.config.set('Endless_Snake_Values', 'special_score', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
                 # start the game again
                 self.state = 'start_game'

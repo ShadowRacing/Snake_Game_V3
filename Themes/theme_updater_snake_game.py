@@ -40,7 +40,7 @@ class ThemeUpdater:
         self.config.set('Settings', 'initial_theme', current_theme)
 
         # Write the changes to the config file
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
         self.logfile.log_game_event(f"Updated initial_theme in config.ini to {current_theme}")
@@ -62,9 +62,9 @@ class ThemeUpdater:
     # The update_config_theme method updates the theme in the configuration file and writes the changes to the file.
     def update_config_theme(self, selected_value):
         self.config.set('Settings', 'theme', selected_value)
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
-        self.logfile.log_game_event(f"Updated the config.ini of {"theme"}")
+        self.logfile.log_game_event(f"Updated the config.ini of theme")
 
 # *****************************************
 # Shadows Snake Theme Updater File

@@ -66,38 +66,38 @@ class Snake_Classic_Game(ctk.CTkCanvas):
 
         if not self.config.has_option('Classic_Snake_Values', 'score'):
             self.config.set('Classic_Snake_Values','score', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Classic_Snake_Values', 'high_score'):
             self.config.set('Classic_Snake_Values','high_score', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Classic_Snake_Values', 'time_score'):
             self.config.set('Classic_Snake_Values','time_score', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Classic_Snake_Values', 'high_score_time'):
             self.config.set('Classic_Snake_Values','high_score_time', '0')
             self.logfile.log_game_event("high_score_time added")
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Classic_Snake_Values', 'snake_length'):
             self.config.set('Classic_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Classic_Snake_Values', 'snake_length_high_score'):
             self.config.set('Classic_Snake_Values','snake_length_high_score', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         if not self.config.has_option('Classic_Snake_Settings', 'state'):
             self.config.set('Classic_Snake_Settings', 'state', 'start_screen')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
      
         # Start the game loop
@@ -114,7 +114,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.state = 'start_game'
         self.config.set('Classic_Snake_Settings', 'state', 'start_game')
 
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
         self.logfile.log_game_event(f"Game state: {self.state}")
@@ -164,7 +164,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.game_labels_panel.classic_update_high_score_labels()
         self.config.set('Classic_Snake_Settings', 'state', 'game')
 
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.start_time = time.time()
@@ -193,7 +193,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.total_time_played = int(self.current_time - self.start_time - self.total_paused_time)
             self.logfile.log_game_event(self.total_time_played)
             self.config.set('Classic_Snake_Values', 'time_score', str(self.total_time_played))
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
         food_eaten = False
@@ -211,7 +211,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
                 food.spawn_food(snake.get_coordinates())
                 self.config.set('Classic_Snake_Values', 'score', str(self.score))
                 self.config.set('Classic_Snake_Values', 'snake_length', str(self.snake_length))
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
 
         else:
@@ -236,7 +236,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.current_time = time.time()
         self.total_time_played = int(self.current_time - self.start_time)
         self.config.set('Classic_Snake_Values', 'time_score', str(self.total_time_played))
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
         if self.check_collisions(snake):
@@ -310,7 +310,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.config.set('Classic_Snake_Values', 'snake_length_high_score', str(self.snake_length))
             self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
 
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
     def restart_game(self, event=None):
@@ -330,7 +330,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
 
         self.config.set('Classic_Snake_Values', 'score', '0')
         self.config.set('Classic_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
             # start the game again
             self.state = 'start_game'

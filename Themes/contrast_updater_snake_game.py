@@ -1,20 +1,40 @@
 # *****************************************
 # Shadows Snake Contrast Updating File
 # *****************************************
+"""
+Module for updating the contrast setting of the Shadows Snake game.
 
-#Importing the custom tkinter module
-import customtkinter as ctk, configparser
+This module contains the UpdateContrast class which is responsible for applying and updating
+the contrast setting of the game.
+"""
 
-#Class for updating the contrast
+import configparser
+import customtkinter as ctk
+
 class UpdateContrast:
+    """
+    Class for updating the contrast setting of the Shadows Snake game.
+
+    This class provides methods to apply a contrast setting and update the contrast setting
+    in the config.ini file.
+    """
     def __init__(self, logfile):
         #Initializing variables
         self.logfile = logfile
         self.config = configparser.ConfigParser()
         self.config.read('config.ini')
-    
-    #Method to apply the contrast
+
     def apply_contrast(self,  selected_value=None):
+        """
+        Apply the selected contrast mode to the game.
+
+        If no value is provided, the method will read the contrast setting from the config.ini file.
+        The contrast mode can be 'Dark', 'Light', or 'System'. If an unrecognized value is provided,
+        the method defaults to 'Dark'.
+
+        Args:
+        selected_value (str, optional): The selected contrast mode. Defaults to None.
+        """
         if selected_value is None:
             config = configparser.ConfigParser()
             config.read('config.ini')
@@ -23,21 +43,26 @@ class UpdateContrast:
         self.update_config_contrast(selected_value)
         if selected_value == 'Dark':
             ctk.set_appearance_mode('dark')
-            self.logfile.log_game_event(f"Contrast mode set to {"dark"}")
+            self.logfile.log_game_event("Contrast mode set to dark")
         elif selected_value == 'Light':
             ctk.set_appearance_mode('light')
-            self.logfile.log_game_event(f"Contrast mode set to {"light"}")
+            self.logfile.log_game_event("Contrast mode set to light")
         elif selected_value == 'System':
             ctk.set_appearance_mode('system')
-            self.logfile.log_game_event(f"Contrast mode set to {"system"}")
+            self.logfile.log_game_event("Contrast mode set to system")
         else:
             ctk.set_appearance_mode('dark')
-            self.logfile.log_game_event(f"Contrast mode set to {"dark"}")
-    
-    #Method to update the config.ini file
+            self.logfile.log_game_event("Contrast mode set to dark")
+
     def update_config_contrast(self, selected_value):
+        """
+        Update the 'contrast' setting in the config.ini file.
+
+        Args:
+        selected_value (str): The selected contrast value to be set in the config file.
+        """
         self.config.set('Settings', 'contrast', selected_value)
-        with open('config.ini', 'w') as configfile:
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
 # *****************************************

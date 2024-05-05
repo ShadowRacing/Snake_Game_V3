@@ -18,8 +18,8 @@ class ConfigIni:
         self.set_endless_snake_settings()
         self.set_leveling_snake_values()
         self.set_leveling_snake_settings()
-        self.set_food_time_attack_values()
-        self.set_food_time_attack_settings()
+        self.set_FoodTimeAttack_values()
+        self.set_FoodTimeAttack_settings()
 
     def set_settings_initials(self):
         try:
@@ -53,7 +53,7 @@ class ConfigIni:
                 self.config.set('Settings', 'initial_game_size', '500x500') # 500x500 is default
             if not self.config.has_option('Settings', 'game_size'):
                 self.config.set('Settings', 'game_size', '500x500') # 500x500 is default
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -74,7 +74,7 @@ class ConfigIni:
                 self.config.set('Classic_Snake_Values', 'time_score', '0')
             if not self.config.has_option('Classic_Snake_Values', 'high_score_time'):
                 self.config.set('Classic_Snake_Values', 'high_score_time', '0')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -85,7 +85,7 @@ class ConfigIni:
                 self.config.add_section('Classic_Snake_Settings')
             if not self.config.has_option('Classic_Snake_Settings', 'state'):
                 self.config.set('Classic_Snake_Settings', 'state', 'start_game')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -119,7 +119,7 @@ class ConfigIni:
             if not self.config.has_option('Endless_Snake_Values', 'next_shorten_food_score'):
                 self.config.set('Endless_Snake_Values', 'next_shorten_food_score', '100')
 
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -130,7 +130,7 @@ class ConfigIni:
                 self.config.add_section('Endless_Snake_Settings')
             if not self.config.has_option('Endless_Snake_Settings', 'state'):
                 self.config.set('Endless_Snake_Settings', 'state', 'start_game')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -177,7 +177,7 @@ class ConfigIni:
                 self.config.set('Leveling_Snake_Values', 'levels_to_increase_xp', '10')
             if not self.config.has_option('Leveling_Snake_Values', 'xp_increase_amount'):
                 self.config.set('Leveling_Snake_Values', 'xp_increase_amount', '50')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -188,65 +188,65 @@ class ConfigIni:
                 self.config.add_section('Leveling_Snake_Settings')
             if not self.config.has_option('Leveling_Snake_Settings', 'state'):
                 self.config.set('Leveling_Snake_Settings', 'state', 'start_game')
-            with open('config.ini', 'w') as configfile:
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
 
-    def set_food_time_attack_values(self):
+    def set_FoodTimeAttack_values(self):
         try:
-            if not self.config.has_section('food_time_attack_Values'):
-                self.config.add_section('food_time_attack_Values')
-            if not self.config.has_option('food_time_attack_Values', 'score'):
-                self.config.set('food_time_attack_Values', 'score', '0')
-            if not self.config.has_option('food_time_attack_Values', 'high_score'):
-                self.config.set('food_time_attack_Values', 'high_score', '0')
-            if not self.config.has_option('food_time_attack_Values', 'special_score'):
-                self.config.set('food_time_attack_Values', 'special_score', '0')
-            if not self.config.has_option('food_time_attack_Values', 'special_score_high_score'):
-                self.config.set('food_time_attack_Values', 'special_score_high_score', '0')
-            if not self.config.has_option('food_time_attack_Values', 'snake_length'):
-                self.config.set('food_time_attack_Values', 'snake_length', '0')
-            if not self.config.has_option('food_time_attack_Values', 'snake_length_high_score'):
-                self.config.set('food_time_attack_Values', 'snake_length_high_score', '0')
-            if not self.config.has_option('food_time_attack_Values', 'time_scpre'):
-                self.config.set('food_time_attack_Values', 'time_score', '0')
-            if not self.config.has_option('food_time_attack_Values', 'high_score_time'):
-                self.config.set('food_time_attack_Values', 'high_score_time', '0')
-            if not self.config.has_option('food_time_attack_Values', 'shorten_score'):
-                self.config.set('food_time_attack_Values', 'shorten_score', '0')
-            if not self.config.has_option('food_time_attack_Values', 'shorten_snake_high_score'):
-                self.config.set('food_time_attack_Values', 'shorten_snake_high_score', '0')
-            if not self.config.has_option('food_time_attack_Values', 'next_special_food_score'):
-                self.config.set('food_time_attack_Values', 'next_special_food_score', '50')
-            if not self.config.has_option('food_time_attack_Values', 'next_shorten_food_score'):
-                self.config.set('food_time_attack_Values', 'next_shorten_food_score', '100')
-            if not self.config.has_option('food_time_attack_Values', 'level'):
-                self.config.set('food_time_attack_Values', 'level', '1')
-            if not self.config.has_option('food_time_attack_Values', 'level_high_score'):
-                self.config.set('food_time_attack_Values', 'level_high_score', '1')
-            if not self.config.has_option('food_time_attack_Values', 'xp'):
-                self.config.set('food_time_attack_Values', 'xp', '0')
-            if not self.config.has_option('food_time_attack_Values', 'xp_high_score'):
-                self.config.set('food_time_attack_Values', 'xp_high_score', '0')
-            if not self.config.has_option('food_time_attack_Values', 'initial_xp_needed'):
-                self.config.set('food_time_attack_Values', 'initial_xp_needed', '100')
-            if not self.config.has_option('food_time_attack_Values', 'levels_to_increase_xp'):
-                self.config.set('food_time_attack_Values', 'levels_to_increase_xp', '10')
-            if not self.config.has_option('food_time_attack_Values', 'xp_increase_amount'):
-                self.config.set('food_time_attack_Values', 'xp_increase_amount', '50')
-            with open('config.ini', 'w') as configfile:
+            if not self.config.has_section('FoodTimeAttack_Values'):
+                self.config.add_section('FoodTimeAttack_Values')
+            if not self.config.has_option('FoodTimeAttack_Values', 'score'):
+                self.config.set('FoodTimeAttack_Values', 'score', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'high_score'):
+                self.config.set('FoodTimeAttack_Values', 'high_score', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'special_score'):
+                self.config.set('FoodTimeAttack_Values', 'special_score', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'special_score_high_score'):
+                self.config.set('FoodTimeAttack_Values', 'special_score_high_score', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'snake_length'):
+                self.config.set('FoodTimeAttack_Values', 'snake_length', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'snake_length_high_score'):
+                self.config.set('FoodTimeAttack_Values', 'snake_length_high_score', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'time_scpre'):
+                self.config.set('FoodTimeAttack_Values', 'time_score', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'high_score_time'):
+                self.config.set('FoodTimeAttack_Values', 'high_score_time', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'shorten_score'):
+                self.config.set('FoodTimeAttack_Values', 'shorten_score', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'shorten_snake_high_score'):
+                self.config.set('FoodTimeAttack_Values', 'shorten_snake_high_score', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'next_special_food_score'):
+                self.config.set('FoodTimeAttack_Values', 'next_special_food_score', '50')
+            if not self.config.has_option('FoodTimeAttack_Values', 'next_shorten_food_score'):
+                self.config.set('FoodTimeAttack_Values', 'next_shorten_food_score', '100')
+            if not self.config.has_option('FoodTimeAttack_Values', 'level'):
+                self.config.set('FoodTimeAttack_Values', 'level', '1')
+            if not self.config.has_option('FoodTimeAttack_Values', 'level_high_score'):
+                self.config.set('FoodTimeAttack_Values', 'level_high_score', '1')
+            if not self.config.has_option('FoodTimeAttack_Values', 'xp'):
+                self.config.set('FoodTimeAttack_Values', 'xp', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'xp_high_score'):
+                self.config.set('FoodTimeAttack_Values', 'xp_high_score', '0')
+            if not self.config.has_option('FoodTimeAttack_Values', 'initial_xp_needed'):
+                self.config.set('FoodTimeAttack_Values', 'initial_xp_needed', '100')
+            if not self.config.has_option('FoodTimeAttack_Values', 'levels_to_increase_xp'):
+                self.config.set('FoodTimeAttack_Values', 'levels_to_increase_xp', '10')
+            if not self.config.has_option('FoodTimeAttack_Values', 'xp_increase_amount'):
+                self.config.set('FoodTimeAttack_Values', 'xp_increase_amount', '50')
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
 
-    def set_food_time_attack_settings(self):
+    def set_FoodTimeAttack_settings(self):
         try:
-            if not self.config.has_section('food_time_attack_Settings'):
-                self.config.add_section('food_time_attack_Settings')
-            if not self.config.has_option('food_time_attack_Settings', 'state'):
-                self.config.set('food_time_attack_Settings', 'state', 'start_game')
-            with open('config.ini', 'w') as configfile:
+            if not self.config.has_section('FoodTimeAttack_Settings'):
+                self.config.add_section('FoodTimeAttack_Settings')
+            if not self.config.has_option('FoodTimeAttack_Settings', 'state'):
+                self.config.set('FoodTimeAttack_Settings', 'state', 'start_game')
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)

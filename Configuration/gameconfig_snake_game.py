@@ -25,7 +25,7 @@ class GameConfig:
         try:
             if not self.config.has_option('Settings', 'snake_color'):
                 self.config.set('Settings','snake_color', 'Default')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
         except Exception as e:
             traceback.print_exc(e)
@@ -98,8 +98,8 @@ class GameConfig:
         # Set the snake color from the configuration file
         try:
             self.snake_color = self.config.get('Settings', 'snake_color', fallback='Green')
-            if self.snake_color in ['Default','Red', 'Blue', 'Green', 'Yellow', 
-                                    'Black', 'White', 'Grey', 'Olive', 'Purple', 
+            if self.snake_color in ['Default','Red', 'Blue', 'Green', 'Yellow',
+                                    'Black', 'White', 'Grey', 'Olive', 'Purple',
                                     'Orange', 'Silver', 'Gold', 'OrangeRed', 'MidnightPurple']:
                 if self.snake_color == 'Default':
                     self.SNAKE_OUTLINE = "#000000"
@@ -223,7 +223,7 @@ class GameConfig:
                 self.DIRECTIONOFFSNAKE = "down"
                 self.logfile.log_game_event("Game mode: snake_leveling")
 
-            elif game_mode == "food_time_attack":
+            elif game_mode == "FoodTimeAttack":
                 self.GAME_WIDTH = self.game_width
                 self.GAME_HEIGHT = self.game_height
                 self.SPEED = self.snake_speed
@@ -237,7 +237,7 @@ class GameConfig:
                 self.HIGHLIGHTTHICKNESS = 5
                 self.HIGHLIGHTBACKGROUND = 'Black'
                 self.DIRECTIONOFFSNAKE = "down"
-                self.logfile.log_game_event("Game mode: food_time_attack")
+                self.logfile.log_game_event("Game mode: FoodTimeAttack")
 
         except Exception as e:
             traceback.print_exc(e)

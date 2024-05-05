@@ -85,11 +85,11 @@ class ButtonCommands:
         else:
             self.logfile.log_game_event("No function assigned to 'time_attack'")
 
-    def food_time_attack_command(self):
-        if 'food_time_attack' in self.functions:
-            self.functions['food_time_attack']()
+    def FoodTimeAttack_command(self):
+        if 'FoodTimeAttack' in self.functions:
+            self.functions['FoodTimeAttack']()
         else:
-            self.logfile.log_game_event("No function assigned to 'food_time_attack'")
+            self.logfile.log_game_event("No function assigned to 'FoodTimeAttack'")
 
     def snake_color_command(self):
         if 'snake_color' in self.functions:
@@ -241,7 +241,7 @@ class ClickButtonPanel:
         # Creating counter for home button clicks
         self.home_button_clicks = 0
 
-    # Methods to create specific buttons    
+    # Methods to create specific buttons
     # Each method calls the create_click_button method with specific parameters
     def create_home_button(self):
         self.home_button = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11],
@@ -317,11 +317,11 @@ class ClickButtonPanel:
                                 command=self.button_commands.challange_settings_command)
         challange_settings_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
-    def food_time_attack_button(self):
-        food_time_attack_button = ctk.CTkButton(self.button_canvas, text="Challange", font=FONT_LIST[11],
+    def FoodTimeAttack_button(self):
+        FoodTimeAttack_button = ctk.CTkButton(self.button_canvas, text="Challange", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.food_time_attack_command)
-        food_time_attack_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
+                                command=self.button_commands.FoodTimeAttack_command)
+        FoodTimeAttack_button.grid(in_=self.button_canvas, row=5, column=0, padx=10, pady=10, sticky="w")
 
     def snake_color_button(self):
         snake_color_button = ctk.CTkButton(self.button_canvas, text="Snake Color", font=FONT_LIST[11],
@@ -606,7 +606,7 @@ class OptionButtonPanel:
             # Creating the option buttons for snake color
             self.snake_color_config = self.config.get('Settings', 'snake_color', fallback='Green')
             self.create_option_button(self.snake_color_callback,
-                                      ["Default", "Red", "Blue", "Green", "Yellow", "Black", "White", "Grey", "Olive", 
+                                      ["Default", "Red", "Blue", "Green", "Yellow", "Black", "White", "Grey", "Olive",
                                        "Purple", "Orange", "Silver", "Gold", "OrangeRed", "MidnightPurple"],
                                       self.snake_color_config, 800, 50)
             
@@ -622,7 +622,7 @@ class OptionButtonPanel:
 
             self.game_size_config = self.config.get('Settings', 'game_size', fallback='Default')
             self.create_option_button(self.game_size_callback,
-                                      ["600x600", "700x700", "800x800", "900x900", "1000x1000", 
+                                      ["600x600", "700x700", "800x800", "900x900", "1000x1000",
                                        "1100x1100", "1200x1200", "1300x1300","1400x1400", "1500x1500"],
                                       self.game_size_config, 400, 200)
           

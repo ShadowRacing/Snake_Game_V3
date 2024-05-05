@@ -45,7 +45,7 @@ try:
         # Split the screen size into width and height and convert them to integers
         width, height = map(int, screen_size.split('x'))
 except Exception as e:
-    traceback.print_exc(e)  
+    traceback.print_exc(e)
 
 # Define other constants
 class GameConstants:

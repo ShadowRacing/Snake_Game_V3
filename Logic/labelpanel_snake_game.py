@@ -256,7 +256,7 @@ class SettingsOptionButtonLabels:
                                              width=160,
                                              height=30,
                                              corner_radius=6,
-                                             text="High Score", 
+                                             text="High Score",
                                              font=FONT_LIST[11],
                                              anchor='w'
                                              )
@@ -489,11 +489,11 @@ class GameLabelsPanel:
             traceback.print_exc(e)
 
     def classic_create_time_label(self):
-        self.classic_time_label = ctk.CTkLabel(self.snake_canvas, 
+        self.classic_time_label = ctk.CTkLabel(self.snake_canvas,
                                         height=30,
                                         width=275,
                                         corner_radius=10,
-                                        text=f"Time: {self.classic_score_label_} Seconds", 
+                                        text=f"Time: {self.classic_score_label_} Seconds",
                                         font=FONT_LIST[11],
                                         bg_color='grey20',
                                         anchor='w'
@@ -655,11 +655,11 @@ class GameLabelsPanel:
         self.endless_update_shorten_score_label()
 
     def endless_create_high_scores_label(self):
-        self.endless_high_scores_label = ctk.CTkLabel(self.snake_canvas, 
+        self.endless_high_scores_label = ctk.CTkLabel(self.snake_canvas,
                                                 height=30,
                                                 width=275,
                                                 corner_radius=10,
-                                                text="High Scores:", 
+                                                text="High Scores:",
                                                 font=FONT_LIST[11],
                                                 bg_color='grey20',
                                                 anchor='w'
@@ -667,11 +667,11 @@ class GameLabelsPanel:
         self.endless_high_scores_label.place(x=200, y=400)
 
     def endless_create_score_label(self):
-        self.endless_score_label = ctk.CTkLabel(self.snake_canvas, 
+        self.endless_score_label = ctk.CTkLabel(self.snake_canvas,
                                             height=30,
                                             width=275,
                                             corner_radius=10,
-                                            text=f"Score:{self.endless_score_label_} ", 
+                                            text=f"Score:{self.endless_score_label_}",
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
                                             anchor='w'
@@ -694,8 +694,8 @@ class GameLabelsPanel:
         self.endless_high_score_label = ctk.CTkLabel(self.snake_canvas,
                                              height=30,
                                              width=275,
-                                             corner_radius=10, 
-                                             text=f"Score: {self.endless_score_label_} ", 
+                                             corner_radius=10,
+                                             text=f"Score: {self.endless_score_label_} ",
                                              font=FONT_LIST[11],
                                              bg_color='grey20',
                                              anchor='w'
@@ -715,11 +715,11 @@ class GameLabelsPanel:
             traceback.print_exc(e)
 
     def endless_create_time_label(self):
-        self.endless_time_label = ctk.CTkLabel(self.snake_canvas, 
+        self.endless_time_label = ctk.CTkLabel(self.snake_canvas,
                                         height=30,
                                         width=275,
                                         corner_radius=10,
-                                        text=f"Time: {self.endless_time_label_} Seconds", 
+                                        text=f"Time: {self.endless_time_label_} Seconds",
                                         font=FONT_LIST[11],
                                         bg_color='grey20',
                                         anchor='w'
@@ -739,7 +739,7 @@ class GameLabelsPanel:
             traceback.print_exc(e)
 
     def endless_create_high_score_time_label(self):
-        self.endless_high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
+        self.endless_high_score_time_label = ctk.CTkLabel(self.snake_canvas,
                                                     height=30,
                                                     width=275,
                                                     corner_radius=10,
@@ -765,9 +765,9 @@ class GameLabelsPanel:
     def endless_create_snake_length_label(self):
         self.endless_snake_length_label = ctk.CTkLabel(self.snake_canvas,
                                                 height=30,
-                                                width=275, 
+                                                width=275,
                                                 corner_radius=10,
-                                                text="Snake Length:", 
+                                                text="Snake Length:",
                                                 font=FONT_LIST[11],
                                                 bg_color='grey20',
                                                 anchor='w'
@@ -787,11 +787,11 @@ class GameLabelsPanel:
             traceback.print_exc(e)
 
     def endless_create_high_score_snake_length_label(self):
-        self.endless_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
+        self.endless_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas,
                                                             height=30,
                                                             width=275,
                                                             corner_radius=10,
-                                                            text="Snake Length:", 
+                                                            text="Snake Length:",
                                                             font=FONT_LIST[11],
                                                             bg_color='grey20',
                                                             anchor='w'
@@ -811,7 +811,7 @@ class GameLabelsPanel:
             traceback.print_exc(e)
 
     def endless_create_special_score_label(self):
-        self.endless_special_score_label = ctk.CTkLabel(self.snake_canvas, 
+        self.endless_special_score_label = ctk.CTkLabel(self.snake_canvas,
                                             height=30,
                                             width=275,
                                             corner_radius=10,
@@ -838,7 +838,7 @@ class GameLabelsPanel:
         self.endless_special_high_score_label = ctk.CTkLabel(self.snake_canvas,
                                              height=30,
                                              width=275,
-                                             corner_radius=10, 
+                                             corner_radius=10,
                                              text=f"Special Score: {self.endless_special_high_score_label} ", 
                                              font=FONT_LIST[11],
                                              bg_color='grey20',

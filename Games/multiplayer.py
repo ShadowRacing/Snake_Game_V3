@@ -1,3 +1,6 @@
+# *****************************************
+# Shadows Snake Leveling Game File
+# *****************************************
 
 import customtkinter as ctk, time, configparser, traceback
 from os import path
@@ -17,7 +20,6 @@ class MultiPlayer(ctk.CTkCanvas):
         self.create_button_panel = create_button_panel
         self.game_config = game_config
 
-
         self.state = 'start_game'
         self.logfile.log_game_event(f"Game_state: {self.state}")
 
@@ -33,16 +35,16 @@ class MultiPlayer(ctk.CTkCanvas):
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
 
-        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, 
+        super().__init__(parent, bg='Grey20', width=self.width, height=self.height,
                          highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
         
         # Create the snake and the food
 
-        self.snake_canvas_1 = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  
+        self.snake_canvas_1 = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,
                                             highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
         self.snake_canvas_1.place(x=500, y=50)
 
-        self.snake_canvas_2 = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  
+        self.snake_canvas_2 = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,
                                             highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
         self.snake_canvas_2.place(x=1000, y=600)
 
@@ -60,25 +62,25 @@ class MultiPlayer(ctk.CTkCanvas):
         self.config = configparser.ConfigParser()
         self.config.read(self.config_path)
 
-        try:  
+        try:
             self.config.set('Settings', 'game_mode', 'multiplayer')
         except Exception as e:
             traceback.print_exc(e)
-                
+
         # Start the game loop
         self.start_screen()
         self.bind_and_unbind_keys()
  
     def delete_game_labels___(self):
         self.game_labels_panel_4.leveling_delete_labels()
-    
+
     def update_high_score_labels_(self):
         self.game_labels_panel_4.leveling_update_high_score_labels()
-    
+
     def start_screen(self):
         self.state = 'start_game'
         self.config.set('Multiplayer_Snake_Settings', 'state', 'start_game')
-       
+
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
 
@@ -86,7 +88,7 @@ class MultiPlayer(ctk.CTkCanvas):
         self.snake_canvas_1.delete("all")
         self.snake_canvas_1.create_text(self.width / 2, self.height / 2,
                          font= FONT_LIST[12], text="Press 'Space' to start", fill="white", tag="start")
-        
+
         self.snake_canvas_2.delete("all")
         self.snake_canvas_2.create_text(self.width / 2, self.height / 2,
                          font= FONT_LIST[12], text="Press 'Space' to start", fill="white", tag="start")
@@ -157,7 +159,7 @@ class MultiPlayer(ctk.CTkCanvas):
 
         self.logfile.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
         self.next_turn(self.snake, self.food)
-    
+
     def next_turn(self, snake, food):
         x, y = snake.coordinates[0]
 
@@ -183,7 +185,7 @@ class MultiPlayer(ctk.CTkCanvas):
                 del food.food_items[food_id]
                 self.snake_canvas_1.delete(food_item['tag'])
                 self.snake_canvas_2.delete(food_item['tag'])
-        
+
         if food_eaten:
             self.score += 1
             self.xp += 1
@@ -199,14 +201,13 @@ class MultiPlayer(ctk.CTkCanvas):
                 self.config.set('Multiplayer_Snake_Values', 'xp', str(self.xp))
                 with open('config.ini', 'w') as configfile:
                     self.config.write(configfile)
-            
-        
+
         else:
             del snake.coordinates[-1]
             self.snake_canvas_1.delete(snake.squares[-1])
             self.snake_canvas_2.delete(snake.squares[-1])
             del snake.squares[-1]
-        
+
         if self.direction == "up" or self.direction == "w":
             y -= self.game_config.CELL_SIZE
         elif self.direction == "down" or self.direction == "s":
@@ -215,13 +216,13 @@ class MultiPlayer(ctk.CTkCanvas):
             x -= self.game_config.CELL_SIZE
         elif self.direction == "right" or self.direction == "d":
             x += self.game_config.CELL_SIZE
-        
+
         snake.coordinates.insert(0, (x, y))
-        square = self.snake_canvas_1.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + 
-                                                      self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, 
+        square = self.snake_canvas_1.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y +
+                                                      self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR,
                                                       outline=self.game_config.SNAKE_OUTLINE)
-        square = self.snake_canvas_2.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + 
-                                                      self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, 
+        square = self.snake_canvas_2.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y +
+                                                      self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR,
                                                       outline=self.game_config.SNAKE_OUTLINE)
         snake.squares.insert(0, square)
 
@@ -230,8 +231,6 @@ class MultiPlayer(ctk.CTkCanvas):
         self.config.set('Leveling_Snake_Values', 'time_score', str(self.total_time_played))
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
-
-        
 
         if self.check_collisions(snake):
             self.logfile.log_game_event("snake has a collision")
@@ -248,10 +247,9 @@ class MultiPlayer(ctk.CTkCanvas):
         self.snake_canvas_1.update()
         self.snake_canvas_2.update()
 
-
     def change_direction(self, new_direction):
         if not self.has_changed_direction:
-        
+
             current_time = time.time()
             if current_time - self.last_direction_change_time < 0.01:
                 return
@@ -266,7 +264,6 @@ class MultiPlayer(ctk.CTkCanvas):
             self.last_direction_change_time = current_time
             self.has_changed_direction = True
         
-    
     def check_collisions(self, snake):
         x, y = snake.coordinates[0]
 
@@ -321,7 +318,7 @@ class MultiPlayer(ctk.CTkCanvas):
         if self.snake_length > self.get_snake_length:
             self.config.set('Multiplayer_Snake_Values', 'snake_length_high_score', str(self.snake_length))
             self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
-            
+
         with open('config.ini', 'w') as configfile:
             self.config.write(configfile)
 
@@ -333,7 +330,7 @@ class MultiPlayer(ctk.CTkCanvas):
         self.snake_canvas_1.delete('game_over')
         self.snake_canvas_2.delete('game_over')
         self.direction = self.game_config.DIRECTIONOFFSNAKE
-        
+
         # Create a new Snake object
         self.snake = Snake(self.logfile, self.snake_canvas_1, self.game_config)
         self.snake = Snake(self.logfile, self.snake_canvas_2, self.game_config)
@@ -393,8 +390,8 @@ class MultiPlayer(ctk.CTkCanvas):
             self.snake_canvas_1.bind('<Escape>',self.pause_game)
         elif self.state == 'settings_menu':
             self.snake_canvas_1.unbind('<Escape>')
-    
+
 
 # *****************************************
-# Shadows Snake Game Snake Leveling Game File
+# Shadows Snake Leveling Game File
 # *****************************************

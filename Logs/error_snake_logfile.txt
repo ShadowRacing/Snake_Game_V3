@@ -21000,3 +21000,46 @@ TypeError: '>=' not supported between instances of 'TypeError' and 'int'
 
 
 [2024-05-11 13:33:03] Started the Error Log File
+[2024-05-11 15:33:08] 
+
+
+[2024-05-11 15:33:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 91, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 193, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 250, in start_game
+    self.endless_snake_canvas = SnakeEndless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 67, in __init__
+    self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0')) # pylint: disable=line-too-long
+                          ^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'get'
+[2024-05-11 15:33:35] 
+
+
+[2024-05-11 15:33:35] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 55, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 231, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 363, in start_game
+    self.settings_labels.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 258, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'

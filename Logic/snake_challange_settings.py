@@ -1,9 +1,18 @@
+#********************************************************
+# Challange Settings File
+#********************************************************
 
+"""
+Module for the Snake Challange Settings screen of the Shadows Snake game.
+"""
 
 import customtkinter as ctk
 
 
 class Challange_Settings(ctk.CTkCanvas):
+    """
+    Class for the Snake Challange Settings screen of the Shadows Snake game.
+    """
     def __init__(self, parent, game_config, logfile, functions, create_button_panel):
         self.parent = parent
         self.game_config = game_config
@@ -23,3 +32,7 @@ class Challange_Settings(ctk.CTkCanvas):
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+
+#********************************************************
+# Challange Settings File
+#********************************************************

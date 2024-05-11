@@ -20,7 +20,7 @@ from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
 
 
-class food_time_attack(ctk.CTkCanvas):
+class FoodTimeAttack(ctk.CTkCanvas):
     '''
     Class representing the food in the time attack mode of the game.
     '''
@@ -322,7 +322,7 @@ class food_time_attack(ctk.CTkCanvas):
         # Unbind any previous bindings to avoid conflicts
         self.snake_canvas.unbind('<space>')
         self.bind_and_unbind_keys()
-        self.high_score = int(self.config.get('food_time_attack_Values', 'high_score', fallback='0'))
+        self.high_score = int(self.config.get('food_time_attack_Values', 'high_score', fallback='0')) # pylint: disable=line-too-long
         self.logfile.log_game_event(f"High score: {self.high_score}")
         self.logfile.log_game_event(f"Score: {self.score}")
         if self.score > self.high_score:
@@ -331,7 +331,7 @@ class food_time_attack(ctk.CTkCanvas):
 
         self.get_time_score = int(self.config.get('food_time_attack_Values', 'high_score_time', fallback='0')) # pylint: disable=line-too-long
         if self.total_time_played > self.get_time_score:
-            self.config.set('food_time_attack_Values', 'high_score_time', str(self.total_time_played))
+            self.config.set('food_time_attack_Values', 'high_score_time', str(self.total_time_played)) # pylint: disable=line-too-long
             self.logfile.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
 
 
@@ -363,7 +363,7 @@ class food_time_attack(ctk.CTkCanvas):
         self.config.read('config.ini')
 
         self.config.set('food_time_attack_Values', 'score', '0')
-        self.config.set('food_time_attack_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
+        self.config.set('food_time_attack_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH)) # pylint: disable=line-too-long
 
         self.state = 'start_game'
         self.config.set('food_time_attack_Settings', 'state', 'start_game')

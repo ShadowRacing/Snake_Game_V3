@@ -39,7 +39,7 @@ class ThemeUpdater:
         self.config.read("config.ini")
         # Check if the 'Settings' section exists in the config file
         if not self.config.has_option('Settings', 'theme'):
-            self.config.set('Settings', 'theme', 'Default') 
+            self.config.set('Settings', 'theme', 'Default')
 
         # Set the 'initial_theme' option to the current theme
         current_theme = self.config.get('Settings', 'theme', fallback='Default')

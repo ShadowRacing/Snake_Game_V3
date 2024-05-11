@@ -31,3 +31,7 @@ class LevelingSystem:
         if xp >= self.increase_amount * level:
             return True
         return False
+
+#****************************************************
+# This file contains the leveling system logic
+#****************************************************

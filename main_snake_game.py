@@ -14,12 +14,12 @@ from Configuration.gameconfig_snake_game import GameConfig
 from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel
 from Logic.config_ini_Initials import ConfigIni
-from Logic.snake_challange_choice import Challange_Choices
+from Logic.snake_challange_choice import ChallangeChoices
 from Logic.snake_challange_settings import Challange_Settings
-from Games.snake_classic_game import Snake_Classic_Game
-from Games.snake_endless_game import Snake_endless
-from Games.snake_leveling_game import Snake_Leveling
-from Games.snake_challange_games import FoodTimeAttack 
+from Games.snake_classic_game import SnakeClassicGame
+from Games.snake_endless_game import SnakeEndless
+from Games.snake_leveling_game import SnakeLeveling
+from Games.snake_challange_games import food_time_attack
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
 
@@ -80,7 +80,7 @@ class SnakeGameApp:
         self.classic_snake_canvas = None
         self.endless_snake_canvas = None
         self.leveling_snake_canvas = None
-        self.FoodTimeAttack_canvas = None
+        self.food_time_attack_canvas = None
         self.challange_choice_canvas = None
         self.challange_settings_canvas = None
         self.info_canvas = None
@@ -112,7 +112,7 @@ class SnakeGameApp:
             'snake_leveling': self.snake_leveling,
             'snake_endless': self.snake_endless,
             'classic_snake': self.classic_snake,
-            'FoodTimeAttack': self.FoodTimeAttack,
+            'food_time_attack': self.food_time_attack,
             'challange_choices': self.challange_choices,
             'challange_settings': self.challange_settings
         }
@@ -172,8 +172,8 @@ class SnakeGameApp:
     def snake_leveling(self):
         self.start_game("snake_leveling")
     
-    def FoodTimeAttack(self):
-        self.start_game("FoodTimeAttack")
+    def food_time_attack(self):
+        self.start_game("food_time_attack")
 
     def challange_choices(self):
         self.start_game("challange_choices")
@@ -200,19 +200,19 @@ class SnakeGameApp:
 
         # Create a new canvas for the specified game type
         if game_type == "classic_snake":
-            self.classic_snake_canvas = Snake_Classic_Game(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_endless":
-            self.endless_snake_canvas = Snake_endless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.endless_snake_canvas = SnakeEndless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "snake_leveling":
-            self.leveling_snake_canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
-        elif game_type == "FoodTimeAttack":
-            self.FoodTimeAttack_canvas = FoodTimeAttack(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.leveling_snake_canvas = SnakeLeveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+        elif game_type == "food_time_attack":
+            self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "info":
             self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         elif game_type == "settings":
             self.settings_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         elif game_type == "challange_choices":
-            self.challange_choice_canvas = Challange_Choices(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.challange_choice_canvas = ChallangeChoices(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         elif game_type == "challange_settings":
             self.challange_settings_canvas = Challange_Settings(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
         else:
@@ -228,9 +228,9 @@ class SnakeGameApp:
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.leveling_snake_canvas
-        elif game_type == "FoodTimeAttack":
-            self.FoodTimeAttack_canvas.pack(expand=True, fill="both")
-            self.main_canvas = self.FoodTimeAttack_canvas
+        elif game_type == "food_time_attack":
+            self.food_time_attack_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.food_time_attack_canvas
         elif game_type == "info":
             self.info_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.info_canvas
@@ -294,14 +294,14 @@ class SnakeGameApp:
 
         elif game_type == "challange_settings":
             self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas)
-            self.create_button_panel.FoodTimeAttack_button()
+            self.create_button_panel.food_time_attack_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_challange_settings_label()
 
-        elif game_type == "FoodTimeAttack":
+        elif game_type == "food_time_attack":
             self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
             self.framelabel_panel.set_create_label_canvas_flag(True)
-            self.framelabel_panel.create_FoodTimeAttack_label()
+            self.framelabel_panel.create_food_time_attack_label()
 
         elif game_type == "info":
             self.framelabel_panel.set_create_label_canvas_flag(True)
@@ -759,15 +759,15 @@ class SnakeGameApp:
                 self.endless_snake_canvas.delete_game_labels_()
             if self.main_canvas == self.leveling_snake_canvas:
                 self.leveling_snake_canvas.delete_game_labels__()
-            if self.main_canvas == self.FoodTimeAttack_canvas:
-                self.FoodTimeAttack_canvas.delete_game_labels___()
+            if self.main_canvas == self.food_time_attack_canvas:
+                self.food_time_attack_canvas.delete_game_labels___()
 
             time.sleep(0.1)
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas)
             self.endless_snake_canvas = self.destroy_canvas(self.endless_snake_canvas)
             self.leveling_snake_canvas = self.destroy_canvas(self.leveling_snake_canvas)
-            self.FoodTimeAttack_canvas = self.destroy_canvas(self.FoodTimeAttack_canvas)
+            self.food_time_attack_canvas = self.destroy_canvas(self.food_time_attack_canvas)
             self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas)
             self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
             self.info_canvas = self.destroy_canvas(self.info_canvas)

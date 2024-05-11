@@ -234,7 +234,7 @@ class GameConfig:
                 self.DIRECTIONOFFSNAKE = "down" # pylint: disable=invalid-name
                 self.logfile.log_game_event("Game mode: snake_leveling")
 
-            elif game_mode == "FoodTimeAttack":
+            elif game_mode == "food_time_attack":
                 self.GAME_WIDTH = self.game_width # pylint: disable=invalid-name
                 self.GAME_HEIGHT = self.game_height # pylint: disable=invalid-name
                 self.SPEED = self.snake_speed # pylint: disable=invalid-name
@@ -248,7 +248,7 @@ class GameConfig:
                 self.HIGHLIGHTTHICKNESS = 5 # pylint: disable=invalid-name
                 self.HIGHLIGHTBACKGROUND = 'Black' # pylint: disable=invalid-name
                 self.DIRECTIONOFFSNAKE = "down" # pylint: disable=invalid-name
-                self.logfile.log_game_event("Game mode: FoodTimeAttack")
+                self.logfile.log_game_event("Game mode: food_time_attack")
 
         except ValueError as e:
             traceback.print_exc(e)

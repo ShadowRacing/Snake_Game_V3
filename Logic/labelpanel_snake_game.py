@@ -1,14 +1,27 @@
-import customtkinter as ctk
-import configparser, traceback
+#******************************************************************
+# LabelPanel file for the Snake Game
+#******************************************************************
+
+"""
+This module contains the classes that create the labels for the game
+"""
+
+import configparser
+import traceback
 from os import path
+import customtkinter as ctk
 from Configuration.constants_snake_game import FONT_LIST
 from Logic.leveling_system import LevelingSystem
 
+
 class NameOffFrameLabelPanel:
+    """
+    Class for creating the labels for the game.
+    """
     def __init__(self, parent, logfile, info_callback, settings_callback, game_config):
         self.parent = parent
         self.logfile = logfile
-        
+
         self.game_config = game_config
         self.create_label_canvas_flag = False
         self.info_callback = info_callback
@@ -23,12 +36,15 @@ class NameOffFrameLabelPanel:
             "leveling_snake": "Leveling Snake",
             "challange_choices": "Challange Choices",
             "challange_settings": "Challange Settings",
-            "FoodTimeAttack": "Challange Snake",
+            "food_time_attack": "Challange Snake",
             "info": "Game Information",
             "settings": "Settings"
         }
-    
+
     def create_label_with_border(self, text):
+        """
+        Create a label with a border.
+        """
         try:
             label_border = ctk.CTkFrame(self.label_canvas, border_color='Grey10', border_width=5)
             label = ctk.CTkLabel(label_border, text=text, font=FONT_LIST[20])
@@ -39,12 +55,15 @@ class NameOffFrameLabelPanel:
             label_border_height = label_border.winfo_height()
             print(label_border_height)
             return label
-        except Exception as e:
+        except AttributeError as e:
             traceback.print_exc(e)
 
     def create_label_canvas(self, label_type):
+        """
+        Create a label canvas.
+        """
         if self.create_label_canvas_flag:
-            self.label_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightthickness=5, highlightbackground='Black')
+            self.label_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightthickness=5, highlightbackground='Black') # pylint: disable=line-too-long
             self.label_canvas.pack(side='bottom', fill='both')
             self.create_label_canvas_flag = False
 
@@ -52,43 +71,89 @@ class NameOffFrameLabelPanel:
             self.create_label_with_border(self.label_texts[label_type])
 
     def create_main_menu_label(self):
+        """
+        Create the main menu label.
+        """
         self.create_label_canvas("main_menu")
 
     def create_classic_snake_label(self):
+        """
+        Create the classic snake label.
+        """
         self.create_label_canvas("classic_snake")
 
     def create_endless_snake_label(self):
+        """
+        Create the endless snake label.
+        """
         self.create_label_canvas("endless_snake")
 
     def create_leveling_snake_label(self):
+        """
+        Create the leveling snake label.
+        """
         self.create_label_canvas("leveling_snake")
-    
+
     def create_challange_choices_label(self):
+        """
+        Create the challange choices label.
+        """
         self.create_label_canvas("challange_choices")
-    
+
     def create_challange_settings_label(self):
+        """
+        Create the challange settings label.
+        """
         self.create_label_canvas("challange_settings")
-    
-    def create_FoodTimeAttack_label(self):
-        self.create_label_canvas("FoodTimeAttack")
+
+    def create_food_time_attack_label(self):
+        """
+        Create the food time attack label.
+        """
+        self.create_label_canvas("food_time_attack")
 
     def create_info_label(self):
+        """
+        Create the game information label.
+        """
         self.create_label_canvas("info")
 
     def create_settings_label(self):
+        """
+        Create the settings label.
+        """
         self.create_label_canvas("settings")
 
     def set_create_label_canvas_flag(self, value=True):
+        """
+        Set the create label canvas flag.
+        """
         self.create_label_canvas_flag = value
 
 class SettingsOptionButtonLabels:
+    """
+    Class for creating the labels for the settings options.
+    """
     def __init__(self, logfile, settings_canvas):
         self.logfile = logfile
         self.settings_canvas = settings_canvas
         self.restart_game_theme_label = None
         self.restart_game_game_size_label = None
+        self.screen_label = None
+        self.theme_label = None
+        self.contrast_label = None
+        self.snake_color_label = None
+        self.high_score_label = None
+        self.snake_speed_label = None
+        self.game_size_default_label = None
+        self.snake_default_speed_label = None
+        self.game_size_label = None
+        self.create_label_canvas_flag = False
 
     def create_settings_labels(self):
+        """
+        Create the settings labels.
+        """
         self.create_screen_options_label()
         self.create_theme_options_label()
         self.create_contrast_options_label()
@@ -98,48 +163,63 @@ class SettingsOptionButtonLabels:
         self.game_size_options_label()
 
     def create_screen_options_label(self):
-        self.screen_label = ctk.CTkLabel(self.settings_canvas, 
+        """
+        Create the screen options label.
+        """
+        self.screen_label = ctk.CTkLabel(self.settings_canvas,
                                         width=160,
                                         height=30,
                                         corner_radius=6,
-                                        text="Screen size", 
+                                        text="Screen size",
                                         font=FONT_LIST[11],
                                         anchor='w')
         self.screen_label.place(x=200, y=10)
-        
+
     def create_theme_options_label(self):
-        self.theme_label = ctk.CTkLabel(self.settings_canvas, 
+        """
+        Create the theme options label.
+        """
+        self.theme_label = ctk.CTkLabel(self.settings_canvas,
                                         width=160,
                                         height=30,
                                         corner_radius=6,
-                                        text="Theme options", 
+                                        text="Theme options",
                                         font=FONT_LIST[11],
                                         anchor='w')
         self.theme_label.place(x=400, y=10)
 
     def create_contrast_options_label(self):
-        self.contrast_label = ctk.CTkLabel(self.settings_canvas, 
+        """
+        Create the contrast options label.
+        """
+        self.contrast_label = ctk.CTkLabel(self.settings_canvas,
                                            width=160,
                                            height=30,
                                            corner_radius=6,
-                                           text="Dark or Light", 
+                                           text="Dark or Light",
                                            font=FONT_LIST[11],
                                            anchor='w'
                                            )
         self.contrast_label.place(x=600, y=10)
-    
+
     def snake_color_options_label(self):
-        self.snake_color_label = ctk.CTkLabel(self.settings_canvas, 
+        """
+        Create the snake color options label.
+        """
+        self.snake_color_label = ctk.CTkLabel(self.settings_canvas,
                                               width=160,
                                               height=30,
                                               corner_radius=6,
-                                              text="Snake Color", 
+                                              text="Snake Color",
                                               font=FONT_LIST[11],
                                               anchor='w'
                                               )
         self.snake_color_label.place(x=800, y=10)
 
     def create_theme_label(self):
+        """
+        Create the theme label.
+        """
         try:
             config_dir = path.dirname(__file__)
             config_path = path.join(config_dir, '..','config.ini')
@@ -148,14 +228,14 @@ class SettingsOptionButtonLabels:
 
             current_theme = config.get('Settings', 'theme')
             initial_theme = config.get('Settings', 'initial_theme')
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
         # Check if the 'label_needed' option exists, if not, add it
-        try:    
+        try:
             if not config.has_option('Settings', 'label_needed_theme'):
                 config.set('Settings', 'label_needed_theme', 'False')
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
         try:
@@ -165,8 +245,8 @@ class SettingsOptionButtonLabels:
                 self.restart_game_theme_label = ctk.CTkLabel(self.settings_canvas,
                                                         width=160,
                                                         height=30,
-                                                        corner_radius=6,  
-                                                        text="You need to restart to apply the theme", 
+                                                        corner_radius=6,
+                                                        text="You need to restart to apply the theme", # pylint: disable=line-too-long
                                                         font=FONT_LIST[11],
                                                         anchor='w')
                 self.restart_game_theme_label.place(x=400, y=100)
@@ -180,17 +260,20 @@ class SettingsOptionButtonLabels:
                 config.set('Settings', 'label_needed_theme', 'False')
                 with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
     def update_initial_game_size(self):
+        """
+        Update the initial game size.
+        """
         config_dir = path.dirname(__file__)
         config_path = path.join(config_dir, '..','config.ini')
         config = configparser.ConfigParser()
         config.read(config_path)
         # Check if the 'Settings' section exists in the config file
         if not config.has_option('Settings', 'game_size'):
-            config.set('Settings', 'game_size', '500x500') 
+            config.set('Settings', 'game_size', '500x500')
 
         # Set the 'initial_game_size' option to the current theme
         current_game_size = config.get('Settings', 'game_size', fallback='Default')
@@ -201,11 +284,14 @@ class SettingsOptionButtonLabels:
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             config.write(configfile)
 
-        self.logfile.log_game_event(f"Updated initial_game_size in config.ini to {current_game_size}")
-        self.logfile.log_game_event(f"Current initial_game_size in config.ini: {config.get('Settings', 'initial_game_size')}")
-        # The load_theme method loads a theme from a JSON file. If the file is not found, it logs an error and uses the default theme.
+        self.logfile.log_game_event(f"Updated initial_game_size in config.ini to {current_game_size}") # pylint: disable=line-too-long
+        self.logfile.log_game_event(f"Current initial_game_size in config.ini: {config.get('Settings', 'initial_game_size')}") # pylint: disable=line-too-long
+        # The load_theme method loads a theme from a JSON file. If the file is not found, it logs an error and uses the default theme. # pylint: disable=line-too-long
 
     def create_game_size_label(self):
+        """
+        Create the game size label.
+        """
         try:
             config_dir = path.dirname(__file__)
             config_path = path.join(config_dir, '..','config.ini')
@@ -214,14 +300,14 @@ class SettingsOptionButtonLabels:
 
             current_game_size = config.get('Settings', 'game_size')
             initial_game_size = config.get('Settings', 'initial_game_size')
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
         # Check if the 'label_needed' option exists, if not, add it
-        try:    
+        try:
             if not config.has_option('Settings', 'label_needed_game_size'):
                 config.set('Settings', 'label_needed_game_size', 'False')
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
         try:
@@ -231,15 +317,15 @@ class SettingsOptionButtonLabels:
                 self.restart_game_game_size_label = ctk.CTkLabel(self.settings_canvas,
                                                         width=160,
                                                         height=30,
-                                                        corner_radius=6, 
-                                                        text="You need to restart to apply the game_size", 
+                                                        corner_radius=6,
+                                                        text="You need to restart to apply the game_size", # pylint: disable=line-too-long
                                                         font=FONT_LIST[11],
                                                         anchor='w')
                 self.restart_game_game_size_label.place(x=400, y=250)
                 config.set('Settings', 'label_needed_game_size', 'True')
                 with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
-                    
+
             else:
                 if current_game_size == initial_game_size:
                     if hasattr(self, 'restart_game_game_size_label'):
@@ -248,11 +334,14 @@ class SettingsOptionButtonLabels:
                 config.set('Settings', 'label_needed_game_size', 'False')
                 with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
     def create_high_score_label(self):
-        self.high_score_label = ctk.CTkLabel(self.settings_canvas, 
+        """
+        Create the high score label.
+        """
+        self.high_score_label = ctk.CTkLabel(self.settings_canvas,
                                              width=160,
                                              height=30,
                                              corner_radius=6,
@@ -263,11 +352,14 @@ class SettingsOptionButtonLabels:
         self.high_score_label.place(x=1000, y=10)
 
     def snake_speed_options_label(self):
-        self.snake_speed_label = ctk.CTkLabel(self.settings_canvas, 
+        """
+        Create the snake speed options label.
+        """
+        self.snake_speed_label = ctk.CTkLabel(self.settings_canvas,
                                               width=160,
                                               height=30,
                                               corner_radius=6,
-                                              text="Snake Speed", 
+                                              text="Snake Speed",
                                               font=FONT_LIST[11],
                                               anchor='w'
                                               )
@@ -277,18 +369,21 @@ class SettingsOptionButtonLabels:
                                                          width=160,
                                                          height=30,
                                                          corner_radius=6,
-                                                         text="Default: 50", 
+                                                         text="Default: 50",
                                                          font=FONT_LIST[11],
                                                          anchor='w'
                                                          )
         self.snake_default_speed_label.place(x=200, y=250)
-    
+
     def game_size_options_label(self):
-        self.game_size_label = ctk.CTkLabel(self.settings_canvas, 
+        """
+        Create the game size options label.
+        """
+        self.game_size_label = ctk.CTkLabel(self.settings_canvas,
                                             width=160,
                                             height=30,
                                             corner_radius=6,
-                                            text="Game Size", 
+                                            text="Game Size",
                                             font=FONT_LIST[11],
                                             anchor='w'
                                             )
@@ -298,18 +393,23 @@ class SettingsOptionButtonLabels:
                                                          width=160,
                                                          height=30,
                                                          corner_radius=6,
-                                                         text="Default:600x600", 
+                                                         text="Default:600x600",
                                                          font=FONT_LIST[11],
                                                          anchor='w'
                                                          )
         self.game_size_default_label.place(x=400, y=250)
 
     def set_create_label_canvas_flag(self, value=True):
+        """
+        Set the create label canvas flag.
+        """
         self.create_label_canvas_flag = value
 
 class GameLabelsPanel:
+    """
+    Class for creating the labels for the game.
+    """
     def __init__(self, snake_canvas, logfile, game_config):
-        
         self.snake_canvas = snake_canvas
         self.logfile = logfile
         self.game_config = game_config
@@ -378,7 +478,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
         #Get the score from the config file
@@ -406,17 +506,20 @@ class GameLabelsPanel:
             self.leveling_snake_length_label_ = 0
             self.config.set('Leveling_Snake_Values', 'snake_length', '0')
             self.challange_score_label_ = 0
-            self.config.set('FoodTimeAttack_Values', 'score', '0')
+            self.config.set('food_time_attack_Values', 'score', '0')
             with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
 
     def classic_create_game_labels(self):
+        """
+        Create the game labels for the classic snake game.
+        """
         self.config.read(self.config_path)
-        self.high_score_label_needed = self.config.get('Settings', 'label_needed_high_score', fallback='Default')
-        
+        self.high_score_label_needed = self.config.get('Settings', 'label_needed_high_score', fallback='Default') # pylint: disable=line-too-long
+
         self.classic_create_score_label()
         self.classic_create_time_label()
         self.classic_create_snake_length_label()
@@ -425,46 +528,61 @@ class GameLabelsPanel:
             self.classic_create_high_score_time_label()
             self.classic_create_high_scores_label()
             self.classic_create_high_score_snake_length_label()
-    
+
     def classic_update_high_score_labels(self):
+        """
+        Update the high score labels for the classic snake game.
+        """
         self.config.read(self.config_path)
-        self.high_score_label_needed = self.config.get('Settings', 'label_needed_high_score', fallback='Default')
-    
+        self.high_score_label_needed = self.config.get('Settings', 'label_needed_high_score', fallback='Default') # pylint: disable=line-too-long
+
         if self.high_score_label_needed == 'True' or self.high_score_label_needed == 'Default':
             self.classic_update_high_score_label()
             self.classic_update_high_score_time_label()
             self.classic_update_high_score_snake_length_label()
-    
+
     def classic_update_game_labels(self):
+        """
+        Update the game labels for the classic snake game.
+        """
         self.classic_update_score_label()
         self.classic_update_time_label()
         self.classic_update_snake_length_label()
 
     def classic_create_score_label(self):
+        """
+        Create the score label for the classic snake game.
+        """
         self.classic_score_label = ctk.CTkLabel(self.snake_canvas, 
                                             height=30,
                                             width=275,
                                             corner_radius=10,
-                                            text=f"Score:{self.classic_score_label_} ", 
+                                            text=f"Score:{self.classic_score_label_} ",
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
                                             anchor='w'
                                             )
         self.classic_score_label.place(x=200, y=50)
-    
+
     def classic_update_score_label(self):
+        """
+        Update the score label for the classic snake game.
+        """
         try:
             self.config_dir = path.dirname(__file__)
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.classic_score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0')
+            self.classic_score_label_ = self.config.get('Classic_Snake_Values', 'score', fallback='0') # pylint: disable=line-too-long
             #update the score label on the screen
             self.classic_score_label.configure(text=f"Score: {self.classic_score_label_} ")
         except Exception as e:
             traceback.print_exc(e)
 
     def classic_create_high_score_label(self):
+        """
+        Create the high score label for the classic snake game.
+        """
         self.classic_high_score_label = ctk.CTkLabel(self.snake_canvas,
                                              height=30,
                                              width=275,
@@ -475,20 +593,26 @@ class GameLabelsPanel:
                                              anchor='w'
                                              )
         self.classic_high_score_label.place(x=200, y=550)
-    
+
     def classic_update_high_score_label(self):
+        """
+        Update the high score label for the classic snake game.
+        """
         try:
             self.config_dir = path.dirname(__file__)
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.classic_high_score_label_ = self.config.get('Classic_Snake_Values', 'high_score', fallback='0')
+            self.classic_high_score_label_ = self.config.get('Classic_Snake_Values', 'high_score', fallback='0') # pylint: disable=line-too-long
             #update the high score label on the screen
-            self.classic_high_score_label.configure(text=f"Score: {self.classic_high_score_label_} ")
-        except Exception as e:
+            self.classic_high_score_label.configure(text=f"Score: {self.classic_high_score_label_} ") # pylint: disable=line-too-long
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
     def classic_create_time_label(self):
+        """
+        Create the time label for the classic snake game.
+        """
         self.classic_time_label = ctk.CTkLabel(self.snake_canvas,
                                         height=30,
                                         width=275,
@@ -501,23 +625,29 @@ class GameLabelsPanel:
         self.classic_time_label.place(x=200, y=100)
 
     def classic_update_time_label(self):
+        """
+        Update the time label for the classic snake game.
+        """
         try:
             self.config_dir = path.dirname(__file__)
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.classic_time_label_ = self.config.get('Classic_Snake_Values', 'time_score', fallback='0')
+            self.classic_time_label_ = self.config.get('Classic_Snake_Values', 'time_score', fallback='0') # pylint: disable=line-too-long
             #update the time label on the screen
             self.classic_time_label.configure(text=f"Time: {self.classic_time_label_} Seconds")
         except Exception as e:
             traceback.print_exc(e)
 
     def classic_create_high_score_time_label(self):
+        """
+        Create the high score time label for the classic snake game.
+        """
         self.classic_high_score_time_label = ctk.CTkLabel(self.snake_canvas, 
                                                     height=30,
                                                     width=275,
                                                     corner_radius=10,
-                                                    text=f"Score Time: {self.classic_score_label_} Seconds", 
+                                                    text=f"Score Time: {self.classic_score_label_} Seconds", # pylint: disable=line-too-long
                                                     font=FONT_LIST[11],
                                                     bg_color='grey20',
                                                     anchor='w'
@@ -525,18 +655,24 @@ class GameLabelsPanel:
         self.classic_high_score_time_label.place(x=200, y=600)
 
     def classic_update_high_score_time_label(self):
+        """
+        Update the high score time label for the classic snake game.
+        """
         try:
             self.config_dir = path.dirname(__file__)
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.classic_high_score_time_label_ = self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0')
+            self.classic_high_score_time_label_ = self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0') # pylint: disable=line-too-long
             #update the high score time label on the screen
-            self.classic_high_score_time_label.configure(text=f"Score Time: {self.classic_high_score_time_label_} Seconds")
+            self.classic_high_score_time_label.configure(text=f"Score Time: {self.classic_high_score_time_label_} Seconds") # pylint: disable=line-too-long
         except Exception as e:
             traceback.print_exc(e)
 
     def classic_create_snake_length_label(self):
+        """
+        Create the snake length label for the classic snake game.
+        """
         self.classic_snake_length_label = ctk.CTkLabel(self.snake_canvas,
                                                 height=30,
                                                 width=275, 
@@ -547,20 +683,23 @@ class GameLabelsPanel:
                                                 anchor='w'
                                                 )
         self.classic_snake_length_label.place(x=200, y=150)
-    
+
     def classic_update_snake_length_label(self):
-        try:   
+        try:
             self.config_dir = path.dirname(__file__)
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.classic_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length', fallback='0')
+            self.classic_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length', fallback='0') # pylint: disable=line-too-long
             #update the high score time label on the screen
-            self.classic_snake_length_label.configure(text=f"Snake Length: {self.classic_snake_length_label_}")
-        except Exception as e:
-            traceback.print_exc(e)   
+            self.classic_snake_length_label.configure(text=f"Snake Length: {self.classic_snake_length_label_}") # pylint: disable=line-too-long
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
 
     def classic_create_high_score_snake_length_label(self):
+        """
+        Create the high score snake length label for the classic snake game.
+        """
         self.classic_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas, 
                                                             height=30,
                                                             width=275,
@@ -571,16 +710,19 @@ class GameLabelsPanel:
                                                             anchor='w'
                                                             )
         self.classic_high_score_snake_length_label.place(x=200, y=650)
-    
+
     def classic_update_high_score_snake_length_label(self):
+        """
+        Update the high score snake length label for the classic snake game.
+        """
         try:
             self.config_dir = path.dirname(__file__)
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.classic_high_score_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0')
+            self.classic_high_score_snake_length_label_ = self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0') # pylint: disable=line-too-long
             #update the high score time label on the screen
-            self.classic_high_score_snake_length_label.configure(text=f"Snake Length: {self.classic_high_score_snake_length_label_}")
+            self.classic_high_score_snake_length_label.configure(text=f"Snake Length: {self.classic_high_score_snake_length_label_}") # pylint: disable=line-too-long
         except Exception as e:
             traceback.print_exc(e)
 
@@ -1294,7 +1436,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.challange_score_label_ = self.config.get('FoodTimeAttack_Values', 'score', fallback='0')
+            self.challange_score_label_ = self.config.get('food_time_attack_Values', 'score', fallback='0')
             #update the high score time label on the screen
             self.challange_score_label.configure(text=f"Score: {self.challange_score_label_}")
         except Exception as e:
@@ -1318,7 +1460,7 @@ class GameLabelsPanel:
             self.config_path = path.join(self.config_dir, '..', 'config.ini')
             self.config = configparser.RawConfigParser()
             self.config.read(self.config_path)
-            self.challange_high_score_label_ = self.config.get('FoodTimeAttack_Values', 'high_score', fallback='0')
+            self.challange_high_score_label_ = self.config.get('food_time_attack_Values', 'high_score', fallback='0')
             #update the high score time label on the screen
             self.challange_high_score_label.configure(text=f"level: {self.challange_score_label_}")
         except Exception as e:
@@ -1338,3 +1480,6 @@ class GameLabelsPanel:
             print('Deleted Labels challange')
         except Exception as e:
             traceback.print_exc(e)
+
+
+# pylint: disable=too-many-lines 

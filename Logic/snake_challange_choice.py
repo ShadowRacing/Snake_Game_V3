@@ -8,7 +8,7 @@ Module for the Snake Challange Choice screen of the Shadows Snake game.
 
 import customtkinter as ctk
 
-class Challange_Choices(ctk.CTkCanvas):
+class ChallangeChoices(ctk.CTkCanvas):
     """
     Class for the Snake Challange Choice screen of the Shadows Snake game.
     """
@@ -32,3 +32,7 @@ class Challange_Choices(ctk.CTkCanvas):
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height, 
                          highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground) # pylint: disable=line-too-long
+
+#***********************************************
+# Snake Challange Choice File
+#***********************************************

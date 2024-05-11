@@ -2,8 +2,13 @@
 # Shadows Snake Patchnotes File
 # *****************************************
 
+"""
+Module for managing the patchnotes of the Shadows Snake game.
+"""
+
 # Import the json module
-import json, traceback
+import json
+import traceback
 
 # Define the patchnotes list
 patchnotes = [
@@ -26,18 +31,18 @@ patchnotes = [
 ]
 
 # Save the patchnotes to a JSON file
-filename = "patchnotes.json"
+FILENAME = "patchnotes.json"
 try:
-    with open(filename, "w") as file:
+    with open(FILENAME, "w", encoding='utf-8') as file:
         json.dump(patchnotes, file)
-except Exception as e:
+except FileNotFoundError as e:
     traceback.print_exc(e)
 
 # Read the patchnotes from the JSON file
 try:
-    with open(filename, "r") as file:
+    with open(FILENAME, "r", encoding='utf-8') as file:
         patchnotes = json.load(file)
-except Exception as e:
+except FileNotFoundError as e:
     traceback.print_exc(e)
 
 # Print the patchnotes

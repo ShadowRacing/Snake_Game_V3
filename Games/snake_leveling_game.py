@@ -32,23 +32,50 @@ class SnakeLeveling(ctk.CTkCanvas):
         self.create_button_panel = create_button_panel
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
+
+        # Game configuration
+        self.width = game_config.GAME_WIDTH
+        self.height = game_config.GAME_HEIGHT
+        self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
+        self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
+        self.direction = self.game_config.DIRECTIONOFFSNAKE
+
+        # Game state
         self.score = 0
         self.xp = 0
         self.level = 1
+        self.game_over_flag = False
+        self.paused = False
+        self.has_changed_direction = False
+
+        # Time-related variables
         self.start_time = None
         self.paused_time = None
         self.total_paused_time = 0
         self.total_time_played = 0
         self.total_time_paused = 0
-        self.game_over_flag = False
-        self.paused = False
-        self.direction = self.game_config.DIRECTIONOFFSNAKE
         self.last_direction_change_time = 0
-        self.has_changed_direction = False
-        self.width = game_config.GAME_WIDTH
-        self.height = game_config.GAME_HEIGHT
-        self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
-        self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
+        self.pause_duration = 0
+        self.high_score_time = 0
+        self.current_time = 0
+
+        # High scores
+        self.high_score = 0
+        self.snake_length_high_score = 0
+        self.xp_high_score = 0
+        self.level_high_score = 0
+
+        # XP and leveling
+        self.initial_xp_needed = 0
+        self.levels_to_increase_xp = 0
+        self.xp_increase_amount = 0
+        self.current_xp_threshold = 0
+
+        # Other variables
+        self.get_time_score = 0
+        self.get_snake_length = 0
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..','config.ini')
 
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, # pylint: disable=line-too-long
                          highlightbackground=self.highlightbackground)
@@ -66,7 +93,12 @@ class SnakeLeveling(ctk.CTkCanvas):
         self.leveling_system = LevelingSystem()
         self.game_labels_panel_3.leveling_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
+        self.configfile()
 
+    def configfile(self):
+        """
+        Read the config file and set the initial values for the game.
+        """
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.ConfigParser()

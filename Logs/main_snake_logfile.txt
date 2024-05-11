@@ -22507,7 +22507,7 @@ Game size changed2
 [2024-04-13 18:57:38] start_screen method called
 [2024-04-13 18:57:39] start_game
 [2024-04-13 18:57:39] Reset snake length
-[2024-04-13 18:57:39] Game mode: FoodTimeAttack
+[2024-04-13 18:57:39] Game mode: food_time_attack
 [2024-04-13 18:57:39] Game state: start_game
 [2024-04-13 18:57:39] Game focused
 [2024-04-13 18:57:39] 1200x1200
@@ -22562,7 +22562,7 @@ Game size changed2
 [2024-04-13 19:06:09] start_screen method called
 [2024-04-13 19:06:10] start_game
 [2024-04-13 19:06:10] Reset snake length
-[2024-04-13 19:06:10] Game mode: FoodTimeAttack
+[2024-04-13 19:06:10] Game mode: food_time_attack
 [2024-04-13 19:06:10] Game state: start_game
 [2024-04-13 19:06:10] Game focused
 [2024-04-13 19:06:10] 1200x1200
@@ -22584,7 +22584,7 @@ Game size changed2
 [2024-04-13 19:08:01] start_screen method called
 [2024-04-13 19:08:02] start_game
 [2024-04-13 19:08:02] Reset snake length
-[2024-04-13 19:08:02] Game mode: FoodTimeAttack
+[2024-04-13 19:08:02] Game mode: food_time_attack
 [2024-04-13 19:08:02] Game state: start_game
 [2024-04-13 19:08:02] Game focused
 [2024-04-13 19:09:12] Started the app
@@ -22603,7 +22603,7 @@ Game size changed2
 [2024-04-13 19:09:12] start_screen method called
 [2024-04-13 19:09:13] start_game
 [2024-04-13 19:09:13] Reset snake length
-[2024-04-13 19:09:13] Game mode: FoodTimeAttack
+[2024-04-13 19:09:13] Game mode: food_time_attack
 [2024-04-13 19:09:13] Game state: start_game
 [2024-04-13 19:09:13] Game focused
 [2024-04-13 19:09:53] Started the app
@@ -22622,7 +22622,7 @@ Game size changed2
 [2024-04-13 19:09:53] start_screen method called
 [2024-04-13 19:09:54] start_game
 [2024-04-13 19:09:54] Reset snake length
-[2024-04-13 19:09:54] Game mode: FoodTimeAttack
+[2024-04-13 19:09:54] Game mode: food_time_attack
 [2024-04-13 19:09:54] Game state: start_game
 [2024-04-13 19:09:54] Game focused
 [2024-04-13 19:23:12] Started the app
@@ -22657,7 +22657,7 @@ Game size changed2
 [2024-04-13 19:25:07] start_screen method called
 [2024-04-13 19:25:08] start_game
 [2024-04-13 19:25:08] Reset snake length
-[2024-04-13 19:25:08] Game mode: FoodTimeAttack
+[2024-04-13 19:25:08] Game mode: food_time_attack
 [2024-04-13 19:25:08] Game state: start_game
 [2024-04-13 19:25:08] Game focused
 [2024-04-13 19:29:27] Started the app
@@ -22676,7 +22676,7 @@ Game size changed2
 [2024-04-13 19:29:27] start_screen method called
 [2024-04-13 19:29:28] start_game
 [2024-04-13 19:29:28] Reset snake length
-[2024-04-13 19:29:28] Game mode: FoodTimeAttack
+[2024-04-13 19:29:28] Game mode: food_time_attack
 [2024-04-13 19:29:28] Game state: start_game
 [2024-04-13 19:29:28] Game focused
 [2024-04-13 19:30:57] Started the app
@@ -22695,7 +22695,7 @@ Game size changed2
 [2024-04-13 19:30:57] start_screen method called
 [2024-04-13 19:30:58] start_game
 [2024-04-13 19:30:58] Reset snake length
-[2024-04-13 19:30:58] Game mode: FoodTimeAttack
+[2024-04-13 19:30:58] Game mode: food_time_attack
 [2024-04-13 19:30:58] Game state: start_game
 [2024-04-13 19:30:58] Game focused
 [2024-04-13 19:31:09] Started the app
@@ -22714,7 +22714,7 @@ Game size changed2
 [2024-04-13 19:31:09] start_screen method called
 [2024-04-13 19:31:09] start_game
 [2024-04-13 19:31:09] Reset snake length
-[2024-04-13 19:31:09] Game mode: FoodTimeAttack
+[2024-04-13 19:31:09] Game mode: food_time_attack
 [2024-04-13 19:31:09] Game state: start_game
 [2024-04-13 19:31:09] Game focused
 [2024-04-13 19:35:55] Started the app
@@ -22733,7 +22733,7 @@ Game size changed2
 [2024-04-13 19:35:55] start_screen method called
 [2024-04-13 19:35:56] start_game
 [2024-04-13 19:35:56] Reset snake length
-[2024-04-13 19:35:56] Game mode: FoodTimeAttack
+[2024-04-13 19:35:56] Game mode: food_time_attack
 [2024-04-13 19:35:56] Game state: start_game
 [2024-04-13 19:35:56] Game focused
 [2024-04-13 19:38:33] Started the app
@@ -22752,7 +22752,7 @@ Game size changed2
 [2024-04-13 19:38:34] start_screen method called
 [2024-04-13 19:38:35] start_game
 [2024-04-13 19:38:35] Reset snake length
-[2024-04-13 19:38:35] Game mode: FoodTimeAttack
+[2024-04-13 19:38:35] Game mode: food_time_attack
 [2024-04-13 19:40:15] Started the app
 [2024-04-13 19:40:15] Started the GameApp Class
 [2024-04-13 19:40:15] Game mode: initial config
@@ -22769,7 +22769,7 @@ Game size changed2
 [2024-04-13 19:40:15] start_screen method called
 [2024-04-13 19:40:16] start_game
 [2024-04-13 19:40:16] Reset snake length
-[2024-04-13 19:40:16] Game mode: FoodTimeAttack
+[2024-04-13 19:40:16] Game mode: food_time_attack
 [2024-04-13 19:40:16] Game state: start_game
 [2024-04-13 19:40:16] Game focused
 [2024-04-13 19:42:36] Started the app
@@ -22823,7 +22823,7 @@ Height: 1200
 1
 [2024-04-13 19:42:42] start_game
 [2024-04-13 19:42:42] Reset snake length
-[2024-04-13 19:42:42] Game mode: FoodTimeAttack
+[2024-04-13 19:42:42] Game mode: food_time_attack
 [2024-04-13 19:42:42] Game state: start_game
 [2024-04-13 19:42:42] Game focused
 [2024-04-13 19:55:45] Started the app
@@ -22842,7 +22842,7 @@ Height: 1200
 [2024-04-13 19:55:45] start_screen method called
 [2024-04-13 19:55:46] start_game
 [2024-04-13 19:55:46] Reset snake length
-[2024-04-13 19:55:46] Game mode: FoodTimeAttack
+[2024-04-13 19:55:46] Game mode: food_time_attack
 [2024-04-13 19:55:46] Game state: start_game
 [2024-04-13 19:55:46] Game focused
 [2024-04-13 19:57:51] Started the app
@@ -22861,7 +22861,7 @@ Height: 1200
 [2024-04-13 19:57:51] start_screen method called
 [2024-04-13 19:57:52] start_game
 [2024-04-13 19:57:52] Reset snake length
-[2024-04-13 19:57:52] Game mode: FoodTimeAttack
+[2024-04-13 19:57:52] Game mode: food_time_attack
 [2024-04-13 19:57:52] Game state: start_game
 [2024-04-13 19:57:52] Game focused
 [2024-04-13 20:10:59] Started the app
@@ -22880,7 +22880,7 @@ Height: 1200
 [2024-04-13 20:10:59] start_screen method called
 [2024-04-13 20:11:00] start_game
 [2024-04-13 20:11:00] Reset snake length
-[2024-04-13 20:11:00] Game mode: FoodTimeAttack
+[2024-04-13 20:11:00] Game mode: food_time_attack
 [2024-04-13 20:11:00] Game state: start_game
 [2024-04-13 20:11:00] Game focused
 [2024-04-13 20:14:40] Started the app
@@ -22899,7 +22899,7 @@ Height: 1200
 [2024-04-13 20:14:40] start_screen method called
 [2024-04-13 20:14:41] start_game
 [2024-04-13 20:14:41] Reset snake length
-[2024-04-13 20:14:41] Game mode: FoodTimeAttack
+[2024-04-13 20:14:41] Game mode: food_time_attack
 [2024-04-13 20:14:41] Game state: start_game
 [2024-04-13 20:14:41] Game focused
 [2024-04-13 20:16:14] Started the app
@@ -22918,7 +22918,7 @@ Height: 1200
 [2024-04-13 20:16:14] start_screen method called
 [2024-04-13 20:16:15] start_game
 [2024-04-13 20:16:15] Reset snake length
-[2024-04-13 20:16:15] Game mode: FoodTimeAttack
+[2024-04-13 20:16:15] Game mode: food_time_attack
 [2024-04-13 20:16:15] Game state: start_game
 [2024-04-13 20:16:15] Game focused
 [2024-04-13 20:21:31] Started the app
@@ -22937,7 +22937,7 @@ Height: 1200
 [2024-04-13 20:21:31] start_screen method called
 [2024-04-13 20:21:32] start_game
 [2024-04-13 20:21:32] Reset snake length
-[2024-04-13 20:21:32] Game mode: FoodTimeAttack
+[2024-04-13 20:21:32] Game mode: food_time_attack
 [2024-04-13 20:21:32] Game state: start_game
 [2024-04-13 20:21:32] Game focused
 [2024-04-13 20:22:55] Started the app
@@ -22956,7 +22956,7 @@ Height: 1200
 [2024-04-13 20:22:55] start_screen method called
 [2024-04-13 20:22:57] start_game
 [2024-04-13 20:22:57] Reset snake length
-[2024-04-13 20:22:57] Game mode: FoodTimeAttack
+[2024-04-13 20:22:57] Game mode: food_time_attack
 [2024-04-13 20:22:57] Game state: start_game
 [2024-04-13 20:22:57] Game focused
 [2024-04-13 20:22:57] 1200x1200
@@ -22978,7 +22978,7 @@ Height: 1200
 [2024-04-13 20:23:15] start_screen method called
 [2024-04-13 20:23:16] start_game
 [2024-04-13 20:23:16] Reset snake length
-[2024-04-13 20:23:16] Game mode: FoodTimeAttack
+[2024-04-13 20:23:16] Game mode: food_time_attack
 [2024-04-13 20:23:16] Game state: start_game
 [2024-04-13 20:23:16] Game focused
 [2024-04-13 20:23:16] 1200x1200
@@ -23005,7 +23005,7 @@ Height: 1200
 [2024-04-13 20:25:34] start_screen method called
 [2024-04-13 20:25:35] start_game
 [2024-04-13 20:25:35] Reset snake length
-[2024-04-13 20:25:35] Game mode: FoodTimeAttack
+[2024-04-13 20:25:35] Game mode: food_time_attack
 [2024-04-13 20:25:35] Game state: start_game
 [2024-04-13 20:25:35] Game focused
 [2024-04-13 20:25:35] 1200x1200
@@ -23027,7 +23027,7 @@ Height: 1200
 [2024-04-13 20:26:16] start_screen method called
 [2024-04-13 20:26:21] start_game
 [2024-04-13 20:26:21] Reset snake length
-[2024-04-13 20:26:21] Game mode: FoodTimeAttack
+[2024-04-13 20:26:21] Game mode: food_time_attack
 [2024-04-13 20:26:21] Game state: start_game
 [2024-04-13 20:26:21] Game focused
 [2024-04-13 20:26:21] 1200x1200
@@ -23049,7 +23049,7 @@ Height: 1200
 [2024-04-13 20:27:37] start_screen method called
 [2024-04-13 20:27:38] start_game
 [2024-04-13 20:27:38] Reset snake length
-[2024-04-13 20:27:38] Game mode: FoodTimeAttack
+[2024-04-13 20:27:38] Game mode: food_time_attack
 [2024-04-13 20:27:38] Game state: start_game
 [2024-04-13 20:27:38] Game focused
 [2024-04-13 20:27:38] 1200x1200
@@ -23101,7 +23101,7 @@ Height: 1200
 [2024-04-13 20:28:08] start_screen method called
 [2024-04-13 20:28:09] start_game
 [2024-04-13 20:28:09] Reset snake length
-[2024-04-13 20:28:09] Game mode: FoodTimeAttack
+[2024-04-13 20:28:09] Game mode: food_time_attack
 [2024-04-13 20:28:09] Game state: start_game
 [2024-04-13 20:28:09] Game focused
 [2024-04-13 20:28:09] 1200x1200
@@ -23123,7 +23123,7 @@ Height: 1200
 [2024-04-13 20:30:31] start_screen method called
 [2024-04-13 20:30:32] start_game
 [2024-04-13 20:30:32] Reset snake length
-[2024-04-13 20:30:32] Game mode: FoodTimeAttack
+[2024-04-13 20:30:32] Game mode: food_time_attack
 [2024-04-13 20:30:32] Game state: start_game
 [2024-04-13 20:30:32] Game focused
 [2024-04-13 20:30:32] 1200x1200
@@ -23145,7 +23145,7 @@ Height: 1200
 [2024-04-13 20:33:43] start_screen method called
 [2024-04-13 20:33:45] start_game
 [2024-04-13 20:33:45] Reset snake length
-[2024-04-13 20:33:45] Game mode: FoodTimeAttack
+[2024-04-13 20:33:45] Game mode: food_time_attack
 [2024-04-13 20:33:45] Game state: start_game
 [2024-04-13 20:33:45] Game focused
 [2024-04-13 20:33:45] 1200x1200
@@ -23200,7 +23200,7 @@ Game size changed2
 [2024-04-13 20:41:49] start_screen method called
 [2024-04-13 20:41:50] start_game
 [2024-04-13 20:41:50] Reset snake length
-[2024-04-13 20:41:50] Game mode: FoodTimeAttack
+[2024-04-13 20:41:50] Game mode: food_time_attack
 [2024-04-13 20:41:50] Game state: start_game
 [2024-04-13 20:41:50] Game focused
 [2024-04-13 20:41:50] 600x600
@@ -23230,7 +23230,7 @@ Game size changed2
 1
 [2024-04-13 20:41:57] start_game
 [2024-04-13 20:41:57] Reset snake length
-[2024-04-13 20:41:57] Game mode: FoodTimeAttack
+[2024-04-13 20:41:57] Game mode: food_time_attack
 [2024-04-13 20:41:57] Game state: start_game
 [2024-04-13 20:41:57] Game focused
 [2024-04-13 20:41:57] 600x600
@@ -23252,7 +23252,7 @@ Game size changed2
 [2024-04-13 20:42:10] start_screen method called
 [2024-04-13 20:42:11] start_game
 [2024-04-13 20:42:11] Reset snake length
-[2024-04-13 20:42:11] Game mode: FoodTimeAttack
+[2024-04-13 20:42:11] Game mode: food_time_attack
 [2024-04-13 20:42:11] Game state: start_game
 [2024-04-13 20:42:11] Game focused
 [2024-04-13 20:42:11] 600x600
@@ -23281,7 +23281,7 @@ Game size changed2
 [2024-04-13 20:42:24] start_screen method called
 [2024-04-13 20:42:25] start_game
 [2024-04-13 20:42:25] Reset snake length
-[2024-04-13 20:42:25] Game mode: FoodTimeAttack
+[2024-04-13 20:42:25] Game mode: food_time_attack
 [2024-04-13 20:42:25] Game state: start_game
 [2024-04-13 20:42:25] Game focused
 [2024-04-13 20:42:25] 1200x1200
@@ -23300,7 +23300,7 @@ Game size changed2
 1
 [2024-04-13 20:42:30] start_game
 [2024-04-13 20:42:30] Reset snake length
-[2024-04-13 20:42:30] Game mode: FoodTimeAttack
+[2024-04-13 20:42:30] Game mode: food_time_attack
 [2024-04-13 20:42:30] Game state: start_game
 [2024-04-13 20:42:30] Game focused
 [2024-04-13 20:42:30] 1200x1200
@@ -23329,7 +23329,7 @@ Game size changed2
 [2024-04-13 20:42:37] start_screen method called
 [2024-04-13 20:42:41] start_game
 [2024-04-13 20:42:41] Reset snake length
-[2024-04-13 20:42:41] Game mode: FoodTimeAttack
+[2024-04-13 20:42:41] Game mode: food_time_attack
 [2024-04-13 20:42:41] Game state: start_game
 [2024-04-13 20:42:41] Game focused
 [2024-04-13 20:42:41] 600x600
@@ -23351,7 +23351,7 @@ Game size changed2
 [2024-04-13 20:43:09] start_screen method called
 [2024-04-13 20:43:11] start_game
 [2024-04-13 20:43:11] Reset snake length
-[2024-04-13 20:43:11] Game mode: FoodTimeAttack
+[2024-04-13 20:43:11] Game mode: food_time_attack
 [2024-04-13 20:43:11] Game state: start_game
 [2024-04-13 20:43:11] Game focused
 [2024-04-13 20:43:11] 600x600
@@ -23387,7 +23387,7 @@ Game size changed2
 [2024-04-13 20:47:20] start_screen method called
 [2024-04-13 20:47:21] start_game
 [2024-04-13 20:47:21] Reset snake length
-[2024-04-13 20:47:21] Game mode: FoodTimeAttack
+[2024-04-13 20:47:21] Game mode: food_time_attack
 [2024-04-13 20:47:21] Game state: start_game
 [2024-04-13 20:47:21] Game focused
 [2024-04-13 20:47:21] 600x600
@@ -23409,7 +23409,7 @@ Game size changed2
 [2024-04-13 20:48:09] start_screen method called
 [2024-04-13 20:48:11] start_game
 [2024-04-13 20:48:11] Reset snake length
-[2024-04-13 20:48:11] Game mode: FoodTimeAttack
+[2024-04-13 20:48:11] Game mode: food_time_attack
 [2024-04-13 20:48:11] Game state: start_game
 [2024-04-13 20:48:11] Game focused
 [2024-04-13 20:48:11] 600x600
@@ -23442,7 +23442,7 @@ Game size changed2
 [2024-04-13 21:11:55] start_screen method called
 [2024-04-13 21:11:56] start_game
 [2024-04-13 21:11:56] Reset snake length
-[2024-04-13 21:11:56] Game mode: FoodTimeAttack
+[2024-04-13 21:11:56] Game mode: food_time_attack
 [2024-04-13 21:11:56] Game state: start_game
 [2024-04-13 21:11:56] Game focused
 [2024-04-13 21:11:56] 600x600
@@ -23498,7 +23498,7 @@ Game size changed2
 [2024-04-15 18:57:47] start_screen method called
 [2024-04-15 18:57:49] start_game
 [2024-04-15 18:57:49] Reset snake length
-[2024-04-15 18:57:49] Game mode: FoodTimeAttack
+[2024-04-15 18:57:49] Game mode: food_time_attack
 [2024-04-15 18:57:49] Game state: start_game
 [2024-04-15 18:57:49] Game focused
 [2024-04-15 18:57:49] 600x600
@@ -24323,7 +24323,7 @@ Height: 600
 [2024-04-15 19:38:50] start_screen method called
 [2024-04-15 19:38:51] start_game
 [2024-04-15 19:38:51] Reset snake length
-[2024-04-15 19:38:51] Game mode: FoodTimeAttack
+[2024-04-15 19:38:51] Game mode: food_time_attack
 [2024-04-15 19:38:51] start_screen
 [2024-04-15 19:38:51] 600x600
 [2024-04-15 19:38:51] Updated initial_game_size in config.ini to 600x600
@@ -24355,7 +24355,7 @@ Height: 600
 [2024-04-15 19:41:22] start_screen method called
 [2024-04-15 19:41:31] start_game
 [2024-04-15 19:41:31] Reset snake length
-[2024-04-15 19:41:31] Game mode: FoodTimeAttack
+[2024-04-15 19:41:31] Game mode: food_time_attack
 [2024-04-15 19:41:31] start_screen
 [2024-04-15 19:41:31] 600x600
 [2024-04-15 19:41:31] Updated initial_game_size in config.ini to 600x600
@@ -24376,7 +24376,7 @@ Height: 600
 [2024-04-15 19:44:04] start_screen method called
 [2024-04-15 19:44:05] start_game
 [2024-04-15 19:44:05] Reset snake length
-[2024-04-15 19:44:05] Game mode: FoodTimeAttack
+[2024-04-15 19:44:05] Game mode: food_time_attack
 [2024-04-15 19:44:05] start_screen
 [2024-04-15 19:44:05] 600x600
 [2024-04-15 19:44:05] Updated initial_game_size in config.ini to 600x600
@@ -24399,7 +24399,7 @@ Height: 600
 Game width: 300
 Game height: 300
 [2024-04-15 19:44:34] Reset snake length
-[2024-04-15 19:44:34] Game mode: FoodTimeAttack
+[2024-04-15 19:44:34] Game mode: food_time_attack
 [2024-04-15 19:44:34] start_screen
 [2024-04-15 19:44:34] 600x600
 [2024-04-15 19:44:34] Updated initial_game_size in config.ini to 600x600
@@ -24423,7 +24423,7 @@ Game height: 300
 Game width: 300
 Game height: 300
 [2024-04-15 19:45:41] Reset snake length
-[2024-04-15 19:45:41] Game mode: FoodTimeAttack
+[2024-04-15 19:45:41] Game mode: food_time_attack
 [2024-04-15 19:45:41] start_screen
 [2024-04-15 19:45:41] 600x600
 [2024-04-15 19:45:41] Updated initial_game_size in config.ini to 600x600
@@ -24452,7 +24452,7 @@ Game height: 300
 Game width: 300
 Game height: 300
 [2024-04-15 19:55:35] Reset snake length
-[2024-04-15 19:55:35] Game mode: FoodTimeAttack
+[2024-04-15 19:55:35] Game mode: food_time_attack
 [2024-04-15 19:55:35] start_screen
 [2024-04-15 19:55:35] 600x600
 [2024-04-15 19:55:35] Updated initial_game_size in config.ini to 600x600
@@ -24503,7 +24503,7 @@ Game height: 300
 Game width: 300
 Game height: 300
 [2024-04-15 20:00:28] Reset snake length
-[2024-04-15 20:00:28] Game mode: FoodTimeAttack
+[2024-04-15 20:00:28] Game mode: food_time_attack
 [2024-04-15 20:00:28] start_screen
 [2024-04-15 20:00:28] 600x600
 [2024-04-15 20:00:28] Updated initial_game_size in config.ini to 600x600
@@ -24551,7 +24551,7 @@ Game height: 300
 Game width: 600
 Game height: 600
 [2024-04-15 20:01:46] Reset snake length
-[2024-04-15 20:01:46] Game mode: FoodTimeAttack
+[2024-04-15 20:01:46] Game mode: food_time_attack
 [2024-04-15 20:01:46] start_screen
 [2024-04-15 20:01:46] 600x600
 [2024-04-15 20:01:46] Updated initial_game_size in config.ini to 600x600
@@ -24590,7 +24590,7 @@ Game height: 600
 Game width: 600
 Game height: 600
 [2024-04-15 20:02:03] Reset snake length
-[2024-04-15 20:02:03] Game mode: FoodTimeAttack
+[2024-04-15 20:02:03] Game mode: food_time_attack
 [2024-04-15 20:02:03] start_screen
 [2024-04-15 20:02:03] 600x600
 [2024-04-15 20:02:03] Updated initial_game_size in config.ini to 600x600
@@ -24623,7 +24623,7 @@ Game size changed2
 Game width: 300
 Game height: 300
 [2024-04-15 20:02:10] Reset snake length
-[2024-04-15 20:02:10] Game mode: FoodTimeAttack
+[2024-04-15 20:02:10] Game mode: food_time_attack
 [2024-04-15 20:02:10] start_screen
 [2024-04-15 20:02:10] 1100x1100
 [2024-04-15 20:02:10] Updated initial_game_size in config.ini to 1100x1100
@@ -24667,7 +24667,7 @@ Game size changed2
 Game width: 300
 Game height: 300
 [2024-04-15 20:02:23] Reset snake length
-[2024-04-15 20:02:23] Game mode: FoodTimeAttack
+[2024-04-15 20:02:23] Game mode: food_time_attack
 [2024-04-15 20:02:23] start_screen
 [2024-04-15 20:02:23] 600x600
 [2024-04-15 20:02:23] Updated initial_game_size in config.ini to 600x600
@@ -24693,7 +24693,7 @@ Game height: 300
 Game width: 300
 Game height: 300
 [2024-04-15 20:03:23] Reset snake length
-[2024-04-15 20:03:23] Game mode: FoodTimeAttack
+[2024-04-15 20:03:23] Game mode: food_time_attack
 [2024-04-15 20:03:23] start_screen
 [2024-04-15 20:03:23] 600x600
 [2024-04-15 20:03:23] Updated initial_game_size in config.ini to 600x600
@@ -24725,7 +24725,7 @@ Game width: 300
 Game height: 300
 3
 [2024-04-15 20:04:22] Reset snake length
-[2024-04-15 20:04:22] Game mode: FoodTimeAttack
+[2024-04-15 20:04:22] Game mode: food_time_attack
 [2024-04-15 20:04:22] start_screen
 [2024-04-15 20:04:22] 600x600
 [2024-04-15 20:04:22] Updated initial_game_size in config.ini to 600x600
@@ -24746,7 +24746,7 @@ Game height: 300
 1
 1
 [2024-04-15 20:08:24] start_screen method called
-[2024-04-15 20:08:25] Game mode: FoodTimeAttack
+[2024-04-15 20:08:25] Game mode: food_time_attack
 [2024-04-15 20:08:40] Started the app
 [2024-04-15 20:08:40] Started the GameApp Class
 [2024-04-15 20:08:40] Game mode: initial config
@@ -24761,7 +24761,7 @@ Game height: 300
 1
 1
 [2024-04-15 20:08:40] start_screen method called
-[2024-04-15 20:08:42] Game mode: FoodTimeAttack
+[2024-04-15 20:08:42] Game mode: food_time_attack
 [2024-04-15 20:09:01] Started the app
 [2024-04-15 20:09:01] Started the GameApp Class
 [2024-04-15 20:09:01] Game mode: initial config
@@ -24776,14 +24776,14 @@ Game height: 300
 1
 1
 [2024-04-15 20:09:01] start_screen method called
-[2024-04-15 20:09:02] Game mode: FoodTimeAttack
+[2024-04-15 20:09:02] Game mode: food_time_attack
 [2024-04-15 20:09:02] start_game
 [2024-04-15 20:09:02] Snake challange game started
 Game width: 1000
 Game height: 1000
 5
 [2024-04-15 20:09:02] Reset snake length
-[2024-04-15 20:09:02] Game mode: FoodTimeAttack
+[2024-04-15 20:09:02] Game mode: food_time_attack
 [2024-04-15 20:09:02] start_screen
 [2024-04-15 20:09:02] 600x600
 [2024-04-15 20:09:02] Updated initial_game_size in config.ini to 600x600
@@ -24814,14 +24814,14 @@ Game height: 1000
 1
 1
 [2024-04-15 20:09:25] start_screen method called
-[2024-04-15 20:09:26] Game mode: FoodTimeAttack
+[2024-04-15 20:09:26] Game mode: food_time_attack
 [2024-04-15 20:09:26] start_game
 [2024-04-15 20:09:26] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:09:26] Reset snake length
-[2024-04-15 20:09:26] Game mode: FoodTimeAttack
+[2024-04-15 20:09:26] Game mode: food_time_attack
 [2024-04-15 20:09:26] start_screen
 [2024-04-15 20:09:26] 600x600
 [2024-04-15 20:09:26] Updated initial_game_size in config.ini to 600x600
@@ -24873,14 +24873,14 @@ Game size changed2
 1
 1
 [2024-04-15 20:09:38] start_screen method called
-[2024-04-15 20:09:40] Game mode: FoodTimeAttack
+[2024-04-15 20:09:40] Game mode: food_time_attack
 [2024-04-15 20:09:40] start_game
 [2024-04-15 20:09:40] Snake challange game started
 Game width: 1500
 Game height: 1500
 5
 [2024-04-15 20:09:40] Reset snake length
-[2024-04-15 20:09:40] Game mode: FoodTimeAttack
+[2024-04-15 20:09:40] Game mode: food_time_attack
 [2024-04-15 20:09:40] start_screen
 [2024-04-15 20:09:40] 1500x1500
 [2024-04-15 20:09:40] Updated initial_game_size in config.ini to 1500x1500
@@ -24918,14 +24918,14 @@ Game size changed2
 [2024-04-15 20:09:49] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-15 20:09:51] Game mode: FoodTimeAttack
+[2024-04-15 20:09:51] Game mode: food_time_attack
 [2024-04-15 20:09:51] start_game
 [2024-04-15 20:09:51] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:09:51] Reset snake length
-[2024-04-15 20:09:51] Game mode: FoodTimeAttack
+[2024-04-15 20:09:51] Game mode: food_time_attack
 [2024-04-15 20:09:51] start_screen
 [2024-04-15 20:09:51] 600x600
 [2024-04-15 20:09:51] Updated initial_game_size in config.ini to 600x600
@@ -24946,14 +24946,14 @@ Game height: 600
 1
 1
 [2024-04-15 20:13:23] start_screen method called
-[2024-04-15 20:13:24] Game mode: FoodTimeAttack
+[2024-04-15 20:13:24] Game mode: food_time_attack
 [2024-04-15 20:13:24] start_game
 [2024-04-15 20:13:24] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:13:24] Reset snake length
-[2024-04-15 20:13:24] Game mode: FoodTimeAttack
+[2024-04-15 20:13:24] Game mode: food_time_attack
 [2024-04-15 20:13:50] Started the app
 [2024-04-15 20:13:50] Started the GameApp Class
 [2024-04-15 20:13:50] Game mode: initial config
@@ -24968,14 +24968,14 @@ Game height: 600
 1
 1
 [2024-04-15 20:13:50] start_screen method called
-[2024-04-15 20:13:51] Game mode: FoodTimeAttack
+[2024-04-15 20:13:51] Game mode: food_time_attack
 [2024-04-15 20:13:51] start_game
 [2024-04-15 20:13:51] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:13:51] Reset snake length
-[2024-04-15 20:13:51] Game mode: FoodTimeAttack
+[2024-04-15 20:13:51] Game mode: food_time_attack
 [2024-04-15 20:13:51] start_screen
 [2024-04-15 20:13:51] 600x600
 [2024-04-15 20:13:51] Updated initial_game_size in config.ini to 600x600
@@ -25001,14 +25001,14 @@ Game height: 600
 1
 1
 [2024-04-15 20:15:04] start_screen method called
-[2024-04-15 20:15:05] Game mode: FoodTimeAttack
+[2024-04-15 20:15:05] Game mode: food_time_attack
 [2024-04-15 20:15:05] start_game
 [2024-04-15 20:15:05] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:15:05] Reset snake length
-[2024-04-15 20:15:05] Game mode: FoodTimeAttack
+[2024-04-15 20:15:05] Game mode: food_time_attack
 [2024-04-15 20:15:05] start_screen
 [2024-04-15 20:15:05] 600x600
 [2024-04-15 20:15:05] Updated initial_game_size in config.ini to 600x600
@@ -25029,14 +25029,14 @@ Game height: 600
 1
 1
 [2024-04-15 20:17:02] start_screen method called
-[2024-04-15 20:17:04] Game mode: FoodTimeAttack
+[2024-04-15 20:17:04] Game mode: food_time_attack
 [2024-04-15 20:17:04] start_game
 [2024-04-15 20:17:04] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:17:04] Reset snake length
-[2024-04-15 20:17:04] Game mode: FoodTimeAttack
+[2024-04-15 20:17:04] Game mode: food_time_attack
 [2024-04-15 20:17:04] start_screen
 [2024-04-15 20:17:04] 600x600
 [2024-04-15 20:17:04] Updated initial_game_size in config.ini to 600x600
@@ -25057,14 +25057,14 @@ Game height: 600
 1
 1
 [2024-04-15 20:17:48] start_screen method called
-[2024-04-15 20:17:49] Game mode: FoodTimeAttack
+[2024-04-15 20:17:49] Game mode: food_time_attack
 [2024-04-15 20:17:49] start_game
 [2024-04-15 20:17:49] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:17:49] Reset snake length
-[2024-04-15 20:17:49] Game mode: FoodTimeAttack
+[2024-04-15 20:17:49] Game mode: food_time_attack
 [2024-04-15 20:17:49] start_screen
 [2024-04-15 20:17:49] 600x600
 [2024-04-15 20:17:49] Updated initial_game_size in config.ini to 600x600
@@ -25085,14 +25085,14 @@ Game height: 600
 1
 1
 [2024-04-15 20:20:12] start_screen method called
-[2024-04-15 20:20:13] Game mode: FoodTimeAttack
+[2024-04-15 20:20:13] Game mode: food_time_attack
 [2024-04-15 20:20:13] start_game
 [2024-04-15 20:20:13] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:20:13] Reset snake length
-[2024-04-15 20:20:13] Game mode: FoodTimeAttack
+[2024-04-15 20:20:13] Game mode: food_time_attack
 [2024-04-15 20:20:13] start_screen
 [2024-04-15 20:20:13] 600x600
 [2024-04-15 20:20:13] Updated initial_game_size in config.ini to 600x600
@@ -25114,14 +25114,14 @@ Deleted Labels challange
 1
 1
 [2024-04-15 20:46:49] start_screen method called
-[2024-04-15 20:46:50] Game mode: FoodTimeAttack
+[2024-04-15 20:46:50] Game mode: food_time_attack
 [2024-04-15 20:46:50] start_game
 [2024-04-15 20:46:50] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:46:50] Reset snake length
-[2024-04-15 20:46:50] Game mode: FoodTimeAttack
+[2024-04-15 20:46:50] Game mode: food_time_attack
 [2024-04-15 20:46:50] start_screen
 [2024-04-15 20:46:50] 600x600
 [2024-04-15 20:46:50] Updated initial_game_size in config.ini to 600x600
@@ -25178,14 +25178,14 @@ Deleted Labels challange
 [2024-04-15 20:49:43] 0
 [2024-04-15 20:49:43] 1
 [2024-04-15 20:49:43] 1
-[2024-04-15 20:49:44] Game mode: FoodTimeAttack
+[2024-04-15 20:49:44] Game mode: food_time_attack
 [2024-04-15 20:49:45] start_game
 [2024-04-15 20:49:45] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:49:45] Reset snake length
-[2024-04-15 20:49:45] Game mode: FoodTimeAttack
+[2024-04-15 20:49:45] Game mode: food_time_attack
 [2024-04-15 20:49:45] start_screen
 [2024-04-15 20:49:45] 600x600
 [2024-04-15 20:49:45] Updated initial_game_size in config.ini to 600x600
@@ -25219,14 +25219,14 @@ Deleted Labels challange
 1
 1
 [2024-04-15 20:53:48] start_screen method called
-[2024-04-15 20:53:49] Game mode: FoodTimeAttack
+[2024-04-15 20:53:49] Game mode: food_time_attack
 [2024-04-15 20:53:49] start_game
 [2024-04-15 20:53:49] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:53:49] Reset snake length
-[2024-04-15 20:53:49] Game mode: FoodTimeAttack
+[2024-04-15 20:53:49] Game mode: food_time_attack
 [2024-04-15 20:53:49] start_screen
 [2024-04-15 20:53:49] 600x600
 [2024-04-15 20:53:49] Updated initial_game_size in config.ini to 600x600
@@ -25236,14 +25236,14 @@ Game height: 600
 Deleted score challange
 Deleted high score challange
 Deleted Labels challange
-[2024-04-15 20:53:54] Game mode: FoodTimeAttack
+[2024-04-15 20:53:54] Game mode: food_time_attack
 [2024-04-15 20:53:54] start_game
 [2024-04-15 20:53:54] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:53:54] Reset snake length
-[2024-04-15 20:53:54] Game mode: FoodTimeAttack
+[2024-04-15 20:53:54] Game mode: food_time_attack
 [2024-04-15 20:53:54] start_screen
 [2024-04-15 20:53:54] 600x600
 [2024-04-15 20:53:54] Updated initial_game_size in config.ini to 600x600
@@ -25253,14 +25253,14 @@ Game height: 600
 Deleted score challange
 Deleted high score challange
 Deleted Labels challange
-[2024-04-15 20:53:58] Game mode: FoodTimeAttack
+[2024-04-15 20:53:58] Game mode: food_time_attack
 [2024-04-15 20:53:58] start_game
 [2024-04-15 20:53:58] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:53:58] Reset snake length
-[2024-04-15 20:53:58] Game mode: FoodTimeAttack
+[2024-04-15 20:53:58] Game mode: food_time_attack
 [2024-04-15 20:53:58] start_screen
 [2024-04-15 20:53:58] 600x600
 [2024-04-15 20:53:58] Updated initial_game_size in config.ini to 600x600
@@ -25280,14 +25280,14 @@ Game height: 600
 1
 1
 [2024-04-15 20:54:39] start_screen method called
-[2024-04-15 20:54:40] Game mode: FoodTimeAttack
+[2024-04-15 20:54:40] Game mode: food_time_attack
 [2024-04-15 20:54:40] start_game
 [2024-04-15 20:54:40] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:54:40] Reset snake length
-[2024-04-15 20:54:40] Game mode: FoodTimeAttack
+[2024-04-15 20:54:40] Game mode: food_time_attack
 [2024-04-15 20:54:40] start_screen
 [2024-04-15 20:54:40] 600x600
 [2024-04-15 20:54:40] Updated initial_game_size in config.ini to 600x600
@@ -25307,14 +25307,14 @@ Game height: 600
 1
 1
 [2024-04-15 20:56:45] start_screen method called
-[2024-04-15 20:56:46] Game mode: FoodTimeAttack
+[2024-04-15 20:56:46] Game mode: food_time_attack
 [2024-04-15 20:56:46] start_game
 [2024-04-15 20:56:46] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-15 20:56:46] Reset snake length
-[2024-04-15 20:56:46] Game mode: FoodTimeAttack
+[2024-04-15 20:56:46] Game mode: food_time_attack
 [2024-04-15 20:56:46] start_game
 [2024-04-15 20:56:46] 600x600
 [2024-04-15 20:56:46] Updated initial_game_size in config.ini to 600x600
@@ -25393,14 +25393,14 @@ Game height: 600
 1
 1
 [2024-04-16 17:30:25] start_screen method called
-[2024-04-16 17:30:27] Game mode: FoodTimeAttack
+[2024-04-16 17:30:27] Game mode: food_time_attack
 [2024-04-16 17:30:27] start_game
 [2024-04-16 17:30:27] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:30:27] Reset snake length
-[2024-04-16 17:30:27] Game mode: FoodTimeAttack
+[2024-04-16 17:30:27] Game mode: food_time_attack
 [2024-04-16 17:30:27] start_game
 [2024-04-16 17:30:27] 600x600
 [2024-04-16 17:30:27] Updated initial_game_size in config.ini to 600x600
@@ -25423,14 +25423,14 @@ Deleted Labels challange
 1
 1
 [2024-04-16 17:32:02] start_screen method called
-[2024-04-16 17:32:04] Game mode: FoodTimeAttack
+[2024-04-16 17:32:04] Game mode: food_time_attack
 [2024-04-16 17:32:04] start_game
 [2024-04-16 17:32:04] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:32:04] Reset snake length
-[2024-04-16 17:32:04] Game mode: FoodTimeAttack
+[2024-04-16 17:32:04] Game mode: food_time_attack
 [2024-04-16 17:32:04] start_game
 [2024-04-16 17:32:04] 600x600
 [2024-04-16 17:32:04] Updated initial_game_size in config.ini to 600x600
@@ -25450,14 +25450,14 @@ Game height: 600
 1
 1
 [2024-04-16 17:33:28] start_screen method called
-[2024-04-16 17:33:29] Game mode: FoodTimeAttack
+[2024-04-16 17:33:29] Game mode: food_time_attack
 [2024-04-16 17:33:29] start_game
 [2024-04-16 17:33:29] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:33:29] Reset snake length
-[2024-04-16 17:33:29] Game mode: FoodTimeAttack
+[2024-04-16 17:33:29] Game mode: food_time_attack
 [2024-04-16 17:33:29] start_game
 [2024-04-16 17:33:29] 600x600
 [2024-04-16 17:33:29] Updated initial_game_size in config.ini to 600x600
@@ -25507,14 +25507,14 @@ Game height: 600
 1
 1
 [2024-04-16 17:39:34] start_screen method called
-[2024-04-16 17:39:47] Game mode: FoodTimeAttack
+[2024-04-16 17:39:47] Game mode: food_time_attack
 [2024-04-16 17:39:47] start_game
 [2024-04-16 17:39:47] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:39:47] Reset snake length
-[2024-04-16 17:39:47] Game mode: FoodTimeAttack
+[2024-04-16 17:39:47] Game mode: food_time_attack
 [2024-04-16 17:39:47] start_game
 [2024-04-16 17:39:47] 600x600
 [2024-04-16 17:39:47] Updated initial_game_size in config.ini to 600x600
@@ -25675,14 +25675,14 @@ Game height: 600
 1
 1
 [2024-04-16 17:41:07] start_screen method called
-[2024-04-16 17:41:14] Game mode: FoodTimeAttack
+[2024-04-16 17:41:14] Game mode: food_time_attack
 [2024-04-16 17:41:14] start_game
 [2024-04-16 17:41:14] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:41:14] Reset snake length
-[2024-04-16 17:41:14] Game mode: FoodTimeAttack
+[2024-04-16 17:41:14] Game mode: food_time_attack
 [2024-04-16 17:41:14] start_game
 [2024-04-16 17:41:14] 600x600
 [2024-04-16 17:41:14] Updated initial_game_size in config.ini to 600x600
@@ -25867,14 +25867,14 @@ Game height: 600
 1
 1
 [2024-04-16 17:46:42] start_screen method called
-[2024-04-16 17:46:49] Game mode: FoodTimeAttack
+[2024-04-16 17:46:49] Game mode: food_time_attack
 [2024-04-16 17:46:49] start_game
 [2024-04-16 17:46:49] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:46:49] Reset snake length
-[2024-04-16 17:46:49] Game mode: FoodTimeAttack
+[2024-04-16 17:46:49] Game mode: food_time_attack
 [2024-04-16 17:46:49] start_game
 [2024-04-16 17:46:49] 600x600
 [2024-04-16 17:46:49] Updated initial_game_size in config.ini to 600x600
@@ -25902,14 +25902,14 @@ Game height: 600
 1
 1
 [2024-04-16 17:48:20] start_screen method called
-[2024-04-16 17:48:26] Game mode: FoodTimeAttack
+[2024-04-16 17:48:26] Game mode: food_time_attack
 [2024-04-16 17:48:26] start_game
 [2024-04-16 17:48:26] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:48:26] Reset snake length
-[2024-04-16 17:48:26] Game mode: FoodTimeAttack
+[2024-04-16 17:48:26] Game mode: food_time_attack
 [2024-04-16 17:48:26] start_game
 [2024-04-16 17:48:26] 600x600
 [2024-04-16 17:48:26] Updated initial_game_size in config.ini to 600x600
@@ -25998,14 +25998,14 @@ Deleted Labels challange
 1
 1
 [2024-04-16 17:50:02] start_screen method called
-[2024-04-16 17:50:08] Game mode: FoodTimeAttack
+[2024-04-16 17:50:08] Game mode: food_time_attack
 [2024-04-16 17:50:08] start_game
 [2024-04-16 17:50:08] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:50:08] Reset snake length
-[2024-04-16 17:50:08] Game mode: FoodTimeAttack
+[2024-04-16 17:50:08] Game mode: food_time_attack
 [2024-04-16 17:50:08] start_game
 [2024-04-16 17:50:08] 600x600
 [2024-04-16 17:50:08] Updated initial_game_size in config.ini to 600x600
@@ -26056,14 +26056,14 @@ Game height: 600
 1
 1
 [2024-04-16 17:51:20] start_screen method called
-[2024-04-16 17:51:24] Game mode: FoodTimeAttack
+[2024-04-16 17:51:24] Game mode: food_time_attack
 [2024-04-16 17:51:24] start_game
 [2024-04-16 17:51:24] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:51:24] Reset snake length
-[2024-04-16 17:51:24] Game mode: FoodTimeAttack
+[2024-04-16 17:51:24] Game mode: food_time_attack
 [2024-04-16 17:51:24] start_game
 [2024-04-16 17:51:24] 600x600
 [2024-04-16 17:51:24] Updated initial_game_size in config.ini to 600x600
@@ -26093,14 +26093,14 @@ Game height: 600
 1
 1
 [2024-04-16 17:52:08] start_screen method called
-[2024-04-16 17:52:12] Game mode: FoodTimeAttack
+[2024-04-16 17:52:12] Game mode: food_time_attack
 [2024-04-16 17:52:12] start_game
 [2024-04-16 17:52:12] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-16 17:52:12] Reset snake length
-[2024-04-16 17:52:12] Game mode: FoodTimeAttack
+[2024-04-16 17:52:12] Game mode: food_time_attack
 [2024-04-16 17:52:12] start_game
 [2024-04-16 17:52:12] 600x600
 [2024-04-16 17:52:12] Updated initial_game_size in config.ini to 600x600
@@ -26157,14 +26157,14 @@ Game height: 600
 1
 1
 [2024-04-17 18:49:27] start_screen method called
-[2024-04-17 18:49:29] Game mode: FoodTimeAttack
+[2024-04-17 18:49:29] Game mode: food_time_attack
 [2024-04-17 18:49:29] start_game
 [2024-04-17 18:49:29] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-17 18:49:29] Reset snake length
-[2024-04-17 18:49:29] Game mode: FoodTimeAttack
+[2024-04-17 18:49:29] Game mode: food_time_attack
 [2024-04-17 18:49:29] start_game
 [2024-04-17 18:49:29] 600x600
 [2024-04-17 18:49:29] Updated initial_game_size in config.ini to 600x600
@@ -26184,14 +26184,14 @@ Game height: 600
 1
 1
 [2024-04-17 18:49:35] start_screen method called
-[2024-04-17 18:49:36] Game mode: FoodTimeAttack
+[2024-04-17 18:49:36] Game mode: food_time_attack
 [2024-04-17 18:49:36] start_game
 [2024-04-17 18:49:36] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-17 18:49:36] Reset snake length
-[2024-04-17 18:49:36] Game mode: FoodTimeAttack
+[2024-04-17 18:49:36] Game mode: food_time_attack
 [2024-04-17 18:49:36] start_game
 [2024-04-17 18:49:36] 600x600
 [2024-04-17 18:49:36] Updated initial_game_size in config.ini to 600x600
@@ -26337,14 +26337,14 @@ Game height: 300
 [2024-04-17 19:23:46] 600x600
 [2024-04-17 19:23:46] Updated initial_game_size in config.ini to 600x600
 [2024-04-17 19:23:46] Current initial_game_size in config.ini: 600x600
-[2024-04-17 19:23:54] Game mode: FoodTimeAttack
+[2024-04-17 19:23:54] Game mode: food_time_attack
 [2024-04-17 19:23:54] start_game
 [2024-04-17 19:23:54] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-17 19:23:54] Reset snake length
-[2024-04-17 19:23:54] Game mode: FoodTimeAttack
+[2024-04-17 19:23:54] Game mode: food_time_attack
 [2024-04-17 19:23:54] start_game
 [2024-04-17 19:23:54] 600x600
 [2024-04-17 19:23:54] Updated initial_game_size in config.ini to 600x600
@@ -26432,14 +26432,14 @@ Game height: 300
 [2024-04-17 19:42:57] 600x600
 [2024-04-17 19:42:57] Updated initial_game_size in config.ini to 600x600
 [2024-04-17 19:42:57] Current initial_game_size in config.ini: 600x600
-[2024-04-17 19:42:59] Game mode: FoodTimeAttack
+[2024-04-17 19:42:59] Game mode: food_time_attack
 [2024-04-17 19:42:59] start_game
 [2024-04-17 19:42:59] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-17 19:42:59] Reset snake length
-[2024-04-17 19:42:59] Game mode: FoodTimeAttack
+[2024-04-17 19:42:59] Game mode: food_time_attack
 [2024-04-17 19:42:59] start_game
 [2024-04-17 19:42:59] 600x600
 [2024-04-17 19:42:59] Updated initial_game_size in config.ini to 600x600
@@ -26465,14 +26465,14 @@ Game height: 300
 [2024-04-17 19:48:27] 600x600
 [2024-04-17 19:48:27] Updated initial_game_size in config.ini to 600x600
 [2024-04-17 19:48:27] Current initial_game_size in config.ini: 600x600
-[2024-04-17 19:48:28] Game mode: FoodTimeAttack
+[2024-04-17 19:48:28] Game mode: food_time_attack
 [2024-04-17 19:48:28] start_game
 [2024-04-17 19:48:28] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-17 19:48:28] Reset snake length
-[2024-04-17 19:48:28] Game mode: FoodTimeAttack
+[2024-04-17 19:48:28] Game mode: food_time_attack
 [2024-04-17 19:48:28] start_game
 [2024-04-17 19:48:28] 600x600
 [2024-04-17 19:48:28] Updated initial_game_size in config.ini to 600x600
@@ -26501,14 +26501,14 @@ Game height: 600
 1
 1
 [2024-04-17 19:54:49] start_screen method called
-[2024-04-17 19:54:58] Game mode: FoodTimeAttack
+[2024-04-17 19:54:58] Game mode: food_time_attack
 [2024-04-17 19:54:58] start_game
 [2024-04-17 19:54:58] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-17 19:54:58] Reset snake length
-[2024-04-17 19:54:58] Game mode: FoodTimeAttack
+[2024-04-17 19:54:58] Game mode: food_time_attack
 [2024-04-17 19:54:58] start_game
 [2024-04-17 19:54:58] 600x600
 [2024-04-17 19:54:58] Updated initial_game_size in config.ini to 600x600
@@ -26532,14 +26532,14 @@ Game height: 300
 [2024-04-17 19:55:42] 600x600
 [2024-04-17 19:55:42] Updated initial_game_size in config.ini to 600x600
 [2024-04-17 19:55:42] Current initial_game_size in config.ini: 600x600
-[2024-04-17 19:55:44] Game mode: FoodTimeAttack
+[2024-04-17 19:55:44] Game mode: food_time_attack
 [2024-04-17 19:55:44] start_game
 [2024-04-17 19:55:44] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-17 19:55:44] Reset snake length
-[2024-04-17 19:55:44] Game mode: FoodTimeAttack
+[2024-04-17 19:55:44] Game mode: food_time_attack
 [2024-04-17 19:55:44] start_game
 [2024-04-17 19:55:44] 600x600
 [2024-04-17 19:55:44] Updated initial_game_size in config.ini to 600x600
@@ -26690,14 +26690,14 @@ Game height: 300
 [2024-04-17 20:04:53] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-17 20:04:54] Game mode: FoodTimeAttack
+[2024-04-17 20:04:54] Game mode: food_time_attack
 [2024-04-17 20:04:54] start_game
 [2024-04-17 20:04:54] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-17 20:04:54] Reset snake length
-[2024-04-17 20:04:54] Game mode: FoodTimeAttack
+[2024-04-17 20:04:54] Game mode: food_time_attack
 [2024-04-17 20:04:54] start_game
 [2024-04-17 20:04:54] 600x600
 [2024-04-17 20:04:54] Updated initial_game_size in config.ini to 600x600
@@ -26733,14 +26733,14 @@ Game height: 300
 [2024-04-17 20:05:43] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-17 20:05:44] Game mode: FoodTimeAttack
+[2024-04-17 20:05:44] Game mode: food_time_attack
 [2024-04-17 20:05:44] start_game
 [2024-04-17 20:05:44] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-17 20:05:44] Reset snake length
-[2024-04-17 20:05:44] Game mode: FoodTimeAttack
+[2024-04-17 20:05:44] Game mode: food_time_attack
 [2024-04-17 20:05:44] start_game
 [2024-04-17 20:05:44] 600x600
 [2024-04-17 20:05:44] Updated initial_game_size in config.ini to 600x600
@@ -27846,14 +27846,14 @@ Game height: 300
 [2024-04-18 20:09:06] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-18 20:09:06] Game mode: FoodTimeAttack
+[2024-04-18 20:09:06] Game mode: food_time_attack
 [2024-04-18 20:09:06] start_game
 [2024-04-18 20:09:06] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-18 20:09:06] Reset snake length
-[2024-04-18 20:09:06] Game mode: FoodTimeAttack
+[2024-04-18 20:09:06] Game mode: food_time_attack
 [2024-04-18 20:09:06] start_game
 [2024-04-18 20:09:06] 600x600
 [2024-04-18 20:09:06] Updated initial_game_size in config.ini to 600x600
@@ -27871,14 +27871,14 @@ Game height: 600
 [2024-04-18 20:09:11] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-18 20:09:12] Game mode: FoodTimeAttack
+[2024-04-18 20:09:12] Game mode: food_time_attack
 [2024-04-18 20:09:12] start_game
 [2024-04-18 20:09:12] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-18 20:09:12] Reset snake length
-[2024-04-18 20:09:12] Game mode: FoodTimeAttack
+[2024-04-18 20:09:12] Game mode: food_time_attack
 [2024-04-18 20:09:12] start_game
 [2024-04-18 20:09:12] 600x600
 [2024-04-18 20:09:12] Updated initial_game_size in config.ini to 600x600
@@ -27944,14 +27944,14 @@ Game height: 300
 [2024-04-18 20:11:59] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-18 20:12:00] Game mode: FoodTimeAttack
+[2024-04-18 20:12:00] Game mode: food_time_attack
 [2024-04-18 20:12:00] start_game
 [2024-04-18 20:12:00] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-18 20:12:00] Reset snake length
-[2024-04-18 20:12:00] Game mode: FoodTimeAttack
+[2024-04-18 20:12:00] Game mode: food_time_attack
 [2024-04-18 20:12:00] start_game
 [2024-04-18 20:12:00] 600x600
 [2024-04-18 20:12:00] Updated initial_game_size in config.ini to 600x600
@@ -27982,14 +27982,14 @@ Game height: 300
 [2024-04-19 21:23:56] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-19 21:23:57] Game mode: FoodTimeAttack
+[2024-04-19 21:23:57] Game mode: food_time_attack
 [2024-04-19 21:23:57] start_game
 [2024-04-19 21:23:57] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-19 21:23:57] Reset snake length
-[2024-04-19 21:23:57] Game mode: FoodTimeAttack
+[2024-04-19 21:23:57] Game mode: food_time_attack
 [2024-04-19 21:23:57] start_game
 [2024-04-19 21:23:57] 600x600
 [2024-04-19 21:23:57] Updated initial_game_size in config.ini to 600x600
@@ -28039,14 +28039,14 @@ Game height: 300
 [2024-04-19 21:25:48] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-19 21:25:48] Game mode: FoodTimeAttack
+[2024-04-19 21:25:48] Game mode: food_time_attack
 [2024-04-19 21:25:48] start_game
 [2024-04-19 21:25:48] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-19 21:25:48] Reset snake length
-[2024-04-19 21:25:48] Game mode: FoodTimeAttack
+[2024-04-19 21:25:48] Game mode: food_time_attack
 [2024-04-19 21:25:48] start_game
 [2024-04-19 21:25:49] 600x600
 [2024-04-19 21:25:49] Updated initial_game_size in config.ini to 600x600
@@ -28072,14 +28072,14 @@ Game height: 300
 [2024-04-19 21:26:26] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-19 21:26:27] Game mode: FoodTimeAttack
+[2024-04-19 21:26:27] Game mode: food_time_attack
 [2024-04-19 21:26:27] start_game
 [2024-04-19 21:26:27] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-19 21:26:27] Reset snake length
-[2024-04-19 21:26:27] Game mode: FoodTimeAttack
+[2024-04-19 21:26:27] Game mode: food_time_attack
 [2024-04-19 21:26:27] start_game
 [2024-04-19 21:26:27] 600x600
 [2024-04-19 21:26:27] Updated initial_game_size in config.ini to 600x600
@@ -28133,14 +28133,14 @@ Game height: 300
 [2024-04-19 21:27:02] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-19 21:27:03] Game mode: FoodTimeAttack
+[2024-04-19 21:27:03] Game mode: food_time_attack
 [2024-04-19 21:27:03] start_game
 [2024-04-19 21:27:03] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-19 21:27:03] Reset snake length
-[2024-04-19 21:27:03] Game mode: FoodTimeAttack
+[2024-04-19 21:27:03] Game mode: food_time_attack
 [2024-04-19 21:27:03] start_game
 [2024-04-19 21:27:03] 600x600
 [2024-04-19 21:27:03] Updated initial_game_size in config.ini to 600x600
@@ -28267,14 +28267,14 @@ Game height: 400
 [2024-04-19 21:28:30] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-19 21:28:30] Game mode: FoodTimeAttack
+[2024-04-19 21:28:30] Game mode: food_time_attack
 [2024-04-19 21:28:30] start_game
 [2024-04-19 21:28:30] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-19 21:28:30] Reset snake length
-[2024-04-19 21:28:30] Game mode: FoodTimeAttack
+[2024-04-19 21:28:30] Game mode: food_time_attack
 [2024-04-19 21:28:30] start_game
 [2024-04-19 21:28:30] 600x600
 [2024-04-19 21:28:30] Updated initial_game_size in config.ini to 600x600
@@ -28544,28 +28544,28 @@ Game height: 300
 [2024-04-22 20:36:49] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-22 20:36:55] Game mode: FoodTimeAttack
+[2024-04-22 20:36:55] Game mode: food_time_attack
 [2024-04-22 20:36:55] start_game
 [2024-04-22 20:36:55] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-22 20:36:55] Reset snake length
-[2024-04-22 20:36:55] Game mode: FoodTimeAttack
+[2024-04-22 20:36:55] Game mode: food_time_attack
 [2024-04-22 20:36:55] start_game
 [2024-04-22 20:36:55] 600x600
 [2024-04-22 20:36:55] Updated initial_game_size in config.ini to 600x600
 [2024-04-22 20:36:55] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-22 20:36:56] Game mode: FoodTimeAttack
+[2024-04-22 20:36:56] Game mode: food_time_attack
 [2024-04-22 20:36:56] start_game
 [2024-04-22 20:36:56] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-22 20:36:56] Reset snake length
-[2024-04-22 20:36:56] Game mode: FoodTimeAttack
+[2024-04-22 20:36:56] Game mode: food_time_attack
 [2024-04-22 20:36:56] start_game
 [2024-04-22 20:36:56] 600x600
 [2024-04-22 20:36:56] Updated initial_game_size in config.ini to 600x600
@@ -28630,14 +28630,14 @@ Game height: 300
 [2024-04-22 20:41:36] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-22 20:41:37] Game mode: FoodTimeAttack
+[2024-04-22 20:41:37] Game mode: food_time_attack
 [2024-04-22 20:41:37] start_game
 [2024-04-22 20:41:37] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-22 20:41:37] Reset snake length
-[2024-04-22 20:41:37] Game mode: FoodTimeAttack
+[2024-04-22 20:41:37] Game mode: food_time_attack
 [2024-04-22 20:41:37] start_game
 [2024-04-22 20:41:37] 600x600
 [2024-04-22 20:41:37] Updated initial_game_size in config.ini to 600x600
@@ -28673,14 +28673,14 @@ Game height: 300
 [2024-04-22 20:42:10] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-22 20:42:10] Game mode: FoodTimeAttack
+[2024-04-22 20:42:10] Game mode: food_time_attack
 [2024-04-22 20:42:10] start_game
 [2024-04-22 20:42:10] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-22 20:42:10] Reset snake length
-[2024-04-22 20:42:10] Game mode: FoodTimeAttack
+[2024-04-22 20:42:10] Game mode: food_time_attack
 [2024-04-22 20:42:11] start_game
 [2024-04-22 20:42:11] 600x600
 [2024-04-22 20:42:11] Updated initial_game_size in config.ini to 600x600
@@ -28730,14 +28730,14 @@ Game height: 600
 [2024-04-22 20:42:21] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-04-22 20:42:21] Game mode: FoodTimeAttack
+[2024-04-22 20:42:21] Game mode: food_time_attack
 [2024-04-22 20:42:21] start_game
 [2024-04-22 20:42:21] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-04-22 20:42:21] Reset snake length
-[2024-04-22 20:42:21] Game mode: FoodTimeAttack
+[2024-04-22 20:42:21] Game mode: food_time_attack
 [2024-04-22 20:42:21] start_game
 [2024-04-22 20:42:21] 600x600
 [2024-04-22 20:42:21] Updated initial_game_size in config.ini to 600x600
@@ -28951,14 +28951,14 @@ Game height: 300
 [2024-05-11 11:00:06] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-05-11 11:00:07] Game mode: FoodTimeAttack
+[2024-05-11 11:00:07] Game mode: food_time_attack
 [2024-05-11 11:00:07] start_game
 [2024-05-11 11:00:07] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-05-11 11:00:07] Reset snake length
-[2024-05-11 11:00:07] Game mode: FoodTimeAttack
+[2024-05-11 11:00:07] Game mode: food_time_attack
 [2024-05-11 11:00:07] start_game
 [2024-05-11 11:00:07] 600x600
 [2024-05-11 11:00:07] Updated initial_game_size in config.ini to 600x600
@@ -28994,14 +28994,14 @@ Game height: 300
 [2024-05-11 11:01:21] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-05-11 11:01:22] Game mode: FoodTimeAttack
+[2024-05-11 11:01:22] Game mode: food_time_attack
 [2024-05-11 11:01:22] start_game
 [2024-05-11 11:01:22] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-05-11 11:01:22] Reset snake length
-[2024-05-11 11:01:22] Game mode: FoodTimeAttack
+[2024-05-11 11:01:22] Game mode: food_time_attack
 [2024-05-11 11:01:22] start_game
 [2024-05-11 11:01:22] 600x600
 [2024-05-11 11:01:22] Updated initial_game_size in config.ini to 600x600
@@ -29037,14 +29037,14 @@ Game height: 300
 [2024-05-11 11:02:13] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-05-11 11:02:14] Game mode: FoodTimeAttack
+[2024-05-11 11:02:14] Game mode: food_time_attack
 [2024-05-11 11:02:14] start_game
 [2024-05-11 11:02:14] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-05-11 11:02:14] Reset snake length
-[2024-05-11 11:02:14] Game mode: FoodTimeAttack
+[2024-05-11 11:02:14] Game mode: food_time_attack
 [2024-05-11 11:02:14] start_game
 [2024-05-11 11:02:14] 600x600
 [2024-05-11 11:02:14] Updated initial_game_size in config.ini to 600x600
@@ -31300,14 +31300,14 @@ Game height: 400
 [2024-05-11 12:34:43] Current initial_game_size in config.ini: 600x600
 1
 1
-[2024-05-11 12:34:44] Game mode: FoodTimeAttack
+[2024-05-11 12:34:44] Game mode: food_time_attack
 [2024-05-11 12:34:44] start_game
 [2024-05-11 12:34:44] Snake challange game started
 Game width: 600
 Game height: 600
 5
 [2024-05-11 12:34:44] Reset snake length
-[2024-05-11 12:34:44] Game mode: FoodTimeAttack
+[2024-05-11 12:34:44] Game mode: food_time_attack
 [2024-05-11 12:34:44] start_game
 [2024-05-11 12:34:44] 600x600
 [2024-05-11 12:34:44] Updated initial_game_size in config.ini to 600x600
@@ -31392,3 +31392,71 @@ Game size changed
 
 
 
+[2024-05-11 13:33:03] Started the app
+[2024-05-11 13:33:03] Started the GameApp Class
+[2024-05-11 13:33:03] Game mode: initial config
+[2024-05-11 13:33:03] Dark-Blue
+[2024-05-11 13:33:03] Updated initial_theme in config.ini to Dark-Blue
+[2024-05-11 13:33:03] Current initial_theme in config.ini: Dark-Blue
+[2024-05-11 13:33:03] Contrast mode set to dark
+[2024-05-11 13:33:03] 600x600
+[2024-05-11 13:33:03] Updated initial_game_size in config.ini to 600x600
+[2024-05-11 13:33:03] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-05-11 13:33:03] start_screen method called
+Game width: 300
+Game height: 300
+3
+[2024-05-11 13:33:07] 600x600
+[2024-05-11 13:33:07] Updated initial_game_size in config.ini to 600x600
+[2024-05-11 13:33:07] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 300
+Game height: 300
+3
+[2024-05-11 13:33:07] 600x600
+[2024-05-11 13:33:07] Updated initial_game_size in config.ini to 600x600
+[2024-05-11 13:33:07] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-05-11 13:33:08] Game mode: food_time_attack
+[2024-05-11 13:33:08] start_game
+[2024-05-11 13:33:08] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-05-11 13:33:08] Reset snake length
+[2024-05-11 13:33:08] Game mode: food_time_attack
+[2024-05-11 13:33:08] start_game
+[2024-05-11 13:33:08] 600x600
+[2024-05-11 13:33:08] Updated initial_game_size in config.ini to 600x600
+[2024-05-11 13:33:08] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-05-11 13:33:08] Game state: game
+[2024-05-11 13:33:08] Food ID:
+[2024-05-11 13:33:08] 317d57f9-bda8-4f15-b6cc-8f248cc1e3df
+[2024-05-11 13:33:08] {'317d57f9-bda8-4f15-b6cc-8f248cc1e3df': {'x': 220, 'y': 160, 'tag': 'food317d57f9-bda8-4f15-b6cc-8f248cc1e3df', 'oval_id': 7}}
+[2024-05-11 13:33:08] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-11 13:33:11] Food ID:
+[2024-05-11 13:33:11] 9ae6d5bd-52ae-4b4e-a74b-20c55d94c8f4
+[2024-05-11 13:33:11] {'9ae6d5bd-52ae-4b4e-a74b-20c55d94c8f4': {'x': 280, 'y': 140, 'tag': 'food9ae6d5bd-52ae-4b4e-a74b-20c55d94c8f4', 'oval_id': 31}}
+[2024-05-11 13:33:12] Food ID:
+[2024-05-11 13:33:12] a794dd67-7840-4128-9639-7e83e76e2312
+[2024-05-11 13:33:12] {'a794dd67-7840-4128-9639-7e83e76e2312': {'x': 360, 'y': 60, 'tag': 'fooda794dd67-7840-4128-9639-7e83e76e2312', 'oval_id': 46}}
+[2024-05-11 13:33:14] Food ID:
+[2024-05-11 13:33:14] 405592e8-85b0-4ff8-857e-944722d36815
+[2024-05-11 13:33:14] {'405592e8-85b0-4ff8-857e-944722d36815': {'x': 280, 'y': 160, 'tag': 'food405592e8-85b0-4ff8-857e-944722d36815', 'oval_id': 63}}
+[2024-05-11 13:33:25] Food ID:
+[2024-05-11 13:33:25] 8c5125c7-360d-43ac-a6a0-85222d59ed00
+[2024-05-11 13:33:25] {'8c5125c7-360d-43ac-a6a0-85222d59ed00': {'x': 200, 'y': 20, 'tag': 'food8c5125c7-360d-43ac-a6a0-85222d59ed00', 'oval_id': 163}}
+[2024-05-11 13:33:26] snake has a collision
+[2024-05-11 13:33:26] Game state: game_over
+[2024-05-11 13:33:26] Snake coordinates after reset: [(440, -20), (440, 0), (440, 20), (440, 40), (440, 60), (440, 80), (440, 100), (440, 120), (440, 140)]
+[2024-05-11 13:33:26] High score: 10
+[2024-05-11 13:33:26] Score: 4
+Deleted score challange
+Deleted high score challange
+Deleted Labels challange

@@ -2,8 +2,15 @@
 # Shadows Snake Game Snake Classic Game File
 # *****************************************
 
-import customtkinter as ctk, time, configparser, traceback
+"""
+This module is responsible for the classic snake game mode of the Shadows Snake game.
+"""
+
+import time
+import configparser
+import traceback
 from os import path
+import customtkinter as ctk
 
 # Importing thhe necessary modules from other folders
 from Configuration.constants_snake_game import FONT_LIST
@@ -12,10 +19,10 @@ from Logic.food_logic_snake_game import ClassicFood
 from Logic.snake_logic_snake_game import Snake
 from Logic.labelpanel_snake_game import GameLabelsPanel
 
-#global variabels
-
-
-class Snake_Classic_Game(ctk.CTkCanvas):
+class SnakeClassicGame(ctk.CTkCanvas):
+    """
+    Class for the classic snake game mode of the Shadows Snake game.
+    """
     def __init__(self, parent, game_config, logfile, functions, create_button_panel):
         # Create the game logger
         self.logfile = logfile
@@ -24,25 +31,42 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.create_button_panel = create_button_panel
         self.state = 'start_game'
         self.logfile.log_game_event(self.state)
+        # Game configuration
+        self.width = game_config.GAME_WIDTH
+        self.height = game_config.GAME_HEIGHT
+        self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
+        self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
+        self.direction = self.game_config.DIRECTIONOFFSNAKE
+
+        # Game state
         self.score = 0
+        self.game_over_flag = False
+        self.paused = False
+        self.has_changed_direction = False
+
+        # Time-related variables
         self.start_time = None
         self.paused_time = None
         self.total_paused_time = 0
         self.total_time_played = 0
         self.total_time_paused = 0
-        self.game_over_flag = False
-        self.paused = False
-        self.direction = self.game_config.DIRECTIONOFFSNAKE
         self.last_direction_change_time = 0
-        self.has_changed_direction = False
-        self.width = game_config.GAME_WIDTH
-        self.height = game_config.GAME_HEIGHT
-        self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
-        self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
-        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, 
+        self.pause_duration = 0
+        self.high_score_time = 0
+        self.current_time = 0
+
+        # High scores
+        self.high_score = 0
+        self.snake_length_high_score = 0
+
+        # Other variables
+        self.get_time_score = 0
+        self.get_snake_length = 0
+
+        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, # pylint: disable=line-too-long
                          highlightbackground=self.highlightbackground)
 
-        self.snake_canvas = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, 
+        self.snake_canvas = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, # pylint: disable=line-too-long
                                           highlightbackground=self.highlightbackground)
         self.snake_canvas.place(x=500, y=50)
 
@@ -53,15 +77,22 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.game_config = GameConfig(self.logfile, 'classic_snake')
         self.game_labels_panel.classic_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..','config.ini')
+        self.configfile()
 
+    def configfile(self):
+        """
+        Method to read the config file and set the game mode to classic_snake.
+        """
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.ConfigParser()
         self.config.read(self.config_path)
 
-        try:  
+        try:
             self.config.set('Settings', 'game_mode', 'classic_snake')
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
         if not self.config.has_option('Classic_Snake_Values', 'score'):
@@ -86,7 +117,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
                 self.config.write(configfile)
 
         if not self.config.has_option('Classic_Snake_Values', 'snake_length'):
-            self.config.set('Classic_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH))
+            self.config.set('Classic_Snake_Values','snake_length', str(self.game_config.SNAKE_LENGTH)) # pylint: disable=line-too-long
             with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
@@ -99,18 +130,27 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.config.set('Classic_Snake_Settings', 'state', 'start_screen')
             with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
-     
+
         # Start the game loop
         self.start_screen()
         self.bind_and_unbind_keys()
 
     def delete_game_labels(self):
+        """
+        Method to delete the game labels.
+        """
         self.game_labels_panel.classic_delete_labels()
 
     def update_high_score_labels_(self):
+        """
+        Method to update the high score labels.
+        """
         self.game_labels_panel.classic_update_high_score_labels()
 
     def start_screen(self):
+        """
+        Method to display the start screen of the game.
+        """
         self.state = 'start_game'
         self.config.set('Classic_Snake_Settings', 'state', 'start_game')
 
@@ -120,7 +160,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.snake_canvas.delete("all")
         self.snake_canvas.create_text(self.width / 2, self.height / 2,
-                         font= FONT_LIST[12], text="Press 'Space' to start", fill="white", tag="start")
+                         font= FONT_LIST[12], text="Press 'Space' to start", fill="white", tag="start") # pylint: disable=line-too-long
         self.snake_canvas.focus_set()
         self.games_focused()
         self.bind_and_unbind_keys()
@@ -129,6 +169,9 @@ class Snake_Classic_Game(ctk.CTkCanvas):
 
     def pause_game(self, event=None):
         # pylint: disable=unused-argument
+        """
+        Method to pause the game.
+        """
         if self.state == 'game':
             self.logfile.log_game_event("Game paused")
             self.state = 'pause'
@@ -147,23 +190,32 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.bind_and_unbind_keys()
 
     def paused_label(self):
+        """
+        Method to display the paused label on the game screen.
+        """
         self.snake_canvas.create_text(self.width / 2, self.height / 2,
                          font= FONT_LIST[12], text="Game Paused", fill="white", tag="pause")
 
     def games_focused(self, event=None):
         # pylint: disable=unused-argument
-        self.snake_canvas.configure(highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
+        """
+        Method to focus on the game.
+        """
+        self.snake_canvas.configure(highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground) # pylint: disable=line-too-long
         self.logfile.log_game_event("Game focused")
 
     def start_game(self, event=None):
         # pylint: disable=unused-argument
+        """
+        Method to start the game.
+        """
         self.bind_and_unbind_keys()
         self.state = 'game'
         self.bind_and_unbind_keys()
         self.config.read(self.config_path)
         self.high_score = int(self.config.get('Classic_Snake_Values', 'high_score', fallback='0'))
-        self.high_score_time = int(self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0'))
-        self.snake_length_high_score = int(self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0'))
+        self.high_score_time = int(self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0')) # pylint: disable=line-too-long
+        self.snake_length_high_score = int(self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0')) # pylint: disable=line-too-long
         self.game_labels_panel.classic_update_high_score_labels()
         self.config.set('Classic_Snake_Settings', 'state', 'game')
 
@@ -184,6 +236,9 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.next_turn(self.snake, self.food)
 
     def next_turn(self, snake, food):
+        """
+        Method to execute the next turn of the game.
+        """
         x, y = snake.coordinates[0]
 
         if self.paused:
@@ -193,7 +248,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         # Calculate total_time_played only when the game is not paused
         if not self.paused:
             self.current_time = time.time()
-            self.total_time_played = int(self.current_time - self.start_time - self.total_paused_time)
+            self.total_time_played = int(self.current_time - self.start_time - self.total_paused_time) # pylint: disable=line-too-long
             self.logfile.log_game_event(self.total_time_played)
             self.config.set('Classic_Snake_Values', 'time_score', str(self.total_time_played))
             with open('config.ini', 'w', encoding='utf-8') as configfile:
@@ -232,8 +287,8 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             x += self.game_config.CELL_SIZE
 
         snake.coordinates.insert(0, (x, y))
-        square = self.snake_canvas.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y + 
-                                                    self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, outline=self.game_config.SNAKE_OUTLINE)
+        square = self.snake_canvas.create_rectangle(x, y, x + self.game_config.CELL_SIZE, y +
+                                                    self.game_config.CELL_SIZE, fill=self.game_config.SNAKE_COLOR, outline=self.game_config.SNAKE_OUTLINE) # pylint: disable=line-too-long
         snake.squares.insert(0, square)
 
         self.current_time = time.time()
@@ -246,7 +301,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.logfile.log_game_event("snake has a collision")
             self.game_over()
         else:
-            delay = 150 - int(self.game_config.SPEED) 
+            delay = 150 - int(self.game_config.SPEED)
             self.snake_canvas.after(delay, self.next_turn, snake, food)
 
         self.has_changed_direction = False
@@ -256,15 +311,18 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.snake_canvas.update()
 
     def change_direction(self, new_direction):
+        """
+        Method to change the direction of the snake.
+        """
         if not self.has_changed_direction:
             current_time = time.time()
             if current_time - self.last_direction_change_time < 0.01:
                 return
 
-            opposite_directions = [('up', 'down'), ('down', 'up'), ('left', 'right'), ('right', 'left'),
+            opposite_directions = [('up', 'down'), ('down', 'up'), ('left', 'right'), ('right', 'left'), # pylint: disable=line-too-long
                                 ('w', 's'), ('s', 'w'), ('a', 'd'), ('d', 'a')]
 
-            if any([self.direction == current and new_direction == opposite for current, opposite in opposite_directions]):
+            if any([self.direction == current and new_direction == opposite for current, opposite in opposite_directions]): # pylint: disable=line-too-long
                 return
 
             self.direction = new_direction
@@ -272,6 +330,9 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.has_changed_direction = True
 
     def check_collisions(self, snake):
+        """
+        Method to check for collisions in the game.
+        """
         x, y = snake.coordinates[0]
 
         if x < 0 or x >= self.game_config.GAME_WIDTH or y < 0 or y >= self.game_config.GAME_HEIGHT:
@@ -284,16 +345,19 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         return False
 
     def game_over(self):
+        """
+        Method to display the game over screen and run the gameover state.
+        """
         self.state = 'game_over'
         self.bind_and_unbind_keys()
         self.config.set('Classic_Snake_Settings', 'state', 'game_over')
         self.logfile.log_game_event(f"Game state: {self.state}")
         self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")
         self.snake_canvas.delete("all")
-        self.snake_canvas.create_text(self.snake_canvas.winfo_width()/2, self.snake_canvas.winfo_height()/2,
+        self.snake_canvas.create_text(self.snake_canvas.winfo_width()/2, self.snake_canvas.winfo_height()/2, # pylint: disable=line-too-long
                         font= FONT_LIST[16], text="GAME OVER", fill="red", tag="gameover")
-        self.snake_canvas.create_text(self.snake_canvas.winfo_width()/2, self.snake_canvas.winfo_height()/2 + 100,
-                        font= FONT_LIST[10], text="Press R to play again", fill="white", tag="gameover")
+        self.snake_canvas.create_text(self.snake_canvas.winfo_width()/2, self.snake_canvas.winfo_height()/2 + 100, # pylint: disable=line-too-long
+                        font= FONT_LIST[10], text="Press R to play again", fill="white", tag="gameover") # pylint: disable=line-too-long
         # Unbind any previous bindings to avoid conflicts
         self.snake_canvas.unbind('<space>')
         self.bind_and_unbind_keys()
@@ -303,21 +367,24 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         if self.score > self.high_score:
             self.config.set('Classic_Snake_Values', 'high_score', str(self.score))
 
-        self.get_time_score = int(self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0'))
+        self.get_time_score = int(self.config.get('Classic_Snake_Values', 'high_score_time', fallback='0')) # pylint: disable=line-too-long
         if self.total_time_played > self.get_time_score:
-            self.config.set('Classic_Snake_Values', 'high_score_time', str(self.total_time_played))
-            self.logfile.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
+            self.config.set('Classic_Snake_Values', 'high_score_time', str(self.total_time_played)) # pylint: disable=line-too-long
+            self.logfile.log_game_event(f"high_score_time updated to: {self.total_time_played}" ) # pylint: disable=line-too-long
 
-        self.get_snake_length = int(self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0'))
+        self.get_snake_length = int(self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0')) # pylint: disable=line-too-long
         if self.snake_length > self.get_snake_length:
-            self.config.set('Classic_Snake_Values', 'snake_length_high_score', str(self.snake_length))
-            self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
+            self.config.set('Classic_Snake_Values', 'snake_length_high_score', str(self.snake_length)) # pylint: disable=line-too-long
+            self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" ) # pylint: disable=line-too-long
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
     def restart_game(self, event=None):
         # pylint: disable=unused-argument
+        """
+        Method to restart the game.
+        """
         self.bind_and_unbind_keys()
         self.logfile.log_game_event("Game restarted")
         self.logfile.log_game_event(f"Game state: {self.state}")
@@ -328,7 +395,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         # Create a new Snake object
         self.snake = Snake(self.logfile, self.snake_canvas, self.game_config)
         self.food = ClassicFood(self.logfile, self.snake_canvas, self.game_config)
-        self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.get_coordinates()}")
+        self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.get_coordinates()}") # pylint: disable=line-too-long
 
         self.config.read('config.ini')
 
@@ -343,6 +410,9 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.start_game()
 
     def bind_and_unbind_keys(self):
+        """
+        Method to bind and unbind keys based on the game state.
+        """
         # Unbind all events to avoid conflicts
         self.snake_canvas.unbind('<space>') # start the game
         self.snake_canvas.unbind('<Escape>') # pause the game

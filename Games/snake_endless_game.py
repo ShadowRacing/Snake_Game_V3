@@ -98,6 +98,7 @@ class SnakeEndless(ctk.CTkCanvas):
         self.game_config = GameConfig(self.logfile, 'snake_endless')
         self.game_labels_panel_2.endless_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
+        self.configfile()
 
     def configfile(self):
         """

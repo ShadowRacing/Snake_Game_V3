@@ -64,7 +64,7 @@ class SnakeEndless(ctk.CTkCanvas):
         self.current_time = 0
 
         # High scores
-        self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0')) # pylint: disable=line-too-long
+        self.high_score = 0
         self.snake_length_high_score = 0
         self.special_score_high_score = 0
         self.shorten_score_high_score = 0

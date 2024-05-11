@@ -240,7 +240,7 @@ class SettingsOptionButtonLabels:
 
         try:
             if current_theme != initial_theme:
-                if hasattr(self, 'restart_game_theme_label'):
+                if hasattr(self, 'restart_game_theme_label') and self.restart_game_theme_label is not None: # pylint: disable=line-too-long
                     self.restart_game_theme_label.destroy()
                 self.restart_game_theme_label = ctk.CTkLabel(self.settings_canvas,
                                                         width=160,
@@ -254,7 +254,7 @@ class SettingsOptionButtonLabels:
                 with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
             else:
-                if hasattr(self, 'restart_game_theme_label'):
+                if hasattr(self, 'restart_game_theme_label') and self.restart_game_theme_label is not None: # pylint: disable=line-too-long
                     self.restart_game_theme_label.destroy()
                     del self.restart_game_theme_label
                 config.set('Settings', 'label_needed_theme', 'False')
@@ -312,7 +312,7 @@ class SettingsOptionButtonLabels:
 
         try:
             if current_game_size != initial_game_size:
-                if hasattr(self, 'restart_game_game_size_label'):
+                if hasattr(self, 'restart_game_game_size_label')  and self.restart_game_game_size_label is not None:
                     self.restart_game_game_size_label.destroy()
                 self.restart_game_game_size_label = ctk.CTkLabel(self.settings_canvas,
                                                         width=160,
@@ -328,7 +328,7 @@ class SettingsOptionButtonLabels:
 
             else:
                 if current_game_size == initial_game_size:
-                    if hasattr(self, 'restart_game_game_size_label'):
+                    if hasattr(self, 'restart_game_game_size_label') and self.restart_game_game_size_label is not None:
                         self.restart_game_game_size_label.destroy()
                         del self.restart_game_game_size_label
                 config.set('Settings', 'label_needed_game_size', 'False')
@@ -1207,7 +1207,6 @@ class GameLabelsPanel:
                 self.endless_shorten_high_score_label.destroy()
         except ValueError as e:
             traceback.print_exc(e)
-
 
     def leveling_create_game_labels(self):
         """

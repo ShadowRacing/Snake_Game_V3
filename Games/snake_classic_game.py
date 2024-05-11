@@ -128,6 +128,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
         self.game_labels_panel.classic_update_high_score_labels()
 
     def pause_game(self, event=None):
+        # pylint: disable=unused-argument
         if self.state == 'game':
             self.logfile.log_game_event("Game paused")
             self.state = 'pause'
@@ -150,10 +151,12 @@ class Snake_Classic_Game(ctk.CTkCanvas):
                          font= FONT_LIST[12], text="Game Paused", fill="white", tag="pause")
 
     def games_focused(self, event=None):
+        # pylint: disable=unused-argument
         self.snake_canvas.configure(highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
         self.logfile.log_game_event("Game focused")
 
     def start_game(self, event=None):
+        # pylint: disable=unused-argument
         self.bind_and_unbind_keys()
         self.state = 'game'
         self.bind_and_unbind_keys()
@@ -314,6 +317,7 @@ class Snake_Classic_Game(ctk.CTkCanvas):
             self.config.write(configfile)
 
     def restart_game(self, event=None):
+        # pylint: disable=unused-argument
         self.bind_and_unbind_keys()
         self.logfile.log_game_event("Game restarted")
         self.logfile.log_game_event(f"Game state: {self.state}")

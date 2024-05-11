@@ -11,7 +11,7 @@ from os import path
 from Themes.contrast_updater_snake_game import UpdateContrast
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Configuration.constants_snake_game import GameConstants, FONT_LIST, COLORS_DICT
-from Logic.Screen_size_Changer_snake_game import Screen_size
+from Logic.Screen_size_Changer_snake_game import ScreenSize
 from Logic.labelpanel_snake_game import SettingsOptionButtonLabels
 
 class ButtonCommands:
@@ -473,7 +473,7 @@ class OptionButtonPanel:
             self.screen_size_config = self.config.get('Settings', 'screen_size', fallback='Default')
             self.screen_size_var = ctk.StringVar()  # Variable to track the selected value
             self.screen_size_var.set(self.screen_size_config)  # Set the default value
-            self.screen_size_changer = Screen_size(root, self.logfile, self.screen_size_var, self.config, self.screen_size_config)
+            self.screen_size_changer = ScreenSize(root, self.logfile, self.screen_size_var, self.config, self.screen_size_config)
         except Exception as e:
             traceback.print_exc(e)
 

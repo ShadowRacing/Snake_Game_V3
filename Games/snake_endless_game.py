@@ -32,7 +32,7 @@ class SnakeEndless(ctk.CTkCanvas):
         self.functions = functions
         self.create_button_panel = create_button_panel
         self.state = 'start_game'
-        self.game_logger.log_game_event(self.state)
+        self.game_logger.log_game_event(f"Game state: {self.state}")
 
         # Game configuration
         self.width = game_config.GAME_WIDTH

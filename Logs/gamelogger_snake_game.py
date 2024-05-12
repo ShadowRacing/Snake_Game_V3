@@ -11,7 +11,7 @@ import datetime
 import sys
 import os
 
-class game_logger:
+class GameLogger:
     """
     Class for logging the events of the Shadows Snake game.
     """
@@ -54,7 +54,7 @@ class game_logger:
             self.log_file.close()
             self.window.destroy()
 
-class Errorgame_logger:
+class ErrorgameLogger:
     """
     Class for logging the errors of the Shadows Snake game.
     """

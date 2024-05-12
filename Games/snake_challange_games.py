@@ -59,7 +59,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
 
         self.width = game_config.GAME_WIDTH
 
-        self.game_logger.log_game_event(self.state)
+        self.game_logger.log_game_event(f"Game state: {self.state}")
         self.game_logger.log_game_event("Snake challange game started")
         self.game_logger.log_game_event(
             f"Game width: {self.width}"
@@ -68,7 +68,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.game_logger.log_game_event(
             f"Game height: {self.height}"
         )
-        self.game_logger.log_game_event(game_config.SNAKE_LENGTH)
+        self.game_logger.log_game_event(f"Snake length from game_config: {game_config.SNAKE_LENGTH}")
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height,
@@ -160,7 +160,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
         This method is responsible for displaying the start screen of the game.
         """
         self.state = 'start_game'
-        self.game_logger.log_game_event(self.state)
+        self.game_logger.log_game_event(f"Game state: {self.state}")
         self.config.set('food_time_attack_Settings', 'state', 'start_game')
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:

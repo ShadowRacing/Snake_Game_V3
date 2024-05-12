@@ -189,7 +189,7 @@ class ButtonCommands:
         if 'classic_reset_high_score_snake_length' in self.functions:
             self.functions['classic_reset_high_score_snake_length']()
         else:
-            self.game_logger.log_game_event("No function assigned to 'reset_high_score_snake_length'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_snake_length'") # pylint: disable=line-too-long
 
     def endless_reset_high_score_command(self):
         """
@@ -216,7 +216,7 @@ class ButtonCommands:
         if 'endless_reset_high_score_snake_length' in self.functions:
             self.functions['endless_reset_high_score_snake_length']()
         else:
-            self.game_logger.log_game_event("No function assigned to 'reset_high_score_snake_length'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_snake_length'") # pylint: disable=line-too-long
 
     def endless_reset_high_special_score_command(self):
         """
@@ -234,7 +234,7 @@ class ButtonCommands:
         if 'endless_reset_high_score_shorten_snake' in self.functions:
             self.functions['endless_reset_high_score_shorten_snake']()
         else:
-            self.game_logger.log_game_event("No function assigned to 'reset_high_score_shorten_snake'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_shorten_snake'") # pylint: disable=line-too-long
 
     def leveling_reset_high_score_command(self):
         """
@@ -261,7 +261,7 @@ class ButtonCommands:
         if 'leveling_reset_high_score_snake_length' in self.functions:
             self.functions['leveling_reset_high_score_snake_length']()
         else:
-            self.game_logger.log_game_event("No function assigned to 'reset_high_score_snake_length'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_snake_length'") # pylint: disable=line-too-long
 
     def leveling_reset_high_score_special_score_command(self):
         """
@@ -279,7 +279,7 @@ class ButtonCommands:
         if 'leveling_reset_high_score_shorten_snake' in self.functions:
             self.functions['leveling_reset_high_score_shorten_snake']()
         else:
-            self.game_logger.log_game_event("No function assigned to 'reset_high_score_shorten_snake'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_shorten_snake'") # pylint: disable=line-too-long
 
     def leveling_reset_high_scores_xp_command(self):
         """
@@ -413,7 +413,7 @@ class ClickButtonPanel:
         Function for creating the patchnotes button.
         """
         patchnotes_button = ctk.CTkButton(self.button_canvas, text="Patchnotes", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="disabled", #Should ne normal # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal", #Should ne normal # pylint: disable=line-too-long
                                 command=self.button_commands.patchnotes_command)
         patchnotes_button.grid(in_=self.button_canvas, row=14, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
 

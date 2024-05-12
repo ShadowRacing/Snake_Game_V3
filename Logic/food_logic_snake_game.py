@@ -39,12 +39,11 @@ class ClassicFood:
             if len(self.food_items) == 0:  # Check if no food items are currently on the screen
                 x, y = self.generate_random_coordinates(snake_coordinates)
                 food_id = str(uuid.uuid4())
-                self.game_logger.log_game_event("Food ID:")
-                self.game_logger.log_game_event(food_id)
+                self.game_logger.log_game_event(f"Food ID: {food_id}")
                 tag = "food" + food_id
                 oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
                 self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
-                self.game_logger.log_game_event(self.food_items)
+                self.game_logger.log_game_event(f"Food items: {self.food_items}")
         except ValueError as e:
             traceback.print_exc(e)
 
@@ -99,7 +98,7 @@ class EndlessFood:
         Add occupied coordinates to the set.
         """
         self.occupied_coordinates.add((x, y))
-        self.game_logger.log_game_event(self.occupied_coordinates)
+        self.game_logger.log_game_event(f"Occupied coordinates for food: {self.occupied_coordinates}")
 
     def remove_occuppied_coordinates(self, x, y):
         """
@@ -124,14 +123,12 @@ class EndlessFood:
                 x, y = self.generate_random_coordinates(snake_coordinates)
                 self.add_occuppied_coordinates(x, y)
                 food_id = str(uuid.uuid4())
-                self.game_logger.log_game_event("Food ID:")
-                self.game_logger.log_game_event(food_id)
+                self.game_logger.log_game_event(f"Food ID: {food_id}")
                 tag = "food" + food_id
                 oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
                 self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
-                self.game_logger.log_game_event(self.food_items)
-                self.game_logger.log_game_event("Number off food items: ")
-                self.game_logger.log_game_event(self.num_food_items)
+                self.game_logger.log_game_event(f"Food items: {self.food_items}")
+                self.game_logger.log_game_event(f"Number off food items: {self.num_food_items}")
         except ValueError as e:
             traceback.print_exc(e)
 
@@ -145,12 +142,10 @@ class EndlessFood:
                 x, y = self.generate_random_coordinates(snake_coordinates)
                 self.add_occuppied_coordinates(x, y)
                 special_food_id = str(uuid.uuid4())
-                self.game_logger.log_game_event(special_food_id)
                 tag = "specialfood" + special_food_id
                 special_oval_id = self.create_food_oval(x, y, self.game_config.SPECIAL_FOOD_COLOR, tag) # pylint: disable=line-too-long
                 self.special_food_items[special_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': special_oval_id} # pylint: disable=line-too-long
-                self.game_logger.log_game_event("Special Food ID:")
-                self.game_logger.log_game_event(special_food_id)
+                self.game_logger.log_game_event(f"Special Food ID: {special_food_id}")
         except ValueError as e:
             traceback.print_exc(e)
 
@@ -164,12 +159,10 @@ class EndlessFood:
                 x, y = self.generate_random_coordinates(snake_coordinates)
                 self.add_occuppied_coordinates(x, y)
                 shorten_food_id = str(uuid.uuid4())
-                self.game_logger.log_game_event(shorten_food_id)
                 tag = "shortenfood" + shorten_food_id
                 shorten_oval_id = self.create_food_oval(x, y, self.game_config.SHORTEN_FOOD_COLOR, tag) # pylint: disable=line-too-long
                 self.shorten_food_items[shorten_food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': shorten_oval_id} # pylint: disable=line-too-long
-                self.game_logger.log_game_event("Shorten Food ID:")
-                self.game_logger.log_game_event(shorten_food_id)
+                self.game_logger.log_game_event(f"Shorten Food ID: {shorten_food_id}")
         except ValueError as e:
             traceback.print_exc(e)
 
@@ -226,12 +219,11 @@ class LevelingFood:
             if len(self.food_items) == 0:  # Check if no food items are currently on the screen
                 x, y = self.generate_random_coordinates(snake_coordinates)
                 food_id = str(uuid.uuid4())
-                self.game_logger.log_game_event("Food ID:")
-                self.game_logger.log_game_event(food_id)
+                self.game_logger.log_game_event(f"Food ID: {food_id}")
                 tag = "food" + food_id
                 oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
                 self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
-                self.game_logger.log_game_event(self.food_items)
+                self.game_logger.log_game_event(f"Food items: {self.food_items}")
         except ValueError as e:
             traceback.print_exc(e)
 
@@ -278,12 +270,11 @@ class ChallangeFood:
             if len(self.food_items) == 0:  # Check if no food items are currently on the screen
                 x, y = self.generate_random_coordinates(snake_coordinates)
                 food_id = str(uuid.uuid4())
-                self.game_logger.log_game_event("Food ID:")
-                self.game_logger.log_game_event(food_id)
+                self.game_logger.log_game_event(f"Food ID: {food_id}")
                 tag = "food" + food_id
                 oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
                 self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
-                self.game_logger.log_game_event(self.food_items)
+                self.game_logger.log_game_event(f"Food items: {self.food_items}")
         except ValueError as e:
             traceback.print_exc(e)
 

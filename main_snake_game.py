@@ -10,18 +10,19 @@ The main file for the Shadows Snake game.
 import traceback
 import time
 import configparser
+import json
 from os import path
 import customtkinter as ctk
 
 # Importing thhe necessary modules from other folders
-from Logs.gamelogger_snake_game import game_logger , Errorgame_logger
+from Logs.gamelogger_snake_game import GameLogger , ErrorgameLogger
 from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSCREEN
 from Configuration.gameconfig_snake_game import GameConfig
 from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel # pylint: disable=line-too-long
 from Logic.config_ini_initials import ConfigIni
 from Logic.snake_challange_choice import ChallangeChoices
-from Logic.snake_challange_settings import Challange_Settings
+from Logic.snake_challange_settings import ChallangeSettings
 from Games.snake_classic_game import SnakeClassicGame
 from Games.snake_endless_game import SnakeEndless
 from Games.snake_leveling_game import SnakeLeveling
@@ -40,8 +41,8 @@ class SnakeGameApp:
         self.config_ini.set_config()
         time.sleep(1)
         self.root = root
-        self.game_logger = game_logger(root)
-        self.error_game_logger = Errorgame_logger()
+        self.game_logger = GameLogger(root)
+        self.error_game_logger = ErrorgameLogger()
         self.game_logger.log_game_event("Started the GameApp Class")
         self.game_config = GameConfig(game_logger=self.game_logger, game_mode = "initial_config")
         self.update_contrast = UpdateContrast(self.game_logger)
@@ -79,6 +80,9 @@ class SnakeGameApp:
         self.leveling_button_press_variable_high_score = 0
         self.leveling_button_press_variable_high_score_time = 0
         self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5)) # pylint: disable=line-too-long
+
+        self.patchnotes_displayed = False
+        self.scrollable_frame = None
 
         # Creating the main canvas for the app
         self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
@@ -123,7 +127,8 @@ class SnakeGameApp:
             'classic_snake': self.classic_snake,
             'food_time_attack': self.food_time_attack,
             'challange_choices': self.challange_choices,
-            'challange_settings': self.challange_settings
+            'challange_settings': self.challange_settings,
+            'patchnotes': self.patchnotes,
         }
 
         self.create_option_button_panel = None
@@ -147,7 +152,8 @@ class SnakeGameApp:
 
         # Create the home screen
         self.create_home_screen()
-        self.game_logger.log_game_event("start_screen method called")
+        self.game_logger.log_game_event("Home_screen method called")
+        self.root.protocol("WM_DELETE_WINDOW", self.confirm_quit)
 
     # Apply theme from the configuration
     def apply_theme(self):
@@ -159,6 +165,7 @@ class SnakeGameApp:
         theme_path = path.join(theme_dir, 'themes', f"{theme_name}.json")
         try:
             ctk.set_default_color_theme(theme_path)
+            self.game_logger.log_game_event(f"Theme applied: {theme_name}")
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
@@ -260,7 +267,7 @@ class SnakeGameApp:
         elif game_type == "challange_choices":
             self.challange_choice_canvas = ChallangeChoices(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         elif game_type == "challange_settings":
-            self.challange_settings_canvas = Challange_Settings(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+            self.challange_settings_canvas = ChallangeSettings(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         else:
             return
 
@@ -404,6 +411,28 @@ class SnakeGameApp:
 
             x1, y1, x2, y2 = 920, 125, 945, 100
             self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+
+    def patchnotes(self):
+        """
+        Display the patchnotes.
+        """
+        if not hasattr(self, 'patchnotes_displayed'):
+            self.patchnotes_displayed = False
+
+        if not self.patchnotes_displayed:
+            # Create a scrollable frame and load the patchnotes into it
+            self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas)
+            with open("patchnotes.json", "r", encoding='utf-8') as file:
+                patchnotes = json.load(file)
+                for note in patchnotes:
+                    label = ctk.CTkLabel(self.scrollable_frame, text=note)
+                    label.pack()
+            self.scrollable_frame.pack()
+            self.patchnotes_displayed = True
+        else:
+            # Hide the scrollable frame
+            self.scrollable_frame.pack_forget()
+            self.patchnotes_displayed = False
 
     def classic_reset_high_score(self):
         """
@@ -887,6 +916,10 @@ class SnakeGameApp:
             self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
             self.info_canvas = self.destroy_canvas(self.info_canvas)
             self.settings_canvas = self.destroy_canvas(self.settings_canvas)
+
+            # Reset the patchnotes_displayed variable
+            if hasattr(self.button_commands, 'patchnotes_displayed'):
+                self.patchnotes_displayed = False
 
 
             # Show the original main canvas (home screen)

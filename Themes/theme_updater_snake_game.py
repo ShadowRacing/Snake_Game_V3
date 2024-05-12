@@ -43,15 +43,16 @@ class ThemeUpdater:
 
         # Set the 'initial_theme' option to the current theme
         current_theme = self.config.get('Settings', 'theme', fallback='Default')
-        self.game_logger.log_game_event(current_theme)
+        self.game_logger.log_game_event(f"Current Theme: {current_theme}")
         self.config.set('Settings', 'initial_theme', current_theme)
+        self.game_logger.log_game_event(f"Set initial theme to: {current_theme}")
 
         # Write the changes to the config file
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
-        self.game_logger.log_game_event(f"Updated initial_theme in config.ini to {current_theme}")
-        self.game_logger.log_game_event(f"Current initial_theme in config.ini: {self.config.get('Settings', 'initial_theme')}") # pylint: disable=line-too-long
+        self.game_logger.log_game_event(f"Updated initial_theme in config.ini to: {current_theme}")
+        self.game_logger.log_game_event(f"Current initial_theme in config.ini to: {self.config.get('Settings', 'initial_theme')}") # pylint: disable=line-too-long
 
     def load_theme(self, theme_name):
         """

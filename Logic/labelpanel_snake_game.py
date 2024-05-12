@@ -51,9 +51,9 @@ class NameOffFrameLabelPanel:
             label.pack(fill="both", expand=True, padx=1, pady=1)
             label_border.pack(side="bottom", padx=10, pady=10, fill="x")
             label_border_width = label_border.winfo_width()
-            self.game_logger.log_game_event(label_border_width)
+            self.game_logger.log_game_event(f"Label border width: {label_border_width}")
             label_border_height = label_border.winfo_height()
-            self.game_logger.log_game_event(label_border_height)
+            self.game_logger.log_game_event(f"label_border_height: {label_border_height}")
             return label
         except AttributeError as e:
             traceback.print_exc(e)
@@ -277,15 +277,15 @@ class SettingsOptionButtonLabels:
 
         # Set the 'initial_game_size' option to the current theme
         current_game_size = config.get('Settings', 'game_size', fallback='Default')
-        self.game_logger.log_game_event(current_game_size)
         config.set('Settings', 'initial_game_size', current_game_size)
+        self.game_logger.log_game_event(f"Set initial game size to: {current_game_size}")
 
         # Write the changes to the config file
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             config.write(configfile)
 
-        self.game_logger.log_game_event(f"Updated initial_game_size in config.ini to {current_game_size}") # pylint: disable=line-too-long
-        self.game_logger.log_game_event(f"Current initial_game_size in config.ini: {config.get('Settings', 'initial_game_size')}") # pylint: disable=line-too-long
+        self.game_logger.log_game_event(f"Updated initial_game_size in config.ini to: {current_game_size}") # pylint: disable=line-too-long
+        self.game_logger.log_game_event(f"Current initial_game_size in config.ini to: {config.get('Settings', 'initial_game_size')}") # pylint: disable=line-too-long
         # The load_theme method loads a theme from a JSON file. If the file is not found, it logs an error and uses the default theme. # pylint: disable=line-too-long
 
     def create_game_size_label(self):
@@ -307,6 +307,7 @@ class SettingsOptionButtonLabels:
         try:
             if not config.has_option('Settings', 'label_needed_game_size'):
                 config.set('Settings', 'label_needed_game_size', 'False')
+                self.game_logger.log_game_event("Updated label_needed_game_size in config.ini to: False")
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
@@ -323,6 +324,7 @@ class SettingsOptionButtonLabels:
                                                         anchor='w')
                 self.restart_game_game_size_label.place(x=400, y=250)
                 config.set('Settings', 'label_needed_game_size', 'True')
+                self.game_logger.log_game_event("Updated label_needed_game_size in config.ini to: True")
                 with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
 
@@ -332,6 +334,7 @@ class SettingsOptionButtonLabels:
                         self.restart_game_game_size_label.destroy()
                         del self.restart_game_game_size_label
                 config.set('Settings', 'label_needed_game_size', 'False')
+                self.game_logger.log_game_event("Updated label_needed_game_size in config.ini to: False")
                 with open('config.ini', 'w', encoding='utf-8') as configfile:
                     config.write(configfile)
         except FileNotFoundError as e:

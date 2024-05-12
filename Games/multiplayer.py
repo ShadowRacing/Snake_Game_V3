@@ -233,7 +233,7 @@ class MultiPlayer(ctk.CTkCanvas):
         if not self.paused:
             self.current_time = time.time()
             self.total_time_played = int(self.current_time - self.start_time - self.total_paused_time) # pylint: disable=line-too-long
-            self.game_logger.log_game_event(self.total_time_played)
+            self.game_logger.log_game_event(f"Total timeplayed: {self.total_time_played}")
             self.config.set('Leveling_Snake_Values', 'time_score', str(self.total_time_played))
             with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)

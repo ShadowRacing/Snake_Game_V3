@@ -10,7 +10,7 @@ import configparser
 import traceback
 from os import path
 
-from Logic.config_ini_Initials import ConfigIni
+from Logic.config_ini_initials import ConfigIni
 
 class GameConfig:
     """

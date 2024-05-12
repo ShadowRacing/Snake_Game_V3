@@ -18,7 +18,7 @@ import customtkinter as ctk
 from Themes.contrast_updater_snake_game import UpdateContrast
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Configuration.constants_snake_game import GameConstants, FONT_LIST, COLORS_DICT
-from Logic.Screen_size_Changer_snake_game import ScreenSize
+from Logic.screen_size_changer_snake_game import ScreenSize
 from Logic.labelpanel_snake_game import SettingsOptionButtonLabels
 
 class ButtonCommands:

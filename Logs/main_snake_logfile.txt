@@ -33230,3 +33230,108 @@ Game size changed2
 [2024-05-11 16:00:38] Current initial_game_size in config.ini: 600x600
 1
 1
+[2024-05-12 11:18:07] Started the app
+[2024-05-12 11:18:07] Started the GameApp Class
+[2024-05-12 11:18:07] Game mode: initial config
+[2024-05-12 11:18:07] Dark-Blue
+[2024-05-12 11:18:07] Updated initial_theme in config.ini to Dark-Blue
+[2024-05-12 11:18:07] Current initial_theme in config.ini: Dark-Blue
+[2024-05-12 11:18:07] Contrast mode set to dark
+[2024-05-12 11:18:07] 600x600
+[2024-05-12 11:18:07] Updated initial_game_size in config.ini to 600x600
+[2024-05-12 11:18:07] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-05-12 11:18:07] start_screen method called
+[2024-05-12 11:18:09] Game mode: classic_snake
+[2024-05-12 11:18:09] start_game
+[2024-05-12 11:18:09] Reset snake length
+[2024-05-12 11:18:09] Game mode: classic_snake
+[2024-05-12 11:18:09] Game state: start_game
+[2024-05-12 11:18:09] Game focused
+[2024-05-12 11:18:09] 600x600
+[2024-05-12 11:18:09] Updated initial_game_size in config.ini to 600x600
+[2024-05-12 11:18:09] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-05-12 11:18:10] Game mode: snake_endless
+[2024-05-12 11:18:10] start_game
+Width: 600
+Height: 600
+[2024-05-12 11:18:10] Reset snake length
+[2024-05-12 11:18:10] Game mode: snake_endless
+[2024-05-12 11:18:10] Game state: start_game
+[2024-05-12 11:18:10] Game focused
+[2024-05-12 11:18:10] 600x600
+[2024-05-12 11:18:10] Updated initial_game_size in config.ini to 600x600
+[2024-05-12 11:18:10] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-05-12 11:18:11] Game mode: snake_leveling
+[2024-05-12 11:18:11] start_game
+[2024-05-12 11:18:11] Reset snake length
+[2024-05-12 11:18:11] Game mode: snake_leveling
+[2024-05-12 11:18:11] Game state: start_game
+[2024-05-12 11:18:11] Game focused
+[2024-05-12 11:18:11] 600x600
+[2024-05-12 11:18:11] Updated initial_game_size in config.ini to 600x600
+[2024-05-12 11:18:11] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 400
+Game height: 400
+5
+[2024-05-12 11:18:13] 600x600
+[2024-05-12 11:18:13] Updated initial_game_size in config.ini to 600x600
+[2024-05-12 11:18:13] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 400
+Game height: 400
+5
+[2024-05-12 11:18:15] 600x600
+[2024-05-12 11:18:15] Updated initial_game_size in config.ini to 600x600
+[2024-05-12 11:18:15] Current initial_game_size in config.ini: 600x600
+1
+1
+Game width: 400
+Game height: 400
+5
+[2024-05-12 11:18:16] 600x600
+[2024-05-12 11:18:16] Updated initial_game_size in config.ini to 600x600
+[2024-05-12 11:18:16] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-05-12 11:18:18] Game mode: food_time_attack
+[2024-05-12 11:18:18] start_game
+[2024-05-12 11:18:18] Snake challange game started
+Game width: 600
+Game height: 600
+5
+[2024-05-12 11:18:18] Reset snake length
+[2024-05-12 11:18:18] Game mode: food_time_attack
+[2024-05-12 11:18:18] start_game
+[2024-05-12 11:18:18] 600x600
+[2024-05-12 11:18:18] Updated initial_game_size in config.ini to 600x600
+[2024-05-12 11:18:18] Current initial_game_size in config.ini: 600x600
+1
+1
+Deleted score challange
+Deleted high score challange
+Deleted Labels challange
+[2024-05-12 11:18:20] 600x600
+[2024-05-12 11:18:20] Updated initial_game_size in config.ini to 600x600
+[2024-05-12 11:18:20] Current initial_game_size in config.ini: 600x600
+1
+1
+[2024-05-12 11:18:23] Updated the config.ini of theme
+[2024-05-12 11:18:24] Updated the config.ini of theme
+Game size changed
+Game size changed2
+Game size changed
+Game size changed2
+[2024-05-12 11:18:32] Closed the app
+
+
+
+

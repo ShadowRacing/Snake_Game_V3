@@ -21257,3 +21257,13 @@ AttributeError: 'NoneType' object has no attribute 'destroy'
 
 
 [2024-05-11 16:00:11] Started the Error Log File
+[2024-05-12 11:18:07] 
+
+
+[2024-05-12 11:18:07] Started the Error Log File
+[2024-05-12 11:18:32] No errors occurred
+[2024-05-12 11:18:32] Closed the Error Log File
+
+
+
+

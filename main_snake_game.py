@@ -19,7 +19,7 @@ from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSC
 from Configuration.gameconfig_snake_game import GameConfig
 from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel # pylint: disable=line-too-long
-from Logic.config_ini_Initials import ConfigIni
+from Logic.config_ini_initials import ConfigIni
 from Logic.snake_challange_choice import ChallangeChoices
 from Logic.snake_challange_settings import Challange_Settings
 from Games.snake_classic_game import SnakeClassicGame

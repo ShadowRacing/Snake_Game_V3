@@ -596,3 +596,13 @@ TypeError: CTkScrollableFrame.__init__() got an unexpected keyword argument 'bg'
 
 
 
+[2024-05-12 19:51:15] 
+
+
+[2024-05-12 19:51:15] Started the Error Log File
+[2024-05-12 19:51:29] No errors occurred
+[2024-05-12 19:51:29] Closed the Error Log File
+
+
+
+

@@ -18,9 +18,9 @@ class NameOffFrameLabelPanel:
     """
     Class for creating the labels for the game.
     """
-    def __init__(self, parent, logfile, info_callback, settings_callback, game_config):
+    def __init__(self, parent, game_logger, info_callback, settings_callback, game_config):
         self.parent = parent
-        self.logfile = logfile
+        self.game_logger = game_logger
 
         self.game_config = game_config
         self.create_label_canvas_flag = False
@@ -51,9 +51,9 @@ class NameOffFrameLabelPanel:
             label.pack(fill="both", expand=True, padx=1, pady=1)
             label_border.pack(side="bottom", padx=10, pady=10, fill="x")
             label_border_width = label_border.winfo_width()
-            print(label_border_width)
+            self.game_logger.log_game_event(label_border_width)
             label_border_height = label_border.winfo_height()
-            print(label_border_height)
+            self.game_logger.log_game_event(label_border_height)
             return label
         except AttributeError as e:
             traceback.print_exc(e)
@@ -134,8 +134,8 @@ class SettingsOptionButtonLabels:
     """
     Class for creating the labels for the settings options.
     """
-    def __init__(self, logfile, settings_canvas):
-        self.logfile = logfile
+    def __init__(self, game_logger, settings_canvas):
+        self.game_logger = game_logger
         self.settings_canvas = settings_canvas
         self.restart_game_theme_label = None
         self.restart_game_game_size_label = None
@@ -277,15 +277,15 @@ class SettingsOptionButtonLabels:
 
         # Set the 'initial_game_size' option to the current theme
         current_game_size = config.get('Settings', 'game_size', fallback='Default')
-        self.logfile.log_game_event(current_game_size)
+        self.game_logger.log_game_event(current_game_size)
         config.set('Settings', 'initial_game_size', current_game_size)
 
         # Write the changes to the config file
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             config.write(configfile)
 
-        self.logfile.log_game_event(f"Updated initial_game_size in config.ini to {current_game_size}") # pylint: disable=line-too-long
-        self.logfile.log_game_event(f"Current initial_game_size in config.ini: {config.get('Settings', 'initial_game_size')}") # pylint: disable=line-too-long
+        self.game_logger.log_game_event(f"Updated initial_game_size in config.ini to {current_game_size}") # pylint: disable=line-too-long
+        self.game_logger.log_game_event(f"Current initial_game_size in config.ini: {config.get('Settings', 'initial_game_size')}") # pylint: disable=line-too-long
         # The load_theme method loads a theme from a JSON file. If the file is not found, it logs an error and uses the default theme. # pylint: disable=line-too-long
 
     def create_game_size_label(self):
@@ -409,9 +409,9 @@ class GameLabelsPanel:
     """
     Class for creating the labels for the game.
     """
-    def __init__(self, snake_canvas, logfile, game_config):
+    def __init__(self, snake_canvas, game_logger, game_config):
         self.snake_canvas = snake_canvas
-        self.logfile = logfile
+        self.game_logger = game_logger
         self.game_config = game_config
         self.width = game_config.GAME_WIDTH
         self.height = game_config.GAME_HEIGHT
@@ -1705,11 +1705,11 @@ class GameLabelsPanel:
         try:
             if self.challange_score_label is not None:
                 self.challange_score_label.destroy()
-                print('Deleted score challange')
+                self.game_logger.log_game_event('Deleted score challange')
             if self.challange_high_score_label is not None:
                 self.challange_high_score_label.destroy()
-                print('Deleted high score challange')
-            print('Deleted Labels challange')
+                self.game_logger.log_game_event('Deleted high score challange')
+            self.game_logger.log_game_event('Deleted Labels challange')
         except ValueError as e:
             traceback.print_exc(e)
 

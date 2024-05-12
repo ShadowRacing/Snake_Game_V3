@@ -84,6 +84,7 @@ class EndlessFood:
         self.food_coordinates = {}
         self.special_food_coordinates = {}
         self.shorten_food_coordinates = {}
+        self.num_food_items = 0
         self.game_config = game_config
         self.occupied_coordinates = set()
         try:
@@ -98,7 +99,7 @@ class EndlessFood:
         Add occupied coordinates to the set.
         """
         self.occupied_coordinates.add((x, y))
-        print(self.occupied_coordinates)
+        self.game_logger.log_game_event(self.occupied_coordinates)
 
     def remove_occuppied_coordinates(self, x, y):
         """
@@ -116,12 +117,10 @@ class EndlessFood:
         """
         Spawn food on the game canvas.
         """
-        num_food_items = min(score // 50 + 1, 10)
-        self.game_logger.log_game_event("Number off food items: ")
-        self.game_logger.log_game_event(num_food_items)
+        self.num_food_items = min(score // 50 + 1, 10)
 
         try:
-            while len(self.food_items) < num_food_items:
+            while len(self.food_items) < self.num_food_items:
                 x, y = self.generate_random_coordinates(snake_coordinates)
                 self.add_occuppied_coordinates(x, y)
                 food_id = str(uuid.uuid4())
@@ -131,6 +130,8 @@ class EndlessFood:
                 oval_id = self.create_food_oval(x, y, self.game_config.FOOD_COLOR, tag)
                 self.food_items[food_id] = {'x': x, 'y': y, 'tag': tag, 'oval_id': oval_id}
                 self.game_logger.log_game_event(self.food_items)
+                self.game_logger.log_game_event("Number off food items: ")
+                self.game_logger.log_game_event(self.num_food_items)
         except ValueError as e:
             traceback.print_exc(e)
 

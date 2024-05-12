@@ -23,18 +23,18 @@ class MultiPlayer(ctk.CTkCanvas):
     """
     Class for creating the multiplayer version of the Shadows Snake game.
     """
-    def __init__ (self, parent, game_config, logfile, functions, create_button_panel):
+    def __init__ (self, parent, game_config, game_logger, functions, create_button_panel):
         """
         Initialize the MultiPlayer class.
         """
         self.game_config = game_config
-        self.logfile = logfile
+        self.game_logger = game_logger
         self.functions = functions
         self.create_button_panel = create_button_panel
         self.game_config = game_config
 
         self.state = 'start_game'
-        self.logfile.log_game_event(f"Game_state: {self.state}")
+        self.game_logger.log_game_event(f"Game_state: {self.state}")
 
         self.score = 0
         self.high_score = 0
@@ -82,12 +82,12 @@ class MultiPlayer(ctk.CTkCanvas):
                                             highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground) # pylint: disable=line-too-long
         self.snake_canvas_2.place(x=1000, y=600)
 
-        self.snake = Snake(self.logfile, self.snake_canvas_1, game_config)
-        self.snake = Snake(self.logfile, self.snake_canvas_2, game_config)
-        self.food = LevelingFood(self.logfile, self.snake_canvas_1, game_config)
-        self.food = LevelingFood(self.logfile, self.snake_canvas_2, game_config)
-        self.game_labels_panel_4 = GameLabelsPanel(parent, self.logfile,  self.game_config)
-        self.game_config = GameConfig(self.logfile, 'snake_multiplayer')
+        self.snake = Snake(self.game_logger, self.snake_canvas_1, game_config)
+        self.snake = Snake(self.game_logger, self.snake_canvas_2, game_config)
+        self.food = LevelingFood(self.game_logger, self.snake_canvas_1, game_config)
+        self.food = LevelingFood(self.game_logger, self.snake_canvas_2, game_config)
+        self.game_labels_panel_4 = GameLabelsPanel(parent, self.game_logger,  self.game_config)
+        self.game_config = GameConfig(self.game_logger, 'snake_multiplayer')
         self.game_labels_panel_4.leveling_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
 
@@ -127,7 +127,7 @@ class MultiPlayer(ctk.CTkCanvas):
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
-        self.logfile.log_game_event(f"Game state: {self.state}")
+        self.game_logger.log_game_event(f"Game state: {self.state}")
         self.snake_canvas_1.delete("all")
         self.snake_canvas_1.create_text(self.width / 2, self.height / 2,
                          font= FONT_LIST[12], text="Press 'Space' to start", fill="white", tag="start") # pylint: disable=line-too-long
@@ -148,13 +148,13 @@ class MultiPlayer(ctk.CTkCanvas):
         Pause the game.
         """
         if self.state == 'game':
-            self.logfile.log_game_event("Game paused")
+            self.game_logger.log_game_event("Game paused")
             self.state = 'pause'
             self.paused_label()
             self.paused = True
             self.paused_time = time.time()
         elif self.state == 'pause':
-            self.logfile.log_game_event("Game resumed")
+            self.game_logger.log_game_event("Game resumed")
             self.state = 'game'
             self.snake_canvas_1.delete("pause")
             self.snake_canvas_2.delete("pause")
@@ -181,7 +181,7 @@ class MultiPlayer(ctk.CTkCanvas):
         """
         self.snake_canvas_1.configure(highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground) # pylint: disable=line-too-long
         self.snake_canvas_2.configure(highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground) # pylint: disable=line-too-long
-        self.logfile.log_game_event("Game focused")
+        self.game_logger.log_game_event("Game focused")
 
     def start_game(self, event=None):
         # pylint: disable=unused-argument
@@ -202,7 +202,7 @@ class MultiPlayer(ctk.CTkCanvas):
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
-        self.logfile.log_game_event(f"Game state: {self.state}")
+        self.game_logger.log_game_event(f"Game state: {self.state}")
         self.start_time = time.time()
         self.total_paused_time = 0
         self.score = 0
@@ -215,7 +215,7 @@ class MultiPlayer(ctk.CTkCanvas):
         snake_coordinates = self.snake.get_coordinates()
         self.food.spawn_food(snake_coordinates)
 
-        self.logfile.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
+        self.game_logger.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
         self.next_turn(self.snake, self.food)
 
     def next_turn(self, snake, food):
@@ -233,7 +233,7 @@ class MultiPlayer(ctk.CTkCanvas):
         if not self.paused:
             self.current_time = time.time()
             self.total_time_played = int(self.current_time - self.start_time - self.total_paused_time) # pylint: disable=line-too-long
-            self.logfile.log_game_event(self.total_time_played)
+            self.game_logger.log_game_event(self.total_time_played)
             self.config.set('Leveling_Snake_Values', 'time_score', str(self.total_time_played))
             with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
@@ -294,7 +294,7 @@ class MultiPlayer(ctk.CTkCanvas):
             self.config.write(configfile)
 
         if self.check_collisions(snake):
-            self.logfile.log_game_event("snake has a collision")
+            self.game_logger.log_game_event("snake has a collision")
             self.game_over()
         else:
             delay = 150 - int(self.game_config.SPEED)
@@ -350,8 +350,8 @@ class MultiPlayer(ctk.CTkCanvas):
         self.state = 'game_over'
         self.bind_and_unbind_keys()
         self.config.set('Leveling_Snake_Settings', 'state', 'game_over')
-        self.logfile.log_game_event(f"Game state: {self.state}")
-        self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")
+        self.game_logger.log_game_event(f"Game state: {self.state}")
+        self.game_logger.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")
         self.snake_canvas_1.delete("all")
         self.snake_canvas_2.delete("all")
         self.snake_canvas_1.create_text(self.snake_canvas_1.winfo_width()/2, self.snake_canvas_1.winfo_height()/2, # pylint: disable=line-too-long
@@ -367,8 +367,8 @@ class MultiPlayer(ctk.CTkCanvas):
         self.snake_canvas_2.unbind('<space>')
         self.bind_and_unbind_keys()
         self.high_score = int(self.config.get('Leveling_Snake_Values', 'high_score', fallback='0'))
-        self.logfile.log_game_event(f"High score: {self.high_score}")
-        self.logfile.log_game_event(f"Score: {self.score}")
+        self.game_logger.log_game_event(f"High score: {self.high_score}")
+        self.game_logger.log_game_event(f"Score: {self.score}")
         if self.score > self.high_score:
             self.config.set('Multiplayer_Snake_Values', 'high_score', str(self.score))
 
@@ -381,13 +381,13 @@ class MultiPlayer(ctk.CTkCanvas):
         self.get_time_score = int(self.config.get('Multiplayer_Snake_Values', 'high_score_time', fallback='0')) # pylint: disable=line-too-long
         if self.total_time_played > self.get_time_score:
             self.config.set('Multiplayer_Snake_Values', 'high_score_time', str(self.total_time_played)) # pylint: disable=line-too-long
-            self.logfile.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
+            self.game_logger.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
 
 
         self.get_snake_length = int(self.config.get('Multiplayer_Snake_Values', 'snake_length_high_score', fallback='0')) # pylint: disable=line-too-long
         if self.snake_length > self.get_snake_length:
             self.config.set('Multiplayer_Snake_Values', 'snake_length_high_score', str(self.snake_length)) # pylint: disable=line-too-long
-            self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
+            self.game_logger.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
@@ -398,19 +398,19 @@ class MultiPlayer(ctk.CTkCanvas):
         Restart the game.
         """
         self.bind_and_unbind_keys()
-        self.logfile.log_game_event("Game restarted")
-        self.logfile.log_game_event(f"Game state: {self.state}")
+        self.game_logger.log_game_event("Game restarted")
+        self.game_logger.log_game_event(f"Game state: {self.state}")
         self.game_over_flag = False
         self.snake_canvas_1.delete('game_over')
         self.snake_canvas_2.delete('game_over')
         self.direction = self.game_config.DIRECTIONOFFSNAKE
 
         # Create a new Snake object
-        self.snake = Snake(self.logfile, self.snake_canvas_1, self.game_config)
-        self.snake = Snake(self.logfile, self.snake_canvas_2, self.game_config)
-        self.food = LevelingFood(self.logfile, self.snake_canvas_1, self.game_config)
-        self.food = LevelingFood(self.logfile, self.snake_canvas_2, self.game_config)
-        self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.get_coordinates()}") # pylint: disable=line-too-long
+        self.snake = Snake(self.game_logger, self.snake_canvas_1, self.game_config)
+        self.snake = Snake(self.game_logger, self.snake_canvas_2, self.game_config)
+        self.food = LevelingFood(self.game_logger, self.snake_canvas_1, self.game_config)
+        self.food = LevelingFood(self.game_logger, self.snake_canvas_2, self.game_config)
+        self.game_logger.log_game_event(f"Snake coordinates after reset: {self.snake.get_coordinates()}") # pylint: disable=line-too-long
 
         self.config.read('config.ini')
 

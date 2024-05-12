@@ -13,8 +13,8 @@ class ThemeUpdater:
     """
     Class for updating the theme of the Shadows Snake game.
     """
-    def __init__(self, logfile):
-        self.logfile = logfile
+    def __init__(self, game_logger):
+        self.game_logger = game_logger
         self.config = configparser.ConfigParser()
         self.config.read("config.ini")
         self.themes = {
@@ -43,15 +43,15 @@ class ThemeUpdater:
 
         # Set the 'initial_theme' option to the current theme
         current_theme = self.config.get('Settings', 'theme', fallback='Default')
-        self.logfile.log_game_event(current_theme)
+        self.game_logger.log_game_event(current_theme)
         self.config.set('Settings', 'initial_theme', current_theme)
 
         # Write the changes to the config file
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 
-        self.logfile.log_game_event(f"Updated initial_theme in config.ini to {current_theme}")
-        self.logfile.log_game_event(f"Current initial_theme in config.ini: {self.config.get('Settings', 'initial_theme')}") # pylint: disable=line-too-long
+        self.game_logger.log_game_event(f"Updated initial_theme in config.ini to {current_theme}")
+        self.game_logger.log_game_event(f"Current initial_theme in config.ini: {self.config.get('Settings', 'initial_theme')}") # pylint: disable=line-too-long
 
     def load_theme(self, theme_name):
         """
@@ -62,7 +62,7 @@ class ThemeUpdater:
             with open(path.join(theme_dir, f"{theme_name}.json"), "r", encoding="utf-8") as theme_file: # pylint: disable=line-too-long`
                 theme = json.load(theme_file)
         except FileNotFoundError:
-            self.logfile.log_game_event(f"Theme file {theme_name}.json not found in {theme_dir}. Using default theme.") # pylint: disable=line-too-long
+            self.game_logger.log_game_event(f"Theme file {theme_name}.json not found in {theme_dir}. Using default theme.") # pylint: disable=line-too-long
             theme = self.themes["Default"]
         return theme
 
@@ -73,7 +73,7 @@ class ThemeUpdater:
         self.config.set('Settings', 'theme', selected_value)
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
-        self.logfile.log_game_event("Updated the config.ini of theme")
+        self.game_logger.log_game_event("Updated the config.ini of theme")
 
 # *****************************************
 # Shadows Snake Theme Updater File

@@ -18,9 +18,9 @@ class UpdateContrast:
     This class provides methods to apply a contrast setting and update the contrast setting
     in the config.ini file.
     """
-    def __init__(self, logfile):
+    def __init__(self, game_logger):
         #Initializing variables
-        self.logfile = logfile
+        self.game_logger = game_logger
         self.config = configparser.ConfigParser()
         self.config.read('config.ini')
 
@@ -43,16 +43,16 @@ class UpdateContrast:
         self.update_config_contrast(selected_value)
         if selected_value == 'Dark':
             ctk.set_appearance_mode('dark')
-            self.logfile.log_game_event("Contrast mode set to dark")
+            self.game_logger.log_game_event("Contrast mode set to dark")
         elif selected_value == 'Light':
             ctk.set_appearance_mode('light')
-            self.logfile.log_game_event("Contrast mode set to light")
+            self.game_logger.log_game_event("Contrast mode set to light")
         elif selected_value == 'System':
             ctk.set_appearance_mode('system')
-            self.logfile.log_game_event("Contrast mode set to system")
+            self.game_logger.log_game_event("Contrast mode set to system")
         else:
             ctk.set_appearance_mode('dark')
-            self.logfile.log_game_event("Contrast mode set to dark")
+            self.game_logger.log_game_event("Contrast mode set to dark")
 
     def update_config_contrast(self, selected_value):
         """

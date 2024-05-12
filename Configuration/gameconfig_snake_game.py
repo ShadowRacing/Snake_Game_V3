@@ -16,11 +16,11 @@ class GameConfig:
     """
     Class for the game configuration of the Shadows Snake game.
     """
-    def __init__(self, logfile, game_mode):
+    def __init__(self, game_logger, game_mode):
         # Initializing variables
         self.config_ini = ConfigIni()
         self.config_ini.set_config()
-        self.logfile = logfile
+        self.game_logger = game_logger
         self.TIME_PLAYED = 0 # pylint: disable=invalid-name
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
@@ -183,7 +183,7 @@ class GameConfig:
                 self.HIGHLIGHTTHICKNESS = 5 # pylint: disable=invalid-name
                 self.HIGHLIGHTBACKGROUND = 'Black' # pylint: disable=invalid-name
                 self.DIRECTIONOFFSNAKE = "down" # pylint: disable=invalid-name
-                self.logfile.log_game_event("Game mode: initial config")
+                self.game_logger.log_game_event("Game mode: initial config")
 
             elif game_mode == "classic_snake":
                 self.GAME_WIDTH = self.game_width # pylint: disable=invalid-name
@@ -199,7 +199,7 @@ class GameConfig:
                 self.HIGHLIGHTTHICKNESS = 5 # pylint: disable=invalid-name
                 self.HIGHLIGHTBACKGROUND = 'Black' # pylint: disable=invalid-name
                 self.DIRECTIONOFFSNAKE = "down" # pylint: disable=invalid-name
-                self.logfile.log_game_event("Game mode: classic_snake")
+                self.game_logger.log_game_event("Game mode: classic_snake")
 
             elif game_mode == "snake_endless":
                 self.GAME_WIDTH = self.game_width # pylint: disable=invalid-name
@@ -216,7 +216,7 @@ class GameConfig:
                 self.HIGHLIGHTTHICKNESS = 5 # pylint: disable=invalid-name
                 self.HIGHLIGHTBACKGROUND = 'Black' # pylint: disable=invalid-name
                 self.DIRECTIONOFFSNAKE = "down" # pylint: disable=invalid-name
-                self.logfile.log_game_event("Game mode: snake_endless")
+                self.game_logger.log_game_event("Game mode: snake_endless")
 
             elif game_mode == "snake_leveling":
                 self.GAME_WIDTH = 400 # pylint: disable=invalid-name
@@ -232,7 +232,7 @@ class GameConfig:
                 self.HIGHLIGHTTHICKNESS = 5 # pylint: disable=invalid-name
                 self.HIGHLIGHTBACKGROUND = 'Black' # pylint: disable=invalid-name
                 self.DIRECTIONOFFSNAKE = "down" # pylint: disable=invalid-name
-                self.logfile.log_game_event("Game mode: snake_leveling")
+                self.game_logger.log_game_event("Game mode: snake_leveling")
 
             elif game_mode == "food_time_attack":
                 self.GAME_WIDTH = self.game_width # pylint: disable=invalid-name
@@ -248,7 +248,7 @@ class GameConfig:
                 self.HIGHLIGHTTHICKNESS = 5 # pylint: disable=invalid-name
                 self.HIGHLIGHTBACKGROUND = 'Black' # pylint: disable=invalid-name
                 self.DIRECTIONOFFSNAKE = "down" # pylint: disable=invalid-name
-                self.logfile.log_game_event("Game mode: food_time_attack")
+                self.game_logger.log_game_event("Game mode: food_time_attack")
 
         except ValueError as e:
             traceback.print_exc(e)

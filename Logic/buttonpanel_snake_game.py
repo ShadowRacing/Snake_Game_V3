@@ -25,9 +25,9 @@ class ButtonCommands:
     """
     Class for assigning functions to button commands.
     """
-    def __init__(self, logfile, functions):
+    def __init__(self, game_logger, functions):
         self.functions = functions
-        self.logfile = logfile
+        self.game_logger = game_logger
 
     def home_command(self):
         """
@@ -36,7 +36,7 @@ class ButtonCommands:
         if 'return_home' in self.functions:
             self.functions['return_home']()
         else:
-            self.logfile.log_game_event("No function assigned to 'home'")
+            self.game_logger.log_game_event("No function assigned to 'home'")
 
     def quit_command(self):
         """
@@ -45,7 +45,7 @@ class ButtonCommands:
         if 'confirm_quit' in self.functions:
             self.functions['confirm_quit']()
         else:
-            self.logfile.log_game_event("No function assigned to 'confirm_quit'")
+            self.game_logger.log_game_event("No function assigned to 'confirm_quit'")
 
     def settings_command(self):
         """
@@ -54,7 +54,7 @@ class ButtonCommands:
         if 'open_settings' in self.functions:
             self.functions['open_settings']()
         else:
-            self.logfile.log_game_event("No function assigned to 'open_settings'")
+            self.game_logger.log_game_event("No function assigned to 'open_settings'")
 
     def info_command(self):
         """
@@ -63,7 +63,7 @@ class ButtonCommands:
         if 'open_info' in self.functions:
             self.functions['open_info']()
         else:
-            self.logfile.log_game_event("No function assigned to 'info'")
+            self.game_logger.log_game_event("No function assigned to 'info'")
 
     def patchnotes_command(self):
         """
@@ -72,7 +72,7 @@ class ButtonCommands:
         if 'patchnotes' in self.functions:
             self.functions['patchnotes']()
         else:
-            self.logfile.log_game_event("No function assigned to 'patchnotes'")
+            self.game_logger.log_game_event("No function assigned to 'patchnotes'")
 
     def classic_snake_command(self):
         """
@@ -81,7 +81,7 @@ class ButtonCommands:
         if 'classic_snake' in self.functions:
             self.functions['classic_snake']()
         else:
-            self.logfile.log_game_event("No function assigned to 'classic_snake'")
+            self.game_logger.log_game_event("No function assigned to 'classic_snake'")
 
     def snake_endless_command(self):
         """
@@ -90,7 +90,7 @@ class ButtonCommands:
         if 'snake_endless' in self.functions:
             self.functions['snake_endless']()
         else:
-            self.logfile.log_game_event("No function assigned to 'snake_endless'")
+            self.game_logger.log_game_event("No function assigned to 'snake_endless'")
 
     def snake_leveling_command(self):
         """
@@ -99,7 +99,7 @@ class ButtonCommands:
         if 'snake_leveling' in self.functions:
             self.functions['snake_leveling']()
         else:
-            self.logfile.log_game_event("No function assigned to 'snake_leveling'")
+            self.game_logger.log_game_event("No function assigned to 'snake_leveling'")
 
     def challange_choices_command(self):
         """
@@ -108,7 +108,7 @@ class ButtonCommands:
         if 'challange_choices' in self.functions:
             self.functions['challange_choices']()
         else:
-            self.logfile.log_game_event("No function assigned to 'challange_choice'")
+            self.game_logger.log_game_event("No function assigned to 'challange_choice'")
 
     def challange_settings_command(self):
         """
@@ -117,7 +117,7 @@ class ButtonCommands:
         if 'challange_settings' in self.functions:
             self.functions['challange_settings']()
         else:
-            self.logfile.log_game_event("No function assigned to 'challange_settings'")
+            self.game_logger.log_game_event("No function assigned to 'challange_settings'")
 
     def time_attack_command(self):
         """
@@ -126,7 +126,7 @@ class ButtonCommands:
         if 'time_attack' in self.functions:
             self.functions['time_attack']()
         else:
-            self.logfile.log_game_event("No function assigned to 'time_attack'")
+            self.game_logger.log_game_event("No function assigned to 'time_attack'")
 
     def food_time_attack_command(self):
         """
@@ -135,7 +135,7 @@ class ButtonCommands:
         if 'food_time_attack' in self.functions:
             self.functions['food_time_attack']()
         else:
-            self.logfile.log_game_event("No function assigned to 'food_time_attack'")
+            self.game_logger.log_game_event("No function assigned to 'food_time_attack'")
 
     def snake_color_command(self):
         """
@@ -144,7 +144,7 @@ class ButtonCommands:
         if 'snake_color' in self.functions:
             self.functions['snake_color']()
         else:
-            self.logfile.log_game_event("No function assigned to 'snake_color'")
+            self.game_logger.log_game_event("No function assigned to 'snake_color'")
 
     def snake_outline_command(self):
         """
@@ -153,7 +153,7 @@ class ButtonCommands:
         if 'snake_outline' in self.functions:
             self.functions['snake_outline']()
         else:
-            self.logfile.log_game_event("No function assigned to 'snake_outline'")
+            self.game_logger.log_game_event("No function assigned to 'snake_outline'")
 
     def snake_length_command(self):
         """
@@ -162,7 +162,7 @@ class ButtonCommands:
         if 'snake_length' in self.functions:
             self.functions['snake_length']()
         else:
-            self.logfile.log_game_event("No function assigned to 'snake_length'")
+            self.game_logger.log_game_event("No function assigned to 'snake_length'")
 
     def classic_reset_high_score_command(self):
         """
@@ -171,7 +171,7 @@ class ButtonCommands:
         if 'classic_reset_high_score' in self.functions:
             self.functions['classic_reset_high_score']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score'")
 
     def classic_reset_high_score_time_command(self):
         """
@@ -180,7 +180,7 @@ class ButtonCommands:
         if 'classic_reset_high_score_time' in self.functions:
             self.functions['classic_reset_high_score_time']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score_time'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_time'")
 
     def classic_reset_high_score_snake_length_command(self):
         """
@@ -189,7 +189,7 @@ class ButtonCommands:
         if 'classic_reset_high_score_snake_length' in self.functions:
             self.functions['classic_reset_high_score_snake_length']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score_snake_length'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_snake_length'")
 
     def endless_reset_high_score_command(self):
         """
@@ -198,7 +198,7 @@ class ButtonCommands:
         if 'endless_reset_high_score' in self.functions:
             self.functions['endless_reset_high_score']()
         else:
-            self.logfile.log_game_event("No function assigned to 'endless_reset_high_score'")
+            self.game_logger.log_game_event("No function assigned to 'endless_reset_high_score'")
 
     def endless_reset_high_score_time_command(self):
         """
@@ -207,7 +207,7 @@ class ButtonCommands:
         if 'endless_reset_high_score_time' in self.functions:
             self.functions['endless_reset_high_score_time']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score_time'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_time'")
 
     def endless_reset_high_score_snake_length_command(self):
         """
@@ -216,7 +216,7 @@ class ButtonCommands:
         if 'endless_reset_high_score_snake_length' in self.functions:
             self.functions['endless_reset_high_score_snake_length']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score_snake_length'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_snake_length'")
 
     def endless_reset_high_special_score_command(self):
         """
@@ -225,7 +225,7 @@ class ButtonCommands:
         if 'endless_reset_high_score_special_score' in self.functions:
             self.functions['endless_reset_high_score_special_score']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_special_score'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_special_score'")
 
     def endless_reset_high_score_shorten_snake_command(self):
         """
@@ -234,7 +234,7 @@ class ButtonCommands:
         if 'endless_reset_high_score_shorten_snake' in self.functions:
             self.functions['endless_reset_high_score_shorten_snake']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score_shorten_snake'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_shorten_snake'")
 
     def leveling_reset_high_score_command(self):
         """
@@ -243,7 +243,7 @@ class ButtonCommands:
         if 'leveling_reset_high_score' in self.functions:
             self.functions['leveling_reset_high_score']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score'")
 
     def leveling_reset_high_score_time_command(self):
         """
@@ -252,7 +252,7 @@ class ButtonCommands:
         if 'leveling_reset_high_score_time' in self.functions:
             self.functions['leveling_reset_high_score_time']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score_time'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_time'")
 
     def leveling_reset_high_score_snake_length_command(self):
         """
@@ -261,7 +261,7 @@ class ButtonCommands:
         if 'leveling_reset_high_score_snake_length' in self.functions:
             self.functions['leveling_reset_high_score_snake_length']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score_snake_length'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_snake_length'")
 
     def leveling_reset_high_score_special_score_command(self):
         """
@@ -270,7 +270,7 @@ class ButtonCommands:
         if 'leveling_reset_high_score_special_score' in self.functions:
             self.functions['leveling_reset_high_score_special_score']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_special_score'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_special_score'")
 
     def leveling_reset_high_score_shorten_snake_command(self):
         """
@@ -279,7 +279,7 @@ class ButtonCommands:
         if 'leveling_reset_high_score_shorten_snake' in self.functions:
             self.functions['leveling_reset_high_score_shorten_snake']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score_shorten_snake'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_shorten_snake'")
 
     def leveling_reset_high_scores_xp_command(self):
         """
@@ -288,7 +288,7 @@ class ButtonCommands:
         if 'leveling_reset_high_scores_xp' in self.functions:
             self.functions['leveling_reset_high_scores_xp']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_scores_xp'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_scores_xp'")
 
     def leveling_reset_high_score_level_command(self):
         """
@@ -297,7 +297,7 @@ class ButtonCommands:
         if 'leveling_reset_high_score_level' in self.functions:
             self.functions['leveling_reset_high_score_level']()
         else:
-            self.logfile.log_game_event("No function assigned to 'reset_high_score_level'")
+            self.game_logger.log_game_event("No function assigned to 'reset_high_score_level'")
 
     def game_size_command(self):
         """
@@ -306,7 +306,7 @@ class ButtonCommands:
         if 'game_size' in self.functions:
             self.functions['game_size']()
         else:
-            self.logfile.log_game_event("No function assigned to 'game_size'")
+            self.game_logger.log_game_event("No function assigned to 'game_size'")
 
     def snake_speed_command(self):
         """
@@ -315,7 +315,7 @@ class ButtonCommands:
         if 'snake_speed' in self.functions:
             self.functions['snake_speed']()
         else:
-            self.logfile.log_game_event("No function assigned to 'snake_speed'")
+            self.game_logger.log_game_event("No function assigned to 'snake_speed'")
 
     def destroy_canvas(self):
         """
@@ -324,26 +324,26 @@ class ButtonCommands:
         if 'destroy_canvas' in self.functions:
             self.functions['destroy_canvas']()
         else:
-            self.logfile.log_game_event("No function assigned to 'destroy_canvas'")
+            self.game_logger.log_game_event("No function assigned to 'destroy_canvas'")
 
 # Class for creating the button panel
 class ClickButtonPanel:
     """
     Class for creating the button panel of the Shadows Snake game.
     """
-    def __init__(self, parent, logfile, functions, home_button=None):
+    def __init__(self, parent, game_logger, functions, home_button=None):
         # Initializing variables
         self.parent = parent
-        self.logfile = logfile
+        self.game_logger = game_logger
         self.functions = functions
         self.home_button = home_button
-        self.theme_updater = ThemeUpdater(self.logfile)
+        self.theme_updater = ThemeUpdater(self.game_logger)
 
         # Managing the buttons height and width
         self.button_width = GameConstants.BUTTON_WIDTH
         self.button_height = GameConstants.BUTTON_HEIGHT
 
-        self.button_commands = ButtonCommands(self.logfile, self.functions)
+        self.button_commands = ButtonCommands(self.game_logger, self.functions)
 
         # Creating a separate canvas for the buttons
         self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
@@ -667,11 +667,11 @@ class OptionButtonPanel:
     """
     Class for creating the option button panel of the Shadows Snake game.
     """
-    def __init__(self, root, settings_canvas, logfile):
+    def __init__(self, root, settings_canvas, game_logger):
         # Initializing variables
         self.settings_canvas = settings_canvas
-        self.logfile = logfile
-        self.label_panel = SettingsOptionButtonLabels(logfile, self.settings_canvas)
+        self.game_logger = game_logger
+        self.label_panel = SettingsOptionButtonLabels(game_logger, self.settings_canvas)
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.RawConfigParser()
@@ -691,7 +691,7 @@ class OptionButtonPanel:
             self.screen_size_config = self.config.get('Settings', 'screen_size', fallback='Default')
             self.screen_size_var = ctk.StringVar()  # Variable to track the selected value
             self.screen_size_var.set(self.screen_size_config)  # Set the default value
-            self.screen_size_changer = ScreenSize(root, self.logfile, self.screen_size_var, self.config, self.screen_size_config) # pylint: disable=line-too-long
+            self.screen_size_changer = ScreenSize(root, self.game_logger, self.screen_size_var, self.config, self.screen_size_config) # pylint: disable=line-too-long
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
@@ -700,7 +700,7 @@ class OptionButtonPanel:
             self.theme_config = self.config.get('Settings', 'theme', fallback='Default')
             self.theme_var = ctk.StringVar()  # Variable to track the selected value
             self.theme_var.set(self.theme_config)
-            self.theme_changer = ThemeUpdater(self.logfile)
+            self.theme_changer = ThemeUpdater(self.game_logger)
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
@@ -709,7 +709,7 @@ class OptionButtonPanel:
             self.contrast_config = self.config.get('Settings', 'contrast', fallback='Default')
             self.contrast_mode = ctk.StringVar()
             self.contrast_mode.set(self.contrast_config)
-            self.contrast_updater = UpdateContrast(self.logfile)
+            self.contrast_updater = UpdateContrast(self.game_logger)
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
@@ -791,11 +791,11 @@ class OptionButtonPanel:
         """
         try:
             self.config.set('Settings', 'game_size', selected_value)
-            print("Game size changed")
+            self.game_logger.log_game_event("Game size changed")
             with open(self.config_path, 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
             self.label_panel.create_game_size_label()
-            print("Game size changed2")
+            self.game_logger.log_game_event("Game size changed2")
         except FileNotFoundError as e:
             traceback.print_exc(e)
 

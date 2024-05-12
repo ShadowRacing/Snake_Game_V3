@@ -11,7 +11,7 @@ import datetime
 import sys
 import os
 
-class LogFile:
+class game_logger:
     """
     Class for logging the events of the Shadows Snake game.
     """
@@ -24,7 +24,7 @@ class LogFile:
         script_dir = os.path.dirname(os.path.abspath(__file__))
 
         # Create the log filename
-        self.log_filename = os.path.join(script_dir, "main_snake_logfile.txt")
+        self.log_filename = os.path.join(script_dir, "main_snake_game_logger.txt")
 
         # Open the file in append mode
         self.log_file = open(self.log_filename, 'a', encoding='utf-8')
@@ -54,7 +54,7 @@ class LogFile:
             self.log_file.close()
             self.window.destroy()
 
-class ErrorLogFile:
+class Errorgame_logger:
     """
     Class for logging the errors of the Shadows Snake game.
     """
@@ -65,7 +65,7 @@ class ErrorLogFile:
         script_dir = os.path.dirname(os.path.abspath(__file__))
 
         # Create the log filename
-        self.error_log_filename = os.path.join(script_dir, "error_snake_logfile.txt")
+        self.error_log_filename = os.path.join(script_dir, "error_snake_game_logger.txt")
 
         # Open the file in append mode
         self.error_log_filename = open(self.error_log_filename, 'a', encoding='utf-8')

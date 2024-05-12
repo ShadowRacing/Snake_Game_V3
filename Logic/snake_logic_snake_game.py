@@ -12,8 +12,8 @@ class Snake:
     """
     Class for managing the snake in the Shadows Snake game.
     """
-    def __init__(self, logfile, canvas, game_config):
-        self.logfile = logfile
+    def __init__(self, game_logger, canvas, game_config):
+        self.game_logger = game_logger
         self.game_config = game_config  # Add this line to store the game_config
         self.body_size = self.game_config.SNAKE_LENGTH
         self.coordinates = []
@@ -41,7 +41,7 @@ class Snake:
                                                       tag="snake", outline= self.game_config.SNAKE_OUTLINE, width=0.5) # pylint: disable=line-too-long
                 self.squares.append(square)
 
-            self.logfile.log_game_event("Reset snake length")
+            self.game_logger.log_game_event("Reset snake length")
         except ValueError as e:
             traceback.print_exc(e)
 

@@ -24,7 +24,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
     '''
     Class representing the food in the time attack mode of the game.
     '''
-    def __init__(self, parent, game_config, logfile, functions, create_button_panel):
+    def __init__(self, parent, game_config, game_logger, functions, create_button_panel):
         """
         Class representing the food in the time attack mode of the game.
 
@@ -33,7 +33,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
         """
         self.parent = parent
         self.game_config = game_config
-        self.logfile = logfile
+        self.game_logger = game_logger
         self.functions = functions
         self.create_button_panel = create_button_panel
 
@@ -59,16 +59,16 @@ class FoodTimeAttack(ctk.CTkCanvas):
 
         self.width = game_config.GAME_WIDTH
 
-        self.logfile.log_game_event(self.state)
-        self.logfile.log_game_event("Snake challange game started")
-        print(
+        self.game_logger.log_game_event(self.state)
+        self.game_logger.log_game_event("Snake challange game started")
+        self.game_logger.log_game_event(
             f"Game width: {self.width}"
         )
         self.height = game_config.GAME_HEIGHT
-        print(
+        self.game_logger.log_game_event(
             f"Game height: {self.height}"
         )
-        print(game_config.SNAKE_LENGTH)
+        self.game_logger.log_game_event(game_config.SNAKE_LENGTH)
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height,
@@ -81,10 +81,10 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.snake_canvas.place(x=500, y=50)
 
         # Create the snake and the food
-        self.snake = Snake(self.logfile, self.snake_canvas, game_config)
-        self.food = ChallangeFood(self.logfile, self.snake_canvas, game_config)
-        self.game_labels_panel_4 = GameLabelsPanel(parent, self.logfile,  self.game_config)
-        self.game_config = GameConfig(self.logfile, 'food_time_attack')
+        self.snake = Snake(self.game_logger, self.snake_canvas, game_config)
+        self.food = ChallangeFood(self.game_logger, self.snake_canvas, game_config)
+        self.game_labels_panel_4 = GameLabelsPanel(parent, self.game_logger,  self.game_config)
+        self.game_config = GameConfig(self.game_logger, 'food_time_attack')
         self.game_labels_panel_4.challange_create_game_labels()
         self.snake_length = self.game_config.SNAKE_LENGTH
 
@@ -120,7 +120,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
 
         if not self.config.has_option('food_time_attack_Values', 'high_score_time'):
             self.config.set('food_time_attack_Values','high_score_time', '0')
-            self.logfile.log_game_event("high_score_time added")
+            self.game_logger.log_game_event("high_score_time added")
             with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
 
@@ -160,7 +160,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
         This method is responsible for displaying the start screen of the game.
         """
         self.state = 'start_game'
-        self.logfile.log_game_event(self.state)
+        self.game_logger.log_game_event(self.state)
         self.config.set('food_time_attack_Settings', 'state', 'start_game')
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:
@@ -194,7 +194,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
-        self.logfile.log_game_event(f"Game state: {self.state}")
+        self.game_logger.log_game_event(f"Game state: {self.state}")
         self.start_time = time.time()
         self.total_paused_time = 0
         self.score = 0
@@ -202,7 +202,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.snake_canvas.delete("all")
         snake_coordinates = self.snake.get_coordinates()
         self.food.spawn_food(snake_coordinates)
-        self.logfile.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
+        self.game_logger.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
         self.next_turn(self.snake, self.food)
 
     def next_turn(self, snake, food):
@@ -260,7 +260,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
             self.win_condition()
 
         elif self.check_collisions(snake):
-            self.logfile.log_game_event("snake has a collision")
+            self.game_logger.log_game_event("snake has a collision")
             self.game_over()
         else:
             delay = 150 - int(self.game_config.SPEED)
@@ -312,8 +312,8 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.state = 'game_over'
         self.bind_and_unbind_keys()
         self.config.set('food_time_attack_Settings', 'state', 'game_over')
-        self.logfile.log_game_event(f"Game state: {self.state}")
-        self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")
+        self.game_logger.log_game_event(f"Game state: {self.state}")
+        self.game_logger.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")
         self.snake_canvas.delete("all")
         self.snake_canvas.create_text(self.snake_canvas.winfo_width()/2, self.snake_canvas.winfo_height()/2, # pylint: disable=line-too-long
                         font= FONT_LIST[16], text="GAME OVER", fill="red", tag="gameover")
@@ -323,8 +323,8 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.snake_canvas.unbind('<space>')
         self.bind_and_unbind_keys()
         self.high_score = int(self.config.get('food_time_attack_Values', 'high_score', fallback='0')) # pylint: disable=line-too-long
-        self.logfile.log_game_event(f"High score: {self.high_score}")
-        self.logfile.log_game_event(f"Score: {self.score}")
+        self.game_logger.log_game_event(f"High score: {self.high_score}")
+        self.game_logger.log_game_event(f"Score: {self.score}")
         if self.score > self.high_score:
             self.config.set('food_time_attack_Values', 'high_score', str(self.score))
 
@@ -332,13 +332,13 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.get_time_score = int(self.config.get('food_time_attack_Values', 'high_score_time', fallback='0')) # pylint: disable=line-too-long
         if self.total_time_played > self.get_time_score:
             self.config.set('food_time_attack_Values', 'high_score_time', str(self.total_time_played)) # pylint: disable=line-too-long
-            self.logfile.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
+            self.game_logger.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
 
 
         self.get_snake_length = int(self.config.get('food_time_attack_Values', 'snake_length_high_score', fallback='0')) # pylint: disable=line-too-long
         if self.snake_length > self.get_snake_length:
             self.config.set('food_time_attack_Values', 'snake_length_high_score', str(self.snake_length)) # pylint: disable=line-too-long
-            self.logfile.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
+            self.game_logger.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
@@ -349,16 +349,16 @@ class FoodTimeAttack(ctk.CTkCanvas):
         This method is responsible for restarting the game.
         """
         self.bind_and_unbind_keys()
-        self.logfile.log_game_event("Game restarted")
-        self.logfile.log_game_event(f"Game state: {self.state}")
+        self.game_logger.log_game_event("Game restarted")
+        self.game_logger.log_game_event(f"Game state: {self.state}")
         self.game_over_flag = False
         self.snake_canvas.delete('game_over')
         self.direction = self.game_config.DIRECTIONOFFSNAKE
 
         # Create a new Snake object
-        self.snake = Snake(self.logfile, self.snake_canvas, self.game_config)
-        self.food = ChallangeFood(self.logfile, self.snake_canvas, self.game_config)
-        self.logfile.log_game_event(f"Snake coordinates after reset: {self.snake.get_coordinates()}") # pylint: disable=line-too-long
+        self.snake = Snake(self.game_logger, self.snake_canvas, self.game_config)
+        self.food = ChallangeFood(self.game_logger, self.snake_canvas, self.game_config)
+        self.game_logger.log_game_event(f"Snake coordinates after reset: {self.snake.get_coordinates()}") # pylint: disable=line-too-long
 
         self.config.read('config.ini')
 
@@ -389,8 +389,8 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.snake_canvas.create_text(self.snake_canvas.winfo_width()/2, self.snake_canvas.winfo_height()/2 + 100, # pylint: disable=line-too-long
                         font= FONT_LIST[10], text="Press R to play again", fill="white", tag="win")
         self.bind_and_unbind_keys()
-        self.logfile.log_game_event("You win")
-        self.logfile.log_game_event(f"Game state: {self.state}")
+        self.game_logger.log_game_event("You win")
+        self.game_logger.log_game_event(f"Game state: {self.state}")
 
     def bind_and_unbind_keys(self):
         """

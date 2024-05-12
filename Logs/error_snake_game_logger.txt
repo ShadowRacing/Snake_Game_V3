@@ -258,3 +258,341 @@
 
 
 
+[2024-05-12 16:26:56] 
+
+
+[2024-05-12 16:26:56] Started the Error Log File
+[2024-05-12 16:27:48] No errors occurred
+[2024-05-12 16:27:48] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:27:50] 
+
+
+[2024-05-12 16:27:50] Started the Error Log File
+[2024-05-12 16:27:57] No errors occurred
+[2024-05-12 16:27:57] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:30:38] 
+
+
+[2024-05-12 16:30:38] Started the Error Log File
+[2024-05-12 16:30:48] No errors occurred
+[2024-05-12 16:30:48] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:33:21] 
+
+
+[2024-05-12 16:33:21] Started the Error Log File
+[2024-05-12 16:33:39] No errors occurred
+[2024-05-12 16:33:39] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:33:56] 
+
+
+[2024-05-12 16:33:56] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 425, in patchnotes
+    self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CTkScrollableFrame.__init__() got an unexpected keyword argument 'bg'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 425, in patchnotes
+    self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CTkScrollableFrame.__init__() got an unexpected keyword argument 'bg'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 425, in patchnotes
+    self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CTkScrollableFrame.__init__() got an unexpected keyword argument 'bg'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 425, in patchnotes
+    self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CTkScrollableFrame.__init__() got an unexpected keyword argument 'bg'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 425, in patchnotes
+    self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CTkScrollableFrame.__init__() got an unexpected keyword argument 'bg'
+[2024-05-12 16:34:01] No errors occurred
+[2024-05-12 16:34:01] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:35:17] 
+
+
+[2024-05-12 16:35:17] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 425, in patchnotes
+    self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, width=600, height=400, bg='Grey20')
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CTkScrollableFrame.__init__() got an unexpected keyword argument 'bg'
+[2024-05-12 16:35:20] No errors occurred
+[2024-05-12 16:35:20] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:35:33] 
+
+
+[2024-05-12 16:35:33] Started the Error Log File
+[2024-05-12 16:35:59] No errors occurred
+[2024-05-12 16:35:59] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:41:56] 
+
+
+[2024-05-12 16:41:56] Started the Error Log File
+[2024-05-12 16:42:14] No errors occurred
+[2024-05-12 16:42:14] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:44:00] 
+
+
+[2024-05-12 16:44:00] Started the Error Log File
+[2024-05-12 16:44:17] No errors occurred
+[2024-05-12 16:44:17] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:44:26] 
+
+
+[2024-05-12 16:44:26] Started the Error Log File
+[2024-05-12 16:44:32] No errors occurred
+[2024-05-12 16:44:32] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:55:40] 
+
+
+[2024-05-12 16:55:40] Started the Error Log File
+[2024-05-12 16:55:51] No errors occurred
+[2024-05-12 16:55:51] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:56:01] 
+
+
+[2024-05-12 16:56:01] Started the Error Log File
+[2024-05-12 16:56:40] No errors occurred
+[2024-05-12 16:56:40] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:56:59] 
+
+
+[2024-05-12 16:56:59] Started the Error Log File
+[2024-05-12 16:57:05] No errors occurred
+[2024-05-12 16:57:05] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:57:12] 
+
+
+[2024-05-12 16:57:12] Started the Error Log File
+[2024-05-12 16:57:20] No errors occurred
+[2024-05-12 16:57:20] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:57:38] 
+
+
+[2024-05-12 16:57:38] Started the Error Log File
+[2024-05-12 16:57:47] No errors occurred
+[2024-05-12 16:57:47] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:57:56] 
+
+
+[2024-05-12 16:57:56] Started the Error Log File
+[2024-05-12 16:58:02] No errors occurred
+[2024-05-12 16:58:02] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:58:23] 
+
+
+[2024-05-12 16:58:23] Started the Error Log File
+[2024-05-12 16:58:29] No errors occurred
+[2024-05-12 16:58:29] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:58:38] 
+
+
+[2024-05-12 16:58:38] Started the Error Log File
+[2024-05-12 16:58:45] No errors occurred
+[2024-05-12 16:58:45] Closed the Error Log File
+
+
+
+
+[2024-05-12 16:58:54] 
+
+
+[2024-05-12 16:58:54] Started the Error Log File
+[2024-05-12 17:04:36] No errors occurred
+[2024-05-12 17:04:36] Closed the Error Log File
+
+
+
+
+[2024-05-12 17:04:38] 
+
+
+[2024-05-12 17:04:38] Started the Error Log File
+[2024-05-12 17:04:39] No errors occurred
+[2024-05-12 17:04:39] Closed the Error Log File
+
+
+
+
+[2024-05-12 17:11:57] 
+
+
+[2024-05-12 17:11:57] Started the Error Log File
+[2024-05-12 17:12:13] No errors occurred
+[2024-05-12 17:12:13] Closed the Error Log File
+
+
+
+
+[2024-05-12 17:16:55] 
+
+
+[2024-05-12 17:16:55] Started the Error Log File
+[2024-05-12 17:17:18] No errors occurred
+[2024-05-12 17:17:18] Closed the Error Log File
+
+
+
+
+[2024-05-12 17:38:41] 
+
+
+[2024-05-12 17:38:41] Started the Error Log File
+[2024-05-12 17:39:58] No errors occurred
+[2024-05-12 17:39:58] Closed the Error Log File
+
+
+
+
+[2024-05-12 17:42:27] 
+
+
+[2024-05-12 17:42:27] Started the Error Log File
+[2024-05-12 17:42:43] No errors occurred
+[2024-05-12 17:42:43] Closed the Error Log File
+
+
+
+
+[2024-05-12 17:43:21] 
+
+
+[2024-05-12 17:43:21] Started the Error Log File
+[2024-05-12 17:43:34] No errors occurred
+[2024-05-12 17:43:34] Closed the Error Log File
+
+
+
+
+[2024-05-12 17:45:26] 
+
+
+[2024-05-12 17:45:26] Started the Error Log File
+[2024-05-12 17:45:33] No errors occurred
+[2024-05-12 17:45:33] Closed the Error Log File
+
+
+
+

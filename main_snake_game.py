@@ -422,17 +422,22 @@ class SnakeGameApp:
 
         if not self.patchnotes_displayed:
             # Create a scrollable frame and load the patchnotes into it
-            self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas)
+            self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, width=600, height=400, fg_color='Grey10') # pylint: disable=line-too-long
             with open("patchnotes.json", "r", encoding='utf-8') as file:
                 patchnotes = json.load(file)
                 for note in patchnotes:
-                    label = ctk.CTkLabel(self.scrollable_frame, text=note)
-                    label.pack()
-            self.scrollable_frame.pack()
+                    version_label = ctk.CTkLabel(self.scrollable_frame, text="Version: " + note['version']) # pylint: disable=line-too-long
+                    version_label.pack()
+                    for change in note['changes']:
+                        change_label = ctk.CTkLabel(self.scrollable_frame, text=change)
+                        change_label.pack()
+                    empty_space_label = ctk.CTkLabel(self.scrollable_frame, text="", fg_color='Grey10') # pylint: disable=line-too-long
+                    empty_space_label.pack()
+            self.scrollable_frame.place(x=300, y=200)
             self.patchnotes_displayed = True
         else:
             # Hide the scrollable frame
-            self.scrollable_frame.pack_forget()
+            self.scrollable_frame.place_forget()
             self.patchnotes_displayed = False
 
     def classic_reset_high_score(self):

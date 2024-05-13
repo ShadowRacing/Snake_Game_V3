@@ -16,7 +16,7 @@ import customtkinter as ctk
 
 # Importing thhe necessary modules from other folders
 from Logs.gamelogger_snake_game import GameLogger , ErrorgameLogger
-from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSCREEN
+from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSCREEN, FONT_LIST
 from Configuration.gameconfig_snake_game import GameConfig
 from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel # pylint: disable=line-too-long
@@ -84,6 +84,7 @@ class SnakeGameApp:
 
         self.patchnotes_displayed = False
         self.scrollable_frame = None
+        self.patchnotes_label = None
 
         # Creating the main canvas for the app
         self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
@@ -292,7 +293,7 @@ class SnakeGameApp:
             canvas_width = self.info_canvas.winfo_width() // 2 + 80
             canvas_height = self.info_canvas.winfo_height() // 2 - 50
             self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Shadow's Snake Game", font=("Helvetica", 50), fill="white") # pylint: disable=line-too-long
-            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.3.0", font=("Helvetica", 30), fill="white") # pylint: disable=line-too-long
+            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.2.1", font=("Helvetica", 30), fill="white") # pylint: disable=line-too-long
             self.info_canvas.create_text(canvas_width, canvas_height + 50, text="Developer: Shadow", font=("Helvetica", 30), fill="white") # pylint: disable=line-too-long
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")
@@ -417,28 +418,47 @@ class SnakeGameApp:
         """
         Display the patchnotes.
         """
+
         if not hasattr(self, 'patchnotes_displayed'):
             self.patchnotes_displayed = False
 
         if not self.patchnotes_displayed:
             # Create a scrollable frame and load the patchnotes into it
-            self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, width=600, height=400, fg_color='Grey10') # pylint: disable=line-too-long
+            self.patchnotes_label = ctk.CTkLabel(self.info_canvas,
+                                        height = 50,
+                                        width = 873,
+                                        corner_radius = 6,
+                                        text="Patchnotes", font=FONT_LIST[15]) # pylint: disable=line-too-long
+            self.patchnotes_label.place(x=250, y=10)
+            self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
             with open("patchnotes.json", "r", encoding='utf-8') as file:
                 patchnotes = json.load(file)
                 for note in patchnotes:
-                    version_label = ctk.CTkLabel(self.scrollable_frame, text="Version: " + note['version']) # pylint: disable=line-too-long
+                    version_label = ctk.CTkLabel(self.scrollable_frame,
+                                                 height = 30,
+                                                 width = 750,
+                                                 corner_radius = 0,
+                                                 text="Version: " + note['version'], # pylint: disable=line-too-long
+                                                 font=FONT_LIST[11])
                     version_label.pack()
                     for change in note['changes']:
-                        change_label = ctk.CTkLabel(self.scrollable_frame, text=change)
+                        change_label = ctk.CTkLabel(self.scrollable_frame,
+                                                    height = 30,
+                                                    width = 750,
+                                                     corner_radius = 0,
+                                                     text=change,
+                                                     font=FONT_LIST[10])
                         change_label.pack()
                     empty_space_label = ctk.CTkLabel(self.scrollable_frame, text="", fg_color='Grey10') # pylint: disable=line-too-long
                     empty_space_label.pack()
-            self.scrollable_frame.place(x=300, y=200)
+            self.scrollable_frame.place(x=250, y=75)
             self.patchnotes_displayed = True
+            self.after(50, self.patchnotes)
         else:
             # Hide the scrollable frame
             self.scrollable_frame.place_forget()
             self.patchnotes_displayed = False
+            self.patchnotes_label.place_forget()
 
     def classic_reset_high_score(self):
         """

@@ -606,3 +606,622 @@ TypeError: CTkScrollableFrame.__init__() got an unexpected keyword argument 'bg'
 
 
 
+[2024-05-13 18:56:20] 
+
+
+[2024-05-13 18:56:20] Started the Error Log File
+[2024-05-13 18:57:48] No errors occurred
+[2024-05-13 18:57:48] Closed the Error Log File
+
+
+
+
+[2024-05-13 18:58:36] 
+
+
+[2024-05-13 18:58:36] Started the Error Log File
+[2024-05-13 18:58:44] No errors occurred
+[2024-05-13 18:58:44] Closed the Error Log File
+
+
+
+
+[2024-05-13 18:58:53] 
+
+
+[2024-05-13 18:58:53] Started the Error Log File
+[2024-05-13 18:59:00] No errors occurred
+[2024-05-13 18:59:00] Closed the Error Log File
+
+
+
+
+[2024-05-13 18:59:05] 
+
+
+[2024-05-13 18:59:05] Started the Error Log File
+[2024-05-13 18:59:11] No errors occurred
+[2024-05-13 18:59:11] Closed the Error Log File
+
+
+
+
+[2024-05-13 18:59:20] 
+
+
+[2024-05-13 18:59:20] Started the Error Log File
+[2024-05-13 18:59:39] No errors occurred
+[2024-05-13 18:59:39] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:04:04] 
+
+
+[2024-05-13 19:04:04] Started the Error Log File
+[2024-05-13 19:04:51] No errors occurred
+[2024-05-13 19:04:51] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:05:42] 
+
+
+[2024-05-13 19:05:42] Started the Error Log File
+[2024-05-13 19:06:02] No errors occurred
+[2024-05-13 19:06:02] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:06:08] 
+
+
+[2024-05-13 19:06:08] Started the Error Log File
+[2024-05-13 19:06:27] No errors occurred
+[2024-05-13 19:06:27] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:06:30] 
+
+
+[2024-05-13 19:06:30] Started the Error Log File
+[2024-05-13 19:06:58] No errors occurred
+[2024-05-13 19:06:58] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:07:03] 
+
+
+[2024-05-13 19:07:03] Started the Error Log File
+[2024-05-13 19:08:31] No errors occurred
+[2024-05-13 19:08:31] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:08:54] 
+
+
+[2024-05-13 19:08:54] Started the Error Log File
+[2024-05-13 19:13:00] No errors occurred
+[2024-05-13 19:13:00] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:13:35] 
+
+
+[2024-05-13 19:13:35] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+[2024-05-13 19:13:42] No errors occurred
+[2024-05-13 19:13:42] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:15:19] 
+
+
+[2024-05-13 19:15:19] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text=main['date'],
+         ~~~~^^^^^^^^
+KeyError: 'date'
+[2024-05-13 19:15:22] No errors occurred
+[2024-05-13 19:15:22] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:20:24] 
+
+
+[2024-05-13 19:20:24] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text=main['date'],
+         ~~~~^^^^^^^^
+KeyError: 'date'
+[2024-05-13 19:20:26] No errors occurred
+[2024-05-13 19:20:26] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:20:38] 
+
+
+[2024-05-13 19:20:38] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text=main['date'],
+         ~~~~^^^^^^^^
+KeyError: 'date'
+[2024-05-13 19:20:41] No errors occurred
+[2024-05-13 19:20:41] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:20:48] 
+
+
+[2024-05-13 19:20:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+[2024-05-13 19:20:53] No errors occurred
+[2024-05-13 19:20:53] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:21:24] 
+
+
+[2024-05-13 19:21:24] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+[2024-05-13 19:21:29] No errors occurred
+[2024-05-13 19:21:29] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:22:13] 
+
+
+[2024-05-13 19:22:13] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+[2024-05-13 19:22:17] No errors occurred
+[2024-05-13 19:22:17] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:22:20] 
+
+
+[2024-05-13 19:22:20] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 433, in patchnotes
+    text="Version: " + note['version'], # pylint: disable=line-too-long
+                       ~~~~^^^^^^^^^^^
+KeyError: 'version'
+[2024-05-13 19:22:25] No errors occurred
+[2024-05-13 19:22:25] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:23:00] 
+
+
+[2024-05-13 19:23:00] Started the Error Log File
+[2024-05-13 19:23:11] No errors occurred
+[2024-05-13 19:23:11] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:31:08] 
+
+
+[2024-05-13 19:31:08] Started the Error Log File
+[2024-05-13 19:31:27] No errors occurred
+[2024-05-13 19:31:27] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:31:30] 
+
+
+[2024-05-13 19:31:30] Started the Error Log File
+[2024-05-13 19:31:41] No errors occurred
+[2024-05-13 19:31:41] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:31:48] 
+
+
+[2024-05-13 19:31:48] Started the Error Log File
+[2024-05-13 19:31:58] No errors occurred
+[2024-05-13 19:31:58] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:32:06] 
+
+
+[2024-05-13 19:32:06] Started the Error Log File
+[2024-05-13 19:32:12] No errors occurred
+[2024-05-13 19:32:12] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:32:19] 
+
+
+[2024-05-13 19:32:19] Started the Error Log File
+[2024-05-13 19:32:26] No errors occurred
+[2024-05-13 19:32:26] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:32:44] 
+
+
+[2024-05-13 19:32:44] Started the Error Log File
+[2024-05-13 19:32:47] No errors occurred
+[2024-05-13 19:32:47] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:33:03] 
+
+
+[2024-05-13 19:33:03] Started the Error Log File
+[2024-05-13 19:33:11] No errors occurred
+[2024-05-13 19:33:11] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:33:18] 
+
+
+[2024-05-13 19:33:18] Started the Error Log File
+[2024-05-13 19:33:31] No errors occurred
+[2024-05-13 19:33:31] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:33:56] 
+
+
+[2024-05-13 19:33:56] Started the Error Log File
+[2024-05-13 19:34:01] No errors occurred
+[2024-05-13 19:34:01] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:34:05] 
+
+
+[2024-05-13 19:34:05] Started the Error Log File
+[2024-05-13 19:35:48] No errors occurred
+[2024-05-13 19:35:48] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:35:51] 
+
+
+[2024-05-13 19:35:51] Started the Error Log File
+[2024-05-13 19:36:13] No errors occurred
+[2024-05-13 19:36:13] Closed the Error Log File
+
+
+
+
+[2024-05-13 19:38:43] 
+
+
+[2024-05-13 19:38:43] Started the Error Log File
+[2024-05-13 19:38:56] No errors occurred
+[2024-05-13 19:38:56] Closed the Error Log File
+
+
+
+

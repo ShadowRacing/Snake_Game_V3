@@ -13,8 +13,22 @@ import traceback
 # Define the patchnotes list
 patchnotes = [
     {
-        "version": "0.2.1:",
+        "version": "0.2.2",
         "changes": [
+            "New features:",
+            "Better error handling",
+            "Better logging",
+            "Bug fixes:",
+            "No label when changing themes",
+            "No label when changing game size",
+            "Endless game mode doesn't work",
+        ]
+    },
+    {
+        "version": "0.2.1",
+        "changes": [
+            "New features:",
+            "Added error handling",
             "Bug fixes:",
             "No reset buttons on the classic snake",
             "No label on the classic snake",
@@ -38,7 +52,14 @@ patchnotes = [
         ]
     },
     {
-        "version": "0.1.6:",
+        "version": "0.2.0",
+        "changes": [
+            "New features:",
+            "Restructerd the Main file code"
+        ]
+    },
+    {
+        "version": "0.1.6",
         "changes": [
             "Bug fixes:",
             "Fixed that the theme and game_size restart labels were cancelling eachother out",
@@ -50,8 +71,14 @@ patchnotes = [
         ]
     },
     {
-        "version": "0.1.5:",
+        "version": "0.1.5",
         "changes": [
+            "New features:",
+            "Added leveling game mode",
+            "Added themes to the game",
+            "Added a new food type: Special food",
+            "Added a new food type: Shorten food",
+            ""
             "Bug fixes:",
             "Fixed that when you press all the buttons the snake dies instantly",
             "The labels for the highscores are now updating correctly",
@@ -61,16 +88,20 @@ patchnotes = [
         ]
     },
     {
-        "version": "0.1.4:",
+        "version": "0.1.4",
         "changes": [
+            "New features:",
+            "Added config.ini to keep track off the settings and scores",
             "Bug fixes:",
             "Labels not updating when they have been reset",
             "Fixed that the game timer was still running when paused",
         ]
     },
     {
-        "version": "0.1.3:",
+        "version": "0.1.3",
         "changes": [
+            "New features:",
+            "Added Labels to the game",
             "Bug fixes:",
             "The default screen width and height don't center the app",
             "Reset highscores not exctually resetting the highscores",
@@ -78,8 +109,10 @@ patchnotes = [
         ]
     },
     {
-        "version": "0.1.2:",
+        "version": "0.1.2",
         "changes": [
+            "New features:",
+            "Added Highscores to the game",
             "Bug fixes:",
             "Fixed the bugs regarding the gamelogger",
             "Fixed screen size bug",
@@ -89,15 +122,19 @@ patchnotes = [
         ]
     },
     {
-        "version": "0.1.1:",
+        "version": "0.1.1",
         "changes": [
+            "New features:",
+            "Added a new game mode: Endless mode",
+            "Added a new game mode: Leveling mode",
+            "Added a game logger to log the game",
             "Bug fixes:",
             "When going back to normal size from fullscreen, the game size is now correctly resized",
             "With no size in config.ini the game doesn't crash anymore"
         ]
     },
     {
-        "version": "0.1:",
+        "version": "0.1",
         "changes": [
             "Initial release",
             "Bug fixes:",

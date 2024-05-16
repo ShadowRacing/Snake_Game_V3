@@ -1225,3 +1225,163 @@ KeyError: 'version'
 
 
 
+[2024-05-16 19:41:53] 
+
+
+[2024-05-16 19:41:53] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 196, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 258, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 97, in __init__
+    self.configfile()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 158, in configfile
+    'Up': self.config.get('KeyBindings', 'Up').split(', '),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 797, in get
+    d = self._unify_values(section, vars)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1168, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'KeyBindings'
+[2024-05-16 19:41:56] No errors occurred
+[2024-05-16 19:41:56] Closed the Error Log File
+
+
+
+
+[2024-05-16 19:42:20] 
+
+
+[2024-05-16 19:42:20] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'pausegame'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 196, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 258, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 97, in __init__
+    self.configfile()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 163, in configfile
+    'PauseGame': self.config.get('KeyBindings', 'PauseGame').split(', '),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'pausegame' in section: 'KeyBindings'
+[2024-05-16 19:42:22] No errors occurred
+[2024-05-16 19:42:22] Closed the Error Log File
+
+
+
+
+[2024-05-16 19:44:20] 
+
+
+[2024-05-16 19:44:20] Started the Error Log File
+[2024-05-16 19:44:24] No errors occurred
+[2024-05-16 19:44:24] Closed the Error Log File
+
+
+
+
+[2024-05-16 19:46:37] 
+
+
+[2024-05-16 19:46:37] Started the Error Log File
+[2024-05-16 19:46:48] No errors occurred
+[2024-05-16 19:46:48] Closed the Error Log File
+
+
+
+
+[2024-05-16 19:47:21] 
+
+
+[2024-05-16 19:47:21] Started the Error Log File
+[2024-05-16 19:47:27] No errors occurred
+[2024-05-16 19:47:27] Closed the Error Log File
+
+
+
+
+[2024-05-16 19:52:56] 
+
+
+[2024-05-16 19:52:56] Started the Error Log File
+[2024-05-16 19:53:16] No errors occurred
+[2024-05-16 19:53:16] Closed the Error Log File
+
+
+
+
+[2024-05-16 20:17:22] 
+
+
+[2024-05-16 20:17:22] Started the Error Log File
+[2024-05-16 20:18:05] No errors occurred
+[2024-05-16 20:18:05] Closed the Error Log File
+
+
+
+
+[2024-05-16 20:18:30] 
+
+
+[2024-05-16 20:18:30] Started the Error Log File
+[2024-05-16 20:18:37] No errors occurred
+[2024-05-16 20:18:37] Closed the Error Log File
+
+
+
+
+[2024-05-16 20:18:58] 
+
+
+[2024-05-16 20:18:58] Started the Error Log File
+[2024-05-16 20:19:04] No errors occurred
+[2024-05-16 20:19:04] Closed the Error Log File
+
+
+
+
+[2024-05-16 20:20:43] 
+
+
+[2024-05-16 20:20:43] Started the Error Log File
+[2024-05-16 20:20:53] No errors occurred
+[2024-05-16 20:20:53] Closed the Error Log File
+
+
+
+

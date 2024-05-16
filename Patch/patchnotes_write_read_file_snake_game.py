@@ -13,6 +13,12 @@ import traceback
 # Define the patchnotes list
 patchnotes = [
     {
+        "version": "0.2.3",
+        "changes": [
+            "Rewrote the bindingskeys Preparing for the next update:",
+        ]
+    },
+    {
         "version": "0.2.2",
         "changes": [
             "New features:",

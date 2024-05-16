@@ -68,7 +68,7 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.game_logger.log_game_event(
             f"Game height: {self.height}"
         )
-        self.game_logger.log_game_event(f"Snake length from game_config: {game_config.SNAKE_LENGTH}")
+        self.game_logger.log_game_event(f"Snake length from game_config: {game_config.SNAKE_LENGTH}") # pylint: disable=line-too-long
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height,
@@ -138,6 +138,17 @@ class FoodTimeAttack(ctk.CTkCanvas):
             self.config.set('food_time_attack_Values', 'state', 'start_screen')
             with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
+
+        self.key_bindings = {
+            'Up': self.config.get('KeyBindings', 'Up').split(', '),
+            'Down': self.config.get('KeyBindings', 'Down').split(', '),
+            'Left': self.config.get('KeyBindings', 'Left').split(', '),
+            'Right': self.config.get('KeyBindings', 'Right').split(', '),
+            'StartGame': self.config.get('KeyBindings', 'StartGame').split(', '),
+            'PauseGame': self.config.get('KeyBindings', 'PauseGame').split(', '),
+            'RestartGame': self.config.get('KeyBindings', 'RestartGame').split(', '),
+            'ExitGame': self.config.get('KeyBindings', 'ExitGame').split(', ')
+        }
 
         # Start the game loop
         self.start_screen()
@@ -332,13 +343,13 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.get_time_score = int(self.config.get('food_time_attack_Values', 'high_score_time', fallback='0')) # pylint: disable=line-too-long
         if self.total_time_played > self.get_time_score:
             self.config.set('food_time_attack_Values', 'high_score_time', str(self.total_time_played)) # pylint: disable=line-too-long
-            self.game_logger.log_game_event(f"high_score_time updated to: {self.total_time_played}" )
+            self.game_logger.log_game_event(f"high_score_time updated to: {self.total_time_played}" ) # pylint: disable=line-too-long
 
 
         self.get_snake_length = int(self.config.get('food_time_attack_Values', 'snake_length_high_score', fallback='0')) # pylint: disable=line-too-long
         if self.snake_length > self.get_snake_length:
             self.config.set('food_time_attack_Values', 'snake_length_high_score', str(self.snake_length)) # pylint: disable=line-too-long
-            self.game_logger.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" )
+            self.game_logger.log_game_event(f"snake_length_high_score updated to: {self.snake_length}" ) # pylint: disable=line-too-long
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
@@ -392,44 +403,83 @@ class FoodTimeAttack(ctk.CTkCanvas):
         self.game_logger.log_game_event("You win")
         self.game_logger.log_game_event(f"Game state: {self.state}")
 
+    # def bind_and_unbind_keys(self):
+    #     """
+    #     This method is responsible for binding and unbinding keys.
+    #     """
+    #     # Unbind all events to avoid conflicts
+    #     self.snake_canvas.unbind('<space>') # start the game
+    #     self.snake_canvas.unbind('<Escape>') # pause the game
+    #     self.snake_canvas.unbind('<left>') # change direction
+    #     self.snake_canvas.unbind('<Right>') # change direction
+    #     self.snake_canvas.unbind('<Up>') # change direction
+    #     self.snake_canvas.unbind('<Down>') # change direction
+    #     self.snake_canvas.unbind('<r>') # restart the game
+    #     self.snake_canvas.unbind('<R>') # restart the game
+    #     self.snake_canvas.unbind('<a>') # change direction
+    #     self.snake_canvas.unbind('<d>') # change direction
+    #     self.snake_canvas.unbind('<w>') # change direction
+    #     self.snake_canvas.unbind('<s>') # change direction
+
+    #     if self.state == 'start_game':
+    #         self.snake_canvas.bind('<space>', self.start_game)
+    #     elif self.state == 'game_over':
+    #         self.snake_canvas.bind("<r>", self.restart_game)
+    #         self.snake_canvas.bind("<R>", self.restart_game)
+    #     elif self.state == 'game':
+    #         self.snake_canvas.bind('<Left>', lambda event: self.change_direction('left'))
+    #         self.snake_canvas.bind('<Right>', lambda event: self.change_direction('right'))
+    #         self.snake_canvas.bind('<Up>', lambda event: self.change_direction('up'))
+    #         self.snake_canvas.bind('<Down>', lambda event: self.change_direction('down'))
+    #         self.snake_canvas.bind('<a>', lambda event: self.change_direction('left'))
+    #         self.snake_canvas.bind('<d>', lambda event: self.change_direction('right'))
+    #         self.snake_canvas.bind('<w>', lambda event: self.change_direction('up'))
+    #         self.snake_canvas.bind('<s>', lambda event: self.change_direction('down'))
+    #     elif self.state == 'settings_menu':
+    #         self.snake_canvas.unbind('<Escape>')
+    #     elif self.state == 'win':
+    #         self.snake_canvas.bind("<r>", self.restart_game)
+    #         self.snake_canvas.bind("<R>", self.restart_game)
+
     def bind_and_unbind_keys(self):
         """
-        This method is responsible for binding and unbinding keys.
+        Method to bind and unbind keys based on the game state.
         """
         # Unbind all events to avoid conflicts
-        self.snake_canvas.unbind('<space>') # start the game
-        self.snake_canvas.unbind('<Escape>') # pause the game
-        self.snake_canvas.unbind('<left>') # change direction
-        self.snake_canvas.unbind('<Right>') # change direction
-        self.snake_canvas.unbind('<Up>') # change direction
-        self.snake_canvas.unbind('<Down>') # change direction
-        self.snake_canvas.unbind('<r>') # restart the game
-        self.snake_canvas.unbind('<R>') # restart the game
-        self.snake_canvas.unbind('<a>') # change direction
-        self.snake_canvas.unbind('<d>') # change direction
-        self.snake_canvas.unbind('<w>') # change direction
-        self.snake_canvas.unbind('<s>') # change direction
+        for key in self.key_bindings.values():
+            for k in key:
+                k = k.replace("'", "")
+                self.snake_canvas.unbind(f'<{k}>')
+                print(f"Unbinding {k}")
 
         if self.state == 'start_game':
-            self.snake_canvas.bind('<space>', self.start_game)
-        elif self.state == 'game_over':
-            self.snake_canvas.bind("<r>", self.restart_game)
-            self.snake_canvas.bind("<R>", self.restart_game)
-        elif self.state == 'game':
-            self.snake_canvas.bind('<Left>', lambda event: self.change_direction('left'))
-            self.snake_canvas.bind('<Right>', lambda event: self.change_direction('right'))
-            self.snake_canvas.bind('<Up>', lambda event: self.change_direction('up'))
-            self.snake_canvas.bind('<Down>', lambda event: self.change_direction('down'))
-            self.snake_canvas.bind('<a>', lambda event: self.change_direction('left'))
-            self.snake_canvas.bind('<d>', lambda event: self.change_direction('right'))
-            self.snake_canvas.bind('<w>', lambda event: self.change_direction('up'))
-            self.snake_canvas.bind('<s>', lambda event: self.change_direction('down'))
-        elif self.state == 'settings_menu':
-            self.snake_canvas.unbind('<Escape>')
-        elif self.state == 'win':
-            self.snake_canvas.bind("<r>", self.restart_game)
-            self.snake_canvas.bind("<R>", self.restart_game)
+            for key in self.key_bindings['StartGame']:
+                key = key.replace("'", "")
+                self.snake_canvas.bind(f'<{key}>', self.start_game)
 
+        elif self.state == 'game_over':
+            for key in self.key_bindings['RestartGame']:
+                key = key.replace("'", "")
+                self.snake_canvas.bind(f'<{key}>', self.restart_game)
+
+        elif self.state == 'game':
+            for key in self.key_bindings['Up']:
+                key = key.replace("'", "")
+                self.snake_canvas.bind(f'<{key}>', lambda event: self.change_direction('up'))
+            for key in self.key_bindings['Down']:
+                key = key.replace("'", "")
+                self.snake_canvas.bind(f'<{key}>', lambda event: self.change_direction('down'))
+            for key in self.key_bindings['Left']:
+                key = key.replace("'", "")
+                self.snake_canvas.bind(f'<{key}>', lambda event: self.change_direction('left'))
+            for key in self.key_bindings['Right']:
+                key = key.replace("'", "")
+                self.snake_canvas.bind(f'<{key}>', lambda event: self.change_direction('right'))
+
+        elif self.state == 'win':
+            for key in self.key_bindings['RestartGame']:
+                key = key.replace("'", "")
+                self.snake_canvas.bind(f'<{key}>', self.restart_game)
 
 # *****************************************
 # Shadows Snake Challange File

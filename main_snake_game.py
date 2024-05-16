@@ -453,7 +453,6 @@ class SnakeGameApp:
                     empty_space_label.pack()
             self.scrollable_frame.place(x=250, y=75)
             self.patchnotes_displayed = True
-            self.after(50, self.patchnotes)
         else:
             # Hide the scrollable frame
             self.scrollable_frame.place_forget()

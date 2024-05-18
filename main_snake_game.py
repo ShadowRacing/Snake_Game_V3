@@ -2,40 +2,52 @@
 # Shadows Snake Main File
 # *****************************************
 
+"""
+The main file for the Shadows Snake game.
+"""
+
 # Import all the necessary libraries
-import customtkinter as ctk
-import configparser, traceback, time
+import traceback
+import time
+import configparser
+import json
 from os import path
+import customtkinter as ctk
 
 # Importing thhe necessary modules from other folders
-from Logs.gamelogger_snake_game import LogFile , ErrorLogFile
-from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSCREEN
+from Logs.gamelogger_snake_game import GameLogger , ErrorgameLogger
+from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSCREEN, FONT_LIST
 from Configuration.gameconfig_snake_game import GameConfig
 from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
-from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel
-from Logic.config_ini_Initials import ConfigIni
-from Logic.snake_challange_choice import Challange_Choices
-from Games.snake_classic_game import Snake_Classic_Game
-from Games.snake_endless_game import Snake_endless
-from Games.snake_leveling_game import Snake_Leveling
-from Games.snake_challange_games import Snake_Challange
+from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel # pylint: disable=line-too-long
+from Logic.config_ini_initials import ConfigIni
+from Logic.snake_challange_choice import ChallangeChoices
+from Logic.snake_challange_settings import ChallangeSettings
+from Games.snake_classic_game import SnakeClassicGame
+from Games.snake_endless_game import SnakeEndless
+from Games.snake_leveling_game import SnakeLeveling
+from Games.snake_challange_games import FoodTimeAttack
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
 
+
 # Define the main application class
 class SnakeGameApp:
-    def __init__ (self, root, game_width, game_height):
+    """
+    The main class for the Shadows Snake game.
+    """
+    def __init__ (self, root, game_width, game_height): # pylint: disable=redefined-outer-name
         #Initialize the game app values
         self.config_ini = ConfigIni()
         self.config_ini.set_config()
         time.sleep(1)
         self.root = root
-        self.logfile = LogFile(root)
-        self.error_logfile = ErrorLogFile()
-        self.logfile.log_game_event("Started the GameApp Class")
-        self.game_config = GameConfig(logfile=self.logfile, game_mode = "initial_config")
-        self.update_contrast = UpdateContrast(self.logfile)
-        self.theme_updater = ThemeUpdater(self.logfile)
+        self.game_logger = GameLogger(root)
+        self.error_game_logger = ErrorgameLogger()
+        self.game_logger.log_game_event("Started the GameApp Class")
+        self.game_config = GameConfig(game_logger=self.game_logger, game_mode = "initial_config")
+        self.update_contrast = UpdateContrast(self.game_logger)
+        self.theme_updater = ThemeUpdater(self.game_logger)
         self.game_width = game_width
         self.game_height = game_height
         self.snake_color = None
@@ -47,7 +59,7 @@ class SnakeGameApp:
         self.config = configparser.ConfigParser()
         try:
             self.config.read(self.config_path)
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
         self.apply_theme()
@@ -55,9 +67,9 @@ class SnakeGameApp:
 
         # Write the changes to the config file
         try:
-            with open(self.config_path, 'w') as configfile:
+            with open(self.config_path, 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
-        except Exception as e:
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
         # Button press variables
@@ -68,10 +80,14 @@ class SnakeGameApp:
         self.endless_button_press_variable_high_score_time = 0
         self.leveling_button_press_variable_high_score = 0
         self.leveling_button_press_variable_high_score_time = 0
-        self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5))
+        self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5)) # pylint: disable=line-too-long
+
+        self.patchnotes_displayed = False
+        self.scrollable_frame = None
+        self.patchnotes_label = None
 
         # Creating the main canvas for the app
-        self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20')
+        self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
         self.main_canvas.pack(expand=True, fill="both")
         self.original_main_canvas = self.main_canvas
 
@@ -79,8 +95,9 @@ class SnakeGameApp:
         self.classic_snake_canvas = None
         self.endless_snake_canvas = None
         self.leveling_snake_canvas = None
-        self.challange_snake_canvas = None
+        self.food_time_attack_canvas = None
         self.challange_choice_canvas = None
+        self.challange_settings_canvas = None
         self.info_canvas = None
         self.settings_canvas = None
 
@@ -110,40 +127,54 @@ class SnakeGameApp:
             'snake_leveling': self.snake_leveling,
             'snake_endless': self.snake_endless,
             'classic_snake': self.classic_snake,
-            'challange_snake': self.challange_snake,
-            'challange_choices': self.challange_choices
+            'food_time_attack': self.food_time_attack,
+            'challange_choices': self.challange_choices,
+            'challange_settings': self.challange_settings,
+            'patchnotes': self.patchnotes,
         }
 
+        self.create_option_button_panel = None
+        self.first_button_press_time = None
+
         # Initializing the button panel and label panel
-        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
+        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
 
         # And then create the ButtonCommands instance
-        self.button_commands = ButtonCommands(self.logfile, self.functions)
+        self.button_commands = ButtonCommands(self.game_logger, self.functions)
 
-        self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.logfile,  self.game_config, self.open_info,
-                                      self.open_settings)
+        self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger,
+                                                        self.game_config, self.open_info,
+                                                        self.open_settings)
 
-        self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.logfile,  self.game_config)
+        self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.game_logger,  self.game_config) # pylint: disable=line-too-long
 
-        self.settings_labels = SettingsOptionButtonLabels(self.logfile, self.main_canvas)
+        self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)
 
         self.settings_labels.update_initial_game_size()
 
         # Create the home screen
         self.create_home_screen()
-        self.logfile.log_game_event("start_screen method called")
+        self.game_logger.log_game_event("Home_screen method called")
+        self.root.protocol("WM_DELETE_WINDOW", self.confirm_quit)
 
     # Apply theme from the configuration
     def apply_theme(self):
+        """
+        Apply the theme from the configuration file.
+        """
         theme_name = self.config.get('Settings', 'theme', fallback='Default')
         theme_dir = path.dirname(__file__)
         theme_path = path.join(theme_dir, 'themes', f"{theme_name}.json")
         try:
             ctk.set_default_color_theme(theme_path)
-        except Exception as e:
+            self.game_logger.log_game_event(f"Theme applied: {theme_name}")
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
     def create_home_screen(self):
+        """
+        Create the home screen of the game.
+        """
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_main_menu_label()
         self.create_button_panel.classic_snake_button()
@@ -159,30 +190,60 @@ class SnakeGameApp:
         self.leveling_reset_button_press_variable()
 
     def classic_snake(self):
-       self.start_game("classic_snake")
+        """
+        Start the classic snake game.
+        """
+        self.start_game("classic_snake")
 
     # Start the endless snake game
     def snake_endless(self):
+        """
+        Start the endless snake game.
+        """
         self.start_game("snake_endless")
 
     # Start the leveling snake game
     def snake_leveling(self):
+        """
+        Start the leveling snake game.
+        """
         self.start_game("snake_leveling")
-    
-    def challange_snake(self):
-        self.start_game("snake_challange")
+
+    def food_time_attack(self):
+        """
+        Start the food time attack game.
+        """
+        self.start_game("food_time_attack")
 
     def challange_choices(self):
+        """
+        Start the challange choices screen.
+        """
         self.start_game("challange_choices")
 
+    def challange_settings(self):
+        """
+        Start the challange settings screen.
+        """
+        self.start_game("challange_settings")
+
     def open_info(self):
+        """
+        Open the info screen.
+        """
         self.start_game("info")
 
     # Open the settings screen
     def open_settings(self):
+        """
+        Open the settings screen.
+        """
         self.start_game("settings")
 
     def start_game(self, game_type):
+        """
+        Start the game based on the game type.
+        """
         # Hide the main canvas
         self.original_main_canvas.pack_forget()
 
@@ -194,19 +255,21 @@ class SnakeGameApp:
 
         # Create a new canvas for the specified game type
         if game_type == "classic_snake":
-            self.classic_snake_canvas = Snake_Classic_Game(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         elif game_type == "snake_endless":
-            self.endless_snake_canvas = Snake_endless(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.endless_snake_canvas = SnakeEndless(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         elif game_type == "snake_leveling":
-            self.leveling_snake_canvas = Snake_Leveling(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
-        elif game_type == "snake_challange":
-            self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.leveling_snake_canvas = SnakeLeveling(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+        elif game_type == "food_time_attack":
+            self.food_time_attack_canvas = FoodTimeAttack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         elif game_type == "info":
-            self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+            self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "settings":
-            self.settings_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+            self.settings_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "challange_choices":
-            self.challange_choice_canvas = Challange_Choices(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+            self.challange_choice_canvas = ChallangeChoices(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+        elif game_type == "challange_settings":
+            self.challange_settings_canvas = ChallangeSettings(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         else:
             return
 
@@ -220,32 +283,35 @@ class SnakeGameApp:
         elif game_type == "snake_leveling":
             self.leveling_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.leveling_snake_canvas
-        elif game_type == "snake_challange":
-            self.challange_snake_canvas.pack(expand=True, fill="both")
-            self.main_canvas = self.challange_snake_canvas
+        elif game_type == "food_time_attack":
+            self.food_time_attack_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.food_time_attack_canvas
         elif game_type == "info":
             self.info_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.info_canvas
             self.info_canvas.update_idletasks()  # update canvas before getting its dimensions
             canvas_width = self.info_canvas.winfo_width() // 2 + 80
             canvas_height = self.info_canvas.winfo_height() // 2 - 50
-            self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Shadow's Snake Game", font=("Helvetica", 50), fill="white")
-            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.1.9", font=("Helvetica", 30), fill="white")
-            self.info_canvas.create_text(canvas_width, canvas_height + 50, text="Developer: Shadow", font=("Helvetica", 30), fill="white")
+            self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Shadow's Snake Game", font=("Helvetica", 50), fill="white") # pylint: disable=line-too-long
+            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.2.1", font=("Helvetica", 30), fill="white") # pylint: disable=line-too-long
+            self.info_canvas.create_text(canvas_width, canvas_height + 50, text="Developer: Shadow", font=("Helvetica", 30), fill="white") # pylint: disable=line-too-long
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.settings_canvas
         elif game_type == "challange_choices":
             self.challange_choice_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.challange_choice_canvas
-        
+        elif game_type == "challange_settings":
+            self.challange_settings_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.challange_settings_canvas
+
         # Initializing the button panel and label panel
-        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
-        self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.logfile)
-        self.button_commands = ButtonCommands(self.logfile, self.functions)
-        self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.logfile, self.game_config, self.open_info, self.open_settings)
-        self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.logfile, self.game_config)
-        self.settings_labels = SettingsOptionButtonLabels(self.logfile, self.main_canvas)
+        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
+        self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
+        self.button_commands = ButtonCommands(self.game_logger, self.functions)
+        self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger, self.game_config, self.open_info, self.open_settings) # pylint: disable=line-too-long
+        self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.game_logger, self.game_config) # pylint: disable=line-too-long
+        self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)
         self.settings_labels.update_initial_game_size()
 
         if game_type == "classic_snake":
@@ -272,20 +338,25 @@ class SnakeGameApp:
             self.create_button_panel.leveling_reset_high_score_shorten_snake_button()
             self.create_button_panel.leveling_reset_high_scores_xp_button()
             self.create_button_panel.leveling_reset_high_score_level_button()
-            
-            self.framelabel_panel.set_create_label_canvas_flag(True)
-            self.framelabel_panel.create_leveling_snake_label()
-        
-        elif game_type == "challange_choices":
-            self.create_button_panel.challange_snake_button()
 
             self.framelabel_panel.set_create_label_canvas_flag(True)
-            self.framelabel_panel.create_challange_choices_label()
-        
-        elif game_type == "snake_challange":
-            self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas, "self.challange_choice_canvas")
+            self.framelabel_panel.create_leveling_snake_label()
+
+        elif game_type == "challange_choices":
+            self.create_button_panel.challange_settings_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
-            self.framelabel_panel.create_challange_snake_label()
+            self.framelabel_panel.create_challange_choices_label()
+
+        elif game_type == "challange_settings":
+            self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas)
+            self.create_button_panel.food_time_attack_button()
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.framelabel_panel.create_challange_settings_label()
+
+        elif game_type == "food_time_attack":
+            self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.framelabel_panel.create_food_time_attack_label()
 
         elif game_type == "info":
             self.framelabel_panel.set_create_label_canvas_flag(True)
@@ -309,6 +380,9 @@ class SnakeGameApp:
         self.framelabel_panel.set_create_label_canvas_flag(True)
 
     def get_color_from_config(self):
+        """
+        Get the snake color from the config file.
+        """
         self.config.read(self.config_path)
         new_snake_color = self.config.get('Settings', 'snake_color', fallback='Default')
         if new_snake_color.lower() == 'default':
@@ -321,6 +395,9 @@ class SnakeGameApp:
         self.root.after(50, self.get_color_from_config)
 
     def draw_snake_with_color(self, color):
+        """
+        Draw the snake with the specified color.
+        """
         if not None:
             x1, y1, x2, y2 = 825, 125, 800, 100
             self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
@@ -337,405 +414,513 @@ class SnakeGameApp:
             x1, y1, x2, y2 = 920, 125, 945, 100
             self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
+    def patchnotes(self):
+        """
+        Display the patchnotes.
+        """
+
+        if not hasattr(self, 'patchnotes_displayed'):
+            self.patchnotes_displayed = False
+
+        if not self.patchnotes_displayed:
+            # Create a scrollable frame and load the patchnotes into it
+            self.patchnotes_label = ctk.CTkLabel(self.info_canvas,
+                                        height = 50,
+                                        width = 873,
+                                        corner_radius = 6,
+                                        text="Patchnotes", font=FONT_LIST[15]) # pylint: disable=line-too-long
+            self.patchnotes_label.place(x=250, y=10)
+            self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+            with open("patchnotes.json", "r", encoding='utf-8') as file:
+                patchnotes = json.load(file)
+                for note in patchnotes:
+                    version_label = ctk.CTkLabel(self.scrollable_frame,
+                                                 height = 30,
+                                                 width = 750,
+                                                 corner_radius = 0,
+                                                 text="Version: " + note['version'], # pylint: disable=line-too-long
+                                                 font=FONT_LIST[11])
+                    version_label.pack()
+                    for change in note['changes']:
+                        change_label = ctk.CTkLabel(self.scrollable_frame,
+                                                    height = 30,
+                                                    width = 750,
+                                                     corner_radius = 0,
+                                                     text=change,
+                                                     font=FONT_LIST[10])
+                        change_label.pack()
+                    empty_space_label = ctk.CTkLabel(self.scrollable_frame, text="", fg_color='Grey10') # pylint: disable=line-too-long
+                    empty_space_label.pack()
+            self.scrollable_frame.place(x=250, y=75)
+            self.patchnotes_displayed = True
+        else:
+            # Hide the scrollable frame
+            self.scrollable_frame.place_forget()
+            self.patchnotes_displayed = False
+            self.patchnotes_label.place_forget()
+
     def classic_reset_high_score(self):
+        """
+        Reset the high score for the classic snake game.
+        """
         if self.classic_button_press_variable_high_score == 0:
             self.first_button_press_time = time.time()
             self.classic_button_press_variable_high_score += 1
-        elif self.classic_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.classic_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Classic_Snake_Values', 'high_score', '0')
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.classic_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore reset to 0")
+            self.game_logger.log_game_event("Highscore reset to 0")
             self.classic_button_press_variable_high_score = 0
             self.first_button_press_time = None
 
     def classic_reset_high_score_time(self):
+        """
+        Reset the high score time for the classic snake game.
+        """
         if self.classic_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.classic_button_press_variable_high_score_time += 1
-        elif self.classic_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.classic_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Classic_Snake_Values', 'high_score_time', '0')
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.classic_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore time reset to 0")
+            self.game_logger.log_game_event("Highscore time reset to 0")
             self.classic_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
-    
+
     def classic_reset_snake_length(self):
+        """
+        Reset the high score snake length for the classic snake game.
+        """
         if self.classic_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.classic_button_press_variable_high_score_time += 1
-        elif self.classic_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.classic_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Classic_Snake_Values', 'snake_length_high_score', '0')
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.classic_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore time reset to 0")
+            self.game_logger.log_game_event("Highscore time reset to 0")
             self.classic_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
 
     def classic_reset_button_press_variable(self):
+        """
+        Reset the button press variable for the classic snake game.
+        """
         self.classic_button_press_variable_high_score = 0
         self.classic_button_press_variable_high_score_time = 0
 
     def endless_reset_high_score(self):
+        """
+        Reset the high score for the endless snake game.
+        """
         if self.endless_button_press_variable_high_score == 0:
             self.first_button_press_time = time.time()
             self.endless_button_press_variable_high_score += 1
-        elif self.endless_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.endless_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore reset to 0")
+            self.game_logger.log_game_event("Highscore reset to 0")
             self.endless_button_press_variable_high_score = 0
             self.first_button_press_time = None
 
     def endless_reset_high_score_time(self):
+        """
+        Reset the high score time for the endless snake game.
+        """
         if self.endless_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.endless_button_press_variable_high_score_time += 1
-        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'high_score_time', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore time reset to 0")
+            self.game_logger.log_game_event("Highscore time reset to 0")
             self.endless_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
 
     def endless_reset_high_score_snake_length(self):
+        """
+        Reset the high score snake length for the endless snake game.
+        """
         if self.endless_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.endless_button_press_variable_high_score_time += 1
-        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'snake_length_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore time reset to 0")
+            self.game_logger.log_game_event("Highscore time reset to 0")
             self.endless_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
-    
+
     def endless_reset_high_score_special_score(self):
+        """
+        Reset the high score special score for the endless snake game.
+        """
         if self.endless_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.endless_button_press_variable_high_score_time += 1
-        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'special_score_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore special reset to 0")
+            self.game_logger.log_game_event("Highscore special reset to 0")
             self.endless_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
-    
+
     def endless_reset_high_score_shorten_snake(self):
+        """
+        Reset the high score shorten snake for the endless snake game.
+        """
         if self.endless_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.endless_button_press_variable_high_score_time += 1
-        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.endless_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Endless_Snake_Values', 'shorten_snake_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.endless_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore shorten snake reset to 0")
+            self.game_logger.log_game_event("Highscore shorten snake reset to 0")
             self.endless_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
 
     def endless_reset_button_press_variable(self):
+        """
+        Reset the button press variable for the endless snake game.
+        """
         self.endless_button_press_variable_high_score = 0
         self.endless_button_press_variable_high_score_time = 0
 
     def leveling_reset_high_score(self):
+        """
+        Reset the high score for the leveling snake game.
+        """
         if self.leveling_button_press_variable_high_score == 0:
             self.first_button_press_time = time.time()
             self.leveling_button_press_variable_high_score += 1
-        elif self.leveling_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.leveling_button_press_variable_high_score == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.leveling_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore reset to 0")
+            self.game_logger.log_game_event("Highscore reset to 0")
             self.leveling_button_press_variable_high_score = 0
             self.first_button_press_time = None
-    
+
     def leveling_reset_high_score_time(self):
+        """
+        Reset the high score time for the leveling snake game.
+        """
         if self.leveling_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.leveling_button_press_variable_high_score_time += 1
-        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'high_score_time', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.leveling_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore time reset to 0")
+            self.game_logger.log_game_event("Highscore time reset to 0")
             self.leveling_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
-    
+
     def leveling_reset_high_score_snake_length(self):
+        """
+        Reset the high score snake length for the leveling snake game.
+        """
         if self.leveling_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.leveling_button_press_variable_high_score_time += 1
-        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'snake_length_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.leveling_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore time reset to 0")
+            self.game_logger.log_game_event("Highscore time reset to 0")
             self.leveling_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
-    
+
     def leveling_reset_high_score_special_score(self):
+        """
+        Reset the high score special score for the leveling snake game.
+        """
         if self.leveling_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.leveling_button_press_variable_high_score_time += 1
-        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'special_score_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.leveling_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore special reset to 0")
+            self.game_logger.log_game_event("Highscore special reset to 0")
             self.leveling_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
-    
+
     def leveling_reset_high_score_shorten_snake(self):
+        """
+        Reset the high score shorten snake for the leveling snake game.
+        """
         if self.leveling_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.leveling_button_press_variable_high_score_time += 1
-        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'shorten_snake_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.leveling_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore shorten snake reset to 0")
+            self.game_logger.log_game_event("Highscore shorten snake reset to 0")
             self.leveling_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
-    
+
     def leveling_reset_high_scores_xp(self):
+        """
+        Reset the high score xp for the leveling snake game.
+        """
         if self.leveling_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.leveling_button_press_variable_high_score_time += 1
-        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'xp_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.leveling_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore xp reset to 0")
+            self.game_logger.log_game_event("Highscore xp reset to 0")
             self.leveling_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
-    
+
     def leveling_reset_high_score_level(self):
+        """
+        Reset the high score level for the leveling snake game.
+        """
         if self.leveling_button_press_variable_high_score_time == 0:
             self.first_button_press_time = time.time()
             self.leveling_button_press_variable_high_score_time += 1
-        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit:
+        elif self.leveling_button_press_variable_high_score_time == 1 and time.time() - self.first_button_press_time <= self.button_press_time_limit: # pylint: disable=line-too-long
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.set('Leveling_Snake_Values', 'level_high_score', '0')
-                with open('config.ini', 'w') as configfile:
+                with open('config.ini', 'w', encoding='utf-8') as configfile:
                     self.config.write(configfile)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             try:
                 self.config.read(self.config_path)
-            except Exception as e:
+            except FileNotFoundError as e:
                 traceback.print_exc(e)
             self.leveling_snake_canvas.update_high_score_labels_()
-            self.logfile.log_game_event("Highscore level reset to 0")
+            self.game_logger.log_game_event("Highscore level reset to 0")
             self.leveling_button_press_variable_high_score_time = 0
             self.first_button_press_time = None
 
     def leveling_reset_button_press_variable(self):
+        """
+        Reset the button press variable for the leveling snake game.
+        """
         self.leveling_button_press_variable_high_score = 0
         self.leveling_button_press_variable_high_score_time = 0
 
     def general_reset_button_press_variable(self):
+        """
+        Reset the button press variable for the game.
+        """
         self.button_press_variable = 0
 
     # Destroy the current canvas
-    def destroy_canvas(self, canvas, canvas_name):
+    def destroy_canvas(self, canvas):
+        """
+        Destroy the canvas.
+        """
         try:
             if canvas is not None:
                 self.framelabel_panel.set_create_label_canvas_flag(False)
                 canvas.destroy()
                 return None
             return canvas
-        
-        except Exception as e:
+
+        except ValueError as e:
             traceback.print_exc(e)
             return canvas
 
     # Return to the home screen
     def return_home(self):
+        """
+        Return to the home screen.
+        """
         try:
             if self.main_canvas == self.classic_snake_canvas:
                 self.classic_snake_canvas.delete_game_labels()
@@ -743,31 +928,39 @@ class SnakeGameApp:
                 self.endless_snake_canvas.delete_game_labels_()
             if self.main_canvas == self.leveling_snake_canvas:
                 self.leveling_snake_canvas.delete_game_labels__()
-            if self.main_canvas == self.challange_snake_canvas:
-                self.challange_snake_canvas.delete_game_labels___()
+            if self.main_canvas == self.food_time_attack_canvas:
+                self.food_time_attack_canvas.delete_game_labels___()
 
             time.sleep(0.1)
             # Destroy all game canvases
-            self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
-            self.endless_snake_canvas = self.destroy_canvas(self.endless_snake_canvas, "self.endless_snake_canvas")
-            self.leveling_snake_canvas = self.destroy_canvas(self.leveling_snake_canvas, "self.leveling_snake_canvas")
-            self.challange_snake_canvas = self.destroy_canvas(self.challange_snake_canvas, "self.challange_snake_canvas")
-            self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas, "self.challange_choice_canvas")
-            self.info_canvas = self.destroy_canvas(self.info_canvas, "self.info_canvas")
-            self.settings_canvas = self.destroy_canvas(self.settings_canvas, "self.settings_canvas")
+            self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas)
+            self.endless_snake_canvas = self.destroy_canvas(self.endless_snake_canvas)
+            self.leveling_snake_canvas = self.destroy_canvas(self.leveling_snake_canvas)
+            self.food_time_attack_canvas = self.destroy_canvas(self.food_time_attack_canvas)
+            self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas)
+            self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
+            self.info_canvas = self.destroy_canvas(self.info_canvas)
+            self.settings_canvas = self.destroy_canvas(self.settings_canvas)
+
+            # Reset the patchnotes_displayed variable
+            if hasattr(self.button_commands, 'patchnotes_displayed'):
+                self.patchnotes_displayed = False
 
 
             # Show the original main canvas (home screen)
             self.original_main_canvas.pack(expand=True, fill="both")
-        except Exception as e:
+        except ValueError as e:
             traceback.print_exc(e)
 
     # Confirm quitting the game
     def confirm_quit(self):
+        """
+        Confirm quitting the game.
+        """
         try:
-            self.logfile.on_closing()
-            self.error_logfile.on_closing()
-        except Exception as e:
+            self.game_logger.on_closing()
+            self.error_game_logger.on_closing()
+        except FileNotFoundError as e:
             traceback.print_exc(e)
 
 
@@ -781,8 +974,10 @@ if __name__ == "__main__":
         root.attributes('-fullscreen', True)
     root.resizable(False, False)
 
-    # Center the window on the screen
     def center_window():
+        """
+        Center the window on the screen.
+        """
         root.update_idletasks()
         window_width, window_height = root.winfo_width(), root.winfo_height()
         screen_width, screen_height = root.winfo_screenwidth(), root.winfo_screenheight()

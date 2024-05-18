@@ -106,7 +106,7 @@ Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 203, in snake_endless
     self.endless_snake_canvas = Snake_endless(self.root,
                                ^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: Snake_endless.__init__() missing 1 required positional argument: 'error_logfile'
+TypeError: Snake_endless.__init__() missing 1 required positional argument: 'error_game_logger'
 [2024-03-24 10:28:20] Started the Error Log File
 Exception in Tkinter callback
 Traceback (most recent call last):
@@ -154,7 +154,7 @@ Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 203, in snake_endless
     self.endless_snake_canvas = Snake_endless(self.root,
                                ^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: Snake_endless.__init__() missing 1 required positional argument: 'error_logfile'
+TypeError: Snake_endless.__init__() missing 1 required positional argument: 'error_game_logger'
 
 
 [2024-03-24 10:30:44] 
@@ -173,7 +173,7 @@ Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 203, in snake_endless
     self.endless_snake_canvas = Snake_endless(self.root,
                                ^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: Snake_endless.__init__() missing 1 required positional argument: 'error_logfile'
+TypeError: Snake_endless.__init__() missing 1 required positional argument: 'error_game_logger'
 [2024-03-24 10:31:22] 
 
 
@@ -257,80 +257,80 @@ TypeError: ConfigParser.add_section() takes 2 positional arguments but 3 were gi
 [2024-03-24 13:12:50] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 569, in endless_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 [2024-03-24 13:15:46] 
 
 
 [2024-03-24 13:15:46] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 [2024-03-24 13:15:53] 
 
 
 [2024-03-24 13:15:53] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 569, in endless_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 [2024-03-24 13:22:40] 
 
 
 [2024-03-24 13:22:40] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 569, in endless_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 [2024-03-24 13:23:11] 
 
 
 [2024-03-24 13:23:11] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -338,9 +338,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -348,9 +348,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -358,9 +358,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -368,9 +368,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -378,9 +378,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -388,9 +388,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -398,9 +398,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -408,9 +408,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -418,9 +418,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -428,9 +428,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -438,9 +438,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -448,9 +448,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -458,9 +458,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -468,9 +468,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -478,9 +478,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -488,9 +488,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -498,9 +498,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -508,9 +508,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -518,9 +518,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -528,9 +528,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -538,9 +538,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -548,9 +548,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -558,9 +558,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -568,9 +568,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -578,9 +578,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -588,9 +588,9 @@ Traceback (most recent call last):
 AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in return_home
     self.endless_snake_canvas.delete_game_labels_()
@@ -608,21 +608,21 @@ AttributeError: 'NoneType' object has no attribute 'delete_game_labels_'
 [2024-03-24 13:24:08] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^
-AttributeError: 'GameLabelsPanel' object has no attribute 'logfile'
+AttributeError: 'GameLabelsPanel' object has no attribute 'game_logger'
 [2024-03-24 13:25:45] 
 
 
 [2024-03-24 13:25:45] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'CTkCanvas' object has no attribute 'log_game_event'
 [2024-03-24 13:26:42] 
@@ -631,7 +631,7 @@ AttributeError: 'CTkCanvas' object has no attribute 'log_game_event'
 [2024-03-24 13:26:42] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'CTkCanvas' object has no attribute 'log_game_event'
 [2024-03-24 13:26:44] No errors occurred
@@ -646,7 +646,7 @@ AttributeError: 'CTkCanvas' object has no attribute 'log_game_event'
 [2024-03-24 13:28:34] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 377, in classic_delete_labels
-    self.logfile.log_game_event("delete_labels method called")
+    self.game_logger.log_game_event("delete_labels method called")
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'CTkCanvas' object has no attribute 'log_game_event'
 [2024-03-24 13:28:40] No errors occurred
@@ -12897,7 +12897,7 @@ Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 266, in snake_leveling
     self.leveling_snake_canvas = Snake_Leveling(self.root,
                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: Snake_Leveling.__init__() missing 3 required positional arguments: 'logfile', 'functions', and 'create_button_panel'
+TypeError: Snake_Leveling.__init__() missing 3 required positional arguments: 'game_logger', 'functions', and 'create_button_panel'
 [2024-03-30 12:02:14] 
 
 
@@ -12915,7 +12915,7 @@ Traceback (most recent call last):
     self.leveling_snake_canvas = Snake_Leveling(self.root,
                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
   File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_leveling_game.py", line 44, in __init__
-    self.snake = Snake(self.logfile, self.snake_canvas, game_config)
+    self.snake = Snake(self.game_logger, self.snake_canvas, game_config)
                                      ^^^^^^^^^^^^^^^^^
 AttributeError: 'Snake_Leveling' object has no attribute 'snake_canvas'
 [2024-03-30 12:03:27] 
@@ -13081,12 +13081,12 @@ Traceback (most recent call last):
     app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 128, in __init__
-    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.logfile,  self.game_config)
+    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.game_logger,  self.game_config)
                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 342, in __init__
     self.leveling_system = LevelingSystem()
                            ^^^^^^^^^^^^^^^^
-TypeError: LevelingSystem.__init__() missing 1 required positional argument: 'logfile'
+TypeError: LevelingSystem.__init__() missing 1 required positional argument: 'game_logger'
 [2024-03-30 13:39:49] 
 
 
@@ -13145,7 +13145,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-30 13:51:21] No errors occurred
 [2024-03-30 13:51:21] Closed the Error Log File
 
@@ -13181,7 +13181,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-30 13:54:08] 
 
 
@@ -13211,7 +13211,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 14:28:00] 
 
 
@@ -13241,7 +13241,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 14:29:31] No errors occurred
 [2024-03-31 14:29:31] Closed the Error Log File
 
@@ -13277,7 +13277,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 14:31:52] No errors occurred
 [2024-03-31 14:31:52] Closed the Error Log File
 
@@ -13313,7 +13313,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 14:48:11] 
 
 
@@ -13353,7 +13353,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 14:51:48] 
 
 
@@ -13383,7 +13383,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 14:52:36] 
 
 
@@ -13413,7 +13413,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:05:22] 
 
 
@@ -13443,7 +13443,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:07:51] No errors occurred
 [2024-03-31 15:07:51] Closed the Error Log File
 
@@ -13479,7 +13479,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:09:10] No errors occurred
 [2024-03-31 15:09:10] Closed the Error Log File
 
@@ -13515,7 +13515,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:12:02] No errors occurred
 [2024-03-31 15:12:02] Closed the Error Log File
 
@@ -13551,7 +13551,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
@@ -13577,7 +13577,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:16:47] No errors occurred
 [2024-03-31 15:16:47] Closed the Error Log File
 
@@ -13613,7 +13613,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:17:35] No errors occurred
 [2024-03-31 15:17:35] Closed the Error Log File
 
@@ -13649,7 +13649,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:18:11] No errors occurred
 [2024-03-31 15:18:11] Closed the Error Log File
 
@@ -13685,7 +13685,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:18:49] No errors occurred
 [2024-03-31 15:18:49] Closed the Error Log File
 
@@ -13721,7 +13721,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
@@ -13747,7 +13747,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:25:42] 
 
 
@@ -13777,7 +13777,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:26:43] 
 
 
@@ -13807,7 +13807,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
@@ -13833,7 +13833,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:29:29] 
 
 
@@ -13863,7 +13863,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:32:06] 
 
 
@@ -13893,7 +13893,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:32:36] 
 
 
@@ -13923,7 +13923,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:32:54] 
 
 
@@ -13953,7 +13953,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:33:36] 
 
 
@@ -13983,7 +13983,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:48:51] No errors occurred
 [2024-03-31 15:48:51] Closed the Error Log File
 
@@ -14019,7 +14019,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:49:57] No errors occurred
 [2024-03-31 15:49:57] Closed the Error Log File
 
@@ -14095,7 +14095,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:51:47] No errors occurred
 [2024-03-31 15:51:47] Closed the Error Log File
 
@@ -14131,7 +14131,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:52:06] No errors occurred
 [2024-03-31 15:52:06] Closed the Error Log File
 
@@ -14167,7 +14167,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:53:11] No errors occurred
 [2024-03-31 15:53:11] Closed the Error Log File
 
@@ -14203,7 +14203,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 15:53:47] No errors occurred
 [2024-03-31 15:53:47] Closed the Error Log File
 
@@ -14239,7 +14239,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 16:36:08] 
 
 
@@ -14269,7 +14269,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
@@ -14295,7 +14295,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 17:17:25] 
 
 
@@ -14325,7 +14325,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
@@ -14378,7 +14378,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 17:21:47] 
 
 
@@ -14408,7 +14408,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
@@ -14434,7 +14434,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 17:22:10] 
 
 
@@ -14478,7 +14478,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
@@ -14504,7 +14504,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 19:16:03] No errors occurred
 [2024-03-31 19:16:03] Closed the Error Log File
 
@@ -14540,7 +14540,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 19:20:51] 
 
 
@@ -14570,7 +14570,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 19:25:22] 
 
 
@@ -14600,7 +14600,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-03-31 19:33:56] 
 
 
@@ -14630,7 +14630,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-04-01 11:03:37] 
 
 
@@ -14660,7 +14660,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-04-01 11:03:49] 
 
 
@@ -14690,7 +14690,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-04-01 11:05:13] No errors occurred
 [2024-04-01 11:05:13] Closed the Error Log File
 
@@ -14726,7 +14726,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-04-01 11:12:15] No errors occurred
 [2024-04-01 11:12:15] Closed the Error Log File
 
@@ -14776,7 +14776,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-04-01 11:41:50] 
 
 
@@ -14811,7 +14811,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-04-01 11:47:25] 
 
 
@@ -14846,7 +14846,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-04-01 11:47:32] 
 
 
@@ -14881,7 +14881,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-04-01 11:51:58] 
 
 
@@ -14916,7 +14916,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
     self.tk = master.tk
               ^^^^^^^^^
-AttributeError: 'LogFile' object has no attribute 'tk'
+AttributeError: 'game_logger' object has no attribute 'tk'
 [2024-04-01 11:52:07] 
 
 
@@ -16385,22 +16385,22 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 58, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 58, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 63, in start_screen
-    self.config.set('Challange_snake_settings', 'state', 'start_game')
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 63, in start_screen
+    self.config.set('food_time_attack_settings', 'state', 'start_game')
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
     super().set(section, option, value)
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
     raise NoSectionError(section) from None
-configparser.NoSectionError: No section: 'Challange_snake_settings'
+configparser.NoSectionError: No section: 'food_time_attack_settings'
 [2024-04-13 18:51:42] 
 
 
@@ -17035,14 +17035,14 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 50, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 50, in __init__
     self.snake_length = self.game_config.SNAKE_LENGTH
                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'GameConfig' object has no attribute 'SNAKE_LENGTH'
@@ -17081,7 +17081,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 132, in start_game
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 132, in start_game
     self.game_labels_panel.classic_update_high_score_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 398, in classic_update_high_score_labels
     self.classic_update_high_score_label()
@@ -17118,16 +17118,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.leveling_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 947, in leveling_update_game_labels
     self.leveling_update_score_label()
@@ -17164,16 +17164,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.leveling_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 947, in leveling_update_game_labels
     self.leveling_update_score_label()
@@ -17210,16 +17210,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.classic_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 403, in classic_update_game_labels
     self.classic_update_score_label()
@@ -17243,11 +17243,11 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 [2024-04-13 19:23:12] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 378, in __init__
-    self.challange_score_label_ = self.config.set('Challange_Snake_Values', 'score', '0')
+    self.challange_score_label_ = self.config.set('food_time_attack_Values', 'score', '0')
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
     raise NoSectionError(section) from None
-configparser.NoSectionError: No section: 'Challange_Snake_Values'
+configparser.NoSectionError: No section: 'food_time_attack_Values'
 
 During handling of the above exception, another exception occurred:
 
@@ -17256,7 +17256,7 @@ Traceback (most recent call last):
     app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 133, in __init__
-    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.logfile,  self.game_config)
+    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.game_logger,  self.game_config)
                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 382, in __init__
     traceback.print_exc(e)
@@ -17278,11 +17278,11 @@ TypeError: '>=' not supported between instances of 'NoSectionError' and 'int'
 [2024-04-13 19:23:15] Started the Error Log File
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 378, in __init__
-    self.challange_score_label_ = self.config.set('Challange_Snake_Values', 'score', '0')
+    self.challange_score_label_ = self.config.set('food_time_attack_Values', 'score', '0')
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
     raise NoSectionError(section) from None
-configparser.NoSectionError: No section: 'Challange_Snake_Values'
+configparser.NoSectionError: No section: 'food_time_attack_Values'
 
 During handling of the above exception, another exception occurred:
 
@@ -17291,7 +17291,7 @@ Traceback (most recent call last):
     app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 133, in __init__
-    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.logfile,  self.game_config)
+    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.game_logger,  self.game_config)
                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 382, in __init__
     traceback.print_exc(e)
@@ -17326,16 +17326,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1239, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17372,16 +17372,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1240, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17418,16 +17418,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1240, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17464,16 +17464,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1240, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17510,16 +17510,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1241, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17548,20 +17548,20 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 61, in __init__
-    self.config.set('Challange_snake_values','score', '0')
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 61, in __init__
+    self.config.set('food_time_attack_values','score', '0')
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
     super().set(section, option, value)
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
     raise NoSectionError(section) from None
-configparser.NoSectionError: No section: 'Challange_snake_values'
+configparser.NoSectionError: No section: 'food_time_attack_values'
 [2024-04-13 19:40:15] 
 
 
@@ -17581,16 +17581,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1242, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17632,16 +17632,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 116, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 116, in start_screen
     self.game_labels_panel.challange_update_high_score_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1249, in challange_update_high_score_labels
     self.challange_update_high_score_label()
@@ -17678,16 +17678,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 98, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 98, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 115, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 115, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1242, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17724,16 +17724,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 97, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 97, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 114, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 114, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1242, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17770,16 +17770,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 97, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 97, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 114, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 114, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1241, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17816,16 +17816,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 97, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 97, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 114, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 114, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1241, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17862,16 +17862,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 97, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 97, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 114, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 114, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1241, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17908,16 +17908,16 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 97, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 97, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 114, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 114, in start_screen
     self.game_labels_panel.challange_update_game_labels()
   File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 1241, in challange_update_game_labels
     self.challange_update_score_label()
@@ -17966,7 +17966,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 134, in start_game
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 134, in start_game
     self.game_labels_panel.challange_update_score_labels()
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'GameLabelsPanel' object has no attribute 'challange_update_score_labels'
@@ -17977,9 +17977,9 @@ AttributeError: 'GameLabelsPanel' object has no attribute 'challange_update_scor
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18010,9 +18010,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18043,9 +18043,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18076,9 +18076,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18109,9 +18109,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18158,7 +18158,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 134, in start_game
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 134, in start_game
     self.game_labels_panel_4.challange_update_score_labels()
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'GameLabelsPanel' object has no attribute 'challange_update_score_labels'
@@ -18203,10 +18203,10 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 134, in start_game
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 134, in start_game
     self.game_labels_panel.challange_update_score_labels()
     ^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'Snake_Challange' object has no attribute 'game_labels_panel'
+AttributeError: 'food_time_attack' object has no attribute 'game_labels_panel'
 [2024-04-13 20:48:09] 
 
 
@@ -18222,9 +18222,9 @@ AttributeError: 'Snake_Challange' object has no attribute 'game_labels_panel'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18255,9 +18255,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18288,9 +18288,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18321,9 +18321,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18354,9 +18354,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18387,9 +18387,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18420,9 +18420,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18453,9 +18453,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18486,9 +18486,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18519,9 +18519,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18552,9 +18552,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18585,9 +18585,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18618,9 +18618,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18651,9 +18651,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18684,9 +18684,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18717,9 +18717,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18750,9 +18750,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18783,9 +18783,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18816,9 +18816,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18867,14 +18867,14 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 32, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 32, in __init__
     self.direction = self.game_config.DIRECTIONOFSNAKE
                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'GameConfig' object has no attribute 'DIRECTIONOFSNAKE'
@@ -18889,17 +18889,17 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 37, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 37, in __init__
     super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
                                                 ^^^^^^^^^^
-AttributeError: 'Snake_Challange' object has no attribute 'width'
+AttributeError: 'food_time_attack' object has no attribute 'width'
 [2024-04-15 19:07:19] 
 
 
@@ -18925,9 +18925,9 @@ AttributeError: 'Snake_Challange' object has no attribute 'width'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18958,9 +18958,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -18991,9 +18991,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -19034,9 +19034,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 734, in return_home
-    self.challange_snake_canvas.delete_game_labels___()
+    self.food_time_attack_canvas.delete_game_labels___()
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'Snake_Challange' object has no attribute 'delete_game_labels___'
+AttributeError: 'food_time_attack' object has no attribute 'delete_game_labels___'
 
 During handling of the above exception, another exception occurred:
 
@@ -19077,9 +19077,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -19120,9 +19120,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -19163,8 +19163,8 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 734, in return_home
-    self.challange_snake_canvas.delete_game_labels___()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 105, in delete_game_labels___
+    self.food_time_attack_canvas.delete_game_labels___()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 105, in delete_game_labels___
     self.game_labels_panel.challange_delete_score_labels()
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'GameLabelsPanel' object has no attribute 'challange_delete_score_labels'
@@ -19208,9 +19208,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -19255,9 +19255,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -19302,9 +19302,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -19345,9 +19345,9 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -19392,19 +19392,19 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 180, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 207, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 101, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 101, in __init__
     self.start_screen()
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 121, in start_screen
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 121, in start_screen
     self.bind_and_unbind_keys()
     ^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'Snake_Challange' object has no attribute 'bind_and_unbind_keys'
+AttributeError: 'food_time_attack' object has no attribute 'bind_and_unbind_keys'
 [2024-04-15 19:21:53] 
 
 
@@ -19420,9 +19420,9 @@ AttributeError: 'Snake_Challange' object has no attribute 'bind_and_unbind_keys'
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 733, in return_home
-    if self.main_canvas == self.challange_snake_canvas:
+    if self.main_canvas == self.food_time_attack_canvas:
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'SnakeGameApp' object has no attribute 'challange_snake_canvas'
+AttributeError: 'SnakeGameApp' object has no attribute 'food_time_attack_canvas'
 
 During handling of the above exception, another exception occurred:
 
@@ -19483,14 +19483,14 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 181, in challange_snake
-    self.start_game("challange_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 181, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 208, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 50, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 50, in __init__
     self.snake_length = self.game_config.SNAKE_LENGTH
                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'GameConfig' object has no attribute 'SNAKE_LENGTH'
@@ -19601,17 +19601,17 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 181, in challange_snake
-    self.start_game("snake_challange")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 181, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 208, in start_game
-    self.challange_snake_canvas = Snake_Challange(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.food_time_attack_canvas = food_time_attack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 57, in __init__
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 57, in __init__
     self.game_labels_panel.classic_create_game_labels()
     ^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'Snake_Challange' object has no attribute 'game_labels_panel'
+AttributeError: 'food_time_attack' object has no attribute 'game_labels_panel'
 [2024-04-15 20:13:50] 
 
 
@@ -19669,7 +19669,7 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-TypeError: Snake_Challange.start_game() takes 1 positional argument but 2 were given
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
 [2024-04-15 20:58:17] 
 
 
@@ -19723,19 +19723,19 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-TypeError: Snake_Challange.start_game() takes 1 positional argument but 2 were given
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-TypeError: Snake_Challange.start_game() takes 1 positional argument but 2 were given
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
 Exception in Tkinter callback
 Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-TypeError: Snake_Challange.start_game() takes 1 positional argument but 2 were given
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
 [2024-04-16 17:32:02] 
 
 
@@ -19745,8 +19745,8 @@ Traceback (most recent call last):
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
     return self.func(*args)
            ^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_challange_games.py", line 137, in start_game
-    self.config.read('Challange_Snake_Values', 'state', 'game')
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\food_time_attack_games.py", line 137, in start_game
+    self.config.read('food_time_attack_Values', 'state', 'game')
 TypeError: RawConfigParser.read() takes from 2 to 3 positional arguments but 4 were given
 [2024-04-16 17:33:28] 
 
@@ -19868,10 +19868,10 @@ Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 176, in challange_choice
     self.start_game("challange_choice")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 209, in start_game
-    self.challange_choice_canvas = Challange_Choice(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.challange_choice_canvas = Challange_Choice(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\snake_challange_choice.py", line 26, in __init__
-    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.logfile, self.functions)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\food_time_attack_choice.py", line 26, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions)
                                                 ^^^^^^^^^^^^^^^^
 AttributeError: 'Challange_Choice' object has no attribute 'main_canvas'
 [2024-04-17 19:37:52] 
@@ -19897,10 +19897,10 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^
   File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
     self._command()
-  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 78, in challange_snake_command
-    self.functions['challange_snake']()
-  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 173, in challange_snake
-    self.start_game("snake_challange")
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 78, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 173, in food_time_attack
+    self.start_game("food_time_attack")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 283, in start_game
     self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas, "self.challange_choice_canvas")
                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -20001,7 +20001,7 @@ Traceback (most recent call last):
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 161, in classic_snake
     self.start_game("classic_snake")
   File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 196, in start_game
-    self.classic_snake_canvas = Snake_Classic_Game(self.root, self.game_config, self.logfile, self.functions, self.create_button_panel)
+    self.classic_snake_canvas = Snake_Classic_Game(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel)
                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 54, in __init__
     self.game_labels_panel.classic_create_game_labels()
@@ -20175,3 +20175,1107 @@ TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
 
 
 [2024-04-17 21:09:13] Started the Error Log File
+[2024-04-18 20:09:02] 
+
+
+[2024-04-18 20:09:02] Started the Error Log File
+[2024-04-18 20:09:51] 
+
+
+[2024-04-18 20:09:51] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 78, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 173, in food_time_attack
+    self.start_game("snake_challange")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 286, in start_game
+    self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas, "self.challange_choice_canvas")
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+[2024-04-18 20:11:55] No errors occurred
+[2024-04-18 20:11:55] Closed the Error Log File
+
+
+
+
+[2024-04-18 20:11:57] 
+
+
+[2024-04-18 20:11:57] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 78, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 173, in food_time_attack
+    self.start_game("food_time_attack")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 286, in start_game
+    self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas, "self.challange_choice_canvas")
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+[2024-04-18 20:12:11] No errors occurred
+[2024-04-18 20:12:11] Closed the Error Log File
+
+
+
+
+[2024-04-19 21:23:55] 
+
+
+[2024-04-19 21:23:55] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 78, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 173, in food_time_attack
+    self.start_game("food_time_attack")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 286, in start_game
+    self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas, "self.challange_choice_canvas")
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+[2024-04-19 21:24:07] No errors occurred
+[2024-04-19 21:24:07] Closed the Error Log File
+
+
+
+
+[2024-04-19 21:25:47] 
+
+
+[2024-04-19 21:25:47] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 78, in food_time_attack_command
+    self.functions['food_time_attack']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 173, in food_time_attack
+    self.start_game("food_time_attack")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 286, in start_game
+    self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas, "self.challange_choice_canvas")
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+[2024-04-19 21:26:26] 
+
+
+[2024-04-19 21:26:26] Started the Error Log File
+[2024-04-19 21:26:30] No errors occurred
+[2024-04-19 21:26:30] Closed the Error Log File
+
+
+
+
+[2024-04-19 21:26:33] 
+
+
+[2024-04-19 21:26:33] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 751, in return_home
+    self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 252, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 763, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TypeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 751, in return_home
+    self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 252, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 763, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TypeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 751, in return_home
+    self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 252, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 763, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TypeError' and 'int'
+[2024-04-19 21:27:01] 
+
+
+[2024-04-19 21:27:01] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 751, in return_home
+    self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 252, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 763, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TypeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 751, in return_home
+    self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 252, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 763, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TypeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 751, in return_home
+    self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas, "self.classic_snake_canvas")
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SnakeGameApp.destroy_canvas() takes 2 positional arguments but 3 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 252, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 24, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 763, in return_home
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TypeError' and 'int'
+[2024-04-19 21:28:17] 
+
+
+[2024-04-19 21:28:17] Started the Error Log File
+[2024-04-19 21:28:32] No errors occurred
+[2024-04-19 21:28:32] Closed the Error Log File
+
+
+
+
+[2024-04-19 21:37:25] 
+
+
+[2024-04-19 21:37:25] Started the Error Log File
+[2024-04-19 21:38:44] 
+
+
+[2024-04-19 21:38:44] Started the Error Log File
+[2024-04-19 21:39:51] 
+
+
+[2024-04-19 21:39:51] Started the Error Log File
+[2024-04-22 20:28:33] 
+
+
+[2024-04-22 20:28:33] Started the Error Log File
+[2024-04-22 20:28:37] 
+
+
+[2024-04-22 20:28:37] Started the Error Log File
+[2024-04-22 20:33:43] 
+
+
+[2024-04-22 20:33:43] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 78, in challange_settings_command
+    self.functions['challange_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 181, in challange_settings
+    self.start_game("challange_settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 296, in start_game
+    self.destroy_canvas()
+TypeError: SnakeGameApp.destroy_canvas() missing 1 required positional argument: 'canvas'
+[2024-04-22 20:33:55] 
+
+
+[2024-04-22 20:33:55] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 745, in destroy_canvas
+    canvas.destroy()
+    ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'destroy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 78, in challange_settings_command
+    self.functions['challange_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 181, in challange_settings
+    self.start_game("challange_settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 296, in start_game
+    self.destroy_canvas("challange_choice_canvas")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 750, in destroy_canvas
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-22 20:34:11] 
+
+
+[2024-04-22 20:34:11] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 746, in destroy_canvas
+    canvas.destroy()
+    ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'destroy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_choices_command
+    self.functions['challange_choices']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 178, in challange_choices
+    self.start_game("challange_choices")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 294, in start_game
+    self.destroy_canvas("challange_choice_canvas")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 751, in destroy_canvas
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[2024-04-22 20:34:25] 
+
+
+[2024-04-22 20:34:25] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 72, in challange_choices_command
+    self.functions['challange_choices']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 178, in challange_choices
+    self.start_game("challange_choices")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 294, in start_game
+    self.destroy_canvas()
+TypeError: SnakeGameApp.destroy_canvas() missing 1 required positional argument: 'canvas'
+[2024-04-22 20:36:47] 
+
+
+[2024-04-22 20:36:47] Started the Error Log File
+[2024-04-22 20:40:11] 
+
+
+[2024-04-22 20:40:11] Started the Error Log File
+[2024-04-22 20:41:34] 
+
+
+[2024-04-22 20:41:34] Started the Error Log File
+[2024-04-22 20:42:07] 
+
+
+[2024-04-22 20:42:07] Started the Error Log File
+[2024-04-22 20:43:00] 
+
+
+[2024-04-22 20:43:00] Started the Error Log File
+[2024-04-22 20:43:02] No errors occurred
+[2024-04-22 20:43:02] Closed the Error Log File
+
+
+
+
+[2024-05-05 11:54:04] 
+
+
+[2024-05-05 11:54:04] Started the Error Log File
+[2024-05-11 10:59:35] 
+
+
+[2024-05-11 10:59:35] Started the Error Log File
+[2024-05-11 11:00:03] 
+
+
+[2024-05-11 11:00:03] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
+[2024-05-11 11:01:17] 
+
+
+[2024-05-11 11:01:17] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: food_time_attack.start_game() takes 1 positional argument but 2 were given
+[2024-05-11 11:02:10] 
+
+
+[2024-05-11 11:02:10] Started the Error Log File
+[2024-05-11 12:32:38] 
+
+
+[2024-05-11 12:32:38] Started the Error Log File
+[2024-05-11 12:34:35] 
+
+
+[2024-05-11 12:34:35] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 178, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 36, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 189, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 318, in start_game
+    self.settings_labels.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 184, in create_theme_label
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 164, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 525, in theme_callback
+    self.label_panel.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 184, in create_theme_label
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 178, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 525, in theme_callback
+    self.label_panel.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 184, in create_theme_label
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 164, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 525, in theme_callback
+    self.label_panel.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 184, in create_theme_label
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 230, in create_game_size_label
+    self.restart_game_game_size_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 562, in game_size_callback
+    self.label_panel.create_game_size_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 252, in create_game_size_label
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 565, in game_size_callback
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TypeError' and 'int'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 246, in create_game_size_label
+    self.restart_game_game_size_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 562, in game_size_callback
+    self.label_panel.create_game_size_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 252, in create_game_size_label
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 565, in game_size_callback
+    traceback.print_exc(e)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 180, in print_exc
+    print_exception(*sys.exc_info(), limit=limit, file=file, chain=chain)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 728, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\traceback.py", line 406, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TypeError' and 'int'
+[2024-05-11 12:37:31] 
+
+
+[2024-05-11 12:37:31] Started the Error Log File
+[2024-05-11 12:37:34] No errors occurred
+[2024-05-11 12:37:34] Closed the Error Log File
+
+
+
+
+[2024-05-11 13:33:03] 
+
+
+[2024-05-11 13:33:03] Started the Error Log File
+[2024-05-11 15:33:08] 
+
+
+[2024-05-11 15:33:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 91, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 193, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 250, in start_game
+    self.endless_snake_canvas = SnakeEndless(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 67, in __init__
+    self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0')) # pylint: disable=line-too-long
+                          ^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'get'
+[2024-05-11 15:33:35] 
+
+
+[2024-05-11 15:33:35] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 55, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 231, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 363, in start_game
+    self.settings_labels.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 258, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-05-11 15:39:09] 
+
+
+[2024-05-11 15:39:09] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 91, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 193, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 250, in start_game
+    self.endless_snake_canvas = SnakeEndless(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 67, in __init__
+    self.high_score = int(self.config.get('Endless_Snake_Values', 'high_score', fallback='0')) # pylint: disable=line-too-long
+                          ^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'get'
+[2024-05-11 15:39:18] 
+
+
+[2024-05-11 15:39:18] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 55, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 231, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 363, in start_game
+    self.settings_labels.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 260, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 748, in theme_callback
+    self.label_panel.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 246, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 748, in theme_callback
+    self.label_panel.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 260, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-05-11 15:40:15] 
+
+
+[2024-05-11 15:40:15] Started the Error Log File
+[2024-05-11 15:41:31] No errors occurred
+[2024-05-11 15:41:31] Closed the Error Log File
+
+
+
+
+[2024-05-11 15:47:30] 
+
+
+[2024-05-11 15:47:30] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 55, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 231, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 363, in start_game
+    self.settings_labels.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 260, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 748, in theme_callback
+    self.label_panel.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 246, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 748, in theme_callback
+    self.label_panel.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 260, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-05-11 15:56:46] 
+
+
+[2024-05-11 15:56:46] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 55, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 231, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 363, in start_game
+    self.settings_labels.create_theme_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 258, in create_theme_label
+    self.restart_game_theme_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-05-11 15:57:48] 
+
+
+[2024-05-11 15:57:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 55, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 231, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 364, in start_game
+    self.settings_labels.create_game_size_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 332, in create_game_size_label
+    self.restart_game_game_size_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-05-11 15:59:22] 
+
+
+[2024-05-11 15:59:22] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 797, in game_size_callback
+    self.label_panel.create_game_size_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 316, in create_game_size_label
+    self.restart_game_game_size_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-05-11 16:00:11] 
+
+
+[2024-05-11 16:00:11] Started the Error Log File
+[2024-05-12 11:18:07] 
+
+
+[2024-05-12 11:18:07] Started the Error Log File
+[2024-05-12 11:18:32] No errors occurred
+[2024-05-12 11:18:32] Closed the Error Log File
+
+
+
+
+[2024-05-12 11:36:55] 
+
+
+[2024-05-12 11:36:55] Started the Error Log File
+[2024-05-12 11:37:44] 
+
+
+[2024-05-12 11:37:44] Started the Error Log File
+[2024-05-12 11:38:05] 
+
+
+[2024-05-12 11:38:05] Started the Error Log File

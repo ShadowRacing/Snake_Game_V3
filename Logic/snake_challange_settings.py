@@ -1,16 +1,17 @@
-#***********************************************
-# Snake Challange Choice File
-#***********************************************
+#********************************************************
+# Challange Settings File
+#********************************************************
 
 """
-Module for the Snake Challange Choice screen of the Shadows Snake game.
+Module for the Snake Challange Settings screen of the Shadows Snake game.
 """
 
 import customtkinter as ctk
 
-class ChallangeChoices(ctk.CTkCanvas):
+
+class ChallangeSettings(ctk.CTkCanvas):
     """
-    Class for the Snake Challange Choice screen of the Shadows Snake game.
+    Class for the Snake Challange Settings screen of the Shadows Snake game.
     """
     def __init__(self, parent, game_config, game_logger, functions, create_button_panel):
         self.parent = parent
@@ -27,12 +28,11 @@ class ChallangeChoices(ctk.CTkCanvas):
         self.game_logger.log_game_event(
             f"Game height: {self.height}"
         )
-        self.game_logger.log_game_event(game_config.SNAKE_LENGTH)
+        self.game_logger.log_game_event(f"Game config Snake Length: {game_config.SNAKE_LENGTH}")
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
-        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, 
-                         highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground) # pylint: disable=line-too-long
+        super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, highlightbackground=self.highlightbackground)
 
-#***********************************************
-# Snake Challange Choice File
-#***********************************************
+#********************************************************
+# Challange Settings File
+#********************************************************

@@ -1385,3 +1385,13 @@ configparser.NoOptionError: No option 'pausegame' in section: 'KeyBindings'
 
 
 
+[2024-05-18 22:30:00] 
+
+
+[2024-05-18 22:30:00] Started the Error Log File
+[2024-05-18 22:30:08] No errors occurred
+[2024-05-18 22:30:08] Closed the Error Log File
+
+
+
+

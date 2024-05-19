@@ -330,7 +330,7 @@ class SettingsOptionButtonLabels:
                                         text="Move Down",
                                         font=FONT_LIST[11],
                                         anchor=self.anchor)
-        self.keybindings_down_label.place(x=400, y=310)
+        self.keybindings_down_label.place(x=600, y=310)
 
         self.keybindings_default_value_down_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
@@ -339,7 +339,7 @@ class SettingsOptionButtonLabels:
                                         text="Default: S",
                                         font=FONT_LIST[11],
                                         anchor=self.anchor)
-        self.keybindings_default_value_down_label.place(x=400, y=400)
+        self.keybindings_default_value_down_label.place(x=600, y=400)
 
     def create_keybinding_left_label(self):
         """
@@ -352,7 +352,7 @@ class SettingsOptionButtonLabels:
                                         text="Move Left",
                                         font=FONT_LIST[11],
                                         anchor=self.anchor)
-        self.keybindings_left_label.place(x=600, y=310)
+        self.keybindings_left_label.place(x=400, y=310)
 
         self.keybindings_default_value_left_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
@@ -361,7 +361,7 @@ class SettingsOptionButtonLabels:
                                         text="Default: A",
                                         font=FONT_LIST[11],
                                         anchor=self.anchor)
-        self.keybindings_default_value_left_label.place(x=600, y=400)
+        self.keybindings_default_value_left_label.place(x=400, y=400)
 
     def create_keybinding_right_label(self):
         """

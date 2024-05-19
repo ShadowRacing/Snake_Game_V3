@@ -686,6 +686,7 @@ class OptionButtonPanel:
         self.keybindings_config_startgame = 0
         self.keybindings_config_pausegame = 0
         self.keybindings_config_restartgame = 0
+        self.current_key = None
         self.combobox = None
 
         self.button_width = GameConstants.OPTION_BUTTON_WIDTH
@@ -813,6 +814,76 @@ class OptionButtonPanel:
             self.game_logger.log_game_event("Game size changed2")
         except FileNotFoundError as e:
             traceback.print_exc(e)
+    
+    def keybindings_callback_up(self, selected_value):
+        """
+        Function for the keybindings callback up.
+        """
+        try:
+            self.config.set('KeyBindings', 'up', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
+        self.updating_config_ini()
+    
+    def keybindings_callback_down(self, selected_value):
+        """
+        Function for the keybindings callback down.
+        """
+        try:
+            self.config.set('KeyBindings', 'down', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
+        self.updating_config_ini()
+    
+    def keybindings_callback_left(self, selected_value):
+        """
+        Function for the keybindings callback left.
+        """
+        try:
+            self.config.set('KeyBindings', 'left', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
+        self.updating_config_ini()
+    
+    def keybindings_callback_right(self, selected_value):
+        """
+        Function for the keybindings callback right.
+        """
+        try:
+            self.config.set('KeyBindings', 'right', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
+        self.updating_config_ini()
+    
+    def keybindings_callback_startgame(self, selected_value):
+        """
+        Function for the keybindings callback startgame.
+        """
+        try:
+            self.config.set('KeyBindings', 'startgame', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
+        self.updating_config_ini()
+    
+    def keybindings_callback_pausegame(self, selected_value):
+        """
+        Function for the keybindings callback pausegame.
+        """
+        try:
+            self.config.set('KeyBindings', 'pausegame', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
+        self.updating_config_ini()
+    
+    def keybindings_callback_restartgame(self, selected_value):
+        """
+        Function for the keybindings callback restartgame.
+        """
+        try:
+            self.config.set('KeyBindings', 'restartgame', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
+        self.updating_config_ini()
 
 
 
@@ -834,64 +905,71 @@ class OptionButtonPanel:
         except ValueError as e:
             traceback.print_exc(e)
 
-    def create_combobox(self, command, values_2, config, x, y, additional_value):
-        """
-        Method to create a combobox with the given parameters.
-        """
-        self.combobox = ctk.CTkComboBox(self.settings_canvas,
-                                   width=self.button_width,
-                                   height=self.button_height,
-                                   font=FONT_LIST[11],
-                                   corner_radius=self.corner_radius,
-                                   values=values_2,
-                                   command=lambda selected_value: command(selected_value, additional_value))
-        self.combobox.place(x=x, y=y)
-        self.combobox.bind("<KeyRelease>", self.keybindings_key_release_callback)
-        try:
-            self.combobox.set(config)
-        except ValueError as e:
-            traceback.print_exc(e)
+    # def create_combobox(self, command, values_2, config, x, y, additional_value):
+    #     """
+    #     Method to create a combobox with the given parameters.
+    #     """
+    #     self.combobox = ctk.CTkComboBox(self.settings_canvas,
+    #                                width=self.button_width,
+    #                                height=self.button_height,
+    #                                font=FONT_LIST[11],
+    #                                corner_radius=self.corner_radius,
+    #                                values=values_2,
+    #                                command=lambda selected_value: command(selected_value, additional_value))
+    #     self.combobox.place(x=x, y=y)
+    #     self.combobox.bind("<KeyRelease>", lambda event: self.keybindings_key_release_callback(event, additional_value))
+    #     try:
+    #         self.combobox.set(config)
+    #     except ValueError as e:
+    #         traceback.print_exc(e)
 
-    def keybindings_key_release_callback(self, event, additional_value):
-        """
-        Function for handling key release events.
-        """
-        if event.keysym not in ("Delete", "BackSpace"):
-            choice = self.combobox.get()
-            self.current_key = additional_value
-            if choice in ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
-                          "`","1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"]: # pylint: disable=line-too-long
-                self.update_config(self.current_key, choice)
+    # def keybindings_key_release_callback(self, event, additional_value):
+    #     """
+    #     Function for handling key release events.
+    #     """
+    #     if event.keysym not in ("Delete", "BackSpace"):
+    #         choice = self.combobox.get()
+    #         print(choice)
+    #         self.current_key = additional_value
+    #         print(self.current_key)
+    #         if choice in ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+    #                       "`","1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"]: # pylint: disable=line-too-long
+    #             self.update_config(self.current_key, choice)
+    #         else:
+    #             print("not working")
 
-    def keybindings_combobox_callback(self, selected_value, additional_value):
-        """
-        Function for handling combobox selection changes.
-        """
-        self.current_key = additional_value
-        if selected_value in ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
-                        "`","1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"]: # pylint: disable=line-too-long
-            self.update_config(self.current_key, selected_value)
+    # def keybindings_combobox_callback(self, selected_value, additional_value):
+    #     """
+    #     Function for handling combobox selection changes.
+    #     """
+    #     self.current_key = additional_value
+    #     if selected_value in ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+    #                     "`","1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"]: # pylint: disable=line-too-long
+    #         self.update_config(self.current_key, selected_value)
 
-    def update_config(self, key, value):
-        """
-        Function to update the configuration.
-        """
-        current_config = self.get_current_config()
-        if value in current_config.values():
-            print("Value already in use")
-        else:
-            self.config['KeyBindings'][key] = value
-            self.game_logger.log_game_event("Keybindings changed")
-            self.config.set('KeyBindings', key, value)
-            with open(self.config_path, 'w', encoding='utf-8') as configfile:
-                self.config.write(configfile)
-            self.game_logger.log_game_event("Keybindings changed2")
+    # def update_config(self, key, value):
+    #     """
+    #     Function to update the configuration.
+    #     """
+    #     try:
+    #         current_config = self.get_current_config()
+    #         if value in current_config.values():
+    #             print("Value already in use")
+    #         else:
+    #             self.config['KeyBindings'][key] = value
+    #             self.game_logger.log_game_event("Keybindings changed")
+    #             self.config.set('KeyBindings', key, value)
+    #             with open(self.config_path, 'w', encoding='utf-8') as configfile:
+    #                 self.config.write(configfile)
+    #             self.game_logger.log_game_event("Keybindings changed2")
+    #     except ValueError as e:
+    #         traceback.print_exc(e)
 
-    def get_current_config(self):
-        """
-        Function to get the current configuration.
-        """
-        return self.config['KeyBindings']
+    # def get_current_config(self):
+    #     """
+    #     Function to get the current configuration.
+    #     """
+    #     return self.config['KeyBindings']
 
     # def keybindings_callback(self, selected_value, event):
     #     """
@@ -964,46 +1042,46 @@ class OptionButtonPanel:
                                       self.game_size_config, 400, 200)
 
             self.keybindings_config_up = self.config.get('KeyBindings', 'up', fallback='Default')
-            self.create_combobox(self.keybindings_combobox_callback,
+            self.create_option_button(self.keybindings_callback_up,
                                     ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
-                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
-                                    self.keybindings_config_up, 200, 350, "up")
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9", "Escape", "space"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_up, 200, 350)
 
             self.keybindings_config_down = self.config.get('KeyBindings', 'down', fallback='Default')
-            self.create_combobox(self.keybindings_combobox_callback,
+            self.create_option_button(self.keybindings_callback_down,
                                     ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
-                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
-                                    self.keybindings_config_down, 400, 350, "down")
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9", "Escape", "space"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_down, 600, 350)
 
             self.keybindings_config_left = self.config.get('KeyBindings', 'left', fallback='Default')
-            self.create_combobox(self.keybindings_combobox_callback,
+            self.create_option_button(self.keybindings_callback_left,
                                     ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
-                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
-                                    self.keybindings_config_left, 600, 350, "left")
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9", "Escape", "space"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_left, 400, 350)
 
             self.keybindings_config_right = self.config.get('KeyBindings', 'right', fallback='Default')
-            self.create_combobox(self.keybindings_combobox_callback,
+            self.create_option_button(self.keybindings_callback_right,
                                     ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
-                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
-                                    self.keybindings_config_right, 800, 350, "right")
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9", "Escape", "space"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_right, 800, 350)
 
             self.keybindings_config_startgame = self.config.get('KeyBindings', 'startgame', fallback='Default')
-            self.create_combobox(self.keybindings_combobox_callback,
+            self.create_option_button(self.keybindings_callback_startgame,
                                     ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
-                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
-                                    self.keybindings_config_startgame, 200, 500, "startgame")
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9", "Escape", "space"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_startgame, 200, 500)
 
             self.keybindings_config_pausegame = self.config.get('KeyBindings', 'pausegame', fallback='Default')
-            self.create_combobox(self.keybindings_combobox_callback,
+            self.create_option_button(self.keybindings_callback_pausegame,
                                     ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
-                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
-                                    self.keybindings_config_pausegame, 400, 500, "pausegame")
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9", "Escape", "space"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_pausegame, 400, 500)
 
             self.keybindings_config_restartgame = self.config.get('KeyBindings', 'restartgame', fallback='Default')
-            self.create_combobox(self.keybindings_combobox_callback,
+            self.create_option_button(self.keybindings_callback_restartgame,
                                     ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
-                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
-                                    self.keybindings_config_restartgame, 600, 500, "restartgame")
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9", "Escape", "Spacebar"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_restartgame, 600, 500)
 
         # Handle exceptions appropriately
         except ValueError as e:

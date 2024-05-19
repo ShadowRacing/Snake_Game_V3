@@ -10,7 +10,7 @@ import configparser
 import traceback
 from os import path
 import customtkinter as ctk
-from Configuration.constants_snake_game import FONT_LIST
+from Configuration.constants_snake_game import FONT_LIST, GameConstants
 from Logic.leveling_system import LevelingSystem
 
 
@@ -148,7 +148,26 @@ class SettingsOptionButtonLabels:
         self.game_size_default_label = None
         self.snake_default_speed_label = None
         self.game_size_label = None
+        self.keybindings_up_label = None
+        self.keybindings_down_label = None
+        self.keybindings_left_label = None
+        self.keybindings_right_label = None
+        self.keybindings_default_value_up_label = None
+        self.keybindings_default_value_down_label = None
+        self.keybindings_default_value_left_label = None
+        self.keybindings_default_value_right_label = None
+        self.start_game_label = None
+        self.start_game_default_label = None
+        self.pause_game_label = None
+        self.pause_game_default_label = None
+        self.restart_game_label = None
+        self.restart_game_default_label = None
         self.create_label_canvas_flag = False
+
+        self.label_width = GameConstants.SETTINGS_LABEL_WIDTH
+        self.label_height = GameConstants.SETTINGS_LABEL_HEIGHT
+        self.corner_radius = GameConstants.SETTINGS_LABEL_CORNER_RADIUS
+        self.anchor = GameConstants.ANCHOR
 
     def create_settings_labels(self):
         """
@@ -161,18 +180,25 @@ class SettingsOptionButtonLabels:
         self.create_high_score_label()
         self.snake_speed_options_label()
         self.game_size_options_label()
+        self.create_keybinding_up_label()
+        self.create_keybinding_down_label()
+        self.create_keybinding_left_label()
+        self.create_keybinding_right_label()
+        self.create_start_game_label()
+        self.create_pause_game_label()
+        self.create_restart_game_label()
 
     def create_screen_options_label(self):
         """
         Create the screen options label.
         """
         self.screen_label = ctk.CTkLabel(self.settings_canvas,
-                                        width=160,
-                                        height=30,
-                                        corner_radius=6,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
                                         text="Screen size",
                                         font=FONT_LIST[11],
-                                        anchor='w')
+                                        anchor=self.anchor)
         self.screen_label.place(x=200, y=10)
 
     def create_theme_options_label(self):
@@ -180,12 +206,12 @@ class SettingsOptionButtonLabels:
         Create the theme options label.
         """
         self.theme_label = ctk.CTkLabel(self.settings_canvas,
-                                        width=160,
-                                        height=30,
-                                        corner_radius=6,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
                                         text="Theme options",
                                         font=FONT_LIST[11],
-                                        anchor='w')
+                                        anchor=self.anchor)
         self.theme_label.place(x=400, y=10)
 
     def create_contrast_options_label(self):
@@ -193,13 +219,12 @@ class SettingsOptionButtonLabels:
         Create the contrast options label.
         """
         self.contrast_label = ctk.CTkLabel(self.settings_canvas,
-                                           width=160,
-                                           height=30,
-                                           corner_radius=6,
-                                           text="Dark or Light",
-                                           font=FONT_LIST[11],
-                                           anchor='w'
-                                           )
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Contrast options",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
         self.contrast_label.place(x=600, y=10)
 
     def snake_color_options_label(self):
@@ -207,14 +232,224 @@ class SettingsOptionButtonLabels:
         Create the snake color options label.
         """
         self.snake_color_label = ctk.CTkLabel(self.settings_canvas,
-                                              width=160,
-                                              height=30,
-                                              corner_radius=6,
-                                              text="Snake Color",
-                                              font=FONT_LIST[11],
-                                              anchor='w'
-                                              )
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Snake Color",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
         self.snake_color_label.place(x=800, y=10)
+
+    def create_high_score_label(self):
+        """
+        Create the high score label.
+        """
+        self.high_score_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="High Score",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.high_score_label.place(x=600, y=160)
+
+    def snake_speed_options_label(self):
+        """
+        Create the snake speed options label.
+        """
+        self.snake_speed_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Snake Speed",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.snake_speed_label.place(x=200, y=160)
+
+        self.snake_default_speed_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default: 50",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.snake_default_speed_label.place(x=200, y=250)
+
+    def game_size_options_label(self):
+        """
+        Create the game size options label.
+        """
+        self.game_size_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Game Size",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.game_size_label.place(x=400, y=160)
+
+        self.game_size_default_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default:600x600",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.game_size_default_label.place(x=400, y=250)
+
+    def create_keybinding_up_label(self):
+        """
+        Create the keybinding up label.
+        """
+        self.keybindings_up_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Move Up",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.keybindings_up_label.place(x=200, y=310)
+
+        self.keybindings_default_value_up_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default: W",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.keybindings_default_value_up_label.place(x=200, y=400)
+
+    def create_keybinding_down_label(self):
+        """
+        Create the keybinding down label.
+        """
+        self.keybindings_down_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Move Down",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.keybindings_down_label.place(x=400, y=310)
+
+        self.keybindings_default_value_down_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default: S",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.keybindings_default_value_down_label.place(x=400, y=400)
+
+    def create_keybinding_left_label(self):
+        """
+        Create the keybinding left label.
+        """
+        self.keybindings_left_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Move Left",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.keybindings_left_label.place(x=600, y=310)
+
+        self.keybindings_default_value_left_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default: A",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.keybindings_default_value_left_label.place(x=600, y=400)
+
+    def create_keybinding_right_label(self):
+        """
+        Create the keybinding right label.
+        """
+        self.keybindings_right_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Move Right",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.keybindings_right_label.place(x=800, y=310)
+
+        self.keybindings_default_value_right_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default: D",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.keybindings_default_value_right_label.place(x=800, y=400)
+
+    def create_start_game_label(self):
+        """
+        Create the start game label.
+        """
+        self.start_game_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Start Game",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.start_game_label.place(x=200, y=460)
+
+        self.start_game_default_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default: Space",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.start_game_default_label.place(x=200, y=550)
+
+    def create_pause_game_label(self):
+        """
+        Create the pause game label.
+        """
+        self.pause_game_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Pause Game",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.pause_game_label.place(x=400, y=460)
+
+        self.pause_game_default_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default: Escape",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.pause_game_default_label.place(x=400, y=550)
+
+    def create_restart_game_label(self):
+        """
+        Create the restart game label.
+        """
+        self.restart_game_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Restart Game",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.restart_game_label.place(x=600, y=460)
+
+        self.restart_game_default_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default: R",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.restart_game_default_label.place(x=600, y=550)
 
     def create_theme_label(self):
         """
@@ -340,68 +575,6 @@ class SettingsOptionButtonLabels:
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
-    def create_high_score_label(self):
-        """
-        Create the high score label.
-        """
-        self.high_score_label = ctk.CTkLabel(self.settings_canvas,
-                                             width=160,
-                                             height=30,
-                                             corner_radius=6,
-                                             text="High Score",
-                                             font=FONT_LIST[11],
-                                             anchor='w'
-                                             )
-        self.high_score_label.place(x=1000, y=10)
-
-    def snake_speed_options_label(self):
-        """
-        Create the snake speed options label.
-        """
-        self.snake_speed_label = ctk.CTkLabel(self.settings_canvas,
-                                              width=160,
-                                              height=30,
-                                              corner_radius=6,
-                                              text="Snake Speed",
-                                              font=FONT_LIST[11],
-                                              anchor='w'
-                                              )
-        self.snake_speed_label.place(x=200, y=160)
-
-        self.snake_default_speed_label = ctk.CTkLabel(self.settings_canvas,
-                                                         width=160,
-                                                         height=30,
-                                                         corner_radius=6,
-                                                         text="Default: 50",
-                                                         font=FONT_LIST[11],
-                                                         anchor='w'
-                                                         )
-        self.snake_default_speed_label.place(x=200, y=250)
-
-    def game_size_options_label(self):
-        """
-        Create the game size options label.
-        """
-        self.game_size_label = ctk.CTkLabel(self.settings_canvas,
-                                            width=160,
-                                            height=30,
-                                            corner_radius=6,
-                                            text="Game Size",
-                                            font=FONT_LIST[11],
-                                            anchor='w'
-                                            )
-        self.game_size_label.place(x=400, y=160)
-
-        self.game_size_default_label = ctk.CTkLabel(self.settings_canvas,
-                                                         width=160,
-                                                         height=30,
-                                                         corner_radius=6,
-                                                         text="Default:600x600",
-                                                         font=FONT_LIST[11],
-                                                         anchor='w'
-                                                         )
-        self.game_size_default_label.place(x=400, y=250)
-
     def set_create_label_canvas_flag(self, value=True):
         """
         Set the create label canvas flag.
@@ -512,6 +685,11 @@ class GameLabelsPanel:
         self.challange_score_label_flag = False
         self.challange_high_score_label_flag = False
 
+        self.width = GameConstants.GAME_LABEL_WIDTH
+        self.height = GameConstants.GAME_LABEL_HEIGHT
+        self.corner_radius = GameConstants.GAME_LABEL_CORNER_RADIUS
+        self.anchor = GameConstants.ANCHOR
+
         self.leveling_system = LevelingSystem()
 
         try:
@@ -595,14 +773,13 @@ class GameLabelsPanel:
         Create the score label for the classic snake game.
         """
         self.classic_score_label = ctk.CTkLabel(self.snake_canvas,
-                                            height=30,
-                                            width=275,
-                                            corner_radius=10,
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
                                             text=f"Score:{self.classic_score_label_} ",
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
-                                            anchor='w'
-                                            )
+                                            anchor=self.anchor)
         self.classic_score_label.place(x=200, y=50)
 
     def classic_update_score_label(self):
@@ -625,14 +802,13 @@ class GameLabelsPanel:
         Create the high score label for the classic snake game.
         """
         self.classic_high_score_label = ctk.CTkLabel(self.snake_canvas,
-                                             height=30,
-                                             width=275,
-                                             corner_radius=10,
-                                             text=f"Score: {self.classic_score_label_} ",
-                                             font=FONT_LIST[11],
-                                             bg_color='grey20',
-                                             anchor='w'
-                                             )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Score: {self.classic_score_label_} ",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.classic_high_score_label.place(x=200, y=550)
 
     def classic_update_high_score_label(self):
@@ -655,14 +831,13 @@ class GameLabelsPanel:
         Create the time label for the classic snake game.
         """
         self.classic_time_label = ctk.CTkLabel(self.snake_canvas,
-                                        height=30,
-                                        width=275,
-                                        corner_radius=10,
-                                        text=f"Time: {self.classic_score_label_} Seconds",
-                                        font=FONT_LIST[11],
-                                        bg_color='grey20',
-                                        anchor='w'
-                                        )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Time: {self.classic_score_label_} Seconds",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.classic_time_label.place(x=200, y=100)
 
     def classic_update_time_label(self):
@@ -685,14 +860,13 @@ class GameLabelsPanel:
         Create the high score time label for the classic snake game.
         """
         self.classic_high_score_time_label = ctk.CTkLabel(self.snake_canvas,
-                                                    height=30,
-                                                    width=275,
-                                                    corner_radius=10,
-                                                    text=f"Score Time: {self.classic_score_label_} Seconds", # pylint: disable=line-too-long
-                                                    font=FONT_LIST[11],
-                                                    bg_color='grey20',
-                                                    anchor='w'
-                                                    )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Score Time: {self.classic_score_label_} Seconds", # pylint: disable=line-too-long
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.classic_high_score_time_label.place(x=200, y=600)
 
     def classic_update_high_score_time_label(self):
@@ -715,14 +889,13 @@ class GameLabelsPanel:
         Create the snake length label for the classic snake game.
         """
         self.classic_snake_length_label = ctk.CTkLabel(self.snake_canvas,
-                                                height=30,
-                                                width=275,
-                                                corner_radius=10,
-                                                text="Snake Length:",
-                                                font=FONT_LIST[11],
-                                                bg_color='grey20',
-                                                anchor='w'
-                                                )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="Snake Length:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.classic_snake_length_label.place(x=200, y=150)
 
     def classic_update_snake_length_label(self):
@@ -745,14 +918,13 @@ class GameLabelsPanel:
         Create the high score snake length label for the classic snake game.
         """
         self.classic_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas,
-                                                            height=30,
-                                                            width=275,
-                                                            corner_radius=10,
-                                                            text="Snake Length:",
-                                                            font=FONT_LIST[11],
-                                                            bg_color='grey20',
-                                                            anchor='w'
-                                                            )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="Snake Length:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.classic_high_score_snake_length_label.place(x=200, y=650)
 
     def classic_update_high_score_snake_length_label(self):
@@ -775,14 +947,13 @@ class GameLabelsPanel:
         Create the high scores label for the classic snake game.
         """
         self.classic_high_scores_label = ctk.CTkLabel(self.snake_canvas,
-                                                height=30,
-                                                width=275,
-                                                corner_radius=10,
-                                                text="High Scores:",
-                                                font=FONT_LIST[11],
-                                                bg_color='grey20',
-                                                anchor='w'
-                                                )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="High Scores:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.classic_high_scores_label.place(x=200, y=500)
 
     def classic_reset_labels(self):
@@ -864,14 +1035,13 @@ class GameLabelsPanel:
         Create the high scores label for the endless snake game.
         """
         self.endless_high_scores_label = ctk.CTkLabel(self.snake_canvas,
-                                                height=30,
-                                                width=275,
-                                                corner_radius=10,
-                                                text="High Scores:",
-                                                font=FONT_LIST[11],
-                                                bg_color='grey20',
-                                                anchor='w'
-                                                )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="High Scores:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.endless_high_scores_label.place(x=200, y=400)
 
     def endless_create_score_label(self):
@@ -879,14 +1049,13 @@ class GameLabelsPanel:
         Create the score label for the endless snake game.
         """
         self.endless_score_label = ctk.CTkLabel(self.snake_canvas,
-                                            height=30,
-                                            width=275,
-                                            corner_radius=10,
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
                                             text=f"Score:{self.endless_score_label_}",
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
-                                            anchor='w'
-                                            )
+                                            anchor=self.anchor)
         self.endless_score_label.place(x=200, y=50)
 
     def endless_update_score_label(self):
@@ -909,14 +1078,13 @@ class GameLabelsPanel:
         Create the high score label for the endless snake game.
         """
         self.endless_high_score_label = ctk.CTkLabel(self.snake_canvas,
-                                             height=30,
-                                             width=275,
-                                             corner_radius=10,
-                                             text=f"Score: {self.endless_score_label_} ",
-                                             font=FONT_LIST[11],
-                                             bg_color='grey20',
-                                             anchor='w'
-                                             )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Score: {self.endless_score_label_} ",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.endless_high_score_label.place(x=200, y=450)
 
     def endless_update_high_score_label(self):
@@ -939,14 +1107,13 @@ class GameLabelsPanel:
         Create the time label for the endless snake game.
         """
         self.endless_time_label = ctk.CTkLabel(self.snake_canvas,
-                                        height=30,
-                                        width=275,
-                                        corner_radius=10,
-                                        text=f"Time: {self.endless_time_label_} Seconds",
-                                        font=FONT_LIST[11],
-                                        bg_color='grey20',
-                                        anchor='w'
-                                        )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Time: {self.endless_time_label_} Seconds",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.endless_time_label.place(x=200, y=100)
 
     def endless_update_time_label(self):
@@ -969,14 +1136,13 @@ class GameLabelsPanel:
         Create the high score time label for the endless snake game.
         """
         self.endless_high_score_time_label = ctk.CTkLabel(self.snake_canvas,
-                                                    height=30,
-                                                    width=275,
-                                                    corner_radius=10,
-                                                    text=f"Score Time: {self.endless_time_label_} Seconds", # pylint: disable=line-too-long
-                                                    font=FONT_LIST[11],
-                                                    bg_color='grey20',
-                                                    anchor='w'
-                                                    )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Score Time: {self.endless_time_label_} Seconds", # pylint: disable=line-too-long
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.endless_high_score_time_label.place(x=200, y=500)
 
     def endless_update_high_score_time_label(self):
@@ -999,14 +1165,13 @@ class GameLabelsPanel:
         Create the snake length label for the endless snake game.
         """
         self.endless_snake_length_label = ctk.CTkLabel(self.snake_canvas,
-                                                height=30,
-                                                width=275,
-                                                corner_radius=10,
-                                                text="Snake Length:",
-                                                font=FONT_LIST[11],
-                                                bg_color='grey20',
-                                                anchor='w'
-                                                )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="Snake Length:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.endless_snake_length_label.place(x=200, y=150)
 
     def endless_update_snake_length_label(self):
@@ -1029,14 +1194,13 @@ class GameLabelsPanel:
         Create the high score snake length label for the endless snake game.
         """
         self.endless_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas,
-                                                            height=30,
-                                                            width=275,
-                                                            corner_radius=10,
-                                                            text="Snake Length:",
-                                                            font=FONT_LIST[11],
-                                                            bg_color='grey20',
-                                                            anchor='w'
-                                                            )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="Snake Length:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.endless_high_score_snake_length_label.place(x=200, y=550)
 
     def endless_update_high_score_snake_length_label(self):
@@ -1059,14 +1223,13 @@ class GameLabelsPanel:
         Create the special score label for the endless snake game.
         """
         self.endless_special_score_label = ctk.CTkLabel(self.snake_canvas,
-                                            height=30,
-                                            width=275,
-                                            corner_radius=10,
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
                                             text=f"Special Score:{self.endless_special_score_label} ", # pylint: disable=line-too-long
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
-                                            anchor='w'
-                                            )
+                                            anchor=self.anchor)
         self.endless_special_score_label.place(x=200, y=200)
 
     def endless_update_special_score_label(self):
@@ -1089,14 +1252,13 @@ class GameLabelsPanel:
         Create the special high score label for the endless snake game.
         """
         self.endless_special_high_score_label = ctk.CTkLabel(self.snake_canvas,
-                                             height=30,
-                                             width=275,
-                                             corner_radius=10,
-                                             text=f"Special Score: {self.endless_special_high_score_label} ", # pylint: disable=line-too-long
-                                             font=FONT_LIST[11],
-                                             bg_color='grey20',
-                                             anchor='w'
-                                             )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Special Score: {self.endless_special_high_score_label} ", # pylint: disable=line-too-long
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor )
         self.endless_special_high_score_label.place(x=200, y=600)
 
     def endless_update_special_high_score_label(self):
@@ -1119,14 +1281,13 @@ class GameLabelsPanel:
         Create the shorten score label for the endless snake game.
         """
         self.endless_shorten_score_label = ctk.CTkLabel(self.snake_canvas,
-                                                  height=30,
-                                                  width=275,
-                                                    corner_radius=10,
-                                                    text=f"Shorten Score: {self.endless_shorten_score_label} ", # pylint: disable=line-too-long
-                                                    font=FONT_LIST[11],
-                                                    bg_color='grey20',
-                                                    anchor='w'
-                                                    )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Shorten Score: {self.endless_shorten_score_label} ", # pylint: disable=line-too-long
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.endless_shorten_score_label.place(x=200, y=250)
 
     def endless_update_shorten_score_label(self):
@@ -1149,14 +1310,13 @@ class GameLabelsPanel:
         Create the shorten high score label for the endless snake game.
         """
         self.endless_shorten_high_score_label = ctk.CTkLabel(self.snake_canvas,
-                                                  height=30,
-                                                  width=275,
-                                                    corner_radius=10,
-                                                    text=f"Shorten Score: {self.endless_shorten_high_score_label} ", # pylint: disable=line-too-long
-                                                    font=FONT_LIST[11],
-                                                    bg_color='grey20',
-                                                    anchor='w'
-                                                    )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Shorten Score: {self.endless_shorten_high_score_label} ", # pylint: disable=line-too-long
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.endless_shorten_high_score_label.place(x=200, y=650)
 
     def endless_update_shorten_high_score_label(self):
@@ -1251,14 +1411,13 @@ class GameLabelsPanel:
         Create the high scores label for the leveling snake game.
         """
         self.leveling_high_scores_label = ctk.CTkLabel(self.snake_canvas,
-                                                height=30,
-                                                width=275,
-                                                corner_radius=10,
-                                                text="High Scores:",
-                                                font=FONT_LIST[11],
-                                                bg_color='grey20',
-                                                anchor='w'
-                                                )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="High Scores:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_high_scores_label.place(x=200, y=300)
 
     def leveling_update_game_labels(self):
@@ -1276,14 +1435,13 @@ class GameLabelsPanel:
         Create the score label for the leveling snake game.
         """
         self.leveling_score_label = ctk.CTkLabel(self.snake_canvas,
-                                            height=30,
-                                            width=275,
-                                            corner_radius=10,
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
                                             text=f"Score:{self.leveling_score_label_} ",
                                             font=FONT_LIST[11],
                                             bg_color='grey20',
-                                            anchor='w'
-                                            )
+                                            anchor=self.anchor)
         self.leveling_score_label.place(x=200, y=50)
 
     def leveling_update_score_label(self):
@@ -1306,14 +1464,13 @@ class GameLabelsPanel:
         Create the high score label for the leveling snake game.
         """
         self.leveling_high_score_label = ctk.CTkLabel(self.snake_canvas,
-                                             height=30,
-                                             width=275,
-                                             corner_radius=10,
-                                             text=f"Score: {self.leveling_score_label_} ", # pylint: disable=line-too-long
-                                             font=FONT_LIST[11],
-                                             bg_color='grey20',
-                                             anchor='w'
-                                             )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Score: {self.leveling_score_label_} ", # pylint: disable=line-too-long
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_high_score_label.place(x=200, y=350)
 
     def leveling_update_high_score_label(self):
@@ -1336,14 +1493,13 @@ class GameLabelsPanel:
         Create the time label for the leveling snake game.
         """
         self.leveling_time_label = ctk.CTkLabel(self.snake_canvas,
-                                        height=30,
-                                        width=275,
-                                        corner_radius=10,
-                                        text=f"Time: {self.leveling_score_label_} Seconds",
-                                        font=FONT_LIST[11],
-                                        bg_color='grey20',
-                                        anchor='w'
-                                        )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Time: {self.leveling_score_label_} Seconds",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_time_label.place(x=200, y=100)
 
     def leveling_update_time_label(self):
@@ -1366,14 +1522,13 @@ class GameLabelsPanel:
         Create the high score time label for the leveling snake game.
         """
         self.leveling_high_score_time_label = ctk.CTkLabel(self.snake_canvas,
-                                                    height=30,
-                                                    width=275,
-                                                    corner_radius=10,
-                                                    text=f"Score Time: {self.leveling_score_label_} Seconds", # pylint: disable=line-too-long
-                                                    font=FONT_LIST[11],
-                                                    bg_color='grey20',
-                                                    anchor='w'
-                                                    )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Score Time: {self.leveling_score_label_} Seconds", # pylint: disable=line-too-long
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_high_score_time_label.place(x=200, y=400)
 
     def leveling_update_high_score_time_label(self):
@@ -1396,14 +1551,13 @@ class GameLabelsPanel:
         Create the snake length label for the leveling snake game.
         """
         self.leveling_snake_length_label = ctk.CTkLabel(self.snake_canvas,
-                                                height=30,
-                                                width=275,
-                                                corner_radius=10,
-                                                text="Snake Length:",
-                                                font=FONT_LIST[11],
-                                                bg_color='grey20',
-                                                anchor='w'
-                                                )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="Snake Length:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_snake_length_label.place(x=200, y=150)
 
     def leveling_update_snake_length_label(self):
@@ -1426,14 +1580,13 @@ class GameLabelsPanel:
         Create the high score snake length label for the leveling snake game.
         """
         self.leveling_high_score_snake_length_label = ctk.CTkLabel(self.snake_canvas,
-                                                            height=30,
-                                                            width=275,
-                                                            corner_radius=10,
-                                                            text="Snake Length:",
-                                                            font=FONT_LIST[11],
-                                                            bg_color='grey20',
-                                                            anchor='w'
-                                                            )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="Snake Length:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_high_score_snake_length_label.place(x=200, y=450)
 
     def leveling_update_high_score_snake_length_label(self):
@@ -1456,14 +1609,13 @@ class GameLabelsPanel:
         Create the xp label for the leveling snake game.
         """
         self.leveling_xp_score_label = ctk.CTkLabel(self.snake_canvas,
-                                                height=30,
-                                                width=275,
-                                                corner_radius=10,
-                                                text="XP hello:",
-                                                font=FONT_LIST[11],
-                                                bg_color='grey20',
-                                                anchor='w'
-                                                )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="XP hello:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_xp_score_label.place(x=500, y=10)
 
     def leveling_update_xp_label(self):
@@ -1486,14 +1638,13 @@ class GameLabelsPanel:
         Create the xp high score label for the leveling snake game.
         """
         self.leveling_xp_high_score_label = ctk.CTkLabel(self.snake_canvas,
-                                                    height=30,
-                                                    width=275,
-                                                    corner_radius=10,
-                                                    text="XP:",
-                                                    font=FONT_LIST[11],
-                                                    bg_color='grey20',
-                                                    anchor='w'
-                                                    )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="XP:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_xp_high_score_label.place(x=200, y=500)
 
     def leveling_update_xp_high_score_label(self):
@@ -1516,14 +1667,13 @@ class GameLabelsPanel:
         Create the level label for the leveling snake game.
         """
         self.leveling_level_score_label = ctk.CTkLabel(self.snake_canvas,
-                                                    height=30,
-                                                    width=275,
-                                                    corner_radius=10,
-                                                    text="Level:",
-                                                    font=FONT_LIST[11],
-                                                    bg_color='grey20',
-                                                    anchor='w'
-                                                    )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="Level:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_level_score_label.place(x=800, y=10)
 
     def leveling_update_level_label(self):
@@ -1546,14 +1696,13 @@ class GameLabelsPanel:
         Create the level high score label for the leveling snake game.
         """
         self.leveling_level_high_score_label = ctk.CTkLabel(self.snake_canvas,
-                                                    height=30,
-                                                    width=275,
-                                                    corner_radius=10,
-                                                    text="Level:",
-                                                    font=FONT_LIST[11],
-                                                    bg_color='grey20',
-                                                    anchor='w'
-                                                    )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text="Level:",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.leveling_level_high_score_label.place(x=200, y=550)
 
     def leveling_update_level_high_score_label(self):
@@ -1640,14 +1789,13 @@ class GameLabelsPanel:
         Create the score label for the challange snake game.
         """
         self.challange_score_label = ctk.CTkLabel(self.snake_canvas,
-                                                height=30,
-                                                width=275,
-                                                corner_radius=10,
-                                                text=f"Score:{self.challange_score_label_} ",
-                                                font=FONT_LIST[11],
-                                                bg_color='grey20',
-                                                anchor='w'
-                                                )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Score:{self.challange_score_label_} ",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.challange_score_label.place(x=200, y=500)  # adjust the position as needed
 
     def challange_update_score_label(self):
@@ -1670,14 +1818,13 @@ class GameLabelsPanel:
         Create the high score label for the challange snake game.
         """
         self.challange_high_score_label = ctk.CTkLabel(self.snake_canvas,
-                                                    height=30,
-                                                    width=275,
-                                                    corner_radius=10,
-                                                    text=f"Score:{self.challange_score_label_} ",
-                                                    font=FONT_LIST[11],
-                                                    bg_color='grey20',
-                                                    anchor='w'
-                                                    )
+                                            width=self.width,
+                                            height=self.height,
+                                            corner_radius=self.corner_radius,
+                                            text=f"Score:{self.challange_score_label_} ",
+                                            font=FONT_LIST[11],
+                                            bg_color='grey20',
+                                            anchor=self.anchor)
         self.challange_high_score_label.place(x=200, y=550)
 
     def challange_update_high_score_label(self):

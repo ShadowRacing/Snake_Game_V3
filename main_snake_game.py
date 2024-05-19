@@ -414,6 +414,9 @@ class SnakeGameApp:
             x1, y1, x2, y2 = 920, 125, 945, 100
             self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
+            x1, y1, x2, y2 = 950, 125, 975, 100
+            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+
     def patchnotes(self):
         """
         Display the patchnotes.

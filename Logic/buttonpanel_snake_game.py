@@ -340,8 +340,9 @@ class ClickButtonPanel:
         self.theme_updater = ThemeUpdater(self.game_logger)
 
         # Managing the buttons height and width
-        self.button_width = GameConstants.BUTTON_WIDTH
-        self.button_height = GameConstants.BUTTON_HEIGHT
+        self.button_width = GameConstants.CLICK_BUTTON_WIDTH
+        self.button_height = GameConstants.CLICK_BUTTON_HEIGHT
+        self.corner_radius = GameConstants.CLICK_BUTTON_CORNER_RADIUS
 
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
 
@@ -360,7 +361,7 @@ class ClickButtonPanel:
         Function for creating the home button.
         """
         self.home_button = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal", # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, corner_radius=self.corner_radius ,state="normal", # pylint: disable=line-too-long
                                 command=self.home_button_command)
         self.home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
 
@@ -678,6 +679,20 @@ class OptionButtonPanel:
         self.game_size_config = 0
         self.snake_speed_config = 0
         self.snake_color_config = 0
+        self.keybindings_config_up = 0
+        self.keybindings_config_down = 0
+        self.keybindings_config_left = 0
+        self.keybindings_config_right = 0
+        self.keybindings_config_startgame = 0
+        self.keybindings_config_pausegame = 0
+        self.keybindings_config_restartgame = 0
+        self.combobox = None
+
+        self.button_width = GameConstants.OPTION_BUTTON_WIDTH
+        self.button_height = GameConstants.OPTION_BUTTON_HEIGHT
+        self.corner_radius = GameConstants.OPTION_BUTTON_CORNER_RADIUS
+
+        self.keys = [str(i) for i in range(10)] + [chr(i) for i in range(ord('a'), ord('z')+1)]
 
         try:
             self.config.read(self.config_path)
@@ -799,16 +814,18 @@ class OptionButtonPanel:
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
+
+
     # Method to create an option button
     def create_option_button(self, command, values, config, x, y):
         """
         Method to create an option button with the given parameters.
         """
         option_button = ctk.CTkOptionMenu(self.settings_canvas,
-                                          width=GameConstants.BUTTON_WIDTH,
-                                          height=GameConstants.BUTTON_HEIGHT,
+                                          width=self.button_width,
+                                          height=self.button_height,
                                           font=FONT_LIST[11],
-                                          corner_radius=8,
+                                          corner_radius=self.corner_radius,
                                           values=values,
                                           command=command)
         option_button.place(x=x, y=y)
@@ -816,6 +833,74 @@ class OptionButtonPanel:
             option_button.set(config)
         except ValueError as e:
             traceback.print_exc(e)
+
+    def create_combobox(self, command, values_2, config, x, y):
+        """
+        Method to create a combobox with the given parameters.
+        """
+        self.combobox = ctk.CTkComboBox(self.settings_canvas,
+                                   width=self.button_width,
+                                   height=self.button_height,
+                                   font=FONT_LIST[11],
+                                   corner_radius=self.corner_radius,
+                                   values=values_2,
+                                   command=command)
+        self.combobox.place(x=x, y=y)
+        self.combobox.bind("<KeyRelease>", self.keybindings_key_release_callback)
+        try:
+            self.combobox.set(config)
+        except ValueError as e:
+            traceback.print_exc(e)
+
+    def keybindings_key_release_callback(self, event):
+        """
+        Function for handling key release events.
+        """
+        if event.keysym not in ("Delete", "BackSpace"):
+            choice = self.combobox.get()
+            if choice in ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange",
+                          "Pink", "Purple", "Red", "White", "Yellow"]:
+                self.update_config(choice)
+
+    def keybindings_combobox_callback(self, selected_value):
+        """
+        Function for handling combobox selection changes.
+        """
+        if selected_value in ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange",
+                              "Pink", "Purple", "Red", "White", "Yellow"]:
+            self.update_config(selected_value)
+
+    def update_config(self, value):
+        """
+        Function to update the configuration.
+        """
+        self.config['KeyBindings']['test'] = value
+        self.game_logger.log_game_event("Keybindings changed")
+        self.config.set('KeyBindings', 'test', value)
+        with open(self.config_path, 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Keybindings changed2")
+
+    # def keybindings_callback(self, selected_value, event):
+    #     """
+    #     Function for the keybindings callback.
+    #     """
+    #     if event.keysym not in ("Delete", "BackSpace"):
+    #         choice = self.combobox.get()
+    #         if choice in ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
+    #                               "Pink", "Purple", "Red", "White", "Yellow"]: # pylint: disable=line-too-long
+    #             self.config.set('KeyBindings', 'test', selected_value)
+    #             self.game_logger.log_game_event("Keybindings changed")
+    #             with open(self.config_path, 'w', encoding='utf-8') as configfile:
+    #                 self.config.write(configfile)
+    #             self.game_logger.log_game_event("Keybindings changed2")
+    #     elif choice in ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
+    #                               "Pink", "Purple", "Red", "White", "Yellow"]:
+    #         self.config.set('KeyBindings', 'test', selected_value)
+    #         self.game_logger.log_game_event("Keybindings changed")
+    #         with open(self.config_path, 'w', encoding='utf-8') as configfile:
+    #             self.config.write(configfile)
+    #         self.game_logger.log_game_event("Keybindings changed2")
 
     # Method to show the options
     def show_options(self):
@@ -853,7 +938,7 @@ class OptionButtonPanel:
             self.high_score_label_showing_config = self.config.get('Settings', 'label_needed_high_score', fallback='False') # pylint: disable=line-too-long
             self.create_option_button(self.high_score_label_showing_callback, # pylint: disable=line-too-long
                                       ["Default", "True", "False"],
-                                      self.high_score_label_showing_config, 1000, 50)
+                                      self.high_score_label_showing_config, 600, 200)
 
             self.snake_speed_config = self.config.get('Settings', 'snake_speed', fallback='20')
             self.create_option_button(self.snake_speed_callback,
@@ -866,10 +951,55 @@ class OptionButtonPanel:
                                        "1100x1100", "1200x1200", "1300x1300","1400x1400", "1500x1500"], # pylint: disable=line-too-long
                                       self.game_size_config, 400, 200)
 
+            self.keybindings_config_up = self.config.get('KeyBindings', 'up', fallback='Default')
+            self.create_combobox(self.keybindings_combobox_callback,
+                                 ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
+                                  "Pink", "Purple", "Red", "White", "Yellow"],
+                                  self.keybindings_config_up, 200, 350)
+
+            self.keybindings_config_down = self.config.get('KeyBindings', 'down', fallback='Default')
+            self.create_combobox(self.keybindings_combobox_callback,
+                                 ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
+                                  "Pink", "Purple", "Red", "White", "Yellow"],
+                                  self.keybindings_config_down, 400, 350)
+
+            self.keybindings_config_left = self.config.get('KeyBindings', 'left', fallback='Default')
+            self.create_combobox(self.keybindings_combobox_callback,
+                                 ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
+                                  "Pink", "Purple", "Red", "White", "Yellow"],
+                                  self.keybindings_config_left, 600, 350)
+
+            self.keybindings_config_right = self.config.get('KeyBindings', 'right', fallback='Default')
+            self.create_combobox(self.keybindings_combobox_callback,
+                                 ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
+                                  "Pink", "Purple", "Red", "White", "Yellow"],
+                                  self.keybindings_config_right, 800, 350)
+
+            self.keybindings_config_startgame = self.config.get('KeyBindings', 'startgame', fallback='Default')
+            self.create_combobox(self.keybindings_combobox_callback,
+                                    ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
+                                    "Pink", "Purple", "Red", "White", "Yellow"],
+                                    self.keybindings_config_startgame, 200, 500)
+
+            self.keybindings_config_pausegame = self.config.get('KeyBindings', 'pausegame', fallback='Default')
+            self.create_combobox(self.keybindings_combobox_callback,
+                                    ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
+                                    "Pink", "Purple", "Red", "White", "Yellow"],
+                                    self.keybindings_config_pausegame, 400, 500)
+
+            self.keybindings_config_restartgame = self.config.get('KeyBindings', 'restartgame', fallback='Default')
+            self.create_combobox(self.keybindings_combobox_callback,
+                                    ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
+                                    "Pink", "Purple", "Red", "White", "Yellow"],
+                                    self.keybindings_config_restartgame, 600, 500)
+
         # Handle exceptions appropriately
         except ValueError as e:
             traceback.print_exc(e)
 
+
 # *****************************************
 # Shadows Snake Button Panel File
 # *****************************************
+
+# pylint: disable=too-many-lines

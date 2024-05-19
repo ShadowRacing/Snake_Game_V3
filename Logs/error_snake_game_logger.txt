@@ -1395,3 +1395,648 @@ configparser.NoOptionError: No option 'pausegame' in section: 'KeyBindings'
 
 
 
+[2024-05-19 10:36:43] 
+
+
+[2024-05-19 10:36:43] Started the Error Log File
+[2024-05-19 10:37:02] No errors occurred
+[2024-05-19 10:37:02] Closed the Error Log File
+
+
+
+
+[2024-05-19 10:43:15] 
+
+
+[2024-05-19 10:43:15] Started the Error Log File
+[2024-05-19 10:43:30] No errors occurred
+[2024-05-19 10:43:30] Closed the Error Log File
+
+
+
+
+[2024-05-19 10:45:14] 
+
+
+[2024-05-19 10:45:14] Started the Error Log File
+[2024-05-19 10:45:28] No errors occurred
+[2024-05-19 10:45:28] Closed the Error Log File
+
+
+
+
+[2024-05-19 10:45:30] 
+
+
+[2024-05-19 10:45:30] Started the Error Log File
+[2024-05-19 10:45:44] No errors occurred
+[2024-05-19 10:45:44] Closed the Error Log File
+
+
+
+
+[2024-05-19 10:58:45] 
+
+
+[2024-05-19 10:58:45] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+[2024-05-19 10:59:11] No errors occurred
+[2024-05-19 10:59:11] Closed the Error Log File
+
+
+
+
+[2024-05-19 10:59:54] 
+
+
+[2024-05-19 10:59:54] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: OptionButtonPanel.keybindings_callback() missing 2 required positional arguments: 'event' and 'choice'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: OptionButtonPanel.keybindings_callback() missing 2 required positional arguments: 'event' and 'choice'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: OptionButtonPanel.keybindings_callback() missing 2 required positional arguments: 'event' and 'choice'
+[2024-05-19 11:00:07] No errors occurred
+[2024-05-19 11:00:07] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:01:53] 
+
+
+[2024-05-19 11:01:53] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: OptionButtonPanel.keybindings_callback() missing 1 required positional argument: 'event'
+[2024-05-19 11:02:01] No errors occurred
+[2024-05-19 11:02:01] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:11:33] 
+
+
+[2024-05-19 11:11:33] Started the Error Log File
+[2024-05-19 11:18:37] No errors occurred
+[2024-05-19 11:18:37] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:18:53] 
+
+
+[2024-05-19 11:18:53] Started the Error Log File
+[2024-05-19 11:18:57] No errors occurred
+[2024-05-19 11:18:57] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:19:43] 
+
+
+[2024-05-19 11:19:43] Started the Error Log File
+[2024-05-19 11:20:22] No errors occurred
+[2024-05-19 11:20:22] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:21:50] 
+
+
+[2024-05-19 11:21:50] Started the Error Log File
+[2024-05-19 11:23:14] No errors occurred
+[2024-05-19 11:23:14] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:23:39] 
+
+
+[2024-05-19 11:23:39] Started the Error Log File
+[2024-05-19 11:26:56] No errors occurred
+[2024-05-19 11:26:56] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:27:04] 
+
+
+[2024-05-19 11:27:04] Started the Error Log File
+[2024-05-19 11:29:46] No errors occurred
+[2024-05-19 11:29:46] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:52:51] 
+
+
+[2024-05-19 11:52:51] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 55, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 241, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 372, in start_game
+    self.settings_labels.create_settings_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 172, in create_settings_labels
+    self.create_keybinding_up_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 290, in create_keybinding_up_label
+    self.keybindings_up_label = ctk.CTkLabel(self.settings_canvas,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 101, in __init__
+    check_kwargs_empty(kwargs, raise_error=True)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\utility\utility_functions.py", line 18, in check_kwargs_empty
+    raise ValueError(f"{list(kwargs_dict.keys())} are not supported arguments. Look at the documentation for supported arguments.")
+ValueError: ['corer_radius'] are not supported arguments. Look at the documentation for supported arguments.
+[2024-05-19 11:52:57] No errors occurred
+[2024-05-19 11:52:57] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:57:09] 
+
+
+[2024-05-19 11:57:09] Started the Error Log File
+[2024-05-19 11:57:11] No errors occurred
+[2024-05-19 11:57:11] Closed the Error Log File
+
+
+
+
+[2024-05-19 11:57:16] 
+
+
+[2024-05-19 11:57:16] Started the Error Log File
+[2024-05-19 12:40:43] No errors occurred
+[2024-05-19 12:40:43] Closed the Error Log File
+
+
+
+
+[2024-05-19 12:40:51] 
+
+
+[2024-05-19 12:40:51] Started the Error Log File
+[2024-05-19 12:41:01] No errors occurred
+[2024-05-19 12:41:01] Closed the Error Log File
+
+
+
+
+[2024-05-19 12:42:36] 
+
+
+[2024-05-19 12:42:36] Started the Error Log File
+[2024-05-19 12:43:03] No errors occurred
+[2024-05-19 12:43:03] Closed the Error Log File
+
+
+
+
+[2024-05-19 12:43:06] 
+
+
+[2024-05-19 12:43:06] Started the Error Log File
+[2024-05-19 12:43:41] No errors occurred
+[2024-05-19 12:43:41] Closed the Error Log File
+
+
+
+
+[2024-05-19 12:43:44] 
+
+
+[2024-05-19 12:43:44] Started the Error Log File
+[2024-05-19 12:57:42] No errors occurred
+[2024-05-19 12:57:42] Closed the Error Log File
+
+
+
+
+[2024-05-19 12:57:51] 
+
+
+[2024-05-19 12:57:51] Started the Error Log File
+[2024-05-19 12:58:35] No errors occurred
+[2024-05-19 12:58:35] Closed the Error Log File
+
+
+
+
+[2024-05-19 12:58:41] 
+
+
+[2024-05-19 12:58:41] Started the Error Log File
+[2024-05-19 13:01:21] No errors occurred
+[2024-05-19 13:01:21] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:01:24] 
+
+
+[2024-05-19 13:01:24] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 970, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 140, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 343, in __init__
+    self.button_width = GameConstants.BUTTON_WIDTH
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'GameConstants' has no attribute 'BUTTON_WIDTH'
+[2024-05-19 13:01:27] 
+
+
+[2024-05-19 13:01:27] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 970, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 140, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 343, in __init__
+    self.button_width = GameConstants.BUTTON_WIDTH
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'GameConstants' has no attribute 'BUTTON_WIDTH'
+[2024-05-19 13:01:58] 
+
+
+[2024-05-19 13:01:58] Started the Error Log File
+[2024-05-19 13:02:15] No errors occurred
+[2024-05-19 13:02:15] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:02:35] 
+
+
+[2024-05-19 13:02:35] Started the Error Log File
+[2024-05-19 13:03:19] No errors occurred
+[2024-05-19 13:03:19] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:03:27] 
+
+
+[2024-05-19 13:03:27] Started the Error Log File
+[2024-05-19 13:04:15] No errors occurred
+[2024-05-19 13:04:15] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:05:56] 
+
+
+[2024-05-19 13:05:56] Started the Error Log File
+[2024-05-19 13:06:10] No errors occurred
+[2024-05-19 13:06:10] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:06:13] 
+
+
+[2024-05-19 13:06:13] Started the Error Log File
+[2024-05-19 13:06:26] No errors occurred
+[2024-05-19 13:06:26] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:18:34] 
+
+
+[2024-05-19 13:18:34] Started the Error Log File
+[2024-05-19 13:18:35] No errors occurred
+[2024-05-19 13:18:35] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:18:38] 
+
+
+[2024-05-19 13:18:38] Started the Error Log File
+[2024-05-19 13:21:09] No errors occurred
+[2024-05-19 13:21:09] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:21:11] 
+
+
+[2024-05-19 13:21:11] Started the Error Log File
+[2024-05-19 13:22:56] No errors occurred
+[2024-05-19 13:22:56] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:22:59] 
+
+
+[2024-05-19 13:22:59] Started the Error Log File
+[2024-05-19 13:23:12] No errors occurred
+[2024-05-19 13:23:12] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:23:42] 
+
+
+[2024-05-19 13:23:42] Started the Error Log File
+[2024-05-19 13:25:02] No errors occurred
+[2024-05-19 13:25:02] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:28:29] 
+
+
+[2024-05-19 13:28:29] Started the Error Log File
+[2024-05-19 13:30:23] No errors occurred
+[2024-05-19 13:30:23] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:30:26] 
+
+
+[2024-05-19 13:30:26] Started the Error Log File
+[2024-05-19 13:31:48] No errors occurred
+[2024-05-19 13:31:48] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:31:50] 
+
+
+[2024-05-19 13:31:50] Started the Error Log File
+[2024-05-19 13:32:32] No errors occurred
+[2024-05-19 13:32:32] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:38:01] 
+
+
+[2024-05-19 13:38:01] Started the Error Log File
+[2024-05-19 13:40:24] No errors occurred
+[2024-05-19 13:40:24] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:40:26] 
+
+
+[2024-05-19 13:40:26] Started the Error Log File
+[2024-05-19 13:40:31] No errors occurred
+[2024-05-19 13:40:31] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:40:49] 
+
+
+[2024-05-19 13:40:49] Started the Error Log File
+[2024-05-19 13:41:29] No errors occurred
+[2024-05-19 13:41:29] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:41:33] 
+
+
+[2024-05-19 13:41:33] Started the Error Log File
+[2024-05-19 13:42:38] No errors occurred
+[2024-05-19 13:42:38] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:42:41] 
+
+
+[2024-05-19 13:42:41] Started the Error Log File
+[2024-05-19 13:43:05] No errors occurred
+[2024-05-19 13:43:05] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:43:08] 
+
+
+[2024-05-19 13:43:08] Started the Error Log File
+[2024-05-19 13:43:34] No errors occurred
+[2024-05-19 13:43:34] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:43:39] 
+
+
+[2024-05-19 13:43:39] Started the Error Log File
+[2024-05-19 13:44:18] No errors occurred
+[2024-05-19 13:44:18] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:44:20] 
+
+
+[2024-05-19 13:44:20] Started the Error Log File
+[2024-05-19 13:44:51] No errors occurred
+[2024-05-19 13:44:51] Closed the Error Log File
+
+
+
+
+[2024-05-19 13:44:55] 
+
+
+[2024-05-19 13:44:55] Started the Error Log File
+[2024-05-19 13:45:02] No errors occurred
+[2024-05-19 13:45:02] Closed the Error Log File
+
+
+
+

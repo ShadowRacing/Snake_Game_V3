@@ -59,13 +59,25 @@ class GameConstants:
     """
     Class for the constants used in the Shadows Snake game.
     """
-    BUTTON_WIDTH = 160
-    BUTTON_HEIGHT = 40
+    CLICK_BUTTON_WIDTH = 150
+    CLICK_BUTTON_HEIGHT = 40
+    CLICK_BUTTON_CORNER_RADIUS = 6
+    OPTION_BUTTON_WIDTH = 175
+    OPTION_BUTTON_HEIGHT = 40
+    OPTION_BUTTON_CORNER_RADIUS = 6
     GAME_WIDTH = 400
     GAME_HEIGHT = 400
     MIN_HEIGHT = height
     MIN_WIDTH = width
     RESIZING = False
+    SETTINGS_LABEL_WIDTH = 175
+    SETTINGS_LABEL_HEIGHT = 30
+    SETTINGS_LABEL_CORNER_RADIUS = 6
+    GAME_LABEL_WIDTH = 275
+    GAME_LABEL_HEIGHT = 30
+    GAME_LABEL_CORNER_RADIUS = 6
+    ANCHOR = 'w'
+
 
 
 # Define the font list

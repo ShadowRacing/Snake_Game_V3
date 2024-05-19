@@ -2040,3 +2040,98 @@ AttributeError: type object 'GameConstants' has no attribute 'BUTTON_WIDTH'
 
 
 
+[2024-05-19 13:45:06] 
+
+
+[2024-05-19 13:45:06] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'exitgame'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 196, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 258, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 97, in __init__
+    self.configfile()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 165, in configfile
+    'ExitGame': self.config.get('KeyBindings', 'ExitGame').split(', ')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'exitgame' in section: 'KeyBindings'
+[2024-05-19 14:04:50] No errors occurred
+[2024-05-19 14:04:50] Closed the Error Log File
+
+
+
+
+[2024-05-19 14:06:06] 
+
+
+[2024-05-19 14:06:06] Started the Error Log File
+[2024-05-19 14:06:46] No errors occurred
+[2024-05-19 14:06:46] Closed the Error Log File
+
+
+
+
+[2024-05-19 14:20:39] 
+
+
+[2024-05-19 14:20:39] Started the Error Log File
+[2024-05-19 14:20:58] No errors occurred
+[2024-05-19 14:20:58] Closed the Error Log File
+
+
+
+
+[2024-05-19 14:22:22] 
+
+
+[2024-05-19 14:22:22] Started the Error Log File
+[2024-05-19 14:22:38] No errors occurred
+[2024-05-19 14:22:38] Closed the Error Log File
+
+
+
+
+[2024-05-19 14:23:36] 
+
+
+[2024-05-19 14:23:36] Started the Error Log File
+[2024-05-19 14:24:15] No errors occurred
+[2024-05-19 14:24:15] Closed the Error Log File
+
+
+
+
+[2024-05-19 14:33:58] 
+
+
+[2024-05-19 14:33:58] Started the Error Log File
+[2024-05-19 14:34:31] No errors occurred
+[2024-05-19 14:34:31] Closed the Error Log File
+
+
+
+

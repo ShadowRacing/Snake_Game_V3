@@ -834,7 +834,7 @@ class OptionButtonPanel:
         except ValueError as e:
             traceback.print_exc(e)
 
-    def create_combobox(self, command, values_2, config, x, y):
+    def create_combobox(self, command, values_2, config, x, y, additional_value):
         """
         Method to create a combobox with the given parameters.
         """
@@ -844,7 +844,7 @@ class OptionButtonPanel:
                                    font=FONT_LIST[11],
                                    corner_radius=self.corner_radius,
                                    values=values_2,
-                                   command=command)
+                                   command=lambda selected_value: command(selected_value, additional_value))
         self.combobox.place(x=x, y=y)
         self.combobox.bind("<KeyRelease>", self.keybindings_key_release_callback)
         try:
@@ -852,34 +852,46 @@ class OptionButtonPanel:
         except ValueError as e:
             traceback.print_exc(e)
 
-    def keybindings_key_release_callback(self, event):
+    def keybindings_key_release_callback(self, event, additional_value):
         """
         Function for handling key release events.
         """
         if event.keysym not in ("Delete", "BackSpace"):
             choice = self.combobox.get()
-            if choice in ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange",
-                          "Pink", "Purple", "Red", "White", "Yellow"]:
-                self.update_config(choice)
+            self.current_key = additional_value
+            if choice in ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+                          "`","1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"]: # pylint: disable=line-too-long
+                self.update_config(self.current_key, choice)
 
-    def keybindings_combobox_callback(self, selected_value):
+    def keybindings_combobox_callback(self, selected_value, additional_value):
         """
         Function for handling combobox selection changes.
         """
-        if selected_value in ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange",
-                              "Pink", "Purple", "Red", "White", "Yellow"]:
-            self.update_config(selected_value)
+        self.current_key = additional_value
+        if selected_value in ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+                        "`","1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"]: # pylint: disable=line-too-long
+            self.update_config(self.current_key, selected_value)
 
-    def update_config(self, value):
+    def update_config(self, key, value):
         """
         Function to update the configuration.
         """
-        self.config['KeyBindings']['test'] = value
-        self.game_logger.log_game_event("Keybindings changed")
-        self.config.set('KeyBindings', 'test', value)
-        with open(self.config_path, 'w', encoding='utf-8') as configfile:
-            self.config.write(configfile)
-        self.game_logger.log_game_event("Keybindings changed2")
+        current_config = self.get_current_config()
+        if value in current_config.values():
+            print("Value already in use")
+        else:
+            self.config['KeyBindings'][key] = value
+            self.game_logger.log_game_event("Keybindings changed")
+            self.config.set('KeyBindings', key, value)
+            with open(self.config_path, 'w', encoding='utf-8') as configfile:
+                self.config.write(configfile)
+            self.game_logger.log_game_event("Keybindings changed2")
+
+    def get_current_config(self):
+        """
+        Function to get the current configuration.
+        """
+        return self.config['KeyBindings']
 
     # def keybindings_callback(self, selected_value, event):
     #     """
@@ -953,45 +965,45 @@ class OptionButtonPanel:
 
             self.keybindings_config_up = self.config.get('KeyBindings', 'up', fallback='Default')
             self.create_combobox(self.keybindings_combobox_callback,
-                                 ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
-                                  "Pink", "Purple", "Red", "White", "Yellow"],
-                                  self.keybindings_config_up, 200, 350)
+                                    ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_up, 200, 350, "up")
 
             self.keybindings_config_down = self.config.get('KeyBindings', 'down', fallback='Default')
             self.create_combobox(self.keybindings_combobox_callback,
-                                 ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
-                                  "Pink", "Purple", "Red", "White", "Yellow"],
-                                  self.keybindings_config_down, 400, 350)
+                                    ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_down, 400, 350, "down")
 
             self.keybindings_config_left = self.config.get('KeyBindings', 'left', fallback='Default')
             self.create_combobox(self.keybindings_combobox_callback,
-                                 ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
-                                  "Pink", "Purple", "Red", "White", "Yellow"],
-                                  self.keybindings_config_left, 600, 350)
+                                    ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_left, 600, 350, "left")
 
             self.keybindings_config_right = self.config.get('KeyBindings', 'right', fallback='Default')
             self.create_combobox(self.keybindings_combobox_callback,
-                                 ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
-                                  "Pink", "Purple", "Red", "White", "Yellow"],
-                                  self.keybindings_config_right, 800, 350)
+                                    ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_right, 800, 350, "right")
 
             self.keybindings_config_startgame = self.config.get('KeyBindings', 'startgame', fallback='Default')
             self.create_combobox(self.keybindings_combobox_callback,
-                                    ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
-                                    "Pink", "Purple", "Red", "White", "Yellow"],
-                                    self.keybindings_config_startgame, 200, 500)
+                                    ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_startgame, 200, 500, "startgame")
 
             self.keybindings_config_pausegame = self.config.get('KeyBindings', 'pausegame', fallback='Default')
             self.create_combobox(self.keybindings_combobox_callback,
-                                    ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
-                                    "Pink", "Purple", "Red", "White", "Yellow"],
-                                    self.keybindings_config_pausegame, 400, 500)
+                                    ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_pausegame, 400, 500, "pausegame")
 
             self.keybindings_config_restartgame = self.config.get('KeyBindings', 'restartgame', fallback='Default')
             self.create_combobox(self.keybindings_combobox_callback,
-                                    ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
-                                    "Pink", "Purple", "Red", "White", "Yellow"],
-                                    self.keybindings_config_restartgame, 600, 500)
+                                    ["Default", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", # pylint: disable=line-too-long
+                                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "KP_0", "KP_1", "KP_2", "KP_3", "KP_4", "KP_5", "KP_6", "KP_7", "KP_8", "KP_9"], # pylint: disable=line-too-long,
+                                    self.keybindings_config_restartgame, 600, 500, "restartgame")
 
         # Handle exceptions appropriately
         except ValueError as e:

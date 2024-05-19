@@ -162,7 +162,6 @@ class SnakeClassicGame(ctk.CTkCanvas):
             'StartGame': self.config.get('KeyBindings', 'StartGame').split(', '),
             'PauseGame': self.config.get('KeyBindings', 'PauseGame').split(', '),
             'RestartGame': self.config.get('KeyBindings', 'RestartGame').split(', '),
-            'ExitGame': self.config.get('KeyBindings', 'ExitGame').split(', ')
         }
 
         # Start the game loop

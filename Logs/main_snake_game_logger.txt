@@ -5932,3 +5932,888 @@ Unbinding Escape
 
 
 
+[2024-05-19 13:45:06] Started the app
+[2024-05-19 13:45:06] Started the GameApp Class
+[2024-05-19 13:45:06] Game mode: initial config
+[2024-05-19 13:45:06] Current Theme: Dark-Blue
+[2024-05-19 13:45:06] Set initial theme to: Dark-Blue
+[2024-05-19 13:45:06] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-19 13:45:06] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-19 13:45:06] Theme applied: Dark-Blue
+[2024-05-19 13:45:06] Updated contrast in config.ini to: Default
+[2024-05-19 13:45:06] Contrast mode set to: dark
+[2024-05-19 13:45:06] Set initial game size to: 600x600
+[2024-05-19 13:45:06] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 13:45:06] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 13:45:06] Label border width: 1
+[2024-05-19 13:45:06] label_border_height: 1
+[2024-05-19 13:45:06] Home_screen method called
+[2024-05-19 13:45:07] Set initial game size to: 600x600
+[2024-05-19 13:45:07] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 13:45:07] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 13:45:07] Label border width: 1
+[2024-05-19 13:45:07] label_border_height: 1
+[2024-05-19 13:45:07] Updated label_needed_game_size in config.ini to: False
+[2024-05-19 14:04:48] Game mode: classic_snake
+[2024-05-19 14:04:48] Game state: start_game
+[2024-05-19 14:04:48] Game width: 600
+[2024-05-19 14:04:48] Game height: 600
+[2024-05-19 14:04:48] Highlight thickness: 5
+[2024-05-19 14:04:48] Highlight background: Black
+[2024-05-19 14:04:48] Initial direction of snake: down
+[2024-05-19 14:04:48] Initial score: 0
+[2024-05-19 14:04:48] Game over flag: False
+[2024-05-19 14:04:48] Game paused: False
+[2024-05-19 14:04:48] Has changed direction: False
+[2024-05-19 14:04:48] Time-related variables initialized.
+[2024-05-19 14:04:48] High scores initialized
+[2024-05-19 14:04:48] Reset snake length
+[2024-05-19 14:04:48] Game mode: classic_snake
+[2024-05-19 14:04:48] Config file read.
+[2024-05-19 14:04:48] Game mode set to classic_snake.
+[2024-05-19 14:04:50] Closed the app
+
+
+
+
+[2024-05-19 14:06:06] Started the app
+[2024-05-19 14:06:06] Started the GameApp Class
+[2024-05-19 14:06:06] Game mode: initial config
+[2024-05-19 14:06:06] Current Theme: Dark-Blue
+[2024-05-19 14:06:06] Set initial theme to: Dark-Blue
+[2024-05-19 14:06:06] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:06:06] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:06:06] Theme applied: Dark-Blue
+[2024-05-19 14:06:06] Updated contrast in config.ini to: Default
+[2024-05-19 14:06:06] Contrast mode set to: dark
+[2024-05-19 14:06:06] Set initial game size to: 600x600
+[2024-05-19 14:06:06] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:06:06] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:06:06] Label border width: 1
+[2024-05-19 14:06:06] label_border_height: 1
+[2024-05-19 14:06:06] Home_screen method called
+[2024-05-19 14:06:19] Game mode: classic_snake
+[2024-05-19 14:06:19] Game state: start_game
+[2024-05-19 14:06:19] Game width: 600
+[2024-05-19 14:06:19] Game height: 600
+[2024-05-19 14:06:19] Highlight thickness: 5
+[2024-05-19 14:06:19] Highlight background: Black
+[2024-05-19 14:06:19] Initial direction of snake: down
+[2024-05-19 14:06:19] Initial score: 0
+[2024-05-19 14:06:19] Game over flag: False
+[2024-05-19 14:06:19] Game paused: False
+[2024-05-19 14:06:19] Has changed direction: False
+[2024-05-19 14:06:19] Time-related variables initialized.
+[2024-05-19 14:06:19] High scores initialized
+[2024-05-19 14:06:19] Reset snake length
+[2024-05-19 14:06:19] Game mode: classic_snake
+[2024-05-19 14:06:19] Config file read.
+[2024-05-19 14:06:19] Game mode set to classic_snake.
+[2024-05-19 14:06:19] Game state: start_game
+[2024-05-19 14:06:19] Game focused
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:19] Set initial game size to: 600x600
+[2024-05-19 14:06:19] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:06:19] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:06:19] Label border width: 1
+[2024-05-19 14:06:19] label_border_height: 1
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:20] Game state: game
+[2024-05-19 14:06:20] Food ID: 023f248a-0e74-44bc-8fc4-81ad45bfe618
+[2024-05-19 14:06:20] Food items: {'023f248a-0e74-44bc-8fc4-81ad45bfe618': {'x': 360, 'y': 200, 'tag': 'food023f248a-0e74-44bc-8fc4-81ad45bfe618', 'oval_id': 7}}
+[2024-05-19 14:06:20] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:29] Food ID: b89a7726-d461-42aa-9df8-92dfbdf8bd4b
+[2024-05-19 14:06:29] Food items: {'b89a7726-d461-42aa-9df8-92dfbdf8bd4b': {'x': 300, 'y': 200, 'tag': 'foodb89a7726-d461-42aa-9df8-92dfbdf8bd4b', 'oval_id': 88}}
+[2024-05-19 14:06:30] Food ID: 5e16bcf0-6ac6-4bde-80b3-98b30ba9d629
+[2024-05-19 14:06:30] Food items: {'5e16bcf0-6ac6-4bde-80b3-98b30ba9d629': {'x': 0, 'y': 360, 'tag': 'food5e16bcf0-6ac6-4bde-80b3-98b30ba9d629', 'oval_id': 102}}
+[2024-05-19 14:06:35] Food ID: d94b8730-5c19-4d9a-9596-16e12ed20581
+[2024-05-19 14:06:35] Food items: {'d94b8730-5c19-4d9a-9596-16e12ed20581': {'x': 0, 'y': 120, 'tag': 'foodd94b8730-5c19-4d9a-9596-16e12ed20581', 'oval_id': 142}}
+[2024-05-19 14:06:37] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:37] Game state: game_over
+[2024-05-19 14:06:37] Snake coordinates after reset: [(-20, 300), (0, 300), (20, 300), (20, 320), (20, 340), (20, 360), (20, 380), (20, 400)]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:37] High score: 9
+[2024-05-19 14:06:37] Score: 3
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:38] Game restarted
+[2024-05-19 14:06:38] Game state: game_over
+[2024-05-19 14:06:38] Reset snake length
+[2024-05-19 14:06:38] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:38] Game state: game
+[2024-05-19 14:06:38] Food ID: c5b316f6-d9ba-4055-85c8-850d299d5091
+[2024-05-19 14:06:38] Food items: {'c5b316f6-d9ba-4055-85c8-850d299d5091': {'x': 360, 'y': 80, 'tag': 'foodc5b316f6-d9ba-4055-85c8-850d299d5091', 'oval_id': 172}}
+[2024-05-19 14:06:38] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:39] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:39] Game state: game_over
+[2024-05-19 14:06:39] Snake coordinates after reset: [(-20, 120), (0, 120), (0, 100), (0, 80), (0, 60)]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:39] High score: 9
+[2024-05-19 14:06:39] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:39] Game restarted
+[2024-05-19 14:06:39] Game state: game_over
+[2024-05-19 14:06:39] Reset snake length
+[2024-05-19 14:06:39] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:39] Game state: game
+[2024-05-19 14:06:39] Food ID: abc9cc4d-4dde-485a-a08c-f51b850c94ce
+[2024-05-19 14:06:39] Food items: {'abc9cc4d-4dde-485a-a08c-f51b850c94ce': {'x': 240, 'y': 240, 'tag': 'foodabc9cc4d-4dde-485a-a08c-f51b850c94ce', 'oval_id': 187}}
+[2024-05-19 14:06:39] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:39] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:39] Game state: game_over
+[2024-05-19 14:06:39] Snake coordinates after reset: [(-20, 60), (0, 60), (0, 40), (0, 20), [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:39] High score: 9
+[2024-05-19 14:06:39] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game restarted
+[2024-05-19 14:06:40] Game state: game_over
+[2024-05-19 14:06:40] Reset snake length
+[2024-05-19 14:06:40] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game state: game
+[2024-05-19 14:06:40] Food ID: 781475c6-b9d6-4d13-93e4-d53bc0b7e404
+[2024-05-19 14:06:40] Food items: {'781475c6-b9d6-4d13-93e4-d53bc0b7e404': {'x': 320, 'y': 220, 'tag': 'food781475c6-b9d6-4d13-93e4-d53bc0b7e404', 'oval_id': 199}}
+[2024-05-19 14:06:40] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:40] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game state: game_over
+[2024-05-19 14:06:40] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] High score: 9
+[2024-05-19 14:06:40] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game restarted
+[2024-05-19 14:06:40] Game state: game_over
+[2024-05-19 14:06:40] Reset snake length
+[2024-05-19 14:06:40] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game state: game
+[2024-05-19 14:06:40] Food ID: ef56549a-6eef-4dda-8ebc-3a5a0bd51bd8
+[2024-05-19 14:06:40] Food items: {'ef56549a-6eef-4dda-8ebc-3a5a0bd51bd8': {'x': 200, 'y': 0, 'tag': 'foodef56549a-6eef-4dda-8ebc-3a5a0bd51bd8', 'oval_id': 210}}
+[2024-05-19 14:06:40] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:40] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game state: game_over
+[2024-05-19 14:06:40] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] High score: 9
+[2024-05-19 14:06:40] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game restarted
+[2024-05-19 14:06:40] Game state: game_over
+[2024-05-19 14:06:40] Reset snake length
+[2024-05-19 14:06:40] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game state: game
+[2024-05-19 14:06:40] Food ID: 7df2aea1-3f9a-45e8-9342-d6c9ff334a59
+[2024-05-19 14:06:40] Food items: {'7df2aea1-3f9a-45e8-9342-d6c9ff334a59': {'x': 360, 'y': 100, 'tag': 'food7df2aea1-3f9a-45e8-9342-d6c9ff334a59', 'oval_id': 221}}
+[2024-05-19 14:06:40] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:40] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game state: game_over
+[2024-05-19 14:06:40] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] High score: 9
+[2024-05-19 14:06:40] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game restarted
+[2024-05-19 14:06:40] Game state: game_over
+[2024-05-19 14:06:40] Reset snake length
+[2024-05-19 14:06:40] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:40] Game state: game
+[2024-05-19 14:06:40] Food ID: dd5e4cd1-62f1-4c29-9540-101f878f450a
+[2024-05-19 14:06:40] Food items: {'dd5e4cd1-62f1-4c29-9540-101f878f450a': {'x': 280, 'y': 340, 'tag': 'fooddd5e4cd1-62f1-4c29-9540-101f878f450a', 'oval_id': 232}}
+[2024-05-19 14:06:40] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:41] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] Game state: game_over
+[2024-05-19 14:06:41] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] High score: 9
+[2024-05-19 14:06:41] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] Game restarted
+[2024-05-19 14:06:41] Game state: game_over
+[2024-05-19 14:06:41] Reset snake length
+[2024-05-19 14:06:41] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] Game state: game
+[2024-05-19 14:06:41] Food ID: bd5652e7-6453-4501-b608-b5d1766702e1
+[2024-05-19 14:06:41] Food items: {'bd5652e7-6453-4501-b608-b5d1766702e1': {'x': 60, 'y': 300, 'tag': 'foodbd5652e7-6453-4501-b608-b5d1766702e1', 'oval_id': 243}}
+[2024-05-19 14:06:41] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:41] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] Game state: game_over
+[2024-05-19 14:06:41] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] High score: 9
+[2024-05-19 14:06:41] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] Game restarted
+[2024-05-19 14:06:41] Game state: game_over
+[2024-05-19 14:06:41] Reset snake length
+[2024-05-19 14:06:41] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] Game state: game
+[2024-05-19 14:06:41] Food ID: c1d37aeb-eaeb-42c1-b45f-35367d62734b
+[2024-05-19 14:06:41] Food items: {'c1d37aeb-eaeb-42c1-b45f-35367d62734b': {'x': 280, 'y': 100, 'tag': 'foodc1d37aeb-eaeb-42c1-b45f-35367d62734b', 'oval_id': 254}}
+[2024-05-19 14:06:41] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:41] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] Game state: game_over
+[2024-05-19 14:06:41] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] High score: 9
+[2024-05-19 14:06:41] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] Game restarted
+[2024-05-19 14:06:41] Game state: game_over
+[2024-05-19 14:06:41] Reset snake length
+[2024-05-19 14:06:41] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:41] Game state: game
+[2024-05-19 14:06:41] Food ID: 60dc3050-ca30-448b-bd81-924d029bcf51
+[2024-05-19 14:06:41] Food items: {'60dc3050-ca30-448b-bd81-924d029bcf51': {'x': 140, 'y': 120, 'tag': 'food60dc3050-ca30-448b-bd81-924d029bcf51', 'oval_id': 265}}
+[2024-05-19 14:06:41] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:42] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game state: game_over
+[2024-05-19 14:06:42] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] High score: 9
+[2024-05-19 14:06:42] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game restarted
+[2024-05-19 14:06:42] Game state: game_over
+[2024-05-19 14:06:42] Reset snake length
+[2024-05-19 14:06:42] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game state: game
+[2024-05-19 14:06:42] Food ID: d2c6a1ef-fac9-41d7-826b-e2b614fe323c
+[2024-05-19 14:06:42] Food items: {'d2c6a1ef-fac9-41d7-826b-e2b614fe323c': {'x': 80, 'y': 140, 'tag': 'foodd2c6a1ef-fac9-41d7-826b-e2b614fe323c', 'oval_id': 276}}
+[2024-05-19 14:06:42] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:42] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game state: game_over
+[2024-05-19 14:06:42] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] High score: 9
+[2024-05-19 14:06:42] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game restarted
+[2024-05-19 14:06:42] Game state: game_over
+[2024-05-19 14:06:42] Reset snake length
+[2024-05-19 14:06:42] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game state: game
+[2024-05-19 14:06:42] Food ID: 1d849ee0-08fb-46dc-b323-98274f4cd2fe
+[2024-05-19 14:06:42] Food items: {'1d849ee0-08fb-46dc-b323-98274f4cd2fe': {'x': 60, 'y': 100, 'tag': 'food1d849ee0-08fb-46dc-b323-98274f4cd2fe', 'oval_id': 287}}
+[2024-05-19 14:06:42] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:42] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game state: game_over
+[2024-05-19 14:06:42] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] High score: 9
+[2024-05-19 14:06:42] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game restarted
+[2024-05-19 14:06:42] Game state: game_over
+[2024-05-19 14:06:42] Reset snake length
+[2024-05-19 14:06:42] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game state: game
+[2024-05-19 14:06:42] Food ID: d4eca4fd-5337-41a5-ac22-934009a1f873
+[2024-05-19 14:06:42] Food items: {'d4eca4fd-5337-41a5-ac22-934009a1f873': {'x': 300, 'y': 280, 'tag': 'foodd4eca4fd-5337-41a5-ac22-934009a1f873', 'oval_id': 298}}
+[2024-05-19 14:06:42] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:42] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] Game state: game_over
+[2024-05-19 14:06:42] Snake coordinates after reset: [(-20, 40), (0, 40), (0, 20), [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:42] High score: 9
+[2024-05-19 14:06:42] Score: 0
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:43] Game restarted
+[2024-05-19 14:06:43] Game state: game_over
+[2024-05-19 14:06:43] Reset snake length
+[2024-05-19 14:06:43] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:43] Game state: game
+[2024-05-19 14:06:43] Food ID: 677021a0-bf92-4a0b-b18f-8309f6c44556
+[2024-05-19 14:06:43] Food items: {'677021a0-bf92-4a0b-b18f-8309f6c44556': {'x': 320, 'y': 80, 'tag': 'food677021a0-bf92-4a0b-b18f-8309f6c44556', 'oval_id': 309}}
+[2024-05-19 14:06:43] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-05-19 14:06:43] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:43] Game state: game_over
+[2024-05-19 14:06:43] Snake coordinates after reset: [(-20, 60), (0, 60), (0, 40), (0, 20), [0, 0]]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-19 14:06:43] High score: 9
+[2024-05-19 14:06:43] Score: 0
+[2024-05-19 14:06:46] Closed the app
+
+
+
+
+[2024-05-19 14:20:39] Started the app
+[2024-05-19 14:20:39] Started the GameApp Class
+[2024-05-19 14:20:39] Game mode: initial config
+[2024-05-19 14:20:39] Current Theme: Dark-Blue
+[2024-05-19 14:20:39] Set initial theme to: Dark-Blue
+[2024-05-19 14:20:39] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:20:39] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:20:39] Theme applied: Dark-Blue
+[2024-05-19 14:20:39] Updated contrast in config.ini to: Default
+[2024-05-19 14:20:39] Contrast mode set to: dark
+[2024-05-19 14:20:39] Set initial game size to: 600x600
+[2024-05-19 14:20:39] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:20:39] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:20:39] Label border width: 1
+[2024-05-19 14:20:39] label_border_height: 1
+[2024-05-19 14:20:39] Home_screen method called
+[2024-05-19 14:20:40] Set initial game size to: 600x600
+[2024-05-19 14:20:40] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:20:40] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:20:40] Label border width: 1
+[2024-05-19 14:20:40] label_border_height: 1
+[2024-05-19 14:20:40] Updated label_needed_game_size in config.ini to: False
+[2024-05-19 14:20:58] Closed the app
+
+
+
+
+[2024-05-19 14:22:22] Started the app
+[2024-05-19 14:22:22] Started the GameApp Class
+[2024-05-19 14:22:22] Game mode: initial config
+[2024-05-19 14:22:22] Current Theme: Dark-Blue
+[2024-05-19 14:22:22] Set initial theme to: Dark-Blue
+[2024-05-19 14:22:22] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:22:22] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:22:22] Theme applied: Dark-Blue
+[2024-05-19 14:22:22] Updated contrast in config.ini to: Default
+[2024-05-19 14:22:22] Contrast mode set to: dark
+[2024-05-19 14:22:22] Set initial game size to: 600x600
+[2024-05-19 14:22:22] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:22:22] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:22:22] Label border width: 1
+[2024-05-19 14:22:22] label_border_height: 1
+[2024-05-19 14:22:22] Home_screen method called
+[2024-05-19 14:22:23] Set initial game size to: 600x600
+[2024-05-19 14:22:23] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:22:23] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:22:23] Label border width: 1
+[2024-05-19 14:22:23] label_border_height: 1
+[2024-05-19 14:22:23] Updated label_needed_game_size in config.ini to: False
+[2024-05-19 14:22:38] Closed the app
+
+
+
+
+[2024-05-19 14:23:36] Started the app
+[2024-05-19 14:23:36] Started the GameApp Class
+[2024-05-19 14:23:36] Game mode: initial config
+[2024-05-19 14:23:36] Current Theme: Dark-Blue
+[2024-05-19 14:23:36] Set initial theme to: Dark-Blue
+[2024-05-19 14:23:36] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:23:36] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:23:36] Theme applied: Dark-Blue
+[2024-05-19 14:23:36] Updated contrast in config.ini to: Default
+[2024-05-19 14:23:36] Contrast mode set to: dark
+[2024-05-19 14:23:36] Set initial game size to: 600x600
+[2024-05-19 14:23:36] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:23:36] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:23:36] Label border width: 1
+[2024-05-19 14:23:36] label_border_height: 1
+[2024-05-19 14:23:36] Home_screen method called
+[2024-05-19 14:23:37] Set initial game size to: 600x600
+[2024-05-19 14:23:37] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:23:37] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:23:37] Label border width: 1
+[2024-05-19 14:23:37] label_border_height: 1
+[2024-05-19 14:23:37] Updated label_needed_game_size in config.ini to: False
+[2024-05-19 14:23:59] Keybindings changed
+[2024-05-19 14:23:59] Keybindings changed2
+[2024-05-19 14:24:15] Closed the app
+
+
+
+
+[2024-05-19 14:33:58] Started the app
+[2024-05-19 14:33:58] Started the GameApp Class
+[2024-05-19 14:33:58] Game mode: initial config
+[2024-05-19 14:33:58] Current Theme: Dark-Blue
+[2024-05-19 14:33:58] Set initial theme to: Dark-Blue
+[2024-05-19 14:33:58] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:33:58] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-19 14:33:58] Theme applied: Dark-Blue
+[2024-05-19 14:33:58] Updated contrast in config.ini to: Default
+[2024-05-19 14:33:58] Contrast mode set to: dark
+[2024-05-19 14:33:58] Set initial game size to: 600x600
+[2024-05-19 14:33:58] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:33:58] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:33:58] Label border width: 1
+[2024-05-19 14:33:58] label_border_height: 1
+[2024-05-19 14:33:58] Home_screen method called
+[2024-05-19 14:33:59] Set initial game size to: 600x600
+[2024-05-19 14:33:59] Updated initial_game_size in config.ini to: 600x600
+[2024-05-19 14:33:59] Current initial_game_size in config.ini to: 600x600
+[2024-05-19 14:33:59] Label border width: 1
+[2024-05-19 14:33:59] label_border_height: 1
+[2024-05-19 14:33:59] Updated label_needed_game_size in config.ini to: False
+Value already in use
+[2024-05-19 14:34:04] Keybindings changed
+[2024-05-19 14:34:04] Keybindings changed2
+[2024-05-19 14:34:13] Keybindings changed
+[2024-05-19 14:34:13] Keybindings changed2
+[2024-05-19 14:34:31] Closed the app
+
+
+
+

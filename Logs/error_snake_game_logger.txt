@@ -2511,3 +2511,73 @@ _tkinter.TclError: bad event type or keysym "Spacebar"
 
 
 
+[2024-05-19 22:53:01] 
+
+
+[2024-05-19 22:53:01] Started the Error Log File
+[2024-05-19 22:53:44] No errors occurred
+[2024-05-19 22:53:44] Closed the Error Log File
+
+
+
+
+[2024-05-19 22:57:38] 
+
+
+[2024-05-19 22:57:38] Started the Error Log File
+[2024-05-19 22:58:08] No errors occurred
+[2024-05-19 22:58:08] Closed the Error Log File
+
+
+
+
+[2024-05-19 22:58:37] 
+
+
+[2024-05-19 22:58:37] Started the Error Log File
+[2024-05-19 22:58:44] No errors occurred
+[2024-05-19 22:58:44] Closed the Error Log File
+
+
+
+
+[2024-05-19 22:59:17] 
+
+
+[2024-05-19 22:59:17] Started the Error Log File
+[2024-05-19 22:59:23] No errors occurred
+[2024-05-19 22:59:23] Closed the Error Log File
+
+
+
+
+[2024-05-19 23:01:36] 
+
+
+[2024-05-19 23:01:36] Started the Error Log File
+[2024-05-19 23:01:42] No errors occurred
+[2024-05-19 23:01:42] Closed the Error Log File
+
+
+
+
+[2024-05-19 23:03:19] 
+
+
+[2024-05-19 23:03:19] Started the Error Log File
+[2024-05-19 23:03:33] No errors occurred
+[2024-05-19 23:03:33] Closed the Error Log File
+
+
+
+
+[2024-05-19 23:04:57] 
+
+
+[2024-05-19 23:04:57] Started the Error Log File
+[2024-05-19 23:05:18] No errors occurred
+[2024-05-19 23:05:18] Closed the Error Log File
+
+
+
+

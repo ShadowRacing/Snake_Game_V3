@@ -781,10 +781,28 @@ class OptionButtonPanel:
         self.updating_config_ini()
         self.snake_color_rgb = COLORS_DICT.get(selected_value)
 
+    def is_key_binding_used(self, selected_value):
+        """
+        Check if a keybinding is already in use.
+        """
+        # Get all current keybindings
+        current_keybindings = self.config.items('KeyBindings')
+        print(current_keybindings)
+
+        # Check if the selected keybinding is in the list of current keybindings
+        for _, value in current_keybindings:
+            if value == selected_value:
+                return True
+
+        return False
+
     def high_score_label_showing_callback(self, selected_value):
         """
         Function for the high score label showing callback.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('Settings', 'label_needed_high_score', selected_value)
         except FileNotFoundError as e:
@@ -795,6 +813,9 @@ class OptionButtonPanel:
         """
         Function for the snake speed callback.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('Settings', 'snake_speed', selected_value)
         except FileNotFoundError as e:
@@ -805,6 +826,9 @@ class OptionButtonPanel:
         """
         Function for the game size callback.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('Settings', 'game_size', selected_value)
             self.game_logger.log_game_event("Game size changed")
@@ -814,78 +838,97 @@ class OptionButtonPanel:
             self.game_logger.log_game_event("Game size changed2")
         except FileNotFoundError as e:
             traceback.print_exc(e)
-    
+
     def keybindings_callback_up(self, selected_value):
         """
         Function for the keybindings callback up.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('KeyBindings', 'up', selected_value)
         except FileNotFoundError as e:
             traceback.print_exc(e)
         self.updating_config_ini()
-    
+
     def keybindings_callback_down(self, selected_value):
         """
         Function for the keybindings callback down.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('KeyBindings', 'down', selected_value)
         except FileNotFoundError as e:
             traceback.print_exc(e)
         self.updating_config_ini()
-    
+
     def keybindings_callback_left(self, selected_value):
         """
         Function for the keybindings callback left.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('KeyBindings', 'left', selected_value)
         except FileNotFoundError as e:
             traceback.print_exc(e)
         self.updating_config_ini()
-    
+
     def keybindings_callback_right(self, selected_value):
         """
         Function for the keybindings callback right.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('KeyBindings', 'right', selected_value)
         except FileNotFoundError as e:
             traceback.print_exc(e)
         self.updating_config_ini()
-    
+
     def keybindings_callback_startgame(self, selected_value):
         """
         Function for the keybindings callback startgame.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('KeyBindings', 'startgame', selected_value)
         except FileNotFoundError as e:
             traceback.print_exc(e)
         self.updating_config_ini()
-    
+
     def keybindings_callback_pausegame(self, selected_value):
         """
         Function for the keybindings callback pausegame.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('KeyBindings', 'pausegame', selected_value)
         except FileNotFoundError as e:
             traceback.print_exc(e)
         self.updating_config_ini()
-    
+
     def keybindings_callback_restartgame(self, selected_value):
         """
         Function for the keybindings callback restartgame.
         """
+        if self.is_key_binding_used(selected_value):
+            print("This keybinding is already in use.")
+            return
         try:
             self.config.set('KeyBindings', 'restartgame', selected_value)
         except FileNotFoundError as e:
             traceback.print_exc(e)
         self.updating_config_ini()
-
-
 
     # Method to create an option button
     def create_option_button(self, command, values, config, x, y):

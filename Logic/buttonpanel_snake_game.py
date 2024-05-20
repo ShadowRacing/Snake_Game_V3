@@ -479,6 +479,166 @@ class ButtonCommands:
         else:
             self.game_logger.log_game_event("No function assigned to 'destroy_canvas'")
 
+class ResetSettingsPanel:
+    def __init__(self, reset_settings_frame, button_commands, game_logger, functions):
+        self.reset_settings_frame = reset_settings_frame
+        self.button_commands = button_commands
+        self.game_logger = game_logger
+        self.functions = functions
+        # Managing the buttons height and width
+        self.button_width = GameConstants.CLICK_BUTTON_WIDTH
+        self.button_height = GameConstants.CLICK_BUTTON_HEIGHT
+        self.corner_radius = GameConstants.CLICK_BUTTON_CORNER_RADIUS
+
+        self.button_commands = ButtonCommands(self.game_logger, self.functions)
+
+    def reset_screen_size_button(self):
+        """
+        Function for creating the reset screen size button.
+        """
+        reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                                         width=self.button_width, height=self.button_height, state="normal",
+                                         command=self.button_commands.reset_screen_size_command)
+        reset_screen_size_button.place(in_=self.reset_settings_frame, x=100, y=50) # pylint: disable=line-too-long
+
+    def reset_theme_button(self):
+        """
+        Function for creating the reset theme button.
+        """
+        reset_theme_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Theme", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_theme_command)
+        reset_theme_button.place(in_=self.reset_settings_frame, x=120, y=50) # pylint: disable=line-too-long
+
+    def reset_contrast_button(self):
+        """
+        Function for creating the reset contrast button.
+        """
+        reset_contrast_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Contrast", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_contrast_command)
+        reset_contrast_button.place(in_=self.reset_settings_frame, x=140, y=50) # pylint: disable=line-too-long
+
+    def reset_high_score_label_showing_button(self):
+        """
+        Function for creating the high score label showing button.
+        """
+        reset_high_score_label_showing_button = ctk.CTkButton(self.reset_settings_frame, text="High Score Label Showing", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_high_score_label_showing_command)
+        reset_high_score_label_showing_button.place(in_=self.reset_settings_frame, x=160, y=50) # pylint: disable=line-too-long
+
+    def reset_snake_speed_button(self):
+        """
+        Function for creating the reset snake speed button.
+        """
+        reset_snake_speed_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Snake Speed", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_snake_speed_command)
+        reset_snake_speed_button.place(in_=self.reset_settings_frame, x=180, y=50) # pylint: disable=line-too-long
+
+    def reset_game_size_button(self):
+        """
+        Function for creating the reset game size button.
+        """
+        reset_game_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Game Size", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_game_size_command)
+        reset_game_size_button.place(in_=self.reset_settings_frame, x=200, y=50) # pylint: disable=line-too-long
+
+    def reset_snake_color_button(self):
+        """
+        Function for creating the reset snake color button.
+        """
+        reset_snake_color_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Snake Color", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_snake_color_command)
+        reset_snake_color_button.place(in_=self.reset_settings_frame, x=220, y=50) # pylint: disable=line-too-long
+
+    def reset_move_up_button(self):
+        """
+        Function for creating the reset move up button.
+        """
+        reset_move_up_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Move Up", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_move_up_command)
+        reset_move_up_button.place(in_=self.reset_settings_frame, x=240, y=50) # pylint: disable=line-too-long
+
+    def reset_move_down_button(self):
+        """
+        Function for creating the reset move down button.
+        """
+        reset_move_down_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Move Down", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_move_down_command)
+        reset_move_down_button.place(in_=self.reset_settings_frame, x=260, y=50) # pylint: disable=line-too-long
+
+    def reset_move_left_button(self):
+        """
+        Function for creating the reset move left button.
+        """
+        reset_move_left_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Move Left", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_move_left_command)
+        reset_move_left_button.place(in_=self.reset_settings_frame, x=280, y=50) # pylint: disable=line-too-long
+
+    def reset_move_right_button(self):
+        """
+        Function for creating the reset move right button.
+        """
+        reset_move_right_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Move Right", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_move_right_command)
+        reset_move_right_button.place(in_=self.reset_settings_frame, x=300, y=50) # pylint: disable=line-too-long
+
+    def reset_start_game_button(self):
+        """
+        Function for creating the reset start game button.
+        """
+        reset_start_game_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Start Game", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_start_game_command)
+        reset_start_game_button.place(in_=self.reset_settings_frame, x=320, y=50) # pylint: disable=line-too-long
+
+    def reset_pause_game_button(self):
+        """
+        Function for creating the reset pause game button.
+        """
+        reset_pause_game_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Pause Game", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_pause_game_command)
+        reset_pause_game_button.place(in_=self.reset_settings_frame, x=340, y=50) # pylint: disable=line-too-long
+
+    def reset_restart_game_button(self):
+        """
+        Function for creating the reset restart game button.
+        """
+        reset_restart_game_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Restart Game", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_restart_game_command)
+        reset_restart_game_button.place(in_=self.reset_settings_frame, x=360, y=50) # pylint: disable=line-too-long
+
+    def reset_all_settings_button(self):
+        """
+        Function for creating the reset all settings button.
+        """
+        reset_all_settings_button = ctk.CTkButton(self.reset_settings_frame, text="Reset All Settings", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_all_settings_command)
+        reset_all_settings_button.place(in_=self.reset_settings_frame, x=380, y=50) # pylint: disable=line-too-long
+
+    def reset_all_movements_button(self):
+        """
+        Function for creating the reset all movements button.
+        """
+        reset_all_movements_button = ctk.CTkButton(self.reset_settings_frame, text="Reset All Movements", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.reset_all_movements_command)
+        reset_all_movements_button.place(in_=self.reset_settings_frame, x=400, y=50) # pylint: disable=line-too-long
+
+    
+
+
 # Class for creating the button panel
 class ClickButtonPanel:
     """
@@ -804,150 +964,6 @@ class ClickButtonPanel:
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.leveling_reset_high_score_level_command) # pylint: disable=line-too-long
         leveling_reset_high_score_level_button.grid(in_=self.button_canvas, row=16, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_screen_size_button(self):
-        """
-        Function for creating the reset screen size button.
-        """
-        reset_screen_size_button = ctk.CTkButton(self.button_canvas, text="Reset Screen Size", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_screen_size_command)
-        reset_screen_size_button.grid(in_=self.button_canvas, row=17, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_theme_button(self):
-        """
-        Function for creating the reset theme button.
-        """
-        reset_theme_button = ctk.CTkButton(self.button_canvas, text="Reset Theme", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_theme_command)
-        reset_theme_button.grid(in_=self.button_canvas, row=18, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_contrast_button(self):
-        """
-        Function for creating the reset contrast button.
-        """
-        reset_contrast_button = ctk.CTkButton(self.button_canvas, text="Reset Contrast", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_contrast_command)
-        reset_contrast_button.grid(in_=self.button_canvas, row=19, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_high_score_label_showing_button(self):
-        """
-        Function for creating the high score label showing button.
-        """
-        reset_high_score_label_showing_button = ctk.CTkButton(self.button_canvas, text="High Score Label Showing", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_high_score_label_showing_command)
-        reset_high_score_label_showing_button.grid(in_=self.button_canvas, row=20, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_snake_speed_button(self):
-        """
-        Function for creating the reset snake speed button.
-        """
-        reset_snake_speed_button = ctk.CTkButton(self.button_canvas, text="Reset Snake Speed", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_snake_speed_command)
-        reset_snake_speed_button.grid(in_=self.button_canvas, row=21, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_game_size_button(self):
-        """
-        Function for creating the reset game size button.
-        """
-        reset_game_size_button = ctk.CTkButton(self.button_canvas, text="Reset Game Size", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_game_size_command)
-        reset_game_size_button.grid(in_=self.button_canvas, row=22, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_snake_color_button(self):
-        """
-        Function for creating the reset snake color button.
-        """
-        reset_snake_color_button = ctk.CTkButton(self.button_canvas, text="Reset Snake Color", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_snake_color_command)
-        reset_snake_color_button.grid(in_=self.button_canvas, row=23, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_move_up_button(self):
-        """
-        Function for creating the reset move up button.
-        """
-        reset_move_up_button = ctk.CTkButton(self.button_canvas, text="Reset Move Up", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_move_up_command)
-        reset_move_up_button.grid(in_=self.button_canvas, row=24, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_move_down_button(self):
-        """
-        Function for creating the reset move down button.
-        """
-        reset_move_down_button = ctk.CTkButton(self.button_canvas, text="Reset Move Down", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_move_down_command)
-        reset_move_down_button.grid(in_=self.button_canvas, row=25, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_move_left_button(self):
-        """
-        Function for creating the reset move left button.
-        """
-        reset_move_left_button = ctk.CTkButton(self.button_canvas, text="Reset Move Left", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_move_left_command)
-        reset_move_left_button.grid(in_=self.button_canvas, row=26, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_move_right_button(self):
-        """
-        Function for creating the reset move right button.
-        """
-        reset_move_right_button = ctk.CTkButton(self.button_canvas, text="Reset Move Right", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_move_right_command)
-        reset_move_right_button.grid(in_=self.button_canvas, row=27, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_start_game_button(self):
-        """
-        Function for creating the reset start game button.
-        """
-        reset_start_game_button = ctk.CTkButton(self.button_canvas, text="Reset Start Game", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_start_game_command)
-        reset_start_game_button.grid(in_=self.button_canvas, row=28, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_pause_game_button(self):
-        """
-        Function for creating the reset pause game button.
-        """
-        reset_pause_game_button = ctk.CTkButton(self.button_canvas, text="Reset Pause Game", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_pause_game_command)
-        reset_pause_game_button.grid(in_=self.button_canvas, row=29, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_restart_game_button(self):
-        """
-        Function for creating the reset restart game button.
-        """
-        reset_restart_game_button = ctk.CTkButton(self.button_canvas, text="Reset Restart Game", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_restart_game_command)
-        reset_restart_game_button.grid(in_=self.button_canvas, row=30, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_all_settings_button(self):
-        """
-        Function for creating the reset all settings button.
-        """
-        reset_all_settings_button = ctk.CTkButton(self.button_canvas, text="Reset All Settings", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_all_settings_command)
-        reset_all_settings_button.grid(in_=self.button_canvas, row=31, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
-
-    def reset_all_movements_button(self):
-        """
-        Function for creating the reset all movements button.
-        """
-        reset_all_movements_button = ctk.CTkButton(self.button_canvas, text="Reset All Movements", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, state="normal",
-                                command=self.button_commands.reset_all_movements_command)
-        reset_all_movements_button.grid(in_=self.button_canvas, row=32, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
 
     # only in the special game mode
     def game_size_button(self):

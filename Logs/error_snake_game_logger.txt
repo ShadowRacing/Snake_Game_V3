@@ -3040,3 +3040,426 @@ TypeError: SnakeGameApp.reset_settings() missing 1 required positional argument:
 
 
 
+[2024-05-20 13:02:02] 
+
+
+[2024-05-20 13:02:02] Started the Error Log File
+[2024-05-20 13:02:13] No errors occurred
+[2024-05-20 13:02:13] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:03:58] 
+
+
+[2024-05-20 13:03:58] Started the Error Log File
+[2024-05-20 13:04:15] No errors occurred
+[2024-05-20 13:04:15] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:15:20] 
+
+
+[2024-05-20 13:15:20] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 524, in reset_settings
+    self.create_button_panel.reset_screen_size_button()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ClickButtonPanel' object has no attribute 'reset_screen_size_button'
+[2024-05-20 13:15:26] No errors occurred
+[2024-05-20 13:15:26] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:15:31] 
+
+
+[2024-05-20 13:15:31] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 524, in reset_settings
+    self.create_button_panel.reset_screen_size_button()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ClickButtonPanel' object has no attribute 'reset_screen_size_button'
+[2024-05-20 13:15:35] No errors occurred
+[2024-05-20 13:15:35] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:18:15] 
+
+
+[2024-05-20 13:18:15] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 527, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 498, in reset_screen_size_button
+    command=self.button_commands_2.reset_screen_size_command)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'reset_screen_size_command'
+[2024-05-20 13:18:19] No errors occurred
+[2024-05-20 13:18:19] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:18:34] 
+
+
+[2024-05-20 13:18:34] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 527, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 497, in reset_screen_size_button
+    command=self.button_commands_2.reset_screen_size_command)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'reset_screen_size_command'
+[2024-05-20 13:18:36] No errors occurred
+[2024-05-20 13:18:36] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:33:48] 
+
+
+[2024-05-20 13:33:48] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1095, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 169, in __init__
+    self.reset_commands = ResetSettingsPanel(self.game_logger, self.functions)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ResetSettingsPanel.__init__() missing 2 required positional arguments: 'game_logger' and 'functions'
+[2024-05-20 13:33:52] 
+
+
+[2024-05-20 13:33:52] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1095, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 169, in __init__
+    self.reset_commands = ResetSettingsPanel(self.game_logger, self.functions)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ResetSettingsPanel.__init__() missing 2 required positional arguments: 'game_logger' and 'functions'
+[2024-05-20 13:35:54] 
+
+
+[2024-05-20 13:35:54] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1095, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 169, in __init__
+    self.reset_commands = ResetSettingsPanel(self.button_commands, self.game_logger, self.functions)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ResetSettingsPanel.__init__() missing 1 required positional argument: 'functions'
+[2024-05-20 13:36:26] 
+
+
+[2024-05-20 13:36:26] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 55, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 279, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 350, in start_game
+    self.reset_commands = ResetSettingsPanel(self.game_logger, self.functions)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ResetSettingsPanel.__init__() missing 2 required positional arguments: 'game_logger' and 'functions'
+[2024-05-20 13:36:30] No errors occurred
+[2024-05-20 13:36:30] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:37:17] 
+
+
+[2024-05-20 13:37:17] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 527, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 499, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_canvas, text="Reset Screen Size", font=FONT_LIST[11], # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'ButtonCommands' object has no attribute 'tk'
+[2024-05-20 13:37:21] No errors occurred
+[2024-05-20 13:37:21] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:41:00] 
+
+
+[2024-05-20 13:41:00] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1096, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 170, in __init__
+    self.reset_commands = ResetSettingsPanel(self.reset_settings_frame, self.button_commands, self.game_logger, self.functions, self.functions)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ResetSettingsPanel.__init__() takes 5 positional arguments but 6 were given
+[2024-05-20 13:41:23] 
+
+
+[2024-05-20 13:41:23] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 528, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 499, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11], # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'ButtonCommands' object has no attribute 'tk'
+[2024-05-20 13:41:27] No errors occurred
+[2024-05-20 13:41:27] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:43:47] 
+
+
+[2024-05-20 13:43:47] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 528, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 499, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'ButtonCommands' object has no attribute 'tk'
+[2024-05-20 13:43:50] No errors occurred
+[2024-05-20 13:43:50] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:44:29] 
+
+
+[2024-05-20 13:44:29] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 528, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 502, in reset_screen_size_button
+    reset_screen_size_button.grid(in_=self.reset_settings_frame, row=17, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 321, in grid
+    return super().grid(**self._apply_argument_scaling(kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2549, in grid_configure
+    self.tk.call(
+_tkinter.TclError: cannot use geometry manager grid inside . which already has slaves managed by pack
+[2024-05-20 13:44:32] No errors occurred
+[2024-05-20 13:44:32] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:48:04] 
+
+
+[2024-05-20 13:48:04] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 528, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 502, in reset_screen_size_button
+    reset_screen_size_button.place(in_=self.reset_settings_frame, x=100, y=50, sticky="w") # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 274, in place
+    return super().place(**self._apply_argument_scaling(kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2504, in place_configure
+    self.tk.call(
+_tkinter.TclError: unknown option "-sticky"
+[2024-05-20 13:48:08] No errors occurred
+[2024-05-20 13:48:08] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:49:34] 
+
+
+[2024-05-20 13:49:34] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 528, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 499, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 528, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 499, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-20 13:49:57] No errors occurred
+[2024-05-20 13:49:57] Closed the Error Log File
+
+
+
+
+[2024-05-20 13:50:29] 
+
+
+[2024-05-20 13:50:29] Started the Error Log File
+[2024-05-20 13:50:35] No errors occurred
+[2024-05-20 13:50:35] Closed the Error Log File
+
+
+
+

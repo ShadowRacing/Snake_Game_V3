@@ -18,7 +18,7 @@ import customtkinter as ctk
 from Logs.gamelogger_snake_game import GameLogger , ErrorgameLogger
 from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSCREEN, FONT_LIST
 from Configuration.gameconfig_snake_game import GameConfig
-from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands
+from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands, ResetSettingsPanel # pylint: disable=line-too-long
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel # pylint: disable=line-too-long
 from Logic.config_ini_initials import ConfigIni
 from Logic.snake_challange_choice import ChallangeChoices
@@ -107,6 +107,7 @@ class SnakeGameApp:
         self.challange_settings_canvas = None
         self.info_canvas = None
         self.settings_canvas = None
+        self.reset_settings_frame = None
 
         #create the functions dictionary
         self.functions = {
@@ -165,6 +166,8 @@ class SnakeGameApp:
 
         # And then create the ButtonCommands instance
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
+
+        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.game_logger, self.button_commands,  self.functions)
 
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger,
                                                         self.game_config, self.open_info,
@@ -345,6 +348,7 @@ class SnakeGameApp:
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
+        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.game_logger, self.button_commands,  self.functions)
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger, self.game_config, self.open_info, self.open_settings) # pylint: disable=line-too-long
         self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.game_logger, self.game_config) # pylint: disable=line-too-long
         self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)
@@ -499,7 +503,7 @@ class SnakeGameApp:
             self.patchnotes_displayed = False
             self.patchnotes_label.place_forget()
 
-    def reset_settings(self, setting_to_reset):
+    def reset_settings(self):
         """
         Reset the specified setting to the default value.
         """
@@ -521,40 +525,57 @@ class SnakeGameApp:
                                         height=600, 
                                         fg_color='Grey10') # pylint: disable=line-too-long
             self.reset_settings_frame.place(x=250, y=75)
-            if setting_to_reset == 'screen_size':
+            self.reset_commands.reset_screen_size_button()
+            self.reset_commands.reset_theme_button()
+            self.reset_commands.reset_contrast_button()
+            self.reset_commands.reset_high_score_label_showing_button()
+            self.reset_commands.reset_snake_speed_button()
+            self.reset_commands.reset_game_size_button()
+            self.reset_commands.reset_snake_color_button()
+            self.reset_commands.reset_move_up_button()
+            self.reset_commands.reset_move_down_button()
+            self.reset_commands.reset_move_left_button()
+            self.reset_commands.reset_move_right_button()
+            self.reset_commands.reset_pause_game_button()
+            self.reset_commands.reset_start_game_button()
+            self.reset_commands.reset_restart_game_button()
+            self.reset_commands.reset_all_settings_button()
+            self.reset_commands.reset_all_movements_button()
+
+            if self.functions == 'screen_size':
+                print("Resetting screen size")
+            elif self.functions == 'theme':
                 pass
-            elif setting_to_reset == 'theme':
+            elif self.functions == 'contrast':
                 pass
-            elif setting_to_reset == 'contrast':
+            elif self.functions == 'high_score_label_showing':
                 pass
-            elif setting_to_reset == 'high_score_label_showing':
+            elif self.functions == 'snake_speed':
                 pass
-            elif setting_to_reset == 'snake_speed':
+            elif self.functions == 'game_size':
                 pass
-            elif setting_to_reset == 'game_size':
+            elif self.functions == 'snake_color':
                 pass
-            elif setting_to_reset == 'snake_color':
+            elif self.functions == 'move_up':
                 pass
-            elif setting_to_reset == 'move_up':
+            elif self.functions == 'move_down':
                 pass
-            elif setting_to_reset == 'move_down':
+            elif self.functions == 'move_left':
                 pass
-            elif setting_to_reset == 'move_left':
+            elif self.functions == 'move_right':
                 pass
-            elif setting_to_reset == 'move_right':
+            elif self.functions == 'pause':
                 pass
-            elif setting_to_reset == 'pause':
+            elif self.functions == 'start_game':
                 pass
-            elif setting_to_reset == 'start_game':
+            elif self.functions == 'restart':
                 pass
-            elif setting_to_reset == 'restart':
+            elif self.functions == 'all_settings':
                 pass
-            elif setting_to_reset == 'all_settings':
-                pass
-            elif setting_to_reset == 'all_movements':
+            elif self.functions == 'all_movements':
                 pass
             else:
-                print(f"Unknown setting: {setting_to_reset}")
+                print(f"Unknown setting: {self.functions}")
             self.reset_settings_displayed = True
 
         else:

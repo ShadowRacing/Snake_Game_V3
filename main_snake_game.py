@@ -83,8 +83,15 @@ class SnakeGameApp:
         self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5)) # pylint: disable=line-too-long
 
         self.patchnotes_displayed = False
+        self.reset_settings_displayed = False
         self.scrollable_frame = None
         self.patchnotes_label = None
+
+        self.text_name = "Shadow's Snake Game"
+        self.text_version = "Version: 0.2.3"
+        self.text_developer = "Developer: Shadow"
+        self.font_50 = ("Helvetica", 50)
+        self.font_30 = ("Helvetica", 30)
 
         # Creating the main canvas for the app
         self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
@@ -131,6 +138,23 @@ class SnakeGameApp:
             'challange_choices': self.challange_choices,
             'challange_settings': self.challange_settings,
             'patchnotes': self.patchnotes,
+            'reset_settings': self.reset_settings,
+            'reset_screen_size': self.reset_settings,
+            'reset_theme': self.reset_settings,
+            'reset_contrast': self.reset_settings,
+            'reset_high_score_label_showing': self.reset_settings,
+            'reset_snake_speed': self.reset_settings,
+            'reset_game_size': self.reset_settings,
+            'reset_snake_color': self.reset_settings,
+            'reset_move_up': self.reset_settings,
+            'reset_move_down': self.reset_settings,
+            'reset_move_left': self.reset_settings,
+            'reset_move_right': self.reset_settings,
+            'reset_pause': self.reset_settings,
+            'reset_start_game': self.reset_settings,
+            'reset_restart': self.reset_settings,
+            'reset_all_settings': self.reset_settings,
+            'reset_all_movements': self.reset_settings
         }
 
         self.create_option_button_panel = None
@@ -188,6 +212,18 @@ class SnakeGameApp:
         self.classic_reset_button_press_variable()
         self.endless_reset_button_press_variable()
         self.leveling_reset_button_press_variable()
+        self.main_canvas.bind("<Configure>", self.update_text_position)
+
+    def update_text_position(self, event=None):# pylint: disable=unused-argument
+        """
+        Update the position of the text on the canvas.
+        """
+        canvas_width = self.main_canvas.winfo_width() // 2 + 80
+        canvas_height = self.main_canvas.winfo_height() // 2 - 50
+        self.main_canvas.delete("text")
+        self.main_canvas.create_text(canvas_width, canvas_height - 50, text=self.text_name, font=self.font_50, fill="white", tags="text") # pylint: disable=line-too-long
+        self.main_canvas.create_text(canvas_width, canvas_height, text=self.text_version, font=self.font_30, fill="white", tags="text") # pylint: disable=line-too-long
+        self.main_canvas.create_text(canvas_width, canvas_height + 50, text=self.text_developer, font=self.font_30, fill="white", tags="text") # pylint: disable=line-too-long
 
     def classic_snake(self):
         """
@@ -292,9 +328,9 @@ class SnakeGameApp:
             self.info_canvas.update_idletasks()  # update canvas before getting its dimensions
             canvas_width = self.info_canvas.winfo_width() // 2 + 80
             canvas_height = self.info_canvas.winfo_height() // 2 - 50
-            self.info_canvas.create_text(canvas_width, canvas_height - 50, text="Shadow's Snake Game", font=("Helvetica", 50), fill="white") # pylint: disable=line-too-long
-            self.info_canvas.create_text(canvas_width, canvas_height, text="Version: 0.2.1", font=("Helvetica", 30), fill="white") # pylint: disable=line-too-long
-            self.info_canvas.create_text(canvas_width, canvas_height + 50, text="Developer: Shadow", font=("Helvetica", 30), fill="white") # pylint: disable=line-too-long
+            self.info_canvas.create_text(canvas_width, canvas_height - 50, text=self.text_name, font=self.font_50, fill="white", tags="text") # pylint: disable=line-too-long
+            self.info_canvas.create_text(canvas_width, canvas_height, text=self.text_version, font=self.font_30, fill="white", tags="text") # pylint: disable=line-too-long
+            self.info_canvas.create_text(canvas_width, canvas_height + 50, text=self.text_developer, font=self.font_30, fill="white", tags="text") # pylint: disable=line-too-long
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.settings_canvas
@@ -369,6 +405,7 @@ class SnakeGameApp:
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_settings_label()
             self.create_option_button_panel.show_options()
+            self.create_button_panel.reset_settings_button()
             self.settings_labels.create_settings_labels()
             self.settings_labels.create_theme_label()
             self.settings_labels.create_game_size_label()
@@ -438,19 +475,19 @@ class SnakeGameApp:
                 patchnotes = json.load(file)
                 for note in patchnotes:
                     version_label = ctk.CTkLabel(self.scrollable_frame,
-                                                 height = 30,
-                                                 width = 750,
-                                                 corner_radius = 0,
-                                                 text="Version: " + note['version'], # pylint: disable=line-too-long
-                                                 font=FONT_LIST[11])
+                                        height = 30,
+                                        width = 750,
+                                        corner_radius = 0,
+                                        text="Version: " + note['version'], # pylint: disable=line-too-long
+                                        font=FONT_LIST[11])
                     version_label.pack()
                     for change in note['changes']:
                         change_label = ctk.CTkLabel(self.scrollable_frame,
-                                                    height = 30,
-                                                    width = 750,
-                                                     corner_radius = 0,
-                                                     text=change,
-                                                     font=FONT_LIST[10])
+                                        height = 30,
+                                        width = 750,
+                                        corner_radius = 0,
+                                        text=change,
+                                        font=FONT_LIST[10])
                         change_label.pack()
                     empty_space_label = ctk.CTkLabel(self.scrollable_frame, text="", fg_color='Grey10') # pylint: disable=line-too-long
                     empty_space_label.pack()
@@ -461,6 +498,69 @@ class SnakeGameApp:
             self.scrollable_frame.place_forget()
             self.patchnotes_displayed = False
             self.patchnotes_label.place_forget()
+
+    def reset_settings(self, setting_to_reset):
+        """
+        Reset the specified setting to the default value.
+        """
+
+        if not hasattr(self, 'reset_settings_displayed'):
+            self.reset_settings_displayed = False
+
+        if not self.reset_settings_displayed:
+            self.reset_label = ctk.CTkLabel(self.settings_canvas,
+                                        height = 50,
+                                        width = 873,
+                                        corner_radius = 6,
+                                        text="Reset Settings",
+                                        font=FONT_LIST[15])
+            self.reset_label.place(x=250, y=10)
+
+            self.reset_settings_frame = ctk.CTkFrame(self.settings_canvas, 
+                                        width=850, 
+                                        height=600, 
+                                        fg_color='Grey10') # pylint: disable=line-too-long
+            self.reset_settings_frame.place(x=250, y=75)
+            if setting_to_reset == 'screen_size':
+                pass
+            elif setting_to_reset == 'theme':
+                pass
+            elif setting_to_reset == 'contrast':
+                pass
+            elif setting_to_reset == 'high_score_label_showing':
+                pass
+            elif setting_to_reset == 'snake_speed':
+                pass
+            elif setting_to_reset == 'game_size':
+                pass
+            elif setting_to_reset == 'snake_color':
+                pass
+            elif setting_to_reset == 'move_up':
+                pass
+            elif setting_to_reset == 'move_down':
+                pass
+            elif setting_to_reset == 'move_left':
+                pass
+            elif setting_to_reset == 'move_right':
+                pass
+            elif setting_to_reset == 'pause':
+                pass
+            elif setting_to_reset == 'start_game':
+                pass
+            elif setting_to_reset == 'restart':
+                pass
+            elif setting_to_reset == 'all_settings':
+                pass
+            elif setting_to_reset == 'all_movements':
+                pass
+            else:
+                print(f"Unknown setting: {setting_to_reset}")
+            self.reset_settings_displayed = True
+
+        else:
+            self.reset_settings_frame.place_forget()
+            self.reset_settings_displayed = False
+            self.reset_label.place_forget()
 
     def classic_reset_high_score(self):
         """

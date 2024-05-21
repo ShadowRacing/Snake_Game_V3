@@ -140,14 +140,13 @@ class FoodTimeAttack(ctk.CTkCanvas):
                 self.config.write(configfile)
 
         self.key_bindings = {
-            'Up': self.config.get('KeyBindings', 'Up').split(', '),
-            'Down': self.config.get('KeyBindings', 'Down').split(', '),
-            'Left': self.config.get('KeyBindings', 'Left').split(', '),
-            'Right': self.config.get('KeyBindings', 'Right').split(', '),
+            'move_up': self.config.get('KeyBindings', 'move_up').split(', '),
+            'move_down': self.config.get('KeyBindings', 'move_down').split(', '),
+            'move_left': self.config.get('KeyBindings', 'move_left').split(', '),
+            'move_right': self.config.get('KeyBindings', 'move_right').split(', '),
             'StartGame': self.config.get('KeyBindings', 'StartGame').split(', '),
             'PauseGame': self.config.get('KeyBindings', 'PauseGame').split(', '),
-            'RestartGame': self.config.get('KeyBindings', 'RestartGame').split(', '),
-            'ExitGame': self.config.get('KeyBindings', 'ExitGame').split(', ')
+            'RestartGame': self.config.get('KeyBindings', 'RestartGame').split(', ')
         }
 
         # Start the game loop
@@ -463,16 +462,16 @@ class FoodTimeAttack(ctk.CTkCanvas):
                 self.snake_canvas.bind(f'<{key}>', self.restart_game)
 
         elif self.state == 'game':
-            for key in self.key_bindings['Up']:
+            for key in self.key_bindings['move_up']:
                 key = key.replace("'", "")
                 self.snake_canvas.bind(f'<{key}>', lambda event: self.change_direction('up'))
-            for key in self.key_bindings['Down']:
+            for key in self.key_bindings['move_down']:
                 key = key.replace("'", "")
                 self.snake_canvas.bind(f'<{key}>', lambda event: self.change_direction('down'))
-            for key in self.key_bindings['Left']:
+            for key in self.key_bindings['move_left']:
                 key = key.replace("'", "")
                 self.snake_canvas.bind(f'<{key}>', lambda event: self.change_direction('left'))
-            for key in self.key_bindings['Right']:
+            for key in self.key_bindings['move_right']:
                 key = key.replace("'", "")
                 self.snake_canvas.bind(f'<{key}>', lambda event: self.change_direction('right'))
 

@@ -82,10 +82,7 @@ class SnakeGameApp:
         self.leveling_button_press_variable_high_score_time = 0
         self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5)) # pylint: disable=line-too-long
 
-        self.patchnotes_displayed = False
-        self.reset_settings_displayed = False
-        self.scrollable_frame = None
-        self.patchnotes_label = None
+        
 
         self.text_name = "Shadow's Snake Game"
         self.text_version = "Version: 0.2.3"
@@ -107,7 +104,14 @@ class SnakeGameApp:
         self.challange_settings_canvas = None
         self.info_canvas = None
         self.settings_canvas = None
+        self.reset_label = None
         self.reset_settings_frame = None
+        self.reset_settings_frame_1 = None
+
+        self.patchnotes_displayed = False
+        self.reset_settings_displayed = False
+        self.scrollable_frame = self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+        self.patchnotes_label = None
 
         #create the functions dictionary
         self.functions = {
@@ -140,22 +144,22 @@ class SnakeGameApp:
             'challange_settings': self.challange_settings,
             'patchnotes': self.patchnotes,
             'reset_settings': self.reset_settings,
-            'reset_screen_size': self.reset_settings,
-            'reset_theme': self.reset_settings,
-            'reset_contrast': self.reset_settings,
-            'reset_high_score_label_showing': self.reset_settings,
-            'reset_snake_speed': self.reset_settings,
-            'reset_game_size': self.reset_settings,
-            'reset_snake_color': self.reset_settings,
-            'reset_move_up': self.reset_settings,
-            'reset_move_down': self.reset_settings,
-            'reset_move_left': self.reset_settings,
-            'reset_move_right': self.reset_settings,
-            'reset_pause': self.reset_settings,
-            'reset_start_game': self.reset_settings,
-            'reset_restart': self.reset_settings,
-            'reset_all_settings': self.reset_settings,
-            'reset_all_movements': self.reset_settings
+            'reset_screen_size': self.reset_screen_size,
+            'reset_theme': self.reset_theme,
+            'reset_contrast': self.reset_contrast,
+            'reset_high_score_label_showing': self.reset_high_score_showing,
+            'reset_snake_speed': self.reset_snake_speed,
+            'reset_game_size': self.reset_game_size,
+            'reset_snake_color': self.reset_snake_color,
+            'reset_move_up': self.reset_move_up,
+            'reset_move_down': self.reset_move_down,
+            'reset_move_left': self.reset_move_left,
+            'reset_move_right': self.reset_move_right,
+            'reset_pause': self.reset_pause,
+            'reset_start_game': self.reset_start_game,
+            'reset_restart': self.reset_restart,
+            'reset_all_settings': self.reset_all_settings,
+            'reset_all_movements': self.reset_all_movements,
         }
 
         self.create_option_button_panel = None
@@ -167,7 +171,7 @@ class SnakeGameApp:
         # And then create the ButtonCommands instance
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
 
-        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.game_logger, self.button_commands,  self.functions)
+        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.game_logger, self.button_commands,  self.functions) # pylint: disable=line-too-long
 
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger,
                                                         self.game_config, self.open_info,
@@ -348,7 +352,7 @@ class SnakeGameApp:
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
-        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.game_logger, self.button_commands,  self.functions)
+        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.game_logger, self.button_commands,  self.functions) # pylint: disable=line-too-long
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger, self.game_config, self.open_info, self.open_settings) # pylint: disable=line-too-long
         self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.game_logger, self.game_config) # pylint: disable=line-too-long
         self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)
@@ -463,6 +467,10 @@ class SnakeGameApp:
         Display the patchnotes.
         """
 
+        if hasattr(self, 'patchnotes_displayed') and self.info_canvas is True:
+            
+            self.scrollable_frame.place(x=250, y=75)
+
         if not hasattr(self, 'patchnotes_displayed'):
             self.patchnotes_displayed = False
 
@@ -498,15 +506,19 @@ class SnakeGameApp:
             self.scrollable_frame.place(x=250, y=75)
             self.patchnotes_displayed = True
         else:
-            # Hide the scrollable frame
-            self.scrollable_frame.place_forget()
-            self.patchnotes_displayed = False
-            self.patchnotes_label.place_forget()
+            if self.scrollable_frame is not None:
+                self.scrollable_frame.place_forget()
+                self.patchnotes_label.place_forget()
+                self.patchnotes_displayed = False
 
     def reset_settings(self):
         """
         Reset the specified setting to the default value.
         """
+
+        if hasattr(self, 'reset_settings_displayed'):
+            self.reset_settings_displayed = False
+            self.scrollable_frame.place_forget()
 
         if not hasattr(self, 'reset_settings_displayed'):
             self.reset_settings_displayed = False
@@ -520,9 +532,9 @@ class SnakeGameApp:
                                         font=FONT_LIST[15])
             self.reset_label.place(x=250, y=10)
 
-            self.reset_settings_frame = ctk.CTkFrame(self.settings_canvas, 
-                                        width=850, 
-                                        height=600, 
+            self.reset_settings_frame = ctk.CTkFrame(self.settings_canvas,
+                                        width=850,
+                                        height=600,
                                         fg_color='Grey10') # pylint: disable=line-too-long
             self.reset_settings_frame.place(x=250, y=75)
             self.reset_commands.reset_screen_size_button()
@@ -542,46 +554,191 @@ class SnakeGameApp:
             self.reset_commands.reset_all_settings_button()
             self.reset_commands.reset_all_movements_button()
 
-            if self.functions == 'screen_size':
-                print("Resetting screen size")
-            elif self.functions == 'theme':
-                pass
-            elif self.functions == 'contrast':
-                pass
-            elif self.functions == 'high_score_label_showing':
-                pass
-            elif self.functions == 'snake_speed':
-                pass
-            elif self.functions == 'game_size':
-                pass
-            elif self.functions == 'snake_color':
-                pass
-            elif self.functions == 'move_up':
-                pass
-            elif self.functions == 'move_down':
-                pass
-            elif self.functions == 'move_left':
-                pass
-            elif self.functions == 'move_right':
-                pass
-            elif self.functions == 'pause':
-                pass
-            elif self.functions == 'start_game':
-                pass
-            elif self.functions == 'restart':
-                pass
-            elif self.functions == 'all_settings':
-                pass
-            elif self.functions == 'all_movements':
-                pass
-            else:
-                print(f"Unknown setting: {self.functions}")
             self.reset_settings_displayed = True
+            print("before being set true")
+            print(self.reset_settings_displayed)
 
         else:
-            self.reset_settings_frame.place_forget()
+            self.reset_commands.destroy_buttons_on_reset_frame_settings()
+            self.reset_settings_frame.destroy()
             self.reset_settings_displayed = False
-            self.reset_label.place_forget()
+            self.reset_label.destroy()
+
+    def reset_screen_size(self):
+        """
+        Reset the screen size to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'screen_size', 'Default')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Screen size reset to Default")
+
+    def reset_theme(self):
+        """
+        Reset the theme to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'theme', 'Default')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Theme reset to Default")
+
+    def reset_contrast(self):
+        """
+        Reset the contrast to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'contrast', 'Default')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Contrast reset to Default")
+
+    def reset_high_score_showing(self):
+        """
+        Reset the high score label showing to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'high_score_label_showing', 'Default')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("High score label showing reset to True")
+
+    def reset_snake_speed(self):
+        """
+        Reset the snake speed to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'snake_speed', '50')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Snake speed reset to 5")
+
+    def reset_game_size(self):
+        """
+        Reset the game size to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'game_size', '600x600')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Game size reset to 600x600")
+
+    def reset_snake_color(self):
+        """
+        Reset the snake color to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'snake_color', 'Default')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Snake color reset to Default")
+
+    def reset_move_up(self):
+        """
+        Reset the move up key to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'move_up', 'w')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Move up key reset to w")
+
+    def reset_move_down(self):
+        """
+        Reset the move down key to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'move_down', 's')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Move down key reset to s")
+
+    def reset_move_left(self):
+        """
+        Reset the move left key to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'move_left', 'a')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Move left key reset to a")
+
+    def reset_move_right(self):
+        """
+        Reset the move right key to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'move_right', 'd')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Move right key reset to d")
+
+    def reset_pause(self):
+        """
+        Reset the pause key to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'pause', 'Escape')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Pause key reset to Escape")
+
+    def reset_start_game(self):
+        """
+        Reset the start game key to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'start_game', 'space')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Start game key reset to space")
+
+    def reset_restart(self):
+        """
+        Reset the restart key to the default value.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'restart', 'r')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Restart key reset to r")
+
+    def reset_all_settings(self):
+        """
+        Reset all the settings to the default values.
+        """
+        self.config.read(self.config_path)
+        self.config.set('Settings', 'screen_size', 'Default')
+        self.config.set('Settings', 'theme', 'Default')
+        self.config.set('Settings', 'contrast', 'Default')
+        self.config.set('Settings', 'high_score_label_showing', 'Default')
+        self.config.set('Settings', 'snake_speed', '50')
+        self.config.set('Settings', 'game_size', 'Default')
+        self.config.set('Settings', 'snake_color', 'Default')
+        self.config.set('KeyBindings', 'move_up', 'w')
+        self.config.set('KeyBindings', 'move_down', 's')
+        self.config.set('KeyBindings', 'move_left', 'a')
+        self.config.set('KeyBindings', 'move_right', 'd')
+        self.config.set('KeyBindings', 'pause', 'Escape')
+        self.config.set('KeyBindings', 'start_game', 'sapce')
+        self.config.set('KeyBindings', 'restart', 'r')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("All settings reset to default")
+
+    def reset_all_movements(self):
+        """
+        Reset all the movements to the default values.
+        """
+        self.config.read(self.config_path)
+        self.config.set('KeyBindings', 'move_up', 'w')
+        self.config.set('KeyBindings', 'move_down', 's')
+        self.config.set('KeyBindings', 'move_left', 'a')
+        self.config.set('KeyBindings', 'move_right', 'd')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("All movements reset to default")
 
     def classic_reset_high_score(self):
         """
@@ -1068,8 +1225,20 @@ class SnakeGameApp:
 
             # Reset the patchnotes_displayed variable
             if hasattr(self.button_commands, 'patchnotes_displayed'):
+                self.scrollable_frame.place_forget()
                 self.patchnotes_displayed = False
 
+            
+            # if self.patchnotes_displayed is True:
+            #     self.patchnotes_displayed = False
+
+            # Reset the reset_settings_displayed variable
+            if hasattr(self, 'reset_settings_displayed'):
+                self.reset_commands.destroy_buttons_on_reset_frame_settings()
+                self.reset_settings_displayed = False
+            
+            # if self.reset_settings_displayed is True:
+            #     self.reset_settings_displayed = False
 
             # Show the original main canvas (home screen)
             self.original_main_canvas.pack(expand=True, fill="both")

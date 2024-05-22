@@ -6130,3 +6130,1992 @@ _tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
 
 
 
+[2024-05-22 19:54:52] 
+
+
+[2024-05-22 19:54:52] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 510, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 19:55:01] No errors occurred
+[2024-05-22 19:55:01] Closed the Error Log File
+
+
+
+
+[2024-05-22 19:59:58] 
+
+
+[2024-05-22 19:59:58] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 510, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 510, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 510, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 510, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 510, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 510, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 510, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:00:06] No errors occurred
+[2024-05-22 20:00:06] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:01:54] 
+
+
+[2024-05-22 20:01:54] Started the Error Log File
+[2024-05-22 20:02:45] No errors occurred
+[2024-05-22 20:02:45] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:02:47] 
+
+
+[2024-05-22 20:02:47] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 511, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 511, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:02:56] No errors occurred
+[2024-05-22 20:02:56] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:03:17] 
+
+
+[2024-05-22 20:03:17] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in patchnotes_command
+    self.functions['patchnotes']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 512, in patchnotes
+    self.scrollable_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_scrollable_frame.py", line 298, in place_forget
+    self._parent_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:03:23] No errors occurred
+[2024-05-22 20:03:23] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:04:16] 
+
+
+[2024-05-22 20:04:16] Started the Error Log File
+[2024-05-22 20:04:32] No errors occurred
+[2024-05-22 20:04:32] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:04:41] 
+
+
+[2024-05-22 20:04:41] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 564, in reset_settings
+    self.reset_settings_frame.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 564, in reset_settings
+    self.reset_settings_frame.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 564, in reset_settings
+    self.reset_settings_frame.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-05-22 20:04:45] No errors occurred
+[2024-05-22 20:04:45] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:06:18] 
+
+
+[2024-05-22 20:06:18] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 522, in reset_settings
+    self.reset_settings_frame.place_forget()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'place_forget'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 522, in reset_settings
+    self.reset_settings_frame.place_forget()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'place_forget'
+[2024-05-22 20:07:22] No errors occurred
+[2024-05-22 20:07:22] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:07:25] 
+
+
+[2024-05-22 20:07:25] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 562, in reset_settings
+    self.reset_settings_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:07:34] No errors occurred
+[2024-05-22 20:07:34] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:08:39] 
+
+
+[2024-05-22 20:08:39] Started the Error Log File
+[2024-05-22 20:08:45] No errors occurred
+[2024-05-22 20:08:45] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:09:41] 
+
+
+[2024-05-22 20:09:41] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 539, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:10:11] No errors occurred
+[2024-05-22 20:10:11] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:10:13] 
+
+
+[2024-05-22 20:10:13] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 539, in reset_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:10:19] No errors occurred
+[2024-05-22 20:10:19] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:14:30] 
+
+
+[2024-05-22 20:14:30] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 718, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1220, in return_home
+    self.reset_settings_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe3"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 718, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1220, in return_home
+    self.reset_settings_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe3"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 718, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1220, in return_home
+    self.reset_settings_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe3"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 718, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1220, in return_home
+    self.reset_settings_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe3"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 718, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1220, in return_home
+    self.reset_settings_frame.place_forget()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 279, in place_forget
+    return super().place_forget()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2512, in place_forget
+    self.tk.call('place', 'forget', self._w)
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe3"
+[2024-05-22 20:14:45] No errors occurred
+[2024-05-22 20:14:45] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:14:47] 
+
+
+[2024-05-22 20:14:47] Started the Error Log File
+[2024-05-22 20:14:49] No errors occurred
+[2024-05-22 20:14:49] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:14:52] 
+
+
+[2024-05-22 20:14:52] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 718, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1220, in return_home
+    self.reset_settings_frame.place_forget()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'place_forget'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 718, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1220, in return_home
+    self.reset_settings_frame.place_forget()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'place_forget'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 718, in home_button_command
+    self.button_commands.home_command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 37, in home_command
+    self.functions['return_home']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1220, in return_home
+    self.reset_settings_frame.place_forget()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'place_forget'
+[2024-05-22 20:14:59] No errors occurred
+[2024-05-22 20:14:59] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:15:01] 
+
+
+[2024-05-22 20:15:01] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 556, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:15:28] No errors occurred
+[2024-05-22 20:15:28] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:16:27] 
+
+
+[2024-05-22 20:16:27] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 557, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:16:37] No errors occurred
+[2024-05-22 20:16:37] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:18:53] 
+
+
+[2024-05-22 20:18:53] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:18:58] No errors occurred
+[2024-05-22 20:18:58] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:19:18] 
+
+
+[2024-05-22 20:19:18] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:19:24] No errors occurred
+[2024-05-22 20:19:24] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:19:54] 
+
+
+[2024-05-22 20:19:54] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:20:25] No errors occurred
+[2024-05-22 20:20:25] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:21:56] 
+
+
+[2024-05-22 20:21:56] Started the Error Log File
+[2024-05-22 20:22:01] No errors occurred
+[2024-05-22 20:22:01] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:23:48] 
+
+
+[2024-05-22 20:23:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.settings_canvas, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 20:23:58] No errors occurred
+[2024-05-22 20:23:58] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:26:55] 
+
+
+[2024-05-22 20:26:55] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 543, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 555, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:27:04] No errors occurred
+[2024-05-22 20:27:04] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:28:17] 
+
+
+[2024-05-22 20:28:17] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 546, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 556, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:28:31] No errors occurred
+[2024-05-22 20:28:31] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:29:51] 
+
+
+[2024-05-22 20:29:51] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 546, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 557, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:30:01] No errors occurred
+[2024-05-22 20:30:01] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:31:23] 
+
+
+[2024-05-22 20:31:23] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 546, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 557, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 546, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 557, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:31:39] No errors occurred
+[2024-05-22 20:31:39] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:31:59] 
+
+
+[2024-05-22 20:31:59] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 546, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 557, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:32:08] No errors occurred
+[2024-05-22 20:32:08] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:34:13] 
+
+
+[2024-05-22 20:34:13] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 547, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 558, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 20:34:32] No errors occurred
+[2024-05-22 20:34:32] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:34:34] 
+
+
+[2024-05-22 20:34:34] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 547, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 558, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 547, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 558, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:34:41] No errors occurred
+[2024-05-22 20:34:41] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:35:22] 
+
+
+[2024-05-22 20:35:22] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 547, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 558, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 547, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 558, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 20:35:31] No errors occurred
+[2024-05-22 20:35:31] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:37:02] 
+
+
+[2024-05-22 20:37:02] Started the Error Log File
+[2024-05-22 20:37:05] No errors occurred
+[2024-05-22 20:37:05] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:38:41] 
+
+
+[2024-05-22 20:38:41] Started the Error Log File
+[2024-05-22 20:39:02] No errors occurred
+[2024-05-22 20:39:02] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:39:05] 
+
+
+[2024-05-22 20:39:05] Started the Error Log File
+[2024-05-22 20:39:12] No errors occurred
+[2024-05-22 20:39:12] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:39:32] 
+
+
+[2024-05-22 20:39:32] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 560, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 20:39:38] No errors occurred
+[2024-05-22 20:39:38] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:42:04] 
+
+
+[2024-05-22 20:42:04] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 562, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 20:42:13] No errors occurred
+[2024-05-22 20:42:13] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:56:10] 
+
+
+[2024-05-22 20:56:10] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 562, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 562, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 20:56:19] No errors occurred
+[2024-05-22 20:56:19] Closed the Error Log File
+
+
+
+
+[2024-05-22 20:59:55] 
+
+
+[2024-05-22 20:59:55] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 562, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe3"
+[2024-05-22 21:00:07] No errors occurred
+[2024-05-22 21:00:07] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:00:33] 
+
+
+[2024-05-22 21:00:33] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 563, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe"
+[2024-05-22 21:00:40] No errors occurred
+[2024-05-22 21:00:40] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:01:00] 
+
+
+[2024-05-22 21:01:00] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 566, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 21:01:17] No errors occurred
+[2024-05-22 21:01:17] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:01:49] 
+
+
+[2024-05-22 21:01:49] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 566, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 21:01:55] No errors occurred
+[2024-05-22 21:01:55] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:02:35] 
+
+
+[2024-05-22 21:02:35] Started the Error Log File
+[2024-05-22 21:02:38] No errors occurred
+[2024-05-22 21:02:38] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:03:01] 
+
+
+[2024-05-22 21:03:01] Started the Error Log File
+[2024-05-22 21:03:08] No errors occurred
+[2024-05-22 21:03:08] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:03:13] 
+
+
+[2024-05-22 21:03:13] Started the Error Log File
+[2024-05-22 21:03:18] No errors occurred
+[2024-05-22 21:03:18] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:04:04] 
+
+
+[2024-05-22 21:04:04] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 567, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe4"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 567, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe4"
+[2024-05-22 21:04:12] No errors occurred
+[2024-05-22 21:04:12] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:05:48] 
+
+
+[2024-05-22 21:05:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 567, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 21:06:01] No errors occurred
+[2024-05-22 21:06:01] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:08:11] 
+
+
+[2024-05-22 21:08:11] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 573, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 21:08:18] No errors occurred
+[2024-05-22 21:08:18] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:08:51] 
+
+
+[2024-05-22 21:08:51] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 548, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 570, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 21:08:57] No errors occurred
+[2024-05-22 21:08:57] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:10:52] 
+
+
+[2024-05-22 21:10:52] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 549, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 571, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 21:11:00] No errors occurred
+[2024-05-22 21:11:00] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:11:13] 
+
+
+[2024-05-22 21:11:13] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 549, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 571, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 549, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 571, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_screen_size_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 500, in reset_screen_size_button
+    reset_screen_size_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Screen Size", font=FONT_LIST[11],
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe4"
+[2024-05-22 21:11:25] No errors occurred
+[2024-05-22 21:11:25] Closed the Error Log File
+
+
+
+
+[2024-05-22 21:15:03] 
+
+
+[2024-05-22 21:15:03] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1281, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 174, in __init__
+    self.reset_commands = ResetSettingsPanel(self.reset_settings_frame, self.button_commands,self.game_logger,  self.functions)# pylint: disable=line-too-long
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ResetSettingsPanel.__init__() missing 1 required positional argument: 'functions'
+[2024-05-22 21:15:56] 
+
+
+[2024-05-22 21:15:56] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 82, in reset_settings_command
+    self.functions['reset_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 549, in reset_settings
+    self.place_buttons_on_reset_frame_settings()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 572, in place_buttons_on_reset_frame_settings
+    self.reset_commands.reset_theme_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 511, in reset_theme_button
+    reset_theme_button = ctk.CTkButton(self.reset_settings_frame, text="Reset Theme", font=FONT_LIST[11], # pylint: disable=line-too-long
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas2.!ctkframe2"
+[2024-05-22 21:16:12] No errors occurred
+[2024-05-22 21:16:12] Closed the Error Log File
+
+
+
+

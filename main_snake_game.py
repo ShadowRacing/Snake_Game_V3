@@ -171,7 +171,7 @@ class SnakeGameApp:
         # And then create the ButtonCommands instance
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
 
-        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.game_logger, self.button_commands,  self.functions) # pylint: disable=line-too-long
+        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.settings_canvas, self.button_commands,self.game_logger,  self.functions)# pylint: disable=line-too-long
 
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger,
                                                         self.game_config, self.open_info,
@@ -352,7 +352,7 @@ class SnakeGameApp:
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
-        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.game_logger, self.button_commands,  self.functions) # pylint: disable=line-too-long
+        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.settings_canvas, self.button_commands,self.game_logger,  self.functions) # pylint: disable=line-too-long
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger, self.game_config, self.open_info, self.open_settings) # pylint: disable=line-too-long
         self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.game_logger, self.game_config) # pylint: disable=line-too-long
         self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)
@@ -406,8 +406,10 @@ class SnakeGameApp:
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_label()
             self.create_button_panel.patchnotes_button()
+            #self.patchnotes_displayed = False
 
         elif game_type == "settings":
+            self.reset_commands.print_buttons()
             self.get_color_from_config()
             self.draw_snake_with_color(self.snake_color)
             self.framelabel_panel.set_create_label_canvas_flag(True)
@@ -417,6 +419,7 @@ class SnakeGameApp:
             self.settings_labels.create_settings_labels()
             self.settings_labels.create_theme_label()
             self.settings_labels.create_game_size_label()
+            self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.settings_canvas, self.button_commands,self.game_logger, self.functions) # pylint: disable=line-too-long
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
@@ -468,7 +471,6 @@ class SnakeGameApp:
         """
 
         if hasattr(self, 'patchnotes_displayed') and self.info_canvas is True:
-            
             self.scrollable_frame.place(x=250, y=75)
 
         if not hasattr(self, 'patchnotes_displayed'):
@@ -510,20 +512,24 @@ class SnakeGameApp:
                 self.scrollable_frame.place_forget()
                 self.patchnotes_label.place_forget()
                 self.patchnotes_displayed = False
-
+                
     def reset_settings(self):
         """
         Reset the specified setting to the default value.
         """
+        #self.reset_commands = ResetSettingsPanel(self.reset_settings_frame, self.button_commands,self.game_logger,  self.functions) # pylint: disable=line-too-long
+        # if hasattr(self, 'reset_settings_displayed') and self.settings_canvas is True:
+        #     self.reset_settings_frame.place(x=250, y=75)
+        #     self.place_buttons_on_reset_frame_settings()
+        #     print("if hasattr(self, 'reset_settings_displayed') and self.settings_canvas is True:")
+            
 
-        if hasattr(self, 'reset_settings_displayed'):
-            self.reset_settings_displayed = False
-            self.scrollable_frame.place_forget()
-
-        if not hasattr(self, 'reset_settings_displayed'):
-            self.reset_settings_displayed = False
+        # if not hasattr(self, 'reset_settings_displayed'):
+        #     self.reset_settings_displayed = False
+        #     print("if not hasattr(self, 'reset_settings_displayed'):")
 
         if not self.reset_settings_displayed:
+            print("if not self.reset_settings_displayed:")
             self.reset_label = ctk.CTkLabel(self.settings_canvas,
                                         height = 50,
                                         width = 873,
@@ -537,32 +543,49 @@ class SnakeGameApp:
                                         height=600,
                                         fg_color='Grey10') # pylint: disable=line-too-long
             self.reset_settings_frame.place(x=250, y=75)
-            self.reset_commands.reset_screen_size_button()
-            self.reset_commands.reset_theme_button()
-            self.reset_commands.reset_contrast_button()
-            self.reset_commands.reset_high_score_label_showing_button()
-            self.reset_commands.reset_snake_speed_button()
-            self.reset_commands.reset_game_size_button()
-            self.reset_commands.reset_snake_color_button()
-            self.reset_commands.reset_move_up_button()
-            self.reset_commands.reset_move_down_button()
-            self.reset_commands.reset_move_left_button()
-            self.reset_commands.reset_move_right_button()
-            self.reset_commands.reset_pause_game_button()
-            self.reset_commands.reset_start_game_button()
-            self.reset_commands.reset_restart_game_button()
-            self.reset_commands.reset_all_settings_button()
-            self.reset_commands.reset_all_movements_button()
+
 
             self.reset_settings_displayed = True
-            print("before being set true")
-            print(self.reset_settings_displayed)
+            self.place_buttons_on_reset_frame_settings()
+            self.reset_commands.print_buttons()
 
         else:
-            self.reset_commands.destroy_buttons_on_reset_frame_settings()
+            print("else:")
+            self.reset_commands.print_buttons()
+            # Destroy the frame before destroying the buttons on it
             self.reset_settings_frame.destroy()
+            self.reset_commands.destroy_buttons_on_reset_frame_settings()
+            self.reset_commands.print_buttons()
             self.reset_settings_displayed = False
             self.reset_label.destroy()
+    
+    def place_buttons_on_reset_frame_settings(self):
+
+        # Create a new 'reset_settings_frame'
+        self.reset_settings_frame = ctk.CTkFrame(self.settings_canvas,
+                                        width=850,
+                                        height=600,
+                                        fg_color='Grey10')
+
+        # Add the buttons to the frame
+        self.reset_commands.reset_screen_size_button()
+        self.reset_commands.reset_theme_button()
+        self.reset_commands.reset_contrast_button()
+        self.reset_commands.reset_high_score_label_showing_button()
+        self.reset_commands.reset_snake_speed_button()
+        self.reset_commands.reset_game_size_button()
+        self.reset_commands.reset_game_size_button()
+        self.reset_commands.reset_snake_color_button()
+        self.reset_commands.reset_move_up_button()
+        self.reset_commands.reset_move_down_button()
+        self.reset_commands.reset_move_left_button()
+        self.reset_commands.reset_move_right_button()
+        self.reset_commands.reset_pause_game_button()
+        self.reset_commands.reset_start_game_button()
+        self.reset_commands.reset_restart_game_button()
+        self.reset_commands.reset_all_settings_button()
+        self.reset_commands.reset_all_movements_button()
+
 
     def reset_screen_size(self):
         """
@@ -1203,6 +1226,18 @@ class SnakeGameApp:
         Return to the home screen.
         """
         try:
+            self.reset_commands.print_buttons()
+             # Reset the patchnotes_displayed variable
+            if not hasattr(self.button_commands, 'patchnotes_displayed'):
+                self.scrollable_frame.place_forget()
+                self.patchnotes_displayed = False
+
+            # Reset the reset_settings_displayed variable
+            if not hasattr(self.button_commands, 'reset_settings_displayed'):
+                self.reset_commands.destroy_buttons_on_reset_frame_settings()
+                self.reset_settings_frame.destroy()
+                self.reset_settings_displayed = False
+
             if self.main_canvas == self.classic_snake_canvas:
                 self.classic_snake_canvas.delete_game_labels()
             if self.main_canvas == self.endless_snake_canvas:
@@ -1222,23 +1257,6 @@ class SnakeGameApp:
             self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
             self.info_canvas = self.destroy_canvas(self.info_canvas)
             self.settings_canvas = self.destroy_canvas(self.settings_canvas)
-
-            # Reset the patchnotes_displayed variable
-            if hasattr(self.button_commands, 'patchnotes_displayed'):
-                self.scrollable_frame.place_forget()
-                self.patchnotes_displayed = False
-
-            
-            # if self.patchnotes_displayed is True:
-            #     self.patchnotes_displayed = False
-
-            # Reset the reset_settings_displayed variable
-            if hasattr(self, 'reset_settings_displayed'):
-                self.reset_commands.destroy_buttons_on_reset_frame_settings()
-                self.reset_settings_displayed = False
-            
-            # if self.reset_settings_displayed is True:
-            #     self.reset_settings_displayed = False
 
             # Show the original main canvas (home screen)
             self.original_main_canvas.pack(expand=True, fill="both")

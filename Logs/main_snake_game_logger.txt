@@ -5232,3 +5232,1874 @@ True
 
 
 
+[2024-05-22 19:54:52] Started the app
+[2024-05-22 19:54:52] Started the GameApp Class
+[2024-05-22 19:54:52] Game mode: initial config
+[2024-05-22 19:54:52] Current Theme: Dark-Blue
+[2024-05-22 19:54:52] Set initial theme to: Dark-Blue
+[2024-05-22 19:54:52] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 19:54:52] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 19:54:52] Theme applied: Dark-Blue
+[2024-05-22 19:54:52] Updated contrast in config.ini to: Default
+[2024-05-22 19:54:52] Contrast mode set to: dark
+[2024-05-22 19:54:52] Set initial game size to: 600x600
+[2024-05-22 19:54:52] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 19:54:52] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 19:54:52] Label border width: 1
+[2024-05-22 19:54:52] label_border_height: 1
+[2024-05-22 19:54:52] Home_screen method called
+[2024-05-22 19:54:54] Set initial game size to: 600x600
+[2024-05-22 19:54:54] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 19:54:54] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 19:54:54] Label border width: 1
+[2024-05-22 19:54:54] label_border_height: 1
+[2024-05-22 19:54:59] Set initial game size to: 600x600
+[2024-05-22 19:54:59] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 19:54:59] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 19:54:59] Label border width: 1
+[2024-05-22 19:54:59] label_border_height: 1
+[2024-05-22 19:55:01] Closed the app
+
+
+
+
+[2024-05-22 19:59:58] Started the app
+[2024-05-22 19:59:58] Started the GameApp Class
+[2024-05-22 19:59:58] Game mode: initial config
+[2024-05-22 19:59:58] Current Theme: Dark-Blue
+[2024-05-22 19:59:58] Set initial theme to: Dark-Blue
+[2024-05-22 19:59:58] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 19:59:58] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 19:59:58] Theme applied: Dark-Blue
+[2024-05-22 19:59:58] Updated contrast in config.ini to: Default
+[2024-05-22 19:59:58] Contrast mode set to: dark
+[2024-05-22 19:59:58] Set initial game size to: 600x600
+[2024-05-22 19:59:58] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 19:59:58] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 19:59:58] Label border width: 1
+[2024-05-22 19:59:58] label_border_height: 1
+[2024-05-22 19:59:58] Home_screen method called
+[2024-05-22 19:59:59] Set initial game size to: 600x600
+[2024-05-22 19:59:59] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 19:59:59] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 19:59:59] Label border width: 1
+[2024-05-22 19:59:59] label_border_height: 1
+[2024-05-22 20:00:02] Set initial game size to: 600x600
+[2024-05-22 20:00:02] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:00:02] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:00:02] Label border width: 1
+[2024-05-22 20:00:02] label_border_height: 1
+[2024-05-22 20:00:06] Closed the app
+
+
+
+
+[2024-05-22 20:01:54] Started the app
+[2024-05-22 20:01:54] Started the GameApp Class
+[2024-05-22 20:01:54] Game mode: initial config
+[2024-05-22 20:01:54] Current Theme: Dark-Blue
+[2024-05-22 20:01:54] Set initial theme to: Dark-Blue
+[2024-05-22 20:01:54] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:01:54] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:01:54] Theme applied: Dark-Blue
+[2024-05-22 20:01:54] Updated contrast in config.ini to: Default
+[2024-05-22 20:01:54] Contrast mode set to: dark
+[2024-05-22 20:01:54] Set initial game size to: 600x600
+[2024-05-22 20:01:54] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:01:54] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:01:54] Label border width: 1
+[2024-05-22 20:01:54] label_border_height: 1
+[2024-05-22 20:01:54] Home_screen method called
+[2024-05-22 20:01:55] Set initial game size to: 600x600
+[2024-05-22 20:01:55] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:01:55] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:01:55] Label border width: 1
+[2024-05-22 20:01:55] label_border_height: 1
+[2024-05-22 20:01:58] Set initial game size to: 600x600
+[2024-05-22 20:01:58] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:01:58] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:01:58] Label border width: 1
+[2024-05-22 20:01:58] label_border_height: 1
+[2024-05-22 20:02:07] Set initial game size to: 600x600
+[2024-05-22 20:02:07] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:07] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:07] Label border width: 1
+[2024-05-22 20:02:07] label_border_height: 1
+[2024-05-22 20:02:10] Set initial game size to: 600x600
+[2024-05-22 20:02:10] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:10] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:10] Label border width: 1
+[2024-05-22 20:02:10] label_border_height: 1
+[2024-05-22 20:02:45] Closed the app
+
+
+
+
+[2024-05-22 20:02:47] Started the app
+[2024-05-22 20:02:47] Started the GameApp Class
+[2024-05-22 20:02:47] Game mode: initial config
+[2024-05-22 20:02:47] Current Theme: Dark-Blue
+[2024-05-22 20:02:47] Set initial theme to: Dark-Blue
+[2024-05-22 20:02:47] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:02:47] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:02:47] Theme applied: Dark-Blue
+[2024-05-22 20:02:47] Updated contrast in config.ini to: Default
+[2024-05-22 20:02:47] Contrast mode set to: dark
+[2024-05-22 20:02:47] Set initial game size to: 600x600
+[2024-05-22 20:02:47] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:47] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:47] Label border width: 1
+[2024-05-22 20:02:47] label_border_height: 1
+[2024-05-22 20:02:47] Home_screen method called
+[2024-05-22 20:02:48] Set initial game size to: 600x600
+[2024-05-22 20:02:48] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:48] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:48] Label border width: 1
+[2024-05-22 20:02:48] label_border_height: 1
+[2024-05-22 20:02:51] Set initial game size to: 600x600
+[2024-05-22 20:02:51] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:51] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:02:51] Label border width: 1
+[2024-05-22 20:02:51] label_border_height: 1
+[2024-05-22 20:02:56] Closed the app
+
+
+
+
+[2024-05-22 20:03:17] Started the app
+[2024-05-22 20:03:17] Started the GameApp Class
+[2024-05-22 20:03:17] Game mode: initial config
+[2024-05-22 20:03:17] Current Theme: Dark-Blue
+[2024-05-22 20:03:17] Set initial theme to: Dark-Blue
+[2024-05-22 20:03:17] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:03:17] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:03:17] Theme applied: Dark-Blue
+[2024-05-22 20:03:17] Updated contrast in config.ini to: Default
+[2024-05-22 20:03:17] Contrast mode set to: dark
+[2024-05-22 20:03:17] Set initial game size to: 600x600
+[2024-05-22 20:03:17] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:03:17] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:03:17] Label border width: 1
+[2024-05-22 20:03:17] label_border_height: 1
+[2024-05-22 20:03:17] Home_screen method called
+[2024-05-22 20:03:19] Set initial game size to: 600x600
+[2024-05-22 20:03:19] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:03:19] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:03:19] Label border width: 1
+[2024-05-22 20:03:19] label_border_height: 1
+[2024-05-22 20:03:21] Set initial game size to: 600x600
+[2024-05-22 20:03:21] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:03:21] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:03:21] Label border width: 1
+[2024-05-22 20:03:21] label_border_height: 1
+[2024-05-22 20:03:23] Closed the app
+
+
+
+
+[2024-05-22 20:04:16] Started the app
+[2024-05-22 20:04:16] Started the GameApp Class
+[2024-05-22 20:04:16] Game mode: initial config
+[2024-05-22 20:04:16] Current Theme: Dark-Blue
+[2024-05-22 20:04:16] Set initial theme to: Dark-Blue
+[2024-05-22 20:04:16] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:04:16] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:04:16] Theme applied: Dark-Blue
+[2024-05-22 20:04:16] Updated contrast in config.ini to: Default
+[2024-05-22 20:04:16] Contrast mode set to: dark
+[2024-05-22 20:04:16] Set initial game size to: 600x600
+[2024-05-22 20:04:16] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:16] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:16] Label border width: 1
+[2024-05-22 20:04:16] label_border_height: 1
+[2024-05-22 20:04:16] Home_screen method called
+[2024-05-22 20:04:20] Set initial game size to: 600x600
+[2024-05-22 20:04:20] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:20] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:20] Label border width: 1
+[2024-05-22 20:04:20] label_border_height: 1
+[2024-05-22 20:04:22] Set initial game size to: 600x600
+[2024-05-22 20:04:22] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:22] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:22] Label border width: 1
+[2024-05-22 20:04:22] label_border_height: 1
+[2024-05-22 20:04:32] Closed the app
+
+
+
+
+[2024-05-22 20:04:41] Started the app
+[2024-05-22 20:04:41] Started the GameApp Class
+[2024-05-22 20:04:41] Game mode: initial config
+[2024-05-22 20:04:41] Current Theme: Dark-Blue
+[2024-05-22 20:04:41] Set initial theme to: Dark-Blue
+[2024-05-22 20:04:41] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:04:41] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:04:41] Theme applied: Dark-Blue
+[2024-05-22 20:04:41] Updated contrast in config.ini to: Default
+[2024-05-22 20:04:41] Contrast mode set to: dark
+[2024-05-22 20:04:41] Set initial game size to: 600x600
+[2024-05-22 20:04:41] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:41] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:41] Label border width: 1
+[2024-05-22 20:04:41] label_border_height: 1
+[2024-05-22 20:04:41] Home_screen method called
+[2024-05-22 20:04:42] Set initial game size to: 600x600
+[2024-05-22 20:04:42] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:42] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:04:42] Label border width: 1
+[2024-05-22 20:04:42] label_border_height: 1
+[2024-05-22 20:04:42] Updated label_needed_game_size in config.ini to: False
+[2024-05-22 20:04:45] Closed the app
+
+
+
+
+[2024-05-22 20:06:18] Started the app
+[2024-05-22 20:06:18] Started the GameApp Class
+[2024-05-22 20:06:18] Game mode: initial config
+[2024-05-22 20:06:18] Current Theme: Dark-Blue
+[2024-05-22 20:06:18] Set initial theme to: Dark-Blue
+[2024-05-22 20:06:18] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:06:18] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:06:18] Theme applied: Dark-Blue
+[2024-05-22 20:06:18] Updated contrast in config.ini to: Default
+[2024-05-22 20:06:18] Contrast mode set to: dark
+[2024-05-22 20:06:18] Set initial game size to: 600x600
+[2024-05-22 20:06:18] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:06:18] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:06:18] Label border width: 1
+[2024-05-22 20:06:18] label_border_height: 1
+[2024-05-22 20:06:18] Home_screen method called
+[2024-05-22 20:06:19] Set initial game size to: 600x600
+[2024-05-22 20:06:19] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:06:19] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:06:19] Label border width: 1
+[2024-05-22 20:06:19] label_border_height: 1
+[2024-05-22 20:06:22] Set initial game size to: 600x600
+[2024-05-22 20:06:22] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:06:22] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:06:22] Label border width: 1
+[2024-05-22 20:06:22] label_border_height: 1
+[2024-05-22 20:06:25] Set initial game size to: 600x600
+[2024-05-22 20:06:25] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:06:25] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:06:25] Label border width: 1
+[2024-05-22 20:06:25] label_border_height: 1
+[2024-05-22 20:06:25] Updated label_needed_game_size in config.ini to: False
+[2024-05-22 20:07:22] Closed the app
+
+
+
+
+[2024-05-22 20:07:25] Started the app
+[2024-05-22 20:07:25] Started the GameApp Class
+[2024-05-22 20:07:25] Game mode: initial config
+[2024-05-22 20:07:25] Current Theme: Dark-Blue
+[2024-05-22 20:07:25] Set initial theme to: Dark-Blue
+[2024-05-22 20:07:25] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:07:25] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:07:25] Theme applied: Dark-Blue
+[2024-05-22 20:07:25] Updated contrast in config.ini to: Default
+[2024-05-22 20:07:25] Contrast mode set to: dark
+[2024-05-22 20:07:25] Set initial game size to: 600x600
+[2024-05-22 20:07:25] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:07:25] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:07:25] Label border width: 1
+[2024-05-22 20:07:25] label_border_height: 1
+[2024-05-22 20:07:25] Home_screen method called
+[2024-05-22 20:07:26] Set initial game size to: 600x600
+[2024-05-22 20:07:26] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:07:26] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:07:26] Label border width: 1
+[2024-05-22 20:07:26] label_border_height: 1
+[2024-05-22 20:07:26] Updated label_needed_game_size in config.ini to: False
+before being set true
+True
+[2024-05-22 20:07:32] Set initial game size to: 600x600
+[2024-05-22 20:07:32] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:07:32] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:07:32] Label border width: 1
+[2024-05-22 20:07:32] label_border_height: 1
+[2024-05-22 20:07:32] Updated label_needed_game_size in config.ini to: False
+[2024-05-22 20:07:33] Closed the app
+
+
+
+
+[2024-05-22 20:08:39] Started the app
+[2024-05-22 20:08:39] Started the GameApp Class
+[2024-05-22 20:08:39] Game mode: initial config
+[2024-05-22 20:08:39] Current Theme: Dark-Blue
+[2024-05-22 20:08:39] Set initial theme to: Dark-Blue
+[2024-05-22 20:08:39] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:08:39] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:08:39] Theme applied: Dark-Blue
+[2024-05-22 20:08:39] Updated contrast in config.ini to: Default
+[2024-05-22 20:08:39] Contrast mode set to: dark
+[2024-05-22 20:08:39] Set initial game size to: 600x600
+[2024-05-22 20:08:39] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:08:39] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:08:39] Label border width: 1
+[2024-05-22 20:08:39] label_border_height: 1
+[2024-05-22 20:08:39] Home_screen method called
+[2024-05-22 20:08:41] Set initial game size to: 600x600
+[2024-05-22 20:08:41] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:08:41] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:08:41] Label border width: 1
+[2024-05-22 20:08:41] label_border_height: 1
+[2024-05-22 20:08:43] Set initial game size to: 600x600
+[2024-05-22 20:08:43] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:08:43] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:08:43] Label border width: 1
+[2024-05-22 20:08:43] label_border_height: 1
+[2024-05-22 20:08:45] Closed the app
+
+
+
+
+[2024-05-22 20:09:41] Started the app
+[2024-05-22 20:09:41] Started the GameApp Class
+[2024-05-22 20:09:41] Game mode: initial config
+[2024-05-22 20:09:41] Current Theme: Dark-Blue
+[2024-05-22 20:09:41] Set initial theme to: Dark-Blue
+[2024-05-22 20:09:41] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:09:41] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:09:41] Theme applied: Dark-Blue
+[2024-05-22 20:09:41] Updated contrast in config.ini to: Default
+[2024-05-22 20:09:41] Contrast mode set to: dark
+[2024-05-22 20:09:41] Set initial game size to: 600x600
+[2024-05-22 20:09:41] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:09:41] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:09:41] Label border width: 1
+[2024-05-22 20:09:41] label_border_height: 1
+[2024-05-22 20:09:41] Home_screen method called
+[2024-05-22 20:09:42] Set initial game size to: 600x600
+[2024-05-22 20:09:42] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:09:42] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:09:42] Label border width: 1
+[2024-05-22 20:09:42] label_border_height: 1
+[2024-05-22 20:09:42] Updated label_needed_game_size in config.ini to: False
+before being set true
+True
+[2024-05-22 20:09:45] Set initial game size to: 600x600
+[2024-05-22 20:09:45] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:09:45] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:09:45] Label border width: 1
+[2024-05-22 20:09:45] label_border_height: 1
+[2024-05-22 20:09:45] Updated label_needed_game_size in config.ini to: False
+[2024-05-22 20:10:10] Closed the app
+
+
+
+
+[2024-05-22 20:10:13] Started the app
+[2024-05-22 20:10:13] Started the GameApp Class
+[2024-05-22 20:10:13] Game mode: initial config
+[2024-05-22 20:10:13] Current Theme: Dark-Blue
+[2024-05-22 20:10:13] Set initial theme to: Dark-Blue
+[2024-05-22 20:10:13] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:10:13] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:10:13] Theme applied: Dark-Blue
+[2024-05-22 20:10:13] Updated contrast in config.ini to: Default
+[2024-05-22 20:10:13] Contrast mode set to: dark
+[2024-05-22 20:10:13] Set initial game size to: 600x600
+[2024-05-22 20:10:13] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:10:13] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:10:13] Label border width: 1
+[2024-05-22 20:10:13] label_border_height: 1
+[2024-05-22 20:10:13] Home_screen method called
+[2024-05-22 20:10:14] Set initial game size to: 600x600
+[2024-05-22 20:10:14] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:10:14] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:10:14] Label border width: 1
+[2024-05-22 20:10:14] label_border_height: 1
+[2024-05-22 20:10:14] Updated label_needed_game_size in config.ini to: False
+before being set true
+True
+[2024-05-22 20:10:17] Set initial game size to: 600x600
+[2024-05-22 20:10:17] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:10:17] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:10:17] Label border width: 1
+[2024-05-22 20:10:17] label_border_height: 1
+[2024-05-22 20:10:17] Updated label_needed_game_size in config.ini to: False
+[2024-05-22 20:10:19] Closed the app
+
+
+
+
+[2024-05-22 20:14:30] Started the app
+[2024-05-22 20:14:30] Started the GameApp Class
+[2024-05-22 20:14:30] Game mode: initial config
+[2024-05-22 20:14:30] Current Theme: Dark-Blue
+[2024-05-22 20:14:30] Set initial theme to: Dark-Blue
+[2024-05-22 20:14:30] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:14:30] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:14:30] Theme applied: Dark-Blue
+[2024-05-22 20:14:30] Updated contrast in config.ini to: Default
+[2024-05-22 20:14:30] Contrast mode set to: dark
+[2024-05-22 20:14:30] Set initial game size to: 600x600
+[2024-05-22 20:14:30] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:30] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:30] Label border width: 1
+[2024-05-22 20:14:30] label_border_height: 1
+[2024-05-22 20:14:30] Home_screen method called
+[2024-05-22 20:14:32] Set initial game size to: 600x600
+[2024-05-22 20:14:32] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:32] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:32] Label border width: 1
+[2024-05-22 20:14:32] label_border_height: 1
+[2024-05-22 20:14:32] Updated label_needed_game_size in config.ini to: False
+before being set true
+True
+before being set true
+True
+before being set true
+True
+[2024-05-22 20:14:37] Game mode: classic_snake
+[2024-05-22 20:14:37] Game state: start_game
+[2024-05-22 20:14:37] Game width: 600
+[2024-05-22 20:14:37] Game height: 600
+[2024-05-22 20:14:37] Highlight thickness: 5
+[2024-05-22 20:14:37] Highlight background: Black
+[2024-05-22 20:14:37] Initial direction of snake: down
+[2024-05-22 20:14:37] Initial score: 0
+[2024-05-22 20:14:37] Game over flag: False
+[2024-05-22 20:14:37] Game paused: False
+[2024-05-22 20:14:37] Has changed direction: False
+[2024-05-22 20:14:37] Time-related variables initialized.
+[2024-05-22 20:14:37] High scores initialized
+[2024-05-22 20:14:37] Reset snake length
+[2024-05-22 20:14:37] Game mode: classic_snake
+[2024-05-22 20:14:37] Config file read.
+[2024-05-22 20:14:37] Game mode set to classic_snake.
+[2024-05-22 20:14:37] Game state: start_game
+[2024-05-22 20:14:37] Game focused
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding i
+Unbinding e
+Unbinding 3
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding i
+Unbinding e
+Unbinding 3
+[2024-05-22 20:14:37] Set initial game size to: 600x600
+[2024-05-22 20:14:37] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:37] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:37] Label border width: 1
+[2024-05-22 20:14:37] label_border_height: 1
+[2024-05-22 20:14:45] Closed the app
+
+
+
+
+[2024-05-22 20:14:47] Started the app
+[2024-05-22 20:14:47] Started the GameApp Class
+[2024-05-22 20:14:47] Game mode: initial config
+[2024-05-22 20:14:47] Current Theme: Dark-Blue
+[2024-05-22 20:14:47] Set initial theme to: Dark-Blue
+[2024-05-22 20:14:47] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:14:47] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:14:47] Theme applied: Dark-Blue
+[2024-05-22 20:14:47] Updated contrast in config.ini to: Default
+[2024-05-22 20:14:47] Contrast mode set to: dark
+[2024-05-22 20:14:47] Set initial game size to: 600x600
+[2024-05-22 20:14:47] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:47] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:47] Label border width: 1
+[2024-05-22 20:14:47] label_border_height: 1
+[2024-05-22 20:14:47] Home_screen method called
+[2024-05-22 20:14:48] Set initial game size to: 600x600
+[2024-05-22 20:14:48] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:48] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:48] Label border width: 1
+[2024-05-22 20:14:48] label_border_height: 1
+[2024-05-22 20:14:49] Closed the app
+
+
+
+
+[2024-05-22 20:14:52] Started the app
+[2024-05-22 20:14:52] Started the GameApp Class
+[2024-05-22 20:14:52] Game mode: initial config
+[2024-05-22 20:14:52] Current Theme: Dark-Blue
+[2024-05-22 20:14:52] Set initial theme to: Dark-Blue
+[2024-05-22 20:14:52] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:14:52] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:14:52] Theme applied: Dark-Blue
+[2024-05-22 20:14:52] Updated contrast in config.ini to: Default
+[2024-05-22 20:14:52] Contrast mode set to: dark
+[2024-05-22 20:14:52] Set initial game size to: 600x600
+[2024-05-22 20:14:52] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:52] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:52] Label border width: 1
+[2024-05-22 20:14:52] label_border_height: 1
+[2024-05-22 20:14:52] Home_screen method called
+[2024-05-22 20:14:54] Set initial game size to: 600x600
+[2024-05-22 20:14:54] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:54] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:14:54] Label border width: 1
+[2024-05-22 20:14:54] label_border_height: 1
+[2024-05-22 20:14:59] Closed the app
+
+
+
+
+[2024-05-22 20:15:01] Started the app
+[2024-05-22 20:15:01] Started the GameApp Class
+[2024-05-22 20:15:01] Game mode: initial config
+[2024-05-22 20:15:01] Current Theme: Dark-Blue
+[2024-05-22 20:15:01] Set initial theme to: Dark-Blue
+[2024-05-22 20:15:01] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:15:01] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:15:01] Theme applied: Dark-Blue
+[2024-05-22 20:15:01] Updated contrast in config.ini to: Default
+[2024-05-22 20:15:01] Contrast mode set to: dark
+[2024-05-22 20:15:01] Set initial game size to: 600x600
+[2024-05-22 20:15:01] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:15:01] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:15:01] Label border width: 1
+[2024-05-22 20:15:01] label_border_height: 1
+[2024-05-22 20:15:01] Home_screen method called
+[2024-05-22 20:15:22] Set initial game size to: 600x600
+[2024-05-22 20:15:22] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:15:22] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:15:22] Label border width: 1
+[2024-05-22 20:15:22] label_border_height: 1
+[2024-05-22 20:15:22] Updated label_needed_game_size in config.ini to: False
+before being set true
+True
+[2024-05-22 20:15:25] Set initial game size to: 600x600
+[2024-05-22 20:15:25] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:15:25] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:15:25] Label border width: 1
+[2024-05-22 20:15:25] label_border_height: 1
+[2024-05-22 20:15:25] Updated label_needed_game_size in config.ini to: False
+[2024-05-22 20:15:28] Closed the app
+
+
+
+
+[2024-05-22 20:16:27] Started the app
+[2024-05-22 20:16:27] Started the GameApp Class
+[2024-05-22 20:16:27] Game mode: initial config
+[2024-05-22 20:16:27] Current Theme: Dark-Blue
+[2024-05-22 20:16:27] Set initial theme to: Dark-Blue
+[2024-05-22 20:16:27] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:16:27] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:16:27] Theme applied: Dark-Blue
+[2024-05-22 20:16:27] Updated contrast in config.ini to: Default
+[2024-05-22 20:16:27] Contrast mode set to: dark
+[2024-05-22 20:16:27] Set initial game size to: 600x600
+[2024-05-22 20:16:27] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:16:27] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:16:27] Label border width: 1
+[2024-05-22 20:16:27] label_border_height: 1
+[2024-05-22 20:16:27] Home_screen method called
+[2024-05-22 20:16:29] Set initial game size to: 600x600
+[2024-05-22 20:16:29] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:16:29] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:16:29] Label border width: 1
+[2024-05-22 20:16:29] label_border_height: 1
+[2024-05-22 20:16:29] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+before being set true
+True
+[2024-05-22 20:16:34] Set initial game size to: 600x600
+[2024-05-22 20:16:34] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:16:34] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:16:34] Label border width: 1
+[2024-05-22 20:16:34] label_border_height: 1
+[2024-05-22 20:16:34] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:16:37] Closed the app
+
+
+
+
+[2024-05-22 20:18:53] Started the app
+[2024-05-22 20:18:53] Started the GameApp Class
+[2024-05-22 20:18:53] Game mode: initial config
+[2024-05-22 20:18:53] Current Theme: Dark-Blue
+[2024-05-22 20:18:53] Set initial theme to: Dark-Blue
+[2024-05-22 20:18:53] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:18:53] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:18:53] Theme applied: Dark-Blue
+[2024-05-22 20:18:53] Updated contrast in config.ini to: Default
+[2024-05-22 20:18:53] Contrast mode set to: dark
+[2024-05-22 20:18:53] Set initial game size to: 600x600
+[2024-05-22 20:18:53] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:18:53] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:18:53] Label border width: 1
+[2024-05-22 20:18:53] label_border_height: 1
+[2024-05-22 20:18:53] Home_screen method called
+[2024-05-22 20:18:54] Set initial game size to: 600x600
+[2024-05-22 20:18:54] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:18:54] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:18:54] Label border width: 1
+[2024-05-22 20:18:54] label_border_height: 1
+[2024-05-22 20:18:54] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:18:57] Set initial game size to: 600x600
+[2024-05-22 20:18:57] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:18:57] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:18:57] Label border width: 1
+[2024-05-22 20:18:57] label_border_height: 1
+[2024-05-22 20:18:57] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:18:58] Closed the app
+
+
+
+
+[2024-05-22 20:19:18] Started the app
+[2024-05-22 20:19:18] Started the GameApp Class
+[2024-05-22 20:19:18] Game mode: initial config
+[2024-05-22 20:19:18] Current Theme: Dark-Blue
+[2024-05-22 20:19:18] Set initial theme to: Dark-Blue
+[2024-05-22 20:19:18] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:19:18] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:19:18] Theme applied: Dark-Blue
+[2024-05-22 20:19:18] Updated contrast in config.ini to: Default
+[2024-05-22 20:19:18] Contrast mode set to: dark
+[2024-05-22 20:19:18] Set initial game size to: 600x600
+[2024-05-22 20:19:18] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:18] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:18] Label border width: 1
+[2024-05-22 20:19:18] label_border_height: 1
+[2024-05-22 20:19:18] Home_screen method called
+[2024-05-22 20:19:19] Set initial game size to: 600x600
+[2024-05-22 20:19:19] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:19] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:19] Label border width: 1
+[2024-05-22 20:19:19] label_border_height: 1
+[2024-05-22 20:19:19] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:19:22] Set initial game size to: 600x600
+[2024-05-22 20:19:22] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:22] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:22] Label border width: 1
+[2024-05-22 20:19:22] label_border_height: 1
+[2024-05-22 20:19:22] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:19:24] Closed the app
+
+
+
+
+[2024-05-22 20:19:54] Started the app
+[2024-05-22 20:19:54] Started the GameApp Class
+[2024-05-22 20:19:54] Game mode: initial config
+[2024-05-22 20:19:54] Current Theme: Dark-Blue
+[2024-05-22 20:19:54] Set initial theme to: Dark-Blue
+[2024-05-22 20:19:54] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:19:54] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:19:54] Theme applied: Dark-Blue
+[2024-05-22 20:19:54] Updated contrast in config.ini to: Default
+[2024-05-22 20:19:54] Contrast mode set to: dark
+[2024-05-22 20:19:54] Set initial game size to: 600x600
+[2024-05-22 20:19:54] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:54] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:54] Label border width: 1
+[2024-05-22 20:19:54] label_border_height: 1
+[2024-05-22 20:19:54] Home_screen method called
+[2024-05-22 20:19:55] Set initial game size to: 600x600
+[2024-05-22 20:19:55] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:55] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:19:55] Label border width: 1
+[2024-05-22 20:19:55] label_border_height: 1
+[2024-05-22 20:19:56] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[]
+[2024-05-22 20:20:20] Set initial game size to: 600x600
+[2024-05-22 20:20:20] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:20:20] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:20:20] Label border width: 1
+[2024-05-22 20:20:20] label_border_height: 1
+[2024-05-22 20:20:20] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+if not self.reset_settings_displayed:
+[2024-05-22 20:20:25] Closed the app
+
+
+
+
+[2024-05-22 20:21:56] Started the app
+[2024-05-22 20:21:56] Started the GameApp Class
+[2024-05-22 20:21:56] Game mode: initial config
+[2024-05-22 20:21:56] Current Theme: Dark-Blue
+[2024-05-22 20:21:56] Set initial theme to: Dark-Blue
+[2024-05-22 20:21:56] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:21:56] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:21:56] Theme applied: Dark-Blue
+[2024-05-22 20:21:56] Updated contrast in config.ini to: Default
+[2024-05-22 20:21:56] Contrast mode set to: dark
+[2024-05-22 20:21:56] Set initial game size to: 600x600
+[2024-05-22 20:21:56] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:21:56] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:21:56] Label border width: 1
+[2024-05-22 20:21:56] label_border_height: 1
+[2024-05-22 20:21:56] Home_screen method called
+[2024-05-22 20:21:59] Set initial game size to: 600x600
+[2024-05-22 20:21:59] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:21:59] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:21:59] Label border width: 1
+[2024-05-22 20:21:59] label_border_height: 1
+[2024-05-22 20:21:59] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+[2024-05-22 20:22:01] Closed the app
+
+
+
+
+[2024-05-22 20:23:48] Started the app
+[2024-05-22 20:23:48] Started the GameApp Class
+[2024-05-22 20:23:48] Game mode: initial config
+[2024-05-22 20:23:48] Current Theme: Dark-Blue
+[2024-05-22 20:23:48] Set initial theme to: Dark-Blue
+[2024-05-22 20:23:48] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:23:48] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:23:48] Theme applied: Dark-Blue
+[2024-05-22 20:23:48] Updated contrast in config.ini to: Default
+[2024-05-22 20:23:48] Contrast mode set to: dark
+[2024-05-22 20:23:48] Set initial game size to: 600x600
+[2024-05-22 20:23:48] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:23:48] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:23:48] Label border width: 1
+[2024-05-22 20:23:48] label_border_height: 1
+[2024-05-22 20:23:48] Home_screen method called
+[2024-05-22 20:23:50] Set initial game size to: 600x600
+[2024-05-22 20:23:50] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:23:50] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:23:50] Label border width: 1
+[2024-05-22 20:23:50] label_border_height: 1
+[2024-05-22 20:23:50] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+if not self.reset_settings_displayed:
+[]
+[2024-05-22 20:23:53] Set initial game size to: 600x600
+[2024-05-22 20:23:53] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:23:53] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:23:53] Label border width: 1
+[2024-05-22 20:23:53] label_border_height: 1
+[2024-05-22 20:23:53] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+if not self.reset_settings_displayed:
+if not self.reset_settings_displayed:
+if not self.reset_settings_displayed:
+if not self.reset_settings_displayed:
+[2024-05-22 20:23:58] Closed the app
+
+
+
+
+[2024-05-22 20:26:55] Started the app
+[2024-05-22 20:26:55] Started the GameApp Class
+[2024-05-22 20:26:55] Game mode: initial config
+[2024-05-22 20:26:55] Current Theme: Dark-Blue
+[2024-05-22 20:26:55] Set initial theme to: Dark-Blue
+[2024-05-22 20:26:55] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:26:55] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:26:55] Theme applied: Dark-Blue
+[2024-05-22 20:26:55] Updated contrast in config.ini to: Default
+[2024-05-22 20:26:55] Contrast mode set to: dark
+[2024-05-22 20:26:55] Set initial game size to: 600x600
+[2024-05-22 20:26:55] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:26:55] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:26:55] Label border width: 1
+[2024-05-22 20:26:55] label_border_height: 1
+[2024-05-22 20:26:55] Home_screen method called
+[2024-05-22 20:26:57] Set initial game size to: 600x600
+[2024-05-22 20:26:57] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:26:57] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:26:57] Label border width: 1
+[2024-05-22 20:26:57] label_border_height: 1
+[2024-05-22 20:26:57] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[]
+[2024-05-22 20:27:00] Set initial game size to: 600x600
+[2024-05-22 20:27:00] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:27:00] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:27:00] Label border width: 1
+[2024-05-22 20:27:00] label_border_height: 1
+[2024-05-22 20:27:00] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+if not self.reset_settings_displayed:
+[2024-05-22 20:27:04] Closed the app
+
+
+
+
+[2024-05-22 20:28:17] Started the app
+[2024-05-22 20:28:17] Started the GameApp Class
+[2024-05-22 20:28:17] Game mode: initial config
+[2024-05-22 20:28:17] Current Theme: Dark-Blue
+[2024-05-22 20:28:17] Set initial theme to: Dark-Blue
+[2024-05-22 20:28:17] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:28:17] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:28:17] Theme applied: Dark-Blue
+[2024-05-22 20:28:17] Updated contrast in config.ini to: Default
+[2024-05-22 20:28:17] Contrast mode set to: dark
+[2024-05-22 20:28:17] Set initial game size to: 600x600
+[2024-05-22 20:28:17] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:28:17] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:28:17] Label border width: 1
+[2024-05-22 20:28:17] label_border_height: 1
+[2024-05-22 20:28:17] Home_screen method called
+[2024-05-22 20:28:19] Set initial game size to: 600x600
+[2024-05-22 20:28:19] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:28:19] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:28:19] Label border width: 1
+[2024-05-22 20:28:19] label_border_height: 1
+[2024-05-22 20:28:19] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[]
+[2024-05-22 20:28:22] Set initial game size to: 600x600
+[2024-05-22 20:28:22] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:28:22] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:28:22] Label border width: 1
+[2024-05-22 20:28:22] label_border_height: 1
+[2024-05-22 20:28:22] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+[2024-05-22 20:28:31] Closed the app
+
+
+
+
+[2024-05-22 20:29:51] Started the app
+[2024-05-22 20:29:51] Started the GameApp Class
+[2024-05-22 20:29:51] Game mode: initial config
+[2024-05-22 20:29:51] Current Theme: Dark-Blue
+[2024-05-22 20:29:51] Set initial theme to: Dark-Blue
+[2024-05-22 20:29:51] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:29:51] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:29:51] Theme applied: Dark-Blue
+[2024-05-22 20:29:51] Updated contrast in config.ini to: Default
+[2024-05-22 20:29:51] Contrast mode set to: dark
+[2024-05-22 20:29:51] Set initial game size to: 600x600
+[2024-05-22 20:29:51] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:29:51] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:29:51] Label border width: 1
+[2024-05-22 20:29:51] label_border_height: 1
+[2024-05-22 20:29:51] Home_screen method called
+[2024-05-22 20:29:52] Set initial game size to: 600x600
+[2024-05-22 20:29:52] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:29:52] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:29:52] Label border width: 1
+[2024-05-22 20:29:52] label_border_height: 1
+[2024-05-22 20:29:52] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[]
+[2024-05-22 20:29:58] Set initial game size to: 600x600
+[2024-05-22 20:29:58] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:29:58] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:29:58] Label border width: 1
+[2024-05-22 20:29:58] label_border_height: 1
+[2024-05-22 20:29:58] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:30:01] Closed the app
+
+
+
+
+[2024-05-22 20:31:23] Started the app
+[2024-05-22 20:31:23] Started the GameApp Class
+[2024-05-22 20:31:23] Game mode: initial config
+[2024-05-22 20:31:23] Current Theme: Dark-Blue
+[2024-05-22 20:31:23] Set initial theme to: Dark-Blue
+[2024-05-22 20:31:23] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:31:23] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:31:23] Theme applied: Dark-Blue
+[2024-05-22 20:31:23] Updated contrast in config.ini to: Default
+[2024-05-22 20:31:23] Contrast mode set to: dark
+[2024-05-22 20:31:23] Set initial game size to: 600x600
+[2024-05-22 20:31:23] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:31:23] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:31:23] Label border width: 1
+[2024-05-22 20:31:23] label_border_height: 1
+[2024-05-22 20:31:23] Home_screen method called
+[2024-05-22 20:31:25] Set initial game size to: 600x600
+[2024-05-22 20:31:25] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:31:25] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:31:25] Label border width: 1
+[2024-05-22 20:31:25] label_border_height: 1
+[2024-05-22 20:31:25] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+[2024-05-22 20:31:34] Set initial game size to: 600x600
+[2024-05-22 20:31:34] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:31:34] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:31:34] Label border width: 1
+[2024-05-22 20:31:34] label_border_height: 1
+[2024-05-22 20:31:34] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+if not self.reset_settings_displayed:
+else:
+[]
+[2024-05-22 20:31:39] Closed the app
+
+
+
+
+[2024-05-22 20:31:59] Started the app
+[2024-05-22 20:31:59] Started the GameApp Class
+[2024-05-22 20:31:59] Game mode: initial config
+[2024-05-22 20:31:59] Current Theme: Dark-Blue
+[2024-05-22 20:31:59] Set initial theme to: Dark-Blue
+[2024-05-22 20:31:59] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:31:59] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:31:59] Theme applied: Dark-Blue
+[2024-05-22 20:31:59] Updated contrast in config.ini to: Default
+[2024-05-22 20:31:59] Contrast mode set to: dark
+[2024-05-22 20:31:59] Set initial game size to: 600x600
+[2024-05-22 20:31:59] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:31:59] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:31:59] Label border width: 1
+[2024-05-22 20:31:59] label_border_height: 1
+[2024-05-22 20:31:59] Home_screen method called
+[2024-05-22 20:32:00] Set initial game size to: 600x600
+[2024-05-22 20:32:00] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:32:00] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:32:00] Label border width: 1
+[2024-05-22 20:32:00] label_border_height: 1
+[2024-05-22 20:32:00] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:32:03] Set initial game size to: 600x600
+[2024-05-22 20:32:03] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:32:03] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:32:03] Label border width: 1
+[2024-05-22 20:32:03] label_border_height: 1
+[2024-05-22 20:32:04] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:32:08] Closed the app
+
+
+
+
+[2024-05-22 20:34:13] Started the app
+[2024-05-22 20:34:13] Started the GameApp Class
+[2024-05-22 20:34:13] Game mode: initial config
+[2024-05-22 20:34:13] Current Theme: Dark-Blue
+[2024-05-22 20:34:13] Set initial theme to: Dark-Blue
+[2024-05-22 20:34:13] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:34:13] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:34:13] Theme applied: Dark-Blue
+[2024-05-22 20:34:13] Updated contrast in config.ini to: Default
+[2024-05-22 20:34:13] Contrast mode set to: dark
+[2024-05-22 20:34:13] Set initial game size to: 600x600
+[2024-05-22 20:34:13] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:13] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:13] Label border width: 1
+[2024-05-22 20:34:13] label_border_height: 1
+[2024-05-22 20:34:13] Home_screen method called
+[2024-05-22 20:34:14] Set initial game size to: 600x600
+[2024-05-22 20:34:14] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:14] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:14] Label border width: 1
+[2024-05-22 20:34:14] label_border_height: 1
+[2024-05-22 20:34:14] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+if not self.reset_settings_displayed:
+else:
+[2024-05-22 20:34:20] Set initial game size to: 600x600
+[2024-05-22 20:34:20] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:20] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:20] Label border width: 1
+[2024-05-22 20:34:20] label_border_height: 1
+[2024-05-22 20:34:20] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:34:32] Closed the app
+
+
+
+
+[2024-05-22 20:34:34] Started the app
+[2024-05-22 20:34:34] Started the GameApp Class
+[2024-05-22 20:34:34] Game mode: initial config
+[2024-05-22 20:34:34] Current Theme: Dark-Blue
+[2024-05-22 20:34:34] Set initial theme to: Dark-Blue
+[2024-05-22 20:34:34] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:34:34] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:34:34] Theme applied: Dark-Blue
+[2024-05-22 20:34:34] Updated contrast in config.ini to: Default
+[2024-05-22 20:34:34] Contrast mode set to: dark
+[2024-05-22 20:34:34] Set initial game size to: 600x600
+[2024-05-22 20:34:34] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:34] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:34] Label border width: 1
+[2024-05-22 20:34:34] label_border_height: 1
+[2024-05-22 20:34:34] Home_screen method called
+[2024-05-22 20:34:35] Set initial game size to: 600x600
+[2024-05-22 20:34:35] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:35] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:35] Label border width: 1
+[2024-05-22 20:34:35] label_border_height: 1
+[2024-05-22 20:34:35] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 20:34:38] Set initial game size to: 600x600
+[2024-05-22 20:34:38] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:38] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:34:38] Label border width: 1
+[2024-05-22 20:34:38] label_border_height: 1
+[2024-05-22 20:34:38] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+if not self.reset_settings_displayed:
+[2024-05-22 20:34:41] Closed the app
+
+
+
+
+[2024-05-22 20:35:22] Started the app
+[2024-05-22 20:35:22] Started the GameApp Class
+[2024-05-22 20:35:22] Game mode: initial config
+[2024-05-22 20:35:22] Current Theme: Dark-Blue
+[2024-05-22 20:35:22] Set initial theme to: Dark-Blue
+[2024-05-22 20:35:22] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:35:22] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:35:22] Theme applied: Dark-Blue
+[2024-05-22 20:35:22] Updated contrast in config.ini to: Default
+[2024-05-22 20:35:22] Contrast mode set to: dark
+[2024-05-22 20:35:22] Set initial game size to: 600x600
+[2024-05-22 20:35:22] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:35:22] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:35:22] Label border width: 1
+[2024-05-22 20:35:22] label_border_height: 1
+[2024-05-22 20:35:22] Home_screen method called
+[2024-05-22 20:35:23] Set initial game size to: 600x600
+[2024-05-22 20:35:23] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:35:23] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:35:23] Label border width: 1
+[2024-05-22 20:35:23] label_border_height: 1
+[2024-05-22 20:35:23] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+if not self.reset_settings_displayed:
+else:
+[2024-05-22 20:35:28] Set initial game size to: 600x600
+[2024-05-22 20:35:28] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:35:28] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:35:28] Label border width: 1
+[2024-05-22 20:35:28] label_border_height: 1
+[2024-05-22 20:35:28] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+if not self.reset_settings_displayed:
+else:
+[2024-05-22 20:35:31] Closed the app
+
+
+
+
+[2024-05-22 20:37:02] Started the app
+[2024-05-22 20:37:02] Started the GameApp Class
+[2024-05-22 20:37:02] Game mode: initial config
+[2024-05-22 20:37:02] Current Theme: Dark-Blue
+[2024-05-22 20:37:02] Set initial theme to: Dark-Blue
+[2024-05-22 20:37:02] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:37:02] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:37:02] Theme applied: Dark-Blue
+[2024-05-22 20:37:02] Updated contrast in config.ini to: Default
+[2024-05-22 20:37:02] Contrast mode set to: dark
+[2024-05-22 20:37:02] Set initial game size to: 600x600
+[2024-05-22 20:37:02] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:37:02] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:37:02] Label border width: 1
+[2024-05-22 20:37:02] label_border_height: 1
+[2024-05-22 20:37:02] Home_screen method called
+[2024-05-22 20:37:03] Set initial game size to: 600x600
+[2024-05-22 20:37:03] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:37:03] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:37:03] Label border width: 1
+[2024-05-22 20:37:03] label_border_height: 1
+[2024-05-22 20:37:03] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[2024-05-22 20:37:04] Closed the app
+
+
+
+
+[2024-05-22 20:38:41] Started the app
+[2024-05-22 20:38:41] Started the GameApp Class
+[2024-05-22 20:38:41] Game mode: initial config
+[2024-05-22 20:38:41] Current Theme: Dark-Blue
+[2024-05-22 20:38:41] Set initial theme to: Dark-Blue
+[2024-05-22 20:38:41] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:38:41] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:38:41] Theme applied: Dark-Blue
+[2024-05-22 20:38:41] Updated contrast in config.ini to: Default
+[2024-05-22 20:38:41] Contrast mode set to: dark
+[2024-05-22 20:38:41] Set initial game size to: 600x600
+[2024-05-22 20:38:41] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:38:41] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:38:41] Label border width: 1
+[2024-05-22 20:38:41] label_border_height: 1
+[2024-05-22 20:38:41] Home_screen method called
+[2024-05-22 20:38:42] Set initial game size to: 600x600
+[2024-05-22 20:38:42] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:38:42] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:38:42] Label border width: 1
+[2024-05-22 20:38:42] label_border_height: 1
+[2024-05-22 20:38:42] Updated label_needed_game_size in config.ini to: False
+[2024-05-22 20:39:02] Closed the app
+
+
+
+
+[2024-05-22 20:39:05] Started the app
+[2024-05-22 20:39:05] Started the GameApp Class
+[2024-05-22 20:39:05] Game mode: initial config
+[2024-05-22 20:39:05] Current Theme: Dark-Blue
+[2024-05-22 20:39:05] Set initial theme to: Dark-Blue
+[2024-05-22 20:39:05] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:39:05] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:39:05] Theme applied: Dark-Blue
+[2024-05-22 20:39:05] Updated contrast in config.ini to: Default
+[2024-05-22 20:39:05] Contrast mode set to: dark
+[2024-05-22 20:39:05] Set initial game size to: 600x600
+[2024-05-22 20:39:05] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:39:05] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:39:05] Label border width: 1
+[2024-05-22 20:39:05] label_border_height: 1
+[2024-05-22 20:39:05] Home_screen method called
+[2024-05-22 20:39:06] Set initial game size to: 600x600
+[2024-05-22 20:39:06] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:39:06] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:39:06] Label border width: 1
+[2024-05-22 20:39:06] label_border_height: 1
+[2024-05-22 20:39:07] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[2024-05-22 20:39:12] Closed the app
+
+
+
+
+[2024-05-22 20:39:32] Started the app
+[2024-05-22 20:39:32] Started the GameApp Class
+[2024-05-22 20:39:32] Game mode: initial config
+[2024-05-22 20:39:32] Current Theme: Dark-Blue
+[2024-05-22 20:39:32] Set initial theme to: Dark-Blue
+[2024-05-22 20:39:32] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:39:32] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:39:32] Theme applied: Dark-Blue
+[2024-05-22 20:39:32] Updated contrast in config.ini to: Default
+[2024-05-22 20:39:32] Contrast mode set to: dark
+[2024-05-22 20:39:32] Set initial game size to: 600x600
+[2024-05-22 20:39:32] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:39:32] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:39:32] Label border width: 1
+[2024-05-22 20:39:32] label_border_height: 1
+[2024-05-22 20:39:32] Home_screen method called
+[2024-05-22 20:39:33] Set initial game size to: 600x600
+[2024-05-22 20:39:33] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:39:33] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 20:39:33] Label border width: 1
+[2024-05-22 20:39:33] label_border_height: 1
+[2024-05-22 20:39:33] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[2024-05-22 20:39:36] Set initial game size to: 600x600
+[2024-05-22 20:39:36] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:39:36] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 20:39:36] Label border width: 1
+[2024-05-22 20:39:36] label_border_height: 1
+[2024-05-22 20:39:36] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[2024-05-22 20:39:38] Closed the app
+
+
+
+
+[2024-05-22 20:42:04] Started the app
+[2024-05-22 20:42:04] Started the GameApp Class
+[2024-05-22 20:42:04] Game mode: initial config
+[2024-05-22 20:42:04] Current Theme: Dark-Blue
+[2024-05-22 20:42:04] Set initial theme to: Dark-Blue
+[2024-05-22 20:42:04] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:42:04] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:42:04] Theme applied: Dark-Blue
+[2024-05-22 20:42:04] Updated contrast in config.ini to: Default
+[2024-05-22 20:42:04] Contrast mode set to: dark
+[2024-05-22 20:42:04] Set initial game size to: 600x600
+[2024-05-22 20:42:04] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:42:04] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:42:05] Label border width: 1
+[2024-05-22 20:42:05] label_border_height: 1
+[2024-05-22 20:42:05] Home_screen method called
+[2024-05-22 20:42:05] Set initial game size to: 600x600
+[2024-05-22 20:42:05] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:42:05] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 20:42:05] Label border width: 1
+[2024-05-22 20:42:05] label_border_height: 1
+[2024-05-22 20:42:06] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[]
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+[2024-05-22 20:42:11] Set initial game size to: 600x600
+[2024-05-22 20:42:11] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:42:11] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 20:42:11] Label border width: 1
+[2024-05-22 20:42:11] label_border_height: 1
+[2024-05-22 20:42:11] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+[]
+[2024-05-22 20:42:13] Closed the app
+
+
+
+
+[2024-05-22 20:56:10] Started the app
+[2024-05-22 20:56:10] Started the GameApp Class
+[2024-05-22 20:56:10] Game mode: initial config
+[2024-05-22 20:56:10] Current Theme: Dark-Blue
+[2024-05-22 20:56:10] Set initial theme to: Dark-Blue
+[2024-05-22 20:56:10] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:56:10] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:56:10] Theme applied: Dark-Blue
+[2024-05-22 20:56:10] Updated contrast in config.ini to: Default
+[2024-05-22 20:56:10] Contrast mode set to: dark
+[2024-05-22 20:56:10] Set initial game size to: 600x600
+[2024-05-22 20:56:10] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:56:10] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:56:10] Label border width: 1
+[2024-05-22 20:56:10] label_border_height: 1
+[2024-05-22 20:56:10] Home_screen method called
+[2024-05-22 20:56:11] Set initial game size to: 600x600
+[2024-05-22 20:56:11] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:56:11] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 20:56:11] Label border width: 1
+[2024-05-22 20:56:11] label_border_height: 1
+[2024-05-22 20:56:11] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[]
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+[2024-05-22 20:56:17] Set initial game size to: 600x600
+[2024-05-22 20:56:17] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:56:17] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 20:56:17] Label border width: 1
+[2024-05-22 20:56:17] label_border_height: 1
+[2024-05-22 20:56:17] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+[]
+if not self.reset_settings_displayed:
+[2024-05-22 20:56:19] Closed the app
+
+
+
+
+[2024-05-22 20:59:55] Started the app
+[2024-05-22 20:59:55] Started the GameApp Class
+[2024-05-22 20:59:55] Game mode: initial config
+[2024-05-22 20:59:55] Current Theme: Dark-Blue
+[2024-05-22 20:59:55] Set initial theme to: Dark-Blue
+[2024-05-22 20:59:55] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:59:55] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 20:59:55] Theme applied: Dark-Blue
+[2024-05-22 20:59:55] Updated contrast in config.ini to: Default
+[2024-05-22 20:59:55] Contrast mode set to: dark
+[2024-05-22 20:59:55] Set initial game size to: 600x600
+[2024-05-22 20:59:55] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:59:55] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 20:59:55] Label border width: 1
+[2024-05-22 20:59:55] label_border_height: 1
+[2024-05-22 20:59:55] Home_screen method called
+[2024-05-22 20:59:57] Set initial game size to: 600x600
+[2024-05-22 20:59:57] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 20:59:57] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 20:59:57] Label border width: 1
+[2024-05-22 20:59:57] label_border_height: 1
+[2024-05-22 20:59:57] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[]
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+[]
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton33>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton34>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton35>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton36>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton37>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton38>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton39>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton40>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton41>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton42>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton43>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton44>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton45>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton46>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton47>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton48>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton33>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton34>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton35>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton36>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton37>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton38>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton39>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton40>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton41>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton42>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton43>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton44>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton45>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton46>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton47>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton48>]
+[2024-05-22 21:00:03] Set initial game size to: 600x600
+[2024-05-22 21:00:03] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:00:03] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:00:03] Label border width: 1
+[2024-05-22 21:00:03] label_border_height: 1
+[2024-05-22 21:00:03] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+[]
+[2024-05-22 21:00:07] Closed the app
+
+
+
+
+[2024-05-22 21:00:33] Started the app
+[2024-05-22 21:00:33] Started the GameApp Class
+[2024-05-22 21:00:33] Game mode: initial config
+[2024-05-22 21:00:33] Current Theme: Dark-Blue
+[2024-05-22 21:00:33] Set initial theme to: Dark-Blue
+[2024-05-22 21:00:33] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:00:33] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:00:33] Theme applied: Dark-Blue
+[2024-05-22 21:00:33] Updated contrast in config.ini to: Default
+[2024-05-22 21:00:33] Contrast mode set to: dark
+[2024-05-22 21:00:33] Set initial game size to: 600x600
+[2024-05-22 21:00:33] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:00:33] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:00:33] Label border width: 1
+[2024-05-22 21:00:33] label_border_height: 1
+[2024-05-22 21:00:34] Home_screen method called
+[2024-05-22 21:00:34] Set initial game size to: 600x600
+[2024-05-22 21:00:34] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:00:34] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:00:34] Label border width: 1
+[2024-05-22 21:00:34] label_border_height: 1
+[2024-05-22 21:00:35] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[2024-05-22 21:00:37] Set initial game size to: 600x600
+[2024-05-22 21:00:37] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:00:37] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:00:37] Label border width: 1
+[2024-05-22 21:00:37] label_border_height: 1
+[2024-05-22 21:00:38] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 21:00:39] Closed the app
+
+
+
+
+[2024-05-22 21:01:00] Started the app
+[2024-05-22 21:01:00] Started the GameApp Class
+[2024-05-22 21:01:00] Game mode: initial config
+[2024-05-22 21:01:00] Current Theme: Dark-Blue
+[2024-05-22 21:01:00] Set initial theme to: Dark-Blue
+[2024-05-22 21:01:00] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:01:00] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:01:00] Theme applied: Dark-Blue
+[2024-05-22 21:01:00] Updated contrast in config.ini to: Default
+[2024-05-22 21:01:00] Contrast mode set to: dark
+[2024-05-22 21:01:00] Set initial game size to: 600x600
+[2024-05-22 21:01:00] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:01:00] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:01:00] Label border width: 1
+[2024-05-22 21:01:00] label_border_height: 1
+[2024-05-22 21:01:00] Home_screen method called
+[2024-05-22 21:01:02] Set initial game size to: 600x600
+[2024-05-22 21:01:02] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:01:02] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:01:02] Label border width: 1
+[2024-05-22 21:01:02] label_border_height: 1
+[2024-05-22 21:01:02] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[2024-05-22 21:01:04] Set initial game size to: 600x600
+[2024-05-22 21:01:04] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:01:04] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:01:04] Label border width: 1
+[2024-05-22 21:01:04] label_border_height: 1
+[2024-05-22 21:01:05] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+[]
+[2024-05-22 21:01:17] Closed the app
+
+
+
+
+[2024-05-22 21:01:49] Started the app
+[2024-05-22 21:01:49] Started the GameApp Class
+[2024-05-22 21:01:49] Game mode: initial config
+[2024-05-22 21:01:49] Current Theme: Dark-Blue
+[2024-05-22 21:01:49] Set initial theme to: Dark-Blue
+[2024-05-22 21:01:49] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:01:49] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:01:49] Theme applied: Dark-Blue
+[2024-05-22 21:01:49] Updated contrast in config.ini to: Default
+[2024-05-22 21:01:49] Contrast mode set to: dark
+[2024-05-22 21:01:49] Set initial game size to: 600x600
+[2024-05-22 21:01:49] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:01:49] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:01:49] Label border width: 1
+[2024-05-22 21:01:49] label_border_height: 1
+[2024-05-22 21:01:49] Home_screen method called
+[2024-05-22 21:01:51] Set initial game size to: 600x600
+[2024-05-22 21:01:51] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:01:51] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:01:51] Label border width: 1
+[2024-05-22 21:01:51] label_border_height: 1
+[2024-05-22 21:01:51] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[2024-05-22 21:01:53] Set initial game size to: 600x600
+[2024-05-22 21:01:53] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:01:53] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:01:53] Label border width: 1
+[2024-05-22 21:01:53] label_border_height: 1
+[2024-05-22 21:01:53] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+[]
+[2024-05-22 21:01:55] Closed the app
+
+
+
+
+[2024-05-22 21:02:35] Started the app
+[2024-05-22 21:02:35] Started the GameApp Class
+[2024-05-22 21:02:35] Game mode: initial config
+[2024-05-22 21:02:35] Current Theme: Dark-Blue
+[2024-05-22 21:02:35] Set initial theme to: Dark-Blue
+[2024-05-22 21:02:35] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:02:35] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:02:35] Theme applied: Dark-Blue
+[2024-05-22 21:02:35] Updated contrast in config.ini to: Default
+[2024-05-22 21:02:35] Contrast mode set to: dark
+[2024-05-22 21:02:35] Set initial game size to: 600x600
+[2024-05-22 21:02:35] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:02:35] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:02:35] Label border width: 1
+[2024-05-22 21:02:35] label_border_height: 1
+[2024-05-22 21:02:35] Home_screen method called
+[2024-05-22 21:02:38] Closed the app
+
+
+
+
+[2024-05-22 21:03:01] Started the app
+[2024-05-22 21:03:01] Started the GameApp Class
+[2024-05-22 21:03:01] Game mode: initial config
+[2024-05-22 21:03:01] Current Theme: Dark-Blue
+[2024-05-22 21:03:01] Set initial theme to: Dark-Blue
+[2024-05-22 21:03:01] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:03:01] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:03:01] Theme applied: Dark-Blue
+[2024-05-22 21:03:01] Updated contrast in config.ini to: Default
+[2024-05-22 21:03:01] Contrast mode set to: dark
+[2024-05-22 21:03:01] Set initial game size to: 600x600
+[2024-05-22 21:03:01] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:03:01] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:03:01] Label border width: 1
+[2024-05-22 21:03:01] label_border_height: 1
+[2024-05-22 21:03:01] Home_screen method called
+[2024-05-22 21:03:02] Set initial game size to: 600x600
+[2024-05-22 21:03:02] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:03:02] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:03:02] Label border width: 1
+[2024-05-22 21:03:02] label_border_height: 1
+[2024-05-22 21:03:02] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[2024-05-22 21:03:08] Closed the app
+
+
+
+
+[2024-05-22 21:03:13] Started the app
+[2024-05-22 21:03:13] Started the GameApp Class
+[2024-05-22 21:03:13] Game mode: initial config
+[2024-05-22 21:03:13] Current Theme: Dark-Blue
+[2024-05-22 21:03:13] Set initial theme to: Dark-Blue
+[2024-05-22 21:03:13] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:03:13] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:03:13] Theme applied: Dark-Blue
+[2024-05-22 21:03:13] Updated contrast in config.ini to: Default
+[2024-05-22 21:03:13] Contrast mode set to: dark
+[2024-05-22 21:03:13] Set initial game size to: 600x600
+[2024-05-22 21:03:13] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:03:13] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:03:13] Label border width: 1
+[2024-05-22 21:03:13] label_border_height: 1
+[2024-05-22 21:03:13] Home_screen method called
+[2024-05-22 21:03:14] Set initial game size to: 600x600
+[2024-05-22 21:03:14] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:03:14] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:03:14] Label border width: 1
+[2024-05-22 21:03:14] label_border_height: 1
+[2024-05-22 21:03:14] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[]
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+[]
+[2024-05-22 21:03:18] Closed the app
+
+
+
+
+[2024-05-22 21:04:04] Started the app
+[2024-05-22 21:04:04] Started the GameApp Class
+[2024-05-22 21:04:04] Game mode: initial config
+[2024-05-22 21:04:04] Current Theme: Dark-Blue
+[2024-05-22 21:04:04] Set initial theme to: Dark-Blue
+[2024-05-22 21:04:04] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:04:04] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:04:04] Theme applied: Dark-Blue
+[2024-05-22 21:04:04] Updated contrast in config.ini to: Default
+[2024-05-22 21:04:04] Contrast mode set to: dark
+[2024-05-22 21:04:04] Set initial game size to: 600x600
+[2024-05-22 21:04:04] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:04:04] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:04:04] Label border width: 1
+[2024-05-22 21:04:04] label_border_height: 1
+[2024-05-22 21:04:04] Home_screen method called
+[2024-05-22 21:04:05] Set initial game size to: 600x600
+[2024-05-22 21:04:05] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:04:05] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:04:05] Label border width: 1
+[2024-05-22 21:04:05] label_border_height: 1
+[2024-05-22 21:04:05] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[]
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton18>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton19>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton20>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton21>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton22>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton23>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton24>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton25>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton26>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton27>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton28>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton29>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton30>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton31>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton32>]
+[2024-05-22 21:04:09] Set initial game size to: 600x600
+[2024-05-22 21:04:09] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:04:09] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:04:09] Label border width: 1
+[2024-05-22 21:04:09] label_border_height: 1
+[2024-05-22 21:04:09] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[]
+[]
+if not self.reset_settings_displayed:
+else:
+[]
+[]
+[2024-05-22 21:04:12] Closed the app
+
+
+
+
+[2024-05-22 21:05:48] Started the app
+[2024-05-22 21:05:48] Started the GameApp Class
+[2024-05-22 21:05:48] Game mode: initial config
+[2024-05-22 21:05:48] Current Theme: Dark-Blue
+[2024-05-22 21:05:48] Set initial theme to: Dark-Blue
+[2024-05-22 21:05:48] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:05:48] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:05:48] Theme applied: Dark-Blue
+[2024-05-22 21:05:48] Updated contrast in config.ini to: Default
+[2024-05-22 21:05:48] Contrast mode set to: dark
+[2024-05-22 21:05:48] Set initial game size to: 600x600
+[2024-05-22 21:05:48] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:05:48] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:05:48] Label border width: 1
+[2024-05-22 21:05:48] label_border_height: 1
+[2024-05-22 21:05:48] Home_screen method called
+[2024-05-22 21:05:49] Set initial game size to: 600x600
+[2024-05-22 21:05:49] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:05:49] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:05:49] Label border width: 1
+[2024-05-22 21:05:49] label_border_height: 1
+[2024-05-22 21:05:49] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[]
+[]
+[2024-05-22 21:05:58] Set initial game size to: 600x600
+[2024-05-22 21:05:58] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:05:58] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:05:58] Label border width: 1
+[2024-05-22 21:05:58] label_border_height: 1
+[2024-05-22 21:05:58] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 21:06:01] Closed the app
+
+
+
+
+[2024-05-22 21:08:11] Started the app
+[2024-05-22 21:08:11] Started the GameApp Class
+[2024-05-22 21:08:11] Game mode: initial config
+[2024-05-22 21:08:11] Current Theme: Dark-Blue
+[2024-05-22 21:08:11] Set initial theme to: Dark-Blue
+[2024-05-22 21:08:11] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:08:11] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:08:11] Theme applied: Dark-Blue
+[2024-05-22 21:08:11] Updated contrast in config.ini to: Default
+[2024-05-22 21:08:11] Contrast mode set to: dark
+[2024-05-22 21:08:11] Set initial game size to: 600x600
+[2024-05-22 21:08:11] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:08:11] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:08:11] Label border width: 1
+[2024-05-22 21:08:11] label_border_height: 1
+[2024-05-22 21:08:11] Home_screen method called
+[2024-05-22 21:08:12] Set initial game size to: 600x600
+[2024-05-22 21:08:12] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:08:12] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:08:12] Label border width: 1
+[2024-05-22 21:08:12] label_border_height: 1
+[2024-05-22 21:08:12] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>]
+[2024-05-22 21:08:16] Set initial game size to: 600x600
+[2024-05-22 21:08:16] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:08:16] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:08:16] Label border width: 1
+[2024-05-22 21:08:16] label_border_height: 1
+[2024-05-22 21:08:16] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 21:08:18] Closed the app
+
+
+
+
+[2024-05-22 21:08:51] Started the app
+[2024-05-22 21:08:51] Started the GameApp Class
+[2024-05-22 21:08:51] Game mode: initial config
+[2024-05-22 21:08:51] Current Theme: Dark-Blue
+[2024-05-22 21:08:51] Set initial theme to: Dark-Blue
+[2024-05-22 21:08:51] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:08:51] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:08:51] Theme applied: Dark-Blue
+[2024-05-22 21:08:51] Updated contrast in config.ini to: Default
+[2024-05-22 21:08:51] Contrast mode set to: dark
+[2024-05-22 21:08:51] Set initial game size to: 600x600
+[2024-05-22 21:08:51] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:08:51] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:08:51] Label border width: 1
+[2024-05-22 21:08:51] label_border_height: 1
+[2024-05-22 21:08:51] Home_screen method called
+[2024-05-22 21:08:52] Set initial game size to: 600x600
+[2024-05-22 21:08:52] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:08:52] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:08:52] Label border width: 1
+[2024-05-22 21:08:52] label_border_height: 1
+[2024-05-22 21:08:52] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>]
+[2024-05-22 21:08:55] Set initial game size to: 600x600
+[2024-05-22 21:08:55] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:08:55] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:08:55] Label border width: 1
+[2024-05-22 21:08:55] label_border_height: 1
+[2024-05-22 21:08:55] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 21:08:57] Closed the app
+
+
+
+
+[2024-05-22 21:10:52] Started the app
+[2024-05-22 21:10:52] Started the GameApp Class
+[2024-05-22 21:10:52] Game mode: initial config
+[2024-05-22 21:10:52] Current Theme: Dark-Blue
+[2024-05-22 21:10:52] Set initial theme to: Dark-Blue
+[2024-05-22 21:10:52] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:10:52] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:10:52] Theme applied: Dark-Blue
+[2024-05-22 21:10:52] Updated contrast in config.ini to: Default
+[2024-05-22 21:10:52] Contrast mode set to: dark
+[2024-05-22 21:10:52] Set initial game size to: 600x600
+[2024-05-22 21:10:52] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:10:52] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:10:52] Label border width: 1
+[2024-05-22 21:10:52] label_border_height: 1
+[2024-05-22 21:10:52] Home_screen method called
+[2024-05-22 21:10:54] Set initial game size to: 600x600
+[2024-05-22 21:10:54] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:10:54] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:10:54] Label border width: 1
+[2024-05-22 21:10:54] label_border_height: 1
+[2024-05-22 21:10:54] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>]
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>]
+[2024-05-22 21:10:57] Set initial game size to: 600x600
+[2024-05-22 21:10:57] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:10:57] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:10:57] Label border width: 1
+[2024-05-22 21:10:57] label_border_height: 1
+[2024-05-22 21:10:57] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 21:11:00] Closed the app
+
+
+
+
+[2024-05-22 21:11:13] Started the app
+[2024-05-22 21:11:13] Started the GameApp Class
+[2024-05-22 21:11:13] Game mode: initial config
+[2024-05-22 21:11:13] Current Theme: Dark-Blue
+[2024-05-22 21:11:13] Set initial theme to: Dark-Blue
+[2024-05-22 21:11:13] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:11:13] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:11:13] Theme applied: Dark-Blue
+[2024-05-22 21:11:13] Updated contrast in config.ini to: Default
+[2024-05-22 21:11:13] Contrast mode set to: dark
+[2024-05-22 21:11:13] Set initial game size to: 600x600
+[2024-05-22 21:11:13] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:11:13] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:11:13] Label border width: 1
+[2024-05-22 21:11:13] label_border_height: 1
+[2024-05-22 21:11:13] Home_screen method called
+[2024-05-22 21:11:15] Set initial game size to: 600x600
+[2024-05-22 21:11:15] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:11:15] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:11:15] Label border width: 1
+[2024-05-22 21:11:15] label_border_height: 1
+[2024-05-22 21:11:15] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton17>]
+else:
+[]
+[]
+if not self.reset_settings_displayed:
+else:
+[]
+[]
+[]
+[2024-05-22 21:11:22] Set initial game size to: 600x600
+[2024-05-22 21:11:22] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:11:22] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:11:22] Label border width: 1
+[2024-05-22 21:11:22] label_border_height: 1
+[2024-05-22 21:11:22] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[2024-05-22 21:11:25] Closed the app
+
+
+
+
+[2024-05-22 21:15:03] Started the app
+[2024-05-22 21:15:03] Started the GameApp Class
+[2024-05-22 21:15:03] Game mode: initial config
+[2024-05-22 21:15:03] Current Theme: Dark-Blue
+[2024-05-22 21:15:03] Set initial theme to: Dark-Blue
+[2024-05-22 21:15:03] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:15:03] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:15:03] Theme applied: Dark-Blue
+[2024-05-22 21:15:03] Updated contrast in config.ini to: Default
+[2024-05-22 21:15:03] Contrast mode set to: dark
+[2024-05-22 21:15:56] Started the app
+[2024-05-22 21:15:56] Started the GameApp Class
+[2024-05-22 21:15:56] Game mode: initial config
+[2024-05-22 21:15:56] Current Theme: Dark-Blue
+[2024-05-22 21:15:56] Set initial theme to: Dark-Blue
+[2024-05-22 21:15:56] Updated initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:15:56] Current initial_theme in config.ini to: Dark-Blue
+[2024-05-22 21:15:56] Theme applied: Dark-Blue
+[2024-05-22 21:15:56] Updated contrast in config.ini to: Default
+[2024-05-22 21:15:56] Contrast mode set to: dark
+[2024-05-22 21:15:56] Set initial game size to: 600x600
+[2024-05-22 21:15:56] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:15:56] Current initial_game_size in config.ini to: 600x600
+[2024-05-22 21:15:56] Label border width: 1
+[2024-05-22 21:15:56] label_border_height: 1
+[2024-05-22 21:15:56] Home_screen method called
+[2024-05-22 21:15:57] Set initial game size to: 600x600
+[2024-05-22 21:15:57] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:15:57] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:15:57] Label border width: 1
+[2024-05-22 21:15:57] label_border_height: 1
+[2024-05-22 21:15:57] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkcanvas2.!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkcanvas2.!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton2>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton3>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton4>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton5>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton6>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton7>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton8>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton9>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton10>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton11>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton12>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton13>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton14>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton15>, <customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkbutton16>]
+[]
+[]
+[2024-05-22 21:16:05] Set initial game size to: 600x600
+[2024-05-22 21:16:05] Updated initial_game_size in config.ini to: 600x600
+[2024-05-22 21:16:05] Current initial_game_size in config.ini to: 600x600
+[]
+[2024-05-22 21:16:05] Label border width: 1
+[2024-05-22 21:16:05] label_border_height: 1
+[2024-05-22 21:16:05] Updated label_needed_game_size in config.ini to: False
+if not self.reset_settings_displayed:
+else:
+[<customtkinter.windows.widgets.ctk_button.CTkButton object .!ctkcanvas3.!ctkbutton>]
+[]
+[2024-05-22 21:16:12] Closed the app
+
+
+
+

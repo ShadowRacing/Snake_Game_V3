@@ -104,6 +104,8 @@ class SnakeGameApp:
         self.challange_settings_canvas = None
         self.info_canvas = None
         self.settings_canvas = None
+        self.settings_canvas_values = None
+        self.settings_canvas_reset = None
         self.reset_label = None
         self.reset_settings_frame = None
         self.reset_settings_frame_1 = None
@@ -135,6 +137,8 @@ class SnakeGameApp:
             'leveling_reset_high_scores_xp': self.leveling_reset_high_scores_xp,
             'leveling_reset_high_score_level': self.leveling_reset_high_score_level,
             'open_settings': self.open_settings,
+            'settings_values': self.settings_values,
+            'reset_settings': self.reset_settings,
             'open_info': self.open_info,
             'snake_leveling': self.snake_leveling,
             'snake_endless': self.snake_endless,
@@ -143,7 +147,6 @@ class SnakeGameApp:
             'challange_choices': self.challange_choices,
             'challange_settings': self.challange_settings,
             'patchnotes': self.patchnotes,
-            'reset_settings': self.reset_settings,
             'reset_screen_size': self.reset_screen_size,
             'reset_theme': self.reset_theme,
             'reset_contrast': self.reset_contrast,
@@ -168,10 +171,10 @@ class SnakeGameApp:
         # Initializing the button panel and label panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
 
+        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions)
+
         # And then create the ButtonCommands instance
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
-
-        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.settings_canvas, self.button_commands,self.game_logger,  self.functions)# pylint: disable=line-too-long
 
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger,
                                                         self.game_config, self.open_info,
@@ -282,6 +285,18 @@ class SnakeGameApp:
         Open the settings screen.
         """
         self.start_game("settings")
+    
+    def settings_values(self):
+        """
+        Open the settings values screen.
+        """
+        self.start_game("settings_values")
+    
+    def reset_settings(self):
+        """
+        Open the reset settings screen.
+        """
+        self.start_game("reset_settings")
 
     def start_game(self, game_type):
         """
@@ -309,6 +324,10 @@ class SnakeGameApp:
             self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "settings":
             self.settings_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
+        elif game_type == "settings_values":
+            self.settings_canvas_values = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+        elif game_type == "reset_settings":
+            self.settings_canvas_reset = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         elif game_type == "challange_choices":
             self.challange_choice_canvas = ChallangeChoices(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         elif game_type == "challange_settings":
@@ -341,6 +360,12 @@ class SnakeGameApp:
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.settings_canvas
+        elif game_type == "settings_values":
+            self.settings_canvas_values.pack(expand=True, fill="both")
+            self.main_canvas = self.settings_canvas_values
+        elif game_type == "reset_settings":
+            self.settings_canvas_reset.pack(expand=True, fill="both")
+            self.main_canvas = self.settings_canvas_reset
         elif game_type == "challange_choices":
             self.challange_choice_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.challange_choice_canvas
@@ -351,8 +376,8 @@ class SnakeGameApp:
         # Initializing the button panel and label panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
+        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions)
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
-        self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.settings_canvas, self.button_commands,self.game_logger,  self.functions) # pylint: disable=line-too-long
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger, self.game_config, self.open_info, self.open_settings) # pylint: disable=line-too-long
         self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.game_logger, self.game_config) # pylint: disable=line-too-long
         self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)
@@ -409,7 +434,16 @@ class SnakeGameApp:
             #self.patchnotes_displayed = False
 
         elif game_type == "settings":
-            self.reset_commands.print_buttons()
+            #self.create_option_button_panel.()
+            self.create_button_panel.reset_settings_button()
+            self.create_button_panel.settings_values_button()
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            
+        elif game_type == "settings_values":
+            if self.settings_canvas is not None and self.settings_canvas.winfo_exists():
+                self.settings_canvas = self.destroy_canvas(self.settings_canvas)
+            if self.settings_canvas_reset is not None and self.settings_canvas_reset.winfo_exists():
+                self.settings_canvas_reset = self.destroy_canvas(self.settings_canvas_reset)
             self.get_color_from_config()
             self.draw_snake_with_color(self.snake_color)
             self.framelabel_panel.set_create_label_canvas_flag(True)
@@ -419,7 +453,33 @@ class SnakeGameApp:
             self.settings_labels.create_settings_labels()
             self.settings_labels.create_theme_label()
             self.settings_labels.create_game_size_label()
-            self.reset_commands = ResetSettingsPanel(self.reset_settings_frame,self.settings_canvas, self.button_commands,self.game_logger, self.functions) # pylint: disable=line-too-long
+        
+        elif game_type == "reset_settings":
+            if self.settings_canvas is not None and self.settings_canvas.winfo_exists():
+                self.settings_canvas = self.destroy_canvas(self.settings_canvas)
+            if self.settings_canvas_values is not None and self.settings_canvas_values.winfo_exists():
+                self.settings_canvas_values = self.destroy_canvas(self.settings_canvas_values)
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.create_button_panel.settings_values_button()
+            self.framelabel_panel.create_settings_label()
+            self.create_reset_button_panel.reset_screen_size_button()
+            self.create_reset_button_panel.reset_theme_button()
+            self.create_reset_button_panel.reset_contrast_button()
+            self.create_reset_button_panel.reset_high_score_label_showing_button()
+            self.create_reset_button_panel.reset_snake_speed_button()
+            self.create_reset_button_panel.reset_game_size_button()
+            self.create_reset_button_panel.reset_game_size_button()
+            self.create_reset_button_panel.reset_snake_color_button()
+            self.create_reset_button_panel.reset_move_up_button()
+            self.create_reset_button_panel.reset_move_down_button()
+            self.create_reset_button_panel.reset_move_left_button()
+            self.create_reset_button_panel.reset_move_right_button()
+            self.create_reset_button_panel.reset_pause_game_button()
+            self.create_reset_button_panel.reset_start_game_button()
+            self.create_reset_button_panel.reset_restart_game_button()
+            self.create_reset_button_panel.reset_all_settings_button()
+            self.create_reset_button_panel.reset_all_movements_button()
+
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
@@ -448,22 +508,22 @@ class SnakeGameApp:
         """
         if not None:
             x1, y1, x2, y2 = 825, 125, 800, 100
-            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
             #800, 50
             x1, y1, x2, y2 = 830, 125, 855, 100
-            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
             x1, y1, x2, y2 = 860, 125, 885, 100
-            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
             x1, y1, x2, y2 = 890, 125, 915, 100
-            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
             x1, y1, x2, y2 = 920, 125, 945, 100
-            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
             x1, y1, x2, y2 = 950, 125, 975, 100
-            self.settings_canvas.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
 
     def patchnotes(self):
         """
@@ -513,10 +573,10 @@ class SnakeGameApp:
                 self.patchnotes_label.place_forget()
                 self.patchnotes_displayed = False
                 
-    def reset_settings(self):
-        """
-        Reset the specified setting to the default value.
-        """
+    # def reset_settings(self):
+    #     """
+    #     Reset the specified setting to the default value.
+    #     """
         #self.reset_commands = ResetSettingsPanel(self.reset_settings_frame, self.button_commands,self.game_logger,  self.functions) # pylint: disable=line-too-long
         # if hasattr(self, 'reset_settings_displayed') and self.settings_canvas is True:
         #     self.reset_settings_frame.place(x=250, y=75)
@@ -528,64 +588,41 @@ class SnakeGameApp:
         #     self.reset_settings_displayed = False
         #     print("if not hasattr(self, 'reset_settings_displayed'):")
 
-        if not self.reset_settings_displayed:
-            print("if not self.reset_settings_displayed:")
-            self.reset_label = ctk.CTkLabel(self.settings_canvas,
-                                        height = 50,
-                                        width = 873,
-                                        corner_radius = 6,
-                                        text="Reset Settings",
-                                        font=FONT_LIST[15])
-            self.reset_label.place(x=250, y=10)
+        # if not self.reset_settings_displayed:
+        #     print("if not self.reset_settings_displayed:")
+        #     self.reset_label = ctk.CTkLabel(self.settings_canvas,
+        #                                 height = 50,
+        #                                 width = 873,
+        #                                 corner_radius = 6,
+        #                                 text="Reset Settings",
+        #                                 font=FONT_LIST[15])
+        #     self.reset_label.place(x=250, y=10)
 
-            self.reset_settings_frame = ctk.CTkFrame(self.settings_canvas,
-                                        width=850,
-                                        height=600,
-                                        fg_color='Grey10') # pylint: disable=line-too-long
-            self.reset_settings_frame.place(x=250, y=75)
+        #     self.reset_settings_frame = ctk.CTkCanvas(self.settings_canvas,
+        #                                 width=850,
+        #                                 height=600,
+        #                                 bg='Grey20') # pylint: disable=line-too-long
+        #     self.reset_settings_frame.pack( side = "bottom", expand = True)
+
+        #     for _ in range(100):
+        #         self.label_test = ctk.CTkLabel(self.reset_settings_frame,
+        #                                        text="Test")
+        #         self.label_test.pack()
 
 
-            self.reset_settings_displayed = True
-            self.place_buttons_on_reset_frame_settings()
-            self.reset_commands.print_buttons()
+        #     self.reset_settings_displayed = True
+        #     self.place_buttons_on_reset_frame_settings()
+        #     self.reset_commands.print_buttons()
 
-        else:
-            print("else:")
-            self.reset_commands.print_buttons()
-            # Destroy the frame before destroying the buttons on it
-            self.reset_settings_frame.destroy()
-            self.reset_commands.destroy_buttons_on_reset_frame_settings()
-            self.reset_commands.print_buttons()
-            self.reset_settings_displayed = False
-            self.reset_label.destroy()
-    
-    def place_buttons_on_reset_frame_settings(self):
-
-        # Create a new 'reset_settings_frame'
-        self.reset_settings_frame = ctk.CTkFrame(self.settings_canvas,
-                                        width=850,
-                                        height=600,
-                                        fg_color='Grey10')
-
-        # Add the buttons to the frame
-        self.reset_commands.reset_screen_size_button()
-        self.reset_commands.reset_theme_button()
-        self.reset_commands.reset_contrast_button()
-        self.reset_commands.reset_high_score_label_showing_button()
-        self.reset_commands.reset_snake_speed_button()
-        self.reset_commands.reset_game_size_button()
-        self.reset_commands.reset_game_size_button()
-        self.reset_commands.reset_snake_color_button()
-        self.reset_commands.reset_move_up_button()
-        self.reset_commands.reset_move_down_button()
-        self.reset_commands.reset_move_left_button()
-        self.reset_commands.reset_move_right_button()
-        self.reset_commands.reset_pause_game_button()
-        self.reset_commands.reset_start_game_button()
-        self.reset_commands.reset_restart_game_button()
-        self.reset_commands.reset_all_settings_button()
-        self.reset_commands.reset_all_movements_button()
-
+        # else:
+        #     print("else:")
+        #     self.reset_commands.print_buttons()
+        #     # Destroy the frame before destroying the buttons on it
+        #     self.reset_settings_frame.destroy()
+        #     self.reset_commands.destroy_buttons_on_reset_frame_settings()
+        #     self.reset_commands.print_buttons()
+        #     self.reset_settings_displayed = False
+        #     self.reset_label.destroy()
 
     def reset_screen_size(self):
         """
@@ -1226,17 +1263,11 @@ class SnakeGameApp:
         Return to the home screen.
         """
         try:
-            self.reset_commands.print_buttons()
              # Reset the patchnotes_displayed variable
             if not hasattr(self.button_commands, 'patchnotes_displayed'):
-                self.scrollable_frame.place_forget()
+                if self.scrollable_frame is not None and self.scrollable_frame.winfo_exists():
+                    self.scrollable_frame.place_forget()
                 self.patchnotes_displayed = False
-
-            # Reset the reset_settings_displayed variable
-            if not hasattr(self.button_commands, 'reset_settings_displayed'):
-                self.reset_commands.destroy_buttons_on_reset_frame_settings()
-                self.reset_settings_frame.destroy()
-                self.reset_settings_displayed = False
 
             if self.main_canvas == self.classic_snake_canvas:
                 self.classic_snake_canvas.delete_game_labels()
@@ -1257,6 +1288,8 @@ class SnakeGameApp:
             self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
             self.info_canvas = self.destroy_canvas(self.info_canvas)
             self.settings_canvas = self.destroy_canvas(self.settings_canvas)
+            self.settings_canvas_reset = self.destroy_canvas(self.settings_canvas_reset)
+            self.settings_canvas_values = self.destroy_canvas(self.settings_canvas_values)
 
             # Show the original main canvas (home screen)
             self.original_main_canvas.pack(expand=True, fill="both")

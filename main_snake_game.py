@@ -438,6 +438,7 @@ class SnakeGameApp:
             self.create_button_panel.reset_settings_button()
             self.create_button_panel.settings_values_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.framelabel_panel.create_settings_label()
             
         elif game_type == "settings_values":
             if self.settings_canvas is not None and self.settings_canvas.winfo_exists():
@@ -447,7 +448,7 @@ class SnakeGameApp:
             self.get_color_from_config()
             self.draw_snake_with_color(self.snake_color)
             self.framelabel_panel.set_create_label_canvas_flag(True)
-            self.framelabel_panel.create_settings_label()
+            self.framelabel_panel.create_settings_values_label()
             self.create_option_button_panel.show_options()
             self.create_button_panel.reset_settings_button()
             self.settings_labels.create_settings_labels()
@@ -461,24 +462,9 @@ class SnakeGameApp:
                 self.settings_canvas_values = self.destroy_canvas(self.settings_canvas_values)
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.create_button_panel.settings_values_button()
-            self.framelabel_panel.create_settings_label()
-            self.create_reset_button_panel.reset_screen_size_button()
-            self.create_reset_button_panel.reset_theme_button()
-            self.create_reset_button_panel.reset_contrast_button()
-            self.create_reset_button_panel.reset_high_score_label_showing_button()
-            self.create_reset_button_panel.reset_snake_speed_button()
-            self.create_reset_button_panel.reset_game_size_button()
-            self.create_reset_button_panel.reset_game_size_button()
-            self.create_reset_button_panel.reset_snake_color_button()
-            self.create_reset_button_panel.reset_move_up_button()
-            self.create_reset_button_panel.reset_move_down_button()
-            self.create_reset_button_panel.reset_move_left_button()
-            self.create_reset_button_panel.reset_move_right_button()
-            self.create_reset_button_panel.reset_pause_game_button()
-            self.create_reset_button_panel.reset_start_game_button()
-            self.create_reset_button_panel.reset_restart_game_button()
-            self.create_reset_button_panel.reset_all_settings_button()
-            self.create_reset_button_panel.reset_all_movements_button()
+            self.settings_labels.create_settings_reset_labels()
+            self.framelabel_panel.create_settings_reset_label()
+            self.create_reset_button_panel.show_all_reset_buttons()
 
 
         # Pack buttons and labels
@@ -572,57 +558,6 @@ class SnakeGameApp:
                 self.scrollable_frame.place_forget()
                 self.patchnotes_label.place_forget()
                 self.patchnotes_displayed = False
-                
-    # def reset_settings(self):
-    #     """
-    #     Reset the specified setting to the default value.
-    #     """
-        #self.reset_commands = ResetSettingsPanel(self.reset_settings_frame, self.button_commands,self.game_logger,  self.functions) # pylint: disable=line-too-long
-        # if hasattr(self, 'reset_settings_displayed') and self.settings_canvas is True:
-        #     self.reset_settings_frame.place(x=250, y=75)
-        #     self.place_buttons_on_reset_frame_settings()
-        #     print("if hasattr(self, 'reset_settings_displayed') and self.settings_canvas is True:")
-            
-
-        # if not hasattr(self, 'reset_settings_displayed'):
-        #     self.reset_settings_displayed = False
-        #     print("if not hasattr(self, 'reset_settings_displayed'):")
-
-        # if not self.reset_settings_displayed:
-        #     print("if not self.reset_settings_displayed:")
-        #     self.reset_label = ctk.CTkLabel(self.settings_canvas,
-        #                                 height = 50,
-        #                                 width = 873,
-        #                                 corner_radius = 6,
-        #                                 text="Reset Settings",
-        #                                 font=FONT_LIST[15])
-        #     self.reset_label.place(x=250, y=10)
-
-        #     self.reset_settings_frame = ctk.CTkCanvas(self.settings_canvas,
-        #                                 width=850,
-        #                                 height=600,
-        #                                 bg='Grey20') # pylint: disable=line-too-long
-        #     self.reset_settings_frame.pack( side = "bottom", expand = True)
-
-        #     for _ in range(100):
-        #         self.label_test = ctk.CTkLabel(self.reset_settings_frame,
-        #                                        text="Test")
-        #         self.label_test.pack()
-
-
-        #     self.reset_settings_displayed = True
-        #     self.place_buttons_on_reset_frame_settings()
-        #     self.reset_commands.print_buttons()
-
-        # else:
-        #     print("else:")
-        #     self.reset_commands.print_buttons()
-        #     # Destroy the frame before destroying the buttons on it
-        #     self.reset_settings_frame.destroy()
-        #     self.reset_commands.destroy_buttons_on_reset_frame_settings()
-        #     self.reset_commands.print_buttons()
-        #     self.reset_settings_displayed = False
-        #     self.reset_label.destroy()
 
     def reset_screen_size(self):
         """
@@ -699,7 +634,7 @@ class SnakeGameApp:
         Reset the move up key to the default value.
         """
         self.config.read(self.config_path)
-        self.config.set('Settings', 'move_up', 'w')
+        self.config.set('KeyBindings', 'move_up', 'w')
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event("Move up key reset to w")
@@ -709,7 +644,7 @@ class SnakeGameApp:
         Reset the move down key to the default value.
         """
         self.config.read(self.config_path)
-        self.config.set('Settings', 'move_down', 's')
+        self.config.set('KeyBindings', 'move_down', 's')
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event("Move down key reset to s")
@@ -719,7 +654,7 @@ class SnakeGameApp:
         Reset the move left key to the default value.
         """
         self.config.read(self.config_path)
-        self.config.set('Settings', 'move_left', 'a')
+        self.config.set('KeyBindings', 'move_left', 'a')
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event("Move left key reset to a")
@@ -729,7 +664,7 @@ class SnakeGameApp:
         Reset the move right key to the default value.
         """
         self.config.read(self.config_path)
-        self.config.set('Settings', 'move_right', 'd')
+        self.config.set('KeyBindings', 'move_right', 'd')
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event("Move right key reset to d")
@@ -739,7 +674,7 @@ class SnakeGameApp:
         Reset the pause key to the default value.
         """
         self.config.read(self.config_path)
-        self.config.set('Settings', 'pause', 'Escape')
+        self.config.set('KeyBindings', 'pausegame', 'Escape')
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event("Pause key reset to Escape")
@@ -749,7 +684,7 @@ class SnakeGameApp:
         Reset the start game key to the default value.
         """
         self.config.read(self.config_path)
-        self.config.set('Settings', 'start_game', 'space')
+        self.config.set('KeyBindings', 'startgame', 'space')
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event("Start game key reset to space")
@@ -759,7 +694,7 @@ class SnakeGameApp:
         Reset the restart key to the default value.
         """
         self.config.read(self.config_path)
-        self.config.set('Settings', 'restart', 'r')
+        self.config.set('KeyBindings', 'restartgame', 'r')
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event("Restart key reset to r")
@@ -769,20 +704,26 @@ class SnakeGameApp:
         Reset all the settings to the default values.
         """
         self.config.read(self.config_path)
+        print('Before resetting:')  # Print settings before resetting
+        print(dict(self.config['Settings']))
         self.config.set('Settings', 'screen_size', 'Default')
         self.config.set('Settings', 'theme', 'Default')
         self.config.set('Settings', 'contrast', 'Default')
-        self.config.set('Settings', 'high_score_label_showing', 'Default')
+        self.config.set('Settings', 'label_needed_high_score', 'Default')
         self.config.set('Settings', 'snake_speed', '50')
         self.config.set('Settings', 'game_size', 'Default')
         self.config.set('Settings', 'snake_color', 'Default')
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        print('After resetting:')  # Print settings after resetting
+        print(print(dict(self.config['Settings'])))
         self.config.set('KeyBindings', 'move_up', 'w')
         self.config.set('KeyBindings', 'move_down', 's')
         self.config.set('KeyBindings', 'move_left', 'a')
         self.config.set('KeyBindings', 'move_right', 'd')
-        self.config.set('KeyBindings', 'pause', 'Escape')
-        self.config.set('KeyBindings', 'start_game', 'sapce')
-        self.config.set('KeyBindings', 'restart', 'r')
+        self.config.set('KeyBindings', 'pausegame', 'Escape')
+        self.config.set('KeyBindings', 'startgame', 'space')
+        self.config.set('KeyBindings', 'restartgame', 'r')
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event("All settings reset to default")
@@ -1268,6 +1209,9 @@ class SnakeGameApp:
                 if self.scrollable_frame is not None and self.scrollable_frame.winfo_exists():
                     self.scrollable_frame.place_forget()
                 self.patchnotes_displayed = False
+
+            if hasattr(self, 'button_commands'):
+                self.create_reset_button_panel.destroy_buttons()
 
             if self.main_canvas == self.classic_snake_canvas:
                 self.classic_snake_canvas.delete_game_labels()

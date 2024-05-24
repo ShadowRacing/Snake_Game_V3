@@ -38,7 +38,9 @@ class NameOffFrameLabelPanel:
             "challange_settings": "Challange Settings",
             "food_time_attack": "Challange Snake",
             "info": "Game Information",
-            "settings": "Settings"
+            "settings": "Settings",
+            "settings_reset": "Reset Settings",
+            "settings_values": "Settings Values"
         }
 
     def create_label_with_border(self, text):
@@ -124,6 +126,18 @@ class NameOffFrameLabelPanel:
         """
         self.create_label_canvas("settings")
 
+    def create_settings_reset_label(self):
+        """
+        Create the settings reset label.
+        """
+        self.create_label_canvas("settings_reset")
+
+    def create_settings_values_label(self):
+        """
+        Create the settings values label.
+        """
+        self.create_label_canvas("settings_values")
+
     def set_create_label_canvas_flag(self, value=True):
         """
         Set the create label canvas flag.
@@ -144,6 +158,7 @@ class SettingsOptionButtonLabels:
         self.contrast_label = None
         self.snake_color_label = None
         self.high_score_label = None
+        self.high_score_default_label = None
         self.snake_speed_label = None
         self.game_size_default_label = None
         self.snake_default_speed_label = None
@@ -162,6 +177,9 @@ class SettingsOptionButtonLabels:
         self.pause_game_default_label = None
         self.restart_game_label = None
         self.restart_game_default_label = None
+        self.reset_movement_label = None
+        self.reset_all_keybindings_label = None
+        
         self.create_label_canvas_flag = False
 
         self.label_width = GameConstants.SETTINGS_LABEL_WIDTH
@@ -187,6 +205,36 @@ class SettingsOptionButtonLabels:
         self.create_start_game_label()
         self.create_pause_game_label()
         self.create_restart_game_label()
+        self.snake_default_name_speed_label()
+        self.game_size_default_name_label()
+        self.create_keybinding_default_name_up_label()
+        self.create_keybinding_default_name_down_label()
+        self.create_keybinding_default_name_left_label()
+        self.create_keybinding_default_name_right_label()
+        self.create_game_default_name_label()
+        self.create_pause_game_default_name_label()
+        self.create_restart_game_default_name_label()
+
+    def create_settings_reset_labels(self):
+        """
+        Create the settings labels.
+        """
+        self.create_screen_options_label()
+        self.create_theme_options_label()
+        self.create_contrast_options_label()
+        self.snake_color_options_label()
+        self.create_high_score_label()
+        self.snake_speed_options_label()
+        self.game_size_options_label()
+        self.create_keybinding_up_label()
+        self.create_keybinding_down_label()
+        self.create_keybinding_left_label()
+        self.create_keybinding_right_label()
+        self.create_start_game_label()
+        self.create_pause_game_label()
+        self.create_restart_game_label()
+        self.create_reset_movement_label()
+        self.create_reset_all_keybindings_label()
 
     def create_screen_options_label(self):
         """
@@ -209,7 +257,7 @@ class SettingsOptionButtonLabels:
                                         width=self.label_width,
                                         height=self.label_height,
                                         corner_radius=self.corner_radius,
-                                        text="Theme options",
+                                        text="Theme",
                                         font=FONT_LIST[11],
                                         anchor=self.anchor)
         self.theme_label.place(x=400, y=10)
@@ -222,7 +270,7 @@ class SettingsOptionButtonLabels:
                                         width=self.label_width,
                                         height=self.label_height,
                                         corner_radius=self.corner_radius,
-                                        text="Contrast options",
+                                        text="Contrast",
                                         font=FONT_LIST[11],
                                         anchor=self.anchor)
         self.contrast_label.place(x=600, y=10)
@@ -253,6 +301,19 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.high_score_label.place(x=600, y=160)
 
+    def create_high_score_default_name_label(self):
+        """
+        Create the default high score label.
+        """
+        self.high_score_default_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Default: Default",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.high_score_default_label.place(x=600, y=250)
+
     def snake_speed_options_label(self):
         """
         Create the snake speed options label.
@@ -266,6 +327,10 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.snake_speed_label.place(x=200, y=160)
 
+    def snake_default_name_speed_label(self):
+        """
+        Create the default snake speed label.
+        """
         self.snake_default_speed_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
@@ -288,6 +353,10 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.game_size_label.place(x=400, y=160)
 
+    def game_size_default_name_label(self):
+        """
+        Create the default game size label.
+        """
         self.game_size_default_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
@@ -310,6 +379,10 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.keybindings_up_label.place(x=200, y=310)
 
+    def create_keybinding_default_name_up_label(self):
+        """
+        Create the default keybinding up label.
+        """
         self.keybindings_default_value_up_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
@@ -332,6 +405,10 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.keybindings_down_label.place(x=600, y=310)
 
+    def create_keybinding_default_name_down_label(self):
+        """
+        Create the default keybinding down label.
+        """
         self.keybindings_default_value_down_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
@@ -354,6 +431,10 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.keybindings_left_label.place(x=400, y=310)
 
+    def create_keybinding_default_name_left_label(self):
+        """
+        Create the default keybinding left label.
+        """
         self.keybindings_default_value_left_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
@@ -376,6 +457,10 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.keybindings_right_label.place(x=800, y=310)
 
+    def create_keybinding_default_name_right_label(self):
+        """
+        Create the default keybinding right label.
+        """
         self.keybindings_default_value_right_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
@@ -398,6 +483,10 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.start_game_label.place(x=200, y=460)
 
+    def create_game_default_name_label(self):
+        """
+        Create the default game label.
+        """
         self.start_game_default_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
@@ -420,6 +509,10 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.pause_game_label.place(x=400, y=460)
 
+    def create_pause_game_default_name_label(self):
+        """
+        Create the default pause game label.
+        """
         self.pause_game_default_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
@@ -442,6 +535,10 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.restart_game_label.place(x=600, y=460)
 
+    def create_restart_game_default_name_label(self):
+        """
+        Create the default restart game label.
+        """
         self.restart_game_default_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
@@ -450,6 +547,32 @@ class SettingsOptionButtonLabels:
                                         font=FONT_LIST[11],
                                         anchor=self.anchor)
         self.restart_game_default_label.place(x=600, y=550)
+
+    def create_reset_movement_label(self):
+        """
+        Create the reset movement label.
+        """
+        self.reset_movement_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="Movement",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.reset_movement_label.place(x=800, y=460)
+    
+    def create_reset_all_keybindings_label(self):
+        """
+        Create the reset all keybindings label.
+        """
+        self.reset_all_keybindings_label = ctk.CTkLabel(self.settings_canvas,
+                                        width=self.label_width,
+                                        height=self.label_height,
+                                        corner_radius=self.corner_radius,
+                                        text="All Keybindings",
+                                        font=FONT_LIST[11],
+                                        anchor=self.anchor)
+        self.reset_all_keybindings_label.place(x=800, y=160)
 
     def create_theme_label(self):
         """

@@ -82,7 +82,6 @@ class SnakeGameApp:
         self.leveling_button_press_variable_high_score_time = 0
         self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5)) # pylint: disable=line-too-long
 
-        
 
         self.text_name = "Shadow's Snake Game"
         self.text_version = "Version: 0.2.3"
@@ -171,7 +170,7 @@ class SnakeGameApp:
         # Initializing the button panel and label panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
 
-        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions)
+        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
 
         # And then create the ButtonCommands instance
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
@@ -285,13 +284,13 @@ class SnakeGameApp:
         Open the settings screen.
         """
         self.start_game("settings")
-    
+
     def settings_values(self):
         """
         Open the settings values screen.
         """
         self.start_game("settings_values")
-    
+
     def reset_settings(self):
         """
         Open the reset settings screen.
@@ -325,9 +324,9 @@ class SnakeGameApp:
         elif game_type == "settings":
             self.settings_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "settings_values":
-            self.settings_canvas_values = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+            self.settings_canvas_values = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "reset_settings":
-            self.settings_canvas_reset = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+            self.settings_canvas_reset = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "challange_choices":
             self.challange_choice_canvas = ChallangeChoices(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         elif game_type == "challange_settings":
@@ -376,7 +375,7 @@ class SnakeGameApp:
         # Initializing the button panel and label panel
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
-        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions)
+        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger, self.game_config, self.open_info, self.open_settings) # pylint: disable=line-too-long
         self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.game_logger, self.game_config) # pylint: disable=line-too-long
@@ -439,7 +438,7 @@ class SnakeGameApp:
             self.create_button_panel.settings_values_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_settings_label()
-            
+
         elif game_type == "settings_values":
             if self.settings_canvas is not None and self.settings_canvas.winfo_exists():
                 self.settings_canvas = self.destroy_canvas(self.settings_canvas)
@@ -454,11 +453,11 @@ class SnakeGameApp:
             self.settings_labels.create_settings_labels()
             self.settings_labels.create_theme_label()
             self.settings_labels.create_game_size_label()
-        
+
         elif game_type == "reset_settings":
             if self.settings_canvas is not None and self.settings_canvas.winfo_exists():
                 self.settings_canvas = self.destroy_canvas(self.settings_canvas)
-            if self.settings_canvas_values is not None and self.settings_canvas_values.winfo_exists():
+            if self.settings_canvas_values is not None and self.settings_canvas_values.winfo_exists(): # pylint: disable=line-too-long
                 self.settings_canvas_values = self.destroy_canvas(self.settings_canvas_values)
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.create_button_panel.settings_values_button()
@@ -494,22 +493,22 @@ class SnakeGameApp:
         """
         if not None:
             x1, y1, x2, y2 = 825, 125, 800, 100
-            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black") # pylint: disable=line-too-long
             #800, 50
             x1, y1, x2, y2 = 830, 125, 855, 100
-            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black") # pylint: disable=line-too-long
 
             x1, y1, x2, y2 = 860, 125, 885, 100
-            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black") # pylint: disable=line-too-long
 
             x1, y1, x2, y2 = 890, 125, 915, 100
-            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black") # pylint: disable=line-too-long
 
             x1, y1, x2, y2 = 920, 125, 945, 100
-            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black") # pylint: disable=line-too-long
 
             x1, y1, x2, y2 = 950, 125, 975, 100
-            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black")
+            self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black") # pylint: disable=line-too-long
 
     def patchnotes(self):
         """

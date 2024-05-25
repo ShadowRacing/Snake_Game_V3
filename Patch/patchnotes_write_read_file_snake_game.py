@@ -13,6 +13,30 @@ import traceback
 # Define the patchnotes list
 patchnotes = [
     {
+        "version": "0.2.5",
+        "changes": [
+            "New features:",
+            "Added the ability to reset kebindings",
+            "added the ability to reset all the settings to default",
+            "Redone the game settings screen again, now with a better layout",
+            "Bug fixes:",
+            "Fixed that the screen for the keybindings was not working correctly",
+            "When patchnotes is open and you go back home you cannot open the Patchnotes anymore",
+            "reset frame satays when you have opent it when going home",
+            "Buttons stayed for the settings reset buttons frame"
+        ]
+    },
+    {
+        "version": "0.2.4",
+        "changes": [
+            "New features:",
+            "Added the ability to change the key bindings",
+            "Redone the game settings screen",
+            "Bug fixes:",
+            "Fixed that the screen for the keybindings was not working correctly",
+        ]
+    },
+    {
         "version": "0.2.3",
         "changes": [
             "Rewrote the bindingskeys Preparing for the next update:",

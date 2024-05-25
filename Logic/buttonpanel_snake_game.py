@@ -1191,7 +1191,9 @@ class OptionButtonPanel:
         # Check if the selected keybinding is in the list of current keybindings
         for _, value in current_keybindings:
             if value == selected_value:
+                self.label_panel.create_keybindings_allready_used_label()
                 return True
+            self.label_panel.destroy_keybindings_allready_used_label()
 
         return False
 

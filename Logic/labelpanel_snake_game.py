@@ -177,9 +177,10 @@ class SettingsOptionButtonLabels:
         self.pause_game_default_label = None
         self.restart_game_label = None
         self.restart_game_default_label = None
-        self.reset_movement_label = None
-        self.reset_all_keybindings_label = None
-        
+        self.reset_keybindings_label = None
+        self.reset_all_settings_label = None
+        self.keybinding_allready_used_label = None
+ 
         self.create_label_canvas_flag = False
 
         self.label_width = GameConstants.SETTINGS_LABEL_WIDTH
@@ -233,8 +234,8 @@ class SettingsOptionButtonLabels:
         self.create_start_game_label()
         self.create_pause_game_label()
         self.create_restart_game_label()
-        self.create_reset_movement_label()
-        self.create_reset_all_keybindings_label()
+        self.create_reset_keybindings_label()
+        self.create_reset_all_settings_label()
 
     def create_screen_options_label(self):
         """
@@ -548,31 +549,52 @@ class SettingsOptionButtonLabels:
                                         anchor=self.anchor)
         self.restart_game_default_label.place(x=600, y=550)
 
-    def create_reset_movement_label(self):
+    def create_reset_keybindings_label(self):
         """
-        Create the reset movement label.
+        Create the reset Keybindings label.
         """
-        self.reset_movement_label = ctk.CTkLabel(self.settings_canvas,
+        self.reset_keybindings_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
                                         corner_radius=self.corner_radius,
-                                        text="Movement",
+                                        text="Keybindings",
                                         font=FONT_LIST[11],
                                         anchor=self.anchor)
-        self.reset_movement_label.place(x=800, y=460)
-    
-    def create_reset_all_keybindings_label(self):
+        self.reset_keybindings_label.place(x=800, y=460)
+
+    def create_reset_all_settings_label(self):
         """
         Create the reset all keybindings label.
         """
-        self.reset_all_keybindings_label = ctk.CTkLabel(self.settings_canvas,
+        self.reset_all_settings_label = ctk.CTkLabel(self.settings_canvas,
                                         width=self.label_width,
                                         height=self.label_height,
                                         corner_radius=self.corner_radius,
-                                        text="All Keybindings",
+                                        text="All Settings",
                                         font=FONT_LIST[11],
                                         anchor=self.anchor)
-        self.reset_all_keybindings_label.place(x=800, y=160)
+        self.reset_all_settings_label.place(x=800, y=160)
+
+    def create_keybindings_allready_used_label(self):
+        """
+        Create the keybindings allready used label.
+        """
+        if not hasattr(self, 'keybinding_allready_used_label') or self.keybinding_allready_used_label is None:
+            self.keybinding_allready_used_label = ctk.CTkLabel(self.settings_canvas,
+                                                width=400,
+                                                height=30,
+                                                corner_radius=6,
+                                                text="Keybinding already used, the keybinding will be reset.\n Please reopen this page to have the current keybindings",
+                                                font=FONT_LIST[11],
+                                                anchor='w')
+            self.keybinding_allready_used_label.place(x=200, y=650)
+
+    def destroy_keybindings_allready_used_label(self):
+        """
+        Destroy the keybindings allready used label.
+        """
+        if hasattr(self, 'keybinding_allready_used_label') and self.keybinding_allready_used_label is not None: # pylint: disable=line-too-long
+            self.keybinding_allready_used_label.destroy()
 
     def create_theme_label(self):
         """

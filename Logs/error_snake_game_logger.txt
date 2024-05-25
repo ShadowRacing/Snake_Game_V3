@@ -10046,3 +10046,207 @@ configparser.NoOptionError: No option 'theme' in section: 'Settings'
 
 
 
+[2024-05-25 19:08:17] 
+
+
+[2024-05-25 19:08:17] Started the Error Log File
+[2024-05-25 19:08:40] No errors occurred
+[2024-05-25 19:08:40] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:08:42] 
+
+
+[2024-05-25 19:08:42] Started the Error Log File
+[2024-05-25 19:18:45] No errors occurred
+[2024-05-25 19:18:45] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:26:26] 
+
+
+[2024-05-25 19:26:26] Started the Error Log File
+[2024-05-25 19:26:51] No errors occurred
+[2024-05-25 19:26:51] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:27:04] 
+
+
+[2024-05-25 19:27:04] Started the Error Log File
+[2024-05-25 19:28:24] No errors occurred
+[2024-05-25 19:28:24] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:28:27] 
+
+
+[2024-05-25 19:28:27] Started the Error Log File
+[2024-05-25 19:28:49] No errors occurred
+[2024-05-25 19:28:49] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:32:59] 
+
+
+[2024-05-25 19:32:59] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_optionmenu.py", line 385, in _dropdown_callback
+    self._command(self._current_value)
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 1273, in keybindings_callback_left
+    if self.is_key_binding_used(selected_value):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 1196, in is_key_binding_used
+    self.label_panel.destroy_keybindings_allready_used_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\labelpanel_snake_game.py", line 595, in destroy_keybindings_allready_used_label
+    self.keybinding_allready_used_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-05-25 19:33:08] No errors occurred
+[2024-05-25 19:33:08] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:33:59] 
+
+
+[2024-05-25 19:33:59] Started the Error Log File
+[2024-05-25 19:34:06] No errors occurred
+[2024-05-25 19:34:06] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:34:09] 
+
+
+[2024-05-25 19:34:09] Started the Error Log File
+[2024-05-25 19:36:50] No errors occurred
+[2024-05-25 19:36:50] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:36:53] 
+
+
+[2024-05-25 19:36:53] Started the Error Log File
+[2024-05-25 19:37:01] No errors occurred
+[2024-05-25 19:37:01] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:37:33] 
+
+
+[2024-05-25 19:37:33] Started the Error Log File
+[2024-05-25 19:37:45] No errors occurred
+[2024-05-25 19:37:45] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:40:13] 
+
+
+[2024-05-25 19:40:13] Started the Error Log File
+[2024-05-25 19:43:13] No errors occurred
+[2024-05-25 19:43:13] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:43:18] 
+
+
+[2024-05-25 19:43:18] Started the Error Log File
+[2024-05-25 19:43:24] No errors occurred
+[2024-05-25 19:43:24] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:44:03] 
+
+
+[2024-05-25 19:44:03] Started the Error Log File
+[2024-05-25 19:45:10] No errors occurred
+[2024-05-25 19:45:10] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:45:14] 
+
+
+[2024-05-25 19:45:14] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 487, in get_color_from_config
+    self.draw_snake_with_color(self.snake_color)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 496, in draw_snake_with_color
+    self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black") # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'create_rectangle'
+[2024-05-25 19:50:47] No errors occurred
+[2024-05-25 19:50:47] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:52:49] 
+
+
+[2024-05-25 19:52:49] Started the Error Log File
+[2024-05-25 19:54:20] No errors occurred
+[2024-05-25 19:54:20] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:54:22] 
+
+
+[2024-05-25 19:54:22] Started the Error Log File
+[2024-05-25 19:55:10] No errors occurred
+[2024-05-25 19:55:10] Closed the Error Log File
+
+
+
+
+[2024-05-25 19:55:13] 
+
+
+[2024-05-25 19:55:13] Started the Error Log File
+[2024-05-25 19:55:22] No errors occurred
+[2024-05-25 19:55:22] Closed the Error Log File
+
+
+
+

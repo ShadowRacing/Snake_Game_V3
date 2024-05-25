@@ -13,6 +13,18 @@ import traceback
 # Define the patchnotes list
 patchnotes = [
     {
+        "version": "0.2.6",
+        "changes": [
+            "Bug fixes:",
+            "game size sets contrast to default",
+            "game size sets theme to default",
+            "theme sets game size to default",
+            "theme sets contrast to default",
+            "contrast sets game size to default",
+            "contrast sets theme to default"
+        ]
+    },
+    {
         "version": "0.2.5",
         "changes": [
             "New features:",

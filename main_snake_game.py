@@ -84,10 +84,11 @@ class SnakeGameApp:
 
 
         self.text_name = "Shadow's Snake Game"
-        self.text_version = "Version: 0.2.3"
+        self.text_version = "Version: 0.2.6"
         self.text_developer = "Developer: Shadow"
         self.font_50 = ("Helvetica", 50)
         self.font_30 = ("Helvetica", 30)
+        self.font_20 = ("Helvetica", 20)
 
         # Creating the main canvas for the app
         self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
@@ -359,6 +360,12 @@ class SnakeGameApp:
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.settings_canvas
+            self.settings_canvas.update_idletasks()  # update canvas before getting its dimensions
+            canvas_width = self.settings_canvas.winfo_width() // 2 + 80
+            canvas_height = self.settings_canvas.winfo_height() // 2 - 50
+            self.settings_canvas.create_text(canvas_width, canvas_height, text="Here you can reset or change your settings", font=self.font_20, fill="white", tags="text") # pylint: disable=line-too-long
+            self.settings_canvas.create_text(canvas_width, canvas_height + 50, text="Values settings is for changes the settings like the theme or contrast", font=self.font_20, fill="white", tags="text") # pylint: disable=line-too-long
+            self.settings_canvas.create_text(canvas_width, canvas_height + 100, text="Reset settings is for resetting the settings", font=self.font_20, fill="white", tags="text") # pylint: disable=line-too-long
         elif game_type == "settings_values":
             self.settings_canvas_values.pack(expand=True, fill="both")
             self.main_canvas = self.settings_canvas_values
@@ -736,6 +743,9 @@ class SnakeGameApp:
         self.config.set('KeyBindings', 'move_down', 's')
         self.config.set('KeyBindings', 'move_left', 'a')
         self.config.set('KeyBindings', 'move_right', 'd')
+        self.config.set('KeyBindings', 'pausegame', 'Escape')
+        self.config.set('KeyBindings', 'startgame', 'space')
+        self.config.set('KeyBindings', 'restartgame', 'r')
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event("All movements reset to default")

@@ -50,6 +50,9 @@ class UpdateContrast:
         elif selected_value == 'System':
             ctk.set_appearance_mode('system')
             self.game_logger.log_game_event("Contrast mode set to: system")
+        elif selected_value == 'Default':
+            ctk.set_appearance_mode('dark')
+            self.game_logger.log_game_event("Contrast mode set to: default")
         else:
             ctk.set_appearance_mode('dark')
             self.game_logger.log_game_event("Contrast mode set to: dark")

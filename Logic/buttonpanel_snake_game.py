@@ -1148,16 +1148,22 @@ class OptionButtonPanel:
         """
         Function for the theme callback.
         """
+        try:
+            self.config.set('Settings', 'theme', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
         self.updating_config_ini()
-        self.theme_changer.update_config_theme(selected_value)
-        self.label_panel.create_theme_label()
+
 
     def contrast_callback(self, selected_value):
         """
         Function for the contrast callback.
         """
+        try:
+            self.config.set('Settings', 'contrast', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
         self.updating_config_ini()
-        self.contrast_updater.apply_contrast(selected_value)
 
     def snake_color_callback(self, selected_value):
         """

@@ -1141,6 +1141,10 @@ class OptionButtonPanel:
         """
         Function for the screen size callback.
         """
+        try:
+            self.config.set('Settings', 'screen_size', selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
         self.updating_config_ini()
         self.screen_size_changer.change_screen_size(selected_value)
 

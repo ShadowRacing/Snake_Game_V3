@@ -11329,3 +11329,81 @@ After update: Contrast - Default, Theme - Dark-Blue
 
 
 
+[2024-05-25 19:03:17] Started the app
+[2024-05-25 19:03:17] Started the GameApp Class
+[2024-05-25 19:03:17] Game mode: initial config
+[2024-05-25 19:03:17] Current Theme: Default
+[2024-05-25 19:03:17] Set initial theme to: Default
+[2024-05-25 19:03:17] Updated initial_theme in config.ini to: Default
+[2024-05-25 19:03:17] Current initial_theme in config.ini to: Default
+[2024-05-25 19:03:17] Theme applied: Default
+[2024-05-25 19:03:17] Updated contrast in config.ini to: Default
+[2024-05-25 19:03:17] Contrast mode set to: default
+[2024-05-25 19:03:17] Set initial game size to: Default
+[2024-05-25 19:03:17] Updated initial_game_size in config.ini to: Default
+[2024-05-25 19:03:17] Current initial_game_size in config.ini to: Default
+[2024-05-25 19:03:17] Label border width: 1
+[2024-05-25 19:03:17] label_border_height: 1
+[2024-05-25 19:03:17] Home_screen method called
+[2024-05-25 19:03:20] Set initial game size to: Default
+[2024-05-25 19:03:20] Updated initial_game_size in config.ini to: Default
+[2024-05-25 19:03:20] Current initial_game_size in config.ini to: Default
+[2024-05-25 19:03:20] Label border width: 1
+[2024-05-25 19:03:20] label_border_height: 1
+[2024-05-25 19:03:21] Set initial game size to: Default
+[2024-05-25 19:03:21] Updated initial_game_size in config.ini to: Default
+[2024-05-25 19:03:21] Current initial_game_size in config.ini to: Default
+[2024-05-25 19:03:21] Label border width: 1
+[2024-05-25 19:03:21] label_border_height: 1
+[2024-05-25 19:03:21] Updated label_needed_game_size in config.ini to: False
+[2024-05-25 19:03:23] Setting custom size: 1600x900
+[2024-05-25 19:03:23] Changing screen size to 1600x900
+[2024-05-25 19:03:23] Updated the config.ini Writing updates
+[2024-05-25 19:03:29] Changing screen size to Fullscreen
+[2024-05-25 19:03:29] Updated the config.ini Writing updates
+[2024-05-25 19:03:31] Setting custom size: 1200x800
+[2024-05-25 19:03:31] Changing screen size to Default
+[2024-05-25 19:03:31] Updated the config.ini Writing updates
+[2024-05-25 19:03:36] Setting custom size: 1600x900
+[2024-05-25 19:03:36] Changing screen size to 1600x900
+[2024-05-25 19:03:36] Updated the config.ini Writing updates
+[2024-05-25 19:03:41] Setting custom size: 1200x800
+[2024-05-25 19:03:41] Changing screen size to Default
+[2024-05-25 19:03:41] Updated the config.ini Writing updates
+[2024-05-25 19:03:43] Closed the app
+
+
+
+
+[2024-05-25 19:04:19] Started the app
+[2024-05-25 19:04:19] Started the GameApp Class
+[2024-05-25 19:04:19] Game mode: initial config
+[2024-05-25 19:04:19] Current Theme: Blue
+[2024-05-25 19:04:19] Set initial theme to: Blue
+[2024-05-25 19:04:19] Updated initial_theme in config.ini to: Blue
+[2024-05-25 19:04:19] Current initial_theme in config.ini to: Blue
+[2024-05-25 19:04:19] Theme applied: Blue
+[2024-05-25 19:04:19] Updated contrast in config.ini to: Default
+[2024-05-25 19:04:19] Contrast mode set to: default
+[2024-05-25 19:04:19] Set initial game size to: Default
+[2024-05-25 19:04:19] Updated initial_game_size in config.ini to: Default
+[2024-05-25 19:04:19] Current initial_game_size in config.ini to: Default
+[2024-05-25 19:04:19] Label border width: 1
+[2024-05-25 19:04:19] label_border_height: 1
+[2024-05-25 19:04:19] Home_screen method called
+[2024-05-25 19:04:20] Set initial game size to: Default
+[2024-05-25 19:04:20] Updated initial_game_size in config.ini to: Default
+[2024-05-25 19:04:20] Current initial_game_size in config.ini to: Default
+[2024-05-25 19:04:20] Label border width: 1
+[2024-05-25 19:04:20] label_border_height: 1
+[2024-05-25 19:04:21] Set initial game size to: Default
+[2024-05-25 19:04:21] Updated initial_game_size in config.ini to: Default
+[2024-05-25 19:04:21] Current initial_game_size in config.ini to: Default
+[2024-05-25 19:04:21] Label border width: 1
+[2024-05-25 19:04:21] label_border_height: 1
+[2024-05-25 19:04:21] Updated label_needed_game_size in config.ini to: False
+[2024-05-25 19:04:34] Closed the app
+
+
+
+

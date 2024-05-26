@@ -10250,3 +10250,13 @@ AttributeError: 'NoneType' object has no attribute 'create_rectangle'
 
 
 
+[2024-05-25 19:56:13] 
+
+
+[2024-05-25 19:56:13] Started the Error Log File
+[2024-05-25 19:56:16] No errors occurred
+[2024-05-25 19:56:16] Closed the Error Log File
+
+
+
+

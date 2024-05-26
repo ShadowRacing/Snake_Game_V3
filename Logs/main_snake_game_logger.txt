@@ -12032,3 +12032,29 @@ None
 
 
 
+[2024-05-25 19:56:13] Started the app
+[2024-05-25 19:56:13] Started the GameApp Class
+[2024-05-25 19:56:13] Game mode: initial config
+[2024-05-25 19:56:13] Current Theme: Default
+[2024-05-25 19:56:13] Set initial theme to: Default
+[2024-05-25 19:56:13] Updated initial_theme in config.ini to: Default
+[2024-05-25 19:56:13] Current initial_theme in config.ini to: Default
+[2024-05-25 19:56:13] Theme applied: Default
+[2024-05-25 19:56:13] Updated contrast in config.ini to: Default
+[2024-05-25 19:56:13] Contrast mode set to: default
+[2024-05-25 19:56:13] Set initial game size to: Default
+[2024-05-25 19:56:13] Updated initial_game_size in config.ini to: Default
+[2024-05-25 19:56:13] Current initial_game_size in config.ini to: Default
+[2024-05-25 19:56:13] Label border width: 1
+[2024-05-25 19:56:13] label_border_height: 1
+[2024-05-25 19:56:13] Home_screen method called
+[2024-05-25 19:56:15] Set initial game size to: Default
+[2024-05-25 19:56:15] Updated initial_game_size in config.ini to: Default
+[2024-05-25 19:56:15] Current initial_game_size in config.ini to: Default
+[2024-05-25 19:56:15] Label border width: 1
+[2024-05-25 19:56:15] label_border_height: 1
+[2024-05-25 19:56:16] Closed the app
+
+
+
+

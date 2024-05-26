@@ -13,6 +13,12 @@ import traceback
 # Define the patchnotes list
 patchnotes = [
     {
+        "version": "0.2.7",
+        "changes": [
+            "Rewrote code to make the main file have less code"
+        ]
+    },
+    {
         "version": "0.2.6",
         "changes": [
             "Bug fixes:",

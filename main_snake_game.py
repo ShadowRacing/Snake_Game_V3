@@ -475,7 +475,6 @@ class SnakeGameApp:
             self.framelabel_panel.create_settings_reset_label()
             self.create_reset_button_panel.show_all_reset_buttons()
 
-
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
         #self.create_button_panel.reset_high_score_buttons(game_type)

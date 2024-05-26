@@ -12605,3 +12605,137 @@ button_commands exists
 
 
 
+[2024-05-26 12:45:17] Started the app
+[2024-05-26 12:45:17] Started the GameApp Class
+[2024-05-26 12:45:17] Game mode: initial config
+[2024-05-26 12:45:17] Current Theme: Default
+[2024-05-26 12:45:17] Set initial theme to: Default
+[2024-05-26 12:45:17] Updated initial_theme in config.ini to: Default
+[2024-05-26 12:45:17] Current initial_theme in config.ini to: Default
+[2024-05-26 12:45:17] Theme applied: Default
+[2024-05-26 12:45:17] Updated contrast in config.ini to: Default
+[2024-05-26 12:45:17] Contrast mode set to: default
+[2024-05-26 12:45:17] Set initial game size to: 600x600
+[2024-05-26 12:45:17] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:45:17] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:45:17] Label border width: 1
+[2024-05-26 12:45:17] label_border_height: 1
+[2024-05-26 12:45:17] Home_screen method called
+[2024-05-26 12:45:18] Set initial game size to: 600x600
+[2024-05-26 12:45:18] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:45:18] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:45:18] Label border width: 1
+[2024-05-26 12:45:18] label_border_height: 1
+[2024-05-26 12:45:19] Set initial game size to: 600x600
+[2024-05-26 12:45:19] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:45:19] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:45:19] Label border width: 1
+[2024-05-26 12:45:19] label_border_height: 1
+[2024-05-26 12:55:27] Closed the app
+
+
+
+
+[2024-05-26 12:57:31] Started the app
+[2024-05-26 12:57:31] Started the GameApp Class
+[2024-05-26 12:57:31] Game mode: initial config
+[2024-05-26 12:57:31] Current Theme: Default
+[2024-05-26 12:57:31] Set initial theme to: Default
+[2024-05-26 12:57:31] Updated initial_theme in config.ini to: Default
+[2024-05-26 12:57:31] Current initial_theme in config.ini to: Default
+[2024-05-26 12:57:31] Theme applied: Default
+[2024-05-26 12:57:31] Updated contrast in config.ini to: Default
+[2024-05-26 12:57:31] Contrast mode set to: default
+[2024-05-26 12:57:31] Set initial game size to: 600x600
+[2024-05-26 12:57:31] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:57:31] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:57:31] Label border width: 1
+[2024-05-26 12:57:31] label_border_height: 1
+[2024-05-26 12:57:31] Home_screen method called
+[2024-05-26 12:57:36] Set initial game size to: 600x600
+[2024-05-26 12:57:36] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:57:36] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:57:36] Label border width: 1
+[2024-05-26 12:57:36] label_border_height: 1
+[2024-05-26 12:59:16] Set initial game size to: 600x600
+[2024-05-26 12:59:16] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:16] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:16] Label border width: 1
+[2024-05-26 12:59:16] label_border_height: 1
+[2024-05-26 12:59:45] Game width: 300
+[2024-05-26 12:59:45] Game height: 300
+[2024-05-26 12:59:45] 3
+[2024-05-26 12:59:45] Set initial game size to: 600x600
+[2024-05-26 12:59:45] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:45] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:45] Label border width: 1
+[2024-05-26 12:59:45] label_border_height: 1
+[2024-05-26 12:59:48] Game width: 300
+[2024-05-26 12:59:48] Game height: 300
+[2024-05-26 12:59:48] Game config Snake Length: 3
+[2024-05-26 12:59:48] Set initial game size to: 600x600
+[2024-05-26 12:59:48] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:48] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:48] Label border width: 1
+[2024-05-26 12:59:48] label_border_height: 1
+[2024-05-26 12:59:50] Game mode: food_time_attack
+[2024-05-26 12:59:50] Game state: start_game
+[2024-05-26 12:59:50] Snake challange game started
+[2024-05-26 12:59:50] Game width: 600
+[2024-05-26 12:59:50] Game height: 600
+[2024-05-26 12:59:50] Snake length from game_config: 5
+[2024-05-26 12:59:50] Reset snake length
+[2024-05-26 12:59:50] Game mode: food_time_attack
+[2024-05-26 12:59:50] Game state: start_game
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-26 12:59:50] Set initial game size to: 600x600
+[2024-05-26 12:59:50] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:50] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:50] Label border width: 1
+[2024-05-26 12:59:50] label_border_height: 1
+[2024-05-26 12:59:52] Deleted score challange
+[2024-05-26 12:59:52] Deleted high score challange
+[2024-05-26 12:59:52] Deleted Labels challange
+[2024-05-26 12:59:58] Game mode: snake_leveling
+[2024-05-26 12:59:58] start_game
+[2024-05-26 12:59:58] Reset snake length
+[2024-05-26 12:59:58] Game mode: snake_leveling
+[2024-05-26 12:59:58] Game state: start_game
+[2024-05-26 12:59:58] Game focused
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-05-26 12:59:58] Set initial game size to: 600x600
+[2024-05-26 12:59:58] Updated initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:58] Current initial_game_size in config.ini to: 600x600
+[2024-05-26 12:59:58] Label border width: 1
+[2024-05-26 12:59:58] label_border_height: 1
+[2024-05-26 13:00:14] Closed the app
+
+
+
+

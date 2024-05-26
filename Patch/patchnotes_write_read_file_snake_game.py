@@ -16,6 +16,8 @@ patchnotes = [
         "version": "0.2.7",
         "changes": [
             "Rewrote code to make the main file have less code"
+            "Bug fixes:",
+            "Classic and endless snake doesn't work"
         ]
     },
     {

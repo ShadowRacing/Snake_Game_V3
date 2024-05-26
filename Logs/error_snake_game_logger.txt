@@ -10435,3 +10435,23 @@ AttributeError: 'GameConfig' object has no attribute 'game_width'
 
 
 
+[2024-05-26 12:45:17] 
+
+
+[2024-05-26 12:45:17] Started the Error Log File
+[2024-05-26 12:55:28] No errors occurred
+[2024-05-26 12:55:28] Closed the Error Log File
+
+
+
+
+[2024-05-26 12:57:31] 
+
+
+[2024-05-26 12:57:31] Started the Error Log File
+[2024-05-26 13:00:14] No errors occurred
+[2024-05-26 13:00:14] Closed the Error Log File
+
+
+
+

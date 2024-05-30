@@ -28,6 +28,7 @@ class ButtonCommands:
     def __init__(self, game_logger, functions):
         self.functions = functions
         self.game_logger = game_logger
+        self.theme_updater = ThemeUpdater(self.game_logger)
 
     def home_command(self):
         """
@@ -35,6 +36,7 @@ class ButtonCommands:
         """
         if 'return_home' in self.functions:
             self.functions['return_home']()
+            self.theme_updater.reset_theme()
         else:
             self.game_logger.log_game_event("No function assigned to 'home'")
 
@@ -1143,10 +1145,10 @@ class OptionButtonPanel:
         """
         try:
             self.config.set('Settings', 'screen_size', selected_value)
+            self.updating_config_ini()
+            self.screen_size_changer.change_screen_size(selected_value)
         except FileNotFoundError as e:
             traceback.print_exc(e)
-        self.updating_config_ini()
-        self.screen_size_changer.change_screen_size(selected_value)
 
     def theme_callback(self, selected_value):
         """
@@ -1154,9 +1156,11 @@ class OptionButtonPanel:
         """
         try:
             self.config.set('Settings', 'theme', selected_value)
+            self.updating_config_ini()
+            self.label_panel.create_theme_label()
         except FileNotFoundError as e:
             traceback.print_exc(e)
-        self.updating_config_ini()
+        
 
 
     def contrast_callback(self, selected_value):
@@ -1165,9 +1169,10 @@ class OptionButtonPanel:
         """
         try:
             self.config.set('Settings', 'contrast', selected_value)
+            self.updating_config_ini()
+            self.contrast_updater.apply_contrast()
         except FileNotFoundError as e:
             traceback.print_exc(e)
-        self.updating_config_ini()
 
     def snake_color_callback(self, selected_value):
         """

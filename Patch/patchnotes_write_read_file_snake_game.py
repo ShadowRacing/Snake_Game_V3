@@ -13,6 +13,15 @@ import traceback
 # Define the patchnotes list
 patchnotes = [
     {
+        "version": "0.2.8",
+        "changes": [
+            "Redone the theme label and reset the value back to the initial theme",
+            "Bug fixes:",
+            "Fixed that the contrast was not updating correctly",
+            "Fixed that the theme was not updating correctly"
+        ]
+    },
+    {
         "version": "0.2.7",
         "changes": [
             "Rewrote code to make the main file have less code"

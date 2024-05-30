@@ -365,7 +365,7 @@ class SnakeGameApp:
             self.main_canvas = self.settings_canvas
             self.settings_canvas.update_idletasks()  # update canvas before getting its dimensions
             canvas_width = self.settings_canvas.winfo_width() // 2 + 80
-            canvas_height = self.settings_canvas.winfo_height() // 2 - 50
+            canvas_height = self.settings_canvas.winfo_height() // 2 - 100
             self.settings_canvas.create_text(canvas_width, canvas_height, text="Here you can reset or change your settings", font=self.font_20, fill="white", tags="text") # pylint: disable=line-too-long
             self.settings_canvas.create_text(canvas_width, canvas_height + 50, text="Values settings is for changes the settings like the theme or contrast", font=self.font_20, fill="white", tags="text") # pylint: disable=line-too-long
             self.settings_canvas.create_text(canvas_width, canvas_height + 100, text="Reset settings is for resetting the settings", font=self.font_20, fill="white", tags="text") # pylint: disable=line-too-long
@@ -450,6 +450,7 @@ class SnakeGameApp:
             self.framelabel_panel.create_settings_label()
 
         elif game_type == "settings_values":
+            self.create_reset_button_panel.destroy_buttons()
             if self.settings_canvas is not None and self.settings_canvas.winfo_exists():
                 self.settings_canvas = self.destroy_canvas(self.settings_canvas)
             if self.settings_canvas_reset is not None and self.settings_canvas_reset.winfo_exists():
@@ -572,201 +573,96 @@ class SnakeGameApp:
         Reset the screen size to the default value.
         """
         self.reset_config_values.reset_screen_size()
-        # self.config.read(self.config_path)
-        # self.config.set('Settings', 'screen_size', 'Default')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Screen size reset to Default")
 
     def reset_theme(self):
         """
         Reset the theme to the default value.
         """
         self.reset_config_values.reset_theme()
-        # self.config.read(self.config_path)
-        # self.config.set('Settings', 'theme', 'Default')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Theme reset to Default")
 
     def reset_contrast(self):
         """
         Reset the contrast to the default value.
         """
         self.reset_config_values.reset_contrast()
-        # self.config.read(self.config_path)
-        # self.config.set('Settings', 'contrast', 'Default')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Contrast reset to Default")
 
     def reset_high_score_showing(self):
         """
         Reset the high score label showing to the default value.
         """
         self.reset_config_values.reset_high_score_showing()
-        # self.config.read(self.config_path)
-        # self.config.set('Settings', 'high_score_label_showing', 'Default')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("High score label showing reset to True")
 
     def reset_snake_speed(self):
         """
         Reset the snake speed to the default value.
         """
         self.reset_config_values.reset_snake_speed()
-        # self.config.read(self.config_path)
-        # self.config.set('Settings', 'snake_speed', '50')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Snake speed reset to 5")
 
     def reset_game_size(self):
         """
         Reset the game size to the default value.
         """
         self.reset_config_values.reset_game_size()
-        # self.config.read(self.config_path)
-        # self.config.set('Settings', 'game_size', '600x600')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Game size reset to 600x600")
 
     def reset_snake_color(self):
         """
         Reset the snake color to the default value.
         """
         self.reset_config_values.reset_snake_color()
-        # self.config.read(self.config_path)
-        # self.config.set('Settings', 'snake_color', 'Default')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Snake color reset to Default")
 
     def reset_move_up(self):
         """
         Reset the move up key to the default value.
         """
         self.reset_config_values.reset_move_up()
-        # self.config.read(self.config_path)
-        # self.config.set('KeyBindings', 'move_up', 'w')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Move up key reset to w")
 
     def reset_move_down(self):
         """
         Reset the move down key to the default value.
         """
         self.reset_config_values.reset_move_down()
-        # self.config.read(self.config_path)
-        # self.config.set('KeyBindings', 'move_down', 's')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Move down key reset to s")
 
     def reset_move_left(self):
         """
         Reset the move left key to the default value.
         """
         self.reset_config_values.reset_move_left()
-        # self.config.read(self.config_path)
-        # self.config.set('KeyBindings', 'move_left', 'a')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Move left key reset to a")
 
     def reset_move_right(self):
         """
         Reset the move right key to the default value.
         """
         self.reset_config_values.reset_move_right()
-        # self.config.read(self.config_path)
-        # self.config.set('KeyBindings', 'move_right', 'd')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Move right key reset to d")
 
     def reset_pause(self):
         """
         Reset the pause key to the default value.
         """
         self.reset_config_values.reset_pause()
-        # self.config.read(self.config_path)
-        # self.config.set('KeyBindings', 'pausegame', 'Escape')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Pause key reset to Escape")
 
     def reset_start_game(self):
         """
         Reset the start game key to the default value.
         """
         self.reset_config_values.reset_start_game()
-        # self.config.read(self.config_path)
-        # self.config.set('KeyBindings', 'startgame', 'space')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Start game key reset to space")
 
     def reset_restart(self):
         """
         Reset the restart key to the default value.
         """
         self.reset_config_values.reset_restart()
-        # self.config.read(self.config_path)
-        # self.config.set('KeyBindings', 'restartgame', 'r')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("Restart key reset to r")
 
     def reset_all_settings(self):
         """
         Reset all the settings to the default values.
         """
         self.reset_config_values.reset_all_settings()
-        # self.config.read(self.config_path)
-        # print('Before resetting:')  # Print settings before resetting
-        # print(dict(self.config['Settings']))
-        # self.config.set('Settings', 'screen_size', 'Default')
-        # self.config.set('Settings', 'theme', 'Default')
-        # self.config.set('Settings', 'contrast', 'Default')
-        # self.config.set('Settings', 'label_needed_high_score', 'Default')
-        # self.config.set('Settings', 'snake_speed', '50')
-        # self.config.set('Settings', 'game_size', 'Default')
-        # self.config.set('Settings', 'snake_color', 'Default')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # print('After resetting:')  # Print settings after resetting
-        # print(print(dict(self.config['Settings'])))
-        # self.config.set('KeyBindings', 'move_up', 'w')
-        # self.config.set('KeyBindings', 'move_down', 's')
-        # self.config.set('KeyBindings', 'move_left', 'a')
-        # self.config.set('KeyBindings', 'move_right', 'd')
-        # self.config.set('KeyBindings', 'pausegame', 'Escape')
-        # self.config.set('KeyBindings', 'startgame', 'space')
-        # self.config.set('KeyBindings', 'restartgame', 'r')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("All settings reset to default")
 
     def reset_all_movements(self):
         """
         Reset all the movements to the default values.
         """
         self.reset_config_values.reset_all_movements()
-        # self.config.read(self.config_path)
-        # self.config.set('KeyBindings', 'move_up', 'w')
-        # self.config.set('KeyBindings', 'move_down', 's')
-        # self.config.set('KeyBindings', 'move_left', 'a')
-        # self.config.set('KeyBindings', 'move_right', 'd')
-        # self.config.set('KeyBindings', 'pausegame', 'Escape')
-        # self.config.set('KeyBindings', 'startgame', 'space')
-        # self.config.set('KeyBindings', 'restartgame', 'r')
-        # with open('config.ini', 'w', encoding='utf-8') as configfile:
-        #     self.config.write(configfile)
-        # self.game_logger.log_game_event("All movements reset to default")
 
     def classic_reset_high_score(self):
         """
@@ -919,6 +815,7 @@ class SnakeGameApp:
         Return to the home screen.
         """
         try:
+            self.theme_updater.reset_theme()
              # Reset the patchnotes_displayed variable
             if not hasattr(self.button_commands, 'patchnotes_displayed'):
                 if self.scrollable_frame is not None and self.scrollable_frame.winfo_exists():

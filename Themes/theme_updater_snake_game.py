@@ -67,6 +67,21 @@ class ThemeUpdater:
             theme = self.themes["Default"]
         return theme
 
+    def reset_theme(self):
+        """
+        Reset the theme to the initial theme.
+        """
+        # Set the theme to its initial state
+        initial_theme = self.config.get('Settings', 'initial_theme', fallback='Default')
+        self.update_config_theme(initial_theme)
+        # Reset the theme label
+        
+        self.config.set('Settings', 'theme', initial_theme)
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        self.game_logger.log_game_event("Reset theme label")
+
+
     def update_config_theme(self, selected_value):
         """
         Update the theme in the configuration file and write the changes to the file.

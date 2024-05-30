@@ -619,9 +619,9 @@ class SettingsOptionButtonLabels:
             traceback.print_exc(e)
 
         try:
+            if hasattr(self, 'restart_game_theme_label') and self.restart_game_theme_label is not None: # pylint: disable=line-too-long
+                self.restart_game_theme_label.destroy()
             if current_theme != initial_theme:
-                if hasattr(self, 'restart_game_theme_label') and self.restart_game_theme_label is not None: # pylint: disable=line-too-long
-                    self.restart_game_theme_label.destroy()
                 self.restart_game_theme_label = ctk.CTkLabel(self.settings_canvas,
                                                         width=160,
                                                         height=30,

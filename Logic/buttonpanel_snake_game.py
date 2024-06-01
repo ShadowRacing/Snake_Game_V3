@@ -56,6 +56,51 @@ class ButtonCommands:
         else:
             self.game_logger.log_game_event("No function assigned to 'info'")
 
+    def info_general_command(self):
+        """
+        Function for the general info button command.
+        """
+        if 'info_general' in self.functions:
+            self.functions['info_general']()
+        else:
+            self.game_logger.log_game_event("No function assigned to 'info_general'")
+
+    def info_classic_game_mode_command(self):
+        """
+        Function for the classic game mode info button command.
+        """
+        if 'info_classic_game_mode' in self.functions:
+            self.functions['info_classic_game_mode']()
+        else:
+            self.game_logger.log_game_event("No function assigned to 'info_classic_game_mode'")
+
+    def info_endless_game_mode_command(self):
+        """
+        Function for the endless game mode info button command.
+        """
+        if 'info_endless_game_mode' in self.functions:
+            self.functions['info_endless_game_mode']()
+        else:
+            self.game_logger.log_game_event("No function assigned to 'info_endless_game_mode'")
+
+    def info_leveling_game_mode_command(self):
+        """
+        Function for the leveling game mode info button command.
+        """
+        if 'info_leveling_game_mode' in self.functions:
+            self.functions['info_leveling_game_mode']()
+        else:
+            self.game_logger.log_game_event("No function assigned to 'info_leveling_game_mode'")
+
+    def info_challange_game_mode_command(self):
+        """
+        Function for the challange game mode info button command.
+        """
+        if 'info_challange_game_mode' in self.functions:
+            self.functions['info_challange_game_mode']()
+        else:
+            self.game_logger.log_game_event("No function assigned to 'info_challange_game_mode'")
+
     def patchnotes_command(self):
         """
         Function for the patchnotes button command.
@@ -398,7 +443,7 @@ class ClickButtonPanel:
         quit_button = ctk.CTkButton(self.button_canvas, text="Quit", font=FONT_LIST[11],
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.quit_command)
-        quit_button.grid(in_=self.button_canvas, row=20, column=0, padx=10, pady=10, sticky="w")
+        quit_button.grid(in_=self.button_canvas, row=100, column=0, padx=10, pady=10, sticky="w")
 
     def settings_button(self):
         """
@@ -426,6 +471,51 @@ class ClickButtonPanel:
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.info_command)
         info_button.grid(in_=self.button_canvas, row=6, column=0, padx=10, pady=10, sticky="w")
+
+    def info_general_button(self):
+        """
+        Function for creating the general info button.
+        """
+        info_general_button = ctk.CTkButton(self.button_canvas, text="General", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.info_general_command)
+        info_general_button.grid(in_=self.button_canvas, row=16, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
+
+    def info_classic_game_mode_button(self):
+        """
+        Function for creating the classic game mode info button.
+        """
+        info_classic_game_mode_button = ctk.CTkButton(self.button_canvas, text="Classic", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.info_classic_game_mode_command)
+        info_classic_game_mode_button.grid(in_=self.button_canvas, row=17, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
+
+    def info_endless_game_mode_button(self):
+        """
+        Function for creating the endless game mode info button.
+        """
+        info_endless_game_mode_button = ctk.CTkButton(self.button_canvas, text="Endless", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.info_endless_game_mode_command)
+        info_endless_game_mode_button.grid(in_=self.button_canvas, row=18, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
+
+    def info_leveling_game_mode_button(self):
+        """
+        Function for creating the leveling game mode info button.
+        """
+        info_leveling_game_mode_button = ctk.CTkButton(self.button_canvas, text="Leveling", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.info_leveling_game_mode_command)
+        info_leveling_game_mode_button.grid(in_=self.button_canvas, row=19, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
+
+    def info_challange_game_mode_button(self):
+        """
+        Function for creating the challange game mode info button.
+        """
+        info_challange_game_mode_button = ctk.CTkButton(self.button_canvas, text="Challange", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.info_challange_game_mode_command)
+        info_challange_game_mode_button.grid(in_=self.button_canvas, row=20, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
 
     def patchnotes_button(self):
         """

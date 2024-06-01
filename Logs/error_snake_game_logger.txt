@@ -10826,3 +10826,654 @@ AttributeError: 'NoneType' object has no attribute 'configure'
 
 
 
+[2024-06-01 20:49:10] 
+
+
+[2024-06-01 20:49:10] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 100, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 251, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 323, in start_game
+    self.endless_snake_canvas = SnakeEndless(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 101, in __init__
+    self.configfile()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 210, in configfile
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 249, in start_screen
+    self.game_labels_panel_2.endless_update_high_score_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 450, in endless_update_high_score_labels
+    self.endless_update_high_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 532, in endless_update_high_score_label
+    self.endless_high_score_label.configure(text=f"Score: {self.endless_high_score_label_} ") # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-06-01 20:49:21] No errors occurred
+[2024-06-01 20:49:21] Closed the Error Log File
+
+
+
+
+[2024-06-01 20:50:07] 
+
+
+[2024-06-01 20:50:07] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 100, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 251, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 323, in start_game
+    self.endless_snake_canvas = SnakeEndless(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 101, in __init__
+    self.configfile()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 210, in configfile
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 249, in start_screen
+    self.game_labels_panel_2.endless_update_high_score_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 450, in endless_update_high_score_labels
+    self.endless_update_high_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 532, in endless_update_high_score_label
+    self.endless_high_score_label.configure(text=f"Score: {self.endless_high_score_label_} ") # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-06-01 20:50:10] No errors occurred
+[2024-06-01 20:50:10] Closed the Error Log File
+
+
+
+
+[2024-06-01 20:53:55] 
+
+
+[2024-06-01 20:53:55] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 869, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 183, in __init__
+    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.game_logger,  self.game_config) # pylint: disable=line-too-long
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 118, in __init__
+    self.endless_create_high_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 512, in endless_create_high_score_label
+    self.endless_update_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 462, in endless_update_game_labels
+    self.endless_update_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 504, in endless_update_score_label
+    self.endless_score_label.configure(text=f"Score: {self.endless_score_label_} ")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-06-01 20:54:50] 
+
+
+[2024-06-01 20:54:50] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 869, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 183, in __init__
+    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.game_logger,  self.game_config) # pylint: disable=line-too-long
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 71, in __init__
+    self.endless_score_label_ = ctk.CTkLabel()
+                                ^^^^^^^^^^^^^^
+TypeError: CTkLabel.__init__() missing 1 required positional argument: 'master'
+[2024-06-01 20:55:17] 
+
+
+[2024-06-01 20:55:17] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 869, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 183, in __init__
+    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.game_logger,  self.game_config) # pylint: disable=line-too-long
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 118, in __init__
+    self.endless_create_high_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 512, in endless_create_high_score_label
+    self.endless_update_game_labels()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 462, in endless_update_game_labels
+    self.endless_update_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 504, in endless_update_score_label
+    self.endless_score_label.configure(text=f"Score: {self.endless_score_label_} ")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-06-01 20:56:09] 
+
+
+[2024-06-01 20:56:09] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 869, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 183, in __init__
+    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.game_logger,  self.game_config) # pylint: disable=line-too-long
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 118, in __init__
+    self.endless_create_high_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 515, in endless_create_high_score_label
+    corner_radius=self.corner_radius,
+                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'corner_radius'
+[2024-06-01 20:56:25] 
+
+
+[2024-06-01 20:56:25] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 869, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 183, in __init__
+    self.game_labels_panel = GameLabelsPanel(self.main_canvas,self.game_logger,  self.game_config) # pylint: disable=line-too-long
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 118, in __init__
+    self.endless_create_high_score_label()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\game_labelpanel.py", line 515, in endless_create_high_score_label
+    corner_radius=self.corner_radius,
+                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'GameLabelsPanel' object has no attribute 'corner_radius'
+[2024-06-01 20:57:42] 
+
+
+[2024-06-01 20:57:42] Started the Error Log File
+[2024-06-01 20:57:47] No errors occurred
+[2024-06-01 20:57:47] Closed the Error Log File
+
+
+
+
+[2024-06-01 20:58:25] 
+
+
+[2024-06-01 20:58:25] Started the Error Log File
+[2024-06-01 20:58:36] No errors occurred
+[2024-06-01 20:58:36] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:00:22] 
+
+
+[2024-06-01 21:00:22] Started the Error Log File
+[2024-06-01 21:01:19] No errors occurred
+[2024-06-01 21:01:19] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:13:53] 
+
+
+[2024-06-01 21:13:53] Started the Error Log File
+[2024-06-01 21:13:55] No errors occurred
+[2024-06-01 21:13:55] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:15:08] 
+
+
+[2024-06-01 21:15:08] Started the Error Log File
+[2024-06-01 21:15:12] No errors occurred
+[2024-06-01 21:15:12] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:16:12] 
+
+
+[2024-06-01 21:16:12] Started the Error Log File
+[2024-06-01 21:16:29] No errors occurred
+[2024-06-01 21:16:29] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:18:19] 
+
+
+[2024-06-01 21:18:19] Started the Error Log File
+[2024-06-01 21:18:25] No errors occurred
+[2024-06-01 21:18:25] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:18:48] 
+
+
+[2024-06-01 21:18:48] Started the Error Log File
+[2024-06-01 21:18:52] No errors occurred
+[2024-06-01 21:18:52] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:20:55] 
+
+
+[2024-06-01 21:20:55] Started the Error Log File
+[2024-06-01 21:21:03] No errors occurred
+[2024-06-01 21:21:03] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:28:50] 
+
+
+[2024-06-01 21:28:50] Started the Error Log File
+[2024-06-01 21:29:00] No errors occurred
+[2024-06-01 21:29:00] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:30:06] 
+
+
+[2024-06-01 21:30:06] Started the Error Log File
+[2024-06-01 21:30:14] No errors occurred
+[2024-06-01 21:30:14] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:34:56] 
+
+
+[2024-06-01 21:34:56] Started the Error Log File
+[2024-06-01 21:35:02] No errors occurred
+[2024-06-01 21:35:02] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:41:07] 
+
+
+[2024-06-01 21:41:07] Started the Error Log File
+[2024-06-01 21:41:17] No errors occurred
+[2024-06-01 21:41:17] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:41:19] 
+
+
+[2024-06-01 21:41:19] Started the Error Log File
+[2024-06-01 21:41:29] No errors occurred
+[2024-06-01 21:41:29] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:42:57] 
+
+
+[2024-06-01 21:42:57] Started the Error Log File
+[2024-06-01 21:43:04] No errors occurred
+[2024-06-01 21:43:04] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:43:26] 
+
+
+[2024-06-01 21:43:26] Started the Error Log File
+[2024-06-01 21:43:50] No errors occurred
+[2024-06-01 21:43:50] Closed the Error Log File
+
+
+
+
+[2024-06-01 21:48:14] 
+
+
+[2024-06-01 21:48:14] Started the Error Log File
+[2024-06-01 22:00:50] No errors occurred
+[2024-06-01 22:00:50] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:00:52] 
+
+
+[2024-06-01 22:00:52] Started the Error Log File
+[2024-06-01 22:01:15] No errors occurred
+[2024-06-01 22:01:15] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:01:19] 
+
+
+[2024-06-01 22:01:19] Started the Error Log File
+[2024-06-01 22:01:26] No errors occurred
+[2024-06-01 22:01:26] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:01:43] 
+
+
+[2024-06-01 22:01:43] Started the Error Log File
+[2024-06-01 22:02:02] No errors occurred
+[2024-06-01 22:02:02] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:10:55] 
+
+
+[2024-06-01 22:10:55] Started the Error Log File
+[2024-06-01 22:11:04] No errors occurred
+[2024-06-01 22:11:04] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:12:50] 
+
+
+[2024-06-01 22:12:50] Started the Error Log File
+[2024-06-01 22:13:00] No errors occurred
+[2024-06-01 22:13:00] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:14:14] 
+
+
+[2024-06-01 22:14:14] Started the Error Log File
+[2024-06-01 22:14:24] No errors occurred
+[2024-06-01 22:14:24] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:18:46] 
+
+
+[2024-06-01 22:18:46] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 64, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 622, in info_general
+    self.canvas_test.lift()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2998, in tag_raise
+    self.tk.call((self._w, 'raise') + args)
+_tkinter.TclError: wrong # args: should be ".!ctkcanvas2.!ctkframe.!canvas.!ctkscrollableframe.!ctkcanvas raise tagOrId ?aboveThis?"
+[2024-06-01 22:18:53] No errors occurred
+[2024-06-01 22:18:53] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:19:50] 
+
+
+[2024-06-01 22:19:50] Started the Error Log File
+[2024-06-01 22:19:58] No errors occurred
+[2024-06-01 22:19:58] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:22:27] 
+
+
+[2024-06-01 22:22:27] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 64, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 620, in info_general
+    self.canvas_test = ctk.CTkCanvas(self, bg='red', highlightbackground='Black', highlightthickness=5, width = 100, height = 100) # pylint: disable=line-too-long
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_rendering\ctk_canvas.py", line 31, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2744, in __init__
+    Widget.__init__(self, master, 'canvas', cnf, kw)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'tk'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 64, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 620, in info_general
+    self.canvas_test = ctk.CTkCanvas(self, bg='red', highlightbackground='Black', highlightthickness=5, width = 100, height = 100) # pylint: disable=line-too-long
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_rendering\ctk_canvas.py", line 31, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2744, in __init__
+    Widget.__init__(self, master, 'canvas', cnf, kw)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2622, in __init__
+    self._setup(master, cnf)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2591, in _setup
+    self.tk = master.tk
+              ^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'tk'
+[2024-06-01 22:22:30] No errors occurred
+[2024-06-01 22:22:30] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:22:47] 
+
+
+[2024-06-01 22:22:47] Started the Error Log File
+[2024-06-01 22:22:52] No errors occurred
+[2024-06-01 22:22:52] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:23:33] 
+
+
+[2024-06-01 22:23:33] Started the Error Log File
+[2024-06-01 22:24:07] No errors occurred
+[2024-06-01 22:24:07] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:24:09] 
+
+
+[2024-06-01 22:24:09] Started the Error Log File
+[2024-06-01 22:26:27] No errors occurred
+[2024-06-01 22:26:27] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:26:46] 
+
+
+[2024-06-01 22:26:46] Started the Error Log File
+[2024-06-01 22:28:20] No errors occurred
+[2024-06-01 22:28:20] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:28:22] 
+
+
+[2024-06-01 22:28:22] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 64, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 624, in info_general
+    self.canvas_test.lift()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2998, in tag_raise
+    self.tk.call((self._w, 'raise') + args)
+_tkinter.TclError: wrong # args: should be ".!ctkcanvas2.!ctkframe.!canvas.!ctkscrollableframe.!ctkcanvas raise tagOrId ?aboveThis?"
+[2024-06-01 22:28:28] No errors occurred
+[2024-06-01 22:28:28] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:29:08] 
+
+
+[2024-06-01 22:29:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 64, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 624, in info_general
+    self.canvas_test.canvas.tag_raise(self.canvas_test.canvas_id)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CTkCanvas' object has no attribute 'canvas'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 64, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 624, in info_general
+    self.canvas_test.canvas.tag_raise(self.canvas_test.canvas_id)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CTkCanvas' object has no attribute 'canvas'
+[2024-06-01 22:29:14] No errors occurred
+[2024-06-01 22:29:14] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:30:15] 
+
+
+[2024-06-01 22:30:15] Started the Error Log File
+[2024-06-01 22:33:22] No errors occurred
+[2024-06-01 22:33:22] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:33:24] 
+
+
+[2024-06-01 22:33:24] Started the Error Log File
+[2024-06-01 22:33:30] No errors occurred
+[2024-06-01 22:33:30] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:33:56] 
+
+
+[2024-06-01 22:33:56] Started the Error Log File
+[2024-06-01 22:34:26] No errors occurred
+[2024-06-01 22:34:26] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:34:30] 
+
+
+[2024-06-01 22:34:30] Started the Error Log File
+[2024-06-01 22:34:37] No errors occurred
+[2024-06-01 22:34:37] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:34:46] 
+
+
+[2024-06-01 22:34:46] Started the Error Log File
+[2024-06-01 22:34:52] No errors occurred
+[2024-06-01 22:34:52] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:40:03] 
+
+
+[2024-06-01 22:40:03] Started the Error Log File
+[2024-06-01 22:40:07] No errors occurred
+[2024-06-01 22:40:07] Closed the Error Log File
+
+
+
+
+[2024-06-01 22:51:23] 
+
+
+[2024-06-01 22:51:23] Started the Error Log File
+[2024-06-01 22:51:45] No errors occurred
+[2024-06-01 22:51:45] Closed the Error Log File
+
+
+
+

@@ -84,7 +84,7 @@ class SnakeGameApp:
 
 
         self.text_name = "Shadow's Snake Game"
-        self.text_version = "Version: 0.2.7"
+        self.text_version = "Version: 0.2.8"
         self.text_developer = "Developer: Shadow"
         self.font_50 = ("Helvetica", 50)
         self.font_30 = ("Helvetica", 30)
@@ -111,9 +111,24 @@ class SnakeGameApp:
         self.reset_settings_frame_1 = None
 
         self.patchnotes_displayed = False
+        self.info_general_displayed = False
+        self.info_classic_displayed = False
+        self.info_endless_displayed = False
+        self.info_leveling_displayed = False
+        self.info_challange_displayed = False
         self.reset_settings_displayed = False
         self.scrollable_frame = self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+        self.scrollable_frame_2 = self.scrollable_frame_2 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+        self.scrollable_frame_3 = self.scrollable_frame_3 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+        self.scrollable_frame_4 = self.scrollable_frame_4 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+        self.scrollable_frame_5 = self.scrollable_frame_5 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+        self.scrollable_frame_6 = self.scrollable_frame_6 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
         self.patchnotes_label = None
+        self.info_general_label = None
+        self.info_classic_label = None
+        self.info_endless_label = None
+        self.info_leveling_label = None
+        self.info_challange_label = None
 
         #create the functions dictionary
         self.functions = {
@@ -163,6 +178,11 @@ class SnakeGameApp:
             'reset_restart': self.reset_restart,
             'reset_all_settings': self.reset_all_settings,
             'reset_all_movements': self.reset_all_movements,
+            'info_general': self.info_general,
+            'info_classic_game_mode': self.info_classic,
+            'info_endless_game_mode': self.info_endless,
+            'info_leveling_game_mode': self.info_leveling,
+            'info_challange_game_mode': self.info_challange,
         }
 
         self.create_option_button_panel = None
@@ -442,6 +462,11 @@ class SnakeGameApp:
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_label()
             self.create_button_panel.patchnotes_button()
+            self.create_button_panel.info_general_button()
+            self.create_button_panel.info_classic_game_mode_button()
+            self.create_button_panel.info_endless_game_mode_button()
+            self.create_button_panel.info_leveling_game_mode_button()
+            self.create_button_panel.info_challange_game_mode_button()
             #self.patchnotes_displayed = False
 
         elif game_type == "settings":
@@ -568,6 +593,146 @@ class SnakeGameApp:
                 self.scrollable_frame.place_forget()
                 self.patchnotes_label.place_forget()
                 self.patchnotes_displayed = False
+
+    def info_general(self):
+        """
+        Display the general information.
+        """
+
+        if hasattr(self, 'info_general_displayed') and self.info_canvas is True:
+            self.scrollable_frame_2.place(x=250, y=75)
+
+        if not hasattr(self, 'info_general_displayed'):
+            self.info_general_displayed = False
+
+        if not self.info_general_displayed:
+            # Create a scrollable frame and load the general information into it
+            self.info_general_label = ctk.CTkLabel(self.info_canvas,
+                                        height = 50,
+                                        width = 873,
+                                        corner_radius = 6,
+                                        text="General Information", font=FONT_LIST[15])
+            self.info_general_label.place(x=250, y=10)
+            self.scrollable_frame_2 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+            self.scrollable_frame_2.place(x=250, y=75)
+            self.info_general_displayed = True
+        else:
+            if self.scrollable_frame_2 is not None:
+                self.scrollable_frame_2.place_forget()
+                self.info_general_label.place_forget()
+                self.info_general_displayed = False
+
+    def info_classic(self):
+        """
+        Display the classic game mode information.
+        """
+
+        if hasattr(self, 'info_classic_displayed') and self.info_canvas is True:
+            self.scrollable_frame_3.place(x=250, y=75)
+
+        if not hasattr(self, 'info_classic_displayed'):
+            self.info_classic_displayed = False
+
+        if not self.info_classic_displayed:
+            # Create a scrollable frame and load the classic game mode information into it
+            self.info_classic_label = ctk.CTkLabel(self.info_canvas,
+                                        height = 50,
+                                        width = 873,
+                                        corner_radius = 6,
+                                        text="Classic Game Mode Information", font=FONT_LIST[15]) # pylint: disable=line-too-long
+            self.info_classic_label.place(x=250, y=10)
+            self.scrollable_frame_3 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+            self.scrollable_frame_3.place(x=250, y=75)
+            self.info_classic_displayed = True
+        else:
+            if self.scrollable_frame_3 is not None:
+                self.scrollable_frame_3.place_forget()
+                self.info_classic_label.place_forget()
+                self.info_classic_displayed = False
+
+    def info_endless(self):
+        """
+        Display the endless game mode information.
+        """
+
+        if hasattr(self, 'info_endless_displayed') and self.info_canvas is True: # pylint: disable=line-too-long
+            self.scrollable_frame_4.place(x=250, y=75)
+
+        if not hasattr(self, 'info_endless_displayed'):
+            self.info_endless_displayed = False
+
+        if not self.info_endless_displayed:
+            # Create a scrollable frame and load the endless game mode information into it
+            self.info_endless_label = ctk.CTkLabel(self.info_canvas,
+                                        height = 50,
+                                        width = 873,
+                                        corner_radius = 6,
+                                        text="Endless Game Mode Information", font=FONT_LIST[15]) # pylint: disable=line-too-long
+            self.info_endless_label.place(x=250, y=10)
+            self.scrollable_frame_4 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+            self.scrollable_frame_4.place(x=250, y=75)
+            self.info_endless_displayed = True
+        else:
+            if self.scrollable_frame_4 is not None:
+                self.scrollable_frame_4.place_forget()
+                self.info_endless_label.place_forget()
+                self.info_endless_displayed = False
+
+    def info_leveling(self):
+        """
+        Display the leveling game mode information.
+        """
+
+        if hasattr(self, 'info_leveling_displayed') and self.info_canvas is True: # pylint: disable=line-too-long
+            self.scrollable_frame_5.place(x=250, y=75)
+
+        if not hasattr(self, 'info_leveling_displayed'):
+            self.info_leveling_displayed = False
+
+        if not self.info_leveling_displayed:
+            # Create a scrollable frame and load the leveling game mode information into it
+            self.info_leveling_label = ctk.CTkLabel(self.info_canvas,
+                                        height = 50,
+                                        width = 873,
+                                        corner_radius = 6,
+                                        text="Leveling Game Mode Information", font=FONT_LIST[15]) # pylint: disable=line-too-long
+            self.info_leveling_label.place(x=250, y=10)
+            self.scrollable_frame_5 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+            self.scrollable_frame_5.place(x=250, y=75)
+            self.info_leveling_displayed = True
+        else:
+            if self.scrollable_frame_5 is not None:
+                self.scrollable_frame_5.place_forget()
+                self.info_leveling_label.place_forget()
+                self.info_leveling_displayed = False
+
+    def info_challange(self):
+        """
+        Display the challange game mode information.
+        """
+
+        if hasattr(self, 'info_challange_displayed') and self.info_canvas is True: # pylint: disable=line-too-long
+            self.scrollable_frame_6.place(x=250, y=75)
+
+        if not hasattr(self, 'info_challange_displayed'):
+            self.info_challange_displayed = False
+
+        if not self.info_challange_displayed:
+            # Create a scrollable frame and load the challange game mode information into it
+            self.info_challange_label = ctk.CTkLabel(self.info_canvas,
+                                        height = 50,
+                                        width = 873,
+                                        corner_radius = 6,
+                                        text="Challange Game Mode Information", font=FONT_LIST[15]) # pylint: disable=line-too-long
+            self.info_challange_label.place(x=250, y=10)
+            self.scrollable_frame_6 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
+            self.scrollable_frame_6.place(x=250, y=75)
+            self.info_challange_displayed = True
+        else:
+            if self.scrollable_frame_6 is not None:
+                self.scrollable_frame_6.place_forget()
+                self.info_challange_label.place_forget()
+                self.info_challange_displayed = False
 
     def reset_screen_size(self):
         """
@@ -819,6 +984,26 @@ class SnakeGameApp:
                 if self.scrollable_frame is not None and self.scrollable_frame.winfo_exists():
                     self.scrollable_frame.place_forget()
                 self.patchnotes_displayed = False
+            if not hasattr(self.button_commands, 'info_general_displayed'):
+                if self.scrollable_frame_2 is not None and self.scrollable_frame.winfo_exists():
+                    self.scrollable_frame_2.place_forget()
+                self.info_general_displayed = False
+            if not hasattr(self.button_commands, 'info_classic_displayed'):
+                if self.scrollable_frame_3 is not None and self.scrollable_frame.winfo_exists():
+                    self.scrollable_frame_3.place_forget()
+                self.info_classic_displayed = False
+            if not hasattr(self.button_commands, 'info_endless_displayed'):
+                if self.scrollable_frame_4 is not None and self.scrollable_frame.winfo_exists():
+                    self.scrollable_frame_4.place_forget()
+                self.info_endless_displayed = False
+            if not hasattr(self.button_commands, 'info_leveling_displayed'):
+                if self.scrollable_frame_5 is not None and self.scrollable_frame.winfo_exists():
+                    self.scrollable_frame_5.place_forget()
+                self.info_leveling_displayed = False
+            if not hasattr(self.button_commands, 'info_challange_displayed'):
+                if self.scrollable_frame_6 is not None and self.scrollable_frame.winfo_exists():
+                    self.scrollable_frame_6.place_forget()
+                self.info_challange_displayed = False
 
             if hasattr(self, 'button_commands'):
                 # print('button_commands exists')

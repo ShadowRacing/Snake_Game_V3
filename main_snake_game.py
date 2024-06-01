@@ -14,8 +14,11 @@ import customtkinter as ctk
 from Logs.gamelogger_snake_game import GameLogger , ErrorgameLogger
 from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSCREEN, FONT_LIST
 from Configuration.gameconfig_snake_game import GameConfig
-from Logic.buttonpanel_snake_game import ClickButtonPanel, OptionButtonPanel, ButtonCommands, ResetSettingsPanel # pylint: disable=line-too-long
-from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels, GameLabelsPanel # pylint: disable=line-too-long
+from Logic.buttonpanel_snake_game import ClickButtonPanel, ButtonCommands # pylint: disable=line-too-long
+from Logic.buttonpanelreset_snake_game import ResetSettingsPanel
+from Logic.optionmenubuttonpanel import OptionButtonPanel
+from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels # pylint: disable=line-too-long
+from Logic.game_labelpanel import GameLabelsPanel
 from Logic.config_ini_initials import ConfigIni
 from Logic.snake_challange_choice import ChallangeChoices
 from Logic.snake_challange_settings import ChallangeSettings

@@ -18,7 +18,9 @@ patchnotes = [
             "Redone the theme label and reset the value back to the initial theme",
             "Bug fixes:",
             "Fixed that the contrast was not updating correctly",
-            "Fixed that the theme was not updating correctly"
+            "Fixed that the theme was not updating correctly",
+            "Fixed that the reset buttons were not always being destroyed",
+            "Seperated some off the button code into different files"
         ]
     },
     {

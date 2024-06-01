@@ -75,7 +75,7 @@ class ThemeUpdater:
         initial_theme = self.config.get('Settings', 'initial_theme', fallback='Default')
         self.update_config_theme(initial_theme)
         # Reset the theme label
-        
+
         self.config.set('Settings', 'theme', initial_theme)
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)

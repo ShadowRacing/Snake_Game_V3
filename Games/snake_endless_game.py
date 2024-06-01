@@ -19,7 +19,7 @@ from Configuration.constants_snake_game import FONT_LIST
 from Configuration.gameconfig_snake_game import GameConfig
 from Logic.food_logic_snake_game import EndlessFood
 from Logic.snake_logic_snake_game import Snake
-from Logic.labelpanel_snake_game import GameLabelsPanel
+from Logic.game_labelpanel import GameLabelsPanel
 
 class SnakeEndless(ctk.CTkCanvas):
     """

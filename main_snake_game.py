@@ -1,7 +1,3 @@
-# *****************************************
-# Shadows Snake Main File
-# *****************************************
-
 """
 The main file for the Shadows Snake game.
 """
@@ -314,6 +310,9 @@ class SnakeGameApp:
         # Set the configuration based on the game type
         self.game_config.set_configuration(game_type)
 
+        if hasattr(self, 'create_reset_button_panel'):  # Check if reset buttons panel exists
+            self.create_reset_button_panel.destroy_buttons()
+
         # Create a new canvas for the specified game type
         if game_type == "classic_snake":
             self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
@@ -365,7 +364,7 @@ class SnakeGameApp:
             self.main_canvas = self.settings_canvas
             self.settings_canvas.update_idletasks()  # update canvas before getting its dimensions
             canvas_width = self.settings_canvas.winfo_width() // 2 + 80
-            canvas_height = self.settings_canvas.winfo_height() // 2 - 100
+            canvas_height = self.settings_canvas.winfo_height() // 2 - 50
             self.settings_canvas.create_text(canvas_width, canvas_height, text="Here you can reset or change your settings", font=self.font_20, fill="white", tags="text") # pylint: disable=line-too-long
             self.settings_canvas.create_text(canvas_width, canvas_height + 50, text="Values settings is for changes the settings like the theme or contrast", font=self.font_20, fill="white", tags="text") # pylint: disable=line-too-long
             self.settings_canvas.create_text(canvas_width, canvas_height + 100, text="Reset settings is for resetting the settings", font=self.font_20, fill="white", tags="text") # pylint: disable=line-too-long
@@ -450,7 +449,6 @@ class SnakeGameApp:
             self.framelabel_panel.create_settings_label()
 
         elif game_type == "settings_values":
-            self.create_reset_button_panel.destroy_buttons()
             if self.settings_canvas is not None and self.settings_canvas.winfo_exists():
                 self.settings_canvas = self.destroy_canvas(self.settings_canvas)
             if self.settings_canvas_reset is not None and self.settings_canvas_reset.winfo_exists():
@@ -591,13 +589,11 @@ class SnakeGameApp:
         Reset the high score label showing to the default value.
         """
         self.reset_config_values.reset_high_score_showing()
-
     def reset_snake_speed(self):
         """
         Reset the snake speed to the default value.
         """
         self.reset_config_values.reset_snake_speed()
-
     def reset_game_size(self):
         """
         Reset the game size to the default value.
@@ -815,7 +811,6 @@ class SnakeGameApp:
         Return to the home screen.
         """
         try:
-            self.theme_updater.reset_theme()
              # Reset the patchnotes_displayed variable
             if not hasattr(self.button_commands, 'patchnotes_displayed'):
                 if self.scrollable_frame is not None and self.scrollable_frame.winfo_exists():
@@ -891,6 +886,4 @@ if __name__ == "__main__":
     root.after(10, center_window)
     root.mainloop()
 
-# *****************************************
-# Shadows Snake Main File
-# *****************************************
+# End of main_snake_game.py

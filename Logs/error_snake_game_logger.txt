@@ -11747,3 +11747,95 @@ _tkinter.TclError: bad window path name ".!challangesettings"
 
 
 
+[2024-06-02 16:15:15] 
+
+
+[2024-06-02 16:15:15] Started the Error Log File
+[2024-06-02 16:17:21] No errors occurred
+[2024-06-02 16:17:21] Closed the Error Log File
+
+
+
+
+[2024-06-02 16:18:12] 
+
+
+[2024-06-02 16:18:12] Started the Error Log File
+[2024-06-02 16:18:22] No errors occurred
+[2024-06-02 16:18:22] Closed the Error Log File
+
+
+
+
+[2024-06-02 16:18:31] 
+
+
+[2024-06-02 16:18:31] Started the Error Log File
+[2024-06-02 16:18:39] No errors occurred
+[2024-06-02 16:18:39] Closed the Error Log File
+
+
+
+
+[2024-06-02 16:18:56] 
+
+
+[2024-06-02 16:18:56] Started the Error Log File
+[2024-06-02 16:19:23] No errors occurred
+[2024-06-02 16:19:23] Closed the Error Log File
+
+
+
+
+[2024-06-02 16:20:08] 
+
+
+[2024-06-02 16:20:08] Started the Error Log File
+[2024-06-02 16:20:55] No errors occurred
+[2024-06-02 16:20:55] Closed the Error Log File
+
+
+
+
+[2024-06-02 16:21:13] 
+
+
+[2024-06-02 16:21:13] Started the Error Log File
+[2024-06-02 16:21:18] No errors occurred
+[2024-06-02 16:21:18] Closed the Error Log File
+
+
+
+
+[2024-06-02 16:21:34] 
+
+
+[2024-06-02 16:21:34] Started the Error Log File
+[2024-06-02 16:24:32] No errors occurred
+[2024-06-02 16:24:32] Closed the Error Log File
+
+
+
+
+[2024-06-02 16:24:47] 
+
+
+[2024-06-02 16:24:47] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 259, in update_text_position
+    canvas_width = self.main_canvas.winfo_width() // 2 + 80
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1354, in winfo_width
+    self.tk.call('winfo', 'width', self._w))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: bad window path name ".!ctkcanvas3"
+[2024-06-02 16:25:50] No errors occurred
+[2024-06-02 16:25:50] Closed the Error Log File
+
+
+
+

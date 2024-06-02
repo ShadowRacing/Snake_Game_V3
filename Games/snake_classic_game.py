@@ -83,7 +83,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
 
         self.snake_canvas = ctk.CTkCanvas(self, bg="black", width= self.width, height= self.height,  highlightthickness=self.highlightthickness, # pylint: disable=line-too-long
                                           highlightbackground=self.highlightbackground)
-        self.snake_canvas.place(x=500, y=50)
+        self.snake_canvas.place(x=800, y=50)
 
         # Create the snake and the food
         self.snake = Snake(self.game_logger, self.snake_canvas, game_config)

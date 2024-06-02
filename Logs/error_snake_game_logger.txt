@@ -11737,3 +11737,13 @@ _tkinter.TclError: bad window path name ".!challangesettings"
 
 
 
+[2024-06-02 11:57:10] 
+
+
+[2024-06-02 11:57:10] Started the Error Log File
+[2024-06-02 12:48:08] No errors occurred
+[2024-06-02 12:48:08] Closed the Error Log File
+
+
+
+

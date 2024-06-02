@@ -47,6 +47,15 @@ class ButtonCommands:
         else:
             self.game_logger.log_game_event("No function assigned to 'open_settings'")
 
+    def info_home_command(self):
+        """
+        Function for the home button command.
+        """
+        if 'return_info_home' in self.functions:
+            self.functions['return_info_home']()
+        else:
+            self.game_logger.log_game_event("No function assigned to 'home'")
+
     def info_command(self):
         """
         Function for the information button command.
@@ -461,7 +470,16 @@ class ClickButtonPanel:
         settings_values_button = ctk.CTkButton(self.button_canvas, text="Values\nSettings", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state="normal",
                                 command=self.button_commands.settings_values_command)
-        settings_values_button.grid(in_=self.button_canvas, row=10, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
+        settings_values_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
+
+    def info_home_button(self):
+        """
+        Function for creating the home button.
+        """
+        info_home_button = ctk.CTkButton(self.button_canvas, text="Home info", font=FONT_LIST[11],
+                                width=self.button_width, height=self.button_height, state="normal",
+                                command=self.button_commands.info_home_command)
+        info_home_button.grid(in_=self.button_canvas, row=2, column=0, padx=10, pady=10, sticky="w")
 
     def info_button(self):
         """

@@ -32,6 +32,11 @@ class NameOffFrameLabelPanel:
             "challange_settings": "Challange Settings",
             "food_time_attack": "Challange Snake",
             "info": "Game Information",
+            "info_general": "General Information",
+            "info_classic": "Classic Information",
+            "info_endless": "Endless Information",
+            "info_leveling": "Leveling Information",
+            "info_challange": "Challange Information",
             "settings": "Settings",
             "settings_reset": "Reset Settings",
             "settings_values": "Settings Values"
@@ -113,6 +118,36 @@ class NameOffFrameLabelPanel:
         Create the game information label.
         """
         self.create_label_canvas("info")
+
+    def create_info_general_label(self):
+        """
+        Create the general information label.
+        """
+        self.create_label_canvas("info_general")
+
+    def create_info_classic_label(self):
+        """
+        Create the classic snake information label.
+        """
+        self.create_label_canvas("info_classic")
+
+    def create_info_endless_label(self):
+        """
+        Create the endless snake information label.
+        """
+        self.create_label_canvas("info_endless")
+
+    def create_info_leveling_label(self):
+        """
+        Create the leveling snake information label.
+        """
+        self.create_label_canvas("info_leveling")
+
+    def create_info_challange_label(self):
+        """
+        Create the challange snake information label.
+        """
+        self.create_label_canvas("info_challange")
 
     def create_settings_label(self):
         """

@@ -103,6 +103,11 @@ class SnakeGameApp:
         self.challange_choice_canvas = None
         self.challange_settings_canvas = None
         self.info_canvas = None
+        self.info_general_canvas = None
+        self.info_classic_canvas = None
+        self.info_endless_canvas = None
+        self.info_leveling_canvas = None
+        self.info_challange_canvas = None
         self.settings_canvas = None
         self.settings_canvas_values = None
         self.settings_canvas_reset = None
@@ -178,6 +183,7 @@ class SnakeGameApp:
             'reset_restart': self.reset_restart,
             'reset_all_settings': self.reset_all_settings,
             'reset_all_movements': self.reset_all_movements,
+            'return_info_home': self.info_home,
             'info_general': self.info_general,
             'info_classic_game_mode': self.info_classic,
             'info_endless_game_mode': self.info_endless,
@@ -301,6 +307,42 @@ class SnakeGameApp:
         """
         self.start_game("info")
 
+    def info_home(self):
+        """
+        Return to the home screen from the info screen.
+        """
+        self.start_game("info")
+
+    def info_general(self):
+        """
+        Display the general information.
+        """
+        self.start_game("info_general")
+
+    def info_classic(self):
+        """
+        Display the classic game mode information.
+        """
+        self.start_game("info_classic_game_mode")
+
+    def info_endless(self):
+        """
+        Display the endless game mode information.
+        """
+        self.start_game("info_endless_game_mode")
+
+    def info_leveling(self):
+        """
+        Display the leveling game mode information.
+        """
+        self.start_game("info_leveling_game_mode")
+
+    def info_challange(self):
+        """
+        Display the challange game mode information.
+        """
+        self.start_game("info_challange_game_mode")
+
     # Open the settings screen
     def open_settings(self):
         """
@@ -347,6 +389,16 @@ class SnakeGameApp:
             self.food_time_attack_canvas = FoodTimeAttack(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         elif game_type == "info":
             self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
+        elif game_type == "info_general":
+            self.info_general_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+        elif game_type == "info_classic_game_mode":
+            self.info_classic_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
+        elif game_type == "info_endless_game_mode":
+            self.info_endless_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+        elif game_type == "info_leveling_game_mode":
+            self.info_leveling_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+        elif game_type == "info_challange_game_mode":
+            self.info_challange_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         elif game_type == "settings":
             self.settings_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "settings_values":
@@ -376,12 +428,21 @@ class SnakeGameApp:
         elif game_type == "info":
             self.info_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.info_canvas
-            self.info_canvas.update_idletasks()  # update canvas before getting its dimensions
-            canvas_width = self.info_canvas.winfo_width() // 2 + 80
-            canvas_height = self.info_canvas.winfo_height() // 2 - 50
-            self.info_canvas.create_text(canvas_width, canvas_height - 50, text=self.text_name, font=self.font_50, fill="white", tags="text") # pylint: disable=line-too-long
-            self.info_canvas.create_text(canvas_width, canvas_height, text=self.text_version, font=self.font_30, fill="white", tags="text") # pylint: disable=line-too-long
-            self.info_canvas.create_text(canvas_width, canvas_height + 50, text=self.text_developer, font=self.font_30, fill="white", tags="text") # pylint: disable=line-too-long
+        elif game_type == "info_general":
+            self.info_general_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.info_general_canvas
+        elif game_type == "info_classic_game_mode":
+            self.info_classic_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.info_classic_canvas
+        elif game_type == "info_endless_game_mode":
+            self.info_endless_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.info_endless_canvas
+        elif game_type == "info_leveling_game_mode":
+            self.info_leveling_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.info_leveling_canvas
+        elif game_type == "info_challange_game_mode":
+            self.info_challange_canvas.pack(expand=True, fill="both")
+            self.main_canvas = self.info_challange_canvas
         elif game_type == "settings":
             self.settings_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.settings_canvas
@@ -459,6 +520,18 @@ class SnakeGameApp:
             self.framelabel_panel.create_food_time_attack_label()
 
         elif game_type == "info":
+            if self.info_general_canvas is not None and self.info_general_canvas.winfo_exists():
+                self.info_general_canvas = self.destroy_canvas(self.info_general_canvas)
+            elif self.info_classic_canvas is not None and self.info_classic_canvas.winfo_exists():
+                self.info_classic_canvas = self.destroy_canvas(self.info_classic_canvas)
+            elif self.info_endless_canvas is not None and self.info_endless_canvas.winfo_exists():
+                self.info_endless_canvas = self.destroy_canvas(self.info_endless_canvas)
+            elif self.info_leveling_canvas is not None and self.info_leveling_canvas.winfo_exists():
+                self.info_leveling_canvas = self.destroy_canvas(self.info_leveling_canvas)
+            elif self.info_challange_canvas is not None and self.info_challange_canvas.winfo_exists():
+                self.info_challange_canvas = self.destroy_canvas(self.info_challange_canvas)
+            else:
+                pass
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_label()
             self.create_button_panel.patchnotes_button()
@@ -468,6 +541,41 @@ class SnakeGameApp:
             self.create_button_panel.info_leveling_game_mode_button()
             self.create_button_panel.info_challange_game_mode_button()
             #self.patchnotes_displayed = False
+
+        elif game_type == "info_general":
+            if self.info_canvas is not None and self.info_canvas.winfo_exists():
+                self.info_canvas = self.destroy_canvas(self.info_canvas)
+            self.create_button_panel.info_home_button()
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.framelabel_panel.create_info_general_label()
+        
+        elif game_type == "info_classic_game_mode":
+            if self.info_canvas is not None and self.info_canvas.winfo_exists():
+                self.info_canvas = self.destroy_canvas(self.info_canvas)
+            self.create_button_panel.info_home_button()
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.framelabel_panel.create_info_classic_label()
+        
+        elif game_type == "info_endless_game_mode":
+            if self.info_canvas is not None and self.info_canvas.winfo_exists():
+                self.info_canvas = self.destroy_canvas(self.info_canvas)
+            self.create_button_panel.info_home_button()
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.framelabel_panel.create_info_endless_label()
+        
+        elif game_type == "info_leveling_game_mode":
+            if self.info_canvas is not None and self.info_canvas.winfo_exists():
+                self.info_canvas = self.destroy_canvas(self.info_canvas)
+            self.create_button_panel.info_home_button()
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.framelabel_panel.create_info_leveling_label()
+        
+        elif game_type == "info_challange_game_mode":
+            if self.info_canvas is not None and self.info_canvas.winfo_exists():
+                self.info_canvas = self.destroy_canvas(self.info_canvas)
+            self.create_button_panel.info_home_button()
+            self.framelabel_panel.set_create_label_canvas_flag(True)
+            self.framelabel_panel.create_info_challange_label()
 
         elif game_type == "settings":
             #self.create_option_button_panel.()
@@ -593,146 +701,6 @@ class SnakeGameApp:
                 self.scrollable_frame.place_forget()
                 self.patchnotes_label.place_forget()
                 self.patchnotes_displayed = False
-
-    def info_general(self):
-        """
-        Display the general information.
-        """
-
-        if hasattr(self, 'info_general_displayed') and self.info_canvas is True:
-            self.scrollable_frame_2.place(x=250, y=75)
-
-        if not hasattr(self, 'info_general_displayed'):
-            self.info_general_displayed = False
-
-        if not self.info_general_displayed:
-            # Create a scrollable frame and load the general information into it
-            self.info_general_label = ctk.CTkLabel(self.info_canvas,
-                                        height = 50,
-                                        width = 873,
-                                        corner_radius = 6,
-                                        text="General Information", font=FONT_LIST[15])
-            self.info_general_label.place(x=250, y=10)
-            self.scrollable_frame_2 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
-            self.scrollable_frame_2.place(x=250, y=75)
-            self.info_general_displayed = True
-        else:
-            if self.scrollable_frame_2 is not None:
-                self.scrollable_frame_2.place_forget()
-                self.info_general_label.place_forget()
-                self.info_general_displayed = False
-
-    def info_classic(self):
-        """
-        Display the classic game mode information.
-        """
-
-        if hasattr(self, 'info_classic_displayed') and self.info_canvas is True:
-            self.scrollable_frame_3.place(x=250, y=75)
-
-        if not hasattr(self, 'info_classic_displayed'):
-            self.info_classic_displayed = False
-
-        if not self.info_classic_displayed:
-            # Create a scrollable frame and load the classic game mode information into it
-            self.info_classic_label = ctk.CTkLabel(self.info_canvas,
-                                        height = 50,
-                                        width = 873,
-                                        corner_radius = 6,
-                                        text="Classic Game Mode Information", font=FONT_LIST[15]) # pylint: disable=line-too-long
-            self.info_classic_label.place(x=250, y=10)
-            self.scrollable_frame_3 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
-            self.scrollable_frame_3.place(x=250, y=75)
-            self.info_classic_displayed = True
-        else:
-            if self.scrollable_frame_3 is not None:
-                self.scrollable_frame_3.place_forget()
-                self.info_classic_label.place_forget()
-                self.info_classic_displayed = False
-
-    def info_endless(self):
-        """
-        Display the endless game mode information.
-        """
-
-        if hasattr(self, 'info_endless_displayed') and self.info_canvas is True: # pylint: disable=line-too-long
-            self.scrollable_frame_4.place(x=250, y=75)
-
-        if not hasattr(self, 'info_endless_displayed'):
-            self.info_endless_displayed = False
-
-        if not self.info_endless_displayed:
-            # Create a scrollable frame and load the endless game mode information into it
-            self.info_endless_label = ctk.CTkLabel(self.info_canvas,
-                                        height = 50,
-                                        width = 873,
-                                        corner_radius = 6,
-                                        text="Endless Game Mode Information", font=FONT_LIST[15]) # pylint: disable=line-too-long
-            self.info_endless_label.place(x=250, y=10)
-            self.scrollable_frame_4 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
-            self.scrollable_frame_4.place(x=250, y=75)
-            self.info_endless_displayed = True
-        else:
-            if self.scrollable_frame_4 is not None:
-                self.scrollable_frame_4.place_forget()
-                self.info_endless_label.place_forget()
-                self.info_endless_displayed = False
-
-    def info_leveling(self):
-        """
-        Display the leveling game mode information.
-        """
-
-        if hasattr(self, 'info_leveling_displayed') and self.info_canvas is True: # pylint: disable=line-too-long
-            self.scrollable_frame_5.place(x=250, y=75)
-
-        if not hasattr(self, 'info_leveling_displayed'):
-            self.info_leveling_displayed = False
-
-        if not self.info_leveling_displayed:
-            # Create a scrollable frame and load the leveling game mode information into it
-            self.info_leveling_label = ctk.CTkLabel(self.info_canvas,
-                                        height = 50,
-                                        width = 873,
-                                        corner_radius = 6,
-                                        text="Leveling Game Mode Information", font=FONT_LIST[15]) # pylint: disable=line-too-long
-            self.info_leveling_label.place(x=250, y=10)
-            self.scrollable_frame_5 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
-            self.scrollable_frame_5.place(x=250, y=75)
-            self.info_leveling_displayed = True
-        else:
-            if self.scrollable_frame_5 is not None:
-                self.scrollable_frame_5.place_forget()
-                self.info_leveling_label.place_forget()
-                self.info_leveling_displayed = False
-
-    def info_challange(self):
-        """
-        Display the challange game mode information.
-        """
-
-        if hasattr(self, 'info_challange_displayed') and self.info_canvas is True: # pylint: disable=line-too-long
-            self.scrollable_frame_6.place(x=250, y=75)
-
-        if not hasattr(self, 'info_challange_displayed'):
-            self.info_challange_displayed = False
-
-        if not self.info_challange_displayed:
-            # Create a scrollable frame and load the challange game mode information into it
-            self.info_challange_label = ctk.CTkLabel(self.info_canvas,
-                                        height = 50,
-                                        width = 873,
-                                        corner_radius = 6,
-                                        text="Challange Game Mode Information", font=FONT_LIST[15]) # pylint: disable=line-too-long
-            self.info_challange_label.place(x=250, y=10)
-            self.scrollable_frame_6 = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
-            self.scrollable_frame_6.place(x=250, y=75)
-            self.info_challange_displayed = True
-        else:
-            if self.scrollable_frame_6 is not None:
-                self.scrollable_frame_6.place_forget()
-                self.info_challange_label.place_forget()
-                self.info_challange_displayed = False
 
     def reset_screen_size(self):
         """
@@ -1027,6 +995,11 @@ class SnakeGameApp:
             self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas)
             self.challange_settings_canvas = self.destroy_canvas(self.challange_settings_canvas)
             self.info_canvas = self.destroy_canvas(self.info_canvas)
+            self.info_general_canvas = self.destroy_canvas(self.info_general_canvas)
+            self.info_classic_canvas = self.destroy_canvas(self.info_classic_canvas)
+            self.info_endless_canvas = self.destroy_canvas(self.info_endless_canvas)
+            self.info_leveling_canvas = self.destroy_canvas(self.info_leveling_canvas)
+            self.info_challange_canvas = self.destroy_canvas(self.info_challange_canvas)
             self.settings_canvas = self.destroy_canvas(self.settings_canvas)
             self.settings_canvas_reset = self.destroy_canvas(self.settings_canvas_reset)
             self.settings_canvas_values = self.destroy_canvas(self.settings_canvas_values)

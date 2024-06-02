@@ -11477,3 +11477,263 @@ AttributeError: 'CTkCanvas' object has no attribute 'canvas'
 
 
 
+[2024-06-02 10:01:34] 
+
+
+[2024-06-02 10:01:34] Started the Error Log File
+[2024-06-02 10:01:40] No errors occurred
+[2024-06-02 10:01:40] Closed the Error Log File
+
+
+
+
+[2024-06-02 10:03:11] 
+
+
+[2024-06-02 10:03:11] Started the Error Log File
+[2024-06-02 10:03:16] No errors occurred
+[2024-06-02 10:03:16] Closed the Error Log File
+
+
+
+
+[2024-06-02 10:06:51] 
+
+
+[2024-06-02 10:06:51] Started the Error Log File
+[2024-06-02 10:07:13] No errors occurred
+[2024-06-02 10:07:13] Closed the Error Log File
+
+
+
+
+[2024-06-02 10:31:17] 
+
+
+[2024-06-02 10:31:17] Started the Error Log File
+[2024-06-02 10:31:36] No errors occurred
+[2024-06-02 10:31:36] Closed the Error Log File
+
+
+
+
+[2024-06-02 10:32:10] 
+
+
+[2024-06-02 10:32:10] Started the Error Log File
+[2024-06-02 10:32:23] No errors occurred
+[2024-06-02 10:32:23] Closed the Error Log File
+
+
+
+
+[2024-06-02 10:38:01] 
+
+
+[2024-06-02 10:38:01] Started the Error Log File
+[2024-06-02 10:38:32] No errors occurred
+[2024-06-02 10:38:32] Closed the Error Log File
+
+
+
+
+[2024-06-02 10:41:51] 
+
+
+[2024-06-02 10:41:51] Started the Error Log File
+[2024-06-02 10:42:05] No errors occurred
+[2024-06-02 10:42:05] Closed the Error Log File
+
+
+
+
+[2024-06-02 10:42:46] 
+
+
+[2024-06-02 10:42:46] Started the Error Log File
+[2024-06-02 10:49:48] No errors occurred
+[2024-06-02 10:49:48] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:10:22] 
+
+
+[2024-06-02 11:10:22] Started the Error Log File
+[2024-06-02 11:11:34] No errors occurred
+[2024-06-02 11:11:34] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:15:20] 
+
+
+[2024-06-02 11:15:20] Started the Error Log File
+[2024-06-02 11:15:26] No errors occurred
+[2024-06-02 11:15:26] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:15:29] 
+
+
+[2024-06-02 11:15:29] Started the Error Log File
+[2024-06-02 11:15:35] No errors occurred
+[2024-06-02 11:15:35] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:15:56] 
+
+
+[2024-06-02 11:15:56] Started the Error Log File
+[2024-06-02 11:16:26] No errors occurred
+[2024-06-02 11:16:26] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:20:12] 
+
+
+[2024-06-02 11:20:12] Started the Error Log File
+[2024-06-02 11:20:19] No errors occurred
+[2024-06-02 11:20:19] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:20:29] 
+
+
+[2024-06-02 11:20:29] Started the Error Log File
+[2024-06-02 11:20:35] No errors occurred
+[2024-06-02 11:20:35] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:21:50] 
+
+
+[2024-06-02 11:21:50] Started the Error Log File
+[2024-06-02 11:22:30] No errors occurred
+[2024-06-02 11:22:30] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:22:33] 
+
+
+[2024-06-02 11:22:33] Started the Error Log File
+[2024-06-02 11:23:46] No errors occurred
+[2024-06-02 11:23:46] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:23:48] 
+
+
+[2024-06-02 11:23:48] Started the Error Log File
+[2024-06-02 11:24:17] No errors occurred
+[2024-06-02 11:24:17] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:24:19] 
+
+
+[2024-06-02 11:24:19] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 64, in info_command
+    self.functions['open_info']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 308, in open_info
+    self.start_game("info")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 392, in start_game
+    self.update_text_position()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 259, in update_text_position
+    canvas_width = self.main_canvas.winfo_width() // 2 + 80
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1354, in winfo_width
+    self.tk.call('winfo', 'width', self._w))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: bad window path name ".!challangesettings"
+[2024-06-02 11:24:27] No errors occurred
+[2024-06-02 11:24:27] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:24:46] 
+
+
+[2024-06-02 11:24:46] Started the Error Log File
+[2024-06-02 11:25:13] No errors occurred
+[2024-06-02 11:25:13] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:25:15] 
+
+
+[2024-06-02 11:25:15] Started the Error Log File
+[2024-06-02 11:25:21] No errors occurred
+[2024-06-02 11:25:21] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:45:43] 
+
+
+[2024-06-02 11:45:43] Started the Error Log File
+[2024-06-02 11:47:42] No errors occurred
+[2024-06-02 11:47:42] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:47:45] 
+
+
+[2024-06-02 11:47:45] Started the Error Log File
+[2024-06-02 11:50:19] No errors occurred
+[2024-06-02 11:50:19] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:50:21] 
+
+
+[2024-06-02 11:50:21] Started the Error Log File
+[2024-06-02 11:50:43] No errors occurred
+[2024-06-02 11:50:43] Closed the Error Log File
+
+
+
+
+[2024-06-02 11:51:35] 
+
+
+[2024-06-02 11:51:35] Started the Error Log File
+[2024-06-02 11:56:32] No errors occurred
+[2024-06-02 11:56:32] Closed the Error Log File
+
+
+
+

@@ -11839,3 +11839,742 @@ _tkinter.TclError: bad window path name ".!ctkcanvas3"
 
 
 
+[2024-06-02 20:30:12] 
+
+
+[2024-06-02 20:30:12] Started the Error Log File
+[2024-06-02 20:43:10] No errors occurred
+[2024-06-02 20:43:10] Closed the Error Log File
+
+
+
+
+[2024-06-02 20:43:12] 
+
+
+[2024-06-02 20:43:12] Started the Error Log File
+[2024-06-02 20:43:22] No errors occurred
+[2024-06-02 20:43:22] Closed the Error Log File
+
+
+
+
+[2024-06-02 21:03:36] 
+
+
+[2024-06-02 21:03:36] Started the Error Log File
+[2024-06-02 21:03:39] No errors occurred
+[2024-06-02 21:03:39] Closed the Error Log File
+
+
+
+
+[2024-06-02 21:03:58] 
+
+
+[2024-06-02 21:03:58] Started the Error Log File
+[2024-06-02 21:04:27] No errors occurred
+[2024-06-02 21:04:27] Closed the Error Log File
+
+
+
+
+[2024-06-02 21:05:35] 
+
+
+[2024-06-02 21:05:35] Started the Error Log File
+[2024-06-02 21:05:37] No errors occurred
+[2024-06-02 21:05:37] Closed the Error Log File
+
+
+
+
+[2024-06-02 21:05:39] 
+
+
+[2024-06-02 21:05:39] Started the Error Log File
+[2024-06-02 21:05:42] No errors occurred
+[2024-06-02 21:05:42] Closed the Error Log File
+
+
+
+
+[2024-06-02 21:05:44] 
+
+
+[2024-06-02 21:05:44] Started the Error Log File
+[2024-06-02 21:05:46] No errors occurred
+[2024-06-02 21:05:46] Closed the Error Log File
+
+
+
+
+[2024-06-02 21:05:48] 
+
+
+[2024-06-02 21:05:48] Started the Error Log File
+[2024-06-02 21:05:50] No errors occurred
+[2024-06-02 21:05:50] Closed the Error Log File
+
+
+
+
+[2024-06-02 21:06:06] 
+
+
+[2024-06-02 21:06:06] Started the Error Log File
+[2024-06-02 21:06:20] No errors occurred
+[2024-06-02 21:06:20] Closed the Error Log File
+
+
+
+
+[2024-06-02 21:07:19] 
+
+
+[2024-06-02 21:07:19] Started the Error Log File
+[2024-06-02 21:07:22] No errors occurred
+[2024-06-02 21:07:22] Closed the Error Log File
+
+
+
+
+[2024-06-04 19:50:25] 
+
+
+[2024-06-04 19:50:25] Started the Error Log File
+[2024-06-04 19:50:35] No errors occurred
+[2024-06-04 19:50:35] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:10:58] 
+
+
+[2024-06-04 20:10:58] Started the Error Log File
+[2024-06-04 20:11:02] No errors occurred
+[2024-06-04 20:11:02] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:16:54] 
+
+
+[2024-06-04 20:16:54] Started the Error Log File
+[2024-06-04 20:17:23] No errors occurred
+[2024-06-04 20:17:23] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:17:57] 
+
+
+[2024-06-04 20:17:57] Started the Error Log File
+[2024-06-04 20:18:07] No errors occurred
+[2024-06-04 20:18:07] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:19:57] 
+
+
+[2024-06-04 20:19:57] Started the Error Log File
+[2024-06-04 20:20:03] No errors occurred
+[2024-06-04 20:20:03] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:20:31] 
+
+
+[2024-06-04 20:20:31] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 323, in info_general
+    self.mini_snake_game()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 691, in mini_snake_game
+    self.draw_board(snake, food)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 698, in draw_board
+    self.mini_snake_game_canvas.delete('all')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete'
+[2024-06-04 20:20:42] No errors occurred
+[2024-06-04 20:20:42] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:20:45] 
+
+
+[2024-06-04 20:20:45] Started the Error Log File
+[2024-06-04 20:20:50] No errors occurred
+[2024-06-04 20:20:50] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:23:04] 
+
+
+[2024-06-04 20:23:04] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 327, in info_general
+    self.mini_snake_game()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 695, in mini_snake_game
+    self.draw_board(snake, food)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 702, in draw_board
+    self.mini_snake_game_canvas.delete('all')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'delete'
+[2024-06-04 20:23:08] No errors occurred
+[2024-06-04 20:23:08] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:23:40] 
+
+
+[2024-06-04 20:23:40] Started the Error Log File
+[2024-06-04 20:23:50] No errors occurred
+[2024-06-04 20:23:50] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:32:02] 
+
+
+[2024-06-04 20:32:02] Started the Error Log File
+[2024-06-04 20:32:20] No errors occurred
+[2024-06-04 20:32:20] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:36:15] 
+
+
+[2024-06-04 20:36:15] Started the Error Log File
+[2024-06-04 20:36:23] No errors occurred
+[2024-06-04 20:36:23] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:36:49] 
+
+
+[2024-06-04 20:36:49] Started the Error Log File
+[2024-06-04 20:37:00] No errors occurred
+[2024-06-04 20:37:00] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:40:17] 
+
+
+[2024-06-04 20:40:17] Started the Error Log File
+[2024-06-04 20:40:23] No errors occurred
+[2024-06-04 20:40:23] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:43:15] 
+
+
+[2024-06-04 20:43:15] Started the Error Log File
+[2024-06-04 20:43:21] No errors occurred
+[2024-06-04 20:43:21] Closed the Error Log File
+
+
+
+
+[2024-06-04 20:46:48] 
+
+
+[2024-06-04 20:46:48] Started the Error Log File
+[2024-06-04 20:47:05] No errors occurred
+[2024-06-04 20:47:05] Closed the Error Log File
+
+
+
+
+[2024-06-06 18:39:59] 
+
+
+[2024-06-06 18:39:59] Started the Error Log File
+[2024-06-06 18:41:08] No errors occurred
+[2024-06-06 18:41:08] Closed the Error Log File
+
+
+
+
+[2024-06-06 18:41:16] 
+
+
+[2024-06-06 18:41:16] Started the Error Log File
+[2024-06-06 18:41:32] No errors occurred
+[2024-06-06 18:41:32] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:01:28] 
+
+
+[2024-06-06 19:01:28] Started the Error Log File
+[2024-06-06 19:01:50] No errors occurred
+[2024-06-06 19:01:50] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:08:16] 
+
+
+[2024-06-06 19:08:16] Started the Error Log File
+[2024-06-06 19:08:32] No errors occurred
+[2024-06-06 19:08:32] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:10:45] 
+
+
+[2024-06-06 19:10:45] Started the Error Log File
+[2024-06-06 19:11:10] No errors occurred
+[2024-06-06 19:11:10] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:14:03] 
+
+
+[2024-06-06 19:14:03] Started the Error Log File
+[2024-06-06 19:14:08] No errors occurred
+[2024-06-06 19:14:08] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:16:34] 
+
+
+[2024-06-06 19:16:34] Started the Error Log File
+[2024-06-06 19:18:32] No errors occurred
+[2024-06-06 19:18:32] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:18:54] 
+
+
+[2024-06-06 19:18:54] Started the Error Log File
+[2024-06-06 19:19:00] No errors occurred
+[2024-06-06 19:19:00] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:19:08] 
+
+
+[2024-06-06 19:19:08] Started the Error Log File
+[2024-06-06 19:19:18] No errors occurred
+[2024-06-06 19:19:18] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:19:34] 
+
+
+[2024-06-06 19:19:34] Started the Error Log File
+[2024-06-06 19:19:43] No errors occurred
+[2024-06-06 19:19:43] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:24:47] 
+
+
+[2024-06-06 19:24:47] Started the Error Log File
+[2024-06-06 19:24:59] No errors occurred
+[2024-06-06 19:24:59] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:25:07] 
+
+
+[2024-06-06 19:25:07] Started the Error Log File
+[2024-06-06 19:25:12] No errors occurred
+[2024-06-06 19:25:12] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:26:03] 
+
+
+[2024-06-06 19:26:03] Started the Error Log File
+[2024-06-06 19:28:58] No errors occurred
+[2024-06-06 19:28:58] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:29:01] 
+
+
+[2024-06-06 19:29:01] Started the Error Log File
+[2024-06-06 19:30:51] No errors occurred
+[2024-06-06 19:30:51] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:30:55] 
+
+
+[2024-06-06 19:30:55] Started the Error Log File
+[2024-06-06 19:31:39] No errors occurred
+[2024-06-06 19:31:39] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:31:45] 
+
+
+[2024-06-06 19:31:45] Started the Error Log File
+[2024-06-06 19:32:12] No errors occurred
+[2024-06-06 19:32:12] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:33:36] 
+
+
+[2024-06-06 19:33:36] Started the Error Log File
+[2024-06-06 19:33:45] No errors occurred
+[2024-06-06 19:33:45] Closed the Error Log File
+
+
+
+
+[2024-06-06 19:59:39] 
+
+
+[2024-06-06 19:59:39] Started the Error Log File
+[2024-06-06 20:00:14] No errors occurred
+[2024-06-06 20:00:14] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:18:58] 
+
+
+[2024-06-06 20:18:58] Started the Error Log File
+[2024-06-06 20:20:32] No errors occurred
+[2024-06-06 20:20:32] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:20:35] 
+
+
+[2024-06-06 20:20:35] Started the Error Log File
+[2024-06-06 20:20:43] No errors occurred
+[2024-06-06 20:20:43] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:26:28] 
+
+
+[2024-06-06 20:26:28] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1147, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 99, in __init__
+    self.food = self.spawn_food()
+                ^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 674, in spawn_food
+    if not self.snake_visited_positions:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'snake_visited_positions'
+[2024-06-06 20:27:11] 
+
+
+[2024-06-06 20:27:11] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1148, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 100, in __init__
+    self.food = self.spawn_food()
+                ^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 676, in spawn_food
+    raise ValueError("The snake hasn't moved yet, so there's no place to spawn food.")
+ValueError: The snake hasn't moved yet, so there's no place to spawn food.
+[2024-06-06 20:30:38] 
+
+
+[2024-06-06 20:30:38] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1148, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 100, in __init__
+    self.food = self.spawn_food()
+                ^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 676, in spawn_food
+    raise ValueError("The snake hasn't moved yet, so there's no place to spawn food.")
+ValueError: The snake hasn't moved yet, so there's no place to spawn food.
+[2024-06-06 20:36:55] 
+
+
+[2024-06-06 20:36:55] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 334, in info_general
+    self.update_mini_snake()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 705, in update_mini_snake
+    if (self.new_head[0] % 5 == 0 and self.new_head[1] % 5 == 0):
+        ~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+[2024-06-06 20:36:58] No errors occurred
+[2024-06-06 20:36:58] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:37:08] 
+
+
+[2024-06-06 20:37:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 334, in info_general
+    self.update_mini_snake()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 705, in update_mini_snake
+    if (self.new_head[0] % 5 == 0 and self.new_head[1] % 5 == 0):
+        ~~~~~~~~~~~~~^^^
+TypeError: 'int' object is not subscriptable
+[2024-06-06 20:37:11] No errors occurred
+[2024-06-06 20:37:11] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:38:35] 
+
+
+[2024-06-06 20:38:35] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 334, in info_general
+    self.update_mini_snake()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 705, in update_mini_snake
+    if (self.new_head[0] % 5 == 0 and self.new_head[1] % 5 == 0):
+        ~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+[2024-06-06 20:38:39] No errors occurred
+[2024-06-06 20:38:39] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:40:10] 
+
+
+[2024-06-06 20:40:10] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 332, in info_general
+    self.update_mini_snake()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 712, in update_mini_snake
+    self.mini_snake_game_canvas.create_rectangle(self.food[0]*self.cell_size, self.food[1]*self.cell_size,
+                                                ~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+[2024-06-06 20:40:29] No errors occurred
+[2024-06-06 20:40:29] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:42:27] 
+
+
+[2024-06-06 20:42:27] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 700, in update_mini_snake
+    self.snake.pop()
+IndexError: pop from empty list
+[2024-06-06 20:42:31] No errors occurred
+[2024-06-06 20:42:31] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:43:17] 
+
+
+[2024-06-06 20:43:17] Started the Error Log File
+[2024-06-06 20:43:21] No errors occurred
+[2024-06-06 20:43:21] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:56:23] 
+
+
+[2024-06-06 20:56:23] Started the Error Log File
+[2024-06-06 20:56:28] No errors occurred
+[2024-06-06 20:56:28] Closed the Error Log File
+
+
+
+
+[2024-06-06 20:56:56] 
+
+
+[2024-06-06 20:56:56] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1154, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 101, in __init__
+    self.food = self.spawn_food()
+                ^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 676, in spawn_food
+    if self.snake_move_count < 3:
+       ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'snake_move_count'
+[2024-06-06 20:58:10] 
+
+
+[2024-06-06 20:58:10] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1149, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 101, in __init__
+    self.food = self.spawn_food()
+                ^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 677, in spawn_food
+    raise ValueError("The snake hasn't moved yet, so there's no place to spawn food.")
+ValueError: The snake hasn't moved yet, so there's no place to spawn food.
+[2024-06-06 20:58:15] 
+
+
+[2024-06-06 20:58:15] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1149, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 101, in __init__
+    self.food = self.spawn_food()
+                ^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 677, in spawn_food
+    raise ValueError("The snake hasn't moved yet, so there's no place to spawn food.")
+ValueError: The snake hasn't moved yet, so there's no place to spawn food.
+[2024-06-06 20:58:27] 
+
+
+[2024-06-06 20:58:27] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1148, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 100, in __init__
+    self.food = self.spawn_food()
+                ^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 676, in spawn_food
+    raise ValueError("The snake hasn't moved yet, so there's no place to spawn food.")
+ValueError: The snake hasn't moved yet, so there's no place to spawn food.
+[2024-06-06 20:58:49] 
+
+
+[2024-06-06 20:58:49] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1147, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 99, in __init__
+    self.food = self.spawn_food()
+                ^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 674, in spawn_food
+    if not self.snake_visited_positions:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'snake_visited_positions'

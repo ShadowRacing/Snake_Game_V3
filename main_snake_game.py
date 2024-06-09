@@ -99,7 +99,8 @@ class SnakeGameApp:
         self.cell_size = 20
         self.running = True
         self.mini_snake_game_canvas = ctk.CTkCanvas(self.root, width=60, height=60) # pylint: disable=line-too-long
-
+        self.loading_canvas = None
+        self.progress_bar = ctk.CTkProgressBar(self.loading_canvas, width=400, height=30)
 
         # Creating the main canvas for the app
         self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
@@ -231,9 +232,15 @@ class SnakeGameApp:
         self.root.protocol("WM_DELETE_WINDOW", self.confirm_quit)
 
     def create_circle(self, canvas, x, y, r, **kwargs):
+        """
+        Create a circle on the canvas.
+        """
         return canvas.create_oval(x-r, y-r, x+r, y+r, **kwargs)
 
-    def create_horizontal_offset_circles(self, canvas, start_x, y, start_radius, end_radius, step, **kwargs):
+    def create_horizontal_offset_circles(self, canvas, start_x, y, start_radius, end_radius, step, **kwargs): # pylint: disable=too-many-arguments # pylint: disable=line-too-long
+        """
+        Create a series of circles with horizontal offset on the canvas.
+        """
         for i in range(start_radius, end_radius, step):
             self.create_circle(canvas, start_x + i*2, y, i, **kwargs)
 
@@ -241,13 +248,16 @@ class SnakeGameApp:
         """
         Create the loading screen.
         """
-        self.loading_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+        self.loading_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         self.loading_canvas.pack(expand=True, fill="both")
         self.loading_canvas.bind("<Configure>", self.update_loading_screen_position)
 
         self.loading_canvas.after(5000, self.destroy_loading_screen)
 
     def update_loading_screen_position(self, event):
+        """
+        Update the position of the loading screen.
+        """
         # Calculate the center of the canvas
         center_x = event.width // 2
         center_y = event.height // 2
@@ -287,11 +297,11 @@ class SnakeGameApp:
                 self.theme = "#FF4500"
             elif self.theme == 'MidnightPurple':
                 self.theme = "#210F28"
-        self.create_horizontal_offset_circles(self.loading_canvas, -300, center_y, 50, 5000, 60, outline=self.theme, width=2)
+        self.create_horizontal_offset_circles(self.loading_canvas, -300, center_y, 50, 5000, 60, outline=self.theme, width=2) # pylint: disable=line-too-long
 
 
         # Recreate the loading text and progress bar
-        self.loading_canvas.create_text(center_x, center_y, text="Loading...", font=("Helvetica", 50), fill="white", tags="text")
+        self.loading_canvas.create_text(center_x, center_y, text="Loading...", font=("Helvetica", 50), fill="white", tags="text") # pylint: disable=line-too-long
         self.progress_bar = ctk.CTkProgressBar(self.loading_canvas, width=400, height=30)
         self.progress_bar.place(x=center_x, y=center_y + 50, anchor="center")
 
@@ -323,7 +333,6 @@ class SnakeGameApp:
         Destroy the loading screen.
         """
         self.progress_bar.destroy()
-        
         self.loading_canvas.destroy()
         self.create_home_screen()
 
@@ -1088,7 +1097,7 @@ class SnakeGameApp:
                 self.leveling_snake_canvas.delete_game_labels__()
             if self.main_canvas == self.food_time_attack_canvas:
                 self.food_time_attack_canvas.delete_game_labels___()
-            if self.main_canvas == self.info_general_canvas:            
+            if self.main_canvas == self.info_general_canvas:
                 self.close_mini_snake()
 
             time.sleep(0.1)

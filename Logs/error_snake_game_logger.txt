@@ -14553,3 +14553,117 @@ TypeError: '>=' not supported between instances of 'FileNotFoundError' and 'int'
 
 
 
+[2024-06-09 19:29:46] 
+
+
+[2024-06-09 19:29:46] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1160, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 102, in __init__
+    self.progress_bar = ctk.CTkProgressBar(self.loading_canvas, width=400, height=30)
+                                           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'loading_canvas'
+[2024-06-09 19:30:01] 
+
+
+[2024-06-09 19:30:01] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1160, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 102, in __init__
+    self.progress_bar = ctk.CTkProgressBar(self.loading_canvas, width=400, height=30)
+                                           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'loading_canvas'
+[2024-06-09 19:31:25] 
+
+
+[2024-06-09 19:31:25] Started the Error Log File
+[2024-06-09 19:31:59] No errors occurred
+[2024-06-09 19:31:59] Closed the Error Log File
+
+
+
+
+[2024-06-09 19:32:01] 
+
+
+[2024-06-09 19:32:01] Started the Error Log File
+[2024-06-09 19:32:23] No errors occurred
+[2024-06-09 19:32:23] Closed the Error Log File
+
+
+
+
+[2024-06-09 19:33:20] 
+
+
+[2024-06-09 19:33:20] Started the Error Log File
+[2024-06-09 19:33:29] No errors occurred
+[2024-06-09 19:33:29] Closed the Error Log File
+
+
+
+
+[2024-06-09 19:34:03] 
+
+
+[2024-06-09 19:34:03] Started the Error Log File
+[2024-06-09 19:34:09] No errors occurred
+[2024-06-09 19:34:09] Closed the Error Log File
+
+
+
+
+[2024-06-09 19:34:32] 
+
+
+[2024-06-09 19:34:32] Started the Error Log File
+[2024-06-09 19:34:39] No errors occurred
+[2024-06-09 19:34:39] Closed the Error Log File
+
+
+
+
+[2024-06-09 19:35:04] 
+
+
+[2024-06-09 19:35:04] Started the Error Log File
+[2024-06-09 19:36:32] No errors occurred
+[2024-06-09 19:36:32] Closed the Error Log File
+
+
+
+
+[2024-06-09 19:36:34] 
+
+
+[2024-06-09 19:36:34] Started the Error Log File
+[2024-06-09 19:37:18] No errors occurred
+[2024-06-09 19:37:18] Closed the Error Log File
+
+
+
+
+[2024-06-09 19:37:20] 
+
+
+[2024-06-09 19:37:20] Started the Error Log File
+[2024-06-09 19:38:09] No errors occurred
+[2024-06-09 19:38:09] Closed the Error Log File
+
+
+
+
+[2024-06-09 19:38:11] 
+
+
+[2024-06-09 19:38:11] Started the Error Log File
+[2024-06-09 19:41:51] No errors occurred
+[2024-06-09 19:41:51] Closed the Error Log File
+
+
+
+

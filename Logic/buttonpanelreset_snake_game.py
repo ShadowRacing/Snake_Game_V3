@@ -48,14 +48,14 @@ class ResetSettingsPanel:
         self.reset_all_settings_button()
         self.reset_all_movements_button()
 
-    def info_general_reset_mini_snake_command(self):
+    def info_general_start_mini_snake_command(self):
         """
         Function for the info general reset mini snake button command.
         """
-        if 'info_general_reset_mini_snake' in self.functions:
-            self.functions['info_general_reset_mini_snake']()
+        if 'info_general_start_mini_snake' in self.functions:
+            self.functions['info_general_start_mini_snake']()
         else:
-            self.game_logger.log_game_event("No function assigned to 'info_general_reset_mini_snake'")
+            self.game_logger.log_game_event("No function assigned to 'info_general_reset_mini_snake'") # pylint: disable=line-too-long
 
     def reset_screen_size_command(self):
         """
@@ -215,12 +215,12 @@ class ResetSettingsPanel:
                                     )
         reset_buttons.place(in_=self.settings_canvas_reset, x=x, y=y)
         return reset_buttons
-    
-    def info_general_reset_mini_snake(self):
+
+    def info_general_start_mini_snake(self):
         """
         Function for creating the info general reset mini snake button.
         """
-        button = self.create_buttons(self.info_general_reset_mini_snake_command, 800, 350)
+        button = self.create_buttons(self.info_general_start_mini_snake_command, 200, 350)
         self.buttons.append(button)
 
     def reset_screen_size_button(self):

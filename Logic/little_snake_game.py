@@ -17,10 +17,19 @@ class MiniSnakeGame:
         self.max_x = 6  # Maximum x-coordinate
         self.max_y = 6  # Maximum y-coordinate
         self.speed = 1
+        self.snake = [(0, 0)]
+        self.visited_squares = set(self.snake)  # Initialize visited squares
+        self.directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]
         self.running = False
         self.reset_possible = False
         self.current_direction_index = 0
         self.special_foods = []  # New attribute for special foods
+        self.start_snake()
+
+    def start_snake(self):
+        """
+        Start the snake game.
+        """
         self.reset_snake()
 
     def reset_snake(self):

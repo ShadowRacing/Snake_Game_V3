@@ -12830,3 +12830,803 @@ TypeError: MiniSnakeGame.__init__() missing 1 required positional argument: 'gam
 
 
 
+[2024-06-09 11:08:51] 
+
+
+[2024-06-09 11:08:51] Started the Error Log File
+[2024-06-09 11:09:05] No errors occurred
+[2024-06-09 11:09:05] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:09:26] 
+
+
+[2024-06-09 11:09:26] Started the Error Log File
+[2024-06-09 11:11:57] No errors occurred
+[2024-06-09 11:11:57] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:13:54] 
+
+
+[2024-06-09 11:13:54] Started the Error Log File
+[2024-06-09 11:13:56] No errors occurred
+[2024-06-09 11:13:56] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:13:59] 
+
+
+[2024-06-09 11:13:59] Started the Error Log File
+[2024-06-09 11:14:17] No errors occurred
+[2024-06-09 11:14:17] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:24:14] 
+
+
+[2024-06-09 11:24:14] Started the Error Log File
+[2024-06-09 11:24:16] No errors occurred
+[2024-06-09 11:24:16] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:24:49] 
+
+
+[2024-06-09 11:24:49] Started the Error Log File
+[2024-06-09 11:24:53] No errors occurred
+[2024-06-09 11:24:53] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:28:32] 
+
+
+[2024-06-09 11:28:32] Started the Error Log File
+[2024-06-09 11:28:37] No errors occurred
+[2024-06-09 11:28:37] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:29:06] 
+
+
+[2024-06-09 11:29:06] Started the Error Log File
+[2024-06-09 11:29:12] No errors occurred
+[2024-06-09 11:29:12] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:29:48] 
+
+
+[2024-06-09 11:29:48] Started the Error Log File
+[2024-06-09 11:29:56] No errors occurred
+[2024-06-09 11:29:56] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:30:16] 
+
+
+[2024-06-09 11:30:16] Started the Error Log File
+[2024-06-09 11:30:20] No errors occurred
+[2024-06-09 11:30:20] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:32:25] 
+
+
+[2024-06-09 11:32:25] Started the Error Log File
+[2024-06-09 11:32:32] No errors occurred
+[2024-06-09 11:32:32] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:33:26] 
+
+
+[2024-06-09 11:33:26] Started the Error Log File
+[2024-06-09 11:34:12] No errors occurred
+[2024-06-09 11:34:12] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:37:30] 
+
+
+[2024-06-09 11:37:30] Started the Error Log File
+[2024-06-09 11:37:32] No errors occurred
+[2024-06-09 11:37:32] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:37:45] 
+
+
+[2024-06-09 11:37:45] Started the Error Log File
+[2024-06-09 11:37:51] No errors occurred
+[2024-06-09 11:37:51] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:37:55] 
+
+
+[2024-06-09 11:37:55] Started the Error Log File
+[2024-06-09 11:38:00] No errors occurred
+[2024-06-09 11:38:00] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:38:24] 
+
+
+[2024-06-09 11:38:24] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+TypeError: BaseWidget.destroy() takes 1 positional argument but 2 were given
+[2024-06-09 11:38:38] No errors occurred
+[2024-06-09 11:38:38] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:40:32] 
+
+
+[2024-06-09 11:40:32] Started the Error Log File
+[2024-06-09 11:40:37] No errors occurred
+[2024-06-09 11:40:37] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:46:42] 
+
+
+[2024-06-09 11:46:42] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1065, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 228, in __init__
+    self.create_loading_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 239, in create_loading_screen
+    self.loading_canvas.lift()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2998, in tag_raise
+    self.tk.call((self._w, 'raise') + args)
+_tkinter.TclError: wrong # args: should be ".!ctkcanvas3 raise tagOrId ?aboveThis?"
+[2024-06-09 11:48:26] 
+
+
+[2024-06-09 11:48:26] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1065, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 228, in __init__
+    self.create_loading_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 239, in create_loading_screen
+    self.loading_canvas.lift()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2998, in tag_raise
+    self.tk.call((self._w, 'raise') + args)
+_tkinter.TclError: wrong # args: should be ".!ctkcanvas3 raise tagOrId ?aboveThis?"
+[2024-06-09 11:48:36] 
+
+
+[2024-06-09 11:48:36] Started the Error Log File
+[2024-06-09 11:48:42] No errors occurred
+[2024-06-09 11:48:42] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:49:03] 
+
+
+[2024-06-09 11:49:03] Started the Error Log File
+[2024-06-09 11:49:11] No errors occurred
+[2024-06-09 11:49:11] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:49:13] 
+
+
+[2024-06-09 11:49:13] Started the Error Log File
+[2024-06-09 11:49:19] No errors occurred
+[2024-06-09 11:49:19] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:49:29] 
+
+
+[2024-06-09 11:49:29] Started the Error Log File
+[2024-06-09 11:49:43] No errors occurred
+[2024-06-09 11:49:43] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:14:17] 
+
+
+[2024-06-09 13:14:17] Started the Error Log File
+[2024-06-09 13:14:42] No errors occurred
+[2024-06-09 13:14:42] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:14:44] 
+
+
+[2024-06-09 13:14:44] Started the Error Log File
+[2024-06-09 13:15:14] No errors occurred
+[2024-06-09 13:15:14] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:15:16] 
+
+
+[2024-06-09 13:15:16] Started the Error Log File
+[2024-06-09 13:15:34] No errors occurred
+[2024-06-09 13:15:34] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:15:37] 
+
+
+[2024-06-09 13:15:37] Started the Error Log File
+[2024-06-09 13:15:51] No errors occurred
+[2024-06-09 13:15:51] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:16:07] 
+
+
+[2024-06-09 13:16:07] Started the Error Log File
+[2024-06-09 13:16:24] No errors occurred
+[2024-06-09 13:16:24] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:16:27] 
+
+
+[2024-06-09 13:16:27] Started the Error Log File
+[2024-06-09 13:16:50] No errors occurred
+[2024-06-09 13:16:50] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:16:52] 
+
+
+[2024-06-09 13:16:52] Started the Error Log File
+[2024-06-09 13:17:14] No errors occurred
+[2024-06-09 13:17:14] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:17:16] 
+
+
+[2024-06-09 13:17:16] Started the Error Log File
+[2024-06-09 13:17:33] No errors occurred
+[2024-06-09 13:17:33] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:17:36] 
+
+
+[2024-06-09 13:17:36] Started the Error Log File
+[2024-06-09 13:17:49] No errors occurred
+[2024-06-09 13:17:49] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:19:03] 
+
+
+[2024-06-09 13:19:03] Started the Error Log File
+[2024-06-09 13:19:07] No errors occurred
+[2024-06-09 13:19:07] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:19:12] 
+
+
+[2024-06-09 13:19:12] Started the Error Log File
+[2024-06-09 13:19:16] No errors occurred
+[2024-06-09 13:19:16] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:19:30] 
+
+
+[2024-06-09 13:19:30] Started the Error Log File
+[2024-06-09 13:19:48] No errors occurred
+[2024-06-09 13:19:48] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:19:53] 
+
+
+[2024-06-09 13:19:53] Started the Error Log File
+[2024-06-09 13:20:09] No errors occurred
+[2024-06-09 13:20:09] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:20:11] 
+
+
+[2024-06-09 13:20:11] Started the Error Log File
+[2024-06-09 13:20:28] No errors occurred
+[2024-06-09 13:20:28] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:20:30] 
+
+
+[2024-06-09 13:20:30] Started the Error Log File
+[2024-06-09 13:20:46] No errors occurred
+[2024-06-09 13:20:46] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:20:48] 
+
+
+[2024-06-09 13:20:48] Started the Error Log File
+[2024-06-09 13:21:02] No errors occurred
+[2024-06-09 13:21:02] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:21:04] 
+
+
+[2024-06-09 13:21:04] Started the Error Log File
+[2024-06-09 13:21:29] No errors occurred
+[2024-06-09 13:21:29] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:21:32] 
+
+
+[2024-06-09 13:21:32] Started the Error Log File
+[2024-06-09 13:21:44] No errors occurred
+[2024-06-09 13:21:44] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:21:46] 
+
+
+[2024-06-09 13:21:46] Started the Error Log File
+[2024-06-09 13:21:59] No errors occurred
+[2024-06-09 13:21:59] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:23:19] 
+
+
+[2024-06-09 13:23:19] Started the Error Log File
+[2024-06-09 13:23:35] No errors occurred
+[2024-06-09 13:23:35] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:24:43] 
+
+
+[2024-06-09 13:24:43] Started the Error Log File
+[2024-06-09 13:25:04] No errors occurred
+[2024-06-09 13:25:04] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:25:07] 
+
+
+[2024-06-09 13:25:07] Started the Error Log File
+[2024-06-09 13:25:27] No errors occurred
+[2024-06-09 13:25:27] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:26:29] 
+
+
+[2024-06-09 13:26:29] Started the Error Log File
+[2024-06-09 13:26:35] No errors occurred
+[2024-06-09 13:26:35] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:26:38] 
+
+
+[2024-06-09 13:26:38] Started the Error Log File
+[2024-06-09 13:26:48] No errors occurred
+[2024-06-09 13:26:48] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:26:56] 
+
+
+[2024-06-09 13:26:56] Started the Error Log File
+[2024-06-09 13:27:05] No errors occurred
+[2024-06-09 13:27:05] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:27:08] 
+
+
+[2024-06-09 13:27:08] Started the Error Log File
+[2024-06-09 13:27:17] No errors occurred
+[2024-06-09 13:27:17] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:27:24] 
+
+
+[2024-06-09 13:27:24] Started the Error Log File
+[2024-06-09 13:27:35] No errors occurred
+[2024-06-09 13:27:35] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:27:38] 
+
+
+[2024-06-09 13:27:38] Started the Error Log File
+[2024-06-09 13:27:48] No errors occurred
+[2024-06-09 13:27:48] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:27:50] 
+
+
+[2024-06-09 13:27:50] Started the Error Log File
+[2024-06-09 13:28:01] No errors occurred
+[2024-06-09 13:28:01] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:28:04] 
+
+
+[2024-06-09 13:28:04] Started the Error Log File
+[2024-06-09 13:28:16] No errors occurred
+[2024-06-09 13:28:16] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:28:43] 
+
+
+[2024-06-09 13:28:43] Started the Error Log File
+[2024-06-09 13:28:49] No errors occurred
+[2024-06-09 13:28:49] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:29:00] 
+
+
+[2024-06-09 13:29:00] Started the Error Log File
+[2024-06-09 13:49:24] No errors occurred
+[2024-06-09 13:49:24] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:49:26] 
+
+
+[2024-06-09 13:49:26] Started the Error Log File
+[2024-06-09 13:49:34] No errors occurred
+[2024-06-09 13:49:34] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:49:36] 
+
+
+[2024-06-09 13:49:36] Started the Error Log File
+[2024-06-09 13:49:42] No errors occurred
+[2024-06-09 13:49:42] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:50:09] 
+
+
+[2024-06-09 13:50:09] Started the Error Log File
+[2024-06-09 13:50:16] No errors occurred
+[2024-06-09 13:50:16] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:50:30] 
+
+
+[2024-06-09 13:50:30] Started the Error Log File
+[2024-06-09 13:50:36] No errors occurred
+[2024-06-09 13:50:36] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:51:18] 
+
+
+[2024-06-09 13:51:18] Started the Error Log File
+[2024-06-09 13:51:53] No errors occurred
+[2024-06-09 13:51:53] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:52:04] 
+
+
+[2024-06-09 13:52:04] Started the Error Log File
+[2024-06-09 13:52:10] No errors occurred
+[2024-06-09 13:52:10] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:52:21] 
+
+
+[2024-06-09 13:52:21] Started the Error Log File
+[2024-06-09 13:52:32] No errors occurred
+[2024-06-09 13:52:32] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:52:34] 
+
+
+[2024-06-09 13:52:34] Started the Error Log File
+[2024-06-09 13:52:41] No errors occurred
+[2024-06-09 13:52:41] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:56:16] 
+
+
+[2024-06-09 13:56:16] Started the Error Log File
+[2024-06-09 13:56:26] No errors occurred
+[2024-06-09 13:56:26] Closed the Error Log File
+
+
+
+
+[2024-06-09 13:59:48] 
+
+
+[2024-06-09 13:59:48] Started the Error Log File
+[2024-06-09 13:59:50] No errors occurred
+[2024-06-09 13:59:50] Closed the Error Log File
+
+
+
+
+[2024-06-09 14:00:08] 
+
+
+[2024-06-09 14:00:08] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1103, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 228, in __init__
+    self.create_loading_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 247, in create_loading_screen
+    create_concentric_circles(self.loading_canvas, 400, 300, 50, 200, 20, outline='gray', width=2)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_concentric_circles' is not defined
+[2024-06-09 14:15:55] 
+
+
+[2024-06-09 14:15:55] Started the Error Log File
+[2024-06-09 14:15:58] No errors occurred
+[2024-06-09 14:15:58] Closed the Error Log File
+
+
+
+
+[2024-06-09 14:16:34] 
+
+
+[2024-06-09 14:16:34] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1103, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 228, in __init__
+    self.create_loading_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 247, in create_loading_screen
+    create_horizontal_offset_circles(self.loading_canvas, 200, 300, 50, 200, 20, outline='gray', width=2)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_horizontal_offset_circles' is not defined
+[2024-06-09 14:17:00] 
+
+
+[2024-06-09 14:17:00] Started the Error Log File
+[2024-06-09 14:17:15] No errors occurred
+[2024-06-09 14:17:15] Closed the Error Log File
+
+
+
+
+[2024-06-09 14:17:29] 
+
+
+[2024-06-09 14:17:29] Started the Error Log File
+[2024-06-09 14:17:37] No errors occurred
+[2024-06-09 14:17:37] Closed the Error Log File
+
+
+
+
+[2024-06-09 14:18:09] 
+
+
+[2024-06-09 14:18:09] Started the Error Log File
+[2024-06-09 14:18:15] No errors occurred
+[2024-06-09 14:18:15] Closed the Error Log File
+
+
+
+
+[2024-06-09 14:18:32] 
+
+
+[2024-06-09 14:18:32] Started the Error Log File
+[2024-06-09 14:18:46] No errors occurred
+[2024-06-09 14:18:46] Closed the Error Log File
+
+
+
+
+[2024-06-09 14:18:48] 
+
+
+[2024-06-09 14:18:48] Started the Error Log File
+[2024-06-09 14:18:55] No errors occurred
+[2024-06-09 14:18:55] Closed the Error Log File
+
+
+
+
+[2024-06-09 14:20:34] 
+
+
+[2024-06-09 14:20:34] Started the Error Log File
+[2024-06-09 14:20:42] No errors occurred
+[2024-06-09 14:20:42] Closed the Error Log File
+
+
+
+
+[2024-06-09 14:23:47] 
+
+
+[2024-06-09 14:23:47] Started the Error Log File
+[2024-06-09 14:23:50] No errors occurred
+[2024-06-09 14:23:50] Closed the Error Log File
+
+
+
+
+[2024-06-09 14:24:20] 
+
+
+[2024-06-09 14:24:20] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1109, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 228, in __init__
+    self.create_loading_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 246, in create_loading_screen
+    self.loading_canvas.update_idle_tasks()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CTkCanvas' object has no attribute 'update_idle_tasks'. Did you mean: 'update_idletasks'?
+[2024-06-09 14:24:37] 
+
+
+[2024-06-09 14:24:37] Started the Error Log File
+[2024-06-09 14:24:43] No errors occurred
+[2024-06-09 14:24:43] Closed the Error Log File
+
+
+
+

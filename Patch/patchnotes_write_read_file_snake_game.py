@@ -13,9 +13,18 @@ import traceback
 # Define the patchnotes list
 patchnotes = [
     {
+        "version": "0.2.9",
+        "changes": [
+            "New features:",
+            "added information screens",
+        ]
+    },
+    {
         "version": "0.2.8",
         "changes": [
+            "Changes:",
             "Redone the theme label and reset the value back to the initial theme",
+            "",
             "Bug fixes:",
             "Fixed that the contrast was not updating correctly",
             "Fixed that the theme was not updating correctly",
@@ -26,7 +35,9 @@ patchnotes = [
     {
         "version": "0.2.7",
         "changes": [
-            "Rewrote code to make the main file have less code"
+            "Changes:",
+            "Rewrote code to make the main file have less code",
+            "",
             "Bug fixes:",
             "Classic and endless snake doesn't work"
         ]
@@ -50,6 +61,7 @@ patchnotes = [
             "Added the ability to reset kebindings",
             "added the ability to reset all the settings to default",
             "Redone the game settings screen again, now with a better layout",
+            "",
             "Bug fixes:",
             "Fixed that the screen for the keybindings was not working correctly",
             "When patchnotes is open and you go back home you cannot open the Patchnotes anymore",
@@ -63,6 +75,7 @@ patchnotes = [
             "New features:",
             "Added the ability to change the key bindings",
             "Redone the game settings screen",
+            "",
             "Bug fixes:",
             "Fixed that the screen for the keybindings was not working correctly",
         ]
@@ -70,6 +83,7 @@ patchnotes = [
     {
         "version": "0.2.3",
         "changes": [
+            "Changes:",
             "Rewrote the bindingskeys Preparing for the next update:",
         ]
     },
@@ -79,6 +93,7 @@ patchnotes = [
             "New features:",
             "Better error handling",
             "Better logging",
+            "",
             "Bug fixes:",
             "No label when changing themes",
             "No label when changing game size",
@@ -90,6 +105,7 @@ patchnotes = [
         "changes": [
             "New features:",
             "Added error handling",
+            "",
             "Bug fixes:",
             "No reset buttons on the classic snake",
             "No label on the classic snake",
@@ -139,7 +155,7 @@ patchnotes = [
             "Added themes to the game",
             "Added a new food type: Special food",
             "Added a new food type: Shorten food",
-            ""
+            "",
             "Bug fixes:",
             "Fixed that when you press all the buttons the snake dies instantly",
             "The labels for the highscores are now updating correctly",
@@ -153,6 +169,7 @@ patchnotes = [
         "changes": [
             "New features:",
             "Added config.ini to keep track off the settings and scores",
+            "",
             "Bug fixes:",
             "Labels not updating when they have been reset",
             "Fixed that the game timer was still running when paused",
@@ -163,6 +180,7 @@ patchnotes = [
         "changes": [
             "New features:",
             "Added Labels to the game",
+            "",
             "Bug fixes:",
             "The default screen width and height don't center the app",
             "Reset highscores not exctually resetting the highscores",
@@ -174,6 +192,7 @@ patchnotes = [
         "changes": [
             "New features:",
             "Added Highscores to the game",
+            "",
             "Bug fixes:",
             "Fixed the bugs regarding the gamelogger",
             "Fixed screen size bug",
@@ -189,8 +208,9 @@ patchnotes = [
             "Added a new game mode: Endless mode",
             "Added a new game mode: Leveling mode",
             "Added a game logger to log the game",
+            "",
             "Bug fixes:",
-            "When going back to normal size from fullscreen, the game size is now correctly resized",
+            "When going back to normal size from fullscreen the game size is now correctly resized",
             "With no size in config.ini the game doesn't crash anymore"
         ]
     },
@@ -198,6 +218,7 @@ patchnotes = [
         "version": "0.1",
         "changes": [
             "Initial release",
+            "",
             "Bug fixes:",
             "Fix a bug regarding remembering the game size",
             "No fullscreen when setting to fullscreen mode",

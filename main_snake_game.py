@@ -7,7 +7,7 @@ import traceback
 import time
 import configparser
 import json
-#from tkinter import TclError
+import threading
 from os import path
 import customtkinter as ctk
 
@@ -95,16 +95,14 @@ class SnakeGameApp:
         self.snake = [(0, 0)]
         self.directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]  # Right, Down, Left, Up
         self.current_direction_index = 0
-        # self.food = self.spawn_food()
-        self.cell_size = 20  # Set the size of a cell in the game board
+        self.cell_size = 20
         self.running = True
-        self.mini_snake_game_canvas = ctk.CTkCanvas(self.root, width=60, height=60)  # Create a canvas for the game board
-        
+        self.mini_snake_game_canvas = ctk.CTkCanvas(self.root, width=60, height=60) # pylint: disable=line-too-long
 
 
         # Creating the main canvas for the app
         self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
-        self.main_canvas.pack(expand=True, fill="both")
+        # self.main_canvas.pack(expand=True, fill="both")
         self.original_main_canvas = self.main_canvas
 
         # All the game canvases
@@ -192,7 +190,7 @@ class SnakeGameApp:
             'reset_all_movements': self.reset_all_movements,
             'return_info_home': self.info_home,
             'info_general': self.info_general,
-            'info_general_reset_mini_snake': self.info_general_reset_mini_snake,
+            'info_general_start_mini_snake': self.info_general_start_mini_snake,
             'info_classic_game_mode': self.info_classic,
             'info_endless_game_mode': self.info_endless,
             'info_leveling_game_mode': self.info_leveling,
@@ -225,9 +223,71 @@ class SnakeGameApp:
         self.settings_labels.update_initial_game_size()
 
         # Create the home screen
-        self.create_home_screen()
-        self.game_logger.log_game_event("Home_screen method called")
+        # self.create_home_screen()
+        # self.game_logger.log_game_event("Home_screen method called")
+        self.create_loading_screen()
+
         self.root.protocol("WM_DELETE_WINDOW", self.confirm_quit)
+
+    def create_circle(self, canvas, x, y, r, **kwargs):
+        return canvas.create_oval(x-r, y-r, x+r, y+r, **kwargs)
+
+    def create_horizontal_offset_circles(self, canvas, start_x, y, start_radius, end_radius, step, **kwargs):
+        for i in range(start_radius, end_radius, step):
+           self.create_circle(canvas, start_x + i*2, y, i, **kwargs)
+
+    def create_loading_screen(self):
+        """
+        Create the loading screen.
+        """
+        self.loading_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+        self.loading_canvas.pack(expand=True, fill="both")
+
+        self.loading_canvas.update_idletasks()
+
+        # Calculate the center of the canvas
+        center_x = self.loading_canvas.winfo_width() // 2
+        center_y = self.loading_canvas.winfo_height() // 2
+
+        # Create offset circles
+        self.create_horizontal_offset_circles(self.loading_canvas, center_x, center_y, 50, 500, 40, outline='gray', width=2)
+
+        self.loading_canvas.create_text(center_x, center_y, text="Loading...", font=("Helvetica", 50), fill="white", tags="text")
+
+        self.progress_bar = ctk.CTkProgressBar(self.loading_canvas, width=400, height=30)
+        self.progress_bar.place(x=center_x, y=center_y + 50, anchor="center")  # Place the progress bar 50 pixels below the center
+
+        # Set the initial value of the progress bar to 0
+        self.progress_bar.set(0)
+
+        # Set the determinate_speed to 0.2 to make the progress bar fill up in 5 seconds
+        self.progress_bar.configure(indeterminate_speed=0.2)
+
+        # Start the progress bar immediately in a separate thread
+        threading.Thread(target=self.start_and_stop_progress_bar).start()
+
+        self.loading_canvas.after(5000, self.destroy_loading_screen)
+
+
+    def start_and_stop_progress_bar(self):
+        """
+        start and stop the progress bar.
+        """
+        self.progress_bar.start()
+
+        # Wait for 5 seconds (the time it takes for the progress bar to fill up)
+        time.sleep(5)
+
+        # Stop the progress bar
+        self.progress_bar.stop()
+        #self.progress_bar.destroy()
+
+    def destroy_loading_screen(self):
+        """
+        Destroy the loading screen.
+        """
+        self.loading_canvas.destroy()
+        self.create_home_screen()
 
     # Apply theme from the configuration
     def apply_theme(self):
@@ -247,6 +307,7 @@ class SnakeGameApp:
         """
         Create the home screen of the game.
         """
+        self.main_canvas.pack(expand=True, fill="both")
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_main_menu_label()
         self.create_button_panel.classic_snake_button()
@@ -330,12 +391,12 @@ class SnakeGameApp:
         self.start_game("info_general")
         self.mini_snake_game_canvas = ctk.CTkCanvas(self.root, width=150, height=150) # pylint: disable=line-too-long
         self.mini_snake_game_canvas.place(x=200, y=100)
-        self.mini_snake_game = MiniSnakeGame(self.mini_snake_game_canvas, self.cell_size, self.game_logger)
+        self.mini_snake_game = MiniSnakeGame(self.mini_snake_game_canvas, self.cell_size, self.game_logger) # pylint: disable=line-too-long
 
         # Call the update method to start the game
         self.mini_snake_game.update()
 
-    def info_general_reset_mini_snake(self):
+    def info_general_start_mini_snake(self):
         """
         Reset the mini snake game.
         """
@@ -414,15 +475,15 @@ class SnakeGameApp:
         elif game_type == "info":
             self.info_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "info_general":
-            self.info_general_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+            self.info_general_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "info_classic_game_mode":
             self.info_classic_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "info_endless_game_mode":
-            self.info_endless_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+            self.info_endless_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "info_leveling_game_mode":
-            self.info_leveling_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+            self.info_leveling_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "info_challange_game_mode":
-            self.info_challange_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
+            self.info_challange_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "settings":
             self.settings_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         elif game_type == "settings_values":
@@ -553,7 +614,7 @@ class SnakeGameApp:
                 self.info_endless_canvas = self.destroy_canvas(self.info_endless_canvas)
             elif self.info_leveling_canvas is not None and self.info_leveling_canvas.winfo_exists():
                 self.info_leveling_canvas = self.destroy_canvas(self.info_leveling_canvas)
-            elif self.info_challange_canvas is not None and self.info_challange_canvas.winfo_exists():
+            elif self.info_challange_canvas is not None and self.info_challange_canvas.winfo_exists(): # pylint: disable=line-too-long
                 self.info_challange_canvas = self.destroy_canvas(self.info_challange_canvas)
             else:
                 pass
@@ -573,29 +634,29 @@ class SnakeGameApp:
             self.create_button_panel.info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_general_label()
-            self.create_reset_button_panel.info_general_reset_mini_snake()
-        
+            self.create_reset_button_panel.info_general_start_mini_snake()
+
         elif game_type == "info_classic_game_mode":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
                 self.info_canvas = self.destroy_canvas(self.info_canvas)
             self.create_button_panel.info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_classic_label()
-        
+
         elif game_type == "info_endless_game_mode":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
                 self.info_canvas = self.destroy_canvas(self.info_canvas)
             self.create_button_panel.info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_endless_label()
-        
+
         elif game_type == "info_leveling_game_mode":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
                 self.info_canvas = self.destroy_canvas(self.info_canvas)
             self.create_button_panel.info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_leveling_label()
-        
+
         elif game_type == "info_challange_game_mode":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
                 self.info_canvas = self.destroy_canvas(self.info_canvas)
@@ -990,6 +1051,8 @@ class SnakeGameApp:
             if self.main_canvas == self.food_time_attack_canvas:
                 self.food_time_attack_canvas.delete_game_labels___()
 
+            self.close_mini_snake()
+
             time.sleep(0.1)
             # Destroy all game canvases
             self.classic_snake_canvas = self.destroy_canvas(self.classic_snake_canvas)
@@ -1015,6 +1078,9 @@ class SnakeGameApp:
             traceback.print_exc(e)
 
     def close_mini_snake(self):
+        """
+        Close the mini snake game.
+        """
         if self.mini_snake_game is not None:
             self.mini_snake_game.running = False
             self.mini_snake_game_canvas.destroy()
@@ -1027,11 +1093,7 @@ class SnakeGameApp:
         Confirm quitting the game.
         """
         try:
-            
             self.close_mini_snake()
-            if self.mini_snake_game_canvas is not None:
-                self.mini_snake_game_canvas.destroy()
-                self.mini_snake_game_canvas = None
             # Assuming game_logger and error_game_logger are defined somewhere in your class
             self.game_logger.on_closing()
             self.error_game_logger.on_closing()
@@ -1068,3 +1130,5 @@ if __name__ == "__main__":
     root.mainloop()
 
 # End of main_snake_game.py
+
+# pylint: disable=too-many-lines

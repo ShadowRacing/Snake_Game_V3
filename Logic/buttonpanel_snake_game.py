@@ -423,7 +423,7 @@ class ClickButtonPanel:
         """
         Function for creating the home button.
         """
-        self.home_button = ctk.CTkButton(self.button_canvas, text="Home", font=FONT_LIST[11], # pylint: disable=line-too-long
+        self.home_button = ctk.CTkButton(self.button_canvas, text="Main Menu", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, corner_radius=self.corner_radius ,state="normal", # pylint: disable=line-too-long
                                 command=self.home_button_command)
         self.home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long

@@ -98,7 +98,7 @@ class EndlessFood:
         Add occupied coordinates to the set.
         """
         self.occupied_coordinates.add((x, y))
-        self.game_logger.log_game_event(f"Occupied coordinates for food: {self.occupied_coordinates}")
+        self.game_logger.log_game_event(f"Occupied coordinates for food: {self.occupied_coordinates}") # pylint: disable=line-too-long
 
     def remove_occuppied_coordinates(self, x, y):
         """

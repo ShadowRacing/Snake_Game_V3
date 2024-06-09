@@ -331,8 +331,9 @@ class OptionButtonPanel:
             # Theme Option
             self.theme_config = self.config.get('Settings', 'theme', fallback='Default')
             self.create_option_button(self.theme_callback,
-                                      ["Default", "Black", "Blue", "Dark-Blue", "Green", "Grey", "Orange", # pylint: disable=line-too-long
-                                       "Pink", "Purple", "Red", "White", "Yellow"],
+                                        ['Default','Black', 'Blue', 'Dark-Blue', 'Green',
+                                        'Grey', 'Orange', 'Pink', 'Purple', 'Red',
+                                        'White', 'Yellow', 'Gold', 'OrangeRed', 'MidnightPurple'],
                                       self.theme_config, 400, 50)
 
             # Contrast Option

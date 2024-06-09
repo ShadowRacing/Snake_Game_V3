@@ -53,6 +53,7 @@ class SnakeGameApp:
         self.game_width = game_width
         self.game_height = game_height
         self.snake_color = None
+        self.theme = None
         self.theme_updater.set_initial_theme()
 
         # Read the config file and load it
@@ -234,7 +235,7 @@ class SnakeGameApp:
 
     def create_horizontal_offset_circles(self, canvas, start_x, y, start_radius, end_radius, step, **kwargs):
         for i in range(start_radius, end_radius, step):
-           self.create_circle(canvas, start_x + i*2, y, i, **kwargs)
+            self.create_circle(canvas, start_x + i*2, y, i, **kwargs)
 
     def create_loading_screen(self):
         """
@@ -242,20 +243,57 @@ class SnakeGameApp:
         """
         self.loading_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5)
         self.loading_canvas.pack(expand=True, fill="both")
+        self.loading_canvas.bind("<Configure>", self.update_loading_screen_position)
 
-        self.loading_canvas.update_idletasks()
+        self.loading_canvas.after(5000, self.destroy_loading_screen)
 
+    def update_loading_screen_position(self, event):
         # Calculate the center of the canvas
-        center_x = self.loading_canvas.winfo_width() // 2
-        center_y = self.loading_canvas.winfo_height() // 2
+        center_x = event.width // 2
+        center_y = event.height // 2
 
-        # Create offset circles
-        self.create_horizontal_offset_circles(self.loading_canvas, center_x, center_y, 50, 500, 40, outline='gray', width=2)
+        # Update the circles
+        self.theme = self.config.get('Settings', 'theme', fallback='Default')
+        if self.theme in ['Default','Black', 'Blue', 'Dark-Blue', 'Green',
+                                'Grey', 'Orange', 'Pink', 'Purple', 'Red',
+                                'White', 'Yellow', 'Gold', 'OrangeRed', 'MidnightPurple']:
+            if self.theme == 'Default':
+                self.theme = "#00FF00"
+            elif self.theme == 'Black':
+                self.theme = "#000000"
+            elif self.theme == 'Blue':
+                self.theme = "#0000FF"
+            elif self.theme == 'Dark-Blue':
+                self.theme = "#3a7ebf"
+            elif self.theme == 'Green':
+                self.theme = "#00FF00"
+            elif self.theme == 'Grey':
+                self.theme = "#808080"
+            elif self.theme == 'Orange':
+                self.theme = "#FFA500"
+            elif self.theme == 'Pink':
+                self.theme = "#FFC0CB"
+            elif self.theme == 'Purple':
+                self.theme = "#800080"
+            elif self.theme == 'Red':
+                self.theme = "#FF0000"
+            elif self.theme == 'White':
+                self.theme = "#FFFFFF"
+            elif self.theme == 'Yellow':
+                self.theme = "#FFFF00"
+            elif self.theme == 'Gold':
+                self.theme = "#FFD700"
+            elif self.theme == 'OrangeRed':
+                self.theme = "#FF4500"
+            elif self.theme == 'MidnightPurple':
+                self.theme = "#210F28"
+        self.create_horizontal_offset_circles(self.loading_canvas, -300, center_y, 50, 5000, 60, outline=self.theme, width=2)
 
+
+        # Recreate the loading text and progress bar
         self.loading_canvas.create_text(center_x, center_y, text="Loading...", font=("Helvetica", 50), fill="white", tags="text")
-
         self.progress_bar = ctk.CTkProgressBar(self.loading_canvas, width=400, height=30)
-        self.progress_bar.place(x=center_x, y=center_y + 50, anchor="center")  # Place the progress bar 50 pixels below the center
+        self.progress_bar.place(x=center_x, y=center_y + 50, anchor="center")
 
         # Set the initial value of the progress bar to 0
         self.progress_bar.set(0)
@@ -265,8 +303,6 @@ class SnakeGameApp:
 
         # Start the progress bar immediately in a separate thread
         threading.Thread(target=self.start_and_stop_progress_bar).start()
-
-        self.loading_canvas.after(5000, self.destroy_loading_screen)
 
 
     def start_and_stop_progress_bar(self):
@@ -286,6 +322,8 @@ class SnakeGameApp:
         """
         Destroy the loading screen.
         """
+        self.progress_bar.destroy()
+        
         self.loading_canvas.destroy()
         self.create_home_screen()
 
@@ -1050,8 +1088,8 @@ class SnakeGameApp:
                 self.leveling_snake_canvas.delete_game_labels__()
             if self.main_canvas == self.food_time_attack_canvas:
                 self.food_time_attack_canvas.delete_game_labels___()
-
-            self.close_mini_snake()
+            if self.main_canvas == self.info_general_canvas:            
+                self.close_mini_snake()
 
             time.sleep(0.1)
             # Destroy all game canvases
@@ -1093,7 +1131,12 @@ class SnakeGameApp:
         Confirm quitting the game.
         """
         try:
-            self.close_mini_snake()
+            if self.mini_snake_game is not None:
+                self.mini_snake_game.running = False
+                if self.mini_snake_game_canvas is not None:
+                    self.mini_snake_game_canvas.destroy()
+                    self.mini_snake_game_canvas = None
+                self.mini_snake_game = None
             # Assuming game_logger and error_game_logger are defined somewhere in your class
             self.game_logger.on_closing()
             self.error_game_logger.on_closing()

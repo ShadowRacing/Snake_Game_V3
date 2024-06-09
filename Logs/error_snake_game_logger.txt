@@ -12578,3 +12578,255 @@ Traceback (most recent call last):
     if not self.snake_visited_positions:
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'SnakeGameApp' object has no attribute 'snake_visited_positions'
+[2024-06-07 21:57:53] 
+
+
+[2024-06-07 21:57:53] Started the Error Log File
+[2024-06-07 21:58:07] No errors occurred
+[2024-06-07 21:58:07] Closed the Error Log File
+
+
+
+
+[2024-06-08 16:49:17] 
+
+
+[2024-06-08 16:49:17] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 73, in info_general_command
+    self.functions['info_general']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 338, in info_general
+    self.update_mini_snake()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 689, in update_mini_snake
+    head = self.snake[0]
+           ~~~~~~~~~~^^^
+TypeError: 'MiniSnakeGame' object is not subscriptable
+[2024-06-08 16:49:29] No errors occurred
+[2024-06-08 16:49:29] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:26:18] 
+
+
+[2024-06-09 10:26:18] Started the Error Log File
+[2024-06-09 10:26:23] No errors occurred
+[2024-06-09 10:26:23] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:27:24] 
+
+
+[2024-06-09 10:27:24] Started the Error Log File
+[2024-06-09 10:27:35] No errors occurred
+[2024-06-09 10:27:35] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:28:11] 
+
+
+[2024-06-09 10:28:11] Started the Error Log File
+[2024-06-09 10:28:18] No errors occurred
+[2024-06-09 10:28:18] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:28:45] 
+
+
+[2024-06-09 10:28:45] Started the Error Log File
+[2024-06-09 10:28:52] No errors occurred
+[2024-06-09 10:28:52] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:29:05] 
+
+
+[2024-06-09 10:29:05] Started the Error Log File
+[2024-06-09 10:29:09] No errors occurred
+[2024-06-09 10:29:09] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:31:03] 
+
+
+[2024-06-09 10:31:03] Started the Error Log File
+[2024-06-09 10:31:09] No errors occurred
+[2024-06-09 10:31:09] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:31:49] 
+
+
+[2024-06-09 10:31:49] Started the Error Log File
+[2024-06-09 10:32:26] No errors occurred
+[2024-06-09 10:32:26] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:32:41] 
+
+
+[2024-06-09 10:32:41] Started the Error Log File
+[2024-06-09 10:32:54] No errors occurred
+[2024-06-09 10:32:54] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:38:30] 
+
+
+[2024-06-09 10:38:30] Started the Error Log File
+[2024-06-09 10:38:39] No errors occurred
+[2024-06-09 10:38:39] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:39:53] 
+
+
+[2024-06-09 10:39:53] Started the Error Log File
+[2024-06-09 10:40:16] No errors occurred
+[2024-06-09 10:40:16] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:44:05] 
+
+
+[2024-06-09 10:44:05] Started the Error Log File
+[2024-06-09 10:44:20] No errors occurred
+[2024-06-09 10:44:20] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:47:00] 
+
+
+[2024-06-09 10:47:00] Started the Error Log File
+[2024-06-09 10:47:22] No errors occurred
+[2024-06-09 10:47:22] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:47:37] 
+
+
+[2024-06-09 10:47:37] Started the Error Log File
+[2024-06-09 10:48:27] No errors occurred
+[2024-06-09 10:48:27] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:49:58] 
+
+
+[2024-06-09 10:49:58] Started the Error Log File
+[2024-06-09 10:50:01] No errors occurred
+[2024-06-09 10:50:01] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:52:16] 
+
+
+[2024-06-09 10:52:16] Started the Error Log File
+[2024-06-09 10:52:47] No errors occurred
+[2024-06-09 10:52:47] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:56:28] 
+
+
+[2024-06-09 10:56:28] Started the Error Log File
+[2024-06-09 10:58:02] No errors occurred
+[2024-06-09 10:58:02] Closed the Error Log File
+
+
+
+
+[2024-06-09 10:58:05] 
+
+
+[2024-06-09 10:58:05] Started the Error Log File
+[2024-06-09 10:58:42] No errors occurred
+[2024-06-09 10:58:42] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:00:53] 
+
+
+[2024-06-09 11:00:53] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1047, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 223, in __init__
+    self.mini_snake_game = MiniSnakeGame(self.main_canvas, 20) # pylint: disable=line-too-long
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MiniSnakeGame.__init__() missing 1 required positional argument: 'game_logger'
+[2024-06-09 11:02:38] 
+
+
+[2024-06-09 11:02:38] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 64, in info_command
+    self.functions['open_info']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 318, in open_info
+    self.start_game("info")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 500, in start_game
+    self.mini_snake_game = MiniSnakeGame(self.main_canvas, 20)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MiniSnakeGame.__init__() missing 1 required positional argument: 'game_logger'
+[2024-06-09 11:02:40] No errors occurred
+[2024-06-09 11:02:40] Closed the Error Log File
+
+
+
+
+[2024-06-09 11:03:16] 
+
+
+[2024-06-09 11:03:16] Started the Error Log File
+[2024-06-09 11:03:35] No errors occurred
+[2024-06-09 11:03:35] Closed the Error Log File
+
+
+
+

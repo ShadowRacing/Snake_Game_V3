@@ -7,7 +7,6 @@ import traceback
 import time
 import configparser
 import json
-import random
 #from tkinter import TclError
 from os import path
 import customtkinter as ctk
@@ -25,13 +24,13 @@ from Logic.config_ini_initials import ConfigIni
 from Logic.snake_challange_choice import ChallangeChoices
 from Logic.snake_challange_settings import ChallangeSettings
 from Logic.resetconfigvalues import ResetConfigValues
+from Logic.little_snake_game import MiniSnakeGame
 from Games.snake_classic_game import SnakeClassicGame
 from Games.snake_endless_game import SnakeEndless
 from Games.snake_leveling_game import SnakeLeveling
 from Games.snake_challange_games import FoodTimeAttack
 from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
-import time
 
 
 # Define the main application class
@@ -96,7 +95,7 @@ class SnakeGameApp:
         self.snake = [(0, 0)]
         self.directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]  # Right, Down, Left, Up
         self.current_direction_index = 0
-        self.food = self.spawn_food()
+        # self.food = self.spawn_food()
         self.cell_size = 20  # Set the size of a cell in the game board
         self.running = True
         self.mini_snake_game_canvas = ctk.CTkCanvas(self.root, width=60, height=60)  # Create a canvas for the game board
@@ -193,6 +192,7 @@ class SnakeGameApp:
             'reset_all_movements': self.reset_all_movements,
             'return_info_home': self.info_home,
             'info_general': self.info_general,
+            'info_general_reset_mini_snake': self.info_general_reset_mini_snake,
             'info_classic_game_mode': self.info_classic,
             'info_endless_game_mode': self.info_endless,
             'info_leveling_game_mode': self.info_leveling,
@@ -219,6 +219,8 @@ class SnakeGameApp:
         self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)
 
         self.reset_config_values = ResetConfigValues(self.game_logger, self.classic_snake_canvas, self.endless_snake_canvas, self.leveling_snake_canvas) # pylint: disable=line-too-long
+
+        self.mini_snake_game = MiniSnakeGame(self.main_canvas, 20, self.game_logger) # pylint: disable=line-too-long
 
         self.settings_labels.update_initial_game_size()
 
@@ -326,9 +328,18 @@ class SnakeGameApp:
         Display the general information.
         """
         self.start_game("info_general")
-        self.mini_snake_game_canvas = ctk.CTkCanvas(self.root, width=6*self.cell_size, height=6*self.cell_size) # pylint: disable=line-too-long
+        self.mini_snake_game_canvas = ctk.CTkCanvas(self.root, width=150, height=150) # pylint: disable=line-too-long
         self.mini_snake_game_canvas.place(x=200, y=100)
-        self.update_mini_snake()
+        self.mini_snake_game = MiniSnakeGame(self.mini_snake_game_canvas, self.cell_size, self.game_logger)
+
+        # Call the update method to start the game
+        self.mini_snake_game.update()
+
+    def info_general_reset_mini_snake(self):
+        """
+        Reset the mini snake game.
+        """
+        self.mini_snake_game.reset_game()
 
     def info_classic(self):
         """
@@ -486,6 +497,7 @@ class SnakeGameApp:
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger, self.game_config, self.open_info, self.open_settings) # pylint: disable=line-too-long
         self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.game_logger, self.game_config) # pylint: disable=line-too-long
         self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)
+        self.mini_snake_game = MiniSnakeGame(self.main_canvas, 20, self.game_logger)
         self.settings_labels.update_initial_game_size()
 
         if game_type == "classic_snake":
@@ -561,6 +573,7 @@ class SnakeGameApp:
             self.create_button_panel.info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_general_label()
+            self.create_reset_button_panel.info_general_reset_mini_snake()
         
         elif game_type == "info_classic_game_mode":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
@@ -591,7 +604,6 @@ class SnakeGameApp:
             self.framelabel_panel.create_info_challange_label()
 
         elif game_type == "settings":
-            #self.create_option_button_panel.()
             self.create_button_panel.reset_settings_button()
             self.create_button_panel.settings_values_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
@@ -625,7 +637,6 @@ class SnakeGameApp:
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
-        #self.create_button_panel.reset_high_score_buttons(game_type)
         self.create_button_panel.quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
 
@@ -666,120 +677,6 @@ class SnakeGameApp:
 
             x1, y1, x2, y2 = 950, 125, 975, 100
             self.settings_canvas_values.create_rectangle(x1, y1, x2, y2, fill=color, outline="black") # pylint: disable=line-too-long
-
-    def spawn_food(self):
-        """
-        Spawn the food on the canvas.
-        """
-        while True:
-            food = (random.randint(0, 4), random.randint(0, 4))
-            if food not in self.snake:
-                return food
-
-    def update_mini_snake(self):
-        # Move the snake
-        head = self.snake[0]
-        direction = self.directions[self.current_direction_index]
-        new_head = (head[0] + direction[0], head[1] + direction[1])
-        self.snake.insert(0, new_head)
-
-        # Check if the snake has eaten the food
-        if new_head == self.food:
-            self.food = self.spawn_food()
-        else:
-            self.snake.pop()
-
-        # Change direction if necessary
-        if (new_head[0] % 5 == 0 and new_head[1] % 5 == 0):
-            self.current_direction_index = (self.current_direction_index + 1) % len(self.directions)
-
-        # Draw the snake and the food
-        self.mini_snake_game_canvas.delete('all')
-        for segment in self.snake:
-            self.mini_snake_game_canvas.create_rectangle(segment[0]*self.cell_size, segment[1]*self.cell_size, 
-                                          (segment[0]+1)*self.cell_size, (segment[1]+1)*self.cell_size, 
-                                          fill="green")
-        self.mini_snake_game_canvas.create_rectangle(self.food[0]*self.cell_size, self.food[1]*self.cell_size, 
-                                      (self.food[0]+1)*self.cell_size, (self.food[1]+1)*self.cell_size, 
-                                      fill="red")
-
-        # Schedule the next update
-        if self.running:
-            self.mini_snake_game_canvas.after(100, self.update_mini_snake)
-    
-    def update_direction(self, new_direction_index):
-        # Check if the new direction is the opposite of the current direction
-        current_direction = self.directions[self.current_direction_index]
-        new_direction = self.directions[new_direction_index]
-        if (current_direction[0] + new_direction[0] == 0 and
-            current_direction[1] + new_direction[1] == 0):
-            # The new direction is the opposite of the current direction, so ignore the update
-            return
-        # Update the direction
-        self.current_direction_index = new_direction_index
-
-    def close_mini_snake(self):
-        self.running = False
-        self.mini_snake_game_canvas.destroy()
-
-    # def mini_snake_game(self):
-    #     if self.mini_snake_game_canvas is not None:
-    #         # Initialize the game state
-    #         snake = [(0, 0)]  # The snake starts at the top left corner
-    #         direction = (0, 1)  # The snake moves to the right
-    #         food = [(5, 5)]  # The food starts at the middle of the board
-    #         score = 0
-
-    #         # Game loop
-    #         while True:
-    #             # Check if the snake has eaten the food
-    #             if snake[0] == food[0]:
-    #                 score += 1
-    #                 food.pop()
-    #                 # If the snake has eaten 10 foods, reset the game
-    #                 if score >= 10:
-    #                     snake = [(0, 0)]
-    #                     direction = (0, 1)
-    #                     score = 0
-    #                 # Spawn new food
-    #                 food.append((random.randint(0, 9), random.randint(0, 9)))
-    #             else:
-    #                 # Move the snake
-    #                 snake.insert(0, (snake[0][0] + direction[0], snake[0][1] + direction[1]))
-    #                 if snake[0] in snake[1:]:
-    #                     break
-    #                 else:
-    #                     snake.pop()
-
-    #             # Update the game display
-    #             self.draw_board(snake, food)
-
-    #             # Wait for a short period of time
-    #             time.sleep(0.1)
-    
-    # def draw_board(self, snake, food):
-    #     if self.mini_snake_game_canvas is not None:
-    #         try:
-    #             # Clear the canvas
-    #             self.mini_snake_game_canvas.delete('all')
-
-    #             # Draw the snake
-    #             for segment in snake:
-    #                 self.mini_snake_game_canvas.create_rectangle(segment[0]*self.cell_size, segment[1]*self.cell_size, 
-    #                                             (segment[0]+1)*self.cell_size, (segment[1]+1)*self.cell_size, 
-    #                                             fill="green")
-
-    #             # Draw the food
-    #             for f in food:
-    #                 self.mini_snake_game_canvas.create_rectangle(f[0]*self.cell_size, f[1]*self.cell_size, 
-    #                                             (f[0]+1)*self.cell_size, (f[1]+1)*self.cell_size, 
-    #                                             fill="red")
-
-    #             # Update the canvas
-    #             self.mini_snake_game_canvas.update()
-    #         except TclError:
-    #             # Handle the error when the canvas is not available (application closed)
-    #             pass
 
     def patchnotes(self):
         """
@@ -1116,6 +1013,13 @@ class SnakeGameApp:
             self.original_main_canvas.pack(expand=True, fill="both")
         except ValueError as e:
             traceback.print_exc(e)
+
+    def close_mini_snake(self):
+        if self.mini_snake_game is not None:
+            self.mini_snake_game.running = False
+            self.mini_snake_game_canvas.destroy()
+            self.mini_snake_game_canvas = None
+            self.mini_snake_game = None
 
     # Confirm quitting the game
     def confirm_quit(self):

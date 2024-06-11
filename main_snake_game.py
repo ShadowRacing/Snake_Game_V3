@@ -54,6 +54,7 @@ class SnakeGameApp:
         self.game_height = game_height
         self.snake_color = None
         self.theme = None
+        self.contrast = None
         self.theme_updater.set_initial_theme()
 
         # Read the config file and load it
@@ -262,41 +263,32 @@ class SnakeGameApp:
         center_x = event.width // 2
         center_y = event.height // 2
 
+       # Define a dictionary to map theme names to color codes
+        theme_colors = {
+            'Default': '#00FF00' if self.contrast in ['Default', 'Dark'] else '#228B22',
+            'Black': '#000000',
+            'Blue': '#0000FF',
+            'Dark-Blue': '#3a7ebf',
+            'Green': '#00FF00',
+            'Grey': '#808080',
+            'Orange': '#FFA500',
+            'Pink': '#FFC0CB',
+            'Purple': '#800080',
+            'Red': '#FF0000',
+            'White': '#FFFFFF',
+            'Yellow': '#FFFF00',
+            'Gold': '#FFD700',
+            'OrangeRed': '#FF4500',
+            'MidnightPurple': '#210F28'
+        }
+
         # Update the circles
+        self.contrast = self.config.get('Settings', 'contrast', fallback='Default')
         self.theme = self.config.get('Settings', 'theme', fallback='Default')
-        if self.theme in ['Default','Black', 'Blue', 'Dark-Blue', 'Green',
-                                'Grey', 'Orange', 'Pink', 'Purple', 'Red',
-                                'White', 'Yellow', 'Gold', 'OrangeRed', 'MidnightPurple']:
-            if self.theme == 'Default':
-                self.theme = "#00FF00"
-            elif self.theme == 'Black':
-                self.theme = "#000000"
-            elif self.theme == 'Blue':
-                self.theme = "#0000FF"
-            elif self.theme == 'Dark-Blue':
-                self.theme = "#3a7ebf"
-            elif self.theme == 'Green':
-                self.theme = "#00FF00"
-            elif self.theme == 'Grey':
-                self.theme = "#808080"
-            elif self.theme == 'Orange':
-                self.theme = "#FFA500"
-            elif self.theme == 'Pink':
-                self.theme = "#FFC0CB"
-            elif self.theme == 'Purple':
-                self.theme = "#800080"
-            elif self.theme == 'Red':
-                self.theme = "#FF0000"
-            elif self.theme == 'White':
-                self.theme = "#FFFFFF"
-            elif self.theme == 'Yellow':
-                self.theme = "#FFFF00"
-            elif self.theme == 'Gold':
-                self.theme = "#FFD700"
-            elif self.theme == 'OrangeRed':
-                self.theme = "#FF4500"
-            elif self.theme == 'MidnightPurple':
-                self.theme = "#210F28"
+
+        # Use the dictionary to get the color code for the theme
+        if self.theme in theme_colors:
+            self.theme = theme_colors[self.theme]
         self.create_horizontal_offset_circles(self.loading_canvas, -300, center_y, 50, 5000, 60, outline=self.theme, width=2) # pylint: disable=line-too-long
 
 

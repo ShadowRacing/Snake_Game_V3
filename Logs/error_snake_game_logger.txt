@@ -14667,3 +14667,343 @@ AttributeError: 'SnakeGameApp' object has no attribute 'loading_canvas'
 
 
 
+[2024-06-11 17:03:38] 
+
+
+[2024-06-11 17:03:38] Started the Error Log File
+[2024-06-11 17:08:51] No errors occurred
+[2024-06-11 17:08:51] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:08:53] 
+
+
+[2024-06-11 17:08:53] Started the Error Log File
+[2024-06-11 17:15:06] No errors occurred
+[2024-06-11 17:15:06] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:16:05] 
+
+
+[2024-06-11 17:16:05] Started the Error Log File
+[2024-06-11 17:19:18] No errors occurred
+[2024-06-11 17:19:18] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:21:15] 
+
+
+[2024-06-11 17:21:15] Started the Error Log File
+[2024-06-11 17:22:44] No errors occurred
+[2024-06-11 17:22:44] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:22:47] 
+
+
+[2024-06-11 17:22:47] Started the Error Log File
+[2024-06-11 17:23:14] No errors occurred
+[2024-06-11 17:23:14] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:23:20] 
+
+
+[2024-06-11 17:23:20] Started the Error Log File
+[2024-06-11 17:23:47] No errors occurred
+[2024-06-11 17:23:47] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:23:50] 
+
+
+[2024-06-11 17:23:50] Started the Error Log File
+[2024-06-11 17:24:04] No errors occurred
+[2024-06-11 17:24:04] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:24:15] 
+
+
+[2024-06-11 17:24:15] Started the Error Log File
+[2024-06-11 17:24:26] No errors occurred
+[2024-06-11 17:24:26] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:24:28] 
+
+
+[2024-06-11 17:24:28] Started the Error Log File
+[2024-06-11 17:24:59] No errors occurred
+[2024-06-11 17:24:59] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:26:11] 
+
+
+[2024-06-11 17:26:11] Started the Error Log File
+[2024-06-11 17:27:49] No errors occurred
+[2024-06-11 17:27:49] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:27:52] 
+
+
+[2024-06-11 17:27:52] Started the Error Log File
+[2024-06-11 17:29:38] No errors occurred
+[2024-06-11 17:29:38] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:29:40] 
+
+
+[2024-06-11 17:29:40] Started the Error Log File
+[2024-06-11 17:31:25] No errors occurred
+[2024-06-11 17:31:25] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:31:27] 
+
+
+[2024-06-11 17:31:27] Started the Error Log File
+[2024-06-11 17:31:35] No errors occurred
+[2024-06-11 17:31:35] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:32:03] 
+
+
+[2024-06-11 17:32:03] Started the Error Log File
+[2024-06-11 17:32:29] No errors occurred
+[2024-06-11 17:32:29] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:34:02] 
+
+
+[2024-06-11 17:34:02] Started the Error Log File
+[2024-06-11 17:34:13] No errors occurred
+[2024-06-11 17:34:13] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:34:15] 
+
+
+[2024-06-11 17:34:15] Started the Error Log File
+[2024-06-11 17:34:42] No errors occurred
+[2024-06-11 17:34:42] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:39:04] 
+
+
+[2024-06-11 17:39:04] Started the Error Log File
+[2024-06-11 17:44:03] No errors occurred
+[2024-06-11 17:44:03] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:44:06] 
+
+
+[2024-06-11 17:44:06] Started the Error Log File
+[2024-06-11 17:45:06] No errors occurred
+[2024-06-11 17:45:06] Closed the Error Log File
+
+
+
+
+[2024-06-11 17:46:10] 
+
+
+[2024-06-11 17:46:10] Started the Error Log File
+[2024-06-11 17:49:16] No errors occurred
+[2024-06-11 17:49:16] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:04:28] 
+
+
+[2024-06-11 20:04:28] Started the Error Log File
+[2024-06-11 20:07:05] No errors occurred
+[2024-06-11 20:07:05] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:07:25] 
+
+
+[2024-06-11 20:07:25] Started the Error Log File
+[2024-06-11 20:07:35] No errors occurred
+[2024-06-11 20:07:35] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:07:37] 
+
+
+[2024-06-11 20:07:37] Started the Error Log File
+[2024-06-11 20:08:00] No errors occurred
+[2024-06-11 20:08:00] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:08:08] 
+
+
+[2024-06-11 20:08:08] Started the Error Log File
+[2024-06-11 20:08:54] No errors occurred
+[2024-06-11 20:08:54] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:09:18] 
+
+
+[2024-06-11 20:09:18] Started the Error Log File
+[2024-06-11 20:09:44] No errors occurred
+[2024-06-11 20:09:44] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:09:47] 
+
+
+[2024-06-11 20:09:47] Started the Error Log File
+[2024-06-11 20:10:26] No errors occurred
+[2024-06-11 20:10:26] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:10:31] 
+
+
+[2024-06-11 20:10:31] Started the Error Log File
+[2024-06-11 20:10:40] No errors occurred
+[2024-06-11 20:10:40] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:10:42] 
+
+
+[2024-06-11 20:10:42] Started the Error Log File
+[2024-06-11 20:10:49] No errors occurred
+[2024-06-11 20:10:49] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:10:52] 
+
+
+[2024-06-11 20:10:52] Started the Error Log File
+[2024-06-11 20:10:59] No errors occurred
+[2024-06-11 20:10:59] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:11:51] 
+
+
+[2024-06-11 20:11:51] Started the Error Log File
+[2024-06-11 20:12:00] No errors occurred
+[2024-06-11 20:12:00] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:12:02] 
+
+
+[2024-06-11 20:12:02] Started the Error Log File
+[2024-06-11 20:12:13] No errors occurred
+[2024-06-11 20:12:13] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:12:15] 
+
+
+[2024-06-11 20:12:15] Started the Error Log File
+[2024-06-11 20:12:19] No errors occurred
+[2024-06-11 20:12:19] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:12:30] 
+
+
+[2024-06-11 20:12:30] Started the Error Log File
+[2024-06-11 20:12:36] No errors occurred
+[2024-06-11 20:12:36] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:15:17] 
+
+
+[2024-06-11 20:15:17] Started the Error Log File
+[2024-06-11 20:15:33] No errors occurred
+[2024-06-11 20:15:33] Closed the Error Log File
+
+
+
+
+[2024-06-11 20:15:35] 
+
+
+[2024-06-11 20:15:35] Started the Error Log File
+[2024-06-11 20:15:37] No errors occurred
+[2024-06-11 20:15:37] Closed the Error Log File
+
+
+
+

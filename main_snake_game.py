@@ -9,6 +9,7 @@ import configparser
 import json
 import threading
 import sys
+import subprocess
 import os
 from os import path
 import customtkinter as ctk
@@ -1145,7 +1146,8 @@ class SnakeGameApp:
         """
         #self.root.destroy()
         self.confirm_quit()
-        os.execv(sys.executable, ['python'] + sys.argv)
+        subprocess.run([sys.executable] + sys.argv, shell=True, check=True)
+        #os.execv(sys.executable, ['python'] + sys.argv)
 
     def close_mini_snake(self):
         """

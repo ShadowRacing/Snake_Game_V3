@@ -16020,3 +16020,33 @@ _tkinter.TclError: bad window path name ".!snakeclassicgame"
 
 
 
+[2024-06-16 19:26:58] 
+
+
+[2024-06-16 19:26:58] Started the Error Log File
+[2024-06-16 19:27:04] No errors occurred
+[2024-06-16 19:27:04] Closed the Error Log File
+
+
+
+
+[2024-06-16 19:27:05] 
+
+
+[2024-06-16 19:27:05] Started the Error Log File
+[2024-06-16 19:28:57] No errors occurred
+[2024-06-16 19:28:57] Closed the Error Log File
+
+
+
+
+[2024-06-16 19:28:58] 
+
+
+[2024-06-16 19:28:58] Started the Error Log File
+[2024-06-16 19:29:04] No errors occurred
+[2024-06-16 19:29:04] Closed the Error Log File
+
+
+
+

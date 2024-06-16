@@ -1146,7 +1146,7 @@ class SnakeGameApp:
         """
         #self.root.destroy()
         self.confirm_quit()
-        subprocess.run([sys.executable] + sys.argv, shell=False, check=True)
+        subprocess.run([sys.executable] + sys.argv, check=True)
         #os.execv(sys.executable, ['python'] + sys.argv)
 
     def close_mini_snake(self):

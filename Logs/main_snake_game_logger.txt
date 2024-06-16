@@ -29719,3 +29719,66 @@ Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
 
 
 
+[2024-06-16 19:29:06] Started the app
+[2024-06-16 19:29:06] Started the GameApp Class
+[2024-06-16 19:29:06] Game mode: initial config
+[2024-06-16 19:29:06] Current Theme: Red
+[2024-06-16 19:29:06] Set initial theme to: Red
+[2024-06-16 19:29:06] Updated initial_theme in config.ini to: Red
+[2024-06-16 19:29:06] Current initial_theme in config.ini to: Red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-16 19:29:06] Theme applied: Red
+[2024-06-16 19:29:06] Updated contrast in config.ini to: Default
+[2024-06-16 19:29:06] Contrast mode set to: default
+[2024-06-16 19:29:06] Resetting snake
+[2024-06-16 19:29:06] Set initial game size to: 600x600
+[2024-06-16 19:29:06] Updated initial_game_size in config.ini to: 600x600
+[2024-06-16 19:29:06] Current initial_game_size in config.ini to: 600x600
+[2024-06-16 19:29:11] Label border width: 1
+[2024-06-16 19:29:11] label_border_height: 1
+[2024-06-16 19:36:08] Game mode: classic_snake
+[2024-06-16 19:36:08] Game state: start_game
+[2024-06-16 19:36:08] Game width: 600
+[2024-06-16 19:36:08] Game height: 600
+[2024-06-16 19:36:08] Highlight thickness: 5
+[2024-06-16 19:36:08] Highlight background: Black
+[2024-06-16 19:36:08] Initial direction of snake: down
+[2024-06-16 19:36:08] Initial score: 0
+[2024-06-16 19:36:08] Game over flag: False
+[2024-06-16 19:36:08] Game paused: False
+[2024-06-16 19:36:08] Has changed direction: False
+[2024-06-16 19:36:08] Time-related variables initialized.
+[2024-06-16 19:36:08] High scores initialized
+[2024-06-16 19:36:08] Reset snake length
+[2024-06-16 19:36:08] Game mode: classic_snake
+[2024-06-16 19:36:08] Config file read.
+[2024-06-16 19:36:08] Game mode set to classic_snake.
+[2024-06-16 19:36:08] Game state: start_game
+[2024-06-16 19:36:08] Game focused
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-06-16 19:36:08] Resetting snake
+[2024-06-16 19:36:08] Set initial game size to: 600x600
+[2024-06-16 19:36:08] Updated initial_game_size in config.ini to: 600x600
+[2024-06-16 19:36:08] Current initial_game_size in config.ini to: 600x600
+[2024-06-16 19:36:08] Label border width: 1
+[2024-06-16 19:36:08] label_border_height: 1
+[2024-06-16 19:36:12] Updated the config.ini of theme
+[2024-06-16 19:36:12] Reset theme label
+[2024-06-16 19:38:00] Closed the app
+
+
+
+

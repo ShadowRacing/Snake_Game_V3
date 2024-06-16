@@ -76,8 +76,6 @@ class SnakeClassicGame(ctk.CTkCanvas):
 
         self.game_logger.log_game_event("High scores initialized")
 
-
-
         super().__init__(parent, bg='Grey20', width=self.width, height=self.height, highlightthickness=self.highlightthickness, # pylint: disable=line-too-long
                          highlightbackground=self.highlightbackground)
 
@@ -90,10 +88,13 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.food = ClassicFood(self.game_logger, self.snake_canvas, game_config)
         self.game_labels_panel = GameLabelsPanel(parent, self.game_logger,  self.game_config)
         self.game_config = GameConfig(self.game_logger, 'classic_snake')
+
         self.game_labels_panel.classic_create_game_labels()
+
         self.snake_length = self.game_config.SNAKE_LENGTH
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
+
         self.configfile()
 
     def configfile(self):
@@ -251,6 +252,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.snake_length_high_score = int(self.config.get('Classic_Snake_Values', 'snake_length_high_score', fallback='0')) # pylint: disable=line-too-long
         self.game_labels_panel.classic_update_high_score_labels()
         self.config.set('Classic_Snake_Settings', 'state', 'game')
+        self.config.set('Settings', 'button_state', 'disabled')
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
@@ -384,6 +386,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.state = 'game_over'
         self.bind_and_unbind_keys()
         self.config.set('Classic_Snake_Settings', 'state', 'game_over')
+        self.config.set('Settings', 'button_state', 'normal')
         self.game_logger.log_game_event(f"Game state: {self.state}")
         self.game_logger.log_game_event(f"Snake coordinates after reset: {self.snake.coordinates}")
         self.snake_canvas.delete("all")

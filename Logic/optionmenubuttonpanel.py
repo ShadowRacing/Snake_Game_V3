@@ -307,7 +307,8 @@ class OptionButtonPanel:
                                           font=FONT_LIST[11],
                                           corner_radius=self.corner_radius,
                                           values=values,
-                                          command=command)
+                                          command=command,
+                                          state='normal')
         option_button.place(x=x, y=y)
         try:
             option_button.set(config)

@@ -8,6 +8,8 @@ import time
 import configparser
 import json
 import threading
+import sys
+import os
 from os import path
 import customtkinter as ctk
 
@@ -60,6 +62,7 @@ class SnakeGameApp:
         # Read the config file and load it
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, 'config.ini')
+        print("Config main file", (self.config_path))
         self.config = configparser.ConfigParser()
         try:
             self.config.read(self.config_path)
@@ -88,7 +91,7 @@ class SnakeGameApp:
 
 
         self.text_name = "Shadow's Snake Game"
-        self.text_version = "Version: 0.2.8"
+        self.text_version = "Version: 0.2.9"
         self.text_developer = "Developer: Shadow"
         self.font_50 = ("Helvetica", 50)
         self.font_30 = ("Helvetica", 30)
@@ -146,6 +149,7 @@ class SnakeGameApp:
         #create the functions dictionary
         self.functions = {
             'return_home': self.return_home,
+            'restart_app': self.restart_app,
             'confirm_quit': self.confirm_quit,
             'destroy_canvas': self.destroy_canvas,
             'classic_reset_button_press_variable': self.classic_reset_button_press_variable,
@@ -225,9 +229,7 @@ class SnakeGameApp:
 
         self.settings_labels.update_initial_game_size()
 
-        # Create the home screen
-        # self.create_home_screen()
-        # self.game_logger.log_game_event("Home_screen method called")
+        # Create the loading screen
         self.create_loading_screen()
 
         self.root.protocol("WM_DELETE_WINDOW", self.confirm_quit)
@@ -355,6 +357,7 @@ class SnakeGameApp:
         self.create_button_panel.challange_choice_button()
         self.create_button_panel.info_button()
         self.create_button_panel.settings_button()
+        self.create_button_panel.create_restart_app_button()
         self.create_button_panel.quit_button()
         self.game_labels_panel.classic_delete_labels()
         self.classic_reset_button_press_variable()
@@ -378,6 +381,7 @@ class SnakeGameApp:
         Start the classic snake game.
         """
         self.start_game("classic_snake")
+        self.create_button_panel.switch_canvas()
 
     # Start the endless snake game
     def snake_endless(self):
@@ -385,6 +389,7 @@ class SnakeGameApp:
         Start the endless snake game.
         """
         self.start_game("snake_endless")
+        self.create_button_panel.switch_canvas()
 
     # Start the leveling snake game
     def snake_leveling(self):
@@ -392,36 +397,42 @@ class SnakeGameApp:
         Start the leveling snake game.
         """
         self.start_game("snake_leveling")
+        self.create_button_panel.switch_canvas()
 
     def food_time_attack(self):
         """
         Start the food time attack game.
         """
         self.start_game("food_time_attack")
+        self.create_button_panel.switch_canvas()
 
     def challange_choices(self):
         """
         Start the challange choices screen.
         """
         self.start_game("challange_choices")
+        self.create_button_panel.switch_canvas()
 
     def challange_settings(self):
         """
         Start the challange settings screen.
         """
         self.start_game("challange_settings")
+        self.create_button_panel.switch_canvas()
 
     def open_info(self):
         """
         Open the info screen.
         """
         self.start_game("info")
+        self.create_button_panel.switch_canvas()
 
     def info_home(self):
         """
         Return to the home screen from the info screen.
         """
         self.start_game("info")
+        self.create_button_panel.switch_canvas()
 
     def info_general(self):
         """
@@ -434,36 +445,42 @@ class SnakeGameApp:
 
         # Call the update method to start the game
         self.mini_snake_game.update()
+        self.create_button_panel.switch_canvas()
 
     def info_general_start_mini_snake(self):
         """
         Reset the mini snake game.
         """
         self.mini_snake_game.reset_game()
+        self.create_button_panel.switch_canvas()
 
     def info_classic(self):
         """
         Display the classic game mode information.
         """
         self.start_game("info_classic_game_mode")
+        self.create_button_panel.switch_canvas()
 
     def info_endless(self):
         """
         Display the endless game mode information.
         """
         self.start_game("info_endless_game_mode")
+        self.create_button_panel.switch_canvas()
 
     def info_leveling(self):
         """
         Display the leveling game mode information.
         """
         self.start_game("info_leveling_game_mode")
+        self.create_button_panel.switch_canvas()
 
     def info_challange(self):
         """
         Display the challange game mode information.
         """
         self.start_game("info_challange_game_mode")
+        self.create_button_panel.switch_canvas()
 
     # Open the settings screen
     def open_settings(self):
@@ -471,23 +488,28 @@ class SnakeGameApp:
         Open the settings screen.
         """
         self.start_game("settings")
+        self.create_button_panel.switch_canvas()
 
     def settings_values(self):
         """
         Open the settings values screen.
         """
         self.start_game("settings_values")
+        self.create_button_panel.switch_canvas()
 
     def reset_settings(self):
         """
         Open the reset settings screen.
         """
         self.start_game("reset_settings")
+        self.create_button_panel.switch_canvas()
 
     def start_game(self, game_type):
         """
         Start the game based on the game type.
         """
+
+        self.create_button_panel.switch_canvas()
         # Hide the main canvas
         self.original_main_canvas.pack_forget()
 
@@ -720,6 +742,7 @@ class SnakeGameApp:
             self.framelabel_panel.create_settings_values_label()
             self.create_option_button_panel.show_options()
             self.create_button_panel.reset_settings_button()
+            self.create_button_panel.create_restart_app_button()
             self.settings_labels.create_settings_labels()
             self.settings_labels.create_theme_label()
             self.settings_labels.create_game_size_label()
@@ -1116,6 +1139,14 @@ class SnakeGameApp:
         except ValueError as e:
             traceback.print_exc(e)
 
+    def restart_app(self):
+        """
+        Restart the app.
+        """
+        #self.root.destroy()
+        self.confirm_quit()
+        os.execv(sys.executable, ['python'] + sys.argv)
+
     def close_mini_snake(self):
         """
         Close the mini snake game.
@@ -1170,6 +1201,7 @@ if __name__ == "__main__":
 
         root.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
+    root.focus_force()
     root.after(10, center_window)
     root.mainloop()
 

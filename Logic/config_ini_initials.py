@@ -67,6 +67,10 @@ class ConfigIni:
                 self.config.set('Settings', 'initial_game_size', '500x500') # 500x500 is default
             if not self.config.has_option('Settings', 'game_size'):
                 self.config.set('Settings', 'game_size', '500x500') # 500x500 is default
+            if not self.config.has_option('Settings', 'button_state'):
+                self.config.set('Settings', 'button_state', 'normal')
+            if self.config.has_option('Settings', 'button_state'):
+                self.config.set('Settings', 'button_state', 'normal')
             with open('config.ini', 'w', encoding='utf-8') as configfile:
                 self.config.write(configfile)
         except FileNotFoundError as e:

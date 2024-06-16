@@ -4,6 +4,9 @@ This module is responsible for creating the button panel of the Shadows Snake ga
 
 # Importing necessary modules
 import time
+import configparser
+import traceback
+from os import path
 import customtkinter as ctk
 
 # Importing necessary modules from other folders
@@ -28,6 +31,15 @@ class ButtonCommands:
             self.theme_updater.reset_theme()
         else:
             self.game_logger.log_game_event("No function assigned to 'home'")
+
+    def restart_app_command(self):
+        """
+        Function for the restart app button command.
+        """
+        if 'restart_app' in self.functions:
+            self.functions['restart_app']()
+        else:
+            self.game_logger.log_game_event("No function assigned to 'restart_app'")
 
     def quit_command(self):
         """
@@ -394,7 +406,17 @@ class ClickButtonPanel:
     """
     Class for creating the button panel of the Shadows Snake game.
     """
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = super(ClickButtonPanel, cls).__new__(cls)
+        return cls._instance
+
     def __init__(self, parent, game_logger, functions, home_button=None):
+        # Check if we've already initialized the instance
+        if getattr(self, '_initialized', False):
+            return
         # Initializing variables
         self.parent = parent
         self.game_logger = game_logger
@@ -417,14 +439,31 @@ class ClickButtonPanel:
         self.home_button_clicks = 0
         self.first_click_time = 0
 
+        self.config = configparser.ConfigParser()
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..','config.ini')
+        try:
+            self.config.read(self.config_path)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
+
+        self.button_state = self.config.get('Settings', 'button_state', fallback='normal')
+        self._initialized = True
+    
+    def switch_canvas(self):
+        # Set _initialized to False
+        self._initialized = False
+
     # Methods to create specific buttons
     # Each method calls the create_click_button method with specific parameters
     def create_home_button(self):
         """
         Function for creating the home button.
         """
+        self.button_state = self.config.get('Settings', 'button_state')
+
         self.home_button = ctk.CTkButton(self.button_canvas, text="Main Menu", font=FONT_LIST[11], # pylint: disable=line-too-long
-                                width=self.button_width, height=self.button_height, corner_radius=self.corner_radius ,state="normal", # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, corner_radius=self.corner_radius ,state=self.button_state, # pylint: disable=line-too-long
                                 command=self.home_button_command)
         self.home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
 
@@ -444,6 +483,33 @@ class ClickButtonPanel:
         self.home_button_clicks += 1
         if self.home_button_clicks >= 2:
             self.button_commands.home_command()
+
+    def update_home_button_state(self):
+        # Read the new state from the config.ini file
+        self.state_game = self.config.get('Classic_Snake_Settings', 'state', fallback='game')
+        
+        if self.state_game == 'game':
+            self.button_state = 'disabled'
+            self.config.set('Settings', 'button_state', self.button_state)
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
+                self.config.write(configfile)
+        else:
+            self.button_state = 'normal'
+            self.config.set('Settings', 'button_state', self.button_state)
+            with open('config.ini', 'w', encoding='utf-8') as configfile:
+                self.config.write(configfile)
+
+        # Update the state of the home button
+        self.home_button.configure(state=self.button_state)
+
+    def create_restart_app_button(self):
+        """
+        Function for creating the restart app button.
+        """
+        restart_app_button = ctk.CTkButton(self.button_canvas, text="Restart App", font=FONT_LIST[11], # pylint: disable=line-too-long
+                                width=self.button_width, height=self.button_height, corner_radius=self.corner_radius, state="normal", # pylint: disable=line-too-long
+                                command=self.button_commands.restart_app_command)
+        restart_app_button.grid(in_=self.button_canvas, row=99, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
 
     def quit_button(self):
         """

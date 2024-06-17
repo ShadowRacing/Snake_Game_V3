@@ -16092,3 +16092,19 @@ _tkinter.TclError: bad window path name ".!ctkcanvas5"
 
 
 
+[2024-06-17 18:52:48] 
+
+
+[2024-06-17 18:52:48] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1196, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 153, in __init__
+    'restart_app': self.restart_app,
+                   ^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'restart_app'
+[2024-06-17 18:53:20] 
+
+
+[2024-06-17 18:53:20] Started the Error Log File

@@ -1140,14 +1140,24 @@ class SnakeGameApp:
         except ValueError as e:
             traceback.print_exc(e)
 
+    def validate_argv(self, argv):
+        # Validate arguments: ensure they are strings and safe
+        for arg in argv:
+            if not isinstance(arg, str):
+                raise ValueError("All arguments must be strings")
+            if any(char in arg for char in [';', '&', '|', '$', '`']):
+                raise ValueError("Argument contains unsafe characters")
+        return argv
+
     def restart_app(self):
-        """
-        Restart the app.
-        """
-        #self.root.destroy()
-        self.confirm_quit()
-        subprocess.run([sys.executable] + sys.argv, check=True)
-        #os.execv(sys.executable, ['python'] + sys.argv)
+        try:
+            validated_args = self.validate_argv(sys.argv)
+            # Restart the script with validated arguments
+            subprocess.Popen([sys.executable] + validated_args, close_fds=True)
+            # Close the Tkinter window
+            self.root.destroy()
+        except Exception as e:
+            print(f"Error restarting the application: {e}")
 
     def close_mini_snake(self):
         """

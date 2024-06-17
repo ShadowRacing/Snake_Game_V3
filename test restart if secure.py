@@ -8,12 +8,11 @@ class App:
         self.setup_ui()
 
     def setup_ui(self):
-        # Example UI setup code
         restart_button = tk.Button(self.master, text="Restart", command=self.restart)
         restart_button.pack()
 
     def validate_argv(self, argv):
-        # Example validation: ensure all arguments are strings and safe
+        # Validate arguments: ensure they are strings and safe
         for arg in argv:
             if not isinstance(arg, str):
                 raise ValueError("All arguments must be strings")

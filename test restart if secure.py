@@ -1,48 +1,37 @@
 import tkinter as tk
 import subprocess
 import sys
-import os
 
-class Application(tk.Frame):
-    def __init__(self, master=None):
-        super().__init__(master)
+class App:
+    def __init__(self, master):
         self.master = master
-        self.pack()
-        self.create_widgets()
+        self.setup_ui()
 
-    def create_widgets(self):
-        self.restart_button = tk.Button(self)
-        self.restart_button["text"] = "Restart Script"
-        self.restart_button["command"] = self.restart_script
-        self.restart_button.pack(side="top")
+    def setup_ui(self):
+        # Example UI setup code
+        restart_button = tk.Button(self.master, text="Restart", command=self.restart)
+        restart_button.pack()
 
-        self.quit = tk.Button(self, text="QUIT", fg="red",
-                              command=self.master.destroy)
-        self.quit.pack(side="bottom")
+    def validate_argv(self, argv):
+        # Example validation: ensure all arguments are strings and safe
+        for arg in argv:
+            if not isinstance(arg, str):
+                raise ValueError("All arguments must be strings")
+            if any(char in arg for char in [';', '&', '|', '$', '`']):
+                raise ValueError("Argument contains unsafe characters")
+        return argv
 
-    def restart_script(self):
+    def restart(self):
         try:
-            # Validate sys.argv (for example, check for valid filenames or options)
             validated_args = self.validate_argv(sys.argv)
             # Restart the script with validated arguments
-            subprocess.Popen([sys.executable] + validated_args)
+            subprocess.Popen([sys.executable] + validated_args, close_fds=True)
             # Close the Tkinter window
             self.master.destroy()
         except Exception as e:
-            print(f"Error restarting the script: {e}")
+            print(f"Error restarting the application: {e}")
 
-    def validate_argv(self, argv):
-        # Implement validation logic, e.g., ensuring only certain arguments are allowed
-        # This is just an example, adapt it to your specific needs
-        for arg in argv:
-            if not arg.isalnum() and not os.path.isfile(arg):
-                raise ValueError(f"Invalid argument: {arg}")
-        return argv
-
-    def some_condition_to_restart(self):
-        # Placeholder for actual condition
-        return True
-
-root = tk.Tk()
-app = Application(master=root)
-app.mainloop()
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = App(root)
+    root.mainloop()

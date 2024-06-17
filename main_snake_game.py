@@ -35,6 +35,7 @@ from Themes.theme_updater_snake_game import ThemeUpdater
 from Themes.contrast_updater_snake_game import UpdateContrast
 
 
+
 # Define the main application class
 class SnakeGameApp:
     """

@@ -16112,3 +16112,53 @@ AttributeError: 'SnakeGameApp' object has no attribute 'restart_app'
 
 
 [2024-06-17 18:53:27] Started the Error Log File
+[2024-06-17 18:56:43] 
+
+
+[2024-06-17 18:56:43] Started the Error Log File
+[2024-06-17 20:29:54] 
+
+
+[2024-06-17 20:29:54] Started the Error Log File
+[2024-06-17 20:31:03] 
+
+
+[2024-06-17 20:31:03] Started the Error Log File
+[2024-06-17 20:52:18] No errors occurred
+[2024-06-17 20:52:18] Closed the Error Log File
+
+
+
+
+[2024-06-17 20:52:49] 
+
+
+[2024-06-17 20:52:49] Started the Error Log File
+[2024-06-17 20:52:57] 
+
+
+[2024-06-17 20:52:57] Started the Error Log File
+[2024-06-17 20:53:04] 
+
+
+[2024-06-17 20:53:04] Started the Error Log File
+[2024-06-17 20:53:38] 
+
+
+[2024-06-17 20:53:38] Started the Error Log File
+[2024-06-17 20:53:44] No errors occurred
+[2024-06-17 20:53:44] Closed the Error Log File
+
+
+
+
+[2024-06-17 20:53:45] 
+
+
+[2024-06-17 20:53:45] Started the Error Log File
+[2024-06-17 20:53:52] No errors occurred
+[2024-06-17 20:53:52] Closed the Error Log File
+
+
+
+

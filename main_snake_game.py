@@ -1160,7 +1160,7 @@ class SnakeGameApp:
             # Restart the script with validated arguments
             subprocess.Popen([sys.executable] + validated_args, close_fds=True)
             # Close the Tkinter window
-            self.root.destroy()
+            self.confirm_quit()
         except (TypeError, ValueError) as e:
             print(f"Error validating arguments: {e}")
         except OSError as e:

@@ -16108,3 +16108,7 @@ AttributeError: 'SnakeGameApp' object has no attribute 'restart_app'
 
 
 [2024-06-17 18:53:20] Started the Error Log File
+[2024-06-17 18:53:27] 
+
+
+[2024-06-17 18:53:27] Started the Error Log File

@@ -10,7 +10,6 @@ import json
 import threading
 import sys
 import subprocess
-import os
 from os import path
 import customtkinter as ctk
 
@@ -1141,7 +1140,9 @@ class SnakeGameApp:
             traceback.print_exc(e)
 
     def validate_argv(self, argv):
-        # Validate arguments: ensure they are strings and safe
+        """
+        Validate arguments: ensure they are strings and safe
+        """
         for arg in argv:
             if not isinstance(arg, str):
                 raise ValueError("All arguments must be strings")
@@ -1150,13 +1151,18 @@ class SnakeGameApp:
         return argv
 
     def restart_app(self):
+        """
+        Restart the application.
+        """
         try:
             validated_args = self.validate_argv(sys.argv)
             # Restart the script with validated arguments
             subprocess.Popen([sys.executable] + validated_args, close_fds=True)
             # Close the Tkinter window
             self.root.destroy()
-        except Exception as e:
+        except (TypeError, ValueError) as e:
+            print(f"Error validating arguments: {e}")
+        except OSError as e:
             print(f"Error restarting the application: {e}")
 
     def close_mini_snake(self):

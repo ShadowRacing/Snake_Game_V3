@@ -16070,3 +16070,25 @@ _tkinter.TclError: bad window path name ".!snakeclassicgame"
 
 
 
+[2024-06-16 19:42:53] 
+
+
+[2024-06-16 19:42:53] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 373, in update_text_position
+    canvas_width = self.main_canvas.winfo_width() // 2 + 80
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1354, in winfo_width
+    self.tk.call('winfo', 'width', self._w))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: bad window path name ".!ctkcanvas5"
+[2024-06-16 19:57:38] No errors occurred
+[2024-06-16 19:57:38] Closed the Error Log File
+
+
+
+

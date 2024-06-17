@@ -29804,3 +29804,253 @@ Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
 
 
 
+[2024-06-16 19:42:53] Started the app
+[2024-06-16 19:42:53] Started the GameApp Class
+[2024-06-16 19:42:53] Game mode: initial config
+[2024-06-16 19:42:53] Current Theme: Red
+[2024-06-16 19:42:53] Set initial theme to: Red
+[2024-06-16 19:42:54] Updated initial_theme in config.ini to: Red
+[2024-06-16 19:42:54] Current initial_theme in config.ini to: Red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-16 19:42:54] Theme applied: Red
+[2024-06-16 19:42:54] Updated contrast in config.ini to: Default
+[2024-06-16 19:42:54] Contrast mode set to: default
+[2024-06-16 19:42:54] Resetting snake
+[2024-06-16 19:42:54] Set initial game size to: 600x600
+[2024-06-16 19:42:54] Updated initial_game_size in config.ini to: 600x600
+[2024-06-16 19:42:54] Current initial_game_size in config.ini to: 600x600
+[2024-06-16 19:42:59] Label border width: 1
+[2024-06-16 19:42:59] label_border_height: 1
+[2024-06-16 19:43:58] Resetting snake
+[2024-06-16 19:43:58] Set initial game size to: 600x600
+[2024-06-16 19:43:58] Updated initial_game_size in config.ini to: 600x600
+[2024-06-16 19:43:58] Current initial_game_size in config.ini to: 600x600
+[2024-06-16 19:43:58] Label border width: 1
+[2024-06-16 19:43:58] label_border_height: 1
+[2024-06-16 19:43:59] Resetting snake
+[2024-06-16 19:43:59] Set initial game size to: 600x600
+[2024-06-16 19:43:59] Updated initial_game_size in config.ini to: 600x600
+[2024-06-16 19:43:59] Current initial_game_size in config.ini to: 600x600
+[2024-06-16 19:43:59] Label border width: 1
+[2024-06-16 19:43:59] label_border_height: 1
+[2024-06-16 19:43:59] Updated label_needed_game_size in config.ini to: False
+[2024-06-16 19:44:01] Setting custom size: 1800x1080
+[2024-06-16 19:44:01] Changing screen size to 1800x1080
+[2024-06-16 19:44:01] Updated the config.ini Writing updates
+[2024-06-16 19:44:03] Updated the config.ini of theme
+[2024-06-16 19:44:03] Reset theme label
+[2024-06-16 19:44:03] Game mode: classic_snake
+[2024-06-16 19:44:03] Game state: start_game
+[2024-06-16 19:44:03] Game width: 600
+[2024-06-16 19:44:03] Game height: 600
+[2024-06-16 19:44:03] Highlight thickness: 5
+[2024-06-16 19:44:03] Highlight background: Black
+[2024-06-16 19:44:03] Initial direction of snake: down
+[2024-06-16 19:44:03] Initial score: 0
+[2024-06-16 19:44:03] Game over flag: False
+[2024-06-16 19:44:03] Game paused: False
+[2024-06-16 19:44:03] Has changed direction: False
+[2024-06-16 19:44:03] Time-related variables initialized.
+[2024-06-16 19:44:03] High scores initialized
+[2024-06-16 19:44:03] Reset snake length
+[2024-06-16 19:44:03] Game mode: classic_snake
+[2024-06-16 19:44:03] Config file read.
+[2024-06-16 19:44:03] Game mode set to classic_snake.
+[2024-06-16 19:44:03] Game state: start_game
+[2024-06-16 19:44:03] Game focused
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-06-16 19:44:03] Resetting snake
+[2024-06-16 19:44:03] Set initial game size to: 600x600
+[2024-06-16 19:44:03] Updated initial_game_size in config.ini to: 600x600
+[2024-06-16 19:44:03] Current initial_game_size in config.ini to: 600x600
+[2024-06-16 19:44:03] Label border width: 1
+[2024-06-16 19:44:03] label_border_height: 1
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-06-16 19:44:05] Game state: game
+[2024-06-16 19:44:05] Food ID: bd620d50-222f-4094-9680-18ceb3d5de15
+[2024-06-16 19:44:05] Food items: {'bd620d50-222f-4094-9680-18ceb3d5de15': {'x': 100, 'y': 300, 'tag': 'foodbd620d50-222f-4094-9680-18ceb3d5de15', 'oval_id': 7}}
+[2024-06-16 19:44:05] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-16 19:44:07] Food ID: b6720fe1-5dd6-4ba5-81cb-cf101ebc0086
+[2024-06-16 19:44:07] Food items: {'b6720fe1-5dd6-4ba5-81cb-cf101ebc0086': {'x': 20, 'y': 220, 'tag': 'foodb6720fe1-5dd6-4ba5-81cb-cf101ebc0086', 'oval_id': 28}}
+[2024-06-16 19:44:08] Food ID: bfa325a4-a467-46d3-b9cf-416e35b2a053
+[2024-06-16 19:44:08] Food items: {'bfa325a4-a467-46d3-b9cf-416e35b2a053': {'x': 300, 'y': 120, 'tag': 'foodbfa325a4-a467-46d3-b9cf-416e35b2a053', 'oval_id': 45}}
+[2024-06-16 19:44:10] Food ID: 0ea3137b-4be8-490d-bafe-f1677399df7d
+[2024-06-16 19:44:10] Food items: {'0ea3137b-4be8-490d-bafe-f1677399df7d': {'x': 0, 'y': 200, 'tag': 'food0ea3137b-4be8-490d-bafe-f1677399df7d', 'oval_id': 65}}
+[2024-06-16 19:44:13] Food ID: 235e389f-e615-4d23-8f6f-2320313fc9c0
+[2024-06-16 19:44:13] Food items: {'235e389f-e615-4d23-8f6f-2320313fc9c0': {'x': 360, 'y': 240, 'tag': 'food235e389f-e615-4d23-8f6f-2320313fc9c0', 'oval_id': 85}}
+[2024-06-16 19:44:16] Food ID: 815845ef-07ea-482a-8c45-4840c0932c36
+[2024-06-16 19:44:16] Food items: {'815845ef-07ea-482a-8c45-4840c0932c36': {'x': 200, 'y': 200, 'tag': 'food815845ef-07ea-482a-8c45-4840c0932c36', 'oval_id': 114}}
+[2024-06-16 19:44:17] Food ID: 98b63f1c-ce70-4236-8628-fb823036adca
+[2024-06-16 19:44:17] Food items: {'98b63f1c-ce70-4236-8628-fb823036adca': {'x': 340, 'y': 80, 'tag': 'food98b63f1c-ce70-4236-8628-fb823036adca', 'oval_id': 127}}
+[2024-06-16 19:44:21] Food ID: 67bd13c5-6f02-4781-ac8b-4757b435f374
+[2024-06-16 19:44:21] Food items: {'67bd13c5-6f02-4781-ac8b-4757b435f374': {'x': 180, 'y': 340, 'tag': 'food67bd13c5-6f02-4781-ac8b-4757b435f374', 'oval_id': 163}}
+[2024-06-16 19:44:23] Food ID: 9e231fb8-7cdc-4313-b150-6223396ec3bb
+[2024-06-16 19:44:23] Food items: {'9e231fb8-7cdc-4313-b150-6223396ec3bb': {'x': 100, 'y': 40, 'tag': 'food9e231fb8-7cdc-4313-b150-6223396ec3bb', 'oval_id': 187}}
+[2024-06-16 19:44:25] Food ID: ef103d3c-dbc4-4670-91ea-c28af67ca6b1
+[2024-06-16 19:44:25] Food items: {'ef103d3c-dbc4-4670-91ea-c28af67ca6b1': {'x': 160, 'y': 380, 'tag': 'foodef103d3c-dbc4-4670-91ea-c28af67ca6b1', 'oval_id': 209}}
+[2024-06-16 19:44:28] Food ID: 8ccd8ced-20fe-437c-be41-9298dcb60d14
+[2024-06-16 19:44:28] Food items: {'8ccd8ced-20fe-437c-be41-9298dcb60d14': {'x': 340, 'y': 240, 'tag': 'food8ccd8ced-20fe-437c-be41-9298dcb60d14', 'oval_id': 230}}
+[2024-06-16 19:44:32] Food ID: b88493b3-9e25-4843-af58-3b4c30133f0d
+[2024-06-16 19:44:32] Food items: {'b88493b3-9e25-4843-af58-3b4c30133f0d': {'x': 340, 'y': 60, 'tag': 'foodb88493b3-9e25-4843-af58-3b4c30133f0d', 'oval_id': 273}}
+[2024-06-16 19:44:34] Food ID: d7a7c316-64cc-41af-a6c0-9c900ae884fa
+[2024-06-16 19:44:34] Food items: {'d7a7c316-64cc-41af-a6c0-9c900ae884fa': {'x': 160, 'y': 160, 'tag': 'foodd7a7c316-64cc-41af-a6c0-9c900ae884fa', 'oval_id': 295}}
+[2024-06-16 19:44:36] Food ID: 388fe04a-e6cd-41de-9f68-d070200117d3
+[2024-06-16 19:44:36] Food items: {'388fe04a-e6cd-41de-9f68-d070200117d3': {'x': 240, 'y': 20, 'tag': 'food388fe04a-e6cd-41de-9f68-d070200117d3', 'oval_id': 312}}
+[2024-06-16 19:44:38] Food ID: 129830f3-59da-4741-adc1-765f965247d4
+[2024-06-16 19:44:38] Food items: {'129830f3-59da-4741-adc1-765f965247d4': {'x': 280, 'y': 20, 'tag': 'food129830f3-59da-4741-adc1-765f965247d4', 'oval_id': 332}}
+[2024-06-16 19:44:38] Food ID: e4598e60-ea13-4164-aa44-1dc45c040054
+[2024-06-16 19:44:38] Food items: {'e4598e60-ea13-4164-aa44-1dc45c040054': {'x': 120, 'y': 80, 'tag': 'foode4598e60-ea13-4164-aa44-1dc45c040054', 'oval_id': 335}}
+[2024-06-16 19:44:41] Food ID: 70b64787-36ee-4519-b6c9-4048fec0607e
+[2024-06-16 19:44:41] Food items: {'70b64787-36ee-4519-b6c9-4048fec0607e': {'x': 80, 'y': 320, 'tag': 'food70b64787-36ee-4519-b6c9-4048fec0607e', 'oval_id': 361}}
+[2024-06-16 19:44:43] Food ID: 42e08c2d-a98a-4f91-a5f6-d65fc54918e6
+[2024-06-16 19:44:43] Food items: {'42e08c2d-a98a-4f91-a5f6-d65fc54918e6': {'x': 340, 'y': 220, 'tag': 'food42e08c2d-a98a-4f91-a5f6-d65fc54918e6', 'oval_id': 376}}
+[2024-06-16 19:44:45] Food ID: c6707369-5335-4224-9c68-a89df1f6f2a4
+[2024-06-16 19:44:45] Food items: {'c6707369-5335-4224-9c68-a89df1f6f2a4': {'x': 40, 'y': 0, 'tag': 'foodc6707369-5335-4224-9c68-a89df1f6f2a4', 'oval_id': 397}}
+[2024-06-16 19:44:48] Food ID: 1fc3d057-8ee5-4219-9b1c-0496a5960c15
+[2024-06-16 19:44:48] Food items: {'1fc3d057-8ee5-4219-9b1c-0496a5960c15': {'x': 40, 'y': 140, 'tag': 'food1fc3d057-8ee5-4219-9b1c-0496a5960c15', 'oval_id': 426}}
+[2024-06-16 19:44:48] Food ID: 9af3785f-40df-4388-8935-a17fe67e8280
+[2024-06-16 19:44:48] Food items: {'9af3785f-40df-4388-8935-a17fe67e8280': {'x': 0, 'y': 240, 'tag': 'food9af3785f-40df-4388-8935-a17fe67e8280', 'oval_id': 434}}
+[2024-06-16 19:44:52] Food ID: c1f7a9e0-c5ae-41ee-8737-d62e1b99e605
+[2024-06-16 19:44:52] Food items: {'c1f7a9e0-c5ae-41ee-8737-d62e1b99e605': {'x': 360, 'y': 0, 'tag': 'foodc1f7a9e0-c5ae-41ee-8737-d62e1b99e605', 'oval_id': 466}}
+[2024-06-16 19:44:55] Food ID: 6bd5b0c1-e0fd-4e74-bc81-4f51e66d7213
+[2024-06-16 19:44:55] Food items: {'6bd5b0c1-e0fd-4e74-bc81-4f51e66d7213': {'x': 60, 'y': 100, 'tag': 'food6bd5b0c1-e0fd-4e74-bc81-4f51e66d7213', 'oval_id': 497}}
+[2024-06-16 19:44:58] Food ID: fe843c12-270b-45b5-a2b2-d9b3978c1bbf
+[2024-06-16 19:44:58] Food items: {'fe843c12-270b-45b5-a2b2-d9b3978c1bbf': {'x': 80, 'y': 60, 'tag': 'foodfe843c12-270b-45b5-a2b2-d9b3978c1bbf', 'oval_id': 524}}
+[2024-06-16 19:45:01] Food ID: 6f9eb77d-a82b-429d-9b99-9408b34f90b7
+[2024-06-16 19:45:01] Food items: {'6f9eb77d-a82b-429d-9b99-9408b34f90b7': {'x': 280, 'y': 360, 'tag': 'food6f9eb77d-a82b-429d-9b99-9408b34f90b7', 'oval_id': 558}}
+[2024-06-16 19:45:05] Food ID: c2f79db5-ed7d-48e4-b5c8-d6d3cbd32971
+[2024-06-16 19:45:05] Food items: {'c2f79db5-ed7d-48e4-b5c8-d6d3cbd32971': {'x': 380, 'y': 200, 'tag': 'foodc2f79db5-ed7d-48e4-b5c8-d6d3cbd32971', 'oval_id': 590}}
+[2024-06-16 19:45:06] Food ID: 4eec95db-4325-4aef-8aae-86d1ab06bd3d
+[2024-06-16 19:45:06] Food items: {'4eec95db-4325-4aef-8aae-86d1ab06bd3d': {'x': 220, 'y': 200, 'tag': 'food4eec95db-4325-4aef-8aae-86d1ab06bd3d', 'oval_id': 604}}
+[2024-06-16 19:45:08] Food ID: ff9e23ef-e6a7-4fcd-a8db-e226526e42ac
+[2024-06-16 19:45:08] Food items: {'ff9e23ef-e6a7-4fcd-a8db-e226526e42ac': {'x': 100, 'y': 340, 'tag': 'foodff9e23ef-e6a7-4fcd-a8db-e226526e42ac', 'oval_id': 619}}
+[2024-06-16 19:45:09] Food ID: da72c2b4-6e2f-4f4b-9ded-e69116e3ff18
+[2024-06-16 19:45:09] Food items: {'da72c2b4-6e2f-4f4b-9ded-e69116e3ff18': {'x': 180, 'y': 60, 'tag': 'foodda72c2b4-6e2f-4f4b-9ded-e69116e3ff18', 'oval_id': 633}}
+[2024-06-16 19:45:13] Food ID: 0490a159-fcfc-49fb-8e23-0c5418fb4f75
+[2024-06-16 19:45:13] Food items: {'0490a159-fcfc-49fb-8e23-0c5418fb4f75': {'x': 200, 'y': 280, 'tag': 'food0490a159-fcfc-49fb-8e23-0c5418fb4f75', 'oval_id': 666}}
+[2024-06-16 19:45:14] Food ID: 157d467f-aa12-4e8c-9e02-36f49ce41cbb
+[2024-06-16 19:45:14] Food items: {'157d467f-aa12-4e8c-9e02-36f49ce41cbb': {'x': 220, 'y': 240, 'tag': 'food157d467f-aa12-4e8c-9e02-36f49ce41cbb', 'oval_id': 685}}
+[2024-06-16 19:45:17] Food ID: 6d35a376-3396-4392-9dc4-43da8a12afb5
+[2024-06-16 19:45:17] Food items: {'6d35a376-3396-4392-9dc4-43da8a12afb5': {'x': 0, 'y': 240, 'tag': 'food6d35a376-3396-4392-9dc4-43da8a12afb5', 'oval_id': 711}}
+[2024-06-16 19:45:20] Food ID: 8b93ee77-3411-4ac3-8747-b925679249a3
+[2024-06-16 19:45:20] Food items: {'8b93ee77-3411-4ac3-8747-b925679249a3': {'x': 40, 'y': 120, 'tag': 'food8b93ee77-3411-4ac3-8747-b925679249a3', 'oval_id': 737}}
+[2024-06-16 19:45:26] Food ID: da276f23-f0e8-464c-b5a4-91d288671a6a
+[2024-06-16 19:45:26] Food items: {'da276f23-f0e8-464c-b5a4-91d288671a6a': {'x': 0, 'y': 140, 'tag': 'foodda276f23-f0e8-464c-b5a4-91d288671a6a', 'oval_id': 796}}
+[2024-06-16 19:45:29] Food ID: 148952db-6619-4923-81ed-5a70476b99c5
+[2024-06-16 19:45:29] Food items: {'148952db-6619-4923-81ed-5a70476b99c5': {'x': 240, 'y': 360, 'tag': 'food148952db-6619-4923-81ed-5a70476b99c5', 'oval_id': 828}}
+[2024-06-16 19:45:32] Food ID: a332bad1-bbf6-4541-97ac-b2fb4cd796a9
+[2024-06-16 19:45:32] Food items: {'a332bad1-bbf6-4541-97ac-b2fb4cd796a9': {'x': 200, 'y': 20, 'tag': 'fooda332bad1-bbf6-4541-97ac-b2fb4cd796a9', 'oval_id': 852}}
+[2024-06-16 19:45:34] Food ID: d07a9d55-743e-49f7-b80a-4d3e8ca7b006
+[2024-06-16 19:45:34] Food items: {'d07a9d55-743e-49f7-b80a-4d3e8ca7b006': {'x': 160, 'y': 180, 'tag': 'foodd07a9d55-743e-49f7-b80a-4d3e8ca7b006', 'oval_id': 876}}
+[2024-06-16 19:45:39] Food ID: 5047eb85-bf53-4160-8726-37424c53b506
+[2024-06-16 19:45:39] Food items: {'5047eb85-bf53-4160-8726-37424c53b506': {'x': 180, 'y': 280, 'tag': 'food5047eb85-bf53-4160-8726-37424c53b506', 'oval_id': 923}}
+[2024-06-16 19:45:40] Food ID: 0b1d9dea-0158-4e1f-91d8-82203fc22c83
+[2024-06-16 19:45:40] Food items: {'0b1d9dea-0158-4e1f-91d8-82203fc22c83': {'x': 220, 'y': 80, 'tag': 'food0b1d9dea-0158-4e1f-91d8-82203fc22c83', 'oval_id': 930}}
+[2024-06-16 19:45:44] Food ID: 006c740f-5129-4c19-9845-89748515183f
+[2024-06-16 19:45:44] Food items: {'006c740f-5129-4c19-9845-89748515183f': {'x': 260, 'y': 340, 'tag': 'food006c740f-5129-4c19-9845-89748515183f', 'oval_id': 965}}
+[2024-06-16 19:45:46] Food ID: 3ea0cbe2-eb2a-40ed-865d-a55cde2fb51b
+[2024-06-16 19:45:46] Food items: {'3ea0cbe2-eb2a-40ed-865d-a55cde2fb51b': {'x': 200, 'y': 220, 'tag': 'food3ea0cbe2-eb2a-40ed-865d-a55cde2fb51b', 'oval_id': 989}}
+[2024-06-16 19:45:49] Food ID: 30480aa2-a229-4411-bfe8-98dbe48c9305
+[2024-06-16 19:45:49] Food items: {'30480aa2-a229-4411-bfe8-98dbe48c9305': {'x': 80, 'y': 360, 'tag': 'food30480aa2-a229-4411-bfe8-98dbe48c9305', 'oval_id': 1011}}
+[2024-06-16 19:45:52] Food ID: 61e9d0e7-2cbb-4371-b372-3896a6480fde
+[2024-06-16 19:45:52] Food items: {'61e9d0e7-2cbb-4371-b372-3896a6480fde': {'x': 180, 'y': 100, 'tag': 'food61e9d0e7-2cbb-4371-b372-3896a6480fde', 'oval_id': 1043}}
+[2024-06-16 19:45:55] Food ID: d2fe7d50-3862-45ab-a911-97f01ad0c82b
+[2024-06-16 19:45:55] Food items: {'d2fe7d50-3862-45ab-a911-97f01ad0c82b': {'x': 380, 'y': 80, 'tag': 'foodd2fe7d50-3862-45ab-a911-97f01ad0c82b', 'oval_id': 1072}}
+[2024-06-16 19:45:56] Food ID: 40cd0b37-f4f3-4cd4-b589-c05b1a91e759
+[2024-06-16 19:45:56] Food items: {'40cd0b37-f4f3-4cd4-b589-c05b1a91e759': {'x': 260, 'y': 140, 'tag': 'food40cd0b37-f4f3-4cd4-b589-c05b1a91e759', 'oval_id': 1084}}
+[2024-06-16 19:46:01] Food ID: 346af523-1c6c-4c55-a74e-6b6333817faa
+[2024-06-16 19:46:01] Food items: {'346af523-1c6c-4c55-a74e-6b6333817faa': {'x': 280, 'y': 60, 'tag': 'food346af523-1c6c-4c55-a74e-6b6333817faa', 'oval_id': 1128}}
+[2024-06-16 19:46:02] Food ID: 20651d20-55cd-47f6-b1ec-53340359ea14
+[2024-06-16 19:46:02] Food items: {'20651d20-55cd-47f6-b1ec-53340359ea14': {'x': 40, 'y': 300, 'tag': 'food20651d20-55cd-47f6-b1ec-53340359ea14', 'oval_id': 1140}}
+[2024-06-16 19:46:07] Food ID: 98f53a5c-0337-4f45-9e07-4766e19d810f
+[2024-06-16 19:46:07] Food items: {'98f53a5c-0337-4f45-9e07-4766e19d810f': {'x': 140, 'y': 60, 'tag': 'food98f53a5c-0337-4f45-9e07-4766e19d810f', 'oval_id': 1187}}
+[2024-06-16 19:46:10] Food ID: 74b895d8-6def-40a6-a40d-1344abd1c755
+[2024-06-16 19:46:10] Food items: {'74b895d8-6def-40a6-a40d-1344abd1c755': {'x': 160, 'y': 60, 'tag': 'food74b895d8-6def-40a6-a40d-1344abd1c755', 'oval_id': 1217}}
+[2024-06-16 19:46:10] Food ID: 3d5d7edf-0366-4ba9-8ed2-e2c1e5f701fe
+[2024-06-16 19:46:10] Food items: {'3d5d7edf-0366-4ba9-8ed2-e2c1e5f701fe': {'x': 340, 'y': 260, 'tag': 'food3d5d7edf-0366-4ba9-8ed2-e2c1e5f701fe', 'oval_id': 1219}}
+[2024-06-16 19:46:12] Food ID: fad1a020-52cf-44da-a8cc-dce42c059fba
+[2024-06-16 19:46:12] Food items: {'fad1a020-52cf-44da-a8cc-dce42c059fba': {'x': 240, 'y': 240, 'tag': 'foodfad1a020-52cf-44da-a8cc-dce42c059fba', 'oval_id': 1239}}
+[2024-06-16 19:46:14] Food ID: 419a0fa0-fde5-47b4-a4ca-cfc72bec7515
+[2024-06-16 19:46:14] Food items: {'419a0fa0-fde5-47b4-a4ca-cfc72bec7515': {'x': 300, 'y': 140, 'tag': 'food419a0fa0-fde5-47b4-a4ca-cfc72bec7515', 'oval_id': 1256}}
+[2024-06-16 19:46:15] Food ID: 5c936fe2-c741-4d09-b965-0955b7adc1a7
+[2024-06-16 19:46:15] Food items: {'5c936fe2-c741-4d09-b965-0955b7adc1a7': {'x': 60, 'y': 300, 'tag': 'food5c936fe2-c741-4d09-b965-0955b7adc1a7', 'oval_id': 1265}}
+[2024-06-16 19:46:18] Food ID: 1585be0d-c1d1-49be-901b-685447834de7
+[2024-06-16 19:46:18] Food items: {'1585be0d-c1d1-49be-901b-685447834de7': {'x': 140, 'y': 60, 'tag': 'food1585be0d-c1d1-49be-901b-685447834de7', 'oval_id': 1292}}
+[2024-06-16 19:46:21] Food ID: 0117aea6-d57a-4692-9479-10194e81b5e9
+[2024-06-16 19:46:21] Food items: {'0117aea6-d57a-4692-9479-10194e81b5e9': {'x': 300, 'y': 120, 'tag': 'food0117aea6-d57a-4692-9479-10194e81b5e9', 'oval_id': 1321}}
+[2024-06-16 19:46:22] Food ID: 590b669a-e1ea-4036-9f9c-0c6bb28f5002
+[2024-06-16 19:46:22] Food items: {'590b669a-e1ea-4036-9f9c-0c6bb28f5002': {'x': 180, 'y': 220, 'tag': 'food590b669a-e1ea-4036-9f9c-0c6bb28f5002', 'oval_id': 1333}}
+[2024-06-16 19:46:23] Food ID: 5e649d4a-b001-411d-888f-e0033c6c41c3
+[2024-06-16 19:46:23] Food items: {'5e649d4a-b001-411d-888f-e0033c6c41c3': {'x': 300, 'y': 280, 'tag': 'food5e649d4a-b001-411d-888f-e0033c6c41c3', 'oval_id': 1345}}
+[2024-06-16 19:46:24] Food ID: 890251db-46e1-425f-b2a0-79b3f810982a
+[2024-06-16 19:46:24] Food items: {'890251db-46e1-425f-b2a0-79b3f810982a': {'x': 260, 'y': 180, 'tag': 'food890251db-46e1-425f-b2a0-79b3f810982a', 'oval_id': 1357}}
+[2024-06-16 19:46:28] Food ID: e11384aa-3e36-475f-aaab-d3085860246c
+[2024-06-16 19:46:28] Food items: {'e11384aa-3e36-475f-aaab-d3085860246c': {'x': 140, 'y': 260, 'tag': 'foode11384aa-3e36-475f-aaab-d3085860246c', 'oval_id': 1391}}
+[2024-06-16 19:46:30] Food ID: 3f597af6-a9bb-40e0-8e1e-1b27657fb3ff
+[2024-06-16 19:46:30] Food items: {'3f597af6-a9bb-40e0-8e1e-1b27657fb3ff': {'x': 340, 'y': 0, 'tag': 'food3f597af6-a9bb-40e0-8e1e-1b27657fb3ff', 'oval_id': 1410}}
+[2024-06-16 19:46:33] Food ID: b6ad0821-d48d-44c6-85cf-bdbc0333c7f6
+[2024-06-16 19:46:33] Food items: {'b6ad0821-d48d-44c6-85cf-bdbc0333c7f6': {'x': 20, 'y': 20, 'tag': 'foodb6ad0821-d48d-44c6-85cf-bdbc0333c7f6', 'oval_id': 1446}}
+[2024-06-16 19:46:41] Food ID: edaa59b1-4a23-4a66-b048-60aa091be724
+[2024-06-16 19:46:41] Food items: {'edaa59b1-4a23-4a66-b048-60aa091be724': {'x': 380, 'y': 300, 'tag': 'foodedaa59b1-4a23-4a66-b048-60aa091be724', 'oval_id': 1520}}
+[2024-06-16 19:46:45] Food ID: 84b3c141-801b-4be3-bd14-efbd02e017cb
+[2024-06-16 19:46:45] Food items: {'84b3c141-801b-4be3-bd14-efbd02e017cb': {'x': 20, 'y': 0, 'tag': 'food84b3c141-801b-4be3-bd14-efbd02e017cb', 'oval_id': 1555}}
+[2024-06-16 19:46:50] Food ID: ee34ab16-0461-4fe4-b8f8-d4ff2feccde2
+[2024-06-16 19:46:50] Food items: {'ee34ab16-0461-4fe4-b8f8-d4ff2feccde2': {'x': 280, 'y': 100, 'tag': 'foodee34ab16-0461-4fe4-b8f8-d4ff2feccde2', 'oval_id': 1605}}
+[2024-06-16 19:46:57] Food ID: 9370040e-33f7-4fc8-8ee7-a660653f2f6b
+[2024-06-16 19:46:57] Food items: {'9370040e-33f7-4fc8-8ee7-a660653f2f6b': {'x': 40, 'y': 20, 'tag': 'food9370040e-33f7-4fc8-8ee7-a660653f2f6b', 'oval_id': 1666}}
+[2024-06-16 19:47:00] Food ID: 653c97a8-8493-49e5-93fc-5f0dda6e98a2
+[2024-06-16 19:47:00] Food items: {'653c97a8-8493-49e5-93fc-5f0dda6e98a2': {'x': 220, 'y': 160, 'tag': 'food653c97a8-8493-49e5-93fc-5f0dda6e98a2', 'oval_id': 1695}}
+[2024-06-16 19:47:01] snake has a collision
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-06-16 19:47:01] Game state: game_over
+[2024-06-16 19:47:01] Snake coordinates after reset: [(40, 320), (20, 320), (20, 300), (20, 280), (20, 260), (20, 240), (20, 220), (20, 200), (20, 180), (20, 160), (20, 140), (20, 120), (20, 100), (20, 80), (20, 60), (20, 40), (20, 20), (40, 20), (60, 20), (80, 20), (100, 20), (120, 20), (140, 20), (160, 20), (180, 20), (200, 20), (220, 20), (240, 20), (260, 20), (280, 20), (300, 20), (320, 20), (340, 20), (360, 20), (380, 20), (400, 20), (400, 40), (400, 60), (400, 80), (400, 100), (380, 100), (360, 100), (340, 100), (320, 100), (300, 100), (280, 100), (260, 100), (240, 100), (220, 100), (200, 100), (180, 100), (160, 100), (140, 100), (120, 100), (100, 100), (80, 100), (60, 100), (40, 100), (40, 120), (40, 140), (40, 160), (40, 180), (40, 200), (40, 220), (40, 240), (40, 260), (40, 280), (40, 300), (40, 320), (40, 340)]
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-06-16 19:47:01] High score: 2
+[2024-06-16 19:47:01] Score: 65
+[2024-06-16 19:47:01] high_score_time updated to: 176
+[2024-06-16 19:47:01] snake_length_high_score updated to: 70
+[2024-06-16 19:47:10] Updated the config.ini of theme
+[2024-06-16 19:47:10] Reset theme label
+[2024-06-16 19:57:38] Closed the app
+
+
+
+

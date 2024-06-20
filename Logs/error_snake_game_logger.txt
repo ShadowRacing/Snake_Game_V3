@@ -16162,3 +16162,243 @@ AttributeError: 'SnakeGameApp' object has no attribute 'restart_app'
 
 
 
+[2024-06-18 18:10:15] 
+
+
+[2024-06-18 18:10:15] Started the Error Log File
+[2024-06-18 19:03:04] No errors occurred
+[2024-06-18 19:03:04] Closed the Error Log File
+
+
+
+
+[2024-06-18 19:03:05] 
+
+
+[2024-06-18 19:03:05] Started the Error Log File
+[2024-06-18 19:03:14] No errors occurred
+[2024-06-18 19:03:14] Closed the Error Log File
+
+
+
+
+[2024-06-18 19:03:15] 
+
+
+[2024-06-18 19:03:15] Started the Error Log File
+[2024-06-18 20:30:00] No errors occurred
+[2024-06-18 20:30:00] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:41:17] 
+
+
+[2024-06-20 20:41:17] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 335, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 371, in create_home_screen
+    my_image = ctk.CTkImage(light_image=Image.open("self.config_path_icon"),
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'self.config_path_icon'
+[2024-06-20 20:41:25] No errors occurred
+[2024-06-20 20:41:25] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:42:15] 
+
+
+[2024-06-20 20:42:15] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 335, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 371, in create_home_screen
+    my_image = ctk.CTkImage(light_image=Image.open("self.config_path_icon"),
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'self.config_path_icon'
+[2024-06-20 20:43:30] No errors occurred
+[2024-06-20 20:43:30] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:43:31] 
+
+
+[2024-06-20 20:43:31] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 335, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 371, in create_home_screen
+    my_image = ctk.CTkImage(light_image=Image.open("Images/snake.ico"),
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Images/snake.ico'
+[2024-06-20 20:43:38] No errors occurred
+[2024-06-20 20:43:38] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:43:39] 
+
+
+[2024-06-20 20:43:39] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 335, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 371, in create_home_screen
+    my_image = ctk.CTkImage(light_image=Image.open("Images/snake.ico"),
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Images/snake.ico'
+[2024-06-20 20:49:12] No errors occurred
+[2024-06-20 20:49:12] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:49:13] 
+
+
+[2024-06-20 20:49:13] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 335, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 372, in create_home_screen
+    my_image = ctk.CTkImage(light_image=Image.open(self.config_path_icon),
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'e:\\Snake_game_V3\\Snake_Game_V3\\Images/snake.ico'
+[2024-06-20 20:51:57] No errors occurred
+[2024-06-20 20:51:57] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:51:58] 
+
+
+[2024-06-20 20:51:58] Started the Error Log File
+[2024-06-20 20:53:17] No errors occurred
+[2024-06-20 20:53:17] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:53:18] 
+
+
+[2024-06-20 20:53:18] Started the Error Log File
+[2024-06-20 20:53:48] No errors occurred
+[2024-06-20 20:53:48] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:53:49] 
+
+
+[2024-06-20 20:53:49] Started the Error Log File
+[2024-06-20 20:54:32] No errors occurred
+[2024-06-20 20:54:32] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:54:33] 
+
+
+[2024-06-20 20:54:33] Started the Error Log File
+[2024-06-20 20:54:57] No errors occurred
+[2024-06-20 20:54:57] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:54:58] 
+
+
+[2024-06-20 20:54:58] Started the Error Log File
+[2024-06-20 20:55:19] No errors occurred
+[2024-06-20 20:55:19] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:55:20] 
+
+
+[2024-06-20 20:55:20] Started the Error Log File
+[2024-06-20 20:55:45] No errors occurred
+[2024-06-20 20:55:45] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:55:47] 
+
+
+[2024-06-20 20:55:47] Started the Error Log File
+[2024-06-20 20:56:00] No errors occurred
+[2024-06-20 20:56:00] Closed the Error Log File
+
+
+
+
+[2024-06-20 20:56:01] 
+
+
+[2024-06-20 20:56:01] Started the Error Log File
+[2024-06-20 20:57:11] No errors occurred
+[2024-06-20 20:57:11] Closed the Error Log File
+
+
+
+

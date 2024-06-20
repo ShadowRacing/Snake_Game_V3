@@ -11,6 +11,7 @@ import threading
 import sys
 import subprocess
 from os import path
+from PIL import Image
 import customtkinter as ctk
 
 # Importing thhe necessary modules from other folders
@@ -63,6 +64,8 @@ class SnakeGameApp:
         # Read the config file and load it
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, 'config.ini')
+        self.config_path_icon = path.join(self.config_dir, 'app_icon.ico')
+        self.root.iconbitmap('app_icon.ico')
         print("Config main file", (self.config_path))
         self.config = configparser.ConfigParser()
         try:
@@ -365,6 +368,16 @@ class SnakeGameApp:
         self.endless_reset_button_press_variable()
         self.leveling_reset_button_press_variable()
         self.main_canvas.bind("<Configure>", self.update_text_position)
+        # Create a CTkImage object
+        my_image = ctk.CTkImage(light_image=Image.open(self.config_path_icon), 
+                                dark_image=Image.open(self.config_path_icon), 
+                                size=(165, 165))
+
+        # Create a CTkLabel to display the image
+        image_label = ctk.CTkLabel(self.main_canvas, image=my_image, text="")
+
+        # Place the label at the bottom left of the window
+        image_label.place(x=0, y=650)
 
     def update_text_position(self, event=None):# pylint: disable=unused-argument
         """

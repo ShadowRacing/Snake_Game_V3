@@ -28,7 +28,9 @@ from Logic.snake_challange_choice import ChallangeChoices
 from Logic.snake_challange_settings import ChallangeSettings
 from Logic.resetconfigvalues import ResetConfigValues
 from Logic.little_snake_game import MiniSnakeGame
-from Games.snake_classic_game import SnakeClassicGame
+from Logic.home_screen_manager import HomeScreenManager
+#from Games.snake_classic_game import SnakeClassicGame
+from Games.snake_classic_game_2 import SnakeClassicGame
 from Games.snake_endless_game import SnakeEndless
 from Games.snake_leveling_game import SnakeLeveling
 from Games.snake_challange_games import FoodTimeAttack
@@ -106,14 +108,14 @@ class SnakeGameApp:
         self.current_direction_index = 0
         self.cell_size = 20
         self.running = True
-        self.mini_snake_game_canvas = ctk.CTkCanvas(self.root, width=60, height=60) # pylint: disable=line-too-long
+        self.mini_snake_game_canvas = None # pylint: disable=line-too-long
         self.loading_canvas = None
         self.progress_bar = ctk.CTkProgressBar(self.loading_canvas, width=400, height=30)
 
         # Creating the main canvas for the app
         self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
         # self.main_canvas.pack(expand=True, fill="both")
-        self.original_main_canvas = self.main_canvas
+        self.original_main_canvas = None
 
         # All the game canvases
         self.classic_snake_canvas = None
@@ -231,6 +233,8 @@ class SnakeGameApp:
 
         self.mini_snake_game = MiniSnakeGame(self.main_canvas, 20, self.game_logger) # pylint: disable=line-too-long
 
+        self.home_screen_manager = HomeScreenManager(self.classic_snake_canvas, self.endless_snake_canvas, self.leveling_snake_canvas, self.food_time_attack_canvas, self.challange_choice_canvas, self.challange_settings_canvas, self.info_canvas, self.info_general_canvas, self.info_classic_canvas, self.info_endless_canvas, self.info_leveling_canvas, self.info_challange_canvas, self.settings_canvas, self.settings_canvas_values, self.settings_canvas_reset, self.reset_label, self.reset_settings_frame, self.reset_settings_frame_1, self.scrollable_frame, self.framelabel_panel, self.button_commands, self.mini_snake_game_canvas, self.original_main_canvas) # pylint: disable=line-too-long
+
         self.settings_labels.update_initial_game_size()
 
         # Create the loading screen
@@ -255,11 +259,12 @@ class SnakeGameApp:
         """
         Create the loading screen.
         """
+        self.original_main_canvas = self.main_canvas
         self.loading_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         self.loading_canvas.pack(expand=True, fill="both")
         self.loading_canvas.bind("<Configure>", self.update_loading_screen_position)
 
-        self.loading_canvas.after(5000, self.destroy_loading_screen)
+        self.loading_canvas.after(1000, self.destroy_loading_screen)
 
     def update_loading_screen_position(self, event):
         """
@@ -626,7 +631,7 @@ class SnakeGameApp:
             self.main_canvas = self.challange_settings_canvas
 
         # Initializing the button panel and label panel
-        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
+        #self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
         self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.button_commands = ButtonCommands(self.game_logger, self.functions)

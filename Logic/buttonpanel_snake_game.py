@@ -486,21 +486,27 @@ class ClickButtonPanel:
 
     def update_home_button_state(self):
         # Read the new state from the config.ini file
+        time.sleep(0.5)
         self.state_game = self.config.get('Classic_Snake_Settings', 'state', fallback='game')
+        print(self.state_game)
         
         if self.state_game == 'game':
             self.button_state = 'disabled'
-            self.config.set('Settings', 'button_state', self.button_state)
-            with open('config.ini', 'w', encoding='utf-8') as configfile:
-                self.config.write(configfile)
-        else:
+        elif self.state_game == 'game_over':
             self.button_state = 'normal'
-            self.config.set('Settings', 'button_state', self.button_state)
-            with open('config.ini', 'w', encoding='utf-8') as configfile:
-                self.config.write(configfile)
+        else:
+            # Handle unexpected state or fallback to a default
+            self.button_state = 'normal'  # or 'normal', depending on your needs
 
+        self.config.set('Settings', 'button_state', self.button_state)
+        with open('config.ini', 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
+        
         # Update the state of the home button
         self.home_button.configure(state=self.button_state)
+
+
+        
 
     def create_restart_app_button(self):
         """

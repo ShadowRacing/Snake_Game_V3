@@ -18,6 +18,7 @@ from Configuration.gameconfig_snake_game import GameConfig
 from Logic.food_logic_snake_game import ClassicFood
 from Logic.snake_logic_snake_game import Snake
 from Logic.game_labelpanel import GameLabelsPanel
+from Logic.buttonpanel_snake_game import ClickButtonPanel
 
 class SnakeClassicGame(ctk.CTkCanvas):
     """
@@ -88,6 +89,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.food = ClassicFood(self.game_logger, self.snake_canvas, game_config)
         self.game_labels_panel = GameLabelsPanel(parent, self.game_logger,  self.game_config)
         self.game_config = GameConfig(self.game_logger, 'classic_snake')
+        self.create_button_panel = ClickButtonPanel(parent, self.game_logger, self.functions) # pylint: disable=line-too-long
 
         self.game_labels_panel.classic_create_game_labels()
 
@@ -185,13 +187,6 @@ class SnakeClassicGame(ctk.CTkCanvas):
         """
         Method to display the start screen of the game.
         """
-        self.state = 'start_game'
-        self.config.set('Classic_Snake_Settings', 'state', 'start_game')
-
-        with open('config.ini', 'w', encoding='utf-8') as configfile:
-            self.config.write(configfile)
-
-        self.game_logger.log_game_event(f"Game state: {self.state}")
         self.snake_canvas.delete("all")
         self.snake_canvas.create_text(self.width / 2, self.height / 2,
                          font= FONT_LIST[12], text="Press 'Space' to start", fill="white", tag="start") # pylint: disable=line-too-long
@@ -257,6 +252,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
         self.game_logger.log_game_event(f"Game state: {self.state}")
+        
         self.start_time = time.time()
         self.total_paused_time = 0
         self.score = 0
@@ -269,6 +265,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
 
         self.game_logger.log_game_event(f"Snake coordinates at start: {self.snake.coordinates}")
         self.next_turn(self.snake, self.food)
+        self.create_button_panel.update_home_button_state()
 
     def next_turn(self, snake, food):
         """
@@ -415,6 +412,8 @@ class SnakeClassicGame(ctk.CTkCanvas):
 
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
+        time.sleep(1)
+        self.create_button_panel.update_home_button_state()
 
     def restart_game(self, event=None):
         # pylint: disable=unused-argument
@@ -423,7 +422,6 @@ class SnakeClassicGame(ctk.CTkCanvas):
         """
         self.bind_and_unbind_keys()
         self.game_logger.log_game_event("Game restarted")
-        self.game_logger.log_game_event(f"Game state: {self.state}")
         self.game_over_flag = False
         self.snake_canvas.delete('game_over')
         self.direction = self.game_config.DIRECTIONOFFSNAKE
@@ -437,12 +435,14 @@ class SnakeClassicGame(ctk.CTkCanvas):
 
         self.config.set('Classic_Snake_Values', 'score', '0')
         self.config.set('Classic_Snake_Values', 'snake_length', str(self.game_config.SNAKE_LENGTH))
+        self.state = 'start_game'
         with open('config.ini', 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
-            # start the game again
-            self.state = 'start_game'
+        # start the game again
+
         self.score = 0
         self.game_labels_panel.classic_update_game_labels()
+        
         self.start_game()
 
     def bind_and_unbind_keys(self):
@@ -454,7 +454,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
             for k in key:
                 k = k.replace("'", "")
                 self.snake_canvas.unbind(f'<{k}>')
-                print(f"Unbinding {k}")
+                #print(f"Unbinding {k}")
 
         if self.state == 'start_game':
             for key in self.key_bindings['StartGame']:
@@ -488,6 +488,9 @@ class SnakeClassicGame(ctk.CTkCanvas):
             for key in self.key_bindings['PauseGame']:
                 key = key.replace("'", "")
                 self.snake_canvas.bind(f'<{key}>', self.pause_game)
+
+
+# pause state is not being set
 
 
     # def bind_and_unbind_keys(self):

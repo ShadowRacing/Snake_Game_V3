@@ -214,7 +214,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.config.set('Settings', 'home_button_state', 'disabled')
         self.config.set('Settings', 'classic_reset_high_score_button_state', 'disabled')
         self.config.set('Settings', 'classic_reset_high_score_time_button_state', 'disabled')
-        self.config.set('Settings', 'classic_reset_high_score_snake_length_button_state', 'disabled')
+        self.config.set('Settings', 'classic_reset_high_score_snake_length_button_state', 'disabled') # pylint: disable=line-too-long
         self.game_logger.log_game_event(f"Game state: {self.state}")
         self.write_changes_to_configini()
         self.create_button_panel.update_button_state()

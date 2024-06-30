@@ -361,7 +361,7 @@ class ConfigIni:
 
         except FileNotFoundError as e:
             traceback.print_exc(e)
-    
+
     def set_default_keybindings(self):
         """
         Set the default keybindings section in the config.ini file.

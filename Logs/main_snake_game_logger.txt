@@ -40021,3 +40021,2659 @@ Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
 
 
 
+[2024-06-30 14:27:46] Started the app
+[2024-06-30 14:27:46] Started the GameApp Class
+[2024-06-30 14:27:46] Game mode: initial config
+[2024-06-30 14:27:46] Current Theme: Red
+[2024-06-30 14:27:46] Set initial theme to: Red
+[2024-06-30 14:27:46] Updated initial_theme in config.ini to: Red
+[2024-06-30 14:27:46] Current initial_theme in config.ini to: Red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 14:27:46] Theme applied: Red
+[2024-06-30 14:27:46] Updated contrast in config.ini to: Default
+[2024-06-30 14:27:46] Contrast mode set to: default
+[2024-06-30 14:27:46] Resetting snake
+[2024-06-30 14:27:46] Set initial game size to: 600x600
+[2024-06-30 14:27:46] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 14:27:46] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 14:27:47] Label border width: 1
+[2024-06-30 14:27:47] label_border_height: 1
+[2024-06-30 14:27:50] Game mode: classic_snake
+[2024-06-30 14:27:50] Config file read.
+[2024-06-30 14:27:50] Game width: 600
+[2024-06-30 14:27:50] Game height: 600
+[2024-06-30 14:27:50] Highlight thickness: 5
+[2024-06-30 14:27:50] Highlight background: Black
+[2024-06-30 14:27:50] Initial direction of snake: down
+[2024-06-30 14:27:50] Initial score: 0
+[2024-06-30 14:27:50] Game over flag: False
+[2024-06-30 14:27:50] Game paused: False
+[2024-06-30 14:27:50] Has changed direction: False
+[2024-06-30 14:27:50] Time-related variables initialized.
+[2024-06-30 14:27:50] High scores initialized
+[2024-06-30 14:27:50] Reset snake length
+[2024-06-30 14:27:50] Game mode: classic_snake
+[2024-06-30 14:27:50] Config file read.
+[2024-06-30 14:27:50] Game mode set to classic_snake.
+[2024-06-30 14:27:50] Game focused
+[2024-06-30 14:27:50] Resetting snake
+[2024-06-30 14:27:50] Set initial game size to: 600x600
+[2024-06-30 14:27:50] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 14:27:50] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 14:27:50] Label border width: 1
+[2024-06-30 14:27:50] label_border_height: 1
+[2024-06-30 14:27:51] Game state: playing
+[2024-06-30 14:27:51] playing
+[2024-06-30 14:27:51] Food ID: 19759fd9-f8ee-4f93-9646-64177481aa3e
+[2024-06-30 14:27:51] Food items: {'19759fd9-f8ee-4f93-9646-64177481aa3e': {'x': 180, 'y': 160, 'tag': 'food19759fd9-f8ee-4f93-9646-64177481aa3e', 'oval_id': 7}}
+[2024-06-30 14:27:51] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 14:27:54] Food ID: 141a2cb7-f6c1-400f-899c-e717d0784b3d
+[2024-06-30 14:27:54] Food items: {'141a2cb7-f6c1-400f-899c-e717d0784b3d': {'x': 240, 'y': 380, 'tag': 'food141a2cb7-f6c1-400f-899c-e717d0784b3d', 'oval_id': 33}}
+[2024-06-30 14:27:56] Food ID: c7cd3e80-9440-430f-aa41-0a614a10e41c
+[2024-06-30 14:27:56] Food items: {'c7cd3e80-9440-430f-aa41-0a614a10e41c': {'x': 160, 'y': 220, 'tag': 'foodc7cd3e80-9440-430f-aa41-0a614a10e41c', 'oval_id': 58}}
+[2024-06-30 14:27:58] Food ID: 37b08ed2-7e2a-4df6-9c1c-b9a85f8f7874
+[2024-06-30 14:27:58] Food items: {'37b08ed2-7e2a-4df6-9c1c-b9a85f8f7874': {'x': 220, 'y': 300, 'tag': 'food37b08ed2-7e2a-4df6-9c1c-b9a85f8f7874', 'oval_id': 71}}
+[2024-06-30 14:27:59] Food ID: af78f802-2e95-4ac2-b2ee-05d5d3140fef
+[2024-06-30 14:27:59] Food items: {'af78f802-2e95-4ac2-b2ee-05d5d3140fef': {'x': 380, 'y': 320, 'tag': 'foodaf78f802-2e95-4ac2-b2ee-05d5d3140fef', 'oval_id': 83}}
+[2024-06-30 14:28:00] Food ID: eab09308-a146-4bd1-a285-9ef57b3d64d8
+[2024-06-30 14:28:00] Food items: {'eab09308-a146-4bd1-a285-9ef57b3d64d8': {'x': 260, 'y': 60, 'tag': 'foodeab09308-a146-4bd1-a285-9ef57b3d64d8', 'oval_id': 97}}
+[2024-06-30 14:28:02] Food ID: e02967a7-6a00-484e-93fb-a3251483a44d
+[2024-06-30 14:28:02] Food items: {'e02967a7-6a00-484e-93fb-a3251483a44d': {'x': 380, 'y': 0, 'tag': 'foode02967a7-6a00-484e-93fb-a3251483a44d', 'oval_id': 117}}
+[2024-06-30 14:28:05] Food ID: 7a2960e3-d012-4329-9121-dff90525ac09
+[2024-06-30 14:28:05] Food items: {'7a2960e3-d012-4329-9121-dff90525ac09': {'x': 160, 'y': 180, 'tag': 'food7a2960e3-d012-4329-9121-dff90525ac09', 'oval_id': 137}}
+[2024-06-30 14:28:07] Food ID: 2f8141c4-7b40-4be9-b8ae-497e7fd53782
+[2024-06-30 14:28:07] Food items: {'2f8141c4-7b40-4be9-b8ae-497e7fd53782': {'x': 220, 'y': 160, 'tag': 'food2f8141c4-7b40-4be9-b8ae-497e7fd53782', 'oval_id': 158}}
+[2024-06-30 14:28:08] Food ID: 3c4975c1-324c-407a-96d2-75573b56c9b6
+[2024-06-30 14:28:08] Food items: {'3c4975c1-324c-407a-96d2-75573b56c9b6': {'x': 60, 'y': 300, 'tag': 'food3c4975c1-324c-407a-96d2-75573b56c9b6', 'oval_id': 167}}
+[2024-06-30 14:28:10] Food ID: 0246dae1-ede6-48af-ac9b-503217df9dcc
+[2024-06-30 14:28:10] Food items: {'0246dae1-ede6-48af-ac9b-503217df9dcc': {'x': 320, 'y': 100, 'tag': 'food0246dae1-ede6-48af-ac9b-503217df9dcc', 'oval_id': 195}}
+[2024-06-30 14:28:14] Food ID: 262d0a5f-6cce-41de-a619-a36965067832
+[2024-06-30 14:28:14] Food items: {'262d0a5f-6cce-41de-a619-a36965067832': {'x': 320, 'y': 360, 'tag': 'food262d0a5f-6cce-41de-a619-a36965067832', 'oval_id': 225}}
+[2024-06-30 14:28:15] Food ID: adb64633-fba6-4499-97bd-1ffe7836f9a2
+[2024-06-30 14:28:15] Food items: {'adb64633-fba6-4499-97bd-1ffe7836f9a2': {'x': 180, 'y': 300, 'tag': 'foodadb64633-fba6-4499-97bd-1ffe7836f9a2', 'oval_id': 243}}
+[2024-06-30 14:28:17] Food ID: 9ebc4aad-4895-41f7-9ab3-02d7fd64a288
+[2024-06-30 14:28:17] Food items: {'9ebc4aad-4895-41f7-9ab3-02d7fd64a288': {'x': 340, 'y': 20, 'tag': 'food9ebc4aad-4895-41f7-9ab3-02d7fd64a288', 'oval_id': 256}}
+[2024-06-30 14:28:19] Food ID: e2a5fe73-f255-4f22-be8f-852781ba68c9
+[2024-06-30 14:28:19] Food items: {'e2a5fe73-f255-4f22-be8f-852781ba68c9': {'x': 340, 'y': 200, 'tag': 'foode2a5fe73-f255-4f22-be8f-852781ba68c9', 'oval_id': 279}}
+[2024-06-30 14:28:20] Food ID: daa82b04-0589-4f0c-a829-77adde64a66c
+[2024-06-30 14:28:20] Food items: {'daa82b04-0589-4f0c-a829-77adde64a66c': {'x': 20, 'y': 200, 'tag': 'fooddaa82b04-0589-4f0c-a829-77adde64a66c', 'oval_id': 291}}
+[2024-06-30 14:28:22] Food ID: 9e676da0-0abb-4441-ac88-8b8621536725
+[2024-06-30 14:28:22] Food items: {'9e676da0-0abb-4441-ac88-8b8621536725': {'x': 20, 'y': 40, 'tag': 'food9e676da0-0abb-4441-ac88-8b8621536725', 'oval_id': 308}}
+[2024-06-30 14:28:27] Food ID: 1b2cc8e7-7354-4504-8053-3acbbf7ac500
+[2024-06-30 14:28:27] Food items: {'1b2cc8e7-7354-4504-8053-3acbbf7ac500': {'x': 120, 'y': 340, 'tag': 'food1b2cc8e7-7354-4504-8053-3acbbf7ac500', 'oval_id': 355}}
+[2024-06-30 14:28:29] Food ID: db7ecd64-1a7d-4f48-be2a-d0fc7321049f
+[2024-06-30 14:28:29] Food items: {'db7ecd64-1a7d-4f48-be2a-d0fc7321049f': {'x': 100, 'y': 340, 'tag': 'fooddb7ecd64-1a7d-4f48-be2a-d0fc7321049f', 'oval_id': 376}}
+[2024-06-30 14:28:30] Food ID: 8ae7ffcb-1f47-4f06-954b-76a330c6b84d
+[2024-06-30 14:28:30] Food items: {'8ae7ffcb-1f47-4f06-954b-76a330c6b84d': {'x': 380, 'y': 360, 'tag': 'food8ae7ffcb-1f47-4f06-954b-76a330c6b84d', 'oval_id': 388}}
+[2024-06-30 14:28:30] snake has a collision
+[2024-06-30 14:28:30] game_over
+[2024-06-30 14:28:30] Game state: game_over
+[2024-06-30 14:28:30] Snake coordinates after reset: [(120, 340), (100, 340), (100, 360), (100, 380), (100, 400), (100, 420), (100, 440), (120, 440), (120, 420), (120, 400), (120, 380), (120, 360), (120, 340), (120, 320), (120, 300), (120, 280), (120, 260), (120, 240), (120, 220), (120, 200), (120, 180), (120, 160), (120, 140), (120, 120)]
+[2024-06-30 14:28:30] High score: 2
+[2024-06-30 14:28:30] Score: 19
+[2024-06-30 14:28:30] high_score_time updated to: 38
+[2024-06-30 14:28:30] snake_length_high_score updated to: 24
+[2024-06-30 14:33:47] Game restarted
+[2024-06-30 14:33:47] Reset snake length
+[2024-06-30 14:33:47] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 14:33:47] Game state: playing
+[2024-06-30 14:33:48] playing
+[2024-06-30 14:33:48] Food ID: c3b27db4-b8ce-4ac8-aee3-fdeb045f68cd
+[2024-06-30 14:33:48] Food items: {'c3b27db4-b8ce-4ac8-aee3-fdeb045f68cd': {'x': 180, 'y': 0, 'tag': 'foodc3b27db4-b8ce-4ac8-aee3-fdeb045f68cd', 'oval_id': 397}}
+[2024-06-30 14:33:48] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 14:33:51] Food ID: 4776269f-9c4c-46a3-87fd-f1ab2881aba1
+[2024-06-30 14:33:51] Food items: {'4776269f-9c4c-46a3-87fd-f1ab2881aba1': {'x': 140, 'y': 60, 'tag': 'food4776269f-9c4c-46a3-87fd-f1ab2881aba1', 'oval_id': 425}}
+[2024-06-30 14:33:52] Food ID: 3c306ece-b015-4106-b5f4-7ba72faa6821
+[2024-06-30 14:33:52] Food items: {'3c306ece-b015-4106-b5f4-7ba72faa6821': {'x': 120, 'y': 160, 'tag': 'food3c306ece-b015-4106-b5f4-7ba72faa6821', 'oval_id': 437}}
+[2024-06-30 14:33:53] Food ID: 9a19c459-1657-413c-adc6-9e71773dfd45
+[2024-06-30 14:33:53] Food items: {'9a19c459-1657-413c-adc6-9e71773dfd45': {'x': 340, 'y': 160, 'tag': 'food9a19c459-1657-413c-adc6-9e71773dfd45', 'oval_id': 450}}
+[2024-06-30 14:33:55] Food ID: 66292225-6ac2-4cd8-9f7d-f68a4a4eda8e
+[2024-06-30 14:33:55] Food items: {'66292225-6ac2-4cd8-9f7d-f68a4a4eda8e': {'x': 260, 'y': 60, 'tag': 'food66292225-6ac2-4cd8-9f7d-f68a4a4eda8e', 'oval_id': 470}}
+[2024-06-30 14:34:03] Food ID: e90b994e-7cc7-480c-ade8-96b8373056f6
+[2024-06-30 14:34:03] Food items: {'e90b994e-7cc7-480c-ade8-96b8373056f6': {'x': 140, 'y': 360, 'tag': 'foode90b994e-7cc7-480c-ade8-96b8373056f6', 'oval_id': 542}}
+[2024-06-30 14:34:05] Food ID: 1b7c34ca-5538-41b4-8e8b-2d71b427768d
+[2024-06-30 14:34:05] Food items: {'1b7c34ca-5538-41b4-8e8b-2d71b427768d': {'x': 100, 'y': 340, 'tag': 'food1b7c34ca-5538-41b4-8e8b-2d71b427768d', 'oval_id': 566}}
+[2024-06-30 14:34:06] snake has a collision
+[2024-06-30 14:34:06] game_over
+[2024-06-30 14:34:06] Game state: game_over
+[2024-06-30 14:34:06] Snake coordinates after reset: [(120, 320), (140, 320), (160, 320), (180, 320), (180, 340), (180, 360), (160, 360), (140, 360), (120, 360), (120, 340), (120, 320)]
+[2024-06-30 14:34:06] High score: 19
+[2024-06-30 14:34:06] Score: 6
+[2024-06-30 14:34:07] Updated the config.ini of theme
+[2024-06-30 14:34:07] Reset theme label
+[2024-06-30 14:34:15] Closed the app
+
+
+
+
+[2024-06-30 16:46:33] Started the app
+[2024-06-30 16:46:33] Started the GameApp Class
+[2024-06-30 16:46:33] Game mode: initial config
+[2024-06-30 16:46:33] Current Theme: Red
+[2024-06-30 16:46:33] Set initial theme to: Red
+[2024-06-30 16:46:33] Updated initial_theme in config.ini to: Red
+[2024-06-30 16:46:33] Current initial_theme in config.ini to: Red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 16:46:33] Theme applied: Red
+[2024-06-30 16:46:33] Updated contrast in config.ini to: Default
+[2024-06-30 16:46:33] Contrast mode set to: default
+[2024-06-30 16:46:33] Resetting snake
+[2024-06-30 16:46:33] Set initial game size to: 600x600
+[2024-06-30 16:46:33] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 16:46:33] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 16:46:34] Label border width: 1
+[2024-06-30 16:46:34] label_border_height: 1
+[2024-06-30 16:48:06] Closed the app
+
+
+
+
+[2024-06-30 16:48:15] Started the app
+[2024-06-30 16:48:15] Started the GameApp Class
+[2024-06-30 16:48:15] Game mode: initial config
+[2024-06-30 16:48:15] Current Theme: Red
+[2024-06-30 16:48:15] Set initial theme to: Red
+[2024-06-30 16:48:15] Updated initial_theme in config.ini to: Red
+[2024-06-30 16:48:15] Current initial_theme in config.ini to: Red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 16:48:15] Theme applied: Red
+[2024-06-30 16:48:15] Updated contrast in config.ini to: Default
+[2024-06-30 16:48:15] Contrast mode set to: default
+[2024-06-30 16:48:15] Resetting snake
+[2024-06-30 16:48:15] Set initial game size to: 600x600
+[2024-06-30 16:48:15] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 16:48:15] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 16:48:16] Label border width: 1
+[2024-06-30 16:48:16] label_border_height: 1
+[2024-06-30 16:51:29] Closed the app
+
+
+
+
+[2024-06-30 16:51:30] Started the app
+[2024-06-30 16:51:30] Started the GameApp Class
+[2024-06-30 16:51:30] Game mode: initial config
+[2024-06-30 16:51:30] Current Theme: Red
+[2024-06-30 16:51:30] Set initial theme to: Red
+[2024-06-30 16:51:30] Updated initial_theme in config.ini to: Red
+[2024-06-30 16:51:30] Current initial_theme in config.ini to: Red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 16:51:30] Theme applied: Red
+[2024-06-30 16:51:30] Updated contrast in config.ini to: Default
+[2024-06-30 16:51:30] Contrast mode set to: default
+[2024-06-30 16:51:30] Resetting snake
+[2024-06-30 16:51:30] Set initial game size to: 600x600
+[2024-06-30 16:51:30] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 16:51:30] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 16:51:31] Label border width: 1
+[2024-06-30 16:51:31] label_border_height: 1
+[2024-06-30 16:51:47] Closed the app
+
+
+
+
+[2024-06-30 17:02:38] Started the app
+[2024-06-30 17:02:38] Started the GameApp Class
+[2024-06-30 17:02:38] Game mode: initial config
+[2024-06-30 17:02:38] Current Theme: Default
+[2024-06-30 17:02:38] Set initial theme to: Default
+[2024-06-30 17:02:38] Updated initial_theme in config.ini to: Default
+[2024-06-30 17:02:38] Current initial_theme in config.ini to: Default
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 17:02:38] Theme applied: Default
+[2024-06-30 17:02:38] Updated contrast in config.ini to: Default
+[2024-06-30 17:02:38] Contrast mode set to: default
+[2024-06-30 17:02:38] Resetting snake
+[2024-06-30 17:02:38] Set initial game size to: 500x500
+[2024-06-30 17:02:38] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 17:02:38] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 17:02:39] Label border width: 1
+[2024-06-30 17:02:39] label_border_height: 1
+[2024-06-30 17:02:45] Resetting snake
+[2024-06-30 17:02:45] Set initial game size to: 500x500
+[2024-06-30 17:02:45] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 17:02:45] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 17:02:45] Label border width: 1
+[2024-06-30 17:02:45] label_border_height: 1
+[2024-06-30 17:02:53] Closed the app
+
+
+
+
+[2024-06-30 17:07:50] Started the app
+[2024-06-30 17:07:50] Started the GameApp Class
+[2024-06-30 17:07:50] Game mode: initial config
+[2024-06-30 17:07:50] Current Theme: Default
+[2024-06-30 17:07:50] Set initial theme to: Default
+[2024-06-30 17:07:50] Updated initial_theme in config.ini to: Default
+[2024-06-30 17:07:50] Current initial_theme in config.ini to: Default
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 17:07:50] Theme applied: Default
+[2024-06-30 17:07:50] Updated contrast in config.ini to: Default
+[2024-06-30 17:07:50] Contrast mode set to: default
+[2024-06-30 17:07:50] Resetting snake
+[2024-06-30 17:07:50] Set initial game size to: 500x500
+[2024-06-30 17:07:50] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 17:07:50] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 17:07:51] Label border width: 1
+[2024-06-30 17:07:51] label_border_height: 1
+[2024-06-30 18:07:23] Closed the app
+
+
+
+
+[2024-06-30 18:07:24] Started the app
+[2024-06-30 18:07:24] Started the GameApp Class
+[2024-06-30 18:07:24] Game mode: initial config
+[2024-06-30 18:07:24] Current Theme: Default
+[2024-06-30 18:07:24] Set initial theme to: Default
+[2024-06-30 18:07:24] Updated initial_theme in config.ini to: Default
+[2024-06-30 18:07:24] Current initial_theme in config.ini to: Default
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:07:24] Theme applied: Default
+[2024-06-30 18:07:24] Updated contrast in config.ini to: Default
+[2024-06-30 18:07:24] Contrast mode set to: default
+[2024-06-30 18:07:24] Resetting snake
+[2024-06-30 18:07:24] Set initial game size to: 500x500
+[2024-06-30 18:07:24] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 18:07:24] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 18:07:25] Label border width: 1
+[2024-06-30 18:07:25] label_border_height: 1
+[2024-06-30 18:07:37] Closed the app
+
+
+
+
+[2024-06-30 18:07:38] Started the app
+[2024-06-30 18:07:38] Started the GameApp Class
+[2024-06-30 18:07:38] Game mode: initial config
+[2024-06-30 18:07:38] Current Theme: red
+[2024-06-30 18:07:38] Set initial theme to: red
+[2024-06-30 18:07:38] Updated initial_theme in config.ini to: red
+[2024-06-30 18:07:38] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:07:38] Theme applied: red
+[2024-06-30 18:07:38] Updated contrast in config.ini to: Default
+[2024-06-30 18:07:38] Contrast mode set to: default
+[2024-06-30 18:07:38] Resetting snake
+[2024-06-30 18:07:38] Set initial game size to: 500x500
+[2024-06-30 18:07:38] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 18:07:38] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 18:07:39] Label border width: 1
+[2024-06-30 18:07:39] label_border_height: 1
+[2024-06-30 18:09:44] Closed the app
+
+
+
+
+[2024-06-30 18:09:50] Started the app
+[2024-06-30 18:09:50] Started the GameApp Class
+[2024-06-30 18:09:50] Game mode: initial config
+[2024-06-30 18:09:50] Current Theme: red
+[2024-06-30 18:09:50] Set initial theme to: red
+[2024-06-30 18:09:50] Updated initial_theme in config.ini to: red
+[2024-06-30 18:09:50] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:09:50] Theme applied: red
+[2024-06-30 18:09:50] Updated contrast in config.ini to: Default
+[2024-06-30 18:09:50] Contrast mode set to: default
+[2024-06-30 18:09:50] Resetting snake
+[2024-06-30 18:09:50] Set initial game size to: 500x500
+[2024-06-30 18:09:50] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 18:09:50] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 18:09:51] Label border width: 1
+[2024-06-30 18:09:51] label_border_height: 1
+[2024-06-30 18:09:53] Closed the app
+
+
+
+
+[2024-06-30 18:10:29] Started the app
+[2024-06-30 18:10:29] Started the GameApp Class
+[2024-06-30 18:10:29] Game mode: initial config
+[2024-06-30 18:10:29] Current Theme: red
+[2024-06-30 18:10:29] Set initial theme to: red
+[2024-06-30 18:10:29] Updated initial_theme in config.ini to: red
+[2024-06-30 18:10:29] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:10:29] Theme applied: red
+[2024-06-30 18:10:29] Updated contrast in config.ini to: Default
+[2024-06-30 18:10:29] Contrast mode set to: default
+[2024-06-30 18:10:29] Resetting snake
+[2024-06-30 18:10:29] Set initial game size to: 500x500
+[2024-06-30 18:10:29] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 18:10:29] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 18:10:30] Label border width: 1
+[2024-06-30 18:10:30] label_border_height: 1
+[2024-06-30 18:10:32] Closed the app
+
+
+
+
+[2024-06-30 18:11:20] Started the app
+[2024-06-30 18:11:20] Started the GameApp Class
+[2024-06-30 18:11:20] Game mode: initial config
+[2024-06-30 18:11:20] Current Theme: red
+[2024-06-30 18:11:20] Set initial theme to: red
+[2024-06-30 18:11:20] Updated initial_theme in config.ini to: red
+[2024-06-30 18:11:20] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:11:20] Theme applied: red
+[2024-06-30 18:11:20] Updated contrast in config.ini to: Default
+[2024-06-30 18:11:20] Contrast mode set to: default
+[2024-06-30 18:11:20] Resetting snake
+[2024-06-30 18:11:20] Set initial game size to: 500x500
+[2024-06-30 18:11:20] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 18:11:20] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 18:11:21] Label border width: 1
+[2024-06-30 18:11:21] label_border_height: 1
+[2024-06-30 18:11:24] Closed the app
+
+
+
+
+[2024-06-30 18:11:42] Started the app
+[2024-06-30 18:11:42] Started the GameApp Class
+[2024-06-30 18:11:42] Game mode: initial config
+[2024-06-30 18:11:42] Current Theme: red
+[2024-06-30 18:11:42] Set initial theme to: red
+[2024-06-30 18:11:42] Updated initial_theme in config.ini to: red
+[2024-06-30 18:11:42] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:11:42] Theme applied: red
+[2024-06-30 18:11:42] Updated contrast in config.ini to: Default
+[2024-06-30 18:11:42] Contrast mode set to: default
+[2024-06-30 18:11:42] Resetting snake
+[2024-06-30 18:11:42] Set initial game size to: 500x500
+[2024-06-30 18:11:42] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 18:11:42] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 18:11:43] Label border width: 1
+[2024-06-30 18:11:43] label_border_height: 1
+[2024-06-30 18:17:28] Closed the app
+
+
+
+
+[2024-06-30 18:17:30] Started the app
+[2024-06-30 18:17:30] Started the GameApp Class
+[2024-06-30 18:17:30] Game mode: initial config
+[2024-06-30 18:17:30] Current Theme: red
+[2024-06-30 18:17:30] Set initial theme to: red
+[2024-06-30 18:17:30] Updated initial_theme in config.ini to: red
+[2024-06-30 18:17:30] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:17:30] Theme applied: red
+[2024-06-30 18:17:30] Updated contrast in config.ini to: Default
+[2024-06-30 18:17:30] Contrast mode set to: default
+[2024-06-30 18:17:30] Resetting snake
+[2024-06-30 18:17:30] Set initial game size to: 500x500
+[2024-06-30 18:17:30] Updated initial_game_size in config.ini to: 500x500
+[2024-06-30 18:17:30] Current initial_game_size in config.ini to: 500x500
+[2024-06-30 18:17:31] Label border width: 1
+[2024-06-30 18:17:31] label_border_height: 1
+[2024-06-30 18:17:34] Closed the app
+
+
+
+
+[2024-06-30 18:18:04] Started the app
+[2024-06-30 18:18:04] Started the GameApp Class
+[2024-06-30 18:18:04] Game mode: initial config
+[2024-06-30 18:18:04] Current Theme: red
+[2024-06-30 18:18:04] Set initial theme to: red
+[2024-06-30 18:18:04] Updated initial_theme in config.ini to: red
+[2024-06-30 18:18:04] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:18:04] Theme applied: red
+[2024-06-30 18:18:04] Updated contrast in config.ini to: Default
+[2024-06-30 18:18:04] Contrast mode set to: default
+[2024-06-30 18:18:04] Resetting snake
+[2024-06-30 18:18:04] Set initial game size to: 600x600
+[2024-06-30 18:18:04] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:18:04] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:18:05] Label border width: 1
+[2024-06-30 18:18:05] label_border_height: 1
+[2024-06-30 18:18:06] Game mode: classic_snake
+[2024-06-30 18:18:06] Config file read.
+[2024-06-30 18:18:06] Game width: 600
+[2024-06-30 18:18:06] Game height: 600
+[2024-06-30 18:18:06] Highlight thickness: 5
+[2024-06-30 18:18:06] Highlight background: Black
+[2024-06-30 18:18:06] Initial direction of snake: down
+[2024-06-30 18:18:06] Initial score: 0
+[2024-06-30 18:18:06] Game over flag: False
+[2024-06-30 18:18:06] Game paused: False
+[2024-06-30 18:18:06] Has changed direction: False
+[2024-06-30 18:18:06] Time-related variables initialized.
+[2024-06-30 18:18:06] High scores initialized
+[2024-06-30 18:18:06] Reset snake length
+[2024-06-30 18:18:06] Game mode: classic_snake
+[2024-06-30 18:18:06] Config file read.
+[2024-06-30 18:18:06] Game mode set to classic_snake.
+[2024-06-30 18:18:06] Game focused
+[2024-06-30 18:18:06] Resetting snake
+[2024-06-30 18:18:06] Set initial game size to: 600x600
+[2024-06-30 18:18:06] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:18:06] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:18:06] Label border width: 1
+[2024-06-30 18:18:06] label_border_height: 1
+[2024-06-30 18:18:10] Closed the app
+
+
+
+
+[2024-06-30 18:18:59] Started the app
+[2024-06-30 18:18:59] Started the GameApp Class
+[2024-06-30 18:18:59] Game mode: initial config
+[2024-06-30 18:18:59] Current Theme: red
+[2024-06-30 18:18:59] Set initial theme to: red
+[2024-06-30 18:18:59] Updated initial_theme in config.ini to: red
+[2024-06-30 18:18:59] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:18:59] Theme applied: red
+[2024-06-30 18:18:59] Updated contrast in config.ini to: Default
+[2024-06-30 18:18:59] Contrast mode set to: default
+[2024-06-30 18:18:59] Resetting snake
+[2024-06-30 18:18:59] Set initial game size to: 600x600
+[2024-06-30 18:18:59] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:18:59] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:19:00] Label border width: 1
+[2024-06-30 18:19:00] label_border_height: 1
+[2024-06-30 18:19:01] Game mode: classic_snake
+[2024-06-30 18:19:01] Config file read.
+[2024-06-30 18:19:01] Game width: 600
+[2024-06-30 18:19:01] Game height: 600
+[2024-06-30 18:19:01] Highlight thickness: 5
+[2024-06-30 18:19:01] Highlight background: Black
+[2024-06-30 18:19:01] Initial direction of snake: down
+[2024-06-30 18:19:01] Initial score: 0
+[2024-06-30 18:19:01] Game over flag: False
+[2024-06-30 18:19:01] Game paused: False
+[2024-06-30 18:19:01] Has changed direction: False
+[2024-06-30 18:19:01] Time-related variables initialized.
+[2024-06-30 18:19:01] High scores initialized
+[2024-06-30 18:19:01] Reset snake length
+[2024-06-30 18:19:01] Game mode: classic_snake
+[2024-06-30 18:19:01] Config file read.
+[2024-06-30 18:19:01] Game mode set to classic_snake.
+[2024-06-30 18:19:01] Game focused
+[2024-06-30 18:19:01] Resetting snake
+[2024-06-30 18:19:01] Set initial game size to: 600x600
+[2024-06-30 18:19:01] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:19:01] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:19:01] Label border width: 1
+[2024-06-30 18:19:01] label_border_height: 1
+[2024-06-30 18:19:06] Closed the app
+
+
+
+
+[2024-06-30 18:19:45] Started the app
+[2024-06-30 18:19:45] Started the GameApp Class
+[2024-06-30 18:19:45] Game mode: initial config
+[2024-06-30 18:19:45] Current Theme: red
+[2024-06-30 18:19:45] Set initial theme to: red
+[2024-06-30 18:19:45] Updated initial_theme in config.ini to: red
+[2024-06-30 18:19:45] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:19:45] Theme applied: red
+[2024-06-30 18:19:45] Updated contrast in config.ini to: Default
+[2024-06-30 18:19:45] Contrast mode set to: default
+[2024-06-30 18:19:45] Resetting snake
+[2024-06-30 18:19:45] Set initial game size to: 600x600
+[2024-06-30 18:19:45] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:19:45] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:19:46] Label border width: 1
+[2024-06-30 18:19:46] label_border_height: 1
+[2024-06-30 18:19:47] Game mode: classic_snake
+[2024-06-30 18:19:47] Config file read.
+[2024-06-30 18:19:47] Game width: 600
+[2024-06-30 18:19:47] Game height: 600
+[2024-06-30 18:19:47] Highlight thickness: 5
+[2024-06-30 18:19:47] Highlight background: Black
+[2024-06-30 18:19:47] Initial direction of snake: down
+[2024-06-30 18:19:47] Initial score: 0
+[2024-06-30 18:19:47] Game over flag: False
+[2024-06-30 18:19:47] Game paused: False
+[2024-06-30 18:19:47] Has changed direction: False
+[2024-06-30 18:19:47] Time-related variables initialized.
+[2024-06-30 18:19:47] High scores initialized
+[2024-06-30 18:19:47] Reset snake length
+[2024-06-30 18:19:47] Game mode: classic_snake
+[2024-06-30 18:19:47] Config file read.
+[2024-06-30 18:19:47] Game mode set to classic_snake.
+[2024-06-30 18:19:47] Game focused
+[2024-06-30 18:19:47] Resetting snake
+[2024-06-30 18:19:47] Set initial game size to: 600x600
+[2024-06-30 18:19:47] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:19:47] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:19:47] Label border width: 1
+[2024-06-30 18:19:47] label_border_height: 1
+[2024-06-30 18:19:50] Game state: playing
+[2024-06-30 18:19:50] playing
+[2024-06-30 18:19:50] Food ID: 5065a726-bb5e-414e-b2ff-7a4ac3360683
+[2024-06-30 18:19:50] Food items: {'5065a726-bb5e-414e-b2ff-7a4ac3360683': {'x': 120, 'y': 20, 'tag': 'food5065a726-bb5e-414e-b2ff-7a4ac3360683', 'oval_id': 7}}
+[2024-06-30 18:19:50] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:19:51] Closed the app
+
+
+
+
+[2024-06-30 18:25:53] Started the app
+[2024-06-30 18:25:53] Started the GameApp Class
+[2024-06-30 18:25:53] Game mode: initial config
+[2024-06-30 18:25:53] Current Theme: red
+[2024-06-30 18:25:53] Set initial theme to: red
+[2024-06-30 18:25:53] Updated initial_theme in config.ini to: red
+[2024-06-30 18:25:53] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:25:53] Theme applied: red
+[2024-06-30 18:25:53] Updated contrast in config.ini to: Default
+[2024-06-30 18:25:53] Contrast mode set to: default
+[2024-06-30 18:25:53] Resetting snake
+[2024-06-30 18:25:53] Set initial game size to: 600x600
+[2024-06-30 18:25:53] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:25:53] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:25:54] Label border width: 1
+[2024-06-30 18:25:54] label_border_height: 1
+[2024-06-30 18:25:56] Game mode: classic_snake
+[2024-06-30 18:25:56] Config file read.
+[2024-06-30 18:25:56] Game width: 600
+[2024-06-30 18:25:56] Game height: 600
+[2024-06-30 18:25:56] Highlight thickness: 5
+[2024-06-30 18:25:56] Highlight background: Black
+[2024-06-30 18:25:56] Initial direction of snake: down
+[2024-06-30 18:25:56] Initial score: 0
+[2024-06-30 18:25:56] Game over flag: False
+[2024-06-30 18:25:56] Game paused: False
+[2024-06-30 18:25:56] Has changed direction: False
+[2024-06-30 18:25:56] Time-related variables initialized.
+[2024-06-30 18:25:56] High scores initialized
+[2024-06-30 18:25:56] Reset snake length
+[2024-06-30 18:25:56] Game mode: classic_snake
+[2024-06-30 18:25:56] Config file read.
+[2024-06-30 18:25:56] Game mode set to classic_snake.
+[2024-06-30 18:25:56] Game focused
+[2024-06-30 18:25:56] Resetting snake
+[2024-06-30 18:25:56] Set initial game size to: 600x600
+[2024-06-30 18:25:56] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:25:56] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:25:56] Label border width: 1
+[2024-06-30 18:25:56] label_border_height: 1
+[2024-06-30 18:25:57] Game state: playing
+[2024-06-30 18:25:57] playing
+[2024-06-30 18:25:57] Food ID: fa00af3a-c686-4e9e-8587-fe052d9efc9f
+[2024-06-30 18:25:57] Food items: {'fa00af3a-c686-4e9e-8587-fe052d9efc9f': {'x': 340, 'y': 380, 'tag': 'foodfa00af3a-c686-4e9e-8587-fe052d9efc9f', 'oval_id': 7}}
+[2024-06-30 18:25:57] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:25:59] Closed the app
+
+
+
+
+[2024-06-30 18:26:47] Started the app
+[2024-06-30 18:26:47] Started the GameApp Class
+[2024-06-30 18:26:47] Game mode: initial config
+[2024-06-30 18:26:47] Current Theme: red
+[2024-06-30 18:26:47] Set initial theme to: red
+[2024-06-30 18:26:47] Updated initial_theme in config.ini to: red
+[2024-06-30 18:26:47] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:26:47] Theme applied: red
+[2024-06-30 18:26:47] Updated contrast in config.ini to: Default
+[2024-06-30 18:26:47] Contrast mode set to: default
+[2024-06-30 18:26:47] Resetting snake
+[2024-06-30 18:26:47] Set initial game size to: 600x600
+[2024-06-30 18:26:47] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:26:47] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:26:48] Label border width: 1
+[2024-06-30 18:26:48] label_border_height: 1
+[2024-06-30 18:26:49] Game mode: classic_snake
+[2024-06-30 18:26:49] Config file read.
+[2024-06-30 18:26:49] Game width: 600
+[2024-06-30 18:26:49] Game height: 600
+[2024-06-30 18:26:49] Highlight thickness: 5
+[2024-06-30 18:26:49] Highlight background: Black
+[2024-06-30 18:26:49] Initial direction of snake: down
+[2024-06-30 18:26:49] Initial score: 0
+[2024-06-30 18:26:49] Game over flag: False
+[2024-06-30 18:26:49] Game paused: False
+[2024-06-30 18:26:49] Has changed direction: False
+[2024-06-30 18:26:49] Time-related variables initialized.
+[2024-06-30 18:26:49] High scores initialized
+[2024-06-30 18:26:49] Reset snake length
+[2024-06-30 18:26:49] Game mode: classic_snake
+[2024-06-30 18:26:49] Config file read.
+[2024-06-30 18:26:49] Game mode set to classic_snake.
+[2024-06-30 18:26:49] Game focused
+[2024-06-30 18:26:49] Resetting snake
+[2024-06-30 18:26:49] Set initial game size to: 600x600
+[2024-06-30 18:26:49] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:26:49] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:26:53] Closed the app
+
+
+
+
+[2024-06-30 18:27:29] Started the app
+[2024-06-30 18:27:29] Started the GameApp Class
+[2024-06-30 18:27:29] Game mode: initial config
+[2024-06-30 18:27:29] Current Theme: red
+[2024-06-30 18:27:29] Set initial theme to: red
+[2024-06-30 18:27:29] Updated initial_theme in config.ini to: red
+[2024-06-30 18:27:29] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:27:29] Theme applied: red
+[2024-06-30 18:27:29] Updated contrast in config.ini to: Default
+[2024-06-30 18:27:29] Contrast mode set to: default
+[2024-06-30 18:27:29] Resetting snake
+[2024-06-30 18:27:29] Set initial game size to: 600x600
+[2024-06-30 18:27:29] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:27:29] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:27:30] Label border width: 1
+[2024-06-30 18:27:30] label_border_height: 1
+[2024-06-30 18:27:32] Game mode: classic_snake
+[2024-06-30 18:27:32] Config file read.
+[2024-06-30 18:27:32] Game width: 600
+[2024-06-30 18:27:32] Game height: 600
+[2024-06-30 18:27:32] Highlight thickness: 5
+[2024-06-30 18:27:32] Highlight background: Black
+[2024-06-30 18:27:32] Initial direction of snake: down
+[2024-06-30 18:27:32] Initial score: 0
+[2024-06-30 18:27:32] Game over flag: False
+[2024-06-30 18:27:32] Game paused: False
+[2024-06-30 18:27:32] Has changed direction: False
+[2024-06-30 18:27:32] Time-related variables initialized.
+[2024-06-30 18:27:32] High scores initialized
+[2024-06-30 18:27:32] Reset snake length
+[2024-06-30 18:27:32] Game mode: classic_snake
+[2024-06-30 18:27:32] Config file read.
+[2024-06-30 18:27:32] Game mode set to classic_snake.
+[2024-06-30 18:27:32] Game focused
+[2024-06-30 18:27:32] Resetting snake
+[2024-06-30 18:27:32] Set initial game size to: 600x600
+[2024-06-30 18:27:32] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:27:32] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:27:32] Label border width: 1
+[2024-06-30 18:27:32] label_border_height: 1
+[2024-06-30 18:27:33] Game state: playing
+[2024-06-30 18:27:33] playing
+[2024-06-30 18:27:33] Food ID: 35e297ea-f830-4a7c-a0bd-9e7c57a150ac
+[2024-06-30 18:27:33] Food items: {'35e297ea-f830-4a7c-a0bd-9e7c57a150ac': {'x': 40, 'y': 160, 'tag': 'food35e297ea-f830-4a7c-a0bd-9e7c57a150ac', 'oval_id': 7}}
+[2024-06-30 18:27:33] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:27:35] Closed the app
+
+
+
+
+[2024-06-30 18:30:22] Started the app
+[2024-06-30 18:30:22] Started the GameApp Class
+[2024-06-30 18:30:22] Game mode: initial config
+[2024-06-30 18:30:22] Current Theme: red
+[2024-06-30 18:30:22] Set initial theme to: red
+[2024-06-30 18:30:22] Updated initial_theme in config.ini to: red
+[2024-06-30 18:30:22] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:30:22] Theme applied: red
+[2024-06-30 18:30:22] Updated contrast in config.ini to: Default
+[2024-06-30 18:30:22] Contrast mode set to: default
+[2024-06-30 18:30:22] Resetting snake
+[2024-06-30 18:30:22] Set initial game size to: 600x600
+[2024-06-30 18:30:22] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:30:22] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:30:23] Label border width: 1
+[2024-06-30 18:30:23] label_border_height: 1
+[2024-06-30 18:30:33] Game mode: classic_snake
+[2024-06-30 18:30:33] Config file read.
+[2024-06-30 18:30:33] Game width: 600
+[2024-06-30 18:30:33] Game height: 600
+[2024-06-30 18:30:33] Highlight thickness: 5
+[2024-06-30 18:30:33] Highlight background: Black
+[2024-06-30 18:30:33] Initial direction of snake: down
+[2024-06-30 18:30:33] Initial score: 0
+[2024-06-30 18:30:33] Game over flag: False
+[2024-06-30 18:30:33] Game paused: False
+[2024-06-30 18:30:33] Has changed direction: False
+[2024-06-30 18:30:33] Time-related variables initialized.
+[2024-06-30 18:30:33] High scores initialized
+[2024-06-30 18:30:33] Reset snake length
+[2024-06-30 18:30:33] Game mode: classic_snake
+[2024-06-30 18:30:33] Config file read.
+[2024-06-30 18:30:33] Game mode set to classic_snake.
+[2024-06-30 18:30:33] Game focused
+[2024-06-30 18:30:33] Resetting snake
+[2024-06-30 18:30:33] Set initial game size to: 600x600
+[2024-06-30 18:30:33] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:30:33] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:30:33] Label border width: 1
+[2024-06-30 18:30:33] label_border_height: 1
+[2024-06-30 18:30:34] Game state: playing
+[2024-06-30 18:30:34] playing
+[2024-06-30 18:30:34] Food ID: d391d8e2-0adb-4778-80b2-8e0ff90a8d1d
+[2024-06-30 18:30:34] Food items: {'d391d8e2-0adb-4778-80b2-8e0ff90a8d1d': {'x': 20, 'y': 240, 'tag': 'foodd391d8e2-0adb-4778-80b2-8e0ff90a8d1d', 'oval_id': 7}}
+[2024-06-30 18:30:34] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:30:40] Food ID: b6270192-ac98-44b9-81c8-86696c2e36ec
+[2024-06-30 18:30:40] Food items: {'b6270192-ac98-44b9-81c8-86696c2e36ec': {'x': 60, 'y': 240, 'tag': 'foodb6270192-ac98-44b9-81c8-86696c2e36ec', 'oval_id': 61}}
+[2024-06-30 18:30:42] Food ID: 1e1202c1-d67b-4bbb-81a3-486e37c9dbd9
+[2024-06-30 18:30:42] Food items: {'1e1202c1-d67b-4bbb-81a3-486e37c9dbd9': {'x': 160, 'y': 260, 'tag': 'food1e1202c1-d67b-4bbb-81a3-486e37c9dbd9', 'oval_id': 82}}
+[2024-06-30 18:30:43] Closed the app
+
+
+
+
+[2024-06-30 18:31:37] Started the app
+[2024-06-30 18:31:37] Started the GameApp Class
+[2024-06-30 18:31:37] Game mode: initial config
+[2024-06-30 18:31:37] Current Theme: red
+[2024-06-30 18:31:37] Set initial theme to: red
+[2024-06-30 18:31:37] Updated initial_theme in config.ini to: red
+[2024-06-30 18:31:37] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:31:37] Theme applied: red
+[2024-06-30 18:31:37] Updated contrast in config.ini to: Default
+[2024-06-30 18:31:37] Contrast mode set to: default
+[2024-06-30 18:31:37] Resetting snake
+[2024-06-30 18:31:37] Set initial game size to: 600x600
+[2024-06-30 18:31:37] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:31:37] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:31:38] Label border width: 1
+[2024-06-30 18:31:38] label_border_height: 1
+[2024-06-30 18:31:39] Game mode: classic_snake
+[2024-06-30 18:31:39] Config file read.
+[2024-06-30 18:31:39] Game width: 600
+[2024-06-30 18:31:39] Game height: 600
+[2024-06-30 18:31:39] Highlight thickness: 5
+[2024-06-30 18:31:39] Highlight background: Black
+[2024-06-30 18:31:39] Initial direction of snake: down
+[2024-06-30 18:31:39] Initial score: 0
+[2024-06-30 18:31:39] Game over flag: False
+[2024-06-30 18:31:39] Game paused: False
+[2024-06-30 18:31:39] Has changed direction: False
+[2024-06-30 18:31:39] Time-related variables initialized.
+[2024-06-30 18:31:39] High scores initialized
+[2024-06-30 18:31:39] Reset snake length
+[2024-06-30 18:31:39] Game mode: classic_snake
+[2024-06-30 18:31:39] Config file read.
+[2024-06-30 18:31:39] Game mode set to classic_snake.
+[2024-06-30 18:31:39] Game focused
+[2024-06-30 18:31:39] Resetting snake
+[2024-06-30 18:31:39] Set initial game size to: 600x600
+[2024-06-30 18:31:39] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:31:39] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:31:39] Label border width: 1
+[2024-06-30 18:31:39] label_border_height: 1
+[2024-06-30 18:32:13] Game state: playing
+[2024-06-30 18:32:13] playing
+[2024-06-30 18:32:13] Food ID: 5c4f4e35-1e3e-466f-ae79-00d8e634d6c2
+[2024-06-30 18:32:13] Food items: {'5c4f4e35-1e3e-466f-ae79-00d8e634d6c2': {'x': 380, 'y': 220, 'tag': 'food5c4f4e35-1e3e-466f-ae79-00d8e634d6c2', 'oval_id': 7}}
+[2024-06-30 18:32:13] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:32:20] snake has a collision
+[2024-06-30 18:32:20] game_over
+[2024-06-30 18:32:20] Game state: game_over
+[2024-06-30 18:32:20] Snake coordinates after reset: [(-20, 340), (0, 340), (20, 340), (40, 340), (60, 340)]
+[2024-06-30 18:32:20] High score: 2
+[2024-06-30 18:32:20] Score: 0
+[2024-06-30 18:32:24] Game restarted
+[2024-06-30 18:32:24] Reset snake length
+[2024-06-30 18:32:24] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:32:24] Game state: playing
+[2024-06-30 18:32:24] playing
+[2024-06-30 18:32:24] Food ID: 3da298ef-15a5-4d4f-a79b-958d1f2a5f76
+[2024-06-30 18:32:24] Food items: {'3da298ef-15a5-4d4f-a79b-958d1f2a5f76': {'x': 360, 'y': 260, 'tag': 'food3da298ef-15a5-4d4f-a79b-958d1f2a5f76', 'oval_id': 79}}
+[2024-06-30 18:32:24] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:32:28] snake has a collision
+[2024-06-30 18:32:28] game_over
+[2024-06-30 18:32:28] Game state: game_over
+[2024-06-30 18:32:28] Snake coordinates after reset: [(-20, 260), (0, 260), (20, 260), (40, 260), (60, 260)]
+[2024-06-30 18:32:28] High score: 2
+[2024-06-30 18:32:28] Score: 0
+[2024-06-30 18:32:34] Updated the config.ini of theme
+[2024-06-30 18:32:34] Reset theme label
+[2024-06-30 18:32:39] Game mode: classic_snake
+[2024-06-30 18:32:39] Config file read.
+[2024-06-30 18:32:39] Game width: 600
+[2024-06-30 18:32:39] Game height: 600
+[2024-06-30 18:32:39] Highlight thickness: 5
+[2024-06-30 18:32:39] Highlight background: Black
+[2024-06-30 18:32:39] Initial direction of snake: down
+[2024-06-30 18:32:39] Initial score: 0
+[2024-06-30 18:32:39] Game over flag: False
+[2024-06-30 18:32:39] Game paused: False
+[2024-06-30 18:32:39] Has changed direction: False
+[2024-06-30 18:32:39] Time-related variables initialized.
+[2024-06-30 18:32:39] High scores initialized
+[2024-06-30 18:32:39] Reset snake length
+[2024-06-30 18:32:39] Game mode: classic_snake
+[2024-06-30 18:32:39] Config file read.
+[2024-06-30 18:32:39] Game mode set to classic_snake.
+[2024-06-30 18:32:39] Game focused
+[2024-06-30 18:32:39] Resetting snake
+[2024-06-30 18:32:39] Set initial game size to: 600x600
+[2024-06-30 18:32:39] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:32:39] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:32:39] Label border width: 1
+[2024-06-30 18:32:39] label_border_height: 1
+[2024-06-30 18:32:41] Closed the app
+
+
+
+
+[2024-06-30 18:48:22] Started the app
+[2024-06-30 18:48:22] Started the GameApp Class
+[2024-06-30 18:48:22] Game mode: initial config
+[2024-06-30 18:48:22] Current Theme: red
+[2024-06-30 18:48:22] Set initial theme to: red
+[2024-06-30 18:48:22] Updated initial_theme in config.ini to: red
+[2024-06-30 18:48:22] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:48:22] Theme applied: red
+[2024-06-30 18:48:22] Updated contrast in config.ini to: Default
+[2024-06-30 18:48:22] Contrast mode set to: default
+[2024-06-30 18:48:22] Resetting snake
+[2024-06-30 18:48:22] Set initial game size to: 600x600
+[2024-06-30 18:48:22] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:48:22] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:48:23] Label border width: 1
+[2024-06-30 18:48:23] label_border_height: 1
+[2024-06-30 18:48:24] Game mode: classic_snake
+[2024-06-30 18:48:24] Config file read.
+[2024-06-30 18:48:24] Game width: 600
+[2024-06-30 18:48:24] Game height: 600
+[2024-06-30 18:48:24] Highlight thickness: 5
+[2024-06-30 18:48:24] Highlight background: Black
+[2024-06-30 18:48:24] Initial direction of snake: down
+[2024-06-30 18:48:24] Initial score: 0
+[2024-06-30 18:48:24] Game over flag: False
+[2024-06-30 18:48:24] Game paused: False
+[2024-06-30 18:48:24] Has changed direction: False
+[2024-06-30 18:48:24] Time-related variables initialized.
+[2024-06-30 18:48:24] High scores initialized
+[2024-06-30 18:48:24] Reset snake length
+[2024-06-30 18:48:24] Game mode: classic_snake
+[2024-06-30 18:48:24] Config file read.
+[2024-06-30 18:48:24] Game mode set to classic_snake.
+[2024-06-30 18:48:24] Game focused
+[2024-06-30 18:48:24] Resetting snake
+[2024-06-30 18:48:24] Set initial game size to: 600x600
+[2024-06-30 18:48:24] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:48:24] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:48:24] Label border width: 1
+[2024-06-30 18:48:24] label_border_height: 1
+[2024-06-30 18:48:29] Closed the app
+
+
+
+
+[2024-06-30 18:48:58] Started the app
+[2024-06-30 18:48:58] Started the GameApp Class
+[2024-06-30 18:48:58] Game mode: initial config
+[2024-06-30 18:48:58] Current Theme: red
+[2024-06-30 18:48:58] Set initial theme to: red
+[2024-06-30 18:48:58] Updated initial_theme in config.ini to: red
+[2024-06-30 18:48:58] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:48:58] Theme applied: red
+[2024-06-30 18:48:58] Updated contrast in config.ini to: Default
+[2024-06-30 18:48:58] Contrast mode set to: default
+[2024-06-30 18:48:58] Resetting snake
+[2024-06-30 18:48:58] Set initial game size to: 600x600
+[2024-06-30 18:48:58] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:48:58] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:48:59] Label border width: 1
+[2024-06-30 18:48:59] label_border_height: 1
+[2024-06-30 18:49:00] Game mode: classic_snake
+[2024-06-30 18:49:00] Config file read.
+[2024-06-30 18:49:00] Game width: 600
+[2024-06-30 18:49:00] Game height: 600
+[2024-06-30 18:49:00] Highlight thickness: 5
+[2024-06-30 18:49:00] Highlight background: Black
+[2024-06-30 18:49:00] Initial direction of snake: down
+[2024-06-30 18:49:00] Initial score: 0
+[2024-06-30 18:49:00] Game over flag: False
+[2024-06-30 18:49:00] Game paused: False
+[2024-06-30 18:49:00] Has changed direction: False
+[2024-06-30 18:49:00] Time-related variables initialized.
+[2024-06-30 18:49:00] High scores initialized
+[2024-06-30 18:49:00] Reset snake length
+[2024-06-30 18:49:00] Game mode: classic_snake
+[2024-06-30 18:49:00] Config file read.
+[2024-06-30 18:49:00] Game mode set to classic_snake.
+[2024-06-30 18:49:00] Game focused
+[2024-06-30 18:49:00] Resetting snake
+[2024-06-30 18:49:00] Set initial game size to: 600x600
+[2024-06-30 18:49:00] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:49:00] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:49:00] Label border width: 1
+[2024-06-30 18:49:00] label_border_height: 1
+[2024-06-30 18:49:05] Game state: playing
+[2024-06-30 18:49:05] playing
+[2024-06-30 18:49:05] Food ID: c12d1142-bfe0-4dff-9b6a-5e21da75a950
+[2024-06-30 18:49:05] Food items: {'c12d1142-bfe0-4dff-9b6a-5e21da75a950': {'x': 320, 'y': 0, 'tag': 'foodc12d1142-bfe0-4dff-9b6a-5e21da75a950', 'oval_id': 7}}
+[2024-06-30 18:49:05] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:49:18] snake has a collision
+[2024-06-30 18:49:18] game_over
+[2024-06-30 18:49:18] Game state: game_over
+[2024-06-30 18:49:18] Snake coordinates after reset: [(-20, 100), (0, 100), (20, 100), (40, 100), (60, 100)]
+[2024-06-30 18:49:18] High score: 2
+[2024-06-30 18:49:18] Score: 0
+[2024-06-30 18:49:18] high_score_time updated to: 12
+[2024-06-30 18:49:22] Game restarted
+[2024-06-30 18:49:22] Reset snake length
+[2024-06-30 18:49:22] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:49:22] Game state: playing
+[2024-06-30 18:49:23] playing
+[2024-06-30 18:49:23] Food ID: 0086d557-a22a-42c6-97f1-6b30a8334afe
+[2024-06-30 18:49:23] Food items: {'0086d557-a22a-42c6-97f1-6b30a8334afe': {'x': 300, 'y': 360, 'tag': 'food0086d557-a22a-42c6-97f1-6b30a8334afe', 'oval_id': 133}}
+[2024-06-30 18:49:23] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:49:25] snake has a collision
+[2024-06-30 18:49:26] game_over
+[2024-06-30 18:49:26] Game state: game_over
+[2024-06-30 18:49:26] Snake coordinates after reset: [(-20, 520), (0, 520), (0, 500), (0, 480), (0, 460)]
+[2024-06-30 18:49:26] High score: 2
+[2024-06-30 18:49:26] Score: 0
+[2024-06-30 18:49:26] Closed the app
+
+
+
+
+[2024-06-30 18:51:12] Started the app
+[2024-06-30 18:51:12] Started the GameApp Class
+[2024-06-30 18:51:12] Game mode: initial config
+[2024-06-30 18:51:12] Current Theme: red
+[2024-06-30 18:51:12] Set initial theme to: red
+[2024-06-30 18:51:12] Updated initial_theme in config.ini to: red
+[2024-06-30 18:51:12] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:51:12] Theme applied: red
+[2024-06-30 18:51:12] Updated contrast in config.ini to: Default
+[2024-06-30 18:51:12] Contrast mode set to: default
+[2024-06-30 18:51:12] Resetting snake
+[2024-06-30 18:51:12] Set initial game size to: 600x600
+[2024-06-30 18:51:12] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:51:12] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:51:13] Label border width: 1
+[2024-06-30 18:51:13] label_border_height: 1
+[2024-06-30 18:51:15] Game mode: classic_snake
+[2024-06-30 18:51:15] Config file read.
+[2024-06-30 18:51:15] Game width: 600
+[2024-06-30 18:51:15] Game height: 600
+[2024-06-30 18:51:15] Highlight thickness: 5
+[2024-06-30 18:51:15] Highlight background: Black
+[2024-06-30 18:51:15] Initial direction of snake: down
+[2024-06-30 18:51:15] Initial score: 0
+[2024-06-30 18:51:15] Game over flag: False
+[2024-06-30 18:51:15] Game paused: False
+[2024-06-30 18:51:15] Has changed direction: False
+[2024-06-30 18:51:15] Time-related variables initialized.
+[2024-06-30 18:51:15] High scores initialized
+[2024-06-30 18:51:15] Reset snake length
+[2024-06-30 18:51:15] Game mode: classic_snake
+[2024-06-30 18:51:15] Config file read.
+[2024-06-30 18:51:15] Game mode set to classic_snake.
+[2024-06-30 18:51:15] Game focused
+[2024-06-30 18:51:15] Resetting snake
+[2024-06-30 18:51:15] Set initial game size to: 600x600
+[2024-06-30 18:51:15] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:51:15] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:51:15] Label border width: 1
+[2024-06-30 18:51:15] label_border_height: 1
+[2024-06-30 18:51:17] Game state: playing
+[2024-06-30 18:51:17] playing
+[2024-06-30 18:51:17] Food ID: 88ff49ee-4682-4243-a035-37ea5fbc1051
+[2024-06-30 18:51:17] Food items: {'88ff49ee-4682-4243-a035-37ea5fbc1051': {'x': 200, 'y': 100, 'tag': 'food88ff49ee-4682-4243-a035-37ea5fbc1051', 'oval_id': 7}}
+[2024-06-30 18:51:17] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:51:22] Closed the app
+
+
+
+
+[2024-06-30 18:52:12] Started the app
+[2024-06-30 18:52:12] Started the GameApp Class
+[2024-06-30 18:52:12] Game mode: initial config
+[2024-06-30 18:52:12] Current Theme: red
+[2024-06-30 18:52:12] Set initial theme to: red
+[2024-06-30 18:52:12] Updated initial_theme in config.ini to: red
+[2024-06-30 18:52:12] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:52:12] Theme applied: red
+[2024-06-30 18:52:12] Updated contrast in config.ini to: Default
+[2024-06-30 18:52:12] Contrast mode set to: default
+[2024-06-30 18:52:12] Resetting snake
+[2024-06-30 18:52:12] Set initial game size to: 600x600
+[2024-06-30 18:52:12] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:52:12] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:52:13] Label border width: 1
+[2024-06-30 18:52:13] label_border_height: 1
+[2024-06-30 18:52:15] Game mode: classic_snake
+[2024-06-30 18:52:15] Config file read.
+[2024-06-30 18:52:15] Game width: 600
+[2024-06-30 18:52:15] Game height: 600
+[2024-06-30 18:52:15] Highlight thickness: 5
+[2024-06-30 18:52:15] Highlight background: Black
+[2024-06-30 18:52:15] Initial direction of snake: down
+[2024-06-30 18:52:15] Initial score: 0
+[2024-06-30 18:52:15] Game over flag: False
+[2024-06-30 18:52:15] Game paused: False
+[2024-06-30 18:52:15] Has changed direction: False
+[2024-06-30 18:52:15] Time-related variables initialized.
+[2024-06-30 18:52:15] High scores initialized
+[2024-06-30 18:52:15] Reset snake length
+[2024-06-30 18:52:15] Game mode: classic_snake
+[2024-06-30 18:52:15] Config file read.
+[2024-06-30 18:52:15] Game mode set to classic_snake.
+[2024-06-30 18:52:15] Game focused
+[2024-06-30 18:52:15] Resetting snake
+[2024-06-30 18:52:15] Set initial game size to: 600x600
+[2024-06-30 18:52:15] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:52:15] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:52:15] Label border width: 1
+[2024-06-30 18:52:15] label_border_height: 1
+[2024-06-30 18:52:26] Game state: playing
+[2024-06-30 18:52:26] playing
+[2024-06-30 18:52:26] Food ID: 8762200c-5529-47d0-890e-39e3f435d872
+[2024-06-30 18:52:26] Food items: {'8762200c-5529-47d0-890e-39e3f435d872': {'x': 120, 'y': 340, 'tag': 'food8762200c-5529-47d0-890e-39e3f435d872', 'oval_id': 7}}
+[2024-06-30 18:52:26] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:52:27] snake has a collision
+[2024-06-30 18:52:28] game_over
+[2024-06-30 18:52:28] Game state: game_over
+[2024-06-30 18:52:28] Snake coordinates after reset: [(-20, 220), (0, 220), (0, 200), (0, 180), (0, 160)]
+[2024-06-30 18:52:28] High score: 2
+[2024-06-30 18:52:28] Score: 0
+[2024-06-30 18:53:27] Updated the config.ini of theme
+[2024-06-30 18:53:27] Reset theme label
+[2024-06-30 18:53:27] Game mode: classic_snake
+[2024-06-30 18:53:27] Config file read.
+[2024-06-30 18:53:27] Game width: 600
+[2024-06-30 18:53:27] Game height: 600
+[2024-06-30 18:53:27] Highlight thickness: 5
+[2024-06-30 18:53:27] Highlight background: Black
+[2024-06-30 18:53:27] Initial direction of snake: down
+[2024-06-30 18:53:27] Initial score: 0
+[2024-06-30 18:53:27] Game over flag: False
+[2024-06-30 18:53:27] Game paused: False
+[2024-06-30 18:53:27] Has changed direction: False
+[2024-06-30 18:53:27] Time-related variables initialized.
+[2024-06-30 18:53:27] High scores initialized
+[2024-06-30 18:53:27] Reset snake length
+[2024-06-30 18:53:27] Game mode: classic_snake
+[2024-06-30 18:53:27] Config file read.
+[2024-06-30 18:53:27] Game mode set to classic_snake.
+[2024-06-30 18:53:27] Game focused
+[2024-06-30 18:53:27] Resetting snake
+[2024-06-30 18:53:27] Set initial game size to: 600x600
+[2024-06-30 18:53:27] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:53:27] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:53:27] Label border width: 1
+[2024-06-30 18:53:27] label_border_height: 1
+[2024-06-30 18:53:44] Closed the app
+
+
+
+
+[2024-06-30 18:53:47] Started the app
+[2024-06-30 18:53:47] Started the GameApp Class
+[2024-06-30 18:53:47] Game mode: initial config
+[2024-06-30 18:53:47] Current Theme: red
+[2024-06-30 18:53:47] Set initial theme to: red
+[2024-06-30 18:53:47] Updated initial_theme in config.ini to: red
+[2024-06-30 18:53:47] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:53:47] Theme applied: red
+[2024-06-30 18:53:47] Updated contrast in config.ini to: Default
+[2024-06-30 18:53:47] Contrast mode set to: default
+[2024-06-30 18:53:47] Resetting snake
+[2024-06-30 18:53:47] Set initial game size to: 600x600
+[2024-06-30 18:53:47] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:53:47] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:53:48] Label border width: 1
+[2024-06-30 18:53:48] label_border_height: 1
+[2024-06-30 18:53:51] Closed the app
+
+
+
+
+[2024-06-30 18:53:55] Started the app
+[2024-06-30 18:53:55] Started the GameApp Class
+[2024-06-30 18:53:55] Game mode: initial config
+[2024-06-30 18:53:55] Current Theme: red
+[2024-06-30 18:53:55] Set initial theme to: red
+[2024-06-30 18:53:55] Updated initial_theme in config.ini to: red
+[2024-06-30 18:53:55] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 18:53:55] Theme applied: red
+[2024-06-30 18:53:55] Updated contrast in config.ini to: Default
+[2024-06-30 18:53:55] Contrast mode set to: default
+[2024-06-30 18:53:55] Resetting snake
+[2024-06-30 18:53:55] Set initial game size to: 600x600
+[2024-06-30 18:53:55] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:53:55] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:53:56] Label border width: 1
+[2024-06-30 18:53:56] label_border_height: 1
+[2024-06-30 18:53:57] Game mode: classic_snake
+[2024-06-30 18:53:57] Config file read.
+[2024-06-30 18:53:57] Game width: 600
+[2024-06-30 18:53:57] Game height: 600
+[2024-06-30 18:53:57] Highlight thickness: 5
+[2024-06-30 18:53:57] Highlight background: Black
+[2024-06-30 18:53:57] Initial direction of snake: down
+[2024-06-30 18:53:57] Initial score: 0
+[2024-06-30 18:53:57] Game over flag: False
+[2024-06-30 18:53:57] Game paused: False
+[2024-06-30 18:53:57] Has changed direction: False
+[2024-06-30 18:53:57] Time-related variables initialized.
+[2024-06-30 18:53:57] High scores initialized
+[2024-06-30 18:53:57] Reset snake length
+[2024-06-30 18:53:57] Game mode: classic_snake
+[2024-06-30 18:53:57] Config file read.
+[2024-06-30 18:53:57] Game mode set to classic_snake.
+[2024-06-30 18:53:57] Game focused
+[2024-06-30 18:53:57] Resetting snake
+[2024-06-30 18:53:57] Set initial game size to: 600x600
+[2024-06-30 18:53:57] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:53:57] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:53:57] Label border width: 1
+[2024-06-30 18:53:57] label_border_height: 1
+[2024-06-30 18:53:59] Game state: playing
+[2024-06-30 18:53:59] playing
+[2024-06-30 18:53:59] Food ID: 3fe24396-efe9-42ee-93dd-a2a51a22829b
+[2024-06-30 18:53:59] Food items: {'3fe24396-efe9-42ee-93dd-a2a51a22829b': {'x': 180, 'y': 100, 'tag': 'food3fe24396-efe9-42ee-93dd-a2a51a22829b', 'oval_id': 7}}
+[2024-06-30 18:53:59] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 18:54:02] Food ID: d482e969-bcdc-456d-bf7c-fb333be90471
+[2024-06-30 18:54:02] Food items: {'d482e969-bcdc-456d-bf7c-fb333be90471': {'x': 0, 'y': 380, 'tag': 'foodd482e969-bcdc-456d-bf7c-fb333be90471', 'oval_id': 42}}
+[2024-06-30 18:54:03] snake has a collision
+[2024-06-30 18:54:03] game_over
+[2024-06-30 18:54:03] Game state: game_over
+[2024-06-30 18:54:03] Snake coordinates after reset: [(200, -20), (200, 0), (200, 20), (200, 40), (200, 60), (200, 80)]
+[2024-06-30 18:54:03] High score: 2
+[2024-06-30 18:54:03] Score: 1
+[2024-06-30 18:59:58] Updated the config.ini of theme
+[2024-06-30 18:59:58] Reset theme label
+[2024-06-30 18:59:59] Game mode: classic_snake
+[2024-06-30 18:59:59] Config file read.
+[2024-06-30 18:59:59] Game width: 600
+[2024-06-30 18:59:59] Game height: 600
+[2024-06-30 18:59:59] Highlight thickness: 5
+[2024-06-30 18:59:59] Highlight background: Black
+[2024-06-30 18:59:59] Initial direction of snake: down
+[2024-06-30 18:59:59] Initial score: 0
+[2024-06-30 18:59:59] Game over flag: False
+[2024-06-30 18:59:59] Game paused: False
+[2024-06-30 18:59:59] Has changed direction: False
+[2024-06-30 18:59:59] Time-related variables initialized.
+[2024-06-30 18:59:59] High scores initialized
+[2024-06-30 18:59:59] Reset snake length
+[2024-06-30 18:59:59] Game mode: classic_snake
+[2024-06-30 18:59:59] Config file read.
+[2024-06-30 18:59:59] Game mode set to classic_snake.
+[2024-06-30 18:59:59] Game focused
+[2024-06-30 18:59:59] Resetting snake
+[2024-06-30 18:59:59] Set initial game size to: 600x600
+[2024-06-30 18:59:59] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 18:59:59] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 18:59:59] Label border width: 1
+[2024-06-30 18:59:59] label_border_height: 1
+[2024-06-30 18:59:59] Closed the app
+
+
+
+
+[2024-06-30 19:00:02] Started the app
+[2024-06-30 19:00:02] Started the GameApp Class
+[2024-06-30 19:00:02] Game mode: initial config
+[2024-06-30 19:00:02] Current Theme: red
+[2024-06-30 19:00:02] Set initial theme to: red
+[2024-06-30 19:00:02] Updated initial_theme in config.ini to: red
+[2024-06-30 19:00:02] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:00:02] Theme applied: red
+[2024-06-30 19:00:02] Updated contrast in config.ini to: Default
+[2024-06-30 19:00:02] Contrast mode set to: default
+[2024-06-30 19:00:02] Resetting snake
+[2024-06-30 19:00:02] Set initial game size to: 600x600
+[2024-06-30 19:00:02] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:02] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:03] Label border width: 1
+[2024-06-30 19:00:03] label_border_height: 1
+[2024-06-30 19:00:06] Game mode: classic_snake
+[2024-06-30 19:00:06] Config file read.
+[2024-06-30 19:00:06] Game width: 600
+[2024-06-30 19:00:06] Game height: 600
+[2024-06-30 19:00:06] Highlight thickness: 5
+[2024-06-30 19:00:06] Highlight background: Black
+[2024-06-30 19:00:06] Initial direction of snake: down
+[2024-06-30 19:00:06] Initial score: 0
+[2024-06-30 19:00:06] Game over flag: False
+[2024-06-30 19:00:06] Game paused: False
+[2024-06-30 19:00:06] Has changed direction: False
+[2024-06-30 19:00:06] Time-related variables initialized.
+[2024-06-30 19:00:06] High scores initialized
+[2024-06-30 19:00:06] Reset snake length
+[2024-06-30 19:00:06] Game mode: classic_snake
+[2024-06-30 19:00:06] Config file read.
+[2024-06-30 19:00:06] Game mode set to classic_snake.
+[2024-06-30 19:00:06] Game focused
+[2024-06-30 19:00:06] Resetting snake
+[2024-06-30 19:00:06] Set initial game size to: 600x600
+[2024-06-30 19:00:06] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:06] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:06] Label border width: 1
+[2024-06-30 19:00:06] label_border_height: 1
+[2024-06-30 19:00:07] Updated the config.ini of theme
+[2024-06-30 19:00:07] Reset theme label
+[2024-06-30 19:00:07] Game mode: classic_snake
+[2024-06-30 19:00:07] Config file read.
+[2024-06-30 19:00:07] Game width: 600
+[2024-06-30 19:00:07] Game height: 600
+[2024-06-30 19:00:07] Highlight thickness: 5
+[2024-06-30 19:00:07] Highlight background: Black
+[2024-06-30 19:00:07] Initial direction of snake: down
+[2024-06-30 19:00:07] Initial score: 0
+[2024-06-30 19:00:07] Game over flag: False
+[2024-06-30 19:00:07] Game paused: False
+[2024-06-30 19:00:07] Has changed direction: False
+[2024-06-30 19:00:07] Time-related variables initialized.
+[2024-06-30 19:00:07] High scores initialized
+[2024-06-30 19:00:07] Reset snake length
+[2024-06-30 19:00:07] Game mode: classic_snake
+[2024-06-30 19:00:07] Config file read.
+[2024-06-30 19:00:07] Game mode set to classic_snake.
+[2024-06-30 19:00:07] Game focused
+[2024-06-30 19:00:07] Resetting snake
+[2024-06-30 19:00:07] Set initial game size to: 600x600
+[2024-06-30 19:00:07] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:07] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:07] Label border width: 1
+[2024-06-30 19:00:07] label_border_height: 1
+[2024-06-30 19:00:08] Updated the config.ini of theme
+[2024-06-30 19:00:08] Reset theme label
+[2024-06-30 19:00:08] Game mode: classic_snake
+[2024-06-30 19:00:08] Config file read.
+[2024-06-30 19:00:08] Game width: 600
+[2024-06-30 19:00:08] Game height: 600
+[2024-06-30 19:00:08] Highlight thickness: 5
+[2024-06-30 19:00:08] Highlight background: Black
+[2024-06-30 19:00:08] Initial direction of snake: down
+[2024-06-30 19:00:08] Initial score: 0
+[2024-06-30 19:00:08] Game over flag: False
+[2024-06-30 19:00:08] Game paused: False
+[2024-06-30 19:00:08] Has changed direction: False
+[2024-06-30 19:00:08] Time-related variables initialized.
+[2024-06-30 19:00:08] High scores initialized
+[2024-06-30 19:00:08] Reset snake length
+[2024-06-30 19:00:08] Game mode: classic_snake
+[2024-06-30 19:00:08] Config file read.
+[2024-06-30 19:00:08] Game mode set to classic_snake.
+[2024-06-30 19:00:08] Game focused
+[2024-06-30 19:00:08] Resetting snake
+[2024-06-30 19:00:08] Set initial game size to: 600x600
+[2024-06-30 19:00:08] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:08] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:08] Label border width: 1
+[2024-06-30 19:00:08] label_border_height: 1
+[2024-06-30 19:00:09] Updated the config.ini of theme
+[2024-06-30 19:00:09] Reset theme label
+[2024-06-30 19:00:15] Game mode: classic_snake
+[2024-06-30 19:00:15] Config file read.
+[2024-06-30 19:00:15] Game width: 600
+[2024-06-30 19:00:15] Game height: 600
+[2024-06-30 19:00:15] Highlight thickness: 5
+[2024-06-30 19:00:15] Highlight background: Black
+[2024-06-30 19:00:15] Initial direction of snake: down
+[2024-06-30 19:00:15] Initial score: 0
+[2024-06-30 19:00:15] Game over flag: False
+[2024-06-30 19:00:15] Game paused: False
+[2024-06-30 19:00:15] Has changed direction: False
+[2024-06-30 19:00:15] Time-related variables initialized.
+[2024-06-30 19:00:15] High scores initialized
+[2024-06-30 19:00:15] Reset snake length
+[2024-06-30 19:00:15] Game mode: classic_snake
+[2024-06-30 19:00:15] Config file read.
+[2024-06-30 19:00:15] Game mode set to classic_snake.
+[2024-06-30 19:00:15] Game focused
+[2024-06-30 19:00:15] Resetting snake
+[2024-06-30 19:00:15] Set initial game size to: 600x600
+[2024-06-30 19:00:15] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:15] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:15] Label border width: 1
+[2024-06-30 19:00:15] label_border_height: 1
+[2024-06-30 19:00:33] Updated the config.ini of theme
+[2024-06-30 19:00:33] Reset theme label
+[2024-06-30 19:00:33] Game mode: classic_snake
+[2024-06-30 19:00:33] Config file read.
+[2024-06-30 19:00:33] Game width: 600
+[2024-06-30 19:00:33] Game height: 600
+[2024-06-30 19:00:33] Highlight thickness: 5
+[2024-06-30 19:00:33] Highlight background: Black
+[2024-06-30 19:00:33] Initial direction of snake: down
+[2024-06-30 19:00:33] Initial score: 0
+[2024-06-30 19:00:33] Game over flag: False
+[2024-06-30 19:00:33] Game paused: False
+[2024-06-30 19:00:33] Has changed direction: False
+[2024-06-30 19:00:33] Time-related variables initialized.
+[2024-06-30 19:00:33] High scores initialized
+[2024-06-30 19:00:33] Reset snake length
+[2024-06-30 19:00:33] Game mode: classic_snake
+[2024-06-30 19:00:33] Config file read.
+[2024-06-30 19:00:33] Game mode set to classic_snake.
+[2024-06-30 19:00:33] Game focused
+[2024-06-30 19:00:33] Resetting snake
+[2024-06-30 19:00:33] Set initial game size to: 600x600
+[2024-06-30 19:00:33] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:33] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:00:33] Label border width: 1
+[2024-06-30 19:00:33] label_border_height: 1
+[2024-06-30 19:01:16] Closed the app
+
+
+
+
+[2024-06-30 19:01:31] Started the app
+[2024-06-30 19:01:31] Started the GameApp Class
+[2024-06-30 19:01:31] Game mode: initial config
+[2024-06-30 19:01:31] Current Theme: red
+[2024-06-30 19:01:31] Set initial theme to: red
+[2024-06-30 19:01:31] Updated initial_theme in config.ini to: red
+[2024-06-30 19:01:31] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:01:31] Theme applied: red
+[2024-06-30 19:01:31] Updated contrast in config.ini to: Default
+[2024-06-30 19:01:31] Contrast mode set to: default
+[2024-06-30 19:01:31] Resetting snake
+[2024-06-30 19:01:31] Set initial game size to: 600x600
+[2024-06-30 19:01:31] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:01:31] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:01:32] Label border width: 1
+[2024-06-30 19:01:32] label_border_height: 1
+[2024-06-30 19:01:37] Game mode: classic_snake
+[2024-06-30 19:01:37] Config file read.
+[2024-06-30 19:01:37] Game width: 600
+[2024-06-30 19:01:37] Game height: 600
+[2024-06-30 19:01:37] Highlight thickness: 5
+[2024-06-30 19:01:37] Highlight background: Black
+[2024-06-30 19:01:37] Initial direction of snake: down
+[2024-06-30 19:01:37] Initial score: 0
+[2024-06-30 19:01:37] Game over flag: False
+[2024-06-30 19:01:37] Game paused: False
+[2024-06-30 19:01:37] Has changed direction: False
+[2024-06-30 19:01:37] Time-related variables initialized.
+[2024-06-30 19:01:37] High scores initialized
+[2024-06-30 19:01:37] Reset snake length
+[2024-06-30 19:01:37] Game mode: classic_snake
+[2024-06-30 19:01:37] Config file read.
+[2024-06-30 19:01:37] Game mode set to classic_snake.
+[2024-06-30 19:01:37] Game focused
+[2024-06-30 19:01:37] Resetting snake
+[2024-06-30 19:01:37] Set initial game size to: 600x600
+[2024-06-30 19:01:37] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:01:37] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:01:37] Label border width: 1
+[2024-06-30 19:01:37] label_border_height: 1
+[2024-06-30 19:01:39] Game state: playing
+[2024-06-30 19:01:39] playing
+[2024-06-30 19:01:39] Food ID: 53161e89-12b1-4c2a-ae59-2c605c42e264
+[2024-06-30 19:01:39] Food items: {'53161e89-12b1-4c2a-ae59-2c605c42e264': {'x': 380, 'y': 60, 'tag': 'food53161e89-12b1-4c2a-ae59-2c605c42e264', 'oval_id': 7}}
+[2024-06-30 19:01:39] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:01:45] Closed the app
+
+
+
+
+[2024-06-30 19:02:35] Started the app
+[2024-06-30 19:02:35] Started the GameApp Class
+[2024-06-30 19:02:35] Game mode: initial config
+[2024-06-30 19:02:35] Current Theme: red
+[2024-06-30 19:02:35] Set initial theme to: red
+[2024-06-30 19:02:35] Updated initial_theme in config.ini to: red
+[2024-06-30 19:02:35] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:02:35] Theme applied: red
+[2024-06-30 19:02:35] Updated contrast in config.ini to: Default
+[2024-06-30 19:02:35] Contrast mode set to: default
+[2024-06-30 19:02:35] Resetting snake
+[2024-06-30 19:02:35] Set initial game size to: 600x600
+[2024-06-30 19:02:35] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:02:35] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:02:36] Label border width: 1
+[2024-06-30 19:02:36] label_border_height: 1
+[2024-06-30 19:02:37] Game mode: classic_snake
+[2024-06-30 19:02:37] Config file read.
+[2024-06-30 19:02:37] Game width: 600
+[2024-06-30 19:02:37] Game height: 600
+[2024-06-30 19:02:37] Highlight thickness: 5
+[2024-06-30 19:02:37] Highlight background: Black
+[2024-06-30 19:02:37] Initial direction of snake: down
+[2024-06-30 19:02:37] Initial score: 0
+[2024-06-30 19:02:37] Game over flag: False
+[2024-06-30 19:02:37] Game paused: False
+[2024-06-30 19:02:37] Has changed direction: False
+[2024-06-30 19:02:37] Time-related variables initialized.
+[2024-06-30 19:02:37] High scores initialized
+[2024-06-30 19:02:37] Reset snake length
+[2024-06-30 19:02:37] Game mode: classic_snake
+[2024-06-30 19:02:37] Config file read.
+[2024-06-30 19:02:37] Game mode set to classic_snake.
+[2024-06-30 19:02:37] Game focused
+[2024-06-30 19:02:37] Resetting snake
+[2024-06-30 19:02:37] Set initial game size to: 600x600
+[2024-06-30 19:02:37] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:02:37] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:02:37] Label border width: 1
+[2024-06-30 19:02:37] label_border_height: 1
+[2024-06-30 19:02:45] Closed the app
+
+
+
+
+[2024-06-30 19:03:32] Started the app
+[2024-06-30 19:03:32] Started the GameApp Class
+[2024-06-30 19:03:32] Game mode: initial config
+[2024-06-30 19:03:32] Current Theme: red
+[2024-06-30 19:03:32] Set initial theme to: red
+[2024-06-30 19:03:32] Updated initial_theme in config.ini to: red
+[2024-06-30 19:03:32] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:03:32] Theme applied: red
+[2024-06-30 19:03:32] Updated contrast in config.ini to: Default
+[2024-06-30 19:03:32] Contrast mode set to: default
+[2024-06-30 19:03:32] Resetting snake
+[2024-06-30 19:03:32] Set initial game size to: 600x600
+[2024-06-30 19:03:32] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:03:32] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:03:33] Label border width: 1
+[2024-06-30 19:03:33] label_border_height: 1
+[2024-06-30 19:03:35] Game mode: classic_snake
+[2024-06-30 19:03:35] Config file read.
+[2024-06-30 19:03:35] Game width: 600
+[2024-06-30 19:03:35] Game height: 600
+[2024-06-30 19:03:35] Highlight thickness: 5
+[2024-06-30 19:03:35] Highlight background: Black
+[2024-06-30 19:03:35] Initial direction of snake: down
+[2024-06-30 19:03:35] Initial score: 0
+[2024-06-30 19:03:35] Game over flag: False
+[2024-06-30 19:03:35] Game paused: False
+[2024-06-30 19:03:35] Has changed direction: False
+[2024-06-30 19:03:35] Time-related variables initialized.
+[2024-06-30 19:03:35] High scores initialized
+[2024-06-30 19:03:35] Reset snake length
+[2024-06-30 19:03:35] Game mode: classic_snake
+[2024-06-30 19:03:35] start_game
+[2024-06-30 19:03:39] Closed the app
+
+
+
+
+[2024-06-30 19:04:09] Started the app
+[2024-06-30 19:04:09] Started the GameApp Class
+[2024-06-30 19:04:09] Game mode: initial config
+[2024-06-30 19:04:09] Current Theme: red
+[2024-06-30 19:04:09] Set initial theme to: red
+[2024-06-30 19:04:09] Updated initial_theme in config.ini to: red
+[2024-06-30 19:04:09] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:04:09] Theme applied: red
+[2024-06-30 19:04:09] Updated contrast in config.ini to: Default
+[2024-06-30 19:04:09] Contrast mode set to: default
+[2024-06-30 19:04:09] Resetting snake
+[2024-06-30 19:04:09] Set initial game size to: 600x600
+[2024-06-30 19:04:09] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:09] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:10] Label border width: 1
+[2024-06-30 19:04:10] label_border_height: 1
+[2024-06-30 19:04:11] Game mode: classic_snake
+[2024-06-30 19:04:11] Config file read.
+[2024-06-30 19:04:11] Game width: 600
+[2024-06-30 19:04:11] Game height: 600
+[2024-06-30 19:04:11] Highlight thickness: 5
+[2024-06-30 19:04:11] Highlight background: Black
+[2024-06-30 19:04:11] Initial direction of snake: down
+[2024-06-30 19:04:11] Initial score: 0
+[2024-06-30 19:04:11] Game over flag: False
+[2024-06-30 19:04:11] Game paused: False
+[2024-06-30 19:04:11] Has changed direction: False
+[2024-06-30 19:04:11] Time-related variables initialized.
+[2024-06-30 19:04:11] High scores initialized
+[2024-06-30 19:04:11] Reset snake length
+[2024-06-30 19:04:11] Game mode: classic_snake
+[2024-06-30 19:04:11] Config file read.
+[2024-06-30 19:04:11] Game mode set to classic_snake.
+[2024-06-30 19:04:11] Game focused
+[2024-06-30 19:04:11] Resetting snake
+[2024-06-30 19:04:11] Set initial game size to: 600x600
+[2024-06-30 19:04:11] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:11] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:11] Label border width: 1
+[2024-06-30 19:04:11] label_border_height: 1
+[2024-06-30 19:04:13] Game state: playing
+[2024-06-30 19:04:13] playing
+[2024-06-30 19:04:13] Food ID: 4019df79-2984-4594-b1cf-0f6928075480
+[2024-06-30 19:04:13] Food items: {'4019df79-2984-4594-b1cf-0f6928075480': {'x': 380, 'y': 220, 'tag': 'food4019df79-2984-4594-b1cf-0f6928075480', 'oval_id': 7}}
+[2024-06-30 19:04:13] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:04:19] snake has a collision
+[2024-06-30 19:04:19] game_over
+[2024-06-30 19:04:19] Game state: game_over
+[2024-06-30 19:04:19] Snake coordinates after reset: [(-20, 120), (0, 120), (20, 120), (40, 120), (60, 120)]
+[2024-06-30 19:04:19] High score: 2
+[2024-06-30 19:04:19] Score: 0
+[2024-06-30 19:04:21] Game restarted
+[2024-06-30 19:04:21] Reset snake length
+[2024-06-30 19:04:21] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:04:21] Game state: playing
+[2024-06-30 19:04:22] playing
+[2024-06-30 19:04:22] Food ID: 55a1afcb-e9e0-4e62-abfb-74e32f02fa2c
+[2024-06-30 19:04:22] Food items: {'55a1afcb-e9e0-4e62-abfb-74e32f02fa2c': {'x': 200, 'y': 160, 'tag': 'food55a1afcb-e9e0-4e62-abfb-74e32f02fa2c', 'oval_id': 76}}
+[2024-06-30 19:04:22] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:04:23] snake has a collision
+[2024-06-30 19:04:23] game_over
+[2024-06-30 19:04:23] Game state: game_over
+[2024-06-30 19:04:23] Snake coordinates after reset: [(0, 160), (20, 160), (20, 180), (0, 180), (0, 160)]
+[2024-06-30 19:04:23] High score: 2
+[2024-06-30 19:04:23] Score: 0
+[2024-06-30 19:04:24] Updated the config.ini of theme
+[2024-06-30 19:04:24] Reset theme label
+[2024-06-30 19:04:25] Game mode: classic_snake
+[2024-06-30 19:04:25] Config file read.
+[2024-06-30 19:04:25] Game width: 600
+[2024-06-30 19:04:25] Game height: 600
+[2024-06-30 19:04:25] Highlight thickness: 5
+[2024-06-30 19:04:25] Highlight background: Black
+[2024-06-30 19:04:25] Initial direction of snake: down
+[2024-06-30 19:04:25] Initial score: 0
+[2024-06-30 19:04:25] Game over flag: False
+[2024-06-30 19:04:25] Game paused: False
+[2024-06-30 19:04:25] Has changed direction: False
+[2024-06-30 19:04:25] Time-related variables initialized.
+[2024-06-30 19:04:25] High scores initialized
+[2024-06-30 19:04:25] Reset snake length
+[2024-06-30 19:04:25] Game mode: classic_snake
+[2024-06-30 19:04:25] Config file read.
+[2024-06-30 19:04:25] Game mode set to classic_snake.
+[2024-06-30 19:04:25] Game focused
+[2024-06-30 19:04:25] Resetting snake
+[2024-06-30 19:04:25] Set initial game size to: 600x600
+[2024-06-30 19:04:25] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:25] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:25] Label border width: 1
+[2024-06-30 19:04:25] label_border_height: 1
+[2024-06-30 19:04:26] Game state: playing
+[2024-06-30 19:04:26] playing
+[2024-06-30 19:04:26] Food ID: 8c0bd58a-7de5-47da-9fed-505fcd85fc2c
+[2024-06-30 19:04:26] Food items: {'8c0bd58a-7de5-47da-9fed-505fcd85fc2c': {'x': 140, 'y': 0, 'tag': 'food8c0bd58a-7de5-47da-9fed-505fcd85fc2c', 'oval_id': 7}}
+[2024-06-30 19:04:26] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:04:27] Closed the app
+
+
+
+
+[2024-06-30 19:04:29] Started the app
+[2024-06-30 19:04:29] Started the GameApp Class
+[2024-06-30 19:04:29] Game mode: initial config
+[2024-06-30 19:04:29] Current Theme: red
+[2024-06-30 19:04:29] Set initial theme to: red
+[2024-06-30 19:04:29] Updated initial_theme in config.ini to: red
+[2024-06-30 19:04:29] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:04:29] Theme applied: red
+[2024-06-30 19:04:29] Updated contrast in config.ini to: Default
+[2024-06-30 19:04:29] Contrast mode set to: default
+[2024-06-30 19:04:30] Resetting snake
+[2024-06-30 19:04:30] Set initial game size to: 600x600
+[2024-06-30 19:04:30] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:30] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:31] Label border width: 1
+[2024-06-30 19:04:31] label_border_height: 1
+[2024-06-30 19:04:31] Game mode: classic_snake
+[2024-06-30 19:04:31] Config file read.
+[2024-06-30 19:04:31] Game width: 600
+[2024-06-30 19:04:31] Game height: 600
+[2024-06-30 19:04:31] Highlight thickness: 5
+[2024-06-30 19:04:31] Highlight background: Black
+[2024-06-30 19:04:31] Initial direction of snake: down
+[2024-06-30 19:04:31] Initial score: 0
+[2024-06-30 19:04:31] Game over flag: False
+[2024-06-30 19:04:31] Game paused: False
+[2024-06-30 19:04:31] Has changed direction: False
+[2024-06-30 19:04:31] Time-related variables initialized.
+[2024-06-30 19:04:31] High scores initialized
+[2024-06-30 19:04:31] Reset snake length
+[2024-06-30 19:04:31] Game mode: classic_snake
+[2024-06-30 19:04:31] Config file read.
+[2024-06-30 19:04:31] Game mode set to classic_snake.
+[2024-06-30 19:04:31] Game focused
+[2024-06-30 19:04:31] Resetting snake
+[2024-06-30 19:04:31] Set initial game size to: 600x600
+[2024-06-30 19:04:31] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:31] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:31] Label border width: 1
+[2024-06-30 19:04:31] label_border_height: 1
+[2024-06-30 19:04:55] Closed the app
+
+
+
+
+[2024-06-30 19:04:58] Started the app
+[2024-06-30 19:04:58] Started the GameApp Class
+[2024-06-30 19:04:58] Game mode: initial config
+[2024-06-30 19:04:58] Current Theme: red
+[2024-06-30 19:04:58] Set initial theme to: red
+[2024-06-30 19:04:58] Updated initial_theme in config.ini to: red
+[2024-06-30 19:04:58] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:04:58] Theme applied: red
+[2024-06-30 19:04:58] Updated contrast in config.ini to: Default
+[2024-06-30 19:04:58] Contrast mode set to: default
+[2024-06-30 19:04:58] Resetting snake
+[2024-06-30 19:04:58] Set initial game size to: 600x600
+[2024-06-30 19:04:58] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:58] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:04:59] Label border width: 1
+[2024-06-30 19:04:59] label_border_height: 1
+[2024-06-30 19:05:00] Game mode: classic_snake
+[2024-06-30 19:05:00] Config file read.
+[2024-06-30 19:05:00] Game width: 600
+[2024-06-30 19:05:00] Game height: 600
+[2024-06-30 19:05:00] Highlight thickness: 5
+[2024-06-30 19:05:00] Highlight background: Black
+[2024-06-30 19:05:00] Initial direction of snake: down
+[2024-06-30 19:05:00] Initial score: 0
+[2024-06-30 19:05:00] Game over flag: False
+[2024-06-30 19:05:00] Game paused: False
+[2024-06-30 19:05:00] Has changed direction: False
+[2024-06-30 19:05:00] Time-related variables initialized.
+[2024-06-30 19:05:00] High scores initialized
+[2024-06-30 19:05:00] Reset snake length
+[2024-06-30 19:05:00] Game mode: classic_snake
+[2024-06-30 19:05:00] Config file read.
+[2024-06-30 19:05:00] Game mode set to classic_snake.
+[2024-06-30 19:05:00] Game focused
+[2024-06-30 19:05:00] start_screen
+[2024-06-30 19:05:20] Closed the app
+
+
+
+
+[2024-06-30 19:05:54] Started the app
+[2024-06-30 19:05:54] Started the GameApp Class
+[2024-06-30 19:05:54] Game mode: initial config
+[2024-06-30 19:05:54] Current Theme: red
+[2024-06-30 19:05:54] Set initial theme to: red
+[2024-06-30 19:05:54] Updated initial_theme in config.ini to: red
+[2024-06-30 19:05:54] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:05:54] Theme applied: red
+[2024-06-30 19:05:54] Updated contrast in config.ini to: Default
+[2024-06-30 19:05:54] Contrast mode set to: default
+[2024-06-30 19:05:54] Resetting snake
+[2024-06-30 19:05:54] Set initial game size to: 600x600
+[2024-06-30 19:05:54] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:05:54] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:05:55] Label border width: 1
+[2024-06-30 19:05:55] label_border_height: 1
+[2024-06-30 19:05:59] Game mode: classic_snake
+[2024-06-30 19:05:59] Config file read.
+[2024-06-30 19:05:59] Game width: 600
+[2024-06-30 19:05:59] Game height: 600
+[2024-06-30 19:05:59] Highlight thickness: 5
+[2024-06-30 19:05:59] Highlight background: Black
+[2024-06-30 19:05:59] Initial direction of snake: down
+[2024-06-30 19:05:59] Initial score: 0
+[2024-06-30 19:05:59] Game over flag: False
+[2024-06-30 19:05:59] Game paused: False
+[2024-06-30 19:05:59] Has changed direction: False
+[2024-06-30 19:05:59] Time-related variables initialized.
+[2024-06-30 19:05:59] High scores initialized
+[2024-06-30 19:05:59] Reset snake length
+[2024-06-30 19:05:59] Game mode: classic_snake
+[2024-06-30 19:05:59] Config file read.
+[2024-06-30 19:05:59] Game mode set to classic_snake.
+[2024-06-30 19:05:59] Game focused
+[2024-06-30 19:06:00] start_screen
+[2024-06-30 19:06:01] Closed the app
+
+
+
+
+[2024-06-30 19:06:52] Started the app
+[2024-06-30 19:06:52] Started the GameApp Class
+[2024-06-30 19:06:52] Game mode: initial config
+[2024-06-30 19:06:52] Current Theme: red
+[2024-06-30 19:06:52] Set initial theme to: red
+[2024-06-30 19:06:52] Updated initial_theme in config.ini to: red
+[2024-06-30 19:06:52] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:06:52] Theme applied: red
+[2024-06-30 19:06:52] Updated contrast in config.ini to: Default
+[2024-06-30 19:06:52] Contrast mode set to: default
+[2024-06-30 19:06:52] Resetting snake
+[2024-06-30 19:06:52] Set initial game size to: 600x600
+[2024-06-30 19:06:52] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:06:52] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:06:53] Label border width: 1
+[2024-06-30 19:06:53] label_border_height: 1
+[2024-06-30 19:06:54] Game mode: classic_snake
+[2024-06-30 19:06:54] Config file read.
+[2024-06-30 19:06:54] Game width: 600
+[2024-06-30 19:06:54] Game height: 600
+[2024-06-30 19:06:54] Highlight thickness: 5
+[2024-06-30 19:06:54] Highlight background: Black
+[2024-06-30 19:06:54] Initial direction of snake: down
+[2024-06-30 19:06:54] Initial score: 0
+[2024-06-30 19:06:54] Game over flag: False
+[2024-06-30 19:06:54] Game paused: False
+[2024-06-30 19:06:54] Has changed direction: False
+[2024-06-30 19:06:54] Time-related variables initialized.
+[2024-06-30 19:06:54] High scores initialized
+[2024-06-30 19:06:54] Reset snake length
+[2024-06-30 19:06:54] Game mode: classic_snake
+[2024-06-30 19:06:54] Config file read.
+[2024-06-30 19:06:54] Game mode set to classic_snake.
+[2024-06-30 19:06:54] Game focused
+[2024-06-30 19:06:54] Resetting snake
+[2024-06-30 19:06:54] Set initial game size to: 600x600
+[2024-06-30 19:06:54] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:06:54] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:06:54] Label border width: 1
+[2024-06-30 19:06:54] label_border_height: 1
+[2024-06-30 19:06:56] Game state: playing
+[2024-06-30 19:06:56] playing
+[2024-06-30 19:06:56] Food ID: 5566012d-2da2-4322-96dd-9cf71e74f5ec
+[2024-06-30 19:06:56] Food items: {'5566012d-2da2-4322-96dd-9cf71e74f5ec': {'x': 360, 'y': 60, 'tag': 'food5566012d-2da2-4322-96dd-9cf71e74f5ec', 'oval_id': 7}}
+[2024-06-30 19:06:56] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:06:57] snake has a collision
+[2024-06-30 19:06:57] game_over
+[2024-06-30 19:06:57] Game state: game_over
+[2024-06-30 19:06:57] Snake coordinates after reset: [(-20, 200), (0, 200), (0, 180), (0, 160), (0, 140)]
+[2024-06-30 19:06:57] High score: 2
+[2024-06-30 19:06:57] Score: 0
+[2024-06-30 19:06:59] Game restarted
+[2024-06-30 19:06:59] Reset snake length
+[2024-06-30 19:06:59] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:06:59] Game state: playing
+[2024-06-30 19:06:59] playing
+[2024-06-30 19:06:59] Food ID: 384a2647-693d-446a-950f-ab799dcb7c4c
+[2024-06-30 19:06:59] Food items: {'384a2647-693d-446a-950f-ab799dcb7c4c': {'x': 380, 'y': 360, 'tag': 'food384a2647-693d-446a-950f-ab799dcb7c4c', 'oval_id': 26}}
+[2024-06-30 19:06:59] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:07:00] Closed the app
+
+
+
+
+[2024-06-30 19:07:04] Started the app
+[2024-06-30 19:07:04] Started the GameApp Class
+[2024-06-30 19:07:04] Game mode: initial config
+[2024-06-30 19:07:04] Current Theme: red
+[2024-06-30 19:07:04] Set initial theme to: red
+[2024-06-30 19:07:04] Updated initial_theme in config.ini to: red
+[2024-06-30 19:07:04] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:07:04] Theme applied: red
+[2024-06-30 19:07:04] Updated contrast in config.ini to: Default
+[2024-06-30 19:07:04] Contrast mode set to: default
+[2024-06-30 19:07:04] Resetting snake
+[2024-06-30 19:07:04] Set initial game size to: 600x600
+[2024-06-30 19:07:04] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:07:04] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:07:05] Label border width: 1
+[2024-06-30 19:07:05] label_border_height: 1
+[2024-06-30 19:07:05] Game mode: classic_snake
+[2024-06-30 19:07:05] Config file read.
+[2024-06-30 19:07:05] Game width: 600
+[2024-06-30 19:07:05] Game height: 600
+[2024-06-30 19:07:05] Highlight thickness: 5
+[2024-06-30 19:07:05] Highlight background: Black
+[2024-06-30 19:07:05] Initial direction of snake: down
+[2024-06-30 19:07:05] Initial score: 0
+[2024-06-30 19:07:05] Game over flag: False
+[2024-06-30 19:07:05] Game paused: False
+[2024-06-30 19:07:05] Has changed direction: False
+[2024-06-30 19:07:05] Time-related variables initialized.
+[2024-06-30 19:07:05] High scores initialized
+[2024-06-30 19:07:05] Reset snake length
+[2024-06-30 19:07:05] Game mode: classic_snake
+[2024-06-30 19:07:05] Config file read.
+[2024-06-30 19:07:05] Game mode set to classic_snake.
+[2024-06-30 19:07:05] Game focused
+[2024-06-30 19:07:05] Resetting snake
+[2024-06-30 19:07:05] Set initial game size to: 600x600
+[2024-06-30 19:07:05] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:07:05] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:07:05] Label border width: 1
+[2024-06-30 19:07:05] label_border_height: 1
+[2024-06-30 19:07:09] Game state: playing
+[2024-06-30 19:07:09] playing
+[2024-06-30 19:07:09] Food ID: 9900c5f7-e0ab-4677-baf3-85a0d23f417f
+[2024-06-30 19:07:09] Food items: {'9900c5f7-e0ab-4677-baf3-85a0d23f417f': {'x': 220, 'y': 320, 'tag': 'food9900c5f7-e0ab-4677-baf3-85a0d23f417f', 'oval_id': 7}}
+[2024-06-30 19:07:09] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:07:11] snake has a collision
+[2024-06-30 19:07:11] game_over
+[2024-06-30 19:07:11] Game state: game_over
+[2024-06-30 19:07:11] Snake coordinates after reset: [(-20, 140), (0, 140), (20, 140), (40, 140), (60, 140)]
+[2024-06-30 19:07:11] High score: 2
+[2024-06-30 19:07:11] Score: 0
+[2024-06-30 19:08:38] Closed the app
+
+
+
+
+[2024-06-30 19:08:41] Started the app
+[2024-06-30 19:08:41] Started the GameApp Class
+[2024-06-30 19:08:41] Game mode: initial config
+[2024-06-30 19:08:41] Current Theme: red
+[2024-06-30 19:08:41] Set initial theme to: red
+[2024-06-30 19:08:41] Updated initial_theme in config.ini to: red
+[2024-06-30 19:08:41] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:08:41] Theme applied: red
+[2024-06-30 19:08:41] Updated contrast in config.ini to: Default
+[2024-06-30 19:08:41] Contrast mode set to: default
+[2024-06-30 19:08:41] Resetting snake
+[2024-06-30 19:08:41] Set initial game size to: 600x600
+[2024-06-30 19:08:41] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:08:41] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:08:42] Label border width: 1
+[2024-06-30 19:08:42] label_border_height: 1
+[2024-06-30 19:08:43] Game mode: classic_snake
+[2024-06-30 19:08:43] Config file read.
+[2024-06-30 19:08:43] Game width: 600
+[2024-06-30 19:08:43] Game height: 600
+[2024-06-30 19:08:43] Highlight thickness: 5
+[2024-06-30 19:08:43] Highlight background: Black
+[2024-06-30 19:08:43] Initial direction of snake: down
+[2024-06-30 19:08:43] Initial score: 0
+[2024-06-30 19:08:43] Game over flag: False
+[2024-06-30 19:08:43] Game paused: False
+[2024-06-30 19:08:43] Has changed direction: False
+[2024-06-30 19:08:43] Time-related variables initialized.
+[2024-06-30 19:08:43] High scores initialized
+[2024-06-30 19:08:43] Reset snake length
+[2024-06-30 19:08:43] Game mode: classic_snake
+[2024-06-30 19:08:43] Config file read.
+[2024-06-30 19:08:43] Game mode set to classic_snake.
+[2024-06-30 19:08:43] Game focused
+[2024-06-30 19:08:44] start_screen
+[2024-06-30 19:08:45] Closed the app
+
+
+
+
+[2024-06-30 19:10:54] Started the app
+[2024-06-30 19:10:54] Started the GameApp Class
+[2024-06-30 19:10:54] Game mode: initial config
+[2024-06-30 19:10:54] Current Theme: red
+[2024-06-30 19:10:54] Set initial theme to: red
+[2024-06-30 19:10:54] Updated initial_theme in config.ini to: red
+[2024-06-30 19:10:54] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:10:54] Theme applied: red
+[2024-06-30 19:10:54] Updated contrast in config.ini to: Default
+[2024-06-30 19:10:54] Contrast mode set to: default
+[2024-06-30 19:10:54] Resetting snake
+[2024-06-30 19:10:54] Set initial game size to: 600x600
+[2024-06-30 19:10:54] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:10:54] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:10:55] Label border width: 1
+[2024-06-30 19:10:55] label_border_height: 1
+[2024-06-30 19:10:56] Game mode: classic_snake
+[2024-06-30 19:10:56] Config file read.
+[2024-06-30 19:10:56] Game width: 600
+[2024-06-30 19:10:56] Game height: 600
+[2024-06-30 19:10:56] Highlight thickness: 5
+[2024-06-30 19:10:56] Highlight background: Black
+[2024-06-30 19:10:56] Initial direction of snake: down
+[2024-06-30 19:10:56] Initial score: 0
+[2024-06-30 19:10:56] Game over flag: False
+[2024-06-30 19:10:56] Game paused: False
+[2024-06-30 19:10:56] Has changed direction: False
+[2024-06-30 19:10:56] Time-related variables initialized.
+[2024-06-30 19:10:56] High scores initialized
+[2024-06-30 19:10:56] Reset snake length
+[2024-06-30 19:10:56] Game mode: classic_snake
+[2024-06-30 19:10:56] Config file read.
+[2024-06-30 19:10:56] Game mode set to classic_snake.
+[2024-06-30 19:10:56] Game focused
+[2024-06-30 19:10:56] Resetting snake
+[2024-06-30 19:10:56] Set initial game size to: 600x600
+[2024-06-30 19:10:56] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:10:56] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:10:56] Label border width: 1
+[2024-06-30 19:10:56] label_border_height: 1
+[2024-06-30 19:10:57] Game state: playing
+[2024-06-30 19:10:58] playing
+[2024-06-30 19:10:58] Food ID: 37ca26fe-0070-417c-af20-9fd5147ccea5
+[2024-06-30 19:10:58] Food items: {'37ca26fe-0070-417c-af20-9fd5147ccea5': {'x': 0, 'y': 180, 'tag': 'food37ca26fe-0070-417c-af20-9fd5147ccea5', 'oval_id': 7}}
+[2024-06-30 19:10:58] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:10:59] Food ID: 8d83f3fe-ce66-46a4-b978-59d4095881e8
+[2024-06-30 19:10:59] Food items: {'8d83f3fe-ce66-46a4-b978-59d4095881e8': {'x': 380, 'y': 360, 'tag': 'food8d83f3fe-ce66-46a4-b978-59d4095881e8', 'oval_id': 17}}
+[2024-06-30 19:10:59] Closed the app
+
+
+
+
+[2024-06-30 19:11:04] Started the app
+[2024-06-30 19:11:04] Started the GameApp Class
+[2024-06-30 19:11:04] Game mode: initial config
+[2024-06-30 19:11:04] Current Theme: red
+[2024-06-30 19:11:04] Set initial theme to: red
+[2024-06-30 19:11:04] Updated initial_theme in config.ini to: red
+[2024-06-30 19:11:04] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:11:04] Theme applied: red
+[2024-06-30 19:11:04] Updated contrast in config.ini to: Default
+[2024-06-30 19:11:04] Contrast mode set to: default
+[2024-06-30 19:11:04] Resetting snake
+[2024-06-30 19:11:04] Set initial game size to: 600x600
+[2024-06-30 19:11:04] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:04] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:05] Label border width: 1
+[2024-06-30 19:11:05] label_border_height: 1
+[2024-06-30 19:11:06] Game mode: classic_snake
+[2024-06-30 19:11:06] Config file read.
+[2024-06-30 19:11:06] Game width: 600
+[2024-06-30 19:11:06] Game height: 600
+[2024-06-30 19:11:06] Highlight thickness: 5
+[2024-06-30 19:11:06] Highlight background: Black
+[2024-06-30 19:11:06] Initial direction of snake: down
+[2024-06-30 19:11:06] Initial score: 0
+[2024-06-30 19:11:06] Game over flag: False
+[2024-06-30 19:11:06] Game paused: False
+[2024-06-30 19:11:06] Has changed direction: False
+[2024-06-30 19:11:06] Time-related variables initialized.
+[2024-06-30 19:11:06] High scores initialized
+[2024-06-30 19:11:06] Reset snake length
+[2024-06-30 19:11:06] Game mode: classic_snake
+[2024-06-30 19:11:06] Config file read.
+[2024-06-30 19:11:06] Game mode set to classic_snake.
+[2024-06-30 19:11:06] Game focused
+[2024-06-30 19:11:06] Resetting snake
+[2024-06-30 19:11:06] Set initial game size to: 600x600
+[2024-06-30 19:11:06] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:06] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:06] Label border width: 1
+[2024-06-30 19:11:06] label_border_height: 1
+[2024-06-30 19:11:07] Closed the app
+
+
+
+
+[2024-06-30 19:11:39] Started the app
+[2024-06-30 19:11:39] Started the GameApp Class
+[2024-06-30 19:11:39] Game mode: initial config
+[2024-06-30 19:11:39] Current Theme: red
+[2024-06-30 19:11:39] Set initial theme to: red
+[2024-06-30 19:11:39] Updated initial_theme in config.ini to: red
+[2024-06-30 19:11:39] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:11:39] Theme applied: red
+[2024-06-30 19:11:39] Updated contrast in config.ini to: Default
+[2024-06-30 19:11:39] Contrast mode set to: default
+[2024-06-30 19:11:39] Resetting snake
+[2024-06-30 19:11:39] Set initial game size to: 600x600
+[2024-06-30 19:11:39] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:39] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:40] Label border width: 1
+[2024-06-30 19:11:40] label_border_height: 1
+[2024-06-30 19:11:40] Game mode: classic_snake
+[2024-06-30 19:11:40] Config file read.
+[2024-06-30 19:11:40] Game width: 600
+[2024-06-30 19:11:40] Game height: 600
+[2024-06-30 19:11:40] Highlight thickness: 5
+[2024-06-30 19:11:40] Highlight background: Black
+[2024-06-30 19:11:40] Initial direction of snake: down
+[2024-06-30 19:11:40] Initial score: 0
+[2024-06-30 19:11:40] Game over flag: False
+[2024-06-30 19:11:40] Game paused: False
+[2024-06-30 19:11:40] Has changed direction: False
+[2024-06-30 19:11:40] Time-related variables initialized.
+[2024-06-30 19:11:40] High scores initialized
+[2024-06-30 19:11:40] Reset snake length
+[2024-06-30 19:11:40] Game mode: classic_snake
+[2024-06-30 19:11:40] Config file read.
+[2024-06-30 19:11:40] Game mode set to classic_snake.
+[2024-06-30 19:11:40] Game focused
+[2024-06-30 19:11:40] Resetting snake
+[2024-06-30 19:11:40] Set initial game size to: 600x600
+[2024-06-30 19:11:40] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:40] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:40] Label border width: 1
+[2024-06-30 19:11:40] label_border_height: 1
+[2024-06-30 19:11:41] Game state: playing
+[2024-06-30 19:11:42] playing
+[2024-06-30 19:11:42] Food ID: bb6c1499-4a99-4572-9dcc-43e9d99d746e
+[2024-06-30 19:11:42] Food items: {'bb6c1499-4a99-4572-9dcc-43e9d99d746e': {'x': 20, 'y': 320, 'tag': 'foodbb6c1499-4a99-4572-9dcc-43e9d99d746e', 'oval_id': 7}}
+[2024-06-30 19:11:42] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:11:43] Closed the app
+
+
+
+
+[2024-06-30 19:11:47] Started the app
+[2024-06-30 19:11:47] Started the GameApp Class
+[2024-06-30 19:11:47] Game mode: initial config
+[2024-06-30 19:11:47] Current Theme: red
+[2024-06-30 19:11:47] Set initial theme to: red
+[2024-06-30 19:11:47] Updated initial_theme in config.ini to: red
+[2024-06-30 19:11:47] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:11:47] Theme applied: red
+[2024-06-30 19:11:47] Updated contrast in config.ini to: Default
+[2024-06-30 19:11:47] Contrast mode set to: default
+[2024-06-30 19:11:47] Resetting snake
+[2024-06-30 19:11:47] Set initial game size to: 600x600
+[2024-06-30 19:11:47] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:47] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:48] Label border width: 1
+[2024-06-30 19:11:48] label_border_height: 1
+[2024-06-30 19:11:50] Game mode: classic_snake
+[2024-06-30 19:11:50] Config file read.
+[2024-06-30 19:11:50] Game width: 600
+[2024-06-30 19:11:50] Game height: 600
+[2024-06-30 19:11:50] Highlight thickness: 5
+[2024-06-30 19:11:50] Highlight background: Black
+[2024-06-30 19:11:50] Initial direction of snake: down
+[2024-06-30 19:11:50] Initial score: 0
+[2024-06-30 19:11:50] Game over flag: False
+[2024-06-30 19:11:50] Game paused: False
+[2024-06-30 19:11:50] Has changed direction: False
+[2024-06-30 19:11:50] Time-related variables initialized.
+[2024-06-30 19:11:50] High scores initialized
+[2024-06-30 19:11:50] Reset snake length
+[2024-06-30 19:11:50] Game mode: classic_snake
+[2024-06-30 19:11:50] Config file read.
+[2024-06-30 19:11:50] Game mode set to classic_snake.
+[2024-06-30 19:11:50] Game focused
+[2024-06-30 19:11:50] Resetting snake
+[2024-06-30 19:11:50] Set initial game size to: 600x600
+[2024-06-30 19:11:50] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:50] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:11:50] Label border width: 1
+[2024-06-30 19:11:50] label_border_height: 1
+[2024-06-30 19:11:51] Closed the app
+
+
+
+
+[2024-06-30 19:12:37] Started the app
+[2024-06-30 19:12:37] Started the GameApp Class
+[2024-06-30 19:12:37] Game mode: initial config
+[2024-06-30 19:12:37] Current Theme: red
+[2024-06-30 19:12:37] Set initial theme to: red
+[2024-06-30 19:12:37] Updated initial_theme in config.ini to: red
+[2024-06-30 19:12:37] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:12:37] Theme applied: red
+[2024-06-30 19:12:37] Updated contrast in config.ini to: Default
+[2024-06-30 19:12:37] Contrast mode set to: default
+[2024-06-30 19:12:37] Resetting snake
+[2024-06-30 19:12:37] Set initial game size to: 600x600
+[2024-06-30 19:12:37] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:12:37] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:12:38] Label border width: 1
+[2024-06-30 19:12:38] label_border_height: 1
+[2024-06-30 19:12:39] Game mode: classic_snake
+[2024-06-30 19:12:39] Config file read.
+[2024-06-30 19:12:39] Game width: 600
+[2024-06-30 19:12:39] Game height: 600
+[2024-06-30 19:12:39] Highlight thickness: 5
+[2024-06-30 19:12:39] Highlight background: Black
+[2024-06-30 19:12:39] Initial direction of snake: down
+[2024-06-30 19:12:39] Initial score: 0
+[2024-06-30 19:12:39] Game over flag: False
+[2024-06-30 19:12:39] Game paused: False
+[2024-06-30 19:12:39] Has changed direction: False
+[2024-06-30 19:12:39] Time-related variables initialized.
+[2024-06-30 19:12:39] High scores initialized
+[2024-06-30 19:12:39] Reset snake length
+[2024-06-30 19:12:39] Game mode: classic_snake
+[2024-06-30 19:12:39] Config file read.
+[2024-06-30 19:12:39] Game mode set to classic_snake.
+[2024-06-30 19:12:39] Game focused
+[2024-06-30 19:12:39] Resetting snake
+[2024-06-30 19:12:39] Set initial game size to: 600x600
+[2024-06-30 19:12:39] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:12:39] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:12:39] Label border width: 1
+[2024-06-30 19:12:39] label_border_height: 1
+[2024-06-30 19:12:40] Game state: playing
+[2024-06-30 19:12:40] playing
+[2024-06-30 19:12:40] Food ID: aa07fa2c-29a7-4b21-a6c1-8681fbd6671c
+[2024-06-30 19:12:40] Food items: {'aa07fa2c-29a7-4b21-a6c1-8681fbd6671c': {'x': 300, 'y': 200, 'tag': 'foodaa07fa2c-29a7-4b21-a6c1-8681fbd6671c', 'oval_id': 7}}
+[2024-06-30 19:12:40] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:12:41] Game paused
+[2024-06-30 19:13:11] Closed the app
+
+
+
+
+[2024-06-30 19:13:14] Started the app
+[2024-06-30 19:13:14] Started the GameApp Class
+[2024-06-30 19:13:14] Game mode: initial config
+[2024-06-30 19:13:14] Current Theme: red
+[2024-06-30 19:13:14] Set initial theme to: red
+[2024-06-30 19:13:14] Updated initial_theme in config.ini to: red
+[2024-06-30 19:13:14] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:13:14] Theme applied: red
+[2024-06-30 19:13:14] Updated contrast in config.ini to: Default
+[2024-06-30 19:13:14] Contrast mode set to: default
+[2024-06-30 19:13:14] Resetting snake
+[2024-06-30 19:13:14] Set initial game size to: 600x600
+[2024-06-30 19:13:14] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:13:14] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:13:15] Label border width: 1
+[2024-06-30 19:13:15] label_border_height: 1
+[2024-06-30 19:13:16] Game mode: classic_snake
+[2024-06-30 19:13:16] Config file read.
+[2024-06-30 19:13:16] Game width: 600
+[2024-06-30 19:13:16] Game height: 600
+[2024-06-30 19:13:16] Highlight thickness: 5
+[2024-06-30 19:13:16] Highlight background: Black
+[2024-06-30 19:13:16] Initial direction of snake: down
+[2024-06-30 19:13:16] Initial score: 0
+[2024-06-30 19:13:16] Game over flag: False
+[2024-06-30 19:13:16] Game paused: False
+[2024-06-30 19:13:16] Has changed direction: False
+[2024-06-30 19:13:16] Time-related variables initialized.
+[2024-06-30 19:13:16] High scores initialized
+[2024-06-30 19:13:16] Reset snake length
+[2024-06-30 19:13:16] Game mode: classic_snake
+[2024-06-30 19:13:16] Config file read.
+[2024-06-30 19:13:16] Game mode set to classic_snake.
+[2024-06-30 19:13:16] Game focused
+[2024-06-30 19:13:16] Resetting snake
+[2024-06-30 19:13:16] Set initial game size to: 600x600
+[2024-06-30 19:13:16] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:13:16] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:13:16] Label border width: 1
+[2024-06-30 19:13:16] label_border_height: 1
+[2024-06-30 19:13:18] Game state: playing
+[2024-06-30 19:13:18] playing
+[2024-06-30 19:13:18] Food ID: 5326ed8d-39c3-44a5-952e-bd159da3ea6a
+[2024-06-30 19:13:18] Food items: {'5326ed8d-39c3-44a5-952e-bd159da3ea6a': {'x': 60, 'y': 160, 'tag': 'food5326ed8d-39c3-44a5-952e-bd159da3ea6a', 'oval_id': 7}}
+[2024-06-30 19:13:18] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:13:22] snake has a collision
+[2024-06-30 19:13:22] game_over
+[2024-06-30 19:13:22] Game state: game_over
+[2024-06-30 19:13:22] Snake coordinates after reset: [(220, 240), (220, 260), (200, 260), (200, 240), (220, 240)]
+[2024-06-30 19:13:22] High score: 2
+[2024-06-30 19:13:22] Score: 0
+[2024-06-30 19:13:42] Game restarted
+[2024-06-30 19:13:42] Reset snake length
+[2024-06-30 19:13:42] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:13:42] Game state: playing
+[2024-06-30 19:13:42] playing
+[2024-06-30 19:13:42] Food ID: d33fb182-b9a7-4321-a90c-56a37fb35472
+[2024-06-30 19:13:42] Food items: {'d33fb182-b9a7-4321-a90c-56a37fb35472': {'x': 140, 'y': 300, 'tag': 'foodd33fb182-b9a7-4321-a90c-56a37fb35472', 'oval_id': 54}}
+[2024-06-30 19:13:42] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:13:42] Game paused
+[2024-06-30 19:15:00] Closed the app
+
+
+
+
+[2024-06-30 19:15:03] Started the app
+[2024-06-30 19:15:03] Started the GameApp Class
+[2024-06-30 19:15:03] Game mode: initial config
+[2024-06-30 19:15:03] Current Theme: red
+[2024-06-30 19:15:03] Set initial theme to: red
+[2024-06-30 19:15:03] Updated initial_theme in config.ini to: red
+[2024-06-30 19:15:03] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:15:03] Theme applied: red
+[2024-06-30 19:15:03] Updated contrast in config.ini to: Default
+[2024-06-30 19:15:03] Contrast mode set to: default
+[2024-06-30 19:15:03] Resetting snake
+[2024-06-30 19:15:03] Set initial game size to: 600x600
+[2024-06-30 19:15:03] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:15:03] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:15:04] Label border width: 1
+[2024-06-30 19:15:04] label_border_height: 1
+[2024-06-30 19:15:05] Game mode: classic_snake
+[2024-06-30 19:15:05] Config file read.
+[2024-06-30 19:15:05] Game width: 600
+[2024-06-30 19:15:05] Game height: 600
+[2024-06-30 19:15:05] Highlight thickness: 5
+[2024-06-30 19:15:05] Highlight background: Black
+[2024-06-30 19:15:05] Initial direction of snake: down
+[2024-06-30 19:15:05] Initial score: 0
+[2024-06-30 19:15:05] Game over flag: False
+[2024-06-30 19:15:05] Game paused: False
+[2024-06-30 19:15:05] Has changed direction: False
+[2024-06-30 19:15:05] Time-related variables initialized.
+[2024-06-30 19:15:05] High scores initialized
+[2024-06-30 19:15:05] Reset snake length
+[2024-06-30 19:15:05] Game mode: classic_snake
+[2024-06-30 19:15:05] Config file read.
+[2024-06-30 19:15:05] Game mode set to classic_snake.
+[2024-06-30 19:15:05] Game focused
+[2024-06-30 19:15:05] Resetting snake
+[2024-06-30 19:15:05] Set initial game size to: 600x600
+[2024-06-30 19:15:05] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:15:05] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:15:05] Label border width: 1
+[2024-06-30 19:15:05] label_border_height: 1
+[2024-06-30 19:15:06] Game state: playing
+[2024-06-30 19:15:06] playing
+[2024-06-30 19:15:06] Food ID: 2a0f2dc5-6252-482a-b83f-3cdafe1af7db
+[2024-06-30 19:15:06] Food items: {'2a0f2dc5-6252-482a-b83f-3cdafe1af7db': {'x': 380, 'y': 260, 'tag': 'food2a0f2dc5-6252-482a-b83f-3cdafe1af7db', 'oval_id': 7}}
+[2024-06-30 19:15:06] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:15:08] Game paused
+[2024-06-30 19:15:52] Closed the app
+
+
+
+
+[2024-06-30 19:15:54] Started the app
+[2024-06-30 19:15:54] Started the GameApp Class
+[2024-06-30 19:15:54] Game mode: initial config
+[2024-06-30 19:15:54] Current Theme: red
+[2024-06-30 19:15:54] Set initial theme to: red
+[2024-06-30 19:15:54] Updated initial_theme in config.ini to: red
+[2024-06-30 19:15:54] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:15:54] Theme applied: red
+[2024-06-30 19:15:54] Updated contrast in config.ini to: Default
+[2024-06-30 19:15:54] Contrast mode set to: default
+[2024-06-30 19:15:54] Resetting snake
+[2024-06-30 19:15:54] Set initial game size to: 600x600
+[2024-06-30 19:15:54] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:15:54] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:15:55] Label border width: 1
+[2024-06-30 19:15:55] label_border_height: 1
+[2024-06-30 19:16:17] Game mode: classic_snake
+[2024-06-30 19:16:17] Config file read.
+[2024-06-30 19:16:17] Game width: 600
+[2024-06-30 19:16:17] Game height: 600
+[2024-06-30 19:16:17] Highlight thickness: 5
+[2024-06-30 19:16:17] Highlight background: Black
+[2024-06-30 19:16:17] Initial direction of snake: down
+[2024-06-30 19:16:17] Initial score: 0
+[2024-06-30 19:16:17] Game over flag: False
+[2024-06-30 19:16:17] Game paused: False
+[2024-06-30 19:16:17] Has changed direction: False
+[2024-06-30 19:16:17] Time-related variables initialized.
+[2024-06-30 19:16:17] High scores initialized
+[2024-06-30 19:16:17] Reset snake length
+[2024-06-30 19:16:17] Game mode: classic_snake
+[2024-06-30 19:16:17] Config file read.
+[2024-06-30 19:16:17] Game mode set to classic_snake.
+[2024-06-30 19:16:17] Game focused
+[2024-06-30 19:16:17] Resetting snake
+[2024-06-30 19:16:17] Set initial game size to: 600x600
+[2024-06-30 19:16:17] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:16:17] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:16:17] Label border width: 1
+[2024-06-30 19:16:17] label_border_height: 1
+[2024-06-30 19:16:19] Game state: playing
+[2024-06-30 19:16:19] playing
+[2024-06-30 19:16:19] Food ID: f881539e-009c-43ad-bcb2-883e02fcc5f3
+[2024-06-30 19:16:19] Food items: {'f881539e-009c-43ad-bcb2-883e02fcc5f3': {'x': 280, 'y': 220, 'tag': 'foodf881539e-009c-43ad-bcb2-883e02fcc5f3', 'oval_id': 7}}
+[2024-06-30 19:16:19] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:16:21] Game paused
+[2024-06-30 19:19:00] Game resumed
+[2024-06-30 19:19:01] snake has a collision
+[2024-06-30 19:19:01] game_over
+[2024-06-30 19:19:01] Game state: game_over
+[2024-06-30 19:19:01] Snake coordinates after reset: [(-20, 360), (0, 360), (0, 340), (0, 320), (0, 300)]
+[2024-06-30 19:19:01] High score: 2
+[2024-06-30 19:19:01] Score: 0
+[2024-06-30 19:21:21] Closed the app
+
+
+
+
+[2024-06-30 19:24:08] Started the app
+[2024-06-30 19:24:08] Started the GameApp Class
+[2024-06-30 19:24:08] Game mode: initial config
+[2024-06-30 19:24:08] Current Theme: red
+[2024-06-30 19:24:08] Set initial theme to: red
+[2024-06-30 19:24:08] Updated initial_theme in config.ini to: red
+[2024-06-30 19:24:08] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:24:08] Theme applied: red
+[2024-06-30 19:24:08] Updated contrast in config.ini to: Default
+[2024-06-30 19:24:08] Contrast mode set to: default
+[2024-06-30 19:24:08] Resetting snake
+[2024-06-30 19:24:08] Set initial game size to: 600x600
+[2024-06-30 19:24:08] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:24:08] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:24:09] Label border width: 1
+[2024-06-30 19:24:09] label_border_height: 1
+[2024-06-30 19:24:10] Game mode: classic_snake
+[2024-06-30 19:24:10] Config file read.
+[2024-06-30 19:24:10] Game width: 600
+[2024-06-30 19:24:10] Game height: 600
+[2024-06-30 19:24:10] Highlight thickness: 5
+[2024-06-30 19:24:10] Highlight background: Black
+[2024-06-30 19:24:10] Initial direction of snake: down
+[2024-06-30 19:24:10] Initial score: 0
+[2024-06-30 19:24:10] Game over flag: False
+[2024-06-30 19:24:10] Game paused: False
+[2024-06-30 19:24:10] Has changed direction: False
+[2024-06-30 19:24:10] Time-related variables initialized.
+[2024-06-30 19:24:10] High scores initialized
+[2024-06-30 19:24:10] Reset snake length
+[2024-06-30 19:24:10] Game mode: classic_snake
+[2024-06-30 19:24:10] Config file read.
+[2024-06-30 19:24:10] Game mode set to classic_snake.
+[2024-06-30 19:24:10] Game focused
+[2024-06-30 19:24:10] Resetting snake
+[2024-06-30 19:24:10] Set initial game size to: 600x600
+[2024-06-30 19:24:10] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:24:10] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:24:10] Label border width: 1
+[2024-06-30 19:24:10] label_border_height: 1
+[2024-06-30 19:24:11] Game state: playing
+[2024-06-30 19:24:42] None
+[2024-06-30 19:24:42] Food ID: 2e6cd92c-3205-4737-963b-ec8c5458f5f0
+[2024-06-30 19:24:42] Food items: {'2e6cd92c-3205-4737-963b-ec8c5458f5f0': {'x': 360, 'y': 360, 'tag': 'food2e6cd92c-3205-4737-963b-ec8c5458f5f0', 'oval_id': 7}}
+[2024-06-30 19:24:42] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:24:44] Closed the app
+
+
+
+
+[2024-06-30 19:24:47] Started the app
+[2024-06-30 19:24:47] Started the GameApp Class
+[2024-06-30 19:24:47] Game mode: initial config
+[2024-06-30 19:24:47] Current Theme: red
+[2024-06-30 19:24:47] Set initial theme to: red
+[2024-06-30 19:24:47] Updated initial_theme in config.ini to: red
+[2024-06-30 19:24:47] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:24:47] Theme applied: red
+[2024-06-30 19:24:47] Updated contrast in config.ini to: Default
+[2024-06-30 19:24:47] Contrast mode set to: default
+[2024-06-30 19:24:47] Resetting snake
+[2024-06-30 19:24:47] Set initial game size to: 600x600
+[2024-06-30 19:24:47] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:24:47] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:24:48] Label border width: 1
+[2024-06-30 19:24:48] label_border_height: 1
+[2024-06-30 19:24:49] Game mode: classic_snake
+[2024-06-30 19:24:49] Config file read.
+[2024-06-30 19:24:49] Game width: 600
+[2024-06-30 19:24:49] Game height: 600
+[2024-06-30 19:24:49] Highlight thickness: 5
+[2024-06-30 19:24:49] Highlight background: Black
+[2024-06-30 19:24:49] Initial direction of snake: down
+[2024-06-30 19:24:49] Initial score: 0
+[2024-06-30 19:24:49] Game over flag: False
+[2024-06-30 19:24:49] Game paused: False
+[2024-06-30 19:24:49] Has changed direction: False
+[2024-06-30 19:24:49] Time-related variables initialized.
+[2024-06-30 19:24:49] High scores initialized
+[2024-06-30 19:24:49] Reset snake length
+[2024-06-30 19:24:49] Game mode: classic_snake
+[2024-06-30 19:24:49] Config file read.
+[2024-06-30 19:24:49] Game mode set to classic_snake.
+[2024-06-30 19:24:49] Game focused
+[2024-06-30 19:24:49] Resetting snake
+[2024-06-30 19:24:49] Set initial game size to: 600x600
+[2024-06-30 19:24:49] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:24:49] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:24:49] Label border width: 1
+[2024-06-30 19:24:49] label_border_height: 1
+[2024-06-30 19:24:50] Game state: playing
+[2024-06-30 19:24:51] None
+[2024-06-30 19:24:51] Food ID: f9da18f9-9e98-45ec-9233-045dbfad850f
+[2024-06-30 19:24:51] Food items: {'f9da18f9-9e98-45ec-9233-045dbfad850f': {'x': 40, 'y': 340, 'tag': 'foodf9da18f9-9e98-45ec-9233-045dbfad850f', 'oval_id': 7}}
+[2024-06-30 19:24:51] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:24:55] Food ID: f29ef34e-8fd0-44dc-86e0-df8c60265f89
+[2024-06-30 19:24:55] Food items: {'f29ef34e-8fd0-44dc-86e0-df8c60265f89': {'x': 220, 'y': 240, 'tag': 'foodf29ef34e-8fd0-44dc-86e0-df8c60265f89', 'oval_id': 51}}
+[2024-06-30 19:24:56] snake has a collision
+[2024-06-30 19:24:57] None
+[2024-06-30 19:24:57] Game state: game_over
+[2024-06-30 19:24:57] Snake coordinates after reset: [(-20, 180), (0, 180), (20, 180), (40, 180), (40, 200), (40, 220)]
+[2024-06-30 19:24:57] High score: 2
+[2024-06-30 19:24:57] Score: 1
+[2024-06-30 19:24:59] Game restarted
+[2024-06-30 19:24:59] Reset snake length
+[2024-06-30 19:24:59] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:24:59] Game state: playing
+[2024-06-30 19:24:59] None
+[2024-06-30 19:24:59] Food ID: ce8511fb-f146-4ae5-bc51-546938a8f3db
+[2024-06-30 19:24:59] Food items: {'ce8511fb-f146-4ae5-bc51-546938a8f3db': {'x': 200, 'y': 260, 'tag': 'foodce8511fb-f146-4ae5-bc51-546938a8f3db', 'oval_id': 70}}
+[2024-06-30 19:24:59] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:25:01] Food ID: 18e5bde7-cbc9-4467-828f-d820858a3222
+[2024-06-30 19:25:01] Food items: {'18e5bde7-cbc9-4467-828f-d820858a3222': {'x': 140, 'y': 100, 'tag': 'food18e5bde7-cbc9-4467-828f-d820858a3222', 'oval_id': 94}}
+[2024-06-30 19:25:04] Food ID: 288553ce-36fd-4669-876a-317aae001bab
+[2024-06-30 19:25:04] Food items: {'288553ce-36fd-4669-876a-317aae001bab': {'x': 240, 'y': 60, 'tag': 'food288553ce-36fd-4669-876a-317aae001bab', 'oval_id': 118}}
+[2024-06-30 19:25:05] Food ID: 57b2efc0-0596-4ace-bf1e-54942d270e92
+[2024-06-30 19:25:05] Food items: {'57b2efc0-0596-4ace-bf1e-54942d270e92': {'x': 160, 'y': 380, 'tag': 'food57b2efc0-0596-4ace-bf1e-54942d270e92', 'oval_id': 132}}
+[2024-06-30 19:25:07] Food ID: 438f5a7e-0bc2-40c0-8885-236b6a311042
+[2024-06-30 19:25:07] Food items: {'438f5a7e-0bc2-40c0-8885-236b6a311042': {'x': 380, 'y': 200, 'tag': 'food438f5a7e-0bc2-40c0-8885-236b6a311042', 'oval_id': 155}}
+[2024-06-30 19:25:12] Food ID: 64b9a6d1-455b-4cfe-a2cc-ce4c20a48da1
+[2024-06-30 19:25:12] Food items: {'64b9a6d1-455b-4cfe-a2cc-ce4c20a48da1': {'x': 40, 'y': 160, 'tag': 'food64b9a6d1-455b-4cfe-a2cc-ce4c20a48da1', 'oval_id': 202}}
+[2024-06-30 19:25:16] Food ID: bc961c31-bc35-492a-8074-4a3ea9a5f78b
+[2024-06-30 19:25:16] Food items: {'bc961c31-bc35-492a-8074-4a3ea9a5f78b': {'x': 240, 'y': 0, 'tag': 'foodbc961c31-bc35-492a-8074-4a3ea9a5f78b', 'oval_id': 240}}
+[2024-06-30 19:25:18] snake has a collision
+[2024-06-30 19:25:18] None
+[2024-06-30 19:25:18] Game state: game_over
+[2024-06-30 19:25:18] Snake coordinates after reset: [(-20, 340), (0, 340), (20, 340), (40, 340), (40, 320), (40, 300), (40, 280), (40, 260), (40, 240), (40, 220), (40, 200)]
+[2024-06-30 19:25:18] High score: 2
+[2024-06-30 19:25:18] Score: 6
+[2024-06-30 19:25:18] high_score_time updated to: 18
+[2024-06-30 19:25:18] snake_length_high_score updated to: 11
+[2024-06-30 19:25:25] Game restarted
+[2024-06-30 19:25:25] Reset snake length
+[2024-06-30 19:25:25] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:25:25] Game state: playing
+[2024-06-30 19:25:25] None
+[2024-06-30 19:25:25] Food ID: d4750851-4ed6-4dce-a3d4-ef1024fc50c2
+[2024-06-30 19:25:25] Food items: {'d4750851-4ed6-4dce-a3d4-ef1024fc50c2': {'x': 200, 'y': 360, 'tag': 'foodd4750851-4ed6-4dce-a3d4-ef1024fc50c2', 'oval_id': 260}}
+[2024-06-30 19:25:25] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:25:26] Closed the app
+
+
+
+
+[2024-06-30 19:25:28] Started the app
+[2024-06-30 19:25:28] Started the GameApp Class
+[2024-06-30 19:25:28] Game mode: initial config
+[2024-06-30 19:25:28] Current Theme: red
+[2024-06-30 19:25:28] Set initial theme to: red
+[2024-06-30 19:25:28] Updated initial_theme in config.ini to: red
+[2024-06-30 19:25:28] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:25:28] Theme applied: red
+[2024-06-30 19:25:28] Updated contrast in config.ini to: Default
+[2024-06-30 19:25:28] Contrast mode set to: default
+[2024-06-30 19:25:28] Resetting snake
+[2024-06-30 19:25:28] Set initial game size to: 600x600
+[2024-06-30 19:25:28] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:25:28] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:25:29] Label border width: 1
+[2024-06-30 19:25:29] label_border_height: 1
+[2024-06-30 19:25:30] Game mode: classic_snake
+[2024-06-30 19:25:30] Config file read.
+[2024-06-30 19:25:30] Game width: 600
+[2024-06-30 19:25:30] Game height: 600
+[2024-06-30 19:25:30] Highlight thickness: 5
+[2024-06-30 19:25:30] Highlight background: Black
+[2024-06-30 19:25:30] Initial direction of snake: down
+[2024-06-30 19:25:30] Initial score: 0
+[2024-06-30 19:25:30] Game over flag: False
+[2024-06-30 19:25:30] Game paused: False
+[2024-06-30 19:25:30] Has changed direction: False
+[2024-06-30 19:25:30] Time-related variables initialized.
+[2024-06-30 19:25:30] High scores initialized
+[2024-06-30 19:25:30] Reset snake length
+[2024-06-30 19:25:30] Game mode: classic_snake
+[2024-06-30 19:25:30] Config file read.
+[2024-06-30 19:25:30] Game mode set to classic_snake.
+[2024-06-30 19:25:30] Game focused
+[2024-06-30 19:25:30] Resetting snake
+[2024-06-30 19:25:30] Set initial game size to: 600x600
+[2024-06-30 19:25:30] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:25:30] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:25:30] Label border width: 1
+[2024-06-30 19:25:30] label_border_height: 1
+[2024-06-30 19:25:31] Game state: playing
+[2024-06-30 19:25:31] None
+[2024-06-30 19:25:31] Food ID: 8da25eff-7d3f-4ef2-9513-c127c3bf9f54
+[2024-06-30 19:25:31] Food items: {'8da25eff-7d3f-4ef2-9513-c127c3bf9f54': {'x': 140, 'y': 260, 'tag': 'food8da25eff-7d3f-4ef2-9513-c127c3bf9f54', 'oval_id': 7}}
+[2024-06-30 19:25:31] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:25:32] snake has a collision
+[2024-06-30 19:25:32] None
+[2024-06-30 19:25:32] Game state: game_over
+[2024-06-30 19:25:32] Snake coordinates after reset: [(-20, 180), (0, 180), (0, 160), (0, 140), (0, 120)]
+[2024-06-30 19:25:32] High score: 6
+[2024-06-30 19:25:32] Score: 0
+[2024-06-30 19:25:34] Game restarted
+[2024-06-30 19:25:34] Reset snake length
+[2024-06-30 19:25:34] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:25:34] Game state: playing
+[2024-06-30 19:25:34] None
+[2024-06-30 19:25:34] Food ID: 5e30e884-c6de-45d7-b0ea-1aff0ee2a219
+[2024-06-30 19:25:34] Food items: {'5e30e884-c6de-45d7-b0ea-1aff0ee2a219': {'x': 340, 'y': 40, 'tag': 'food5e30e884-c6de-45d7-b0ea-1aff0ee2a219', 'oval_id': 25}}
+[2024-06-30 19:25:34] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:25:36] snake has a collision
+[2024-06-30 19:25:36] None
+[2024-06-30 19:25:36] Game state: game_over
+[2024-06-30 19:25:36] Snake coordinates after reset: [(-20, 20), (0, 20), (20, 20), (40, 20), (40, 40)]
+[2024-06-30 19:25:36] High score: 6
+[2024-06-30 19:25:36] Score: 0
+[2024-06-30 19:50:23] Closed the app
+
+
+
+
+[2024-06-30 19:50:27] Started the app
+[2024-06-30 19:50:27] Started the GameApp Class
+[2024-06-30 19:50:27] Game mode: initial config
+[2024-06-30 19:50:27] Current Theme: red
+[2024-06-30 19:50:27] Set initial theme to: red
+[2024-06-30 19:50:27] Updated initial_theme in config.ini to: red
+[2024-06-30 19:50:27] Current initial_theme in config.ini to: red
+Config main file e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-06-30 19:50:27] Theme applied: red
+[2024-06-30 19:50:27] Updated contrast in config.ini to: Default
+[2024-06-30 19:50:27] Contrast mode set to: default
+[2024-06-30 19:50:27] Resetting snake
+[2024-06-30 19:50:27] Set initial game size to: 600x600
+[2024-06-30 19:50:27] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:50:27] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:50:28] Label border width: 1
+[2024-06-30 19:50:28] label_border_height: 1
+[2024-06-30 19:50:29] Game mode: classic_snake
+[2024-06-30 19:50:29] Config file read.
+[2024-06-30 19:50:29] Game width: 600
+[2024-06-30 19:50:29] Game height: 600
+[2024-06-30 19:50:29] Highlight thickness: 5
+[2024-06-30 19:50:29] Highlight background: Black
+[2024-06-30 19:50:29] Initial direction of snake: down
+[2024-06-30 19:50:29] Initial score: 0
+[2024-06-30 19:50:29] Game over flag: False
+[2024-06-30 19:50:29] Game paused: False
+[2024-06-30 19:50:29] Has changed direction: False
+[2024-06-30 19:50:29] Time-related variables initialized.
+[2024-06-30 19:50:29] High scores initialized
+[2024-06-30 19:50:29] Reset snake length
+[2024-06-30 19:50:29] Game mode: classic_snake
+[2024-06-30 19:50:29] Config file read.
+[2024-06-30 19:50:29] Game mode set to classic_snake.
+[2024-06-30 19:50:29] Game focused
+[2024-06-30 19:50:29] Resetting snake
+[2024-06-30 19:50:29] Set initial game size to: 600x600
+[2024-06-30 19:50:29] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:50:29] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:50:29] Label border width: 1
+[2024-06-30 19:50:29] label_border_height: 1
+[2024-06-30 19:50:31] Game state: playing
+[2024-06-30 19:50:31] None
+[2024-06-30 19:50:31] Food ID: 2e5e2ad8-1b52-4edc-a1a4-01615833bda1
+[2024-06-30 19:50:31] Food items: {'2e5e2ad8-1b52-4edc-a1a4-01615833bda1': {'x': 100, 'y': 240, 'tag': 'food2e5e2ad8-1b52-4edc-a1a4-01615833bda1', 'oval_id': 7}}
+[2024-06-30 19:50:31] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:50:36] Food ID: ae7f090f-6119-4df8-93d7-567458e281e4
+[2024-06-30 19:50:36] Food items: {'ae7f090f-6119-4df8-93d7-567458e281e4': {'x': 320, 'y': 200, 'tag': 'foodae7f090f-6119-4df8-93d7-567458e281e4', 'oval_id': 61}}
+[2024-06-30 19:50:41] Food ID: 5cc62793-6446-4f3c-9134-9bb80de7291c
+[2024-06-30 19:50:41] Food items: {'5cc62793-6446-4f3c-9134-9bb80de7291c': {'x': 60, 'y': 80, 'tag': 'food5cc62793-6446-4f3c-9134-9bb80de7291c', 'oval_id': 105}}
+[2024-06-30 19:50:44] Food ID: b03ec114-c1cd-4003-b8f0-1f83e230de41
+[2024-06-30 19:50:44] Food items: {'b03ec114-c1cd-4003-b8f0-1f83e230de41': {'x': 380, 'y': 120, 'tag': 'foodb03ec114-c1cd-4003-b8f0-1f83e230de41', 'oval_id': 129}}
+[2024-06-30 19:50:46] Food ID: ea953418-bbd3-4e33-b27c-654a51f2ec3c
+[2024-06-30 19:50:46] Food items: {'ea953418-bbd3-4e33-b27c-654a51f2ec3c': {'x': 280, 'y': 80, 'tag': 'foodea953418-bbd3-4e33-b27c-654a51f2ec3c', 'oval_id': 156}}
+[2024-06-30 19:50:48] Food ID: ceebdcc5-b580-485e-97e7-5d4b3451cd69
+[2024-06-30 19:50:48] Food items: {'ceebdcc5-b580-485e-97e7-5d4b3451cd69': {'x': 380, 'y': 40, 'tag': 'foodceebdcc5-b580-485e-97e7-5d4b3451cd69', 'oval_id': 174}}
+[2024-06-30 19:50:50] Food ID: 296f8a82-f28c-4411-a095-70d4db0a81da
+[2024-06-30 19:50:50] Food items: {'296f8a82-f28c-4411-a095-70d4db0a81da': {'x': 220, 'y': 300, 'tag': 'food296f8a82-f28c-4411-a095-70d4db0a81da', 'oval_id': 190}}
+[2024-06-30 19:50:52] Food ID: de875ba7-b5f6-44ee-8357-9c00050623b2
+[2024-06-30 19:50:52] Food items: {'de875ba7-b5f6-44ee-8357-9c00050623b2': {'x': 320, 'y': 120, 'tag': 'foodde875ba7-b5f6-44ee-8357-9c00050623b2', 'oval_id': 212}}
+[2024-06-30 19:50:55] Food ID: 7337bcac-01f1-4e76-9694-bbb731be4666
+[2024-06-30 19:50:55] Food items: {'7337bcac-01f1-4e76-9694-bbb731be4666': {'x': 200, 'y': 380, 'tag': 'food7337bcac-01f1-4e76-9694-bbb731be4666', 'oval_id': 237}}
+[2024-06-30 19:50:57] Food ID: 68ebac03-3b0c-4ab8-93d3-36bc10f8a86f
+[2024-06-30 19:50:57] Food items: {'68ebac03-3b0c-4ab8-93d3-36bc10f8a86f': {'x': 300, 'y': 360, 'tag': 'food68ebac03-3b0c-4ab8-93d3-36bc10f8a86f', 'oval_id': 263}}
+[2024-06-30 19:50:59] Food ID: 1abc10a6-6a18-49e2-a1e5-b44acd7ce10b
+[2024-06-30 19:50:59] Food items: {'1abc10a6-6a18-49e2-a1e5-b44acd7ce10b': {'x': 100, 'y': 380, 'tag': 'food1abc10a6-6a18-49e2-a1e5-b44acd7ce10b', 'oval_id': 284}}
+[2024-06-30 19:51:03] Food ID: bb960fab-7b1f-4a7c-99db-9416e783d68f
+[2024-06-30 19:51:03] Food items: {'bb960fab-7b1f-4a7c-99db-9416e783d68f': {'x': 80, 'y': 360, 'tag': 'foodbb960fab-7b1f-4a7c-99db-9416e783d68f', 'oval_id': 316}}
+[2024-06-30 19:51:05] Food ID: c0ed52b7-5ea9-4c39-a86a-b8cf226b9fc2
+[2024-06-30 19:51:05] Food items: {'c0ed52b7-5ea9-4c39-a86a-b8cf226b9fc2': {'x': 120, 'y': 140, 'tag': 'foodc0ed52b7-5ea9-4c39-a86a-b8cf226b9fc2', 'oval_id': 337}}
+[2024-06-30 19:51:06] Food ID: ecdcd700-615a-4451-b075-9b8bdd6a4bc2
+[2024-06-30 19:51:06] Food items: {'ecdcd700-615a-4451-b075-9b8bdd6a4bc2': {'x': 80, 'y': 40, 'tag': 'foodecdcd700-615a-4451-b075-9b8bdd6a4bc2', 'oval_id': 351}}
+[2024-06-30 19:51:07] Food ID: 97a2f59e-56f2-433e-9459-a493ab9db2a3
+[2024-06-30 19:51:07] Food items: {'97a2f59e-56f2-433e-9459-a493ab9db2a3': {'x': 160, 'y': 20, 'tag': 'food97a2f59e-56f2-433e-9459-a493ab9db2a3', 'oval_id': 359}}
+[2024-06-30 19:51:09] Food ID: af5b5217-7b17-4781-b06f-806c1edadce1
+[2024-06-30 19:51:09] Food items: {'af5b5217-7b17-4781-b06f-806c1edadce1': {'x': 40, 'y': 240, 'tag': 'foodaf5b5217-7b17-4781-b06f-806c1edadce1', 'oval_id': 381}}
+[2024-06-30 19:51:12] Food ID: d86778ca-2690-42d8-b8eb-cfbf953b3e1b
+[2024-06-30 19:51:12] Food items: {'d86778ca-2690-42d8-b8eb-cfbf953b3e1b': {'x': 200, 'y': 20, 'tag': 'foodd86778ca-2690-42d8-b8eb-cfbf953b3e1b', 'oval_id': 401}}
+[2024-06-30 19:51:14] Food ID: 7272e60d-f53b-427e-b3fc-8b1e6e9f49f6
+[2024-06-30 19:51:14] Food items: {'7272e60d-f53b-427e-b3fc-8b1e6e9f49f6': {'x': 0, 'y': 220, 'tag': 'food7272e60d-f53b-427e-b3fc-8b1e6e9f49f6', 'oval_id': 427}}
+[2024-06-30 19:51:17] Food ID: 1f82d310-0308-4e79-aad9-f53d66060b7f
+[2024-06-30 19:51:17] Food items: {'1f82d310-0308-4e79-aad9-f53d66060b7f': {'x': 320, 'y': 0, 'tag': 'food1f82d310-0308-4e79-aad9-f53d66060b7f', 'oval_id': 452}}
+[2024-06-30 19:51:21] Food ID: e5e11bf7-3858-44a1-be7d-35dc11dc7fd1
+[2024-06-30 19:51:21] Food items: {'e5e11bf7-3858-44a1-be7d-35dc11dc7fd1': {'x': 320, 'y': 340, 'tag': 'foode5e11bf7-3858-44a1-be7d-35dc11dc7fd1', 'oval_id': 492}}
+[2024-06-30 19:51:24] Food ID: d7b5b260-0c54-450f-b13e-85b809d27dd8
+[2024-06-30 19:51:24] Food items: {'d7b5b260-0c54-450f-b13e-85b809d27dd8': {'x': 140, 'y': 240, 'tag': 'foodd7b5b260-0c54-450f-b13e-85b809d27dd8', 'oval_id': 522}}
+[2024-06-30 19:51:26] Food ID: 4c048a35-abae-4065-ba79-baceba091e4b
+[2024-06-30 19:51:26] Food items: {'4c048a35-abae-4065-ba79-baceba091e4b': {'x': 260, 'y': 160, 'tag': 'food4c048a35-abae-4065-ba79-baceba091e4b', 'oval_id': 537}}
+[2024-06-30 19:51:27] Food ID: 4b315948-1ebb-4679-b452-76a22b1e2ec4
+[2024-06-30 19:51:27] Food items: {'4b315948-1ebb-4679-b452-76a22b1e2ec4': {'x': 140, 'y': 280, 'tag': 'food4b315948-1ebb-4679-b452-76a22b1e2ec4', 'oval_id': 548}}
+[2024-06-30 19:51:29] Food ID: ef7875eb-2aa6-40d5-8bc0-362ead65d23d
+[2024-06-30 19:51:29] Food items: {'ef7875eb-2aa6-40d5-8bc0-362ead65d23d': {'x': 260, 'y': 240, 'tag': 'foodef7875eb-2aa6-40d5-8bc0-362ead65d23d', 'oval_id': 565}}
+[2024-06-30 19:51:30] Food ID: 24d23980-0149-4ce2-b3e9-d65c01605f53
+[2024-06-30 19:51:30] Food items: {'24d23980-0149-4ce2-b3e9-d65c01605f53': {'x': 80, 'y': 360, 'tag': 'food24d23980-0149-4ce2-b3e9-d65c01605f53', 'oval_id': 580}}
+[2024-06-30 19:51:33] Food ID: b0a782b6-cf5a-4ae1-bdf0-506c7b01dd56
+[2024-06-30 19:51:33] Food items: {'b0a782b6-cf5a-4ae1-bdf0-506c7b01dd56': {'x': 120, 'y': 220, 'tag': 'foodb0a782b6-cf5a-4ae1-bdf0-506c7b01dd56', 'oval_id': 612}}
+[2024-06-30 19:51:34] snake has a collision
+[2024-06-30 19:51:34] None
+[2024-06-30 19:51:34] Game state: game_over
+[2024-06-30 19:51:34] Snake coordinates after reset: [(-20, 360), (0, 360), (20, 360), (40, 360), (60, 360), (80, 360), (100, 360), (120, 360), (140, 360), (160, 360), (160, 340), (140, 340), (120, 340), (100, 340), (80, 340), (60, 340), (60, 320), (60, 300), (60, 280), (60, 260), (60, 240), (80, 240), (100, 240), (100, 220), (100, 200), (100, 180), (120, 180), (140, 180), (160, 180), (180, 180)]
+[2024-06-30 19:51:34] High score: 6
+[2024-06-30 19:51:34] Score: 25
+[2024-06-30 19:51:34] high_score_time updated to: 63
+[2024-06-30 19:51:34] snake_length_high_score updated to: 30
+[2024-06-30 19:52:00] Game restarted
+[2024-06-30 19:52:00] Reset snake length
+[2024-06-30 19:52:00] Snake coordinates after reset: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:52:00] Game state: playing
+[2024-06-30 19:52:00] None
+[2024-06-30 19:52:00] Food ID: f686ad5c-9dd3-45ea-95a1-023813199922
+[2024-06-30 19:52:00] Food items: {'f686ad5c-9dd3-45ea-95a1-023813199922': {'x': 280, 'y': 300, 'tag': 'foodf686ad5c-9dd3-45ea-95a1-023813199922', 'oval_id': 625}}
+[2024-06-30 19:52:00] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-06-30 19:52:01] Game paused
+[2024-06-30 19:52:02] Game resumed
+[2024-06-30 19:52:04] Game paused
+[2024-06-30 19:52:05] Game resumed
+[2024-06-30 19:52:08] Food ID: a75477d3-91b4-448c-b861-d998670b322a
+[2024-06-30 19:52:08] Food items: {'a75477d3-91b4-448c-b861-d998670b322a': {'x': 300, 'y': 80, 'tag': 'fooda75477d3-91b4-448c-b861-d998670b322a', 'oval_id': 685}}
+[2024-06-30 19:52:09] Food ID: a14b9fbe-7cd6-4033-9ea8-bd6277024a4d
+[2024-06-30 19:52:09] Food items: {'a14b9fbe-7cd6-4033-9ea8-bd6277024a4d': {'x': 320, 'y': 340, 'tag': 'fooda14b9fbe-7cd6-4033-9ea8-bd6277024a4d', 'oval_id': 700}}
+[2024-06-30 19:52:13] Food ID: 382bef0e-83b8-4d69-be21-5a9ae8291748
+[2024-06-30 19:52:13] Food items: {'382bef0e-83b8-4d69-be21-5a9ae8291748': {'x': 240, 'y': 160, 'tag': 'food382bef0e-83b8-4d69-be21-5a9ae8291748', 'oval_id': 737}}
+[2024-06-30 19:52:15] Food ID: 26fae06b-8b2c-4a75-a3c8-f75138a6bf90
+[2024-06-30 19:52:15] Food items: {'26fae06b-8b2c-4a75-a3c8-f75138a6bf90': {'x': 0, 'y': 60, 'tag': 'food26fae06b-8b2c-4a75-a3c8-f75138a6bf90', 'oval_id': 753}}
+[2024-06-30 19:52:16] snake has a collision
+[2024-06-30 19:52:16] None
+[2024-06-30 19:52:16] Game state: game_over
+[2024-06-30 19:52:16] Snake coordinates after reset: [(-20, 160), (0, 160), (20, 160), (40, 160), (60, 160), (80, 160), (100, 160), (120, 160), (140, 160)]
+[2024-06-30 19:52:16] High score: 25
+[2024-06-30 19:52:16] Score: 4
+[2024-06-30 19:52:17] Updated the config.ini of theme
+[2024-06-30 19:52:17] Reset theme label
+[2024-06-30 19:52:21] Resetting snake
+[2024-06-30 19:52:21] Set initial game size to: 600x600
+[2024-06-30 19:52:21] Updated initial_game_size in config.ini to: 600x600
+[2024-06-30 19:52:21] Current initial_game_size in config.ini to: 600x600
+[2024-06-30 19:52:22] Closed the app
+
+
+
+

@@ -29,8 +29,7 @@ from Logic.snake_challange_settings import ChallangeSettings
 from Logic.resetconfigvalues import ResetConfigValues
 from Logic.little_snake_game import MiniSnakeGame
 from Logic.home_screen_manager import HomeScreenManager
-#from Games.snake_classic_game import SnakeClassicGame
-from Games.snake_classic_game_2 import SnakeClassicGame
+from Games.snake_classic_game import SnakeClassicGame
 from Games.snake_endless_game import SnakeEndless
 from Games.snake_leveling_game import SnakeLeveling
 from Games.snake_challange_games import FoodTimeAttack
@@ -360,22 +359,22 @@ class SnakeGameApp:
         self.main_canvas.pack(expand=True, fill="both")
         self.framelabel_panel.set_create_label_canvas_flag(True)
         self.framelabel_panel.create_main_menu_label()
-        self.create_button_panel.classic_snake_button()
-        self.create_button_panel.snake_endless_button()
-        self.create_button_panel.snake_leveling_button()
-        self.create_button_panel.challange_choice_button()
-        self.create_button_panel.info_button()
-        self.create_button_panel.settings_button()
+        self.create_button_panel.create_classic_snake_button()
+        self.create_button_panel.create_snake_endless_button()
+        self.create_button_panel.create_snake_leveling_button()
+        self.create_button_panel.create_challange_choice_button()
+        self.create_button_panel.create_info_button()
+        self.create_button_panel.create_settings_button()
         self.create_button_panel.create_restart_app_button()
-        self.create_button_panel.quit_button()
+        self.create_button_panel.create_quit_button()
         self.game_labels_panel.classic_delete_labels()
         self.classic_reset_button_press_variable()
         self.endless_reset_button_press_variable()
         self.leveling_reset_button_press_variable()
         self.main_canvas.bind("<Configure>", self.update_text_position)
         # Create a CTkImage object
-        my_image = ctk.CTkImage(light_image=Image.open(self.config_path_icon), 
-                                dark_image=Image.open(self.config_path_icon), 
+        my_image = ctk.CTkImage(light_image=Image.open(self.config_path_icon),
+                                dark_image=Image.open(self.config_path_icon),
                                 size=(165, 165))
 
         # Create a CTkLabel to display the image
@@ -383,6 +382,12 @@ class SnakeGameApp:
 
         # Place the label at the bottom left of the window
         image_label.place(x=0, y=650)
+        self.config.set('Settings', 'home_button_state', 'normal')
+        self.config.set('Settings', 'classic_reset_high_score_button_state', 'normal')
+        self.config.set('Settings', 'classic_reset_high_score_time_button_state', 'normal')
+        self.config.set('Settings', 'classic_reset_high_score_snake_length_button_state', 'normal')
+        with open(self.config_path, 'w', encoding='utf-8') as configfile:
+            self.config.write(configfile)
 
     def update_text_position(self, event=None):# pylint: disable=unused-argument
         """
@@ -642,41 +647,41 @@ class SnakeGameApp:
         self.settings_labels.update_initial_game_size()
 
         if game_type == "classic_snake":
-            self.create_button_panel.classic_reset_high_score_button()
-            self.create_button_panel.classic_reset_high_score_time_button()
-            self.create_button_panel.classic_reset_high_score_snake_length()
+            self.create_button_panel.create_classic_reset_high_score_button()
+            self.create_button_panel.create_classic_reset_high_score_time_button()
+            self.create_button_panel.create_classic_reset_high_score_snake_length()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_classic_snake_label()
 
         elif game_type == "snake_endless":
-            self.create_button_panel.endless_reset_high_score_button()
-            self.create_button_panel.endless_reset_high_score_time_button()
-            self.create_button_panel.endless_reset_high_score_snake_length()
-            self.create_button_panel.endless_reset_high_score_special_score_button()
-            self.create_button_panel.endless_reset_high_score_shorten_snake_button()
+            self.create_button_panel.create_endless_reset_high_score_button()
+            self.create_button_panel.create_endless_reset_high_score_time_button()
+            self.create_button_panel.create_endless_reset_high_score_snake_length()
+            self.create_button_panel.create_endless_reset_high_score_special_score_button()
+            self.create_button_panel.create_endless_reset_high_score_shorten_snake_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_endless_snake_label()
 
         elif game_type == "snake_leveling":
-            self.create_button_panel.leveling_reset_high_score_button()
-            self.create_button_panel.leveling_reset_high_score_time_button()
-            self.create_button_panel.leveling_reset_high_score_snake_length_button()
-            self.create_button_panel.leveling_reset_high_score_special_score_button()
-            self.create_button_panel.leveling_reset_high_score_shorten_snake_button()
-            self.create_button_panel.leveling_reset_high_scores_xp_button()
-            self.create_button_panel.leveling_reset_high_score_level_button()
+            self.create_button_panel.create_leveling_reset_high_score_button()
+            self.create_button_panel.create_leveling_reset_high_score_time_button()
+            self.create_button_panel.create_leveling_reset_high_score_snake_length_button()
+            self.create_button_panel.create_leveling_reset_high_score_special_score_button()
+            self.create_button_panel.create_leveling_reset_high_score_shorten_snake_button()
+            self.create_button_panel.create_leveling_reset_high_scores_xp_button()
+            self.create_button_panel.create_leveling_reset_high_score_level_button()
 
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_leveling_snake_label()
 
         elif game_type == "challange_choices":
-            self.create_button_panel.challange_settings_button()
+            self.create_button_panel.create_challange_settings_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_challange_choices_label()
 
         elif game_type == "challange_settings":
             self.challange_choice_canvas = self.destroy_canvas(self.challange_choice_canvas)
-            self.create_button_panel.food_time_attack_button()
+            self.create_button_panel.create_food_time_attack_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_challange_settings_label()
 
@@ -700,18 +705,18 @@ class SnakeGameApp:
                 pass
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_label()
-            self.create_button_panel.patchnotes_button()
-            self.create_button_panel.info_general_button()
-            self.create_button_panel.info_classic_game_mode_button()
-            self.create_button_panel.info_endless_game_mode_button()
-            self.create_button_panel.info_leveling_game_mode_button()
-            self.create_button_panel.info_challange_game_mode_button()
+            self.create_button_panel.create_patchnotes_button()
+            self.create_button_panel.create_info_general_button()
+            self.create_button_panel.create_info_classic_game_mode_button()
+            self.create_button_panel.create_info_endless_game_mode_button()
+            self.create_button_panel.create_info_leveling_game_mode_button()
+            self.create_button_panel.create_info_challange_game_mode_button()
             #self.patchnotes_displayed = False
 
         elif game_type == "info_general":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
                 self.info_canvas = self.destroy_canvas(self.info_canvas)
-            self.create_button_panel.info_home_button()
+            self.create_button_panel.create_info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_general_label()
             self.create_reset_button_panel.info_general_start_mini_snake()
@@ -719,34 +724,34 @@ class SnakeGameApp:
         elif game_type == "info_classic_game_mode":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
                 self.info_canvas = self.destroy_canvas(self.info_canvas)
-            self.create_button_panel.info_home_button()
+            self.create_button_panel.create_info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_classic_label()
 
         elif game_type == "info_endless_game_mode":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
                 self.info_canvas = self.destroy_canvas(self.info_canvas)
-            self.create_button_panel.info_home_button()
+            self.create_button_panel.create_info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_endless_label()
 
         elif game_type == "info_leveling_game_mode":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
                 self.info_canvas = self.destroy_canvas(self.info_canvas)
-            self.create_button_panel.info_home_button()
+            self.create_button_panel.create_info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_leveling_label()
 
         elif game_type == "info_challange_game_mode":
             if self.info_canvas is not None and self.info_canvas.winfo_exists():
                 self.info_canvas = self.destroy_canvas(self.info_canvas)
-            self.create_button_panel.info_home_button()
+            self.create_button_panel.create_info_home_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_info_challange_label()
 
         elif game_type == "settings":
-            self.create_button_panel.reset_settings_button()
-            self.create_button_panel.settings_values_button()
+            self.create_button_panel.create_reset_settings_button()
+            self.create_button_panel.create_settings_values_button()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_settings_label()
 
@@ -760,7 +765,7 @@ class SnakeGameApp:
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_settings_values_label()
             self.create_option_button_panel.show_options()
-            self.create_button_panel.reset_settings_button()
+            self.create_button_panel.create_reset_settings_button()
             self.create_button_panel.create_restart_app_button()
             self.settings_labels.create_settings_labels()
             self.settings_labels.create_theme_label()
@@ -772,14 +777,14 @@ class SnakeGameApp:
             if self.settings_canvas_values is not None and self.settings_canvas_values.winfo_exists(): # pylint: disable=line-too-long
                 self.settings_canvas_values = self.destroy_canvas(self.settings_canvas_values)
             self.framelabel_panel.set_create_label_canvas_flag(True)
-            self.create_button_panel.settings_values_button()
+            self.create_button_panel.create_settings_values_button()
             self.settings_labels.create_settings_reset_labels()
             self.framelabel_panel.create_settings_reset_label()
             self.create_reset_button_panel.show_all_reset_buttons()
 
         # Pack buttons and labels
         self.create_button_panel.create_home_button()
-        self.create_button_panel.quit_button()
+        self.create_button_panel.create_quit_button()
         self.framelabel_panel.set_create_label_canvas_flag(True)
 
     def get_color_from_config(self):

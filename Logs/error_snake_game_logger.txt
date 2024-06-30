@@ -196,3 +196,765 @@ AttributeError: 'ClickButtonPanel' object has no attribute 'destroy'
 
 
 
+[2024-06-30 14:27:46] 
+
+
+[2024-06-30 14:27:46] Started the Error Log File
+[2024-06-30 14:34:15] No errors occurred
+[2024-06-30 14:34:15] Closed the Error Log File
+
+
+
+
+[2024-06-30 16:46:33] 
+
+
+[2024-06-30 16:46:33] Started the Error Log File
+[2024-06-30 16:48:06] No errors occurred
+[2024-06-30 16:48:06] Closed the Error Log File
+
+
+
+
+[2024-06-30 16:48:15] 
+
+
+[2024-06-30 16:48:15] Started the Error Log File
+[2024-06-30 16:51:29] No errors occurred
+[2024-06-30 16:51:29] Closed the Error Log File
+
+
+
+
+[2024-06-30 16:51:30] 
+
+
+[2024-06-30 16:51:30] Started the Error Log File
+[2024-06-30 16:51:47] No errors occurred
+[2024-06-30 16:51:47] Closed the Error Log File
+
+
+
+
+[2024-06-30 17:02:38] 
+
+
+[2024-06-30 17:02:38] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'button_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 58, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 508, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 780, in start_game
+    self.create_button_panel.create_home_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 476, in create_home_button
+    self.button_state = self.config.get('Settings', 'button_state')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'button_state' in section: 'Settings'
+[2024-06-30 17:02:53] No errors occurred
+[2024-06-30 17:02:53] Closed the Error Log File
+
+
+
+
+[2024-06-30 17:07:50] 
+
+
+[2024-06-30 17:07:50] Started the Error Log File
+[2024-06-30 18:07:23] No errors occurred
+[2024-06-30 18:07:23] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:07:24] 
+
+
+[2024-06-30 18:07:24] Started the Error Log File
+[2024-06-30 18:07:37] No errors occurred
+[2024-06-30 18:07:37] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:07:38] 
+
+
+[2024-06-30 18:07:38] Started the Error Log File
+[2024-06-30 18:09:44] No errors occurred
+[2024-06-30 18:09:44] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:09:50] 
+
+
+[2024-06-30 18:09:50] Started the Error Log File
+[2024-06-30 18:09:53] No errors occurred
+[2024-06-30 18:09:53] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:10:29] 
+
+
+[2024-06-30 18:10:29] Started the Error Log File
+[2024-06-30 18:10:32] No errors occurred
+[2024-06-30 18:10:32] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:11:20] 
+
+
+[2024-06-30 18:11:20] Started the Error Log File
+[2024-06-30 18:11:24] No errors occurred
+[2024-06-30 18:11:24] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:11:42] 
+
+
+[2024-06-30 18:11:42] Started the Error Log File
+[2024-06-30 18:17:28] No errors occurred
+[2024-06-30 18:17:28] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:17:30] 
+
+
+[2024-06-30 18:17:30] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 401, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 538, in start_game
+    self.game_config.set_configuration(game_type)
+  File "e:\Snake_game_V3\Snake_Game_V3\Configuration\gameconfig_snake_game.py", line 189, in set_configuration
+    self.GAME_WIDTH = self.game_width # pylint: disable=invalid-name
+                      ^^^^^^^^^^^^^^^
+AttributeError: 'GameConfig' object has no attribute 'game_width'
+[2024-06-30 18:17:34] No errors occurred
+[2024-06-30 18:17:34] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:18:04] 
+
+
+[2024-06-30 18:18:04] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'button_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 401, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 780, in start_game
+    self.create_button_panel.create_home_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 480, in create_home_button
+    self.button_state = self.config.get('Settings', 'button_state')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'button_state' in section: 'Settings'
+[2024-06-30 18:18:10] No errors occurred
+[2024-06-30 18:18:10] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:18:59] 
+
+
+[2024-06-30 18:18:59] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'button_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 401, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 780, in start_game
+    self.create_button_panel.create_home_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 480, in create_home_button
+    self.button_state = self.config.get('Settings', 'button_state')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'button_state' in section: 'Settings'
+[2024-06-30 18:19:06] No errors occurred
+[2024-06-30 18:19:06] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:19:45] 
+
+
+[2024-06-30 18:19:45] Started the Error Log File
+[2024-06-30 18:19:51] No errors occurred
+[2024-06-30 18:19:51] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:25:53] 
+
+
+[2024-06-30 18:25:53] Started the Error Log File
+[2024-06-30 18:25:59] No errors occurred
+[2024-06-30 18:25:59] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:26:47] 
+
+
+[2024-06-30 18:26:47] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'reset_settings_button_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 401, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 644, in start_game
+    self.create_button_panel.classic_reset_high_score_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 730, in classic_reset_high_score_button
+    button_state = self.config.get('Settings', 'reset_settings_button_state')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'reset_settings_button_state' in section: 'Settings'
+[2024-06-30 18:26:53] No errors occurred
+[2024-06-30 18:26:53] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:27:29] 
+
+
+[2024-06-30 18:27:29] Started the Error Log File
+[2024-06-30 18:27:35] No errors occurred
+[2024-06-30 18:27:35] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:30:22] 
+
+
+[2024-06-30 18:30:22] Started the Error Log File
+[2024-06-30 18:30:43] No errors occurred
+[2024-06-30 18:30:43] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:31:37] 
+
+
+[2024-06-30 18:31:37] Started the Error Log File
+[2024-06-30 18:32:41] No errors occurred
+[2024-06-30 18:32:41] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:48:22] 
+
+
+[2024-06-30 18:48:22] Started the Error Log File
+[2024-06-30 18:48:29] No errors occurred
+[2024-06-30 18:48:29] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:48:58] 
+
+
+[2024-06-30 18:48:58] Started the Error Log File
+[2024-06-30 18:49:26] No errors occurred
+[2024-06-30 18:49:26] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:51:12] 
+
+
+[2024-06-30 18:51:12] Started the Error Log File
+[2024-06-30 18:51:22] No errors occurred
+[2024-06-30 18:51:22] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:52:12] 
+
+
+[2024-06-30 18:52:12] Started the Error Log File
+[2024-06-30 18:53:44] No errors occurred
+[2024-06-30 18:53:44] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:53:47] 
+
+
+[2024-06-30 18:53:47] Started the Error Log File
+[2024-06-30 18:53:51] No errors occurred
+[2024-06-30 18:53:51] Closed the Error Log File
+
+
+
+
+[2024-06-30 18:53:55] 
+
+
+[2024-06-30 18:53:55] Started the Error Log File
+[2024-06-30 18:59:59] No errors occurred
+[2024-06-30 18:59:59] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:00:02] 
+
+
+[2024-06-30 19:00:02] Started the Error Log File
+[2024-06-30 19:01:16] No errors occurred
+[2024-06-30 19:01:16] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:01:31] 
+
+
+[2024-06-30 19:01:31] Started the Error Log File
+[2024-06-30 19:01:45] No errors occurred
+[2024-06-30 19:01:45] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:02:35] 
+
+
+[2024-06-30 19:02:35] Started the Error Log File
+[2024-06-30 19:02:45] No errors occurred
+[2024-06-30 19:02:45] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:03:32] 
+
+
+[2024-06-30 19:03:32] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 401, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 545, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 110, in __init__
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 597, in update_button_state
+    self.home_button.configure(state=self.home_button_state)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-06-30 19:03:39] No errors occurred
+[2024-06-30 19:03:39] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:04:09] 
+
+
+[2024-06-30 19:04:09] Started the Error Log File
+[2024-06-30 19:04:27] No errors occurred
+[2024-06-30 19:04:27] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:04:29] 
+
+
+[2024-06-30 19:04:29] Started the Error Log File
+[2024-06-30 19:04:55] No errors occurred
+[2024-06-30 19:04:55] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:04:58] 
+
+
+[2024-06-30 19:04:58] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 401, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 545, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 112, in __init__
+    self.configfile()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 177, in configfile
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 207, in start_screen
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 597, in update_button_state
+    self.home_button.configure(state=self.home_button_state)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-06-30 19:05:20] No errors occurred
+[2024-06-30 19:05:20] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:05:54] 
+
+
+[2024-06-30 19:05:54] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 401, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 545, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 112, in __init__
+    self.configfile()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 177, in configfile
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 207, in start_screen
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 597, in update_button_state
+    self.home_button.configure(state=self.home_button_state)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-06-30 19:06:01] No errors occurred
+[2024-06-30 19:06:01] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:06:52] 
+
+
+[2024-06-30 19:06:52] Started the Error Log File
+[2024-06-30 19:07:00] No errors occurred
+[2024-06-30 19:07:00] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:07:04] 
+
+
+[2024-06-30 19:07:04] Started the Error Log File
+[2024-06-30 19:08:38] No errors occurred
+[2024-06-30 19:08:38] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:08:41] 
+
+
+[2024-06-30 19:08:41] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 401, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 545, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 112, in __init__
+    self.configfile()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 177, in configfile
+    self.start_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 207, in start_screen
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 597, in update_button_state
+    self.home_button.configure(state=self.home_button_state)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-06-30 19:08:45] No errors occurred
+[2024-06-30 19:08:45] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:10:54] 
+
+
+[2024-06-30 19:10:54] Started the Error Log File
+[2024-06-30 19:10:59] No errors occurred
+[2024-06-30 19:10:59] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:11:04] 
+
+
+[2024-06-30 19:11:04] Started the Error Log File
+[2024-06-30 19:11:08] No errors occurred
+[2024-06-30 19:11:08] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:11:39] 
+
+
+[2024-06-30 19:11:39] Started the Error Log File
+[2024-06-30 19:11:43] No errors occurred
+[2024-06-30 19:11:43] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:11:47] 
+
+
+[2024-06-30 19:11:47] Started the Error Log File
+[2024-06-30 19:11:51] No errors occurred
+[2024-06-30 19:11:51] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:12:37] 
+
+
+[2024-06-30 19:12:37] Started the Error Log File
+[2024-06-30 19:13:11] No errors occurred
+[2024-06-30 19:13:11] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:13:14] 
+
+
+[2024-06-30 19:13:14] Started the Error Log File
+[2024-06-30 19:15:00] No errors occurred
+[2024-06-30 19:15:00] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:15:03] 
+
+
+[2024-06-30 19:15:03] Started the Error Log File
+[2024-06-30 19:15:52] No errors occurred
+[2024-06-30 19:15:52] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:15:54] 
+
+
+[2024-06-30 19:15:54] Started the Error Log File
+[2024-06-30 19:21:21] No errors occurred
+[2024-06-30 19:21:21] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:24:08] 
+
+
+[2024-06-30 19:24:08] Started the Error Log File
+[2024-06-30 19:24:44] No errors occurred
+[2024-06-30 19:24:44] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:24:47] 
+
+
+[2024-06-30 19:24:47] Started the Error Log File
+[2024-06-30 19:25:26] No errors occurred
+[2024-06-30 19:25:26] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:25:28] 
+
+
+[2024-06-30 19:25:28] Started the Error Log File
+[2024-06-30 19:50:23] No errors occurred
+[2024-06-30 19:50:23] Closed the Error Log File
+
+
+
+
+[2024-06-30 19:50:27] 
+
+
+[2024-06-30 19:50:27] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 58, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 514, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 753, in start_game
+    self.create_button_panel.create_reset_settings_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 789, in create_reset_settings_button
+    reset_settings_button = ctk.CTkButton(self.button_canvas, text="Reset\nSettings", font=FONT_LIST[11], # pylint: disable=line-too-long
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 52, in __init__
+    super().__init__(master=master, bg_color=bg_color, width=width, height=height, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 41, in __init__
+    tkinter.Frame.__init__(self, master=master, width=width, height=height, **pop_from_dict_by_set(kwargs, self._valid_tk_frame_attributes))
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3190, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: bad window path name ".!ctkcanvas3"
+[2024-06-30 19:52:22] No errors occurred
+[2024-06-30 19:52:22] Closed the Error Log File
+
+
+
+

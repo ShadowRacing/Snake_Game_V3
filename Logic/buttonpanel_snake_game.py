@@ -453,6 +453,12 @@ class ClickButtonPanel:
     def switch_canvas(self):
         # Set _initialized to False
         self._initialized = False
+    
+    def destroy_canvas(self):
+        """
+        Function for destroying the button canvas.
+        """
+        self.button_canvas.destroy()
 
     # Methods to create specific buttons
     # Each method calls the create_click_button method with specific parameters
@@ -464,7 +470,7 @@ class ClickButtonPanel:
 
         self.home_button = ctk.CTkButton(self.button_canvas, text="Main Menu", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, corner_radius=self.corner_radius ,state=self.button_state, # pylint: disable=line-too-long
-                                command=self.home_button_command)
+                                command=self.button_commands.home_command)
         self.home_button.grid(in_=self.button_canvas, row=0, column=0, padx=10, pady=10, sticky="w") # pylint: disable=line-too-long
 
     def home_button_command(self):
@@ -486,11 +492,12 @@ class ClickButtonPanel:
 
     def update_home_button_state(self):
         # Read the new state from the config.ini file
-        time.sleep(0.5)
-        self.state_game = self.config.get('Classic_Snake_Settings', 'state', fallback='game')
-        print(self.state_game)
+        time.sleep(0.2)
+        self.config.read(self.config_path)
+        self.state_game = self.config.get('Classic_Snake_Settings', 'state', fallback='playing')
+        self.game_logger.log_game_event(self.state_game)
         
-        if self.state_game == 'game':
+        if self.state_game == 'playing':
             self.button_state = 'disabled'
         elif self.state_game == 'game_over':
             self.button_state = 'normal'
@@ -504,9 +511,6 @@ class ClickButtonPanel:
         
         # Update the state of the home button
         self.home_button.configure(state=self.button_state)
-
-
-        
 
     def create_restart_app_button(self):
         """

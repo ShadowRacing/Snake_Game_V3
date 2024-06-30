@@ -1125,6 +1125,7 @@ class SnakeGameApp:
 
             if self.main_canvas == self.classic_snake_canvas:
                 self.classic_snake_canvas.delete_game_labels()
+                self.classic_snake_canvas.destroy_button_panel()
             if self.main_canvas == self.endless_snake_canvas:
                 self.endless_snake_canvas.delete_game_labels_()
             if self.main_canvas == self.leveling_snake_canvas:

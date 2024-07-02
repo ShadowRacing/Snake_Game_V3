@@ -30,6 +30,7 @@ class ScreenSize:
         screen_sizes = {
             "Fullscreen": self.set_fullscreen_size,
             "Default": lambda: self.set_custom_size(1200, 800),
+            "800x500": lambda: self.set_custom_size(800, 500),
             "1600x900": lambda: self.set_custom_size(1600, 900),
             "1800x1080": lambda: self.set_custom_size(1800, 1080),
             "1800x1200": lambda: self.set_custom_size(1800, 1200),

@@ -67,7 +67,7 @@ class SnakeGameApp:
         self.config_path = path.join(self.config_dir, 'config.ini')
         self.config_path_icon = path.join(self.config_dir, 'app_icon.ico')
         self.root.iconbitmap('app_icon.ico')
-        print("Config main file", (self.config_path))
+        self.game_logger.log_game_event(f"Config main file: {self.config_path}")
         self.config = configparser.ConfigParser()
         try:
             self.config.read(self.config_path)
@@ -110,6 +110,7 @@ class SnakeGameApp:
         self.mini_snake_game_canvas = None # pylint: disable=line-too-long
         self.loading_canvas = None
         self.progress_bar = ctk.CTkProgressBar(self.loading_canvas, width=400, height=30)
+        self.loading_screen_created = False
 
         # Creating the main canvas for the app
         self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
@@ -258,12 +259,17 @@ class SnakeGameApp:
         """
         Create the loading screen.
         """
+        if self.loading_screen_created:
+            return
+        self.loading_screen_created = True    
         self.original_main_canvas = self.main_canvas
         self.loading_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         self.loading_canvas.pack(expand=True, fill="both")
         self.loading_canvas.bind("<Configure>", self.update_loading_screen_position)
 
         self.loading_canvas.after(1000, self.destroy_loading_screen)
+
+
 
     def update_loading_screen_position(self, event):
         """
@@ -334,6 +340,7 @@ class SnakeGameApp:
         """
         Destroy the loading screen.
         """
+        self.loading_screen_created = False
         self.progress_bar.destroy()
         self.loading_canvas.destroy()
         self.create_home_screen()
@@ -636,7 +643,7 @@ class SnakeGameApp:
             self.main_canvas = self.challange_settings_canvas
 
         # Initializing the button panel and label panel
-        #self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
+        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
         self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.button_commands = ButtonCommands(self.game_logger, self.functions)

@@ -958,3 +958,316 @@ _tkinter.TclError: bad window path name ".!ctkcanvas3"
 
 
 
+[2024-07-02 20:03:04] 
+
+
+[2024-07-02 20:03:04] Started the Error Log File
+[2024-07-02 20:03:08] No errors occurred
+[2024-07-02 20:03:08] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:03:12] 
+
+
+[2024-07-02 20:03:12] Started the Error Log File
+[2024-07-02 20:06:19] No errors occurred
+[2024-07-02 20:06:19] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:06:30] 
+
+
+[2024-07-02 20:06:30] Started the Error Log File
+[2024-07-02 20:06:38] No errors occurred
+[2024-07-02 20:06:38] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:08:23] 
+
+
+[2024-07-02 20:08:23] Started the Error Log File
+[2024-07-02 20:08:34] No errors occurred
+[2024-07-02 20:08:34] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:08:59] 
+
+
+[2024-07-02 20:08:59] Started the Error Log File
+[2024-07-02 20:09:08] No errors occurred
+[2024-07-02 20:09:08] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:09:47] 
+
+
+[2024-07-02 20:09:47] Started the Error Log File
+[2024-07-02 20:10:06] No errors occurred
+[2024-07-02 20:10:06] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:10:09] 
+
+
+[2024-07-02 20:10:09] Started the Error Log File
+[2024-07-02 20:10:12] No errors occurred
+[2024-07-02 20:10:12] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:13:35] 
+
+
+[2024-07-02 20:13:35] Started the Error Log File
+[2024-07-02 20:14:07] No errors occurred
+[2024-07-02 20:14:07] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:18:26] 
+
+
+[2024-07-02 20:18:26] Started the Error Log File
+[2024-07-02 20:18:30] No errors occurred
+[2024-07-02 20:18:30] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:18:57] 
+
+
+[2024-07-02 20:18:57] Started the Error Log File
+[2024-07-02 20:19:00] No errors occurred
+[2024-07-02 20:19:00] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:25:32] 
+
+
+[2024-07-02 20:25:32] Started the Error Log File
+Exception in thread Thread-1 (start_and_stop_progress_bar):
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 336, in start_and_stop_progress_bar
+    self.progress_bar.stop()
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'stop'
+Exception in thread Thread-2 (start_and_stop_progress_bar):
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 336, in start_and_stop_progress_bar
+    self.progress_bar.stop()
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'stop'
+[2024-07-02 20:25:38] No errors occurred
+[2024-07-02 20:25:38] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:26:37] 
+
+
+[2024-07-02 20:26:37] Started the Error Log File
+[2024-07-02 20:28:28] No errors occurred
+[2024-07-02 20:28:28] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:28:31] 
+
+
+[2024-07-02 20:28:31] Started the Error Log File
+[2024-07-02 20:28:38] No errors occurred
+[2024-07-02 20:28:38] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:45:06] 
+
+
+[2024-07-02 20:45:06] Started the Error Log File
+[2024-07-02 20:45:55] No errors occurred
+[2024-07-02 20:45:55] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:45:57] 
+
+
+[2024-07-02 20:45:57] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'leveling_reset_high_score_time_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 175, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 430, in snake_leveling
+    self.start_game("snake_leveling")
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 674, in start_game
+    self.create_button_panel.create_leveling_reset_high_score_time_button()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 988, in create_leveling_reset_high_score_time_button
+    self.leveling_reset_high_score_time_state = self.config.get('Settings', 'leveling_reset_high_score_time_state')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'leveling_reset_high_score_time_state' in section: 'Settings'
+[2024-07-02 20:46:33] No errors occurred
+[2024-07-02 20:46:33] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:46:35] 
+
+
+[2024-07-02 20:46:35] Started the Error Log File
+[2024-07-02 20:46:37] No errors occurred
+[2024-07-02 20:46:37] Closed the Error Log File
+
+
+
+
+[2024-07-02 20:49:55] 
+
+
+[2024-07-02 20:49:55] Started the Error Log File
+[2024-07-02 20:50:29] No errors occurred
+[2024-07-02 20:50:29] Closed the Error Log File
+
+
+
+
+[2024-07-02 21:09:30] 
+
+
+[2024-07-02 21:09:30] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 1234, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 70, in __init__
+    self.game_logger.log_game_event("Config main file", (self.config_path))
+TypeError: GameLogger.log_game_event() takes 2 positional arguments but 3 were given
+[2024-07-02 21:09:36] 
+
+
+[2024-07-02 21:09:36] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 1234, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 70, in __init__
+    self.game_logger.log_game_event("Config main file", (self.config_path))
+TypeError: GameLogger.log_game_event() takes 2 positional arguments but 3 were given
+[2024-07-02 21:09:40] 
+
+
+[2024-07-02 21:09:40] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 1234, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 70, in __init__
+    self.game_logger.log_game_event("Config main file", (self.config_path))
+TypeError: GameLogger.log_game_event() takes 2 positional arguments but 3 were given
+[2024-07-02 21:09:46] 
+
+
+[2024-07-02 21:09:46] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 1234, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 70, in __init__
+    self.game_logger.log_game_event("Config main file", (self.config_path))
+TypeError: GameLogger.log_game_event() takes 2 positional arguments but 3 were given
+[2024-07-02 21:10:56] 
+
+
+[2024-07-02 21:10:56] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 414, in classic_snake
+    self.start_game("classic_snake")
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\main_snake_game.py", line 558, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\GitHub\Snake_Game_V3\Games\snake_classic_game.py", line 38, in __init__
+    self.game_logger.log_game_event("Config file read in Classic snake game fil:.", (self.config_path))
+TypeError: GameLogger.log_game_event() takes 2 positional arguments but 3 were given
+[2024-07-02 21:11:01] No errors occurred
+[2024-07-02 21:11:01] Closed the Error Log File
+
+
+
+
+[2024-07-02 21:11:47] 
+
+
+[2024-07-02 21:11:47] Started the Error Log File
+[2024-07-02 21:12:03] No errors occurred
+[2024-07-02 21:12:03] Closed the Error Log File
+
+
+
+
+[2024-07-02 21:14:01] 
+
+
+[2024-07-02 21:14:01] Started the Error Log File
+[2024-07-02 21:14:07] No errors occurred
+[2024-07-02 21:14:07] Closed the Error Log File
+
+
+
+

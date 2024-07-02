@@ -325,7 +325,7 @@ class OptionButtonPanel:
             # Screen Size Option
             self.screen_size_config = self.config.get('Settings', 'screen_size', fallback='Default')
             self.create_option_button(self.screen_size_callback,
-                                      ["Fullscreen", "Default", "1600x900", "1800x1080",
+                                      ["Fullscreen", "Default","800x500", "1600x900", "1800x1080",
                                        "1800x1200", "1920x1080", "1920x1200", "2560x1440"],
                                       self.screen_size_config, 200, 50)
 
@@ -361,7 +361,7 @@ class OptionButtonPanel:
 
             self.game_size_config = self.config.get('Settings', 'game_size', fallback='Default')
             self.create_option_button(self.game_size_callback,
-                                      ["600x600", "700x700", "800x800", "900x900", "1000x1000",
+                                      ["400x400","600x600", "700x700", "800x800", "900x900", "1000x1000",
                                        "1100x1100", "1200x1200", "1300x1300","1400x1400", "1500x1500"], # pylint: disable=line-too-long
                                       self.game_size_config, 400, 200)
 

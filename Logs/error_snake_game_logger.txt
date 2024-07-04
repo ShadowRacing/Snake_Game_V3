@@ -1271,3 +1271,93 @@ TypeError: GameLogger.log_game_event() takes 2 positional arguments but 3 were g
 
 
 
+[2024-07-03 10:57:49] 
+
+
+[2024-07-03 10:57:49] Started the Error Log File
+[2024-07-03 10:58:15] No errors occurred
+[2024-07-03 10:58:15] Closed the Error Log File
+
+
+
+
+[2024-07-04 15:03:13] 
+
+
+[2024-07-04 15:03:13] Started the Error Log File
+[2024-07-04 15:03:16] No errors occurred
+[2024-07-04 15:03:16] Closed the Error Log File
+
+
+
+
+[2024-07-04 15:41:14] 
+
+
+[2024-07-04 15:41:14] Started the Error Log File
+[2024-07-04 15:41:35] No errors occurred
+[2024-07-04 15:41:35] Closed the Error Log File
+
+
+
+
+[2024-07-04 15:41:37] 
+
+
+[2024-07-04 15:41:37] Started the Error Log File
+[2024-07-04 15:42:12] No errors occurred
+[2024-07-04 15:42:12] Closed the Error Log File
+
+
+
+
+[2024-07-04 15:44:51] 
+
+
+[2024-07-04 15:44:51] Started the Error Log File
+[2024-07-04 15:45:24] No errors occurred
+[2024-07-04 15:45:24] Closed the Error Log File
+
+
+
+
+[2024-07-04 15:45:59] 
+
+
+[2024-07-04 15:45:59] Started the Error Log File
+[2024-07-04 15:48:34] No errors occurred
+[2024-07-04 15:48:34] Closed the Error Log File
+
+
+
+
+[2024-07-04 15:48:37] 
+
+
+[2024-07-04 15:48:37] Started the Error Log File
+[2024-07-04 15:48:44] No errors occurred
+[2024-07-04 15:48:44] Closed the Error Log File
+
+
+
+
+[2024-07-04 15:48:47] 
+
+
+[2024-07-04 15:48:47] Started the Error Log File
+[2024-07-04 15:48:53] No errors occurred
+[2024-07-04 15:48:53] Closed the Error Log File
+
+
+
+
+[2024-07-04 15:49:03] 
+
+
+[2024-07-04 15:49:03] Started the Error Log File
+[2024-07-04 15:49:14] No errors occurred
+[2024-07-04 15:49:14] Closed the Error Log File
+
+
+
+

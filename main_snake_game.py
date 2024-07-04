@@ -261,13 +261,13 @@ class SnakeGameApp:
         """
         if self.loading_screen_created:
             return
-        self.loading_screen_created = True    
+        self.loading_screen_created = True
         self.original_main_canvas = self.main_canvas
         self.loading_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         self.loading_canvas.pack(expand=True, fill="both")
         self.loading_canvas.bind("<Configure>", self.update_loading_screen_position)
 
-        self.loading_canvas.after(1000, self.destroy_loading_screen)
+        self.loading_canvas.after(10000, self.destroy_loading_screen)
 
 
 

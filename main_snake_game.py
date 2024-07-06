@@ -26,6 +26,7 @@ from Logic.game_labelpanel import GameLabelsPanel
 from Logic.config_ini_initials import ConfigIni
 from Logic.snake_challange_choice import ChallangeChoices
 from Logic.snake_challange_settings import ChallangeSettings
+from Logic.screen_size_changer_snake_game import ScreenSize
 from Logic.resetconfigvalues import ResetConfigValues
 from Logic.little_snake_game import MiniSnakeGame
 from Logic.home_screen_manager import HomeScreenManager
@@ -110,7 +111,6 @@ class SnakeGameApp:
         self.mini_snake_game_canvas = None # pylint: disable=line-too-long
         self.loading_canvas = None
         self.progress_bar = ctk.CTkProgressBar(self.loading_canvas, width=400, height=30)
-        self.loading_screen_created = False
 
         # Creating the main canvas for the app
         self.main_canvas = ctk.CTkCanvas(root, highlightbackground='Black', highlightthickness=5, bg='Grey20') # pylint: disable=line-too-long
@@ -235,6 +235,14 @@ class SnakeGameApp:
 
         self.home_screen_manager = HomeScreenManager(self.classic_snake_canvas, self.endless_snake_canvas, self.leveling_snake_canvas, self.food_time_attack_canvas, self.challange_choice_canvas, self.challange_settings_canvas, self.info_canvas, self.info_general_canvas, self.info_classic_canvas, self.info_endless_canvas, self.info_leveling_canvas, self.info_challange_canvas, self.settings_canvas, self.settings_canvas_values, self.settings_canvas_reset, self.reset_label, self.reset_settings_frame, self.reset_settings_frame_1, self.scrollable_frame, self.framelabel_panel, self.button_commands, self.mini_snake_game_canvas, self.original_main_canvas) # pylint: disable=line-too-long
 
+        try:
+            self.screen_size_config = self.config.get('Settings', 'screen_size', fallback='Default')
+            self.screen_size_var = ctk.StringVar()  # Variable to track the selected value
+            self.screen_size_var.set(self.screen_size_config)  # Set the default value
+            self.screen_size_changer = ScreenSize(root, self.game_logger, self.screen_size_var, self.config, self.screen_size_config) # pylint: disable=line-too-long
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
+
         self.settings_labels.update_initial_game_size()
 
         # Create the loading screen
@@ -259,15 +267,12 @@ class SnakeGameApp:
         """
         Create the loading screen.
         """
-        if self.loading_screen_created:
-            return
-        self.loading_screen_created = True
         self.original_main_canvas = self.main_canvas
         self.loading_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         self.loading_canvas.pack(expand=True, fill="both")
         self.loading_canvas.bind("<Configure>", self.update_loading_screen_position)
 
-        self.loading_canvas.after(10000, self.destroy_loading_screen)
+        self.loading_canvas.after(1000, self.destroy_loading_screen)
 
 
 
@@ -340,7 +345,6 @@ class SnakeGameApp:
         """
         Destroy the loading screen.
         """
-        self.loading_screen_created = False
         self.progress_bar.destroy()
         self.loading_canvas.destroy()
         self.create_home_screen()
@@ -380,15 +384,16 @@ class SnakeGameApp:
         self.leveling_reset_button_press_variable()
         self.main_canvas.bind("<Configure>", self.update_text_position)
         # Create a CTkImage object
-        my_image = ctk.CTkImage(light_image=Image.open(self.config_path_icon),
-                                dark_image=Image.open(self.config_path_icon),
-                                size=(165, 165))
+        self.create_and_place_image_label(self.main_canvas, 5, 635, self.config_path_icon)
+        # my_image = ctk.CTkImage(light_image=Image.open(self.config_path_icon),
+        #                         dark_image=Image.open(self.config_path_icon),
+        #                         size=(160, 160))
 
-        # Create a CTkLabel to display the image
-        image_label = ctk.CTkLabel(self.main_canvas, image=my_image, text="")
+        # # Create a CTkLabel to display the image
+        # image_label = ctk.CTkLabel(self.main_canvas, image=my_image, text="")
 
         # Place the label at the bottom left of the window
-        image_label.place(x=0, y=650)
+        # image_label.place(x=5, y=635)
         self.config.set('Settings', 'home_button_state', 'normal')
         self.config.set('Settings', 'classic_reset_high_score_button_state', 'normal')
         self.config.set('Settings', 'classic_reset_high_score_time_button_state', 'normal')
@@ -406,6 +411,17 @@ class SnakeGameApp:
         self.main_canvas.create_text(canvas_width, canvas_height - 50, text=self.text_name, font=self.font_50, fill="white", tags="text") # pylint: disable=line-too-long
         self.main_canvas.create_text(canvas_width, canvas_height, text=self.text_version, font=self.font_30, fill="white", tags="text") # pylint: disable=line-too-long
         self.main_canvas.create_text(canvas_width, canvas_height + 50, text=self.text_developer, font=self.font_30, fill="white", tags="text") # pylint: disable=line-too-long
+
+    def create_and_place_image_label(self, canvas, x, y, image_path):
+        """
+        Create and place a CTkImage and CTkLabel on the specified canvas.
+        """
+        my_image = ctk.CTkImage(light_image=Image.open(image_path),
+                                dark_image=Image.open(image_path),
+                                size=(160, 160))
+
+        image_label = ctk.CTkLabel(canvas, image=my_image, text="")
+        image_label.place(x=x, y=y)
 
     def classic_snake(self):
         """
@@ -556,8 +572,7 @@ class SnakeGameApp:
         # Create a new canvas for the specified game type
         if game_type == "classic_snake":
             self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
-            self.classic_snake_canvas.pack(expand=True, fill="both")
-            self.main_canvas = self.classic_snake_canvas
+
         elif game_type == "snake_endless":
             self.endless_snake_canvas = SnakeEndless(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
         elif game_type == "snake_leveling":
@@ -593,6 +608,7 @@ class SnakeGameApp:
         if game_type == "classic_snake":
             self.classic_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.classic_snake_canvas
+            self.create_and_place_image_label(self.main_canvas, 5, 635, self.config_path_icon)
         elif game_type == "snake_endless":
             self.endless_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.endless_snake_canvas
@@ -785,6 +801,7 @@ class SnakeGameApp:
                 self.settings_canvas_values = self.destroy_canvas(self.settings_canvas_values)
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.create_button_panel.create_settings_values_button()
+            self.create_button_panel.create_restart_app_button()
             self.settings_labels.create_settings_reset_labels()
             self.framelabel_panel.create_settings_reset_label()
             self.create_reset_button_panel.show_all_reset_buttons()
@@ -885,12 +902,19 @@ class SnakeGameApp:
         Reset the screen size to the default value.
         """
         self.reset_config_values.reset_screen_size()
+        self.config.read(self.config_path)
+        try:
+            selected_value = self.config.get('Settings', 'screen_size', fallback='Default')
+            self.screen_size_changer.change_screen_size(selected_value)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
 
     def reset_theme(self):
         """
         Reset the theme to the default value.
         """
         self.reset_config_values.reset_theme()
+        self.settings_labels.create_theme_label()
 
     def reset_contrast(self):
         """

@@ -1361,3 +1361,331 @@ TypeError: GameLogger.log_game_event() takes 2 positional arguments but 3 were g
 
 
 
+[2024-07-06 12:10:32] 
+
+
+[2024-07-06 12:10:32] Started the Error Log File
+[2024-07-06 12:11:22] No errors occurred
+[2024-07-06 12:11:22] Closed the Error Log File
+
+
+
+
+[2024-07-06 12:11:24] 
+
+
+[2024-07-06 12:11:24] Started the Error Log File
+[2024-07-06 12:12:34] No errors occurred
+[2024-07-06 12:12:34] Closed the Error Log File
+
+
+
+
+[2024-07-06 12:12:37] 
+
+
+[2024-07-06 12:12:37] Started the Error Log File
+[2024-07-06 12:12:43] No errors occurred
+[2024-07-06 12:12:43] Closed the Error Log File
+
+
+
+
+[2024-07-06 12:12:45] 
+
+
+[2024-07-06 12:12:45] Started the Error Log File
+[2024-07-06 12:12:54] No errors occurred
+[2024-07-06 12:12:54] Closed the Error Log File
+
+
+
+
+[2024-07-06 12:21:48] 
+
+
+[2024-07-06 12:21:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 407, in update_text_position
+    canvas_width = self.main_canvas.winfo_width() // 2 + 80
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1354, in winfo_width
+    self.tk.call('winfo', 'width', self._w))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: bad window path name ".!ctkcanvas4"
+[2024-07-06 13:29:07] No errors occurred
+[2024-07-06 13:29:07] Closed the Error Log File
+
+
+
+
+[2024-07-06 13:29:08] 
+
+
+[2024-07-06 13:29:08] Started the Error Log File
+[2024-07-06 13:29:17] No errors occurred
+[2024-07-06 13:29:17] Closed the Error Log File
+
+
+
+
+[2024-07-06 13:29:18] 
+
+
+[2024-07-06 13:29:18] Started the Error Log File
+[2024-07-06 13:59:46] No errors occurred
+[2024-07-06 13:59:46] Closed the Error Log File
+
+
+
+
+[2024-07-06 13:59:48] 
+
+
+[2024-07-06 13:59:48] Started the Error Log File
+[2024-07-06 13:59:56] No errors occurred
+[2024-07-06 13:59:56] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:10:59] 
+
+
+[2024-07-06 14:10:59] Started the Error Log File
+[2024-07-06 14:14:33] No errors occurred
+[2024-07-06 14:14:33] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:14:35] 
+
+
+[2024-07-06 14:14:35] Started the Error Log File
+[2024-07-06 14:14:55] No errors occurred
+[2024-07-06 14:14:55] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:14:56] 
+
+
+[2024-07-06 14:14:56] Started the Error Log File
+[2024-07-06 14:15:05] No errors occurred
+[2024-07-06 14:15:05] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:15:06] 
+
+
+[2024-07-06 14:15:06] Started the Error Log File
+[2024-07-06 14:15:17] No errors occurred
+[2024-07-06 14:15:17] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:15:18] 
+
+
+[2024-07-06 14:15:18] Started the Error Log File
+[2024-07-06 14:15:30] No errors occurred
+[2024-07-06 14:15:30] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:15:31] 
+
+
+[2024-07-06 14:15:31] Started the Error Log File
+[2024-07-06 14:15:43] No errors occurred
+[2024-07-06 14:15:43] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:15:44] 
+
+
+[2024-07-06 14:15:44] Started the Error Log File
+[2024-07-06 14:15:53] No errors occurred
+[2024-07-06 14:15:53] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:15:54] 
+
+
+[2024-07-06 14:15:54] Started the Error Log File
+[2024-07-06 14:16:04] No errors occurred
+[2024-07-06 14:16:04] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:16:05] 
+
+
+[2024-07-06 14:16:05] Started the Error Log File
+[2024-07-06 14:21:20] No errors occurred
+[2024-07-06 14:21:20] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:21:21] 
+
+
+[2024-07-06 14:21:21] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'endless_reset_high_score_time_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 166, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 437, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 678, in start_game
+    self.create_button_panel.create_endless_reset_high_score_time_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 935, in create_endless_reset_high_score_time_button
+    self.endless_reset_high_score_time_state = self.config.get('Settings', 'endless_reset_high_score_time_state') # pylint: disable=line-too-long
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'endless_reset_high_score_time_state' in section: 'Settings'
+[2024-07-06 14:21:36] No errors occurred
+[2024-07-06 14:21:36] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:21:48] 
+
+
+[2024-07-06 14:21:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'leveling_reset_high_score_time_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 175, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 445, in snake_leveling
+    self.start_game("snake_leveling")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 687, in start_game
+    self.create_button_panel.create_leveling_reset_high_score_time_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 988, in create_leveling_reset_high_score_time_button
+    self.leveling_reset_high_score_time_state = self.config.get('Settings', 'leveling_reset_high_score_time_state')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'leveling_reset_high_score_time_state' in section: 'Settings'
+[2024-07-06 14:21:51] No errors occurred
+[2024-07-06 14:21:51] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:21:58] 
+
+
+[2024-07-06 14:21:58] Started the Error Log File
+[2024-07-06 14:47:32] No errors occurred
+[2024-07-06 14:47:32] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:47:34] 
+
+
+[2024-07-06 14:47:34] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 350, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 387, in create_home_screen
+    self.create_and_place_image_label()
+TypeError: SnakeGameApp.create_and_place_image_label() missing 4 required positional arguments: 'canvas', 'x', 'y', and 'image_path'
+[2024-07-06 14:48:05] No errors occurred
+[2024-07-06 14:48:05] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:48:06] 
+
+
+[2024-07-06 14:48:06] Started the Error Log File
+[2024-07-06 14:48:28] No errors occurred
+[2024-07-06 14:48:28] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:48:30] 
+
+
+[2024-07-06 14:48:30] Started the Error Log File
+[2024-07-06 14:48:46] No errors occurred
+[2024-07-06 14:48:46] Closed the Error Log File
+
+
+
+
+[2024-07-06 14:48:47] 
+
+
+[2024-07-06 14:48:47] Started the Error Log File
+[2024-07-06 14:48:51] No errors occurred
+[2024-07-06 14:48:51] Closed the Error Log File
+
+
+
+

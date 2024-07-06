@@ -61,6 +61,7 @@ class SnakeGameApp:
         self.snake_color = None
         self.theme = None
         self.contrast = None
+        self.toplevel_window = None
         self.theme_updater.set_initial_theme()
 
         # Read the config file and load it
@@ -1236,6 +1237,13 @@ class SnakeGameApp:
         """
         Confirm quitting the game.
         """
+        if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
+            self.toplevel_window = ToplevelWindow(self.root, self.quit_application)
+        else:
+            self.toplevel_window.focus()
+
+    def quit_application(self):
+        # Logic to quit the application, e.g., destroy the root window or perform cleanup
         try:
             if self.mini_snake_game is not None:
                 self.mini_snake_game.running = False
@@ -1243,14 +1251,47 @@ class SnakeGameApp:
                     self.mini_snake_game_canvas.destroy()
                     self.mini_snake_game_canvas = None
                 self.mini_snake_game = None
+            
             # Assuming game_logger and error_game_logger are defined somewhere in your class
-            self.game_logger.on_closing()
-            self.error_game_logger.on_closing()
+                self.game_logger.on_closing()
+                self.error_game_logger.on_closing()
         except FileNotFoundError as e:
             traceback.print_exc(e)
         except AttributeError:
             # Handle the case where game_logger or error_game_logger might not be defined
             pass
+
+class ToplevelWindow(ctk.CTkToplevel):
+    def __init__(self, master, on_quit_callback):
+        super().__init__(master)
+        self.geometry("300x150")
+        self.update_idletasks()
+        window_width, window_height = self.winfo_width(), self.winfo_height()
+        screen_width, screen_height = self.winfo_screenwidth(), self.winfo_screenheight()
+
+        x = (screen_width - window_width) // 2
+        y = (screen_height - window_height) // 2
+
+        self.geometry(f"{window_width}x{window_height}+{x}+{y}")
+
+        self.on_quit_callback = on_quit_callback
+
+        self.label = ctk.CTkLabel(self, text="Are you sure you want to quit?")
+        # Using place to position the label
+        self.label.place(x=50, y=20)  # Adjust x and y to position the label
+
+        self.yes_button = ctk.CTkButton(self, text="Yes", command=self.on_yes)
+        # Using place to position the Yes button
+        self.yes_button.place(x=20, y=80)  # Adjust x and y to position the Yes button
+
+        self.no_button = ctk.CTkButton(self, text="No", command=self.destroy)
+        # Using place to position the No button
+        self.no_button.place(x=160, y=80)  # Adjust x and y to position the No button
+        self.focus_force()
+
+    def on_yes(self):
+        self.on_quit_callback()
+        self.destroy()
 
 # Main function
 if __name__ == "__main__":

@@ -45277,3 +45277,179 @@ Unbinding r
 
 
 
+[2024-07-06 20:29:00] Started the app
+[2024-07-06 20:29:00] Started the GameApp Class
+[2024-07-06 20:29:00] Game mode: initial config
+[2024-07-06 20:29:00] Current Theme: Default
+[2024-07-06 20:29:00] Set initial theme to: Default
+[2024-07-06 20:29:00] Updated initial_theme in config.ini to: Default
+[2024-07-06 20:29:00] Current initial_theme in config.ini to: Default
+[2024-07-06 20:29:00] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-06 20:29:00] Theme applied: Default
+[2024-07-06 20:29:00] Updated contrast in config.ini to: Default
+[2024-07-06 20:29:00] Contrast mode set to: default
+[2024-07-06 20:29:00] Resetting snake
+[2024-07-06 20:29:00] Set initial game size to: 600x600
+[2024-07-06 20:29:00] Updated initial_game_size in config.ini to: 600x600
+[2024-07-06 20:29:00] Current initial_game_size in config.ini to: 600x600
+[2024-07-06 20:29:01] Label border width: 1
+[2024-07-06 20:29:01] label_border_height: 1
+[2024-07-06 20:29:08] Closed the app
+
+
+
+
+[2024-07-06 20:29:58] Started the app
+[2024-07-06 20:29:58] Started the GameApp Class
+[2024-07-06 20:29:58] Game mode: initial config
+[2024-07-06 20:29:58] Current Theme: Default
+[2024-07-06 20:29:58] Set initial theme to: Default
+[2024-07-06 20:29:58] Updated initial_theme in config.ini to: Default
+[2024-07-06 20:29:58] Current initial_theme in config.ini to: Default
+[2024-07-06 20:29:58] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-06 20:29:58] Theme applied: Default
+[2024-07-06 20:29:58] Updated contrast in config.ini to: Default
+[2024-07-06 20:29:58] Contrast mode set to: default
+[2024-07-06 20:29:58] Resetting snake
+[2024-07-06 20:29:58] Set initial game size to: 600x600
+[2024-07-06 20:29:58] Updated initial_game_size in config.ini to: 600x600
+[2024-07-06 20:29:58] Current initial_game_size in config.ini to: 600x600
+[2024-07-06 20:29:59] Label border width: 1
+[2024-07-06 20:29:59] label_border_height: 1
+[2024-07-06 20:30:15] Closed the app
+
+
+
+
+[2024-07-06 20:29:13] Started the app
+[2024-07-06 20:29:13] Started the GameApp Class
+[2024-07-06 20:29:13] Game mode: initial config
+[2024-07-06 20:29:13] Current Theme: Default
+[2024-07-06 20:29:13] Set initial theme to: Default
+[2024-07-06 20:29:13] Updated initial_theme in config.ini to: Default
+[2024-07-06 20:29:13] Current initial_theme in config.ini to: Default
+[2024-07-06 20:29:13] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-06 20:29:13] Theme applied: Default
+[2024-07-06 20:29:13] Updated contrast in config.ini to: Default
+[2024-07-06 20:29:13] Contrast mode set to: default
+[2024-07-06 20:29:13] Resetting snake
+[2024-07-06 20:29:13] Set initial game size to: 600x600
+[2024-07-06 20:29:13] Updated initial_game_size in config.ini to: 600x600
+[2024-07-06 20:29:13] Current initial_game_size in config.ini to: 600x600
+[2024-07-06 20:29:14] Label border width: 1
+[2024-07-06 20:29:14] label_border_height: 1
+[2024-07-06 20:31:49] Closed the app
+
+
+
+
+[2024-07-06 20:31:51] Started the app
+[2024-07-06 20:31:51] Started the GameApp Class
+[2024-07-06 20:31:51] Game mode: initial config
+[2024-07-06 20:31:51] Current Theme: Default
+[2024-07-06 20:31:51] Set initial theme to: Default
+[2024-07-06 20:31:51] Updated initial_theme in config.ini to: Default
+[2024-07-06 20:31:51] Current initial_theme in config.ini to: Default
+[2024-07-06 20:31:52] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-06 20:31:52] Theme applied: Default
+[2024-07-06 20:31:52] Updated contrast in config.ini to: Default
+[2024-07-06 20:31:52] Contrast mode set to: default
+[2024-07-06 20:31:52] Resetting snake
+[2024-07-06 20:31:52] Set initial game size to: 600x600
+[2024-07-06 20:31:52] Updated initial_game_size in config.ini to: 600x600
+[2024-07-06 20:31:52] Current initial_game_size in config.ini to: 600x600
+[2024-07-06 20:31:53] Label border width: 1
+[2024-07-06 20:31:53] label_border_height: 1
+[2024-07-06 20:32:15] Closed the app
+
+
+
+
+[2024-07-06 20:32:12] Started the app
+[2024-07-06 20:32:12] Started the GameApp Class
+[2024-07-06 20:32:12] Game mode: initial config
+[2024-07-06 20:32:12] Current Theme: Default
+[2024-07-06 20:32:12] Set initial theme to: Default
+[2024-07-06 20:32:12] Updated initial_theme in config.ini to: Default
+[2024-07-06 20:32:12] Current initial_theme in config.ini to: Default
+[2024-07-06 20:32:12] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-06 20:32:12] Theme applied: Default
+[2024-07-06 20:32:12] Updated contrast in config.ini to: Default
+[2024-07-06 20:32:12] Contrast mode set to: default
+[2024-07-06 20:32:12] Resetting snake
+[2024-07-06 20:32:12] Set initial game size to: 600x600
+[2024-07-06 20:32:12] Updated initial_game_size in config.ini to: 600x600
+[2024-07-06 20:32:12] Current initial_game_size in config.ini to: 600x600
+[2024-07-06 20:32:13] Label border width: 1
+[2024-07-06 20:32:13] label_border_height: 1
+[2024-07-06 20:32:23] Closed the app
+
+
+
+
+[2024-07-06 21:08:02] Started the app
+[2024-07-06 21:08:02] Started the GameApp Class
+[2024-07-06 21:08:02] Game mode: initial config
+[2024-07-06 21:08:02] Current Theme: Default
+[2024-07-06 21:08:02] Set initial theme to: Default
+[2024-07-06 21:08:02] Updated initial_theme in config.ini to: Default
+[2024-07-06 21:08:02] Current initial_theme in config.ini to: Default
+[2024-07-06 21:08:02] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-06 21:08:02] Theme applied: Default
+[2024-07-06 21:08:02] Updated contrast in config.ini to: Default
+[2024-07-06 21:08:02] Contrast mode set to: default
+[2024-07-06 21:08:02] Resetting snake
+[2024-07-06 21:08:02] Set initial game size to: 600x600
+[2024-07-06 21:08:02] Updated initial_game_size in config.ini to: 600x600
+[2024-07-06 21:08:02] Current initial_game_size in config.ini to: 600x600
+[2024-07-06 21:08:03] Label border width: 1
+[2024-07-06 21:08:03] label_border_height: 1
+[2024-07-06 21:08:10] Closed the app
+
+
+
+
+[2024-07-06 21:08:41] Started the app
+[2024-07-06 21:08:41] Started the GameApp Class
+[2024-07-06 21:08:41] Game mode: initial config
+[2024-07-06 21:08:41] Current Theme: Default
+[2024-07-06 21:08:41] Set initial theme to: Default
+[2024-07-06 21:08:41] Updated initial_theme in config.ini to: Default
+[2024-07-06 21:08:41] Current initial_theme in config.ini to: Default
+[2024-07-06 21:08:41] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-06 21:08:41] Theme applied: Default
+[2024-07-06 21:08:41] Updated contrast in config.ini to: Default
+[2024-07-06 21:08:41] Contrast mode set to: default
+[2024-07-06 21:08:41] Resetting snake
+[2024-07-06 21:08:41] Set initial game size to: 600x600
+[2024-07-06 21:08:41] Updated initial_game_size in config.ini to: 600x600
+[2024-07-06 21:08:41] Current initial_game_size in config.ini to: 600x600
+[2024-07-06 21:08:42] Label border width: 1
+[2024-07-06 21:08:42] label_border_height: 1
+[2024-07-06 21:09:29] Closed the app
+
+
+
+
+[2024-07-06 21:09:31] Started the app
+[2024-07-06 21:09:31] Started the GameApp Class
+[2024-07-06 21:09:31] Game mode: initial config
+[2024-07-06 21:09:31] Current Theme: Default
+[2024-07-06 21:09:31] Set initial theme to: Default
+[2024-07-06 21:09:31] Updated initial_theme in config.ini to: Default
+[2024-07-06 21:09:31] Current initial_theme in config.ini to: Default
+[2024-07-06 21:09:31] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-06 21:09:31] Theme applied: Default
+[2024-07-06 21:09:31] Updated contrast in config.ini to: Default
+[2024-07-06 21:09:31] Contrast mode set to: default
+[2024-07-06 21:09:32] Resetting snake
+[2024-07-06 21:09:32] Set initial game size to: 600x600
+[2024-07-06 21:09:32] Updated initial_game_size in config.ini to: 600x600
+[2024-07-06 21:09:32] Current initial_game_size in config.ini to: 600x600
+[2024-07-06 21:09:33] Label border width: 1
+[2024-07-06 21:09:33] label_border_height: 1
+[2024-07-06 21:09:43] Closed the app
+
+
+
+

@@ -2,7 +2,7 @@
 File containing the code for the little snake game for Info general.
 """
 
-import random
+import secrets
 
 class MiniSnakeGame:
     """
@@ -60,7 +60,7 @@ class MiniSnakeGame:
         Spawn a new food item on the canvas.
         """
         possible_positions = set((x, y) for x in range(self.max_x) for y in range(self.max_y)) - set(self.snake) # pylint: disable=line-too-long
-        return random.choice(list(possible_positions))
+        return secrets.choice(list(possible_positions))
 
     def safe_directions(self):
         """
@@ -151,7 +151,7 @@ class MiniSnakeGame:
             self.running = False
             return
         elif self.current_direction_index not in safe_dirs:
-            self.current_direction_index = random.choice(safe_dirs)
+            self.current_direction_index = secrets.choice(safe_dirs)
 
         # Move the snake
         direction = self.directions[self.current_direction_index]
@@ -246,7 +246,7 @@ class MiniSnakeGame:
             self.update_direction(best_direction)
         else:
             # If tail collision is imminent, choose any safe direction
-            self.update_direction(random.choice(safe_dirs))
+            self.update_direction(secrets.choice(safe_dirs))
 
     def calculate_distance_to_tail(self, position):
         """

@@ -454,11 +454,15 @@ class ClickButtonPanel:
         self.classic_high_score_snake_length_button_state = 'normal'
         self.endless_high_score_button_state = None
         self.endless_high_score_time_button_state = None
+        self.endless_reset_high_score_time_state = None
         self.endless_high_score_snake_length_button_state = None
+        self.endless_reset_high_score_snake_length_state = None
         self.endless_high_score_special_button_state = None
+        self.endless_reset_high_score_special_score_state = None
         self.endless_high_score_shorten_button_state = None
         self.leveling_high_score_button_state = None
         self.leveling_high_score_time_button_state = None
+        self.leveling_reset_high_score_time_state = None
         self.leveling_reset_high_score_snake_length_state = None
         self.leveling_reset_high_score_special_score_state = None
         self.leveling_high_score_shorten_button_state = None
@@ -921,7 +925,7 @@ class ClickButtonPanel:
         """
         Function for creating the reset high score button.
         """
-        self.endless_high_score_button_state = self.config.get('Settings', 'endless_reset_high_score_button_state')
+        self.endless_high_score_button_state = self.config.get('Settings', 'endless_reset_high_score_button_state') # pylint: disable=line-too-long
 
         self.endless_reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Score\n Highscore", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state=self.endless_high_score_button_state, # pylint: disable=line-too-long
@@ -943,7 +947,7 @@ class ClickButtonPanel:
         """
         Function for creating the reset high score snake length button.
         """
-        self.endless_reset_high_score_snake_length_state = self.config.get('Settings', 'endless_reset_high_score_snake_length_state')
+        self.endless_reset_high_score_snake_length_state = self.config.get('Settings', 'endless_reset_high_score_snake_length_state') # pylint: disable=line-too-long
         self.endless_reset_high_score_snake_length_button = ctk.CTkButton(self.button_canvas, text="Reset length\n Highscore", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state=self.endless_high_score_snake_length_button_state, # pylint: disable=line-too-long
                                 command=self.button_commands.endless_reset_high_score_snake_length_command) # pylint: disable=line-too-long
@@ -953,7 +957,7 @@ class ClickButtonPanel:
         """
         Function for creating the reset high score special score button.
         """
-        self.endless_reset_high_score_special_score_state = self.config.get('Settings', 'endless_reset_high_score_special_score_state')
+        self.endless_reset_high_score_special_score_state = self.config.get('Settings', 'endless_reset_high_score_special_score_state') # pylint: disable=line-too-long
         self.endless_reset_high_score_special_score_button = ctk.CTkButton(self.button_canvas, text="Reset Special\n Highscore", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state=self.endless_reset_high_score_special_score_state, # pylint: disable=line-too-long
                                 command=self.button_commands.endless_reset_high_special_score_command) # pylint: disable=line-too-long
@@ -963,7 +967,7 @@ class ClickButtonPanel:
         """
         Function for creating the reset high score shorten snake button.
         """
-        self.endless_high_score_shorten_button_state = self.config.get('Settings', 'endless_reset_high_score_shorten_button_state')
+        self.endless_high_score_shorten_button_state = self.config.get('Settings', 'endless_reset_high_score_shorten_button_state') # pylint: disable=line-too-long
 
         self.endless_reset_high_score_shorten_score_button = ctk.CTkButton(self.button_canvas, text="Reset Shorten\n Highscore", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state=self.endless_high_score_shorten_button_state, # pylint: disable=line-too-long
@@ -974,7 +978,7 @@ class ClickButtonPanel:
         """
         Function for creating the reset high score button.
         """
-        self.leveling_high_score_button_state = self.config.get('Settings', 'leveling_reset_high_score_button_state')
+        self.leveling_high_score_button_state = self.config.get('Settings', 'leveling_reset_high_score_button_state') # pylint: disable=line-too-long
 
         self.leveling_reset_high_score_button = ctk.CTkButton(self.button_canvas, text="Reset Score\n Highscore", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state=self.leveling_high_score_button_state, # pylint: disable=line-too-long
@@ -985,7 +989,7 @@ class ClickButtonPanel:
         """
         Function for creating the reset high score time button.
         """
-        self.leveling_reset_high_score_time_state = self.config.get('Settings', 'leveling_reset_high_score_time_state')
+        self.leveling_reset_high_score_time_state = self.config.get('Settings', 'leveling_reset_high_score_time_state') # pylint: disable=line-too-long
         self.leveling_reset_high_score_time_button = ctk.CTkButton(self.button_canvas, text="Reset Time\n Highscore", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state=self.leveling_reset_high_score_time_state, # pylint: disable=line-too-long
                                 command=self.button_commands.leveling_reset_high_score_time_command)
@@ -1006,7 +1010,7 @@ class ClickButtonPanel:
         """
         Function for creating the reset high score special score button.
         """
-        self.leveling_reset_high_score_special_score_state = self.config.get('Settings', 'leveling_reset_high_score_special_score_state')
+        self.leveling_reset_high_score_special_score_state = self.config.get('Settings', 'leveling_reset_high_score_special_score_state') # pylint: disable=line-too-long
 
         self.leveling_reset_high_score_special_score_button = ctk.CTkButton(self.button_canvas, text="Reset Special\n Highscore", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state=self.leveling_reset_high_score_special_score_state, # pylint: disable=line-too-long
@@ -1017,7 +1021,7 @@ class ClickButtonPanel:
         """
         Function for creating the reset high score shorten snake button.
         """
-        self.leveling_high_score_shorten_button_state = self.config.get('Settings', 'leveling_reset_high_score_shorten_button_state')
+        self.leveling_high_score_shorten_button_state = self.config.get('Settings', 'leveling_reset_high_score_shorten_button_state') # pylint: disable=line-too-long
 
         self.leveling_reset_high_score_shorten_score_button = ctk.CTkButton(self.button_canvas, text="Reset Shorten\n Highscore", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state=self.leveling_high_score_shorten_button_state, # pylint: disable=line-too-long
@@ -1028,7 +1032,7 @@ class ClickButtonPanel:
         """
         Function for creating the reset high scores xp button.
         """
-        self.leveling_high_score_xp_button_state = self.config.get('Settings', 'leveling_reset_high_score_xp_button_state')
+        self.leveling_high_score_xp_button_state = self.config.get('Settings', 'leveling_reset_high_score_xp_button_state') # pylint: disable=line-too-long
         self.leveling_reset_high_score_xp_button = ctk.CTkButton(self.button_canvas, text="Reset XP\n Highscore", font=FONT_LIST[11], # pylint: disable=line-too-long
                                 width=self.button_width, height=self.button_height, state=self.leveling_high_score_xp_button_state, # pylint: disable=line-too-long
                                 command=self.button_commands.leveling_reset_high_scores_xp_command)

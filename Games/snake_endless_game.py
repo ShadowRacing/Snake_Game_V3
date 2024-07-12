@@ -31,15 +31,25 @@ class SnakeEndless(ctk.CTkCanvas):
         self.game_config = game_config
         self.functions = functions
         self.create_button_panel = create_button_panel
-        self.state = 'start_game'
-        self.game_logger.log_game_event(f"Game state: {self.state}")
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, '..','config.ini')
+        self.config = configparser.ConfigParser()
+        self.config.read(self.config_path)
 
         # Game configuration
+        self.snake_length = self.game_config.SNAKE_LENGTH
         self.width = game_config.GAME_WIDTH
         self.height = game_config.GAME_HEIGHT
         self.highlightthickness = game_config.HIGHLIGHTTHICKNESS
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         self.direction = self.game_config.DIRECTIONOFFSNAKE
+
+        self.game_logger.log_game_event(f"Snake length: {self.snake_length}")
+        self.game_logger.log_game_event(f"Game width: {self.width}")
+        self.game_logger.log_game_event(f"Game height: {self.height}")
+        self.game_logger.log_game_event(f"Highlight thickness: {self.highlightthickness}")
+        self.game_logger.log_game_event(f"Highlight background: {self.highlightbackground}")
+        self.game_logger.log_game_event(f"Initial direction of snake: {self.direction}")
 
         # Game state
         self.score = 0
@@ -52,6 +62,16 @@ class SnakeEndless(ctk.CTkCanvas):
         self.next_shorten_food_score = 100
         self.next_food_score = 0
 
+        self.game_logger.log_game_event(f"Initial score: {self.score}")
+        self.game_logger.log_game_event(f"Initial special score: {self.special_score}")
+        self.game_logger.log_game_event(f"Initial shorten score: {self.shorten_score}")
+        self.game_logger.log_game_event(f"Game over flag: {self.game_over_flag}")
+        self.game_logger.log_game_event(f"Game paused: {self.paused}")
+        self.game_logger.log_game_event(f"Has changed direction: {self.has_changed_direction}")
+        self.game_logger.log_game_event(f"Next special food score: {self.next_special_food_score}")
+        self.game_logger.log_game_event(f"Next shorten food score: {self.next_shorten_food_score}")
+        self.game_logger.log_game_event(f"Next food score: {self.next_food_score}")
+
         # Time-related variables
         self.start_time = None
         self.paused_time = None
@@ -62,6 +82,21 @@ class SnakeEndless(ctk.CTkCanvas):
         self.pause_duration = 0
         self.high_score_time = 0
         self.current_time = 0
+        self.get_time_score = 0
+        self.get_snake_length = 0
+
+        self.game_logger.log_game_event("Time-related variables initialized.")
+        self.game_logger.log_game_event(f"Start time: {self.start_time}")
+        self.game_logger.log_game_event(f"Paused time: {self.paused_time}")
+        self.game_logger.log_game_event(f"Total paused time: {self.total_paused_time}")
+        self.game_logger.log_game_event(f"Total time played: {self.total_time_played}")
+        self.game_logger.log_game_event(f"Total time paused: {self.total_time_paused}")
+        self.game_logger.log_game_event(f"Last direction change time: {self.last_direction_change_time}") # pylint: disable=line-too-long
+        self.game_logger.log_game_event(f"Pause duration: {self.pause_duration}")
+        self.game_logger.log_game_event(f"High score time: {self.high_score_time}")
+        self.game_logger.log_game_event(f"Current time: {self.current_time}")
+        self.game_logger.log_game_event(f"Get time score: {self.get_time_score}")
+        self.game_logger.log_game_event(f"Get snake length: {self.get_snake_length}")
 
         # High scores
         self.high_score = 0
@@ -69,12 +104,16 @@ class SnakeEndless(ctk.CTkCanvas):
         self.special_score_high_score = 0
         self.shorten_score_high_score = 0
 
+        self.game_logger.log_game_event("High scores initialized")
+        self.game_logger.log_game_event(f"High score: {self.high_score}")
+        self.game_logger.log_game_event(f"Snake length high score: {self.snake_length_high_score}")
+        self.game_logger.log_game_event(f"Special score high score: {self.special_score_high_score}") # pylint: disable=line-too-long
+        self.game_logger.log_game_event(f"Shorten score high score: {self.shorten_score_high_score}") # pylint: disable=line-too-long
+
         # Other variables
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.random_number_off_shorten_food = 0
-        self.get_time_score = 0
-        self.get_snake_length = 0
         self.get_special_high_score = 0
         self.get_shorten_high_score = 0
 
@@ -97,7 +136,7 @@ class SnakeEndless(ctk.CTkCanvas):
         self.game_labels_panel_2 = GameLabelsPanel(parent, self.game_logger,  self.game_config)
         self.game_config = GameConfig(self.game_logger, 'snake_endless')
         self.game_labels_panel_2.endless_create_game_labels()
-        self.snake_length = self.game_config.SNAKE_LENGTH
+
         self.configfile()
 
     def configfile(self):

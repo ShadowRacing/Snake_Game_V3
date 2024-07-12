@@ -20,11 +20,11 @@ except FileNotFoundError as e:
 
 # Load colors from JSON file
 try:
-    with open(os.path.join(script_dir, '..', 'Themes', 'colors.json'), 'r', encoding='utf-8') as f: # pylint: disable=line-too-long
-        COLORS_DICT = json.load(f)
+    with open(os.path.join(script_dir, '..', 'Themes', 'colors.json'), 'r', encoding='utf-8') as colors: # pylint: disable=line-too-long
+        COLORS_DICT = json.load(colors)
 
-    with open(os.path.join(script_dir, '..', 'Themes', 'snake_colors.json'), 'r', encoding='utf-8') as f: # pylint: disable=line-too-long
-        SNAKE_COLOR_DICT = json.load(f)
+    with open(os.path.join(script_dir, '..', 'Themes', 'snake_colors.json'), 'r', encoding='utf-8') as colors: # pylint: disable=line-too-long
+        SNAKE_COLOR_DICT = json.load(colors)
 except FileNotFoundError as e:
     traceback.print_exc(e)
 

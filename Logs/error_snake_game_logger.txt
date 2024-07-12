@@ -1879,3 +1879,576 @@ TypeError: SnakeGameApp.create_and_place_image_label() missing 4 required positi
 
 
 
+[2024-07-08 19:58:31] 
+
+
+[2024-07-08 19:58:31] Started the Error Log File
+[2024-07-08 20:20:14] No errors occurred
+[2024-07-08 20:20:14] Closed the Error Log File
+
+
+
+
+[2024-07-08 20:23:10] 
+
+
+[2024-07-08 20:23:10] Started the Error Log File
+[2024-07-08 20:23:16] No errors occurred
+[2024-07-08 20:23:16] Closed the Error Log File
+
+
+
+
+[2024-07-08 20:25:49] 
+
+
+[2024-07-08 20:25:49] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 440, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 584, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 126, in __init__
+    self.create_and_place_image_label(self.snake_canvas, 0, 0, 'Images/snake.png')
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 202, in create_and_place_image_label
+    my_image = ctk.CTkImage(light_image=Image.open(image_path),
+                                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Images/snake.png'
+[2024-07-08 20:25:58] No errors occurred
+[2024-07-08 20:25:58] Closed the Error Log File
+
+
+
+
+[2024-07-08 20:30:16] 
+
+
+[2024-07-08 20:30:16] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 157, in classic_snake_command
+    self.functions['classic_snake']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 440, in classic_snake
+    self.start_game("classic_snake")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 584, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 127, in __init__
+    self.create_and_place_image_label(self.snake_canvas, 0, 0, 'Images/snake.png')
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 203, in create_and_place_image_label
+    my_image = ctk.CTkImage(light_image=Image.open(image_path),
+                                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Images/snake.png'
+[2024-07-08 20:30:18] No errors occurred
+[2024-07-08 20:30:18] Closed the Error Log File
+
+
+
+
+[2024-07-08 20:31:42] 
+
+
+[2024-07-08 20:31:42] Started the Error Log File
+[2024-07-08 20:31:46] No errors occurred
+[2024-07-08 20:31:46] Closed the Error Log File
+
+
+
+
+[2024-07-08 20:32:13] 
+
+
+[2024-07-08 20:32:13] Started the Error Log File
+[2024-07-08 20:32:17] No errors occurred
+[2024-07-08 20:32:17] Closed the Error Log File
+
+
+
+
+[2024-07-12 20:33:07] 
+
+
+[2024-07-12 20:33:07] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'endless_reset_high_score_time_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 166, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 448, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 690, in start_game
+    self.create_button_panel.create_endless_reset_high_score_time_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 939, in create_endless_reset_high_score_time_button
+    self.endless_reset_high_score_time_state = self.config.get('Settings', 'endless_reset_high_score_time_state') # pylint: disable=line-too-long
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'endless_reset_high_score_time_state' in section: 'Settings'
+[2024-07-12 20:33:31] No errors occurred
+[2024-07-12 20:33:31] Closed the Error Log File
+
+
+
+
+[2024-07-12 20:35:12] 
+
+
+[2024-07-12 20:35:12] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 604, in update_button_state
+    self.config.set('Settings', 'endless_reset_high_score_button_state', self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 604, in update_button_state
+    self.config.set('Settings', 'endless_reset_high_score_button_state', self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 604, in update_button_state
+    self.config.set('Settings', 'endless_reset_high_score_button_state', self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 604, in update_button_state
+    self.config.set('Settings', 'endless_reset_high_score_button_state', self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+[2024-07-12 20:35:29] No errors occurred
+[2024-07-12 20:35:29] Closed the Error Log File
+
+
+
+
+[2024-07-12 20:36:14] 
+
+
+[2024-07-12 20:36:14] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 604, in update_button_state
+    self.config.set('Settings', 'endless_reset_high_score_button_state', self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 604, in update_button_state
+    self.config.set('Settings', 'endless_reset_high_score_button_state', self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+[2024-07-12 20:36:22] No errors occurred
+[2024-07-12 20:36:22] Closed the Error Log File
+
+
+
+
+[2024-07-12 20:36:26] 
+
+
+[2024-07-12 20:36:26] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 604, in update_button_state
+    self.config.set('Settings', 'endless_reset_high_score_button_state', self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+[2024-07-12 20:36:30] No errors occurred
+[2024-07-12 20:36:30] Closed the Error Log File
+
+
+
+
+[2024-07-12 20:43:23] 
+
+
+[2024-07-12 20:43:23] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 604, in update_button_state
+    self.config.set('Settings', 'endless_reset_high_score_button_state', self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+[2024-07-12 20:43:29] No errors occurred
+[2024-07-12 20:43:29] Closed the Error Log File
+
+
+
+
+[2024-07-12 20:43:54] 
+
+
+[2024-07-12 20:43:54] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 614, in update_button_state
+    self.endless_reset_high_score_button.configure(state=self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 273, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 614, in update_button_state
+    self.endless_reset_high_score_button.configure(state=self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-07-12 20:44:01] No errors occurred
+[2024-07-12 20:44:01] Closed the Error Log File
+
+
+
+
+[2024-07-12 20:46:31] 
+
+
+[2024-07-12 20:46:31] Started the Error Log File
+[2024-07-12 21:04:22] No errors occurred
+[2024-07-12 21:04:22] Closed the Error Log File
+
+
+
+
+[2024-07-12 21:04:36] 
+
+
+[2024-07-12 21:04:36] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_classic_game.py", line 262, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 604, in update_button_state
+    self.config.set('Settings', 'endless_reset_high_score_button_state', self.endless_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1219, in set
+    self._validate_value_types(option=option, value=value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1204, in _validate_value_types
+    raise TypeError("option values must be strings")
+TypeError: option values must be strings
+[2024-07-12 21:04:48] No errors occurred
+[2024-07-12 21:04:48] Closed the Error Log File
+
+
+
+
+[2024-07-12 21:06:21] 
+
+
+[2024-07-12 21:06:21] Started the Error Log File
+[2024-07-12 21:06:48] No errors occurred
+[2024-07-12 21:06:48] Closed the Error Log File
+
+
+
+
+[2024-07-12 21:08:58] 
+
+
+[2024-07-12 21:08:58] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'endless_reset_high_score_time_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 166, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 448, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 690, in start_game
+    self.create_button_panel.create_endless_reset_high_score_time_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 939, in create_endless_reset_high_score_time_button
+    self.endless_reset_high_score_time_state = self.config.get('Settings', 'endless_reset_high_score_time_state') # pylint: disable=line-too-long
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'endless_reset_high_score_time_state' in section: 'Settings'
+[2024-07-12 21:09:01] No errors occurred
+[2024-07-12 21:09:01] Closed the Error Log File
+
+
+
+
+[2024-07-12 21:13:49] 
+
+
+[2024-07-12 21:13:49] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'endless_reset_high_score_snake_length_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 166, in snake_endless_command
+    self.functions['snake_endless']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 448, in snake_endless
+    self.start_game("snake_endless")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 691, in start_game
+    self.create_button_panel.create_endless_reset_high_score_snake_length()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 950, in create_endless_reset_high_score_snake_length
+    self.endless_reset_high_score_snake_length_state = self.config.get('Settings', 'endless_reset_high_score_snake_length_state') # pylint: disable=line-too-long
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'endless_reset_high_score_snake_length_state' in section: 'Settings'
+[2024-07-12 21:13:56] No errors occurred
+[2024-07-12 21:13:56] Closed the Error Log File
+
+
+
+
+[2024-07-12 21:14:48] 
+
+
+[2024-07-12 21:14:48] Started the Error Log File
+[2024-07-12 21:15:18] No errors occurred
+[2024-07-12 21:15:18] Closed the Error Log File
+
+
+
+
+[2024-07-12 21:15:19] 
+
+
+[2024-07-12 21:15:19] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'leveling_reset_high_score_time_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 175, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 456, in snake_leveling
+    self.start_game("snake_leveling")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 699, in start_game
+    self.create_button_panel.create_leveling_reset_high_score_time_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 993, in create_leveling_reset_high_score_time_button
+    self.leveling_reset_high_score_time_state = self.config.get('Settings', 'leveling_reset_high_score_time_state') # pylint: disable=line-too-long
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'leveling_reset_high_score_time_state' in section: 'Settings'
+[2024-07-12 21:15:42] No errors occurred
+[2024-07-12 21:15:42] Closed the Error Log File
+
+
+
+
+[2024-07-12 21:17:12] 
+
+
+[2024-07-12 21:17:12] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\collections\__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'leveling_reset_high_score_snake_length_state'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 175, in snake_leveling_command
+    self.functions['snake_leveling']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 456, in snake_leveling
+    self.start_game("snake_leveling")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 700, in start_game
+    self.create_button_panel.create_leveling_reset_high_score_snake_length_button()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 1003, in create_leveling_reset_high_score_snake_length_button
+    self.leveling_reset_high_score_snake_length_state = self.config.get('Settings', 'leveling_reset_high_score_snake_length_state') # pylint: disable=line-too-long
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'leveling_reset_high_score_snake_length_state' in section: 'Settings'
+[2024-07-12 21:17:16] No errors occurred
+[2024-07-12 21:17:16] Closed the Error Log File
+
+
+
+
+[2024-07-12 21:18:16] 
+
+
+[2024-07-12 21:18:16] Started the Error Log File
+[2024-07-12 21:23:07] No errors occurred
+[2024-07-12 21:23:07] Closed the Error Log File
+
+
+
+

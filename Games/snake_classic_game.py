@@ -10,6 +10,7 @@ import time
 import configparser
 import traceback
 from os import path
+from PIL import Image
 import customtkinter as ctk
 
 # Importing thhe necessary modules from other folders
@@ -35,7 +36,8 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.config_path = path.join(self.config_dir, '..','config.ini')
         self.config = configparser.ConfigParser()
         self.config.read(self.config_path)
-        self.game_logger.log_game_event(f"Config file read in Classic snake game fil: {self.config_path}")
+        self.config_path_icon = path.join(self.config_dir, "..", 'app_icon.ico')
+        self.game_logger.log_game_event(f"Config file read in Classic snake game fil: {self.config_path}") # pylint: disable=line-too-long
 
         # Game configuration
         self.snake_length = self.game_config.SNAKE_LENGTH
@@ -45,6 +47,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.highlightbackground = game_config.HIGHLIGHTBACKGROUND
         self.direction = self.game_config.DIRECTIONOFFSNAKE
 
+        self.game_logger.log_game_event(f"Snake length: {self.snake_length}")
         self.game_logger.log_game_event(f"Game width: {self.width}")
         self.game_logger.log_game_event(f"Game height: {self.height}")
         self.game_logger.log_game_event(f"Highlight thickness: {self.highlightthickness}")
@@ -81,7 +84,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.game_logger.log_game_event(f"Total paused time: {self.total_paused_time}")
         self.game_logger.log_game_event(f"Total time played: {self.total_time_played}")
         self.game_logger.log_game_event(f"Total time paused: {self.total_time_paused}")
-        self.game_logger.log_game_event(f"Last direction change time: {self.last_direction_change_time}")
+        self.game_logger.log_game_event(f"Last direction change time: {self.last_direction_change_time}") # pylint: disable=line-too-long
         self.game_logger.log_game_event(f"Pause duration: {self.pause_duration}")
         self.game_logger.log_game_event(f"High score time: {self.high_score_time}")
         self.game_logger.log_game_event(f"Current time: {self.current_time}")
@@ -123,6 +126,10 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.config.set('Settings', 'classic_reset_high_score_snake_length_button_state', 'normal')
         self.write_changes_to_configini()
 
+        try:
+            self.create_and_place_image_label(self.snake_canvas,5, 635, self.config_path_icon)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
         # call the configfile method
         self.configfile()
 
@@ -130,10 +137,6 @@ class SnakeClassicGame(ctk.CTkCanvas):
         """
         Method to read the config file and set the game mode to classic_snake.
         """
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, '..','config.ini')
-        self.config = configparser.ConfigParser()
-        self.config.read(self.config_path)
         self.game_logger.log_game_event("Config file read.")
 
         try:
@@ -193,6 +196,17 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.start_screen()
         self.bind_and_unbind_keys()
 
+    def create_and_place_image_label(self, canvas, x, y, image_path):
+        """
+        Create and place a CTkImage and CTkLabel on the specified canvas.
+        """
+        my_image = ctk.CTkImage(light_image=Image.open(image_path),
+                                dark_image=Image.open(image_path),
+                                size=(160, 160))
+
+        image_label = ctk.CTkLabel(canvas, image=my_image, text="")
+        image_label.place(x=x, y=y)
+
     def delete_game_labels(self):
         """
         Method to delete the game labels.
@@ -221,7 +235,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.state = 'start_screen'
         self.config.set('Classic_Snake_Settings', 'state', self.state)
         self.write_changes_to_configini()
-        self.game_logger.log_game_event("Set the game state to start_screen. And wrote changes to config.ini.")
+        self.game_logger.log_game_event("Set the game state to start_screen. And wrote changes to config.ini.") # pylint: disable=line-too-long
 
     def start_game(self, event=None):
         # pylint: disable=unused-argument

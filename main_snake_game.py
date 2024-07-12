@@ -15,27 +15,36 @@ from PIL import Image
 import customtkinter as ctk
 
 # Importing thhe necessary modules from other folders
-from Logs.gamelogger_snake_game import GameLogger , ErrorgameLogger
+# Configuration
 from Configuration.constants_snake_game import GameConstants, SCREEN_SIZE_FULLSCREEN, FONT_LIST
 from Configuration.gameconfig_snake_game import GameConfig
-from Logic.buttonpanel_snake_game import ClickButtonPanel, ButtonCommands # pylint: disable=line-too-long
-from Logic.buttonpanelreset_snake_game import ResetSettingsPanel
-from Logic.optionmenubuttonpanel import OptionButtonPanel
-from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels # pylint: disable=line-too-long
-from Logic.game_labelpanel import GameLabelsPanel
-from Logic.config_ini_initials import ConfigIni
-from Logic.snake_challange_choice import ChallangeChoices
-from Logic.snake_challange_settings import ChallangeSettings
-from Logic.screen_size_changer_snake_game import ScreenSize
-from Logic.resetconfigvalues import ResetConfigValues
-from Logic.little_snake_game import MiniSnakeGame
-from Logic.home_screen_manager import HomeScreenManager
+
+# Games
+from Games.snake_challange_games import FoodTimeAttack
 from Games.snake_classic_game import SnakeClassicGame
 from Games.snake_endless_game import SnakeEndless
 from Games.snake_leveling_game import SnakeLeveling
-from Games.snake_challange_games import FoodTimeAttack
-from Themes.theme_updater_snake_game import ThemeUpdater
+
+# Logic
+from Logic.buttonpanel_snake_game import ClickButtonPanel, ButtonCommands
+from Logic.buttonpanelreset_snake_game import ResetSettingsPanel
+from Logic.config_ini_initials import ConfigIni
+from Logic.game_labelpanel import GameLabelsPanel
+from Logic.home_screen_manager import HomeScreenManager
+from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels
+from Logic.little_snake_game import MiniSnakeGame
+from Logic.optionmenubuttonpanel import OptionButtonPanel
+from Logic.resetconfigvalues import ResetConfigValues
+from Logic.screen_size_changer_snake_game import ScreenSize
+from Logic.snake_challange_choice import ChallangeChoices
+from Logic.snake_challange_settings import ChallangeSettings
+
+# Logs
+from Logs.gamelogger_snake_game import GameLogger, ErrorgameLogger
+
+# Themes
 from Themes.contrast_updater_snake_game import UpdateContrast
+from Themes.theme_updater_snake_game import ThemeUpdater
 
 
 
@@ -98,7 +107,7 @@ class SnakeGameApp:
 
 
         self.text_name = "Shadow's Snake Game"
-        self.text_version = "Version: 0.2.9"
+        self.text_version = "Version: 0.3.0"
         self.text_developer = "Developer: Shadow"
         self.font_50 = ("Helvetica", 50)
         self.font_30 = ("Helvetica", 30)
@@ -609,7 +618,6 @@ class SnakeGameApp:
         if game_type == "classic_snake":
             self.classic_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.classic_snake_canvas
-            self.create_and_place_image_label(self.main_canvas, 5, 635, self.config_path_icon)
         elif game_type == "snake_endless":
             self.endless_snake_canvas.pack(expand=True, fill="both")
             self.main_canvas = self.endless_snake_canvas
@@ -870,8 +878,8 @@ class SnakeGameApp:
                                         text="Patchnotes", font=FONT_LIST[15]) # pylint: disable=line-too-long
             self.patchnotes_label.place(x=250, y=10)
             self.scrollable_frame = ctk.CTkScrollableFrame(self.info_canvas, width=850, height=600, fg_color='Grey10') # pylint: disable=line-too-long
-            with open("patchnotes.json", "r", encoding='utf-8') as file:
-                patchnotes = json.load(file)
+            with open("patchnotes.json", "r", encoding='utf-8') as configfile:
+                patchnotes = json.load(configfile)
                 for note in patchnotes:
                     version_label = ctk.CTkLabel(self.scrollable_frame,
                                         height = 30,

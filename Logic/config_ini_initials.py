@@ -163,7 +163,7 @@ class ConfigIni:
                 self.config.add_section('Classic_Snake_Settings')
 
             for option, value in classic_snake_settings.items():
-                if not self.config.has_option('Classic_Snake_Settings', option):
+                if self.config.has_option('Classic_Snake_Settings', option):
                     self.config.set('Classic_Snake_Settings', option, value)
                     self.write_changes_to_configini()
 
@@ -213,7 +213,7 @@ class ConfigIni:
                 self.config.add_section('Endless_Snake_Settings')
 
             for option, value in endless_snake_settings.items():
-                if not self.config.has_option('Endless_Snake_Settings', option):
+                if self.config.has_option('Endless_Snake_Settings', option):
                     self.config.set('Endless_Snake_Settings', option, value)
                     self.write_changes_to_configini()
 
@@ -238,8 +238,8 @@ class ConfigIni:
                 'shorten_snake_high_score' : '0',
                 'next_special_food_score' : '50',
                 'next_shorten_food_score' : '100',
-                'level' : '1',
-                'level_high_score' : '1',
+                'level' : '0',
+                'level_high_score' : '0',
                 'xp' : '0',
                 'xp_high_score' : '0',
                 'initial_xp_needed' : '100',
@@ -271,7 +271,7 @@ class ConfigIni:
                 self.config.add_section('Leveling_Snake_Settings')
 
             for option, value in leveling_snake_settings.items():
-                if not self.config.has_option('Leveling_Snake_Settings', option):
+                if self.config.has_option('Leveling_Snake_Settings', option):
                     self.config.set('Leveling_Snake_Settings', option, value)
                     self.write_changes_to_configini()
 
@@ -329,7 +329,7 @@ class ConfigIni:
                 self.config.add_section('food_time_attack_Settings')
 
             for option, value in food_time_attack_settings.items():
-                if not self.config.has_option('food_time_attack_Settings', option):
+                if self.config.has_option('food_time_attack_Settings', option):
                     self.config.set('food_time_attack_Settings', option, value)
                     self.write_changes_to_configini()
 

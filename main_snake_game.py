@@ -47,7 +47,6 @@ from Themes.contrast_updater_snake_game import UpdateContrast
 from Themes.theme_updater_snake_game import ThemeUpdater
 
 
-
 # Define the main application class
 class SnakeGameApp:
     """
@@ -668,7 +667,7 @@ class SnakeGameApp:
             self.main_canvas = self.challange_settings_canvas
 
         # Initializing the button panel and label panel
-        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
+        #self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
         self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.button_commands = ButtonCommands(self.game_logger, self.functions)
@@ -1173,10 +1172,13 @@ class SnakeGameApp:
                 self.classic_snake_canvas.destroy_button_panel()
             if self.main_canvas == self.endless_snake_canvas:
                 self.endless_snake_canvas.delete_game_labels_()
+                self.endless_snake_canvas.destroy_button_panel()
             if self.main_canvas == self.leveling_snake_canvas:
                 self.leveling_snake_canvas.delete_game_labels__()
+                self.leveling_snake_canvas.destroy_button_panel()
             if self.main_canvas == self.food_time_attack_canvas:
                 self.food_time_attack_canvas.delete_game_labels___()
+                #self.food_time_attack_canvas.destroy_button_panel()
             if self.main_canvas == self.info_general_canvas:
                 self.close_mini_snake()
 

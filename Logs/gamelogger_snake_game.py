@@ -59,6 +59,7 @@ class ErrorgameLogger:
     Class for logging the errors of the Shadows Snake game.
     """
     def __init__(self):
+        self.errors_occurred = False
         # Initializing variables
         self.current_datetime = datetime.datetime.now()
         # Get the directory of the current script
@@ -80,6 +81,7 @@ class ErrorgameLogger:
         Method to log errors
         """
         #Method to log errors
+        self.errors_occurred = True
         self.current_datetime = datetime.datetime.now()
         formatted_datetime = self.current_datetime.strftime('%Y-%m-%d %H:%M:%S')
         log_line = f"[{formatted_datetime}] {error}\n"
@@ -91,7 +93,8 @@ class ErrorgameLogger:
         """
         #This function will be called when the window is closed
         try:
-            self.log_error("No errors occurred")
+            if self.errors_occurred:
+                self.log_error("No errors occurred")
             self.log_error("Closed the Error Log File\n\n\n\n")
         finally:
             self.error_log_filename.close()

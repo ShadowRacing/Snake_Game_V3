@@ -81,6 +81,8 @@ class GameConstants:
     GAME_LABEL_HEIGHT = 30
     GAME_LABEL_CORNER_RADIUS = 6
     ANCHOR = 'w'
+    GAME_CANVAS_PLACE_X = 350
+    GAME_CANVAS_PLACE_Y = 50
 
 
 

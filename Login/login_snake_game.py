@@ -38,6 +38,12 @@ class LoginAndUserScreen():
         self.login_frame = ctk.CTkFrame(self.parent, fg_color="black")
         self.login_frame.pack(fill="both", expand=True)
 
+        self.login_label = ctk.CTkLabel(self.login_frame, text="Login to play:", font=("Helvetica", 40), fg_color="black") # pylint: disable=line-too-long
+        self.login_label.pack(pady=10)
+
+        self.snake_game_label = ctk.CTkLabel(self.login_frame, text="Wim's Snake Game", font=("Helvetica", 40), fg_color="black") # pylint: disable=line-too-long
+        self.snake_game_label.pack(pady=10)
+
         self.username_label = ctk.CTkLabel(self.login_frame, text="Username")
         self.username_label.pack(pady=10)
         self.username_entry = ctk.CTkComboBox(self.login_frame, command=self.update_usernames_combobox) # pylint: disable=line-too-long

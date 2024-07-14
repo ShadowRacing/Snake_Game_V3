@@ -534,3 +534,96 @@ TypeError: LoginAndUserScreen.update_usernames_combobox() takes 1 positional arg
 
 
 
+[2024-07-14 12:05:05] 
+
+
+[2024-07-14 12:05:05] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: LoginAndUserScreen.update_usernames_combobox() takes 1 positional argument but 2 were given
+[2024-07-14 13:49:41] No errors occurred
+[2024-07-14 13:49:41] Closed the Error Log File
+
+
+
+
+[2024-07-14 13:49:44] 
+
+
+[2024-07-14 13:49:44] Started the Error Log File
+[2024-07-14 13:50:25] No errors occurred
+[2024-07-14 13:50:25] Closed the Error Log File
+
+
+
+
+[2024-07-14 13:50:27] 
+
+
+[2024-07-14 13:50:27] Started the Error Log File
+[2024-07-14 13:50:49] No errors occurred
+[2024-07-14 13:50:49] Closed the Error Log File
+
+
+
+
+[2024-07-14 13:51:01] 
+
+
+[2024-07-14 13:51:01] Started the Error Log File
+[2024-07-14 13:51:42] No errors occurred
+[2024-07-14 13:51:42] Closed the Error Log File
+
+
+
+
+[2024-07-14 13:51:44] 
+
+
+[2024-07-14 13:51:44] Started the Error Log File
+[2024-07-14 13:51:54] No errors occurred
+[2024-07-14 13:51:54] Closed the Error Log File
+
+
+
+
+[2024-07-14 13:51:56] 
+
+
+[2024-07-14 13:51:56] Started the Error Log File
+[2024-07-14 13:53:16] No errors occurred
+[2024-07-14 13:53:16] Closed the Error Log File
+
+
+
+
+[2024-07-14 13:53:18] 
+
+
+[2024-07-14 13:53:18] Started the Error Log File
+[2024-07-14 13:53:40] No errors occurred
+[2024-07-14 13:53:40] Closed the Error Log File
+
+
+
+
+[2024-07-14 13:53:42] 
+
+
+[2024-07-14 13:53:42] Started the Error Log File
+[2024-07-14 14:02:11] No errors occurred
+[2024-07-14 14:02:11] Closed the Error Log File
+
+
+
+

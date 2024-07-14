@@ -38,6 +38,7 @@ from Logic.resetconfigvalues import ResetConfigValues
 from Logic.screen_size_changer_snake_game import ScreenSize
 from Logic.snake_challange_choice import ChallangeChoices
 from Logic.snake_challange_settings import ChallangeSettings
+from Login.login_snake_game import LoginAndUserScreen
 
 # Logs
 from Logs.gamelogger_snake_game import GameLogger, ErrorgameLogger
@@ -223,6 +224,9 @@ class SnakeGameApp:
         self.first_button_press_time = None
 
         # Initializing the button panel and label panel
+
+        self.login_screen = LoginAndUserScreen(self.root) # pylint: disable=line-too-long
+
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
 
         self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
@@ -255,9 +259,15 @@ class SnakeGameApp:
         self.settings_labels.update_initial_game_size()
 
         # Create the loading screen
-        self.create_loading_screen()
+        #self.create_loading_screen()
 
         self.root.protocol("WM_DELETE_WINDOW", self.confirm_quit)
+
+    def create_login_screen(self):
+        """
+        Start the login screen.
+        """
+        self.login_screen.create_login_screen()
 
     def create_circle(self, canvas, x, y, r, **kwargs):
         """

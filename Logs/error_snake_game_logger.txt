@@ -8,3 +8,529 @@
 
 
 
+[2024-07-14 10:31:45] 
+
+
+[2024-07-14 10:31:45] Started the Error Log File
+[2024-07-14 10:31:47] No errors occurred
+[2024-07-14 10:31:47] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:31:59] 
+
+
+[2024-07-14 10:31:59] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 126, in <lambda>
+    self.result_label.after(1000, lambda: self.switch_to_user_screen(username))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LoginAndUserScreen' object has no attribute 'switch_to_user_screen'
+[2024-07-14 10:32:51] No errors occurred
+[2024-07-14 10:32:51] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:33:30] 
+
+
+[2024-07-14 10:33:30] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 126, in <lambda>
+    self.result_label.after(1000, lambda: self.switch_to_user_screen(username))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LoginAndUserScreen' object has no attribute 'switch_to_user_screen'
+[2024-07-14 10:33:53] No errors occurred
+[2024-07-14 10:33:53] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:38:37] 
+
+
+[2024-07-14 10:38:37] Started the Error Log File
+[2024-07-14 10:38:48] No errors occurred
+[2024-07-14 10:38:48] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:42:35] 
+
+
+[2024-07-14 10:42:35] Started the Error Log File
+[2024-07-14 10:42:40] No errors occurred
+[2024-07-14 10:42:40] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:42:43] 
+
+
+[2024-07-14 10:42:43] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 127, in <lambda>
+    self.result_label.after(1000, lambda: self.switch_to_user_screen(username))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 184, in switch_to_user_screen
+    self.on_login_success_callback(username)
+TypeError: SnakeGameApp.show_loading_screen_after_login() takes 1 positional argument but 2 were given
+[2024-07-14 10:42:59] No errors occurred
+[2024-07-14 10:42:59] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:45:09] 
+
+
+[2024-07-14 10:45:09] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 127, in <lambda>
+    self.result_label.after(1000, lambda: self.switch_to_user_screen(username))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 184, in switch_to_user_screen
+    self.on_login_success_callback(username)
+TypeError: SnakeGameApp.show_loading_screen_after_login() takes 1 positional argument but 2 were given
+[2024-07-14 10:45:18] No errors occurred
+[2024-07-14 10:45:18] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:47:25] 
+
+
+[2024-07-14 10:47:25] Started the Error Log File
+[2024-07-14 10:47:41] No errors occurred
+[2024-07-14 10:47:41] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:48:57] 
+
+
+[2024-07-14 10:48:57] Started the Error Log File
+[2024-07-14 10:49:11] No errors occurred
+[2024-07-14 10:49:11] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:49:46] 
+
+
+[2024-07-14 10:49:46] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 143, in <lambda>
+    self.result_label.after(3000, lambda: self.result_label.configure(text="", fg_color="black")) # pylint: disable=line-too-long
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 206, in configure
+    self._label.configure(text=self._text)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1702, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1692, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!ctkframe2.!ctklabel3.!label"
+[2024-07-14 10:50:02] No errors occurred
+[2024-07-14 10:50:02] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:51:09] 
+
+
+[2024-07-14 10:51:09] Started the Error Log File
+[2024-07-14 10:51:19] No errors occurred
+[2024-07-14 10:51:19] Closed the Error Log File
+
+
+
+
+[2024-07-14 10:51:51] 
+
+
+[2024-07-14 10:51:51] Started the Error Log File
+[2024-07-14 10:56:31] No errors occurred
+[2024-07-14 10:56:31] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:01:38] 
+
+
+[2024-07-14 11:01:38] Started the Error Log File
+[2024-07-14 11:13:50] No errors occurred
+[2024-07-14 11:13:50] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:14:08] 
+
+
+[2024-07-14 11:14:08] Started the Error Log File
+[2024-07-14 11:23:32] No errors occurred
+[2024-07-14 11:23:32] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:23:44] 
+
+
+[2024-07-14 11:23:44] Started the Error Log File
+[2024-07-14 11:24:23] No errors occurred
+[2024-07-14 11:24:23] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:24:33] 
+
+
+[2024-07-14 11:24:33] Started the Error Log File
+[2024-07-14 11:24:40] No errors occurred
+[2024-07-14 11:24:40] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:30:46] 
+
+
+[2024-07-14 11:30:46] Started the Error Log File
+[2024-07-14 11:33:48] No errors occurred
+[2024-07-14 11:33:48] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:38:49] 
+
+
+[2024-07-14 11:38:49] Started the Error Log File
+[2024-07-14 11:40:48] No errors occurred
+[2024-07-14 11:40:48] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:40:49] 
+
+
+[2024-07-14 11:40:49] Started the Error Log File
+[2024-07-14 11:41:02] No errors occurred
+[2024-07-14 11:41:02] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:42:13] 
+
+
+[2024-07-14 11:42:13] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 376, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 422, in create_home_screen
+    self.username_label = ctk.CTkLabel(self.main_canvas, text=f"User: {self.get_user_name}", font=("Helvetica", 20), fg="white", bg="Grey20") # pylint: disable=line-too-long
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 101, in __init__
+    check_kwargs_empty(kwargs, raise_error=True)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\utility\utility_functions.py", line 18, in check_kwargs_empty
+    raise ValueError(f"{list(kwargs_dict.keys())} are not supported arguments. Look at the documentation for supported arguments.")
+ValueError: ['fg', 'bg'] are not supported arguments. Look at the documentation for supported arguments.
+[2024-07-14 11:42:40] No errors occurred
+[2024-07-14 11:42:40] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:42:41] 
+
+
+[2024-07-14 11:42:41] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 376, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 422, in create_home_screen
+    self.username_label = ctk.CTkLabel(self.main_canvas, text=f"User: {self.get_user_name}", font=("Helvetica", 20), fg="white", bg="Grey20") # pylint: disable=line-too-long
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_label.py", line 101, in __init__
+    check_kwargs_empty(kwargs, raise_error=True)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\utility\utility_functions.py", line 18, in check_kwargs_empty
+    raise ValueError(f"{list(kwargs_dict.keys())} are not supported arguments. Look at the documentation for supported arguments.")
+ValueError: ['fg', 'bg'] are not supported arguments. Look at the documentation for supported arguments.
+[2024-07-14 11:44:03] No errors occurred
+[2024-07-14 11:44:03] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:44:04] 
+
+
+[2024-07-14 11:44:04] Started the Error Log File
+[2024-07-14 11:44:28] No errors occurred
+[2024-07-14 11:44:28] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:44:29] 
+
+
+[2024-07-14 11:44:29] Started the Error Log File
+[2024-07-14 11:45:00] No errors occurred
+[2024-07-14 11:45:00] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:45:02] 
+
+
+[2024-07-14 11:45:02] Started the Error Log File
+[2024-07-14 11:45:51] No errors occurred
+[2024-07-14 11:45:51] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:45:53] 
+
+
+[2024-07-14 11:45:53] Started the Error Log File
+[2024-07-14 11:49:23] No errors occurred
+[2024-07-14 11:49:23] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:49:24] 
+
+
+[2024-07-14 11:49:24] Started the Error Log File
+[2024-07-14 11:50:17] No errors occurred
+[2024-07-14 11:50:17] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:50:18] 
+
+
+[2024-07-14 11:50:18] Started the Error Log File
+[2024-07-14 11:50:34] No errors occurred
+[2024-07-14 11:50:34] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:50:35] 
+
+
+[2024-07-14 11:50:35] Started the Error Log File
+[2024-07-14 11:50:52] No errors occurred
+[2024-07-14 11:50:52] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:50:53] 
+
+
+[2024-07-14 11:50:53] Started the Error Log File
+[2024-07-14 11:51:08] No errors occurred
+[2024-07-14 11:51:08] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:51:09] 
+
+
+[2024-07-14 11:51:09] Started the Error Log File
+[2024-07-14 11:51:58] No errors occurred
+[2024-07-14 11:51:58] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:51:59] 
+
+
+[2024-07-14 11:51:59] Started the Error Log File
+[2024-07-14 11:52:15] No errors occurred
+[2024-07-14 11:52:15] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:52:16] 
+
+
+[2024-07-14 11:52:16] Started the Error Log File
+[2024-07-14 11:52:33] No errors occurred
+[2024-07-14 11:52:33] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:52:34] 
+
+
+[2024-07-14 11:52:34] Started the Error Log File
+[2024-07-14 11:53:01] No errors occurred
+[2024-07-14 11:53:01] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:53:03] 
+
+
+[2024-07-14 11:53:03] Started the Error Log File
+[2024-07-14 11:54:24] No errors occurred
+[2024-07-14 11:54:24] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:54:25] 
+
+
+[2024-07-14 11:54:25] Started the Error Log File
+[2024-07-14 11:56:19] No errors occurred
+[2024-07-14 11:56:19] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:56:21] 
+
+
+[2024-07-14 11:56:21] Started the Error Log File
+[2024-07-14 11:56:32] No errors occurred
+[2024-07-14 11:56:32] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:59:10] 
+
+
+[2024-07-14 11:59:10] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: LoginAndUserScreen.update_usernames_combobox() takes 1 positional argument but 2 were given
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 101, in <lambda>
+    command=lambda v=value: self._button_callback(v),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\dropdown_menu.py", line 106, in _button_callback
+    self._command(value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_combobox.py", line 384, in _dropdown_callback
+    self._command(value)
+TypeError: LoginAndUserScreen.update_usernames_combobox() takes 1 positional argument but 2 were given
+[2024-07-14 11:59:32] No errors occurred
+[2024-07-14 11:59:32] Closed the Error Log File
+
+
+
+
+[2024-07-14 11:59:46] 
+
+
+[2024-07-14 11:59:46] Started the Error Log File
+[2024-07-14 12:03:32] No errors occurred
+[2024-07-14 12:03:32] Closed the Error Log File
+
+
+
+
+[2024-07-14 12:03:35] 
+
+
+[2024-07-14 12:03:35] Started the Error Log File
+[2024-07-14 12:03:40] No errors occurred
+[2024-07-14 12:03:40] Closed the Error Log File
+
+
+
+
+[2024-07-14 12:04:11] 
+
+
+[2024-07-14 12:04:11] Started the Error Log File
+[2024-07-14 12:04:20] No errors occurred
+[2024-07-14 12:04:20] Closed the Error Log File
+
+
+
+

@@ -85,9 +85,6 @@ class SnakeGameApp:
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
-        self.apply_theme()
-        self.update_contrast.apply_contrast(selected_value=None)
-
         # Write the changes to the config file
         try:
             with open(self.config_path, 'w', encoding='utf-8') as configfile:
@@ -225,7 +222,7 @@ class SnakeGameApp:
 
         # Initializing the button panel and label panel
 
-        self.login_screen = LoginAndUserScreen(self.root) # pylint: disable=line-too-long
+        self.login_screen = LoginAndUserScreen(self.root, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
 
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
 
@@ -261,13 +258,21 @@ class SnakeGameApp:
         # Create the loading screen
         #self.create_loading_screen()
 
+        self.create_login_screen_main()
+
         self.root.protocol("WM_DELETE_WINDOW", self.confirm_quit)
 
-    def create_login_screen(self):
+    def create_login_screen_main(self):
         """
         Start the login screen.
         """
         self.login_screen.create_login_screen()
+
+    def show_loading_screen_after_login(self):
+        """
+        Show the loading screen after login.
+        """
+        self.create_loading_screen()
 
     def create_circle(self, canvas, x, y, r, **kwargs):
         """
@@ -286,12 +291,14 @@ class SnakeGameApp:
         """
         Create the loading screen.
         """
+        self.apply_theme()
+        self.update_contrast.apply_contrast(selected_value=None)
         self.original_main_canvas = self.main_canvas
         self.loading_canvas = ctk.CTkCanvas(self.root, bg='Grey20', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
         self.loading_canvas.pack(expand=True, fill="both")
         self.loading_canvas.bind("<Configure>", self.update_loading_screen_position)
 
-        self.loading_canvas.after(1000, self.destroy_loading_screen)
+        self.loading_canvas.after(3000, self.destroy_loading_screen)
 
 
 
@@ -404,19 +411,19 @@ class SnakeGameApp:
         self.main_canvas.bind("<Configure>", self.update_text_position)
         # Create a CTkImage object
         self.create_and_place_image_label(self.main_canvas, 5, 635, self.config_path_icon)
-        # my_image = ctk.CTkImage(light_image=Image.open(self.config_path_icon),
-        #                         dark_image=Image.open(self.config_path_icon),
-        #                         size=(160, 160))
-
-        # # Create a CTkLabel to display the image
-        # image_label = ctk.CTkLabel(self.main_canvas, image=my_image, text="")
-
-        # Place the label at the bottom left of the window
-        # image_label.place(x=5, y=635)
         self.config.set('Settings', 'home_button_state', 'normal')
         self.config.set('Settings', 'classic_reset_high_score_button_state', 'normal')
         self.config.set('Settings', 'classic_reset_high_score_time_button_state', 'normal')
         self.config.set('Settings', 'classic_reset_high_score_snake_length_button_state', 'normal')
+
+        self.get_user_name = self.login_screen.get_user_name()
+        self.game_logger.log_game_event(f"User: {self.get_user_name}")
+
+        self.username_label = ctk.CTkLabel(self.main_canvas, text=f"User: {self.get_user_name}", font=("Helvetica", 20), fg_color="grey10", bg_color="Grey20") # pylint: disable=line-too-long
+        self.username_label.place(x=10, y=600)
+        #self.username_label.place(x=1100, y=10)
+        #self.username_label.place(x=1100, y=675)
+
         with open(self.config_path, 'w', encoding='utf-8') as configfile:
             self.config.write(configfile)
 

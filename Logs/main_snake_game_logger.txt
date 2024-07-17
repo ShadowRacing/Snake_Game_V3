@@ -1058,3 +1058,250 @@
 
 
 
+[2024-07-17 19:41:10] Started the app
+[2024-07-17 19:41:10] Started the GameApp Class
+[2024-07-17 19:41:10] Game mode: initial config
+[2024-07-17 19:41:10] Current Theme: Red
+[2024-07-17 19:41:10] Set initial theme to: Red
+[2024-07-17 19:41:10] Updated initial_theme in config.ini to: Red
+[2024-07-17 19:41:10] Current initial_theme in config.ini to: Red
+[2024-07-17 19:41:10] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 19:41:10] Resetting snake
+[2024-07-17 19:41:10] Set initial game size to: 600x600
+[2024-07-17 19:41:10] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 19:41:10] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 19:58:01] Closed the app
+
+
+
+
+[2024-07-17 19:58:04] Started the app
+[2024-07-17 19:58:04] Started the GameApp Class
+[2024-07-17 19:58:04] Game mode: initial config
+[2024-07-17 19:58:04] Current Theme: Red
+[2024-07-17 19:58:04] Set initial theme to: Red
+[2024-07-17 19:58:04] Updated initial_theme in config.ini to: Red
+[2024-07-17 19:58:04] Current initial_theme in config.ini to: Red
+[2024-07-17 19:58:04] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 19:58:04] Resetting snake
+[2024-07-17 19:58:04] Set initial game size to: 600x600
+[2024-07-17 19:58:04] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 19:58:04] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 19:58:08] Closed the app
+
+
+
+
+[2024-07-17 19:58:14] Started the app
+[2024-07-17 19:58:14] Started the GameApp Class
+[2024-07-17 19:58:14] Game mode: initial config
+[2024-07-17 19:58:14] Current Theme: Red
+[2024-07-17 19:58:14] Set initial theme to: Red
+[2024-07-17 19:58:14] Updated initial_theme in config.ini to: Red
+[2024-07-17 19:58:14] Current initial_theme in config.ini to: Red
+[2024-07-17 19:58:14] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 19:58:14] Resetting snake
+[2024-07-17 19:58:14] Set initial game size to: 600x600
+[2024-07-17 19:58:14] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 19:58:14] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 19:59:59] Closed the app
+
+
+
+
+[2024-07-17 20:00:02] Started the app
+[2024-07-17 20:00:02] Started the GameApp Class
+[2024-07-17 20:00:02] Game mode: initial config
+[2024-07-17 20:00:02] Current Theme: Red
+[2024-07-17 20:00:02] Set initial theme to: Red
+[2024-07-17 20:00:02] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:00:02] Current initial_theme in config.ini to: Red
+[2024-07-17 20:00:02] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:00:02] Resetting snake
+[2024-07-17 20:00:02] Set initial game size to: 600x600
+[2024-07-17 20:00:02] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:00:02] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:00:43] Closed the app
+
+
+
+
+[2024-07-17 20:00:45] Started the app
+[2024-07-17 20:00:45] Started the GameApp Class
+[2024-07-17 20:00:45] Game mode: initial config
+[2024-07-17 20:00:45] Current Theme: Red
+[2024-07-17 20:00:45] Set initial theme to: Red
+[2024-07-17 20:00:45] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:00:45] Current initial_theme in config.ini to: Red
+[2024-07-17 20:00:45] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:00:45] Resetting snake
+[2024-07-17 20:00:45] Set initial game size to: 600x600
+[2024-07-17 20:00:45] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:00:45] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:02:09] Closed the app
+
+
+
+
+[2024-07-17 20:02:11] Started the app
+[2024-07-17 20:02:11] Started the GameApp Class
+[2024-07-17 20:02:11] Game mode: initial config
+[2024-07-17 20:02:11] Current Theme: Red
+[2024-07-17 20:02:11] Set initial theme to: Red
+[2024-07-17 20:02:11] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:02:11] Current initial_theme in config.ini to: Red
+[2024-07-17 20:02:11] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:02:11] Resetting snake
+[2024-07-17 20:02:11] Set initial game size to: 600x600
+[2024-07-17 20:02:11] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:02:11] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:02:22] Closed the app
+
+
+
+
+[2024-07-17 20:02:24] Started the app
+[2024-07-17 20:02:24] Started the GameApp Class
+[2024-07-17 20:02:24] Game mode: initial config
+[2024-07-17 20:02:24] Current Theme: Red
+[2024-07-17 20:02:24] Set initial theme to: Red
+[2024-07-17 20:02:24] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:02:24] Current initial_theme in config.ini to: Red
+[2024-07-17 20:02:24] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:02:24] Resetting snake
+[2024-07-17 20:02:24] Set initial game size to: 600x600
+[2024-07-17 20:02:24] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:02:24] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:03:13] Closed the app
+
+
+
+
+[2024-07-17 20:03:16] Started the app
+[2024-07-17 20:03:16] Started the GameApp Class
+[2024-07-17 20:03:16] Game mode: initial config
+[2024-07-17 20:03:16] Current Theme: Red
+[2024-07-17 20:03:16] Set initial theme to: Red
+[2024-07-17 20:03:16] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:03:16] Current initial_theme in config.ini to: Red
+[2024-07-17 20:03:16] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:03:16] Resetting snake
+[2024-07-17 20:03:16] Set initial game size to: 600x600
+[2024-07-17 20:03:16] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:03:16] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:03:38] Closed the app
+
+
+
+
+[2024-07-17 20:03:41] Started the app
+[2024-07-17 20:03:41] Started the GameApp Class
+[2024-07-17 20:03:41] Game mode: initial config
+[2024-07-17 20:03:41] Current Theme: Red
+[2024-07-17 20:03:41] Set initial theme to: Red
+[2024-07-17 20:03:41] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:03:41] Current initial_theme in config.ini to: Red
+[2024-07-17 20:03:41] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:03:41] Resetting snake
+[2024-07-17 20:03:41] Set initial game size to: 600x600
+[2024-07-17 20:03:41] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:03:41] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:04:27] Closed the app
+
+
+
+
+[2024-07-17 20:04:29] Started the app
+[2024-07-17 20:04:29] Started the GameApp Class
+[2024-07-17 20:04:29] Game mode: initial config
+[2024-07-17 20:04:29] Current Theme: Red
+[2024-07-17 20:04:29] Set initial theme to: Red
+[2024-07-17 20:04:29] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:04:29] Current initial_theme in config.ini to: Red
+[2024-07-17 20:04:29] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:04:29] Resetting snake
+[2024-07-17 20:04:29] Set initial game size to: 600x600
+[2024-07-17 20:04:29] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:04:29] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:04:42] Closed the app
+
+
+
+
+[2024-07-17 20:04:44] Started the app
+[2024-07-17 20:04:44] Started the GameApp Class
+[2024-07-17 20:04:44] Game mode: initial config
+[2024-07-17 20:04:44] Current Theme: Red
+[2024-07-17 20:04:44] Set initial theme to: Red
+[2024-07-17 20:04:44] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:04:44] Current initial_theme in config.ini to: Red
+[2024-07-17 20:04:44] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:04:44] Resetting snake
+[2024-07-17 20:04:44] Set initial game size to: 600x600
+[2024-07-17 20:04:44] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:04:44] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:04:49] Closed the app
+
+
+
+
+[2024-07-17 20:04:57] Started the app
+[2024-07-17 20:04:57] Started the GameApp Class
+[2024-07-17 20:04:57] Game mode: initial config
+[2024-07-17 20:04:57] Current Theme: Red
+[2024-07-17 20:04:57] Set initial theme to: Red
+[2024-07-17 20:04:57] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:04:57] Current initial_theme in config.ini to: Red
+[2024-07-17 20:04:57] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:04:57] Resetting snake
+[2024-07-17 20:04:57] Set initial game size to: 600x600
+[2024-07-17 20:04:57] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:04:57] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:05:24] Closed the app
+
+
+
+
+[2024-07-17 20:05:27] Started the app
+[2024-07-17 20:05:27] Started the GameApp Class
+[2024-07-17 20:05:27] Game mode: initial config
+[2024-07-17 20:05:27] Current Theme: Red
+[2024-07-17 20:05:27] Set initial theme to: Red
+[2024-07-17 20:05:27] Updated initial_theme in config.ini to: Red
+[2024-07-17 20:05:27] Current initial_theme in config.ini to: Red
+[2024-07-17 20:05:27] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-17 20:05:27] Resetting snake
+[2024-07-17 20:05:27] Set initial game size to: 600x600
+[2024-07-17 20:05:27] Updated initial_game_size in config.ini to: 600x600
+[2024-07-17 20:05:27] Current initial_game_size in config.ini to: 600x600
+{'Wim': '2010', 'admin': 'admin'}
+['Wim', 'admin']
+[2024-07-17 20:07:06] Closed the app
+
+
+
+

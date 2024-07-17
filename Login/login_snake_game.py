@@ -27,6 +27,8 @@ class LoginAndUserScreen():
         self.forgot_password_button = None
         self.result_label = None
         self.current_user = None
+        self.login_label = None
+        self.snake_game_label = None
 
         script_dir = os.path.dirname(__file__)
         self.login_data = os.path.join(script_dir, "users.json")
@@ -35,34 +37,36 @@ class LoginAndUserScreen():
         """
         Function to create the login screen
         """
-        self.login_frame = ctk.CTkFrame(self.parent, fg_color="black")
+        self.login_frame = ctk.CTkFrame(self.parent, fg_color="grey20")
         self.login_frame.pack(fill="both", expand=True)
 
-        self.login_label = ctk.CTkLabel(self.login_frame, text="Login to play:", font=("Helvetica", 40), fg_color="black") # pylint: disable=line-too-long
+        self.login_label = ctk.CTkLabel(self.login_frame, text="Login to play:", font=("Helvetica", 40), fg_color="grey20") # pylint: disable=line-too-long
         self.login_label.pack(pady=10)
 
-        self.snake_game_label = ctk.CTkLabel(self.login_frame, text="Wim's Snake Game", font=("Helvetica", 40), fg_color="black") # pylint: disable=line-too-long
-        self.snake_game_label.pack(pady=10)
+        # self.snake_game_label = ctk.CTkLabel(self.login_frame, text="Wim's Snake Game", font=("Helvetica", 40), fg_color="grey10") # pylint: disable=line-too-long
+        # self.snake_game_label.pack(pady=10)
 
-        self.username_label = ctk.CTkLabel(self.login_frame, text="Username")
+        self.username_label = ctk.CTkLabel(self.login_frame, text="Username", font=("Helvetica", 18), fg_color="grey20")
         self.username_label.pack(pady=10)
+
         self.username_entry = ctk.CTkComboBox(self.login_frame, command=self.update_usernames_combobox) # pylint: disable=line-too-long
         self.username_entry.pack(pady=10)
         self.username_entry.set("")
         self.update_usernames_combobox()
 
-        self.password_label = ctk.CTkLabel(self.login_frame, text="Password")
+        self.password_label = ctk.CTkLabel(self.login_frame, text="Password", font=("Helvetica", 18), fg_color="grey20")
         self.password_label.pack(pady=10)
+
         self.password_entry = ctk.CTkEntry(self.login_frame, show="*")
         self.password_entry.pack(pady=10)
 
-        self.login_button = ctk.CTkButton(self.login_frame, text="Login", command=self.login)
+        self.login_button = ctk.CTkButton(self.login_frame, text="Login", command=self.login, fg_color="#3B8ED0")
         self.login_button.pack(pady=10)
 
-        self.create_user_button = ctk.CTkButton(self.login_frame, text="Create User", command=self.create_user) # pylint: disable=line-too-long
+        self.create_user_button = ctk.CTkButton(self.login_frame, text="Create User", command=self.create_user, fg_color="#3B8ED0") # pylint: disable=line-too-long
         self.create_user_button.pack(pady=10)
 
-        self.forgot_password_button = ctk.CTkButton(self.login_frame, text="Forgot Password", command=self.forgot_password) # pylint: disable=line-too-long
+        self.forgot_password_button = ctk.CTkButton(self.login_frame, text="Forgot Password", command=self.forgot_password, fg_color="#3B8ED0") # pylint: disable=line-too-long
         self.forgot_password_button.pack(pady=10)
 
         self.result_label = ctk.CTkLabel(self.login_frame, text="", corner_radius=10)

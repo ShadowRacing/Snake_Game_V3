@@ -627,3 +627,133 @@ TypeError: LoginAndUserScreen.update_usernames_combobox() takes 1 positional arg
 
 
 
+[2024-07-17 19:41:10] 
+
+
+[2024-07-17 19:41:10] Started the Error Log File
+[2024-07-17 19:58:01] No errors occurred
+[2024-07-17 19:58:01] Closed the Error Log File
+
+
+
+
+[2024-07-17 19:58:04] 
+
+
+[2024-07-17 19:58:04] Started the Error Log File
+[2024-07-17 19:58:08] No errors occurred
+[2024-07-17 19:58:08] Closed the Error Log File
+
+
+
+
+[2024-07-17 19:58:14] 
+
+
+[2024-07-17 19:58:14] Started the Error Log File
+[2024-07-17 19:59:59] No errors occurred
+[2024-07-17 19:59:59] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:00:02] 
+
+
+[2024-07-17 20:00:02] Started the Error Log File
+[2024-07-17 20:00:43] No errors occurred
+[2024-07-17 20:00:43] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:00:45] 
+
+
+[2024-07-17 20:00:45] Started the Error Log File
+[2024-07-17 20:02:09] No errors occurred
+[2024-07-17 20:02:09] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:02:11] 
+
+
+[2024-07-17 20:02:11] Started the Error Log File
+[2024-07-17 20:02:22] No errors occurred
+[2024-07-17 20:02:22] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:02:24] 
+
+
+[2024-07-17 20:02:24] Started the Error Log File
+[2024-07-17 20:03:13] No errors occurred
+[2024-07-17 20:03:13] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:03:16] 
+
+
+[2024-07-17 20:03:16] Started the Error Log File
+[2024-07-17 20:03:38] No errors occurred
+[2024-07-17 20:03:38] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:03:41] 
+
+
+[2024-07-17 20:03:41] Started the Error Log File
+[2024-07-17 20:04:27] No errors occurred
+[2024-07-17 20:04:27] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:04:29] 
+
+
+[2024-07-17 20:04:29] Started the Error Log File
+[2024-07-17 20:04:42] No errors occurred
+[2024-07-17 20:04:42] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:04:44] 
+
+
+[2024-07-17 20:04:44] Started the Error Log File
+[2024-07-17 20:04:49] No errors occurred
+[2024-07-17 20:04:49] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:04:57] 
+
+
+[2024-07-17 20:04:57] Started the Error Log File
+[2024-07-17 20:05:24] No errors occurred
+[2024-07-17 20:05:24] Closed the Error Log File
+
+
+
+
+[2024-07-17 20:05:27] 
+
+
+[2024-07-17 20:05:27] Started the Error Log File
+[2024-07-17 20:07:06] No errors occurred
+[2024-07-17 20:07:06] Closed the Error Log File
+
+
+
+

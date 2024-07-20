@@ -410,7 +410,7 @@ class SnakeGameApp:
         self.leveling_reset_button_press_variable()
         self.main_canvas.bind("<Configure>", self.update_text_position)
         # Create a CTkImage object
-        self.create_and_place_image_label(self.main_canvas, 5, 635, self.config_path_icon)
+        #self.create_and_place_image_label(self.main_canvas, 5, 635, self.config_path_icon)
         self.config.set('Settings', 'home_button_state', 'normal')
         self.config.set('Settings', 'classic_reset_high_score_button_state', 'normal')
         self.config.set('Settings', 'classic_reset_high_score_time_button_state', 'normal')
@@ -700,6 +700,7 @@ class SnakeGameApp:
             self.create_button_panel.create_classic_reset_high_score_snake_length()
             self.framelabel_panel.set_create_label_canvas_flag(True)
             self.framelabel_panel.create_classic_snake_label()
+            #self.create_and_place_image_label(self.classic_snake_canvas, -50, 635, self.config_path_icon)
 
         elif game_type == "snake_endless":
             self.create_button_panel.create_endless_reset_high_score_button()

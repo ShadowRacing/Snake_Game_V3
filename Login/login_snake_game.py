@@ -5,6 +5,8 @@ File: login_example.py
 import json
 import os
 import traceback
+from os import path
+from PIL import Image
 import customtkinter as ctk
 
 # Function to read user data from file
@@ -33,11 +35,18 @@ class LoginAndUserScreen():
         script_dir = os.path.dirname(__file__)
         self.login_data = os.path.join(script_dir, "users.json")
 
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, 'config.ini')
+        self.config_path_icon = path.join(self.config_dir, '..', 'app_icon.ico')
+        self.parent.iconbitmap('app_icon.ico')
+        self.my_image = None
+        self.image_label = None
+
     def create_login_screen(self):
         """
         Function to create the login screen
         """
-        self.login_frame = ctk.CTkFrame(self.parent, fg_color="grey20")
+        self.login_frame = ctk.CTkFrame(self.parent, fg_color="grey20", border_color="purple")
         self.login_frame.pack(fill="both", expand=True)
 
         self.login_label = ctk.CTkLabel(self.login_frame, text="Login to play:", font=("Helvetica", 40), fg_color="grey20") # pylint: disable=line-too-long
@@ -72,8 +81,21 @@ class LoginAndUserScreen():
         self.result_label = ctk.CTkLabel(self.login_frame, text="", corner_radius=10)
         self.result_label.pack(pady=10)
 
+        self.create_and_place_image_label(self.login_frame, 5, 635, self.config_path_icon)
+
         # self.logout_button = ctk.CTkButton(self.user_frame, text="Logout", command=self.logout)
         # self.logout_button.pack(pady=10)
+
+    def create_and_place_image_label(self, canvas, x, y, image_path):
+        """
+        Create and place a CTkImage and CTkLabel on the specified canvas.
+        """
+        self.my_image = ctk.CTkImage(light_image=Image.open(image_path),
+                                dark_image=Image.open(image_path),
+                                size=(160, 160))
+
+        self.image_label = ctk.CTkLabel(canvas, image=self.my_image, text="", corner_radius=6)
+        self.image_label.place(x=x, y=y)
 
     def read_user_data(self):
         """
@@ -211,6 +233,8 @@ class LoginAndUserScreen():
         """
         if self.on_login_success_callback:
             self.on_login_success_callback()
+        if hasattr(self, 'image_label'):
+            self.image_label.destroy()
         self.login_frame.destroy()
 
     def get_user_name(self):

@@ -196,21 +196,6 @@ class LoginAndUserScreen():
         """
         Function to create a new user
         """
-        if hasattr(self, 'header_frame'):
-            self.header_frame.destroy()
-        if hasattr(self, 'user_frame'):
-            self.user_frame.destroy()
-
-        self.create_account_frame = ctk.CTkFrame(self.login_frame, height=200, width=1500, fg_color="grey20", corner_radius=0, border_width=1, border_color="grey40")
-        self.create_account_frame.place(x=0, y= 50, relwidth=1, relheight=1)
-
-        self.result_label = ctk.CTkLabel(self.create_account_frame, text="", corner_radius=10)
-        self.result_label.place(x=10, y=25)
-
-
-
-
-
 
         username = self.username_entry.get()
         password = self.password_entry.get()
@@ -245,7 +230,7 @@ class LoginAndUserScreen():
                 self.current_user = username
                 self.result_label.configure(text="Login successful!", fg_color="green")
                 # Delay switching to the next screen by 2000 milliseconds (2 seconds)
-                self.result_label.after(1000, self.switch_to_user_screen())
+                self.parent.after(2000, self.switch_to_user_screen)
             elif username not in users:
                 self.result_label.configure(text="User does not exist", fg_color="red")
                 self.reset_label_text()
@@ -265,6 +250,12 @@ class LoginAndUserScreen():
         """
         self.result_label.after(3000, lambda: self.result_label.configure(text="", fg_color="grey20")) # pylint: disable=line-too-long
 
+    def reset_entry_label_text(self):
+        """
+        Function to reset the text of the entry label after 3 seconds
+        """
+        self.entry_label.after(3000, lambda: self.entry_label.configure(text="", fg_color="grey20"))
+
     def enter_user(self):
         """
         Function to enter a user
@@ -275,29 +266,69 @@ class LoginAndUserScreen():
         """
         Function to reset the password of an existing user
         """
-        username = self.username_entry.get()
-        password = self.password_entry.get()
+
+        self.instruction_label = ctk.CTkLabel(self.user_frame, text="Enter your username and password to reset your password", text_color="red", fg_color="grey20") # pylint: disable=line-too-long
+        self.instruction_label.place(x=13, y=400)
+
+        self.entry_label = ctk.CTkLabel(self.user_frame, text="", fg_color="grey20", corner_radius=10) # pylint: disable=line-too-long
+        self.entry_label.place(x=13, y=440)
+
+        self.username_forgot_password_entry = ctk.CTkEntry(self.user_frame, fg_color="grey40", height=30, width=250, placeholder_text="Enter your username", placeholder_text_color="white") # pylint: disable=line-too-long
+        self.username_forgot_password_entry.place(x=10, y=500)
+
+        self.password_forgot_password_entry = ctk.CTkEntry(self.user_frame, show="*", fg_color="grey40", height=30, width=250, placeholder_text="Enter your password", placeholder_text_color="white") # pylint: disable=line-too-long
+        self.password_forgot_password_entry.place(x=300, y=500)
+
+        self.username_forgot_password_entry_label = ctk.CTkLabel(self.user_frame, text="Username")
+        self.username_forgot_password_entry_label.place(x=13, y=470)
+
+        self.password_forgot_password_entry_label = ctk.CTkLabel(self.user_frame, text="Password")
+        self.password_forgot_password_entry_label.place(x=303, y=470)
+
+        self.reset_password_button = ctk.CTkButton(self.user_frame, text="Reset Password", command=self.forgot_password_callback, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
+        self.reset_password_button.place(x=625, y=500)
+
+        self.stop_forget_password = ctk.CTkButton(self.user_frame, text="Cancel", command=self.delete_forgot_password_widgets, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
+        self.stop_forget_password.place(x=795, y=500)
+
+
+    def forgot_password_callback(self):
+        username = self.username_forgot_password_entry.get()
+        password = self.password_forgot_password_entry.get()
         if username:
             users = self.read_user_data()
+            new_password = password  # This waits for the user to input a new password # pylint: disable=line-too-long
             if username in users:
-                dialog = ctk.CTkInputDialog(title="Reset Password", text="Enter your new password:") # pylint: disable=line-too-long
-                new_password = dialog.get_input()  # This waits for the user to input a new password # pylint: disable=line-too-long
-                if new_password and new_password != password:  # Check if the user entered a new password # pylint: disable=line-too-long
-                    self.write_user_data(username, new_password)  # Save the updated users dictionary back to the JSON file # pylint: disable=line-too-long
-                    self.result_label.configure(text="Password updated successfully!", fg_color="green") # pylint: disable=line-too-long
-                    self.reset_label_text()
-                elif new_password == users[username]:  # Check if the new password is the same as the old password # pylint: disable=line-too-long
-                    self.result_label.configure(text="New password cannot be the same as the old password.", fg_color="red") # pylint: disable=line-too-long
-                    self.reset_label_text()
+                if new_password == users[username]:  # First, check if the new password is the same as the stored one
+                    self.entry_label.configure(text="New password cannot be the same as the old password.", fg_color="red")
+                    self.reset_entry_label_text()
+                elif new_password and new_password != users[username]:  # Compare with the stored old password
+                    self.write_user_data(username, new_password)  # Save the updated users dictionary back to the JSON file
+                    self.entry_label.configure(text="Password updated successfully!", fg_color="green")
+                    self.reset_entry_label_text()
+                    self.parent.after(2000, self.delete_forgot_password_widgets)
                 else:
-                    self.result_label.configure(text="Password update cancelled.", fg_color="red") # pylint: disable=line-too-long
-                    self.reset_label_text()
+                    self.entry_label.configure(text="Password update cancelled.", fg_color="red")
+                    self.reset_entry_label_text()
             else:
-                self.result_label.configure(text="User does not exist", fg_color="red")
-                self.reset_label_text()
+                self.entry_label.configure(text="User does not exist", fg_color="red")
+                self.reset_entry_label_text()
         else:
-            self.result_label.configure(text="Please enter a username", fg_color="red")
-            self.reset_label_text()
+            self.entry_label.configure(text="Please enter a username", fg_color="red")
+            self.reset_entry_label_text()
+
+    def delete_forgot_password_widgets(self):
+        """
+        Function to delete the widgets created for the forgot password feature
+        """
+        self.instruction_label.destroy()
+        self.entry_label.destroy()
+        self.username_forgot_password_entry.destroy()
+        self.password_forgot_password_entry.destroy()
+        self.username_forgot_password_entry_label.destroy()
+        self.password_forgot_password_entry_label.destroy()
+        self.reset_password_button.destroy()
+        self.stop_forget_password.destroy()
 
     def switch_to_user_screen(self):
         """
@@ -321,4 +352,75 @@ class LoginAndUserScreen():
         pass
 
     def delete_account(self):
-        pass
+        """
+        Function to delete the account of the current user
+        """
+
+        self.instruction_label_delete_user = ctk.CTkLabel(self.user_frame, text="Enter your username and password to delete", text_color="red", fg_color="grey20") # pylint: disable=line-too-long
+        self.instruction_label_delete_user.place(x=13, y=400)
+
+        self.entry_label = ctk.CTkLabel(self.user_frame, text="", fg_color="grey20", corner_radius=10) # pylint: disable=line-too-long
+        self.entry_label.place(x=13, y=440)
+
+        self.username_delete_user_entry = ctk.CTkEntry(self.user_frame, fg_color="grey40", height=30, width=250, placeholder_text="Enter your username", placeholder_text_color="white") # pylint: disable=line-too-long
+        self.username_delete_user_entry.place(x=10, y=500)
+
+        self.password_delete_user_entry = ctk.CTkEntry(self.user_frame, show="*", fg_color="grey40", height=30, width=250, placeholder_text="Enter your password", placeholder_text_color="white") # pylint: disable=line-too-long
+        self.password_delete_user_entry.place(x=300, y=500)
+
+        self.username_delete_user_entry_label = ctk.CTkLabel(self.user_frame, text="Username")
+        self.username_delete_user_entry_label.place(x=13, y=470)
+
+        self.password_delete_user_entry_label = ctk.CTkLabel(self.user_frame, text="Password")
+        self.password_delete_user_entry_label.place(x=303, y=470)
+
+        self.delete_user_button = ctk.CTkButton(self.user_frame, text="Delete User", command=self.delete_user_callback, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
+        self.delete_user_button.place(x=625, y=500)
+
+        self.stop_delete_user = ctk.CTkButton(self.user_frame, text="Cancel", command=self.delete_delete_user_widgets, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
+        self.stop_delete_user.place(x=795, y=500)
+
+    def delete_delete_user_widgets(self):
+        """
+        Function to delete the widgets created for the delete user feature
+        """
+        self.instruction_label_delete_user.destroy()
+        self.entry_label.destroy()
+        self.username_delete_user_entry.destroy()
+        self.password_delete_user_entry.destroy()
+        self.username_delete_user_entry_label.destroy()
+        self.password_delete_user_entry_label.destroy()
+        self.delete_user_button.destroy()
+        self.stop_delete_user.destroy()
+
+    def delete_user_callback(self):
+        self.confimation_label = ctk.CTkLabel(self.user_frame, text="Are you sure you want to delete your account?", fg_color="grey20") # pylint: disable=line-too-long
+        self.confimation_label.place(x=13, y=540)
+        self.yes_button = ctk.CTkButton(self.user_frame, text="Yes", command=self.confirm_delete_user, fg_color="grey90", text_color="blue", hover_color="#E6E6FA")
+        self.no_button = ctk.CTkButton(self.user_frame, text="No", command=self.delete_are_you_sure_widgets, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
+        self.yes_button.place(x=625, y=540)
+        self.no_button.place(x=795, y=540)
+
+    def confirm_delete_user(self):
+        username = self.username_delete_user_entry.get()
+        password = self.password_delete_user_entry.get()
+        users = self.read_user_data()
+        if username in users and password == users[username]:
+            del users[username]
+            with open(self.login_data, 'w', encoding='utf-8') as file:
+                json.dump(users, file, indent=4)
+            self.entry_label.configure(text="User deleted successfully!", fg_color="green")
+            self.reset_entry_label_text()
+            self.parent.after(2000, self.delete_delete_user_widgets)
+        # Call to remove the confirmation widgets regardless of the outcome
+        self.delete_are_you_sure_widgets()
+
+    def delete_are_you_sure_widgets(self):
+        """
+        Function to delete the widgets created for the are you sure feature
+        """
+        self.confimation_label.destroy()
+        self.yes_button.destroy()
+        self.no_button.destroy()
+
+

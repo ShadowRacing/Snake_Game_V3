@@ -1657,3 +1657,476 @@ AttributeError: 'NoneType' object has no attribute 'configure'
 
 
 
+[2024-07-21 12:50:00] 
+
+
+[2024-07-21 12:50:00] Started the Error Log File
+[2024-07-21 12:53:26] No errors occurred
+[2024-07-21 12:53:26] Closed the Error Log File
+
+
+
+
+[2024-07-21 12:53:30] 
+
+
+[2024-07-21 12:53:30] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 215, in create_user
+    username = self.username_entry.get()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_entry.py", line 342, in get
+    return self._entry.get()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3109, in get
+    return self.tk.call(self._w, 'get')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: invalid command name ".!ctkframe2.!ctkframe2.!ctkentry.!entry"
+[2024-07-21 12:54:56] No errors occurred
+[2024-07-21 12:54:56] Closed the Error Log File
+
+
+
+
+[2024-07-21 12:55:02] 
+
+
+[2024-07-21 12:55:02] Started the Error Log File
+[2024-07-21 12:55:29] No errors occurred
+[2024-07-21 12:55:29] Closed the Error Log File
+
+
+
+
+[2024-07-21 12:55:50] 
+
+
+[2024-07-21 12:55:50] Started the Error Log File
+[2024-07-21 13:00:52] No errors occurred
+[2024-07-21 13:00:52] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:00:54] 
+
+
+[2024-07-21 13:00:54] Started the Error Log File
+[2024-07-21 13:01:49] No errors occurred
+[2024-07-21 13:01:49] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:01:51] 
+
+
+[2024-07-21 13:01:51] Started the Error Log File
+[2024-07-21 13:02:04] No errors occurred
+[2024-07-21 13:02:04] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:02:06] 
+
+
+[2024-07-21 13:02:06] Started the Error Log File
+[2024-07-21 13:02:19] No errors occurred
+[2024-07-21 13:02:19] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:02:32] 
+
+
+[2024-07-21 13:02:32] Started the Error Log File
+[2024-07-21 13:03:23] No errors occurred
+[2024-07-21 13:03:23] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:03:26] 
+
+
+[2024-07-21 13:03:26] Started the Error Log File
+[2024-07-21 13:05:21] No errors occurred
+[2024-07-21 13:05:21] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:05:23] 
+
+
+[2024-07-21 13:05:23] Started the Error Log File
+[2024-07-21 13:09:24] No errors occurred
+[2024-07-21 13:09:24] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:09:27] 
+
+
+[2024-07-21 13:09:27] Started the Error Log File
+[2024-07-21 13:11:15] No errors occurred
+[2024-07-21 13:11:15] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:11:17] 
+
+
+[2024-07-21 13:11:17] Started the Error Log File
+[2024-07-21 13:12:27] No errors occurred
+[2024-07-21 13:12:27] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:12:30] 
+
+
+[2024-07-21 13:12:30] Started the Error Log File
+[2024-07-21 13:12:44] No errors occurred
+[2024-07-21 13:12:44] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:12:46] 
+
+
+[2024-07-21 13:12:46] Started the Error Log File
+[2024-07-21 13:16:08] No errors occurred
+[2024-07-21 13:16:08] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:16:15] 
+
+
+[2024-07-21 13:16:15] Started the Error Log File
+[2024-07-21 13:18:05] No errors occurred
+[2024-07-21 13:18:05] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:18:11] 
+
+
+[2024-07-21 13:18:11] Started the Error Log File
+[2024-07-21 13:27:40] No errors occurred
+[2024-07-21 13:27:40] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:27:43] 
+
+
+[2024-07-21 13:27:43] Started the Error Log File
+[2024-07-21 13:28:39] No errors occurred
+[2024-07-21 13:28:39] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:28:41] 
+
+
+[2024-07-21 13:28:41] Started the Error Log File
+[2024-07-21 13:31:31] No errors occurred
+[2024-07-21 13:31:31] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:31:33] 
+
+
+[2024-07-21 13:31:33] Started the Error Log File
+[2024-07-21 13:37:23] No errors occurred
+[2024-07-21 13:37:23] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:37:25] 
+
+
+[2024-07-21 13:37:25] Started the Error Log File
+[2024-07-21 13:44:16] No errors occurred
+[2024-07-21 13:44:16] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:44:18] 
+
+
+[2024-07-21 13:44:18] Started the Error Log File
+[2024-07-21 13:44:48] No errors occurred
+[2024-07-21 13:44:48] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:44:51] 
+
+
+[2024-07-21 13:44:51] Started the Error Log File
+[2024-07-21 13:45:13] No errors occurred
+[2024-07-21 13:45:13] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:45:29] 
+
+
+[2024-07-21 13:45:29] Started the Error Log File
+[2024-07-21 13:46:01] No errors occurred
+[2024-07-21 13:46:01] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:46:02] 
+
+
+[2024-07-21 13:46:02] Started the Error Log File
+[2024-07-21 13:46:29] No errors occurred
+[2024-07-21 13:46:29] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:52:44] 
+
+
+[2024-07-21 13:52:44] Started the Error Log File
+[2024-07-21 13:53:10] No errors occurred
+[2024-07-21 13:53:10] Closed the Error Log File
+
+
+
+
+[2024-07-21 13:53:19] 
+
+
+[2024-07-21 13:53:19] Started the Error Log File
+[2024-07-21 14:04:04] No errors occurred
+[2024-07-21 14:04:04] Closed the Error Log File
+
+
+
+
+[2024-07-21 14:04:06] 
+
+
+[2024-07-21 14:04:06] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 296, in forgot_password_callback
+    username = self.username_forgot_password_entry.get()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LoginAndUserScreen' object has no attribute 'username_forgot_password_entry'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 324, in delete_forgot_password_widgets
+    self.instruction_label.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LoginAndUserScreen' object has no attribute 'instruction_label'
+[2024-07-21 14:09:29] No errors occurred
+[2024-07-21 14:09:29] Closed the Error Log File
+
+
+
+
+[2024-07-21 14:09:35] 
+
+
+[2024-07-21 14:09:35] Started the Error Log File
+[2024-07-21 14:30:52] No errors occurred
+[2024-07-21 14:30:52] Closed the Error Log File
+
+
+
+
+[2024-07-21 14:31:01] 
+
+
+[2024-07-21 14:31:01] Started the Error Log File
+[2024-07-21 14:41:10] No errors occurred
+[2024-07-21 14:41:10] Closed the Error Log File
+
+
+
+
+[2024-07-21 14:41:13] 
+
+
+[2024-07-21 14:41:13] Started the Error Log File
+[2024-07-21 14:42:01] No errors occurred
+[2024-07-21 14:42:01] Closed the Error Log File
+
+
+
+
+[2024-07-21 14:42:07] 
+
+
+[2024-07-21 14:42:07] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+[2024-07-21 14:43:17] No errors occurred
+[2024-07-21 14:43:17] Closed the Error Log File
+
+
+
+
+[2024-07-21 14:43:23] 
+
+
+[2024-07-21 14:43:23] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+TypeError: LoginAndUserScreen.confirm_delete_user() missing 3 required positional arguments: 'username', 'password', and 'users'
+[2024-07-21 14:45:48] No errors occurred
+[2024-07-21 14:45:48] Closed the Error Log File
+
+
+
+
+[2024-07-21 14:45:51] 
+
+
+[2024-07-21 14:45:51] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 399, in delete_user_callback
+    self.yes_button = ctk.CTkButton(self.user_frame, text="Yes", command=self.confirm_delete_user(), fg_color="grey90", text_color="blue", hover_color="#E6E6FA")
+                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 416, in confirm_delete_user
+    self.delete_are_you_sure_widgets()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 423, in delete_are_you_sure_widgets
+    self.yes_button.destroy()
+    ^^^^^^^^^^^^^^^
+AttributeError: 'LoginAndUserScreen' object has no attribute 'yes_button'
+[2024-07-21 14:46:13] No errors occurred
+[2024-07-21 14:46:13] Closed the Error Log File
+
+
+
+

@@ -2262,3 +2262,24 @@ TypeError: LoginAndUserScreen.write_user_data() missing 1 required positional ar
 
 
 
+[2024-07-21 20:52:02] 
+
+
+[2024-07-21 20:52:02] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 342, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 222, in update_button_state
+    self.classic_reset_high_score_button.configure(state=self.classic_reset_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-07-21 20:52:31] No errors occurred
+[2024-07-21 20:52:31] Closed the Error Log File
+
+
+
+

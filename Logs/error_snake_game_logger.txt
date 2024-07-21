@@ -1344,3 +1344,316 @@ _tkinter.TclError: bad window path name ".!ctkcanvas6"
 
 
 
+[2024-07-21 11:05:16] 
+
+
+[2024-07-21 11:05:16] Started the Error Log File
+[2024-07-21 11:07:26] No errors occurred
+[2024-07-21 11:07:26] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:07:28] 
+
+
+[2024-07-21 11:07:28] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 214, in login
+    username = self.username_entry.get()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2024-07-21 11:09:16] No errors occurred
+[2024-07-21 11:09:16] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:09:17] 
+
+
+[2024-07-21 11:09:17] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 234, in login
+    self.result_label.configure(text="Please enter a username and password", fg_color="red")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 221, in login
+    self.result_label.configure(text="Login successful!", fg_color="green")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-07-21 11:09:47] No errors occurred
+[2024-07-21 11:09:47] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:10:18] 
+
+
+[2024-07-21 11:10:18] Started the Error Log File
+[2024-07-21 11:10:25] No errors occurred
+[2024-07-21 11:10:25] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:10:30] 
+
+
+[2024-07-21 11:10:30] Started the Error Log File
+[2024-07-21 11:11:09] No errors occurred
+[2024-07-21 11:11:09] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:11:11] 
+
+
+[2024-07-21 11:11:11] Started the Error Log File
+[2024-07-21 11:11:23] No errors occurred
+[2024-07-21 11:11:23] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:17:51] 
+
+
+[2024-07-21 11:17:51] Started the Error Log File
+[2024-07-21 11:19:41] No errors occurred
+[2024-07-21 11:19:41] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:19:44] 
+
+
+[2024-07-21 11:19:44] Started the Error Log File
+[2024-07-21 11:23:23] No errors occurred
+[2024-07-21 11:23:23] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:23:26] 
+
+
+[2024-07-21 11:23:26] Started the Error Log File
+[2024-07-21 11:24:16] No errors occurred
+[2024-07-21 11:24:16] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:24:18] 
+
+
+[2024-07-21 11:24:18] Started the Error Log File
+[2024-07-21 11:28:50] No errors occurred
+[2024-07-21 11:28:50] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:28:53] 
+
+
+[2024-07-21 11:28:53] Started the Error Log File
+[2024-07-21 11:29:02] No errors occurred
+[2024-07-21 11:29:02] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:31:02] 
+
+
+[2024-07-21 11:31:02] Started the Error Log File
+[2024-07-21 11:31:18] No errors occurred
+[2024-07-21 11:31:18] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:34:37] 
+
+
+[2024-07-21 11:34:37] Started the Error Log File
+[2024-07-21 11:34:38] No errors occurred
+[2024-07-21 11:34:38] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:35:24] 
+
+
+[2024-07-21 11:35:24] Started the Error Log File
+[2024-07-21 11:35:26] No errors occurred
+[2024-07-21 11:35:26] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:44:21] 
+
+
+[2024-07-21 11:44:21] Started the Error Log File
+[2024-07-21 11:44:40] No errors occurred
+[2024-07-21 11:44:40] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:44:43] 
+
+
+[2024-07-21 11:44:43] Started the Error Log File
+[2024-07-21 11:45:54] No errors occurred
+[2024-07-21 11:45:54] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:45:56] 
+
+
+[2024-07-21 11:45:56] Started the Error Log File
+[2024-07-21 11:47:04] No errors occurred
+[2024-07-21 11:47:04] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:47:06] 
+
+
+[2024-07-21 11:47:06] Started the Error Log File
+[2024-07-21 11:47:48] No errors occurred
+[2024-07-21 11:47:48] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:47:49] 
+
+
+[2024-07-21 11:47:49] Started the Error Log File
+[2024-07-21 11:48:05] No errors occurred
+[2024-07-21 11:48:05] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:48:07] 
+
+
+[2024-07-21 11:48:07] Started the Error Log File
+[2024-07-21 11:48:35] No errors occurred
+[2024-07-21 11:48:35] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:48:37] 
+
+
+[2024-07-21 11:48:37] Started the Error Log File
+[2024-07-21 11:50:14] No errors occurred
+[2024-07-21 11:50:14] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:50:16] 
+
+
+[2024-07-21 11:50:16] Started the Error Log File
+[2024-07-21 11:52:06] No errors occurred
+[2024-07-21 11:52:06] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:52:30] 
+
+
+[2024-07-21 11:52:30] Started the Error Log File
+[2024-07-21 11:56:54] No errors occurred
+[2024-07-21 11:56:54] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:56:56] 
+
+
+[2024-07-21 11:56:56] Started the Error Log File
+[2024-07-21 11:57:07] No errors occurred
+[2024-07-21 11:57:07] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:57:09] 
+
+
+[2024-07-21 11:57:09] Started the Error Log File
+[2024-07-21 11:57:21] No errors occurred
+[2024-07-21 11:57:21] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:57:24] 
+
+
+[2024-07-21 11:57:24] Started the Error Log File
+[2024-07-21 11:57:45] No errors occurred
+[2024-07-21 11:57:45] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:57:47] 
+
+
+[2024-07-21 11:57:47] Started the Error Log File
+[2024-07-21 11:58:05] No errors occurred
+[2024-07-21 11:58:05] Closed the Error Log File
+
+
+
+
+[2024-07-21 11:58:18] 
+
+
+[2024-07-21 11:58:18] Started the Error Log File
+[2024-07-21 12:00:05] No errors occurred
+[2024-07-21 12:00:05] Closed the Error Log File
+
+
+
+

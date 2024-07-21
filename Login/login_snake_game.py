@@ -4,7 +4,7 @@ File: login_example.py
 
 import json
 import os
-import traceback
+#import traceback
 from os import path
 from PIL import Image
 import customtkinter as ctk
@@ -14,9 +14,10 @@ class LoginAndUserScreen():
     """
     Class to create a login screen with the following features:
     """
-    def __init__(self, parent, on_login_success_callback=None):
+    def __init__(self, parent, game_logger, on_login_success_callback=None):
         self.parent = parent
         self.on_login_success_callback = on_login_success_callback
+        self.game_logger = game_logger
         # Create the login frame
         self.login_frame = None
         self.user_frame = None
@@ -46,40 +47,92 @@ class LoginAndUserScreen():
         """
         Function to create the login screen
         """
-        self.login_frame = ctk.CTkFrame(self.parent, fg_color="grey20", border_color="purple")
-        self.login_frame.pack(fill="both", expand=True)
+        # self.login_frame = ctk.CTkFrame(self.parent, fg_color="grey20", border_color="purple")
+        # self.login_frame.pack(fill="both", expand=True)
 
-        self.login_label = ctk.CTkLabel(self.login_frame, text="Login to play:", font=("Helvetica", 40), fg_color="grey20") # pylint: disable=line-too-long
-        self.login_label.pack(pady=10)
+        # self.login_label = ctk.CTkLabel(self.login_frame, text="Login to play:", font=("Helvetica", 40), fg_color="grey20") # pylint: disable=line-too-long
+        # self.login_label.pack(pady=10)
 
-        # self.snake_game_label = ctk.CTkLabel(self.login_frame, text="Wim's Snake Game", font=("Helvetica", 40), fg_color="grey10") # pylint: disable=line-too-long
-        # self.snake_game_label.pack(pady=10)
+        # # self.snake_game_label = ctk.CTkLabel(self.login_frame, text="Wim's Snake Game", font=("Helvetica", 40), fg_color="grey10") # pylint: disable=line-too-long
+        # # self.snake_game_label.pack(pady=10)
 
-        self.username_label = ctk.CTkLabel(self.login_frame, text="Username", font=("Helvetica", 18), fg_color="grey20")
-        self.username_label.pack(pady=10)
+        # self.username_label = ctk.CTkLabel(self.login_frame, text="Username", font=("Helvetica", 18), fg_color="grey20")
+        # self.username_label.pack(pady=10)
 
-        self.username_entry = ctk.CTkComboBox(self.login_frame, command=self.update_usernames_combobox) # pylint: disable=line-too-long
-        self.username_entry.pack(pady=10)
-        self.username_entry.set("")
-        self.update_usernames_combobox()
+        # self.username_entry = ctk.CTkComboBox(self.login_frame, command=self.update_usernames_combobox) # pylint: disable=line-too-long
+        # self.username_entry.pack(pady=10)
+        # self.username_entry.set("")
+        # self.update_usernames_combobox()
 
-        self.password_label = ctk.CTkLabel(self.login_frame, text="Password", font=("Helvetica", 18), fg_color="grey20")
-        self.password_label.pack(pady=10)
+        # self.password_label = ctk.CTkLabel(self.login_frame, text="Password", font=("Helvetica", 18), fg_color="grey20")
+        # self.password_label.pack(pady=10)
 
-        self.password_entry = ctk.CTkEntry(self.login_frame, show="*")
-        self.password_entry.pack(pady=10)
+        # self.password_entry = ctk.CTkEntry(self.login_frame, show="*")
+        # self.password_entry.pack(pady=10)
 
-        self.login_button = ctk.CTkButton(self.login_frame, text="Login", command=self.login, fg_color="#3B8ED0")
-        self.login_button.pack(pady=10)
+        # self.login_button = ctk.CTkButton(self.login_frame, text="Login", command=self.login, fg_color="#3B8ED0")
+        # self.login_button.pack(pady=10)
 
-        self.create_user_button = ctk.CTkButton(self.login_frame, text="Create User", command=self.create_user, fg_color="#3B8ED0") # pylint: disable=line-too-long
-        self.create_user_button.pack(pady=10)
+        # self.create_user_button = ctk.CTkButton(self.login_frame, text="Create User", command=self.create_user, fg_color="#3B8ED0") # pylint: disable=line-too-long
+        # self.create_user_button.pack(pady=10)
 
-        self.forgot_password_button = ctk.CTkButton(self.login_frame, text="Forgot Password", command=self.forgot_password, fg_color="#3B8ED0") # pylint: disable=line-too-long
-        self.forgot_password_button.pack(pady=10)
+        # self.forgot_password_button = ctk.CTkButton(self.login_frame, text="Forgot Password", command=self.forgot_password, fg_color="#3B8ED0") # pylint: disable=line-too-long
+        # self.forgot_password_button.pack(pady=10)
 
-        self.result_label = ctk.CTkLabel(self.login_frame, text="", corner_radius=10)
-        self.result_label.pack(pady=10)
+
+
+        # Frame for login and create user
+        self.login_frame = ctk.CTkFrame(self.parent, height=100, width=2000, fg_color="grey20")
+        self.login_frame.place(x=0, y=0, relwidth=1, relheight=1)
+
+
+
+
+        self.header_frame = ctk.CTkFrame(self.login_frame, height=50, width=2000, fg_color="grey20", corner_radius=0, )
+        self.header_frame.place(x=0, y=0, relwidth=1, relheight=0.2)
+
+        # Header label
+        self.header_label = ctk.CTkLabel(self.header_frame, text="Shadow's Snake Game", font=("Lexend", 24), text_color="white")
+        self.header_label.place(x=10, y=10)
+
+        # Buttons for login and create user
+        self.login_button = ctk.CTkButton(self.header_frame, text="Login", command=self.login, fg_color="#7F00FF", text_color="white", hover_color="#480082")
+        self.create_button = ctk.CTkButton(self.header_frame, text="Create Account", command=self.create_user, border_width=1, border_color="blue", text_color="blue", fg_color="white", hover_color="#E6E6FA")
+        self.login_button.place(x=470, y=10)
+        self.create_button.place(x=300, y=10)
+
+
+
+
+
+
+        # Frame for username and password
+        self.user_frame = ctk.CTkFrame(self.login_frame, height=200, width=1500, fg_color="grey20", corner_radius=0, border_width=1, border_color="grey40")
+        self.user_frame.place(x=0, y= 50, relwidth=1, relheight=1)
+
+        self.result_label = ctk.CTkLabel(self.user_frame, text="", corner_radius=10)
+        self.result_label.place(x=10, y=45)
+
+        self.login_label = ctk.CTkLabel(self.user_frame, text="Login to play:", font=("Lexend", 24), fg_color="grey20")
+        self.login_label.place(x=10, y=10)
+
+        # Username input
+        self.username_label = ctk.CTkLabel(self.user_frame, text="Username")
+        self.username_entry = ctk.CTkEntry(self.user_frame,fg_color="grey40", height=30, width=250, placeholder_text="Enter your username", placeholder_text_color="white")
+        self.username_label.place(x=13, y=80)
+        self.username_entry.place(x=10, y=110)
+
+        # Password input
+        self.password_label = ctk.CTkLabel(self.user_frame, text="Password")
+        self.password_entry = ctk.CTkEntry(self.user_frame, show="*", fg_color="grey40", height=30, width=250, placeholder_text="Enter your password", placeholder_text_color="white")
+        self.password_label.place(x=303, y=80)
+        self.password_entry.place(x=300, y=110)
+
+        # Buttons for forgot password and delete user
+        self.forgot_button = ctk.CTkButton(self.user_frame, text="Forgot Password", command=self.forgot_password, fg_color="grey90", text_color="blue",hover_color="#E6E6FA")
+        self.delete_button = ctk.CTkButton(self.user_frame, text="Delete Account", command=self.delete_account, fg_color="grey90", text_color="blue", hover_color="#E6E6FA")
+        self.forgot_button.place(x=625, y=110)
+        self.delete_button.place(x=795, y=110)
 
         self.create_and_place_image_label(self.login_frame, 5, 635, self.config_path_icon)
 
@@ -122,40 +175,59 @@ class LoginAndUserScreen():
         with open(self.login_data, 'w', encoding='utf-8') as file:
             json.dump(data, file, indent=4)
 
-        self.update_usernames_combobox()
+        #self.update_usernames_combobox()
 
-    # Function to update the ComboBox with usernames
-    def update_usernames_combobox(self):
-        """
-        Function to update the ComboBox with usernames
-        """
-        users = self.read_user_data()
-        usernames = list(users.keys())
-        print(users)
-        try:
-            self.username_entry.configure(values=usernames)
-        except AttributeError:
-            traceback.print_exc()
-        print(usernames)
+    # # Function to update the ComboBox with usernames
+    # def update_usernames_combobox(self):
+    #     """
+    #     Function to update the ComboBox with usernames
+    #     """
+    #     users = self.read_user_data()
+    #     usernames = list(users.keys())
+    #     print(users)
+    #     try:
+    #         self.username_entry.configure(values=usernames)
+    #     except AttributeError:
+    #         traceback.print_exc()
+    #     print(usernames)
 
     # Function to create a new user
     def create_user(self):
         """
         Function to create a new user
         """
+        if hasattr(self, 'header_frame'):
+            self.header_frame.destroy()
+        if hasattr(self, 'user_frame'):
+            self.user_frame.destroy()
+
+        self.create_account_frame = ctk.CTkFrame(self.login_frame, height=200, width=1500, fg_color="grey20", corner_radius=0, border_width=1, border_color="grey40")
+        self.create_account_frame.place(x=0, y= 50, relwidth=1, relheight=1)
+
+        self.result_label = ctk.CTkLabel(self.create_account_frame, text="", corner_radius=10)
+        self.result_label.place(x=10, y=25)
+
+
+
+
+
+
         username = self.username_entry.get()
         password = self.password_entry.get()
 
         if username and password:
             users = self.read_user_data()
             if username in users:
+                self.game_logger.log_game_event("User already exists!")
                 self.result_label.configure(text="User already exists!", fg_color="red")
                 self.reset_label_text()
             else:
+                self.game_logger.log_game_event("User created successfully!")
                 self.write_user_data(username, password)
                 self.result_label.configure(text="User created successfully!", fg_color="green")
                 self.reset_label_text()
         else:
+            self.game_logger.log_game_event("Please enter a username and password")
             self.result_label.configure(text="Please enter a username and password", fg_color="red")
             self.reset_label_text()
 
@@ -191,7 +263,7 @@ class LoginAndUserScreen():
         """
         Function to reset the text of the result label after 3 seconds
         """
-        self.result_label.after(3000, lambda: self.result_label.configure(text="", fg_color="black")) # pylint: disable=line-too-long
+        self.result_label.after(3000, lambda: self.result_label.configure(text="", fg_color="grey20")) # pylint: disable=line-too-long
 
     def enter_user(self):
         """
@@ -231,6 +303,8 @@ class LoginAndUserScreen():
         """
         Function to switch to the user screen
         """
+        self.result_label.configure(text="Login successful!", fg_color="green")
+
         if self.on_login_success_callback:
             self.on_login_success_callback()
         if hasattr(self, 'image_label'):
@@ -242,3 +316,9 @@ class LoginAndUserScreen():
         Function to get the current user name
         """
         return self.current_user
+
+    def logout(self):
+        pass
+
+    def delete_account(self):
+        pass

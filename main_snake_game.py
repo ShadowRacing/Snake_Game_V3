@@ -222,7 +222,7 @@ class SnakeGameApp:
 
         # Initializing the button panel and label panel
 
-        self.login_screen = LoginAndUserScreen(self.root, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+        self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
 
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
 

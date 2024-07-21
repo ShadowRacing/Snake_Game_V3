@@ -7,6 +7,7 @@ import time
 import configparser
 import traceback
 from os import path
+from PIL import Image
 import customtkinter as ctk
 
 # Importing necessary modules from other folders
@@ -123,6 +124,23 @@ class ClickButtonPanel:
         self.state = 'state'
         self.playing = 'playing'
 
+        # Read the config file and load it
+        self.config_dir = path.dirname(__file__)
+        self.config_path = path.join(self.config_dir, 'config.ini')
+        self.config_path_icon = path.join(self.config_dir, '..', 'app_icon.ico')
+
+        self.create_and_place_image_label(self.button_canvas, 5, 635, self.config_path_icon)
+
+    def create_and_place_image_label(self, canvas, x, y, image_path):
+        """
+        Create and place a CTkImage and CTkLabel on the specified canvas.
+        """
+        my_image = ctk.CTkImage(light_image=Image.open(image_path),
+                                dark_image=Image.open(image_path),
+                                size=(160, 160))
+
+        image_label = ctk.CTkLabel(canvas, image=my_image, text="")
+        image_label.place(x=x, y=y)
 
     def switch_canvas(self):
         """

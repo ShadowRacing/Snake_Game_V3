@@ -130,10 +130,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.config.set('Settings', 'classic_reset_high_score_snake_length_button_state', 'normal')
         self.write_changes_to_configini()
 
-        try:
-            self.create_and_place_image_label(self.snake_canvas,5, 635, self.config_path_icon)
-        except FileNotFoundError as e:
-            traceback.print_exc(e)
+
         # call the configfile method
         self.configfile()
 
@@ -204,6 +201,11 @@ class SnakeClassicGame(ctk.CTkCanvas):
         # Start the game loop
         self.start_screen()
         self.bind_and_unbind_keys()
+
+        try:
+            self.create_and_place_image_label(self.snake_canvas,500, 635, self.config_path_icon)
+        except FileNotFoundError as e:
+            traceback.print_exc(e)
 
     def create_and_place_image_label(self, canvas, x, y, image_path):
         """

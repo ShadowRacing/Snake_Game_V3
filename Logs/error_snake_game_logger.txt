@@ -2130,3 +2130,135 @@ AttributeError: 'LoginAndUserScreen' object has no attribute 'yes_button'
 
 
 
+[2024-07-21 16:51:45] 
+
+
+[2024-07-21 16:51:45] Started the Error Log File
+[2024-07-21 16:55:24] No errors occurred
+[2024-07-21 16:55:24] Closed the Error Log File
+
+
+
+
+[2024-07-21 16:55:26] 
+
+
+[2024-07-21 16:55:26] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 412, in confirm_delete_user
+    self.write_user_data(users)  # Assuming this method now accepts the entire users dict for updating
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LoginAndUserScreen.write_user_data() missing 1 required positional argument: 'password'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 412, in confirm_delete_user
+    self.write_user_data(users)  # Assuming this method now accepts the entire users dict for updating
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LoginAndUserScreen.write_user_data() missing 1 required positional argument: 'password'
+[2024-07-21 16:56:07] No errors occurred
+[2024-07-21 16:56:07] Closed the Error Log File
+
+
+
+
+[2024-07-21 16:56:57] 
+
+
+[2024-07-21 16:56:57] Started the Error Log File
+[2024-07-21 16:59:00] No errors occurred
+[2024-07-21 16:59:00] Closed the Error Log File
+
+
+
+
+[2024-07-21 16:59:03] 
+
+
+[2024-07-21 16:59:03] Started the Error Log File
+[2024-07-21 16:59:29] No errors occurred
+[2024-07-21 16:59:29] Closed the Error Log File
+
+
+
+
+[2024-07-21 16:59:32] 
+
+
+[2024-07-21 16:59:32] Started the Error Log File
+[2024-07-21 17:00:02] No errors occurred
+[2024-07-21 17:00:02] Closed the Error Log File
+
+
+
+
+[2024-07-21 17:05:56] 
+
+
+[2024-07-21 17:05:56] Started the Error Log File
+[2024-07-21 17:06:14] No errors occurred
+[2024-07-21 17:06:14] Closed the Error Log File
+
+
+
+
+[2024-07-21 17:08:09] 
+
+
+[2024-07-21 17:08:09] Started the Error Log File
+[2024-07-21 17:08:47] No errors occurred
+[2024-07-21 17:08:47] Closed the Error Log File
+
+
+
+
+[2024-07-21 17:08:48] 
+
+
+[2024-07-21 17:08:48] Started the Error Log File
+[2024-07-21 17:09:29] No errors occurred
+[2024-07-21 17:09:29] Closed the Error Log File
+
+
+
+
+[2024-07-21 17:09:31] 
+
+
+[2024-07-21 17:09:31] Started the Error Log File
+[2024-07-21 17:10:52] No errors occurred
+[2024-07-21 17:10:52] Closed the Error Log File
+
+
+
+
+[2024-07-21 17:12:43] 
+
+
+[2024-07-21 17:12:43] Started the Error Log File
+[2024-07-21 17:12:50] No errors occurred
+[2024-07-21 17:12:50] Closed the Error Log File
+
+
+
+
+[2024-07-21 17:13:42] 
+
+
+[2024-07-21 17:13:42] Started the Error Log File
+[2024-07-21 17:14:13] No errors occurred
+[2024-07-21 17:14:13] Closed the Error Log File
+
+
+
+

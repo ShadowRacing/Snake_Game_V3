@@ -2262,3 +2262,23 @@ TypeError: LoginAndUserScreen.write_user_data() missing 1 required positional ar
 
 
 
+[2024-07-21 17:36:03] 
+
+
+[2024-07-21 17:36:03] Started the Error Log File
+[2024-07-21 17:36:07] No errors occurred
+[2024-07-21 17:36:07] Closed the Error Log File
+
+
+
+
+[2024-07-21 17:37:01] 
+
+
+[2024-07-21 17:37:01] Started the Error Log File
+[2024-07-21 17:37:04] No errors occurred
+[2024-07-21 17:37:04] Closed the Error Log File
+
+
+
+

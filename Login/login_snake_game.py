@@ -4,7 +4,7 @@ File: login_example.py
 
 import json
 import os
-#import traceback
+import traceback
 from os import path
 from PIL import Image
 import customtkinter as ctk
@@ -135,7 +135,7 @@ class LoginAndUserScreen():
         self.login_label.place(x=10, y=10)
 
         # Username input
-        self.username_label = ctk.CTkLabel(self.user_frame, 
+        self.username_label = ctk.CTkLabel(self.user_frame,
                                                     text="Username")
 
         self.username_entry = ctk.CTkEntry(self.user_frame,
@@ -186,10 +186,13 @@ class LoginAndUserScreen():
         Create and place a CTkImage and CTkLabel on the specified canvas.
         """
         self.my_image = ctk.CTkImage(light_image=Image.open(image_path),
-                                dark_image=Image.open(image_path),
-                                size=(160, 160))
+                                                    dark_image=Image.open(image_path),
+                                                    size=(160, 160))
 
-        self.image_label = ctk.CTkLabel(canvas, image=self.my_image, text="", corner_radius=6)
+        self.image_label = ctk.CTkLabel(canvas,
+                                                    image=self.my_image,
+                                                    text="",
+                                                    corner_radius=6)
         self.image_label.place(x=x, y=y)
 
     def read_user_data(self):
@@ -298,46 +301,50 @@ class LoginAndUserScreen():
         self.password_entry.configure(state="disabled")
         self.username_entry.configure(state="disabled")
 
-        self.instruction_label = ctk.CTkLabel(self.user_frame,
-                                                            text="Enter your username and password to reset your password",
-                                                            text_color="red",
-                                                            fg_color="grey20") # pylint: disable=line-too-long
-        self.instruction_label.place(x=13, y=400)
+        try:
+            self.instruction_label = ctk.CTkLabel(self.user_frame,
+                                                                text="Enter your username and password to reset your password", # pylint: disable=line-too-long
+                                                                text_color="red",
+                                                                fg_color="grey20") # pylint: disable=line-too-long
+            self.instruction_label.place(x=13, y=400)
 
-        self.entry_label = ctk.CTkLabel(self.user_frame,
-                                                            text="",
-                                                            fg_color="grey20",
-                                                            corner_radius=10) # pylint: disable=line-too-long`
-        self.entry_label.place(x=13, y=440)
+            self.entry_label = ctk.CTkLabel(self.user_frame,
+                                                                text="",
+                                                                fg_color="grey20",
+                                                                corner_radius=10) # pylint: disable=line-too-long`
+            self.entry_label.place(x=13, y=440)
 
-        self.username_forgot_password_entry = ctk.CTkEntry(self.user_frame,
-                                                           fg_color="grey40",
-                                                           height=30,
-                                                           width=250,
-                                                           placeholder_text="Enter your username",
-                                                           placeholder_text_color="white") # pylint: disable=line-too-long
-        self.username_forgot_password_entry.place(x=10, y=500)
+            self.username_forgot_password_entry = ctk.CTkEntry(self.user_frame,
+                                                            fg_color="grey40",
+                                                            height=30,
+                                                            width=250,
+                                                            placeholder_text="Enter your username",
+                                                            placeholder_text_color="white") # pylint: disable=line-too-long
+            self.username_forgot_password_entry.place(x=10, y=500)
 
-        self.password_forgot_password_entry = ctk.CTkEntry(self.user_frame,
-                                                           show="*",
-                                                           fg_color="grey40",
-                                                           height=30,
-                                                           width=250,
-                                                           placeholder_text="Enter your password",
-                                                           placeholder_text_color="white") # pylint: disable=line-too-long
-        self.password_forgot_password_entry.place(x=300, y=500)
+            self.password_forgot_password_entry = ctk.CTkEntry(self.user_frame,
+                                                            show="*",
+                                                            fg_color="grey40",
+                                                            height=30,
+                                                            width=250,
+                                                            placeholder_text="Enter your password",
+                                                            placeholder_text_color="white") # pylint: disable=line-too-long
+            self.password_forgot_password_entry.place(x=300, y=500)
 
-        self.username_forgot_password_entry_label = ctk.CTkLabel(self.user_frame, text="Username")
-        self.username_forgot_password_entry_label.place(x=13, y=470)
+            self.username_forgot_password_entry_label = ctk.CTkLabel(self.user_frame, text="Username")
+            self.username_forgot_password_entry_label.place(x=13, y=470)
 
-        self.password_forgot_password_entry_label = ctk.CTkLabel(self.user_frame, text="Password")
-        self.password_forgot_password_entry_label.place(x=303, y=470)
+            self.password_forgot_password_entry_label = ctk.CTkLabel(self.user_frame, text="Password")
+            self.password_forgot_password_entry_label.place(x=303, y=470)
 
-        self.reset_password_button = ctk.CTkButton(self.user_frame, text="Reset Password", command=self.forgot_password_callback, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
-        self.reset_password_button.place(x=625, y=500)
+            self.reset_password_button = ctk.CTkButton(self.user_frame, text="Reset Password", command=self.forgot_password_callback, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
+            self.reset_password_button.place(x=625, y=500)
 
-        self.stop_forget_password = ctk.CTkButton(self.user_frame, text="Cancel", command=self.delete_forgot_password_widgets, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
-        self.stop_forget_password.place(x=795, y=500)
+            self.stop_forget_password = ctk.CTkButton(self.user_frame, text="Cancel", command=self.delete_forgot_password_widgets, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
+            self.stop_forget_password.place(x=795, y=500)
+        except Exception as e:
+            self.game_logger.log_game_event(f"Error: {e}")
+            traceback.print_exc()
 
 
     def forgot_password_callback(self):
@@ -423,55 +430,60 @@ class LoginAndUserScreen():
         self.password_entry.configure(state="disabled")
         self.username_entry.configure(state="disabled")
 
-        self.instruction_label_delete_user = ctk.CTkLabel(self.user_frame,
-                                                        text="Enter your username and password to delete", # pylint: disable=line-too-long
-                                                        text_color="red",
-                                                        fg_color="grey20")
-        self.instruction_label_delete_user.place(x=13, y=400)
+        try:
+            self.instruction_label_delete_user = ctk.CTkLabel(self.user_frame,
+                                                            text="Enter your username and password to delete", # pylint: disable=line-too-long
+                                                            text_color="red",
+                                                            fg_color="grey20")
+            self.instruction_label_delete_user.place(x=13, y=400)
 
-        self.entry_label = ctk.CTkLabel(self.user_frame, text="",
-                                                        fg_color="grey20",
-                                        corner_radius=10)
-        self.entry_label.place(x=13, y=440)
+            self.entry_label = ctk.CTkLabel(self.user_frame, text="",
+                                                            fg_color="grey20",
+                                            corner_radius=10)
+            self.entry_label.place(x=13, y=440)
 
-        self.username_delete_user_entry = ctk.CTkEntry(self.user_frame,
-                                                       fg_color="grey40",
-                                                       height=30,
-                                                       width=250,
-                                                       placeholder_text="Enter your username",
-                                                       placeholder_text_color="white")
+            self.username_delete_user_entry = ctk.CTkEntry(self.user_frame,
+                                                        fg_color="grey40",
+                                                        height=30,
+                                                        width=250,
+                                                        placeholder_text="Enter your username",
+                                                        placeholder_text_color="white")
+            self.username_delete_user_entry.place(x=10, y=500)
 
-        self.password_delete_user_entry = ctk.CTkEntry(self.user_frame, show="*",
-                                                       fg_color="grey40",
-                                                       height=30,
-                                                       width=250,
-                                                       placeholder_text="Enter your password",
-                                                       placeholder_text_color="white")
-        self.password_delete_user_entry.place(x=300, y=500)
+            self.password_delete_user_entry = ctk.CTkEntry(self.user_frame, show="*",
+                                                        fg_color="grey40",
+                                                        height=30,
+                                                        width=250,
+                                                        placeholder_text="Enter your password",
+                                                        placeholder_text_color="white")
+            self.password_delete_user_entry.place(x=300, y=500)
 
-        self.username_delete_user_entry_label = ctk.CTkLabel(self.user_frame,
-                                                        text="Username")
-        self.username_delete_user_entry_label.place(x=13, y=470)
+            self.username_delete_user_entry_label = ctk.CTkLabel(self.user_frame,
+                                                            text="Username")
+            self.username_delete_user_entry_label.place(x=13, y=470)
 
-        self.password_delete_user_entry_label = ctk.CTkLabel(self.user_frame,
-                                                        text="Password")
-        self.password_delete_user_entry_label.place(x=303, y=470)
+            self.password_delete_user_entry_label = ctk.CTkLabel(self.user_frame,
+                                                            text="Password")
+            self.password_delete_user_entry_label.place(x=303, y=470)
 
-        self.delete_user_button = ctk.CTkButton(self.user_frame,
-                                                        text="Delete User",
-                                                        command=self.delete_user_callback,
-                                                        fg_color="grey90",
-                                                        text_color="blue",
-                                                        hover_color="#E6E6FA") # pylint: disable=line-too-long
-        self.delete_user_button.place(x=625, y=500)
+            self.delete_user_button = ctk.CTkButton(self.user_frame,
+                                                            text="Delete User",
+                                                            command=self.delete_user_callback,
+                                                            fg_color="grey90",
+                                                            text_color="blue",
+                                                            hover_color="#E6E6FA") # pylint: disable=line-too-long
+            self.delete_user_button.place(x=625, y=500)
 
-        self.stop_delete_user = ctk.CTkButton(self.user_frame,
-                                                        text="Cancel",
-                                                        command=self.delete_delete_user_widgets,
-                                                        fg_color="grey90",
-                                                        text_color="blue",
-                                                        hover_color="#E6E6FA") # pylint: disable=line-too-long
-        self.stop_delete_user.place(x=795, y=500)
+            self.stop_delete_user = ctk.CTkButton(self.user_frame,
+                                                            text="Cancel",
+                                                            command=self.delete_delete_user_widgets,
+                                                            fg_color="grey90",
+                                                            text_color="blue",
+                                                            hover_color="#E6E6FA") # pylint: disable=line-too-long
+            self.stop_delete_user.place(x=795, y=500)
+        except Exception as e:
+            self.game_logger.log_game_event(f"Error: {e}")
+            traceback.print_exc()
 
     def delete_delete_user_widgets(self):
         """
@@ -496,8 +508,8 @@ class LoginAndUserScreen():
         """
         Function to delete the account of the current user
         """
-        self.confimation_label = ctk.CTkLabel(self.user_frame, 
-                                                        text="Are you sure you want to delete your account?", 
+        self.confimation_label = ctk.CTkLabel(self.user_frame,
+                                                        text="Are you sure you want to delete your account?", # pylint: disable=line-too-long
                                                         fg_color="grey20") # pylint: disable=line-too-long
         self.confimation_label.place(x=13, y=540)
         self.yes_button = ctk.CTkButton(self.user_frame,

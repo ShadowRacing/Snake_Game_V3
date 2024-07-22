@@ -4196,3 +4196,551 @@ Unbinding r
 
 
 
+[2024-07-21 21:02:19] Started the app
+[2024-07-21 21:02:19] Started the GameApp Class
+[2024-07-21 21:02:19] Game mode: initial config
+[2024-07-21 21:02:19] Current Theme: Red
+[2024-07-21 21:02:19] Set initial theme to: Red
+[2024-07-21 21:02:19] Updated initial_theme in config.ini to: Red
+[2024-07-21 21:02:19] Current initial_theme in config.ini to: Red
+[2024-07-21 21:02:19] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-21 21:02:19] Resetting snake
+[2024-07-21 21:02:19] Set initial game size to: 600x600
+[2024-07-21 21:02:19] Updated initial_game_size in config.ini to: 600x600
+[2024-07-21 21:02:19] Current initial_game_size in config.ini to: 600x600
+[2024-07-21 21:02:30] Theme applied: Red
+[2024-07-21 21:02:30] Updated contrast in config.ini to: Default
+[2024-07-21 21:02:30] Contrast mode set to: default
+[2024-07-21 21:02:33] Label border width: 1
+[2024-07-21 21:02:33] label_border_height: 1
+[2024-07-21 21:02:33] User: Wim
+[2024-07-21 21:02:35] Game mode: classic_snake
+[2024-07-21 21:02:35] Config file read in Classic snake game file: e:\Snake_game_V3\Snake_Game_V3\Games\..\config.ini
+[2024-07-21 21:02:35] Snake length: 5
+[2024-07-21 21:02:35] Game width: 600
+[2024-07-21 21:02:35] Game height: 600
+[2024-07-21 21:02:35] Highlight thickness: 5
+[2024-07-21 21:02:35] Highlight background: Black
+[2024-07-21 21:02:35] Initial direction of snake: down
+[2024-07-21 21:02:35] Initial score: 0
+[2024-07-21 21:02:35] Game over flag: False
+[2024-07-21 21:02:35] Game paused: False
+[2024-07-21 21:02:35] Has changed direction: False
+[2024-07-21 21:02:35] Time-related variables initialized.
+[2024-07-21 21:02:35] Start time: None
+[2024-07-21 21:02:35] Paused time: None
+[2024-07-21 21:02:35] Total paused time: 0
+[2024-07-21 21:02:35] Total time played: 0
+[2024-07-21 21:02:35] Total time paused: 0
+[2024-07-21 21:02:35] Last direction change time: 0
+[2024-07-21 21:02:35] Pause duration: 0
+[2024-07-21 21:02:35] High score time: 0
+[2024-07-21 21:02:35] Current time: 0
+[2024-07-21 21:02:35] Get time score: 0
+[2024-07-21 21:02:35] Get snake length: 0
+[2024-07-21 21:02:35] High scores initialized
+[2024-07-21 21:02:35] High score: 0
+[2024-07-21 21:02:35] Snake length high score: 0
+[2024-07-21 21:02:35] Reset snake length
+[2024-07-21 21:02:35] Game mode: classic_snake
+[2024-07-21 21:02:35] Wrote changes to config.ini
+[2024-07-21 21:02:35] Config file read
+[2024-07-21 21:02:35] Game mode set to classic_snake.
+[2024-07-21 21:02:35] Wrote changes to config.ini
+[2024-07-21 21:02:35] Game focused
+[2024-07-21 21:02:35] Updated high score labels.
+[2024-07-21 21:02:35] Wrote changes to config.ini
+[2024-07-21 21:02:35] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-07-21 21:02:35] Resetting snake
+[2024-07-21 21:02:35] Set initial game size to: 600x600
+[2024-07-21 21:02:35] Updated initial_game_size in config.ini to: 600x600
+[2024-07-21 21:02:35] Current initial_game_size in config.ini to: 600x600
+[2024-07-21 21:02:35] Label border width: 1
+[2024-07-21 21:02:35] label_border_height: 1
+[2024-07-21 21:02:36] Unbound and bound keys.
+[2024-07-21 21:02:36] Game state: playing
+[2024-07-21 21:02:36] Set buttons states to: disabled
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Game is in an unexpected state
+[2024-07-21 21:02:36] Updated button states.
+[2024-07-21 21:02:36] Bound and unbound keys.
+[2024-07-21 21:02:36] got high scores from config.ini
+[2024-07-21 21:02:36] Updated high score labels.
+[2024-07-21 21:02:36] Deleted all items on the canvas.
+[2024-07-21 21:02:36] Got the snake coordinates.
+[2024-07-21 21:02:36] Food ID: 2813657a-1074-4e50-9e82-652b1762f1a9
+[2024-07-21 21:02:36] Food items: {'2813657a-1074-4e50-9e82-652b1762f1a9': {'x': 360, 'y': 220, 'tag': 'food2813657a-1074-4e50-9e82-652b1762f1a9', 'oval_id': 7}}
+[2024-07-21 21:02:36] Spawned food.
+[2024-07-21 21:02:36] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Set time score in config.ini to total time played
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Set time score in config.ini to total time played
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Set time score in config.ini to total time played
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Set time score in config.ini to total time played
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Set time score in config.ini to total time played
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Set time score in config.ini to total time played
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Set time score in config.ini to total time played
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Game paused
+[2024-07-21 21:02:36] Wrote changes to config.ini
+[2024-07-21 21:02:36] Game is in an unexpected state
+[2024-07-21 21:02:36] Paused label displayed
+[2024-07-21 21:02:36] Bound and unbound keys.
+[2024-07-21 21:02:37] Game resumed
+[2024-07-21 21:02:37] Wrote changes to config.ini
+[2024-07-21 21:02:37] Game is in an unexpected state
+[2024-07-21 21:02:37] Paused label deleted
+[2024-07-21 21:02:37] Bound and unbound keys.
+[2024-07-21 21:02:37] Wrote changes to config.ini
+[2024-07-21 21:02:37] Set time score in config.ini to total time played
+[2024-07-21 21:02:37] Wrote changes to config.ini
+[2024-07-21 21:02:37] Wrote changes to config.ini
+[2024-07-21 21:02:37] Set time score in config.ini to total time played
+[2024-07-21 21:02:37] Wrote changes to config.ini
+[2024-07-21 21:02:37] Wrote changes to config.ini
+[2024-07-21 21:02:37] Set time score in config.ini to total time played
+[2024-07-21 21:02:37] Wrote changes to config.ini
+[2024-07-21 21:02:37] Game paused
+[2024-07-21 21:02:37] Wrote changes to config.ini
+[2024-07-21 21:02:37] Game is in an unexpected state
+[2024-07-21 21:02:37] Paused label displayed
+[2024-07-21 21:02:37] Bound and unbound keys.
+[2024-07-21 21:03:05] Closed the app
+
+
+
+
+[2024-07-21 21:04:21] Started the app
+[2024-07-21 21:04:21] Started the GameApp Class
+[2024-07-21 21:04:21] Game mode: initial config
+[2024-07-21 21:04:21] Current Theme: Red
+[2024-07-21 21:04:21] Set initial theme to: Red
+[2024-07-21 21:04:21] Updated initial_theme in config.ini to: Red
+[2024-07-21 21:04:21] Current initial_theme in config.ini to: Red
+[2024-07-21 21:04:21] Config main file: e:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-21 21:04:21] Resetting snake
+[2024-07-21 21:04:21] Set initial game size to: 600x600
+[2024-07-21 21:04:21] Updated initial_game_size in config.ini to: 600x600
+[2024-07-21 21:04:21] Current initial_game_size in config.ini to: 600x600
+[2024-07-21 21:04:29] Theme applied: Red
+[2024-07-21 21:04:29] Updated contrast in config.ini to: Default
+[2024-07-21 21:04:29] Contrast mode set to: default
+[2024-07-21 21:04:32] Label border width: 1
+[2024-07-21 21:04:32] label_border_height: 1
+[2024-07-21 21:04:32] User: Wim
+[2024-07-21 21:04:34] Game mode: classic_snake
+[2024-07-21 21:04:34] Config file read in Classic snake game file: e:\Snake_game_V3\Snake_Game_V3\Games\..\config.ini
+[2024-07-21 21:04:34] Snake length: 5
+[2024-07-21 21:04:34] Game width: 600
+[2024-07-21 21:04:34] Game height: 600
+[2024-07-21 21:04:34] Highlight thickness: 5
+[2024-07-21 21:04:34] Highlight background: Black
+[2024-07-21 21:04:34] Initial direction of snake: down
+[2024-07-21 21:04:34] Initial score: 0
+[2024-07-21 21:04:34] Game over flag: False
+[2024-07-21 21:04:34] Game paused: False
+[2024-07-21 21:04:34] Has changed direction: False
+[2024-07-21 21:04:34] Time-related variables initialized.
+[2024-07-21 21:04:34] Start time: None
+[2024-07-21 21:04:34] Paused time: None
+[2024-07-21 21:04:34] Total paused time: 0
+[2024-07-21 21:04:34] Total time played: 0
+[2024-07-21 21:04:34] Total time paused: 0
+[2024-07-21 21:04:34] Last direction change time: 0
+[2024-07-21 21:04:34] Pause duration: 0
+[2024-07-21 21:04:34] High score time: 0
+[2024-07-21 21:04:34] Current time: 0
+[2024-07-21 21:04:34] Get time score: 0
+[2024-07-21 21:04:34] Get snake length: 0
+[2024-07-21 21:04:34] High scores initialized
+[2024-07-21 21:04:34] High score: 0
+[2024-07-21 21:04:34] Snake length high score: 0
+[2024-07-21 21:04:34] Reset snake length
+[2024-07-21 21:04:34] Game mode: classic_snake
+[2024-07-21 21:04:34] Wrote changes to config.ini
+[2024-07-21 21:04:34] Config file read
+[2024-07-21 21:04:34] Game mode set to classic_snake.
+[2024-07-21 21:04:34] Wrote changes to config.ini
+[2024-07-21 21:04:34] Game focused
+[2024-07-21 21:04:34] Updated high score labels.
+[2024-07-21 21:04:34] Wrote changes to config.ini
+[2024-07-21 21:04:34] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-07-21 21:04:34] Resetting snake
+[2024-07-21 21:04:34] Set initial game size to: 600x600
+[2024-07-21 21:04:34] Updated initial_game_size in config.ini to: 600x600
+[2024-07-21 21:04:34] Current initial_game_size in config.ini to: 600x600
+[2024-07-21 21:04:34] Label border width: 1
+[2024-07-21 21:04:34] label_border_height: 1
+[2024-07-21 21:04:35] Unbound and bound keys.
+[2024-07-21 21:04:35] Game state: playing
+[2024-07-21 21:04:35] Set buttons states to: disabled
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Game is in an unexpected state
+[2024-07-21 21:04:35] Updated button states.
+[2024-07-21 21:04:35] Bound and unbound keys.
+[2024-07-21 21:04:35] got high scores from config.ini
+[2024-07-21 21:04:35] Updated high score labels.
+[2024-07-21 21:04:35] Deleted all items on the canvas.
+[2024-07-21 21:04:35] Got the snake coordinates.
+[2024-07-21 21:04:35] Food ID: bcc1436a-a258-4c8e-9a21-d178b3ff1c83
+[2024-07-21 21:04:35] Food items: {'bcc1436a-a258-4c8e-9a21-d178b3ff1c83': {'x': 360, 'y': 100, 'tag': 'foodbcc1436a-a258-4c8e-9a21-d178b3ff1c83', 'oval_id': 7}}
+[2024-07-21 21:04:35] Spawned food.
+[2024-07-21 21:04:35] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Set time score in config.ini to total time played
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Set time score in config.ini to total time played
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Set time score in config.ini to total time played
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Set time score in config.ini to total time played
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:35] Set time score in config.ini to total time played
+[2024-07-21 21:04:35] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:36] Set time score in config.ini to total time played
+[2024-07-21 21:04:36] Wrote changes to config.ini
+[2024-07-21 21:04:37] Wrote changes to config.ini
+[2024-07-21 21:04:37] Set time score in config.ini to total time played
+[2024-07-21 21:04:37] Wrote changes to config.ini
+[2024-07-21 21:04:37] Game paused
+[2024-07-21 21:04:37] Wrote changes to config.ini
+[2024-07-21 21:04:37] Game is in an unexpected state
+[2024-07-21 21:04:37] Paused label displayed
+[2024-07-21 21:04:37] Bound and unbound keys.
+[2024-07-21 21:04:45] Updated the config.ini of theme
+[2024-07-21 21:04:45] Reset theme label
+[2024-07-21 21:04:47] Game mode: snake_endless
+[2024-07-21 21:04:47] Config file read in Endless snake game file: e:\Snake_game_V3\Snake_Game_V3\Games\..\config.ini
+[2024-07-21 21:04:47] Snake length: 5
+[2024-07-21 21:04:47] Game width: 600
+[2024-07-21 21:04:47] Game height: 600
+[2024-07-21 21:04:47] Highlight thickness: 5
+[2024-07-21 21:04:47] Highlight background: Black
+[2024-07-21 21:04:47] Initial direction of snake: down
+[2024-07-21 21:04:47] Initial score: 0
+[2024-07-21 21:04:47] Initial special score: 0
+[2024-07-21 21:04:47] Initial shorten score: 0
+[2024-07-21 21:04:47] Game over flag: False
+[2024-07-21 21:04:47] Game paused: False
+[2024-07-21 21:04:47] Has changed direction: False
+[2024-07-21 21:04:47] Next special food score: 50
+[2024-07-21 21:04:47] Next shorten food score: 100
+[2024-07-21 21:04:47] Next food score: 0
+[2024-07-21 21:04:47] Time-related variables initialized.
+[2024-07-21 21:04:47] Start time: None
+[2024-07-21 21:04:47] Paused time: None
+[2024-07-21 21:04:47] Total paused time: 0
+[2024-07-21 21:04:47] Total time played: 0
+[2024-07-21 21:04:47] Total time paused: 0
+[2024-07-21 21:04:47] Last direction change time: 0
+[2024-07-21 21:04:47] Pause duration: 0
+[2024-07-21 21:04:47] High score time: 0
+[2024-07-21 21:04:47] Current time: 0
+[2024-07-21 21:04:47] Get time score: 0
+[2024-07-21 21:04:47] Get snake length: 0
+[2024-07-21 21:04:47] High scores initialized
+[2024-07-21 21:04:47] High score: 0
+[2024-07-21 21:04:47] Snake length high score: 0
+[2024-07-21 21:04:47] Special score high score: 0
+[2024-07-21 21:04:47] Shorten score high score: 0
+[2024-07-21 21:04:47] Width: 600
+[2024-07-21 21:04:47] Height: 600
+[2024-07-21 21:04:47] Reset snake length
+[2024-07-21 21:04:47] Game mode: snake_endless
+[2024-07-21 21:04:47] Wrote changes to config.ini
+[2024-07-21 21:04:47] Config file read
+[2024-07-21 21:04:47] Game mode set to endless_snake.
+[2024-07-21 21:04:47] Wrote changes to config.ini
+[2024-07-21 21:04:47] Wrote changes to config.ini
+[2024-07-21 21:04:47] Wrote changes to config.ini
+[2024-07-21 21:04:47] Game focused
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-07-21 21:04:47] Updated high score labels.
+[2024-07-21 21:04:47] Wrote changes to config.ini
+[2024-07-21 21:04:47] Set the game state to start_screen. And wrote changes to config.ini.
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-07-21 21:04:47] Resetting snake
+[2024-07-21 21:04:47] Set initial game size to: 600x600
+[2024-07-21 21:04:47] Updated initial_game_size in config.ini to: 600x600
+[2024-07-21 21:04:47] Current initial_game_size in config.ini to: 600x600
+[2024-07-21 21:04:47] Label border width: 1
+[2024-07-21 21:04:47] label_border_height: 1
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-07-21 21:04:49] Game state: playing
+[2024-07-21 21:04:49] Set buttons states to: disabled
+[2024-07-21 21:04:49] Wrote changes to config.ini
+[2024-07-21 21:04:49] Wrote changes to config.ini
+[2024-07-21 21:04:49] Game is in an unexpected state
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-07-21 21:04:51] Game state: playing
+[2024-07-21 21:04:51] Set buttons states to: disabled
+[2024-07-21 21:04:51] Wrote changes to config.ini
+[2024-07-21 21:04:51] Wrote changes to config.ini
+[2024-07-21 21:04:51] Game is in an unexpected state
+[2024-07-21 21:04:56] Updated the config.ini of theme
+[2024-07-21 21:04:56] Reset theme label
+[2024-07-21 21:04:57] Game mode: snake_leveling
+[2024-07-21 21:04:57] Config file read in Leveling snake game file: e:\Snake_game_V3\Snake_Game_V3\Games\..\config.ini
+[2024-07-21 21:04:57] Reset snake length
+[2024-07-21 21:04:57] Game mode: snake_leveling
+[2024-07-21 21:04:57] Wrote changes to config.ini
+[2024-07-21 21:04:57] Config file read
+[2024-07-21 21:04:57] Game focused
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-07-21 21:04:57] Updated high score labels.
+[2024-07-21 21:04:57] Wrote changes to config.ini
+[2024-07-21 21:04:57] Set the game state to start_screen. And wrote changes to config.ini.
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-07-21 21:04:57] Resetting snake
+[2024-07-21 21:04:57] Set initial game size to: 600x600
+[2024-07-21 21:04:57] Updated initial_game_size in config.ini to: 600x600
+[2024-07-21 21:04:57] Current initial_game_size in config.ini to: 600x600
+[2024-07-21 21:04:57] Label border width: 1
+[2024-07-21 21:04:57] label_border_height: 1
+Unbinding w
+Unbinding s
+Unbinding a
+Unbinding d
+Unbinding space
+Unbinding Escape
+Unbinding r
+[2024-07-21 21:04:58] Game state: playing
+[2024-07-21 21:04:58] Set buttons states to: disabled
+[2024-07-21 21:04:58] Wrote changes to config.ini
+[2024-07-21 21:04:58] Wrote changes to config.ini
+[2024-07-21 21:04:58] Game is in an unexpected state
+[2024-07-21 21:05:01] Closed the app
+
+
+
+
+[2024-07-22 16:34:41] Started the app
+[2024-07-22 16:34:41] Started the GameApp Class
+[2024-07-22 16:34:41] Game mode: initial config
+[2024-07-22 16:34:41] Current Theme: Red
+[2024-07-22 16:34:41] Set initial theme to: Red
+[2024-07-22 16:34:41] Updated initial_theme in config.ini to: Red
+[2024-07-22 16:34:41] Current initial_theme in config.ini to: Red
+[2024-07-22 16:34:41] Config main file: E:\Snake_game_V3\Snake_Game_V3\config.ini
+[2024-07-22 16:34:41] Resetting snake
+[2024-07-22 16:34:41] Set initial game size to: 600x600
+[2024-07-22 16:34:41] Updated initial_game_size in config.ini to: 600x600
+[2024-07-22 16:34:41] Current initial_game_size in config.ini to: 600x600
+[2024-07-22 16:35:07] Theme applied: Red
+[2024-07-22 16:35:07] Updated contrast in config.ini to: Default
+[2024-07-22 16:35:07] Contrast mode set to: default
+[2024-07-22 16:35:10] Label border width: 1
+[2024-07-22 16:35:10] label_border_height: 1
+[2024-07-22 16:35:10] User: Wim
+[2024-07-22 16:35:13] Game mode: classic_snake
+[2024-07-22 16:35:13] Config file read in Classic snake game file: E:\Snake_game_V3\Snake_Game_V3\Games\..\config.ini
+[2024-07-22 16:35:13] Snake length: 5
+[2024-07-22 16:35:13] Game width: 600
+[2024-07-22 16:35:13] Game height: 600
+[2024-07-22 16:35:13] Highlight thickness: 5
+[2024-07-22 16:35:13] Highlight background: Black
+[2024-07-22 16:35:13] Initial direction of snake: down
+[2024-07-22 16:35:13] Initial score: 0
+[2024-07-22 16:35:13] Game over flag: False
+[2024-07-22 16:35:13] Game paused: False
+[2024-07-22 16:35:13] Has changed direction: False
+[2024-07-22 16:35:13] Time-related variables initialized.
+[2024-07-22 16:35:13] Start time: None
+[2024-07-22 16:35:13] Paused time: None
+[2024-07-22 16:35:13] Total paused time: 0
+[2024-07-22 16:35:13] Total time played: 0
+[2024-07-22 16:35:13] Total time paused: 0
+[2024-07-22 16:35:13] Last direction change time: 0
+[2024-07-22 16:35:13] Pause duration: 0
+[2024-07-22 16:35:13] High score time: 0
+[2024-07-22 16:35:13] Current time: 0
+[2024-07-22 16:35:13] Get time score: 0
+[2024-07-22 16:35:13] Get snake length: 0
+[2024-07-22 16:35:13] High scores initialized
+[2024-07-22 16:35:13] High score: 0
+[2024-07-22 16:35:13] Snake length high score: 0
+[2024-07-22 16:35:13] Reset snake length
+[2024-07-22 16:35:13] Game mode: classic_snake
+[2024-07-22 16:35:13] Wrote changes to config.ini
+[2024-07-22 16:35:13] Config file read
+[2024-07-22 16:35:13] Game mode set to classic_snake.
+[2024-07-22 16:35:13] Wrote changes to config.ini
+[2024-07-22 16:35:13] Game focused
+[2024-07-22 16:35:13] Updated high score labels.
+[2024-07-22 16:35:13] Wrote changes to config.ini
+[2024-07-22 16:35:13] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-07-22 16:35:13] Resetting snake
+[2024-07-22 16:35:13] Set initial game size to: 600x600
+[2024-07-22 16:35:13] Updated initial_game_size in config.ini to: 600x600
+[2024-07-22 16:35:13] Current initial_game_size in config.ini to: 600x600
+[2024-07-22 16:35:13] Label border width: 1
+[2024-07-22 16:35:13] label_border_height: 1
+[2024-07-22 16:35:14] Unbound and bound keys.
+[2024-07-22 16:35:14] Game state: playing
+[2024-07-22 16:35:14] Set buttons states to: disabled
+[2024-07-22 16:35:14] Wrote changes to config.ini
+[2024-07-22 16:35:14] Wrote changes to config.ini
+[2024-07-22 16:35:14] Game is in an unexpected state
+[2024-07-22 16:35:14] Updated button states.
+[2024-07-22 16:35:14] Bound and unbound keys.
+[2024-07-22 16:35:14] got high scores from config.ini
+[2024-07-22 16:35:14] Updated high score labels.
+[2024-07-22 16:35:14] Deleted all items on the canvas.
+[2024-07-22 16:35:14] Got the snake coordinates.
+[2024-07-22 16:35:14] Food ID: a5597581-5132-49f0-a2f0-76fe584829e1
+[2024-07-22 16:35:14] Food items: {'a5597581-5132-49f0-a2f0-76fe584829e1': {'x': 80, 'y': 20, 'tag': 'fooda5597581-5132-49f0-a2f0-76fe584829e1', 'oval_id': 7}}
+[2024-07-22 16:35:14] Spawned food.
+[2024-07-22 16:35:14] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-07-22 16:35:14] Wrote changes to config.ini
+[2024-07-22 16:35:14] Set time score in config.ini to total time played
+[2024-07-22 16:35:14] Wrote changes to config.ini
+[2024-07-22 16:35:14] Wrote changes to config.ini
+[2024-07-22 16:35:14] Set time score in config.ini to total time played
+[2024-07-22 16:35:14] Wrote changes to config.ini
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Set time score in config.ini to total time played
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Set time score in config.ini to total time played
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Set time score in config.ini to total time played
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Set time score in config.ini to total time played
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Set time score in config.ini to total time played
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Set time score in config.ini to total time played
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Set time score in config.ini to total time played
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Set time score in config.ini to total time played
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:15] Set time score in config.ini to total time played
+[2024-07-22 16:35:15] Wrote changes to config.ini
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Set time score in config.ini to total time played
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Set time score in config.ini to total time played
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Set time score in config.ini to total time played
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Set time score in config.ini to total time played
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Set time score in config.ini to total time played
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] snake has a collision
+[2024-07-22 16:35:16] bound and unbound keys.
+[2024-07-22 16:35:16] Set buttons states to: normal.
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:16] Game is in an unexpected state
+[2024-07-22 16:35:16] Game state: game_over
+[2024-07-22 16:35:16] Snake coordinates after reset: [(-20, 180), (0, 180), (20, 180), (20, 200), (20, 220)]
+[2024-07-22 16:35:16] Deleted all items on the canvas.
+[2024-07-22 16:35:16] Unbound space key.
+[2024-07-22 16:35:16] Bound and unbound keys.
+[2024-07-22 16:35:16] Got the high score from config.ini
+[2024-07-22 16:35:16] High score: 0
+[2024-07-22 16:35:16] Score: 0
+[2024-07-22 16:35:16] Got time score: 0
+[2024-07-22 16:35:16] high_score_time updated to: 1
+[2024-07-22 16:35:16] Got snake length high score: 0
+[2024-07-22 16:35:16] snake_length_high_score updated to: 5
+[2024-07-22 16:35:16] Wrote changes to config.ini
+[2024-07-22 16:35:17] Closed the app
+
+
+
+

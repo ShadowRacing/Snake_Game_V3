@@ -2283,3 +2283,66 @@ AttributeError: 'NoneType' object has no attribute 'configure'
 
 
 
+[2024-07-21 21:02:19] 
+
+
+[2024-07-21 21:02:19] Started the Error Log File
+[2024-07-21 21:03:05] No errors occurred
+[2024-07-21 21:03:05] Closed the Error Log File
+
+
+
+
+[2024-07-21 21:04:21] 
+
+
+[2024-07-21 21:04:21] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 342, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 225, in update_button_state
+    self.classic_reset_high_score_button.configure(state=self.classic_reset_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_endless_game.py", line 342, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 225, in update_button_state
+    self.classic_reset_high_score_button.configure(state=self.classic_reset_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Games\snake_leveling_game.py", line 257, in start_game
+    self.create_button_panel.update_button_state()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 225, in update_button_state
+    self.classic_reset_high_score_button.configure(state=self.classic_reset_high_score_button_state) # pylint: disable=line-too-long
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-07-21 21:05:01] No errors occurred
+[2024-07-21 21:05:01] Closed the Error Log File
+
+
+
+
+[2024-07-22 16:34:41] 
+
+
+[2024-07-22 16:34:41] Started the Error Log File
+[2024-07-22 16:35:17] No errors occurred
+[2024-07-22 16:35:17] Closed the Error Log File
+
+
+
+

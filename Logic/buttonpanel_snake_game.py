@@ -129,7 +129,7 @@ class ClickButtonPanel:
         self.config_path = path.join(self.config_dir, 'config.ini')
         self.config_path_icon = path.join(self.config_dir, '..', 'app_icon.ico')
 
-        self.create_and_place_image_label(self.button_canvas, 5, 635, self.config_path_icon)
+        #self.create_and_place_image_label(self.button_canvas, 5, 635, self.config_path_icon)
 
     def create_and_place_image_label(self, canvas, x, y, image_path):
         """
@@ -197,16 +197,19 @@ class ClickButtonPanel:
 
         if self.game_mode  == 'classic_snake':
             if self.classic_state_game == 'playing':
+                self.game_logger.log_game_event('Game is playing')
                 self.home_button_state = 'disabled'
                 self.classic_reset_high_score_button_state = 'disabled'
                 self.classic_reset_high_score_time_button_state = 'disabled'
                 self.classic_reset_high_score_snake_length_button_state = 'disabled'
             elif self.classic_state_game == 'paused':
+                self.game_logger.log_game_event('Game is paused')
                 self.classic_reset_high_score_button_state = 'normal'
                 self.classic_reset_high_score_time_button_state = 'normal'
                 self.classic_reset_high_score_snake_length_button_state = 'normal'
             else:
                 # Handle unexpected state or fallback to a default
+                self.game_logger.log_game_event('Game is in an unexpected state')
                 self.home_button_state = 'normal'
                 self.classic_reset_high_score_button_state = 'normal'
                 self.classic_reset_high_score_time_button_state = 'normal'

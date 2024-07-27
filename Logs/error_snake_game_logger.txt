@@ -2346,3 +2346,433 @@ AttributeError: 'NoneType' object has no attribute 'configure'
 
 
 
+[2024-07-22 16:57:05] 
+
+
+[2024-07-22 16:57:05] Started the Error Log File
+[2024-07-22 16:57:58] No errors occurred
+[2024-07-22 16:57:58] Closed the Error Log File
+
+
+
+
+[2024-07-22 16:59:04] 
+
+
+[2024-07-22 16:59:04] Started the Error Log File
+[2024-07-22 16:59:20] No errors occurred
+[2024-07-22 16:59:20] Closed the Error Log File
+
+
+
+
+[2024-07-24 19:59:42] 
+
+
+[2024-07-24 19:59:42] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1310, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 70, in __init__
+    self.config = self.load_config()
+                  ^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 272, in load_config
+    default_config_path = os.path.join(self.config_dir, 'default_config.ini')
+                                       ^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'config_dir'. Did you mean: 'config_ini'?
+[2024-07-24 20:01:13] 
+
+
+[2024-07-24 20:01:13] Started the Error Log File
+[2024-07-24 20:05:25] No errors occurred
+[2024-07-24 20:05:25] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:06:25] 
+
+
+[2024-07-24 20:06:25] Started the Error Log File
+[2024-07-24 20:06:42] No errors occurred
+[2024-07-24 20:06:42] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:07:29] 
+
+
+[2024-07-24 20:07:29] Started the Error Log File
+[2024-07-24 20:10:15] No errors occurred
+[2024-07-24 20:10:15] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:13:21] 
+
+
+[2024-07-24 20:13:21] Started the Error Log File
+[2024-07-24 20:13:28] No errors occurred
+[2024-07-24 20:13:28] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:13:52] 
+
+
+[2024-07-24 20:13:52] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "e:\Snake_game_V3\Snake_Game_V3\Logic\button_commands_snake_game.py", line 50, in settings_command
+    self.functions['open_settings']()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 590, in open_settings
+    self.start_game("settings")
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 631, in start_game
+    self.handle_info_settings(game_type)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 651, in handle_info_settings
+    self.setup_settings_canvas()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'setup_settings_canvas'
+[2024-07-24 20:14:21] No errors occurred
+[2024-07-24 20:14:21] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:14:24] 
+
+
+[2024-07-24 20:14:24] Started the Error Log File
+[2024-07-24 20:14:42] No errors occurred
+[2024-07-24 20:14:42] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:15:41] 
+
+
+[2024-07-24 20:15:41] Started the Error Log File
+[2024-07-24 20:16:01] No errors occurred
+[2024-07-24 20:16:01] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:17:37] 
+
+
+[2024-07-24 20:17:37] Started the Error Log File
+[2024-07-24 20:17:51] No errors occurred
+[2024-07-24 20:17:51] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:32:45] 
+
+
+[2024-07-24 20:32:45] Started the Error Log File
+[2024-07-24 20:33:19] No errors occurred
+[2024-07-24 20:33:19] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:33:33] 
+
+
+[2024-07-24 20:33:33] Started the Error Log File
+[2024-07-24 20:33:49] No errors occurred
+[2024-07-24 20:33:49] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:34:38] 
+
+
+[2024-07-24 20:34:38] Started the Error Log File
+[2024-07-24 20:34:52] No errors occurred
+[2024-07-24 20:34:52] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:38:52] 
+
+
+[2024-07-24 20:38:52] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1311, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 86, in __init__
+    self.config.read(self.config_path)
+                     ^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'config_path'. Did you mean: 'config_dir'?
+[2024-07-24 20:38:59] 
+
+
+[2024-07-24 20:38:59] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1311, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 86, in __init__
+    self.config.read(self.config_path)
+                     ^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'config_path'. Did you mean: 'config_dir'?
+[2024-07-24 20:39:41] 
+
+
+[2024-07-24 20:39:41] Started the Error Log File
+[2024-07-24 20:39:56] No errors occurred
+[2024-07-24 20:39:56] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:40:54] 
+
+
+[2024-07-24 20:40:54] Started the Error Log File
+[2024-07-24 20:41:09] No errors occurred
+[2024-07-24 20:41:09] Closed the Error Log File
+
+
+
+
+[2024-07-24 20:41:39] 
+
+
+[2024-07-24 20:41:39] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 403, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 441, in create_home_screen
+    self.config.set('Settings', 'home_button_state', 'normal')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-07-24 20:42:10] No errors occurred
+[2024-07-24 20:42:10] Closed the Error Log File
+
+
+
+
+[2024-07-26 21:20:43] 
+
+
+[2024-07-26 21:20:43] Started the Error Log File
+[2024-07-26 21:20:52] No errors occurred
+[2024-07-26 21:20:52] Closed the Error Log File
+
+
+
+
+[2024-07-26 21:25:46] 
+
+
+[2024-07-26 21:25:46] Started the Error Log File
+[2024-07-26 21:26:19] No errors occurred
+[2024-07-26 21:26:19] Closed the Error Log File
+
+
+
+
+[2024-07-26 21:29:48] 
+
+
+[2024-07-26 21:29:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 403, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 441, in create_home_screen
+    self.config.set('Settings', 'home_button_state', 'normal')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-07-26 21:30:09] No errors occurred
+[2024-07-26 21:30:09] Closed the Error Log File
+
+
+
+
+[2024-07-26 21:30:48] 
+
+
+[2024-07-26 21:30:48] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 403, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 441, in create_home_screen
+    self.config.set('Settings', 'home_button_state', 'normal')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-07-26 21:31:25] No errors occurred
+[2024-07-26 21:31:25] Closed the Error Log File
+
+
+
+
+[2024-07-26 21:31:27] 
+
+
+[2024-07-26 21:31:27] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 403, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 441, in create_home_screen
+    self.config.set('Settings', 'home_button_state', 'normal')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-07-26 21:33:06] No errors occurred
+[2024-07-26 21:33:06] Closed the Error Log File
+
+
+
+
+[2024-07-27 13:33:58] 
+
+
+[2024-07-27 13:33:58] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 403, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 441, in create_home_screen
+    self.config.set('Settings', 'home_button_state', 'normal')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-07-27 13:34:10] No errors occurred
+[2024-07-27 13:34:10] Closed the Error Log File
+
+
+
+
+[2024-07-27 13:38:10] 
+
+
+[2024-07-27 13:38:10] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 861, in callit
+    func(*args)
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 406, in destroy_loading_screen
+    self.create_home_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 444, in create_home_screen
+    self.config.set('Settings', 'home_button_state', 'normal')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 1220, in set
+    super().set(section, option, value)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 918, in set
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'Settings'
+[2024-07-27 13:39:46] No errors occurred
+[2024-07-27 13:39:46] Closed the Error Log File
+
+
+
+
+[2024-07-27 13:40:47] 
+
+
+[2024-07-27 13:40:47] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1315, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 83, in __init__
+    self.config_path = path.join(self.config_dir, self.get_user_name + '_config.ini')
+                                                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'SnakeGameApp' object has no attribute 'get_user_name'
+[2024-07-27 15:39:07] 
+
+
+[2024-07-27 15:39:07] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1323, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 68, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 72, in __init__
+    self.config_handler = ConfigHandler(self.config_dir)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ConfigHandler.__init__() missing 1 required positional argument: 'game_logger'
+[2024-07-27 15:41:10] 
+
+
+[2024-07-27 15:41:10] Started the Error Log File
+Traceback (most recent call last):
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 1323, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 69, in __init__
+    self.create_login_screen_main()
+  File "e:\Snake_game_V3\Snake_Game_V3\main_snake_game.py", line 305, in create_login_screen_main
+    self.login_screen.create_login_screen()
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 185, in create_login_screen
+    self.create_and_place_image_label(self.login_frame, 5, 635, self.config_path_icon)
+  File "e:\Snake_game_V3\Snake_Game_V3\Login\login_snake_game.py", line 194, in create_and_place_image_label
+    self.my_image = ctk.CTkImage(light_image=Image.open(image_path),
+                                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'e:\\Snake_game_V3\\Snake_Game_V3\\..\\app_icon.ico'

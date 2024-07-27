@@ -10,6 +10,7 @@ import json
 import threading
 import sys
 import subprocess
+import os
 from os import path
 from PIL import Image
 import customtkinter as ctk
@@ -29,6 +30,7 @@ from Games.snake_leveling_game import SnakeLeveling
 from Logic.buttonpanel_snake_game import ClickButtonPanel, ButtonCommands
 from Logic.buttonpanelreset_snake_game import ResetSettingsPanel
 from Logic.config_ini_initials import ConfigIni
+from Logic.config_handler import ConfigHandler
 from Logic.game_labelpanel import GameLabelsPanel
 from Logic.home_screen_manager import HomeScreenManager
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels
@@ -55,6 +57,7 @@ class SnakeGameApp:
     """
     def __init__ (self, root, game_width, game_height): # pylint: disable=redefined-outer-name
         #Initialize the game app values
+        
         self.config_ini = ConfigIni()
         self.config_ini.set_config()
         time.sleep(1)
@@ -62,9 +65,12 @@ class SnakeGameApp:
         self.game_logger = GameLogger(root)
         self.error_game_logger = ErrorgameLogger()
         self.game_logger.log_game_event("Started the GameApp Class")
+        self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+        self.create_login_screen_main()
         self.game_config = GameConfig(game_logger=self.game_logger, game_mode = "initial_config")
         self.update_contrast = UpdateContrast(self.game_logger)
         self.theme_updater = ThemeUpdater(self.game_logger)
+
         self.game_width = game_width
         self.game_height = game_height
         self.snake_color = None
@@ -74,11 +80,14 @@ class SnakeGameApp:
         self.theme_updater.set_initial_theme()
 
         # Read the config file and load it
-        self.config_dir = path.dirname(__file__)
-        self.config_path = path.join(self.config_dir, 'config.ini')
+        self.config_dir = os.path.dirname(os.path.dirname(__file__))  # Assumes main file is in root directory
+        self.config_handler = ConfigHandler(self.config_dir, self.game_logger)
+        # self.config_dir = path.dirname(__file__)
+        # self.config_handler = ConfigHandler(self.config_dir)
+        # self.config_path = path.join(self.config_dir, 'config.ini')
         self.config_path_icon = path.join(self.config_dir, 'app_icon.ico')
         self.root.iconbitmap('app_icon.ico')
-        self.game_logger.log_game_event(f"Config main file: {self.config_path}")
+        #self.game_logger.log_game_event(f"Config main file: {self.config_path}")
         self.config = configparser.ConfigParser()
         try:
             self.config.read(self.config_path)
@@ -222,7 +231,7 @@ class SnakeGameApp:
 
         # Initializing the button panel and label panel
 
-        self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+        
 
         self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
 
@@ -258,9 +267,36 @@ class SnakeGameApp:
         # Create the loading screen
         #self.create_loading_screen()
 
-        self.create_login_screen_main()
+        
 
         self.root.protocol("WM_DELETE_WINDOW", self.confirm_quit)
+
+    def load_config(self):
+        config, self.config_path = self.config_handler.load_config(self.username)
+        return config
+
+    # def load_config(self):
+    #     config = configparser.ConfigParser()
+        
+    #     # Default config path
+    #     default_config_path = os.path.join(self.config_dir, 'config.ini')
+        
+    #     if self.username:
+    #         # User-specific config path
+    #         self.config_path = os.path.join(self.config_dir,'..', f'{self.username}_config.ini')
+    #         print(self.config_path)
+            
+    #         if os.path.exists(self.config_path):
+    #             self.config.read(self.config_path)
+    #             self.game_logger.log_game_event(f"Loaded user config for {self.username}")
+    #         else:
+    #             config.read(default_config_path)
+    #             self.game_logger.log_game_event(f"User config not found for {self.username}. Using default.")
+    #     else:
+    #         config.read(default_config_path)
+    #         self.game_logger.log_game_event("No user specified. Using default config.")
+        
+    #     return config
 
     def create_login_screen_main(self):
         """
@@ -268,10 +304,12 @@ class SnakeGameApp:
         """
         self.login_screen.create_login_screen()
 
-    def show_loading_screen_after_login(self):
+    def show_loading_screen_after_login(self, username):
         """
         Show the loading screen after login.
         """
+        self.username = username
+        self.config = self.load_config()
         self.create_loading_screen()
 
     def create_circle(self, canvas, x, y, r, **kwargs):

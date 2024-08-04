@@ -238,12 +238,12 @@ class SnakeGameApp:
 
         
 
-        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
+        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
 
-        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
+        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
 
         # And then create the ButtonCommands instance
-        self.button_commands = ButtonCommands(self.game_logger, self.functions)
+        self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path)
 
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger,
                                                         self.game_config, self.open_info,
@@ -281,8 +281,8 @@ class SnakeGameApp:
         return config
     
     def initialize_user_config(self):
-        self.update_contrast = UpdateContrast(self.game_logger)
-        self.theme_updater = ThemeUpdater(self.game_logger)
+        self.update_contrast = UpdateContrast(self.game_logger, self.config, self.config_path)
+        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path)
 
         self.theme = None
         self.contrast = None
@@ -671,7 +671,10 @@ class SnakeGameApp:
 
         # Create a new canvas for the specified game type
         if game_type == "classic_snake":
-            self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
+            self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config,
+                                                         self.game_logger, self.functions,
+                                                         self.create_button_panel,
+                                                         self.config_handler) # pylint: disable=line-too-long
 
         elif game_type == "snake_endless":
             self.endless_snake_canvas = SnakeEndless(self.root, self.game_config, self.game_logger, self.functions, self.create_button_panel) # pylint: disable=line-too-long
@@ -760,8 +763,8 @@ class SnakeGameApp:
         # Initializing the button panel and label panel
         #self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
         self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
-        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
-        self.button_commands = ButtonCommands(self.game_logger, self.functions)
+        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
+        self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path)
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger, self.game_config, self.open_info, self.open_settings) # pylint: disable=line-too-long
         self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.game_logger, self.game_config) # pylint: disable=line-too-long
         self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)

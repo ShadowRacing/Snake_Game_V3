@@ -65,13 +65,13 @@ class LoginAndUserScreen():
 
         script_dir = os.path.dirname(__file__)
         self.login_data = os.path.join(script_dir, "users.json")
-
+        self.config_path_icon = path.join(script_dir, '..', 'app_icon.ico')
+        self.parent.iconbitmap('app_icon.ico')
         # self.config_dir = path.dirname(__file__)
         # self.config_path = path.join(self.config_dir, 'config.ini')
         self.config_dir = os.path.dirname(os.path.dirname(__file__))  # Assumes Login file is in Login folder
         self.config_handler = ConfigHandler(self.config_dir, self.game_logger)
-        self.config_path_icon = path.join(self.config_dir, '..', 'app_icon.ico')
-        self.parent.iconbitmap('app_icon.ico')
+
         self.my_image = None
         self.image_label = None
 
@@ -240,45 +240,13 @@ class LoginAndUserScreen():
             else:
                 self.game_logger.log_game_event("User created successfully!")
                 self.write_user_data(username, password)
-                self.create_user_config(username)
+                self.config_handler.create_user_config(username)
                 self.result_label.configure(text="User created successfully!", fg_color="green")
                 self.reset_label_text()
         else:
             self.game_logger.log_game_event("Please enter a username and password")
             self.result_label.configure(text="Please enter a username and password", fg_color="red")
             self.reset_label_text()
-
-    def create_user_config(self, username):
-        """
-        Create a new configuration file for the user
-        """
-        #default_config_path = os.path.join(self.config_dir,'..', 'default_config.ini')
-        # user_config_path = os.path.join(self.config_dir, f'{username}_config.ini')
-        self.config_handler.create_user_config(username)
-
-        # if not os.path.exists(user_config_path):
-        #     try:
-        #         # Copy the default config to create the user config
-        #         shutil.copy(default_config_path, user_config_path)
-
-        #         # Optionally, you can modify the new user config here
-        #         config = configparser.ConfigParser()
-        #         config.read(user_config_path)
-
-        #         # Example: Set a user-specific value
-        #         if 'USER' not in config:
-        #             config['USER'] = {}
-        #         config['USER']['username'] = username
-
-        #         # Write the changes back to the file
-        #         with open(user_config_path, 'w', encoding='utf-8') as configfile:
-        #             config.write(configfile)
-
-        #         self.game_logger.log_game_event(f"Created new config for user {username}")
-        #     except Exception as e:
-        #         self.game_logger.log_game_event(f"Error creating config for user {username}: {str(e)}")
-        # else:
-        #     self.game_logger.log_game_event(f"Config file already exists for user {username}")
 
     def login(self):
         """
@@ -292,7 +260,7 @@ class LoginAndUserScreen():
             if username in users and users[username] == password:
                 self.current_user = username
                 self.result_label.configure(text="Login successful!", fg_color="green")
-                self.parent.after(2000, self.switch_to_user_screen)
+                self.parent.after(2000, lambda: self.switch_to_user_screen(username))
             elif username not in users:
                 self.result_label.configure(text="User does not exist", fg_color="red")
                 self.reset_label_text()
@@ -377,7 +345,6 @@ class LoginAndUserScreen():
         self.stop_forget_password = ctk.CTkButton(self.user_frame, text="Cancel", command=self.delete_forgot_password_widgets, fg_color="grey90", text_color="blue", hover_color="#E6E6FA") # pylint: disable=line-too-long
         self.stop_forget_password.place(x=795, y=500)
 
-
     def forgot_password_callback(self):
         """
         Function to reset the password of an existing user
@@ -426,14 +393,14 @@ class LoginAndUserScreen():
         self.password_entry.configure(state="normal")
         self.username_entry.configure(state="normal")
 
-    def switch_to_user_screen(self):
+    def switch_to_user_screen(self, username):
         """
         Function to switch to the user screen
         """
         self.result_label.configure(text="Login successful!", fg_color="green")
 
         if self.on_login_success_callback:
-            self.on_login_success_callback(self.current_user)
+            self.on_login_success_callback(username)
         if hasattr(self, 'image_label'):
             self.image_label.destroy()
         self.login_frame.destroy()

@@ -30,7 +30,7 @@ from Games.snake_leveling_game import SnakeLeveling
 from Logic.buttonpanel_snake_game import ClickButtonPanel, ButtonCommands
 from Logic.buttonpanelreset_snake_game import ResetSettingsPanel
 from Logic.config_ini_initials import ConfigIni
-from Logic.config_handler import ConfigHandler
+from Logic.config_handler_2 import ConfigHandler
 from Logic.game_labelpanel import GameLabelsPanel
 from Logic.home_screen_manager import HomeScreenManager
 from Logic.labelpanel_snake_game import NameOffFrameLabelPanel, SettingsOptionButtonLabels
@@ -65,39 +65,44 @@ class SnakeGameApp:
         self.game_logger = GameLogger(root)
         self.error_game_logger = ErrorgameLogger()
         self.game_logger.log_game_event("Started the GameApp Class")
+
+        self.game_config = GameConfig(game_logger=self.game_logger, game_mode="initial_config")
+
         self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
         self.create_login_screen_main()
-        self.game_config = GameConfig(game_logger=self.game_logger, game_mode = "initial_config")
-        self.update_contrast = UpdateContrast(self.game_logger)
-        self.theme_updater = ThemeUpdater(self.game_logger)
+
+        # self.game_config = GameConfig(game_logger=self.game_logger, game_mode = "initial_config")
+        # self.update_contrast = UpdateContrast(self.game_logger)
+        # self.theme_updater = ThemeUpdater(self.game_logger)
 
         self.game_width = game_width
         self.game_height = game_height
         self.snake_color = None
-        self.theme = None
-        self.contrast = None
+        # self.theme = None
+        # self.contrast = None
         self.toplevel_window = None
-        self.theme_updater.set_initial_theme()
+        # self.theme_updater.set_initial_theme()
 
         # Read the config file and load it
         self.config_dir = os.path.dirname(os.path.dirname(__file__))  # Assumes main file is in root directory
         self.config_handler = ConfigHandler(self.config_dir, self.game_logger)
+        # self.config, self.config_path = self.config_handler.load_config()
         # self.config_dir = path.dirname(__file__)
         # self.config_handler = ConfigHandler(self.config_dir)
         # self.config_path = path.join(self.config_dir, 'config.ini')
-        self.config_path_icon = path.join(self.config_dir, 'app_icon.ico')
+        #self.config_path_icon = path.join(self.config_dir, 'app_icon.ico')
         self.root.iconbitmap('app_icon.ico')
         #self.game_logger.log_game_event(f"Config main file: {self.config_path}")
-        self.config = configparser.ConfigParser()
+        #self.config = configparser.ConfigParser()
         try:
-            self.config.read(self.config_path)
+            #self.config.read(self.config_dir)
+            self.config, self.config_path = self.config_handler.load_config()
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
         # Write the changes to the config file
         try:
-            with open(self.config_path, 'w', encoding='utf-8') as configfile:
-                self.config.write(configfile)
+            self.save_config()
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
@@ -109,7 +114,7 @@ class SnakeGameApp:
         self.endless_button_press_variable_high_score_time = 0
         self.leveling_button_press_variable_high_score = 0
         self.leveling_button_press_variable_high_score_time = 0
-        self.button_press_time_limit = float(self.config.get('Settings', 'button_press_time_limit', fallback=0.5)) # pylint: disable=line-too-long
+        self.button_press_time_limit = float(self.config.get('Settings', {}).get('button_press_time_limit', 0.5)) # pylint: disable=line-too-long
 
 
         self.text_name = "Shadow's Snake Game"
@@ -255,7 +260,7 @@ class SnakeGameApp:
         self.home_screen_manager = HomeScreenManager(self.classic_snake_canvas, self.endless_snake_canvas, self.leveling_snake_canvas, self.food_time_attack_canvas, self.challange_choice_canvas, self.challange_settings_canvas, self.info_canvas, self.info_general_canvas, self.info_classic_canvas, self.info_endless_canvas, self.info_leveling_canvas, self.info_challange_canvas, self.settings_canvas, self.settings_canvas_values, self.settings_canvas_reset, self.reset_label, self.reset_settings_frame, self.reset_settings_frame_1, self.scrollable_frame, self.framelabel_panel, self.button_commands, self.mini_snake_game_canvas, self.original_main_canvas) # pylint: disable=line-too-long
 
         try:
-            self.screen_size_config = self.config.get('Settings', 'screen_size', fallback='Default')
+            self.screen_size_config = self.config.get('Settings', {}).get('screen_size', 'Default')
             self.screen_size_var = ctk.StringVar()  # Variable to track the selected value
             self.screen_size_var.set(self.screen_size_config)  # Set the default value
             self.screen_size_changer = ScreenSize(root, self.game_logger, self.screen_size_var, self.config, self.screen_size_config) # pylint: disable=line-too-long
@@ -274,6 +279,14 @@ class SnakeGameApp:
     def load_config(self):
         config, self.config_path = self.config_handler.load_config(self.username)
         return config
+    
+    def initialize_user_config(self):
+        self.update_contrast = UpdateContrast(self.game_logger)
+        self.theme_updater = ThemeUpdater(self.game_logger)
+
+        self.theme = None
+        self.contrast = None
+        self.theme_updater.set_initial_theme()
 
     # def load_config(self):
     #     config = configparser.ConfigParser()
@@ -301,7 +314,7 @@ class SnakeGameApp:
     def create_login_screen_main(self):
         """
         Start the login screen.
-        """
+        """ 
         self.login_screen.create_login_screen()
 
     def show_loading_screen_after_login(self, username):
@@ -309,8 +322,22 @@ class SnakeGameApp:
         Show the loading screen after login.
         """
         self.username = username
-        self.config = self.load_config()
+        self.config, self.config_path = self.config_handler.load_config(username)
+        self.initialize_user_config()
+        #self.apply_user_config()
         self.create_loading_screen()
+    
+    def apply_user_config(self):
+        # Apply user-specific settings
+        self.theme = self.config.get('Settings', {}).get('theme', 'Default')
+        self.contrast = self.config.get('Settings', {}).get('contrast', 'Default')
+        self.snake_color = self.config.get('Settings', {}).get('snake_color', 'Default')
+        self.screen_size = self.config.get('Settings', {}).get('screen_size', 'Default')
+        
+        # Apply these settings
+        self.apply_theme()
+        self.update_contrast.apply_contrast(self.contrast)
+        self.screen_size_changer.change_screen_size(self.screen_size)
 
     def create_circle(self, canvas, x, y, r, **kwargs):
         """
@@ -418,7 +445,7 @@ class SnakeGameApp:
         """
         Apply the theme from the configuration file.
         """
-        theme_name = self.config.get('Settings', 'theme', fallback='Default')
+        theme_name = self.config.get('Settings', {}).get('theme', 'Red')
         theme_dir = path.dirname(__file__)
         theme_path = path.join(theme_dir, 'themes', f"{theme_name}.json")
         try:
@@ -426,6 +453,16 @@ class SnakeGameApp:
             self.game_logger.log_game_event(f"Theme applied: {theme_name}")
         except FileNotFoundError as e:
             traceback.print_exc(e)
+
+    def save_config(self):
+        try:
+            with open(self.config_path, 'w', encoding='utf-8') as configfile:
+                json.dump(self.config, configfile, indent=4)
+            print(f"Config saved successfully to {self.config_path}")
+        except Exception as e:
+            print(f"Error saving config: {str(e)}")
+            self.game_logger.log_game_event(f"Error saving config: {str(e)}")
+
 
     def create_home_screen(self):
         """
@@ -449,10 +486,10 @@ class SnakeGameApp:
         self.main_canvas.bind("<Configure>", self.update_text_position)
         # Create a CTkImage object
         #self.create_and_place_image_label(self.main_canvas, 5, 635, self.config_path_icon)
-        self.config.set('Settings', 'home_button_state', 'normal')
-        self.config.set('Settings', 'classic_reset_high_score_button_state', 'normal')
-        self.config.set('Settings', 'classic_reset_high_score_time_button_state', 'normal')
-        self.config.set('Settings', 'classic_reset_high_score_snake_length_button_state', 'normal')
+        self.config['Settings']['home_button_state'] = 'normal'
+        self.config['Settings']['classic_reset_high_score_button_state'] = 'normal'
+        self.config['Settings']['classic_reset_high_score_time_button_state'] = 'normal'
+        self.config['Settings']['classic_reset_high_score_snake_length_button_state'] = 'normal'
 
         self.get_user_name = self.login_screen.get_user_name()
         self.game_logger.log_game_event(f"User: {self.get_user_name}")
@@ -462,8 +499,7 @@ class SnakeGameApp:
         #self.username_label.place(x=1100, y=10)
         #self.username_label.place(x=1100, y=675)
 
-        with open(self.config_path, 'w', encoding='utf-8') as configfile:
-            self.config.write(configfile)
+        self.save_config()
 
     def update_text_position(self, event=None):# pylint: disable=unused-argument
         """
@@ -879,8 +915,7 @@ class SnakeGameApp:
         """
         Get the snake color from the config file.
         """
-        self.config.read(self.config_path)
-        new_snake_color = self.config.get('Settings', 'snake_color', fallback='Default')
+        new_snake_color = self.config.get('Settings', {}).get('snake_color', 'Default')
         if new_snake_color.lower() == 'default':
             new_snake_color = '#00FF00'
         if new_snake_color.lower() == 'midnightpurple':
@@ -968,7 +1003,7 @@ class SnakeGameApp:
         self.reset_config_values.reset_screen_size()
         self.config.read(self.config_path)
         try:
-            selected_value = self.config.get('Settings', 'screen_size', fallback='Default')
+            selected_value = self.config.get('Settings', {}).get('screen_size', 'Default')
             self.screen_size_changer.change_screen_size(selected_value)
         except FileNotFoundError as e:
             traceback.print_exc(e)

@@ -74,6 +74,9 @@ class LoginAndUserScreen():
 
         self.my_image = None
         self.image_label = None
+        self.shortcuts_frame = None
+        self.shortcuts_displayed = None
+        self.create_shortcuts_frame()
 
     def create_login_screen(self):
         """
@@ -116,6 +119,15 @@ class LoginAndUserScreen():
                                                     text_color="blue",
                                                     fg_color="white",
                                                     hover_color="#E6E6FA")
+        
+        self.shortcuts_button = ctk.CTkButton(self.header_frame, 
+                                      text="Shortcuts", 
+                                      command=self.toggle_shortcuts,
+                                      fg_color="grey90",
+                                      text_color="blue",
+                                      hover_color="#E6E6FA")
+        self.shortcuts_button.place(x=640, y=10)
+        
         self.login_button.place(x=470, y=10)
         self.create_button.place(x=300, y=10)
 
@@ -189,6 +201,8 @@ class LoginAndUserScreen():
         self.password_entry.bind('<Return>', self.simulate_login_button_click)
         self.login_frame.focus_set()
 
+        self.create_shortcuts_frame()
+
         # self.logout_button = ctk.CTkButton(self.user_frame, text="Logout", command=self.logout)
         # self.logout_button.pack(pady=10)
 
@@ -227,6 +241,48 @@ class LoginAndUserScreen():
 
         with open(self.login_data, 'w', encoding='utf-8') as file:
             json.dump(data, file, indent=4)
+
+    def create_shortcuts_frame(self):
+        if self.shortcuts_frame is None:
+            self.shortcuts_frame = ctk.CTkFrame(self.user_frame,
+                                                fg_color="grey30",
+                                                corner_radius=10,
+                                                height=150,
+                                                width=200)
+            self.shortcuts_frame.place(x=640, y=50)
+            
+            shortcuts_label = ctk.CTkLabel(self.shortcuts_frame,
+                                        text="Shortcuts:",
+                                        font=("Lexend", 16, "bold"),
+                                        text_color="white")
+            shortcuts_label.place(x=10, y=10)
+            
+            shortcuts = [
+                "Enter - Login",
+                "Ctrl+C - Create Account",
+                "Ctrl+F - Forgot Password",
+                "Ctrl+D - Delete Account"
+            ]
+            
+            for i, shortcut in enumerate(shortcuts):
+                shortcut_label = ctk.CTkLabel(self.shortcuts_frame,
+                                            text=shortcut,
+                                            text_color="white")
+                shortcut_label.place(x=10, y=40 + i*25)
+        
+        # Don't forget to hide the frame initially
+        self.shortcuts_frame.place_forget()
+
+    def toggle_shortcuts(self):
+        if not hasattr(self, 'shortcuts_displayed'):
+            self.shortcuts_displayed = False
+        
+        if not self.shortcuts_displayed:
+            self.shortcuts_frame.place(x=640, y=50)
+            self.shortcuts_displayed = True
+        else:
+            self.shortcuts_frame.place_forget()
+            self.shortcuts_displayed = False
 
     # Function to create a new user
     def create_user(self):
@@ -463,7 +519,9 @@ class LoginAndUserScreen():
                                                        width=250,
                                                        placeholder_text="Enter your password",
                                                        placeholder_text_color="white")
+        self.username_delete_user_entry.place(x=10, y=500)
         self.password_delete_user_entry.place(x=300, y=500)
+
 
         self.username_delete_user_entry_label = ctk.CTkLabel(self.user_frame,
                                                         text="Username")

@@ -8078,3 +8078,291 @@ Config saved successfully to c:\Users\wimjr\Documents\snake\Login\8_data.json
 
 
 
+[2024-08-05 12:27:20] Started the app
+[2024-08-05 12:27:20] Started the GameApp Class
+[2024-08-05 12:27:20] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:27:20] Resetting snake
+[2024-08-05 12:27:20] Set initial game size to: 600x600
+[2024-08-05 12:27:20] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:27:20] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:15:33] Closed the app
+
+
+
+
+[2024-08-05 13:15:39] Started the app
+[2024-08-05 13:15:39] Started the GameApp Class
+[2024-08-05 13:15:39] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:15:40] Resetting snake
+[2024-08-05 13:15:40] Set initial game size to: 600x600
+[2024-08-05 13:15:40] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:15:40] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:17:10] Closed the app
+
+
+
+
+[2024-08-05 13:17:17] Started the app
+[2024-08-05 13:17:17] Started the GameApp Class
+[2024-08-05 13:17:17] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:17:18] Resetting snake
+[2024-08-05 13:17:18] Set initial game size to: 600x600
+[2024-08-05 13:17:18] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:17:18] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:17:35] Closed the app
+
+
+
+
+[2024-08-05 13:17:42] Started the app
+[2024-08-05 13:17:42] Started the GameApp Class
+[2024-08-05 13:17:42] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:17:43] Resetting snake
+[2024-08-05 13:17:43] Set initial game size to: 600x600
+[2024-08-05 13:17:43] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:17:43] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:18:42] Please enter a username and password
+[2024-08-05 13:18:55] User already exists!
+[2024-08-05 13:19:40] Closed the app
+
+
+
+
+[2024-08-05 13:21:46] Started the app
+[2024-08-05 13:21:46] Started the GameApp Class
+[2024-08-05 13:21:46] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:21:46] Resetting snake
+[2024-08-05 13:21:46] Set initial game size to: 600x600
+[2024-08-05 13:21:46] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:21:46] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:21:56] Closed the app
+
+
+
+
+[2024-08-05 13:22:00] Started the app
+[2024-08-05 13:22:00] Started the GameApp Class
+[2024-08-05 13:22:00] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:22:01] Resetting snake
+[2024-08-05 13:22:01] Set initial game size to: 600x600
+[2024-08-05 13:22:01] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:22:01] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:22:13] Closed the app
+
+
+
+
+[2024-08-05 13:24:13] Started the app
+[2024-08-05 13:24:13] Started the GameApp Class
+[2024-08-05 13:24:13] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:24:14] Resetting snake
+[2024-08-05 13:24:14] Set initial game size to: 600x600
+[2024-08-05 13:24:14] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:24:14] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:24:24] Closed the app
+
+
+
+
+[2024-08-05 13:26:48] Started the app
+[2024-08-05 13:26:48] Started the GameApp Class
+[2024-08-05 13:26:48] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:26:48] Resetting snake
+[2024-08-05 13:26:48] Set initial game size to: 600x600
+[2024-08-05 13:26:48] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:26:48] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:26:54] Closed the app
+
+
+
+
+[2024-08-05 13:27:24] Started the app
+[2024-08-05 13:27:24] Started the GameApp Class
+[2024-08-05 13:27:25] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:27:25] Resetting snake
+[2024-08-05 13:27:25] Set initial game size to: 600x600
+[2024-08-05 13:27:25] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:27:25] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:28:16] Closed the app
+
+
+
+
+[2024-08-05 13:28:46] Started the app
+[2024-08-05 13:28:46] Started the GameApp Class
+[2024-08-05 13:28:46] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:28:47] Resetting snake
+[2024-08-05 13:28:47] Set initial game size to: 600x600
+[2024-08-05 13:28:47] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:28:47] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:29:06] Closed the app
+
+
+
+
+[2024-08-05 13:32:01] Started the app
+[2024-08-05 13:32:01] Started the GameApp Class
+[2024-08-05 13:32:01] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:32:02] Resetting snake
+[2024-08-05 13:32:02] Set initial game size to: 600x600
+[2024-08-05 13:32:02] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:32:02] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:36:55] Closed the app
+
+
+
+
+[2024-08-05 13:36:59] Started the app
+[2024-08-05 13:36:59] Started the GameApp Class
+[2024-08-05 13:36:59] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:36:59] Resetting snake
+[2024-08-05 13:36:59] Set initial game size to: 600x600
+[2024-08-05 13:37:00] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:37:00] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:37:13] Closed the app
+
+
+
+
+[2024-08-05 13:38:19] Started the app
+[2024-08-05 13:38:19] Started the GameApp Class
+[2024-08-05 13:38:19] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:38:19] Resetting snake
+[2024-08-05 13:38:19] Set initial game size to: 600x600
+[2024-08-05 13:38:19] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:38:19] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:42:47] Closed the app
+
+
+
+
+[2024-08-05 13:42:54] Started the app
+[2024-08-05 13:42:54] Started the GameApp Class
+[2024-08-05 13:42:54] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:42:54] Resetting snake
+[2024-08-05 13:42:54] Set initial game size to: 600x600
+[2024-08-05 13:42:54] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:42:54] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:43:02] Closed the app
+
+
+
+
+[2024-08-05 13:43:34] Started the app
+[2024-08-05 13:43:34] Started the GameApp Class
+[2024-08-05 13:43:34] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:43:35] Resetting snake
+[2024-08-05 13:43:35] Set initial game size to: 600x600
+[2024-08-05 13:43:35] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:43:35] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:43:41] Closed the app
+
+
+
+
+[2024-08-05 13:44:17] Started the app
+[2024-08-05 13:44:17] Started the GameApp Class
+[2024-08-05 13:44:17] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:44:18] Resetting snake
+[2024-08-05 13:44:18] Set initial game size to: 600x600
+[2024-08-05 13:44:18] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:44:18] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:44:28] Closed the app
+
+
+
+
+[2024-08-05 13:50:03] Started the app
+[2024-08-05 13:50:03] Started the GameApp Class
+[2024-08-05 13:50:03] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:50:04] Resetting snake
+[2024-08-05 13:50:04] Set initial game size to: 600x600
+[2024-08-05 13:50:04] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:50:04] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:50:09] Closed the app
+
+
+
+
+[2024-08-05 13:54:30] Started the app
+[2024-08-05 13:54:30] Started the GameApp Class
+[2024-08-05 13:54:30] Game mode: initial config
+[2024-08-05 13:54:46] Started the app
+[2024-08-05 13:54:46] Started the GameApp Class
+[2024-08-05 13:54:46] Game mode: initial config
+[2024-08-05 13:55:27] Started the app
+[2024-08-05 13:55:27] Started the GameApp Class
+[2024-08-05 13:55:27] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:55:28] Resetting snake
+[2024-08-05 13:55:28] Set initial game size to: 600x600
+[2024-08-05 13:55:28] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:55:28] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:55:32] Closed the app
+
+
+
+
+[2024-08-05 13:55:54] Started the app
+[2024-08-05 13:55:54] Started the GameApp Class
+[2024-08-05 13:55:54] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:55:55] Resetting snake
+[2024-08-05 13:55:55] Set initial game size to: 600x600
+[2024-08-05 13:55:55] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:55:55] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:56:02] Closed the app
+
+
+
+
+[2024-08-05 13:56:33] Started the app
+[2024-08-05 13:56:33] Started the GameApp Class
+[2024-08-05 13:56:33] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 13:56:33] Resetting snake
+[2024-08-05 13:56:33] Set initial game size to: 600x600
+[2024-08-05 13:56:33] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 13:56:33] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 13:56:37] Closed the app
+
+
+
+

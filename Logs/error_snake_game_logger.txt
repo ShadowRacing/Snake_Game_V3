@@ -4492,3 +4492,370 @@ TypeError: dict.get() takes no keyword arguments
 
 
 
+[2024-08-05 12:27:20] 
+
+
+[2024-08-05 12:27:20] Started the Error Log File
+[2024-08-05 13:15:33] No errors occurred
+[2024-08-05 13:15:33] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:15:39] 
+
+
+[2024-08-05 13:15:39] Started the Error Log File
+[2024-08-05 13:17:11] No errors occurred
+[2024-08-05 13:17:11] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:17:17] 
+
+
+[2024-08-05 13:17:17] Started the Error Log File
+[2024-08-05 13:17:35] No errors occurred
+[2024-08-05 13:17:35] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:17:42] 
+
+
+[2024-08-05 13:17:42] Started the Error Log File
+[2024-08-05 13:19:41] No errors occurred
+[2024-08-05 13:19:41] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:21:46] 
+
+
+[2024-08-05 13:21:46] Started the Error Log File
+[2024-08-05 13:21:56] No errors occurred
+[2024-08-05 13:21:56] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:22:00] 
+
+
+[2024-08-05 13:22:00] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 268, in toggle_shortcuts
+    if self.shortcuts_frame.winfo_viewable():
+       ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LoginAndUserScreen' object has no attribute 'shortcuts_frame'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 268, in toggle_shortcuts
+    if self.shortcuts_frame.winfo_viewable():
+       ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LoginAndUserScreen' object has no attribute 'shortcuts_frame'
+[2024-08-05 13:22:14] No errors occurred
+[2024-08-05 13:22:14] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:24:13] 
+
+
+[2024-08-05 13:24:13] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 270, in toggle_shortcuts
+    if self.shortcuts_frame.winfo_viewable():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_viewable'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 270, in toggle_shortcuts
+    if self.shortcuts_frame.winfo_viewable():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_viewable'
+[2024-08-05 13:24:25] No errors occurred
+[2024-08-05 13:24:25] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:26:48] 
+
+
+[2024-08-05 13:26:48] Started the Error Log File
+[2024-08-05 13:26:54] No errors occurred
+[2024-08-05 13:26:54] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:27:24] 
+
+
+[2024-08-05 13:27:24] Started the Error Log File
+[2024-08-05 13:28:16] No errors occurred
+[2024-08-05 13:28:16] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:28:46] 
+
+
+[2024-08-05 13:28:46] Started the Error Log File
+[2024-08-05 13:29:07] No errors occurred
+[2024-08-05 13:29:07] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:32:01] 
+
+
+[2024-08-05 13:32:01] Started the Error Log File
+[2024-08-05 13:36:55] No errors occurred
+[2024-08-05 13:36:55] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:36:59] 
+
+
+[2024-08-05 13:36:59] Started the Error Log File
+[2024-08-05 13:37:13] No errors occurred
+[2024-08-05 13:37:13] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:38:19] 
+
+
+[2024-08-05 13:38:19] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 276, in toggle_shortcuts
+    self.shortcuts_frame.place(x=810, y=60, width=200, height=150)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+[2024-08-05 13:42:47] No errors occurred
+[2024-08-05 13:42:47] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:42:54] 
+
+
+[2024-08-05 13:42:54] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 276, in toggle_shortcuts
+    self.shortcuts_frame.place(x=640, y=50, width=200, height=150)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+[2024-08-05 13:43:02] No errors occurred
+[2024-08-05 13:43:02] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:43:34] 
+
+
+[2024-08-05 13:43:34] Started the Error Log File
+[2024-08-05 13:43:41] No errors occurred
+[2024-08-05 13:43:41] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:44:17] 
+
+
+[2024-08-05 13:44:17] Started the Error Log File
+[2024-08-05 13:44:28] No errors occurred
+[2024-08-05 13:44:28] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:50:03] 
+
+
+[2024-08-05 13:50:03] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 270, in toggle_shortcuts
+    if not self.shortcuts_displayed:
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LoginAndUserScreen' object has no attribute 'shortcuts_displayed'
+[2024-08-05 13:50:09] No errors occurred
+[2024-08-05 13:50:09] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:54:30] 
+
+
+[2024-08-05 13:54:30] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 77, in __init__
+    self.shortcuts_frame
+AttributeError: 'LoginAndUserScreen' object has no attribute 'shortcuts_frame'
+[2024-08-05 13:54:46] 
+
+
+[2024-08-05 13:54:46] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 77, in __init__
+    self.shortcuts_frame
+AttributeError: 'LoginAndUserScreen' object has no attribute 'shortcuts_frame'
+[2024-08-05 13:55:27] 
+
+
+[2024-08-05 13:55:27] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 280, in toggle_shortcuts
+    self.shortcuts_frame.place(x=640, y=50, width=200, height=150)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 280, in toggle_shortcuts
+    self.shortcuts_frame.place(x=640, y=50, width=200, height=150)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 280, in toggle_shortcuts
+    self.shortcuts_frame.place(x=640, y=50, width=200, height=150)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 280, in toggle_shortcuts
+    self.shortcuts_frame.place(x=640, y=50, width=200, height=150)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 280, in toggle_shortcuts
+    self.shortcuts_frame.place(x=640, y=50, width=200, height=150)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 272, in place
+    raise ValueError("'width' and 'height' arguments must be passed to the constructor of the widget, not the place method")
+ValueError: 'width' and 'height' arguments must be passed to the constructor of the widget, not the place method
+[2024-08-05 13:55:32] No errors occurred
+[2024-08-05 13:55:32] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:55:54] 
+
+
+[2024-08-05 13:55:54] Started the Error Log File
+[2024-08-05 13:56:03] No errors occurred
+[2024-08-05 13:56:03] Closed the Error Log File
+
+
+
+
+[2024-08-05 13:56:33] 
+
+
+[2024-08-05 13:56:33] Started the Error Log File
+[2024-08-05 13:56:38] No errors occurred
+[2024-08-05 13:56:38] Closed the Error Log File
+
+
+
+

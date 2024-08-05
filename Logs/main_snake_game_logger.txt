@@ -7867,3 +7867,214 @@ Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
 
 
 
+[2024-08-05 12:01:36] Started the app
+[2024-08-05 12:01:36] Started the GameApp Class
+[2024-08-05 12:01:36] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:01:37] Resetting snake
+[2024-08-05 12:01:37] Set initial game size to: 600x600
+[2024-08-05 12:01:37] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:01:37] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 12:01:42] Closed the app
+
+
+
+
+[2024-08-05 12:02:56] Started the app
+[2024-08-05 12:02:56] Started the GameApp Class
+[2024-08-05 12:02:56] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:02:57] Resetting snake
+[2024-08-05 12:02:57] Set initial game size to: 600x600
+[2024-08-05 12:02:57] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:02:57] Current initial_game_size in config.ini to: 600x600
+Loaded config from c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-05 12:03:04] Current Theme: Red
+[2024-08-05 12:03:04] Set initial theme to: Red
+[2024-08-05 12:03:04] Updated initial_theme in config to: Red
+[2024-08-05 12:03:04] Current initial_theme in config: Red
+[2024-08-05 12:03:04] Theme applied: Red
+[2024-08-05 12:03:04] Updated contrast in config to: Default
+[2024-08-05 12:03:04] Contrast mode set to: default
+[2024-08-05 12:03:07] Label border width: 1
+[2024-08-05 12:03:07] label_border_height: 1
+[2024-08-05 12:03:07] User: 8
+Config saved successfully to c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-05 12:03:12] Game mode: classic_snake
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:03:12] Config file read in Classic snake game file: c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:03:12] Snake length: 5
+[2024-08-05 12:03:12] Game width: 600
+[2024-08-05 12:03:12] Game height: 600
+[2024-08-05 12:03:12] Highlight thickness: 5
+[2024-08-05 12:03:12] Highlight background: Black
+[2024-08-05 12:03:12] Initial direction of snake: down
+[2024-08-05 12:03:12] Initial score: 0
+[2024-08-05 12:03:12] Game over flag: False
+[2024-08-05 12:03:12] Game paused: False
+[2024-08-05 12:03:12] Has changed direction: False
+[2024-08-05 12:03:12] Time-related variables initialized.
+[2024-08-05 12:03:12] Start time: None
+[2024-08-05 12:03:12] Paused time: None
+[2024-08-05 12:03:12] Total paused time: 0
+[2024-08-05 12:03:12] Total time played: 0
+[2024-08-05 12:03:12] Total time paused: 0
+[2024-08-05 12:03:12] Last direction change time: 0
+[2024-08-05 12:03:12] Pause duration: 0
+[2024-08-05 12:03:12] High score time: 0
+[2024-08-05 12:03:12] Current time: 0
+[2024-08-05 12:03:12] Get time score: 0
+[2024-08-05 12:03:12] Get snake length: 0
+[2024-08-05 12:03:12] High scores initialized
+[2024-08-05 12:03:12] High score: 0
+[2024-08-05 12:03:12] Snake length high score: 0
+[2024-08-05 12:03:12] Reset snake length
+[2024-08-05 12:03:12] Game mode: classic_snake
+[2024-08-05 12:03:12] Wrote changes to config file
+[2024-08-05 12:03:12] Config file read
+[2024-08-05 12:03:12] Game mode set to classic_snake.
+[2024-08-05 12:03:12] Wrote changes to config file
+[2024-08-05 12:03:12] Game focused
+[2024-08-05 12:03:13] Closed the app
+
+
+
+
+[2024-08-05 12:08:59] Started the app
+[2024-08-05 12:08:59] Started the GameApp Class
+[2024-08-05 12:08:59] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:08:59] Resetting snake
+[2024-08-05 12:08:59] Set initial game size to: 600x600
+[2024-08-05 12:08:59] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:08:59] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 12:10:32] Closed the app
+
+
+
+
+[2024-08-05 12:10:34] Started the app
+[2024-08-05 12:10:34] Started the GameApp Class
+[2024-08-05 12:10:34] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:10:35] Resetting snake
+[2024-08-05 12:10:35] Set initial game size to: 600x600
+[2024-08-05 12:10:35] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:10:35] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 12:11:32] Closed the app
+
+
+
+
+[2024-08-05 12:11:45] Started the app
+[2024-08-05 12:11:45] Started the GameApp Class
+[2024-08-05 12:11:45] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:11:45] Resetting snake
+[2024-08-05 12:11:45] Set initial game size to: 600x600
+[2024-08-05 12:11:45] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:11:45] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 12:12:07] Closed the app
+
+
+
+
+[2024-08-05 12:12:10] Started the app
+[2024-08-05 12:12:10] Started the GameApp Class
+[2024-08-05 12:12:10] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:12:10] Resetting snake
+[2024-08-05 12:12:10] Set initial game size to: 600x600
+[2024-08-05 12:12:10] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:12:10] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 12:12:15] Closed the app
+
+
+
+
+[2024-08-05 12:12:17] Started the app
+[2024-08-05 12:12:17] Started the GameApp Class
+[2024-08-05 12:12:17] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:12:18] Resetting snake
+[2024-08-05 12:12:18] Set initial game size to: 600x600
+[2024-08-05 12:12:18] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:12:18] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 12:12:20] Closed the app
+
+
+
+
+[2024-08-05 12:18:31] Started the app
+[2024-08-05 12:18:31] Started the GameApp Class
+[2024-08-05 12:18:31] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:18:31] Resetting snake
+[2024-08-05 12:18:31] Set initial game size to: 600x600
+[2024-08-05 12:18:31] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:18:31] Current initial_game_size in config.ini to: 600x600
+Loaded config from c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-05 12:18:46] Current Theme: Red
+[2024-08-05 12:18:46] Set initial theme to: Red
+[2024-08-05 12:18:46] Updated initial_theme in config to: Red
+[2024-08-05 12:18:46] Current initial_theme in config: Red
+[2024-08-05 12:18:46] Theme applied: Red
+[2024-08-05 12:18:46] Updated contrast in config to: Default
+[2024-08-05 12:18:46] Contrast mode set to: default
+[2024-08-05 12:18:49] Label border width: 1
+[2024-08-05 12:18:49] label_border_height: 1
+[2024-08-05 12:18:49] User: 8
+Config saved successfully to c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-05 12:18:50] Closed the app
+
+
+
+
+[2024-08-05 12:19:30] Started the app
+[2024-08-05 12:19:30] Started the GameApp Class
+[2024-08-05 12:19:30] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:19:31] Resetting snake
+[2024-08-05 12:19:31] Set initial game size to: 600x600
+[2024-08-05 12:19:31] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:19:31] Current initial_game_size in config.ini to: 600x600
+[2024-08-05 12:19:37] Closed the app
+
+
+
+
+[2024-08-05 12:24:54] Started the app
+[2024-08-05 12:24:54] Started the GameApp Class
+[2024-08-05 12:24:54] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-05 12:24:54] Resetting snake
+[2024-08-05 12:24:54] Set initial game size to: 600x600
+[2024-08-05 12:24:54] Updated initial_game_size in config.ini to: 600x600
+[2024-08-05 12:24:54] Current initial_game_size in config.ini to: 600x600
+Loaded config from c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-05 12:25:40] Current Theme: Red
+[2024-08-05 12:25:40] Set initial theme to: Red
+[2024-08-05 12:25:40] Updated initial_theme in config to: Red
+[2024-08-05 12:25:40] Current initial_theme in config: Red
+[2024-08-05 12:25:40] Theme applied: Red
+[2024-08-05 12:25:40] Updated contrast in config to: Default
+[2024-08-05 12:25:40] Contrast mode set to: default
+[2024-08-05 12:25:43] Label border width: 1
+[2024-08-05 12:25:43] label_border_height: 1
+[2024-08-05 12:25:43] User: 8
+Config saved successfully to c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-05 12:25:50] Closed the app
+
+
+
+

@@ -4341,3 +4341,154 @@ KeyError: 'StartGame'
 
 
 
+[2024-08-05 12:01:36] 
+
+
+[2024-08-05 12:01:36] Started the Error Log File
+[2024-08-05 12:01:42] No errors occurred
+[2024-08-05 12:01:42] Closed the Error Log File
+
+
+
+
+[2024-08-05 12:02:56] 
+
+
+[2024-08-05 12:02:56] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 398, in update_loading_screen_position
+    self.contrast = self.config.get('Settings', 'contrast', fallback='Default')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict.get() takes no keyword arguments
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\button_commands_snake_game.py", line 152, in classic_snake_command
+    self.functions['classic_snake']()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 530, in classic_snake
+    self.start_game("classic_snake")
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 674, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 134, in __init__
+    self.configfile()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 173, in configfile
+    self.start_screen()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 213, in start_screen
+    self.bind_and_unbind_keys()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 542, in bind_and_unbind_keys
+    for key in self.key_bindings['StartGame']:
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'StartGame'
+[2024-08-05 12:03:13] No errors occurred
+[2024-08-05 12:03:13] Closed the Error Log File
+
+
+
+
+[2024-08-05 12:08:59] 
+
+
+[2024-08-05 12:08:59] Started the Error Log File
+[2024-08-05 12:10:32] No errors occurred
+[2024-08-05 12:10:32] Closed the Error Log File
+
+
+
+
+[2024-08-05 12:10:34] 
+
+
+[2024-08-05 12:10:34] Started the Error Log File
+[2024-08-05 12:11:32] No errors occurred
+[2024-08-05 12:11:32] Closed the Error Log File
+
+
+
+
+[2024-08-05 12:11:45] 
+
+
+[2024-08-05 12:11:45] Started the Error Log File
+[2024-08-05 12:12:07] No errors occurred
+[2024-08-05 12:12:07] Closed the Error Log File
+
+
+
+
+[2024-08-05 12:12:10] 
+
+
+[2024-08-05 12:12:10] Started the Error Log File
+[2024-08-05 12:12:15] No errors occurred
+[2024-08-05 12:12:15] Closed the Error Log File
+
+
+
+
+[2024-08-05 12:12:17] 
+
+
+[2024-08-05 12:12:17] Started the Error Log File
+[2024-08-05 12:12:20] No errors occurred
+[2024-08-05 12:12:20] Closed the Error Log File
+
+
+
+
+[2024-08-05 12:18:31] 
+
+
+[2024-08-05 12:18:31] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 398, in update_loading_screen_position
+    self.contrast = self.config.get('Settings', 'contrast', fallback='Default')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict.get() takes no keyword arguments
+[2024-08-05 12:18:50] No errors occurred
+[2024-08-05 12:18:50] Closed the Error Log File
+
+
+
+
+[2024-08-05 12:19:30] 
+
+
+[2024-08-05 12:19:30] Started the Error Log File
+[2024-08-05 12:19:38] No errors occurred
+[2024-08-05 12:19:38] Closed the Error Log File
+
+
+
+
+[2024-08-05 12:24:54] 
+
+
+[2024-08-05 12:24:54] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 398, in update_loading_screen_position
+    self.contrast = self.config.get('Settings', 'contrast', fallback='Default')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict.get() takes no keyword arguments
+[2024-08-05 12:25:50] No errors occurred
+[2024-08-05 12:25:50] Closed the Error Log File
+
+
+
+

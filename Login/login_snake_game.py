@@ -184,6 +184,11 @@ class LoginAndUserScreen():
 
         self.create_and_place_image_label(self.login_frame, 5, 635, self.config_path_icon)
 
+        #self.login_frame.bind('<Return>', self.login)
+        self.username_entry.bind('<Return>', self.simulate_login_button_click)
+        self.password_entry.bind('<Return>', self.simulate_login_button_click)
+        self.login_frame.focus_set()
+
         # self.logout_button = ctk.CTkButton(self.user_frame, text="Logout", command=self.logout)
         # self.logout_button.pack(pady=10)
 
@@ -248,7 +253,11 @@ class LoginAndUserScreen():
             self.result_label.configure(text="Please enter a username and password", fg_color="red")
             self.reset_label_text()
 
-    def login(self):
+
+    def simulate_login_button_click(self, event):
+        self.login_button.invoke()
+
+    def login(self, event=None):
         """
         Function to log in an existing user
         """
@@ -260,6 +269,8 @@ class LoginAndUserScreen():
             if username in users and users[username] == password:
                 self.current_user = username
                 self.result_label.configure(text="Login successful!", fg_color="green")
+                self.username_entry.unbind('<Return>')
+                self.password_entry.unbind('<Return>')
                 self.parent.after(2000, lambda: self.switch_to_user_screen(username))
             elif username not in users:
                 self.result_label.configure(text="User does not exist", fg_color="red")
@@ -286,11 +297,11 @@ class LoginAndUserScreen():
         """
         self.entry_label.after(3000, lambda: self.entry_label.configure(text="", fg_color="grey20"))
 
-    def enter_user(self):
+    def enter_user(self, username):
         """
         Function to enter a user
         """
-        self.switch_to_user_screen()
+        self.switch_to_user_screen(username)
 
     def forgot_password(self):
         """

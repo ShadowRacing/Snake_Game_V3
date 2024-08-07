@@ -4859,3 +4859,961 @@ ValueError: 'width' and 'height' arguments must be passed to the constructor of 
 
 
 
+[2024-08-07 10:18:14] 
+
+
+[2024-08-07 10:18:14] Started the Error Log File
+[2024-08-07 10:18:19] No errors occurred
+[2024-08-07 10:18:19] Closed the Error Log File
+
+
+
+
+[2024-08-07 10:18:55] 
+
+
+[2024-08-07 10:18:55] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 79, in __init__
+    self.create_shortcuts_frame()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 247, in create_shortcuts_frame
+    self.shortcuts_frame = ctk.CTkCanvas(self.user_frame,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_rendering\ctk_canvas.py", line 31, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2744, in __init__
+    Widget.__init__(self, master, 'canvas', cnf, kw)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown option "-fg_color"
+[2024-08-07 10:19:24] 
+
+
+[2024-08-07 10:19:24] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 79, in __init__
+    self.create_shortcuts_frame()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 247, in create_shortcuts_frame
+    self.shortcuts_frame = ctk.CTkCanvas(self.user_frame,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_rendering\ctk_canvas.py", line 31, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2744, in __init__
+    Widget.__init__(self, master, 'canvas', cnf, kw)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown option "-bg_color"
+[2024-08-07 10:20:27] 
+
+
+[2024-08-07 10:20:27] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 79, in __init__
+    self.create_shortcuts_frame()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 247, in create_shortcuts_frame
+    self.shortcuts_frame = ctk.CTkCanvas(self.user_frame,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_rendering\ctk_canvas.py", line 31, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2744, in __init__
+    Widget.__init__(self, master, 'canvas', cnf, kw)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown option "-corner_radius"
+[2024-08-07 10:20:53] 
+
+
+[2024-08-07 10:20:53] Started the Error Log File
+[2024-08-07 10:23:41] No errors occurred
+[2024-08-07 10:23:41] Closed the Error Log File
+
+
+
+
+[2024-08-07 10:23:58] 
+
+
+[2024-08-07 10:23:58] Started the Error Log File
+[2024-08-07 10:25:48] No errors occurred
+[2024-08-07 10:25:48] Closed the Error Log File
+
+
+
+
+[2024-08-07 10:25:53] 
+
+
+[2024-08-07 10:25:53] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 79, in __init__
+    self.create_shortcuts_frame()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 271, in create_shortcuts_frame
+    self.shortcuts_frame.lift()
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2998, in tag_raise
+    self.tk.call((self._w, 'raise') + args)
+_tkinter.TclError: wrong # args: should be ".!ctkcanvas raise tagOrId ?aboveThis?"
+[2024-08-07 10:27:21] 
+
+
+[2024-08-07 10:27:21] Started the Error Log File
+[2024-08-07 10:30:05] No errors occurred
+[2024-08-07 10:30:05] Closed the Error Log File
+
+
+
+
+[2024-08-07 10:31:49] 
+
+
+[2024-08-07 10:31:49] Started the Error Log File
+[2024-08-07 10:35:56] No errors occurred
+[2024-08-07 10:35:56] Closed the Error Log File
+
+
+
+
+[2024-08-07 10:36:01] 
+
+
+[2024-08-07 10:36:01] Started the Error Log File
+[2024-08-07 10:36:35] No errors occurred
+[2024-08-07 10:36:35] Closed the Error Log File
+
+
+
+
+[2024-08-07 10:36:37] 
+
+
+[2024-08-07 10:36:37] Started the Error Log File
+[2024-08-07 10:36:50] No errors occurred
+[2024-08-07 10:36:50] Closed the Error Log File
+
+
+
+
+[2024-08-07 10:37:03] 
+
+
+[2024-08-07 10:37:03] Started the Error Log File
+[2024-08-07 10:45:35] No errors occurred
+[2024-08-07 10:45:35] Closed the Error Log File
+
+
+
+
+[2024-08-07 10:45:38] 
+
+
+[2024-08-07 10:45:38] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 72, in __init__
+    self.create_login_screen_main()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 318, in create_login_screen_main
+    self.login_screen.create_login_screen()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 202, in create_login_screen
+    self.stop_forget_password.bind('<Escape>', self.simulate__forget_cancel_button_click)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'bind'
+[2024-08-07 10:49:31] 
+
+
+[2024-08-07 10:49:31] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 508, in delete_account
+    self.stop_delete_user.bind('<Escape>', self.simulate_cancel_delete_button_click)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'bind'
+[2024-08-07 10:49:49] No errors occurred
+[2024-08-07 10:49:49] Closed the Error Log File
+
+
+
+
+[2024-08-07 10:51:11] 
+
+
+[2024-08-07 10:51:11] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 582, in delete_delete_user_widgets
+    self.stop_delete_user.unbind('<Escape>')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 578, in unbind
+    self._canvas.unbind(sequence, None)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1453, in unbind
+    self.tk.call('bind', self._w, sequence, '')
+_tkinter.TclError: bad window path name ".!ctkframe2.!ctkframe2.!ctkbutton4.!ctkcanvas"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 473, in delete_forgot_password_widgets
+    self.stop_forget_password.unbind('<Escape>')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 578, in unbind
+    self._canvas.unbind(sequence, None)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1453, in unbind
+    self.tk.call('bind', self._w, sequence, '')
+_tkinter.TclError: bad window path name ".!ctkframe2.!ctkframe2.!ctkbutton6.!ctkcanvas"
+[2024-08-07 10:51:25] No errors occurred
+[2024-08-07 10:51:25] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:00:45] 
+
+
+[2024-08-07 11:00:45] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 587, in delete_delete_user_widgets
+    self.stop_delete_user.unbind('<Escape>')
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 578, in unbind
+    self._canvas.unbind(sequence, None)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1453, in unbind
+    self.tk.call('bind', self._w, sequence, '')
+_tkinter.TclError: bad window path name ".!ctkframe2.!ctkframe2.!ctkbutton4.!ctkcanvas"
+[2024-08-07 11:01:05] No errors occurred
+[2024-08-07 11:01:05] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:01:07] 
+
+
+[2024-08-07 11:01:07] Started the Error Log File
+[2024-08-07 11:01:50] No errors occurred
+[2024-08-07 11:01:50] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:01:52] 
+
+
+[2024-08-07 11:01:52] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 250, in handle_escape
+    if hasattr(self, 'stop_forget_password') and self.stop_forget_password.winfo_exists():
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+[2024-08-07 11:01:57] No errors occurred
+[2024-08-07 11:01:57] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:06:56] 
+
+
+[2024-08-07 11:06:56] Started the Error Log File
+[2024-08-07 11:07:32] No errors occurred
+[2024-08-07 11:07:32] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:07:35] 
+
+
+[2024-08-07 11:07:35] Started the Error Log File
+[2024-08-07 11:08:07] No errors occurred
+[2024-08-07 11:08:07] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:11:14] 
+
+
+[2024-08-07 11:11:14] Started the Error Log File
+[2024-08-07 11:12:06] No errors occurred
+[2024-08-07 11:12:06] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:12:09] 
+
+
+[2024-08-07 11:12:09] Started the Error Log File
+[2024-08-07 11:12:37] No errors occurred
+[2024-08-07 11:12:37] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:12:41] 
+
+
+[2024-08-07 11:12:41] Started the Error Log File
+[2024-08-07 11:12:52] No errors occurred
+[2024-08-07 11:12:52] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:12:55] 
+
+
+[2024-08-07 11:12:55] Started the Error Log File
+[2024-08-07 11:13:06] No errors occurred
+[2024-08-07 11:13:06] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:13:09] 
+
+
+[2024-08-07 11:13:09] Started the Error Log File
+[2024-08-07 11:13:16] No errors occurred
+[2024-08-07 11:13:16] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:13:45] 
+
+
+[2024-08-07 11:13:45] Started the Error Log File
+[2024-08-07 11:13:49] No errors occurred
+[2024-08-07 11:13:49] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:15:35] 
+
+
+[2024-08-07 11:15:35] Started the Error Log File
+[2024-08-07 11:16:12] No errors occurred
+[2024-08-07 11:16:12] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:16:16] 
+
+
+[2024-08-07 11:16:16] Started the Error Log File
+[2024-08-07 11:16:42] No errors occurred
+[2024-08-07 11:16:42] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:16:50] 
+
+
+[2024-08-07 11:16:50] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 79, in __init__
+    self.create_shortcuts_frame()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 290, in create_shortcuts_frame
+    shortcut_label.place(x=10, y=30, padx=2)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 274, in place
+    return super().place(**self._apply_argument_scaling(kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2504, in place_configure
+    self.tk.call(
+_tkinter.TclError: unknown option "-padx"
+[2024-08-07 11:17:15] 
+
+
+[2024-08-07 11:17:15] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 79, in __init__
+    self.create_shortcuts_frame()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 290, in create_shortcuts_frame
+    shortcut_label.place(x=10, y=35, pady=2)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 274, in place
+    return super().place(**self._apply_argument_scaling(kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2504, in place_configure
+    self.tk.call(
+_tkinter.TclError: unknown option "-pady"
+[2024-08-07 11:18:16] 
+
+
+[2024-08-07 11:18:16] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 79, in __init__
+    self.create_shortcuts_frame()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 290, in create_shortcuts_frame
+    shortcut_label.place(pady=2,x=10, y=35)
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\core_widget_classes\ctk_base_class.py", line 274, in place
+    return super().place(**self._apply_argument_scaling(kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2504, in place_configure
+    self.tk.call(
+_tkinter.TclError: unknown option "-pady"
+[2024-08-07 11:19:14] 
+
+
+[2024-08-07 11:19:14] Started the Error Log File
+[2024-08-07 11:19:25] No errors occurred
+[2024-08-07 11:19:25] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:19:28] 
+
+
+[2024-08-07 11:19:28] Started the Error Log File
+[2024-08-07 11:19:34] No errors occurred
+[2024-08-07 11:19:34] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:19:55] 
+
+
+[2024-08-07 11:19:55] Started the Error Log File
+[2024-08-07 11:21:35] No errors occurred
+[2024-08-07 11:21:35] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:21:38] 
+
+
+[2024-08-07 11:21:38] Started the Error Log File
+[2024-08-07 11:22:06] No errors occurred
+[2024-08-07 11:22:06] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:22:09] 
+
+
+[2024-08-07 11:22:09] Started the Error Log File
+[2024-08-07 11:22:39] No errors occurred
+[2024-08-07 11:22:39] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:22:46] 
+
+
+[2024-08-07 11:22:46] Started the Error Log File
+[2024-08-07 11:23:18] No errors occurred
+[2024-08-07 11:23:18] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:23:21] 
+
+
+[2024-08-07 11:23:21] Started the Error Log File
+[2024-08-07 11:23:43] No errors occurred
+[2024-08-07 11:23:43] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:23:47] 
+
+
+[2024-08-07 11:23:47] Started the Error Log File
+[2024-08-07 11:23:59] No errors occurred
+[2024-08-07 11:23:59] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:24:02] 
+
+
+[2024-08-07 11:24:02] Started the Error Log File
+[2024-08-07 11:24:14] No errors occurred
+[2024-08-07 11:24:14] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:24:17] 
+
+
+[2024-08-07 11:24:17] Started the Error Log File
+[2024-08-07 11:24:27] No errors occurred
+[2024-08-07 11:24:27] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:33:01] 
+
+
+[2024-08-07 11:33:01] Started the Error Log File
+[2024-08-07 11:36:07] No errors occurred
+[2024-08-07 11:36:07] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:36:10] 
+
+
+[2024-08-07 11:36:10] Started the Error Log File
+[2024-08-07 11:36:27] No errors occurred
+[2024-08-07 11:36:27] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:36:35] 
+
+
+[2024-08-07 11:36:35] Started the Error Log File
+[2024-08-07 11:36:47] No errors occurred
+[2024-08-07 11:36:47] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:36:50] 
+
+
+[2024-08-07 11:36:50] Started the Error Log File
+[2024-08-07 11:36:57] No errors occurred
+[2024-08-07 11:36:57] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:51:17] 
+
+
+[2024-08-07 11:51:17] Started the Error Log File
+[2024-08-07 11:53:25] No errors occurred
+[2024-08-07 11:53:25] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:53:49] 
+
+
+[2024-08-07 11:53:49] Started the Error Log File
+[2024-08-07 11:54:15] No errors occurred
+[2024-08-07 11:54:15] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:54:18] 
+
+
+[2024-08-07 11:54:18] Started the Error Log File
+[2024-08-07 11:56:26] No errors occurred
+[2024-08-07 11:56:26] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:56:34] 
+
+
+[2024-08-07 11:56:34] Started the Error Log File
+[2024-08-07 11:57:15] No errors occurred
+[2024-08-07 11:57:15] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:57:21] 
+
+
+[2024-08-07 11:57:21] Started the Error Log File
+[2024-08-07 11:57:36] No errors occurred
+[2024-08-07 11:57:36] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:57:40] 
+
+
+[2024-08-07 11:57:40] Started the Error Log File
+[2024-08-07 11:58:04] No errors occurred
+[2024-08-07 11:58:04] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:58:09] 
+
+
+[2024-08-07 11:58:09] Started the Error Log File
+[2024-08-07 11:58:24] No errors occurred
+[2024-08-07 11:58:24] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:58:34] 
+
+
+[2024-08-07 11:58:34] Started the Error Log File
+[2024-08-07 11:59:07] No errors occurred
+[2024-08-07 11:59:07] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:59:12] 
+
+
+[2024-08-07 11:59:12] Started the Error Log File
+[2024-08-07 11:59:35] No errors occurred
+[2024-08-07 11:59:35] Closed the Error Log File
+
+
+
+
+[2024-08-07 11:59:40] 
+
+
+[2024-08-07 11:59:40] Started the Error Log File
+[2024-08-07 12:00:13] No errors occurred
+[2024-08-07 12:00:13] Closed the Error Log File
+
+
+
+
+[2024-08-07 12:00:43] 
+
+
+[2024-08-07 12:00:43] Started the Error Log File
+[2024-08-07 12:06:30] No errors occurred
+[2024-08-07 12:06:30] Closed the Error Log File
+
+
+
+
+[2024-08-07 12:06:34] 
+
+
+[2024-08-07 12:06:34] Started the Error Log File
+[2024-08-07 12:08:05] No errors occurred
+[2024-08-07 12:08:05] Closed the Error Log File
+
+
+
+
+[2024-08-07 12:08:09] 
+
+
+[2024-08-07 12:08:09] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 398, in update_loading_screen_position
+    self.contrast = self.config.get('Settings', 'contrast', fallback='Default')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict.get() takes no keyword arguments
+[2024-08-07 12:09:57] No errors occurred
+[2024-08-07 12:09:57] Closed the Error Log File
+
+
+
+
+[2024-08-07 12:10:02] 
+
+
+[2024-08-07 12:10:02] Started the Error Log File
+[2024-08-07 12:15:34] No errors occurred
+[2024-08-07 12:15:34] Closed the Error Log File
+
+
+
+
+[2024-08-07 12:16:22] 
+
+
+[2024-08-07 12:16:22] Started the Error Log File
+[2024-08-07 12:16:39] No errors occurred
+[2024-08-07 12:16:39] Closed the Error Log File
+
+
+
+
+[2024-08-07 12:16:44] 
+
+
+[2024-08-07 12:16:44] Started the Error Log File
+[2024-08-07 12:20:47] No errors occurred
+[2024-08-07 12:20:47] Closed the Error Log File
+
+
+
+
+[2024-08-07 12:20:51] 
+
+
+[2024-08-07 12:20:51] Started the Error Log File
+[2024-08-07 12:21:18] No errors occurred
+[2024-08-07 12:21:18] Closed the Error Log File
+
+
+
+
+[2024-08-07 12:21:59] 
+
+
+[2024-08-07 12:21:59] Started the Error Log File
+[2024-08-07 12:22:07] No errors occurred
+[2024-08-07 12:22:07] Closed the Error Log File
+
+
+
+

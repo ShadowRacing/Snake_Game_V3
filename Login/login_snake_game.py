@@ -88,6 +88,19 @@ class LoginAndUserScreen():
         # Initialize shortcuts frame
         self.create_shortcuts_frame()
 
+        # Bind shortcuts to the parent window
+        # self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+        # self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+        # self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+        # self.parent.bind('<Control-y>', lambda event: self.handle_shortcut('yes'))
+        # self.parent.bind('<Control-n>', lambda event: self.handle_shortcut('no'))
+        # self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+        # self.parent.bind('<Control-s>', lambda event: self.handle_shortcut('shortcuts'))
+        # self.parent.bind('<Escape>', self.handle_escape)
+        # self.parent.bind('<Return>', self.login)
+
+        # self.login_frame.focus_set()
+
     def create_login_screen(self):
         """
         Function to create the login screen
@@ -204,24 +217,47 @@ class LoginAndUserScreen():
         self.forgot_button.place(x=625, y=110)
         self.delete_button.place(x=795, y=110)
 
-        self.create_and_place_image_label(self.login_frame, 5, 635, self.config_path_icon)
+        self.create_and_place_image_label(self.user_frame, 150, 5, self.config_path_icon)
 
         #self.login_frame.bind('<Return>', self.login)
         self.username_entry.bind('<Return>', self.simulate_login_button_click)
         self.password_entry.bind('<Return>', self.simulate_login_button_click)
-        self.parent.bind('<Control-c>', lambda event: self.create_user())
-        self.parent.bind('<Control-f>', lambda event: self.forgot_password())
-        self.parent.bind('<Control-d>', lambda event: self.delete_account())
-        self.parent.bind('<Control-y>', lambda event: self.handle_yes())
-        self.parent.bind('<Control-r>', self.handle_reset_password)
-        self.parent.bind('<Control-n>', lambda event: self.handle_no())
+        self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+        self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+        self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+        self.parent.bind('<Control-y>', lambda event: self.handle_shortcut('yes'))
+        self.parent.bind('<Control-n>', lambda event: self.handle_shortcut('no'))
+        self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+        self.parent.bind('<Control-s>', lambda event: self.handle_shortcut('shortcuts'))
         self.parent.bind('<Escape>', self.handle_escape)
+        self.parent.bind('<Return>', self.login)
+
         self.login_frame.focus_set()
+
+        
 
         self.create_shortcuts_frame()
 
         # self.logout_button = ctk.CTkButton(self.user_frame, text="Logout", command=self.logout)
         # self.logout_button.pack(pady=10)
+
+    def handle_shortcut(self, action):
+        if action == 'create_user' and hasattr(self, 'create_button') and self.create_button.winfo_exists():
+            self.create_user()
+        elif action == 'forgot_password' and hasattr(self, 'forgot_button') and self.forgot_button.winfo_exists():
+            self.forgot_password()
+        elif action == 'delete_account' and hasattr(self, 'delete_button') and self.delete_button.winfo_exists():
+            self.delete_account()
+        elif action == 'yes' and hasattr(self, 'yes_button') and self.yes_button.winfo_exists():
+            self.yes_button.invoke()
+        elif action == 'no' and hasattr(self, 'no_button') and self.no_button.winfo_exists():
+            self.no_button.invoke()
+        elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+            self.reset_password_button.invoke()
+        elif action == 'shortcuts':
+            self.toggle_shortcuts()
+
+
 
     def create_and_place_image_label(self, canvas, x, y, image_path):
         """
@@ -229,7 +265,7 @@ class LoginAndUserScreen():
         """
         self.my_image = ctk.CTkImage(light_image=Image.open(image_path),
                                 dark_image=Image.open(image_path),
-                                size=(160, 160))
+                                size=(40, 40))
 
         self.image_label = ctk.CTkLabel(canvas, image=self.my_image, text="", corner_radius=6)
         self.image_label.place(x=x, y=y)
@@ -533,14 +569,22 @@ class LoginAndUserScreen():
         """
         Function to delete the widgets created for the forgot password feature
         """
-        self.instruction_label.destroy()
-        self.entry_label.destroy()
-        self.username_forgot_password_entry.destroy()
-        self.password_forgot_password_entry.destroy()
-        self.username_forgot_password_entry_label.destroy()
-        self.password_forgot_password_entry_label.destroy()
-        self.reset_password_button.destroy()
-        self.stop_forget_password.destroy()
+        if hasattr(self, 'instruction_label'):
+            self.instruction_label.destroy()
+        if hasattr(self, 'entry_label'):
+            self.entry_label.destroy()
+        if hasattr(self, 'username_forgot_password_entry'):
+            self.username_forgot_password_entry.destroy()
+        if hasattr(self, 'password_forgot_password_entry'):
+            self.password_forgot_password_entry.destroy()
+        if hasattr(self, 'username_forgot_password_entry_label'):
+            self.username_forgot_password_entry_label.destroy()
+        if hasattr(self, 'password_forgot_password_entry_label'):
+            self.password_forgot_password_entry_label.destroy()
+        if hasattr(self, 'reset_password_button'):
+            self.reset_password_button.destroy()
+        if hasattr(self, 'stop_forget_password'):
+            self.stop_forget_password.destroy()
 
         self.forgot_button.configure(state="normal")
         self.delete_button.configure(state="normal")
@@ -549,6 +593,7 @@ class LoginAndUserScreen():
         self.password_entry.configure(state="normal")
         self.username_entry.configure(state="normal")
 
+        
     def switch_to_user_screen(self, username):
         """
         Function to switch to the user screen
@@ -559,6 +604,8 @@ class LoginAndUserScreen():
             self.on_login_success_callback(username)
         if hasattr(self, 'image_label'):
             self.image_label.destroy()
+        self.username_entry.unbind('<Return>')
+        self.password_entry.unbind('<Return>')
         self.login_frame.destroy()
 
     def get_user_name(self):
@@ -576,16 +623,23 @@ class LoginAndUserScreen():
         """
         Function to delete the account of the current user
         """
+        self.delete_delete_user_widgets()  # Clear any existing delete user widgets
 
-        self.forgot_button.configure(state="disabled")
-        self.delete_button.configure(state="disabled")
-        self.create_button.configure(state="disabled")
-        self.login_button.configure(state="disabled")
-        self.password_entry.configure(state="disabled")
-        self.username_entry.configure(state="disabled")
+        buttons_to_disable = [
+            'forgot_button',
+            'delete_button',
+            'create_button',
+            'login_button',
+            'password_entry',
+            'username_entry'
+        ]
+
+        for button in buttons_to_disable:
+            if hasattr(self, button):
+                getattr(self, button).configure(state="disabled")
 
         self.instruction_label_delete_user = ctk.CTkLabel(self.user_frame,
-                                                        text="Enter your username and password to delete", # pylint: disable=line-too-long
+                                                        text="Enter your username and password to delete",
                                                         text_color="red",
                                                         fg_color="grey20")
         self.instruction_label_delete_user.place(x=13, y=400)
@@ -596,21 +650,20 @@ class LoginAndUserScreen():
         self.entry_label.place(x=13, y=440)
 
         self.username_delete_user_entry = ctk.CTkEntry(self.user_frame,
-                                                       fg_color="grey40",
-                                                       height=30,
-                                                       width=250,
-                                                       placeholder_text="Enter your username",
-                                                       placeholder_text_color="white")
+                                                    fg_color="grey40",
+                                                    height=30,
+                                                    width=250,
+                                                    placeholder_text="Enter your username",
+                                                    placeholder_text_color="white")
 
         self.password_delete_user_entry = ctk.CTkEntry(self.user_frame, show="*",
-                                                       fg_color="grey40",
-                                                       height=30,
-                                                       width=250,
-                                                       placeholder_text="Enter your password",
-                                                       placeholder_text_color="white")
+                                                    fg_color="grey40",
+                                                    height=30,
+                                                    width=250,
+                                                    placeholder_text="Enter your password",
+                                                    placeholder_text_color="white")
         self.username_delete_user_entry.place(x=10, y=500)
         self.password_delete_user_entry.place(x=300, y=500)
-
 
         self.username_delete_user_entry_label = ctk.CTkLabel(self.user_frame,
                                                         text="Username")
@@ -625,7 +678,7 @@ class LoginAndUserScreen():
                                                         command=self.delete_user_callback,
                                                         fg_color="grey90",
                                                         text_color="blue",
-                                                        hover_color="#E6E6FA") # pylint: disable=line-too-long
+                                                        hover_color="#E6E6FA")
         self.delete_user_button.place(x=625, y=500)
 
         self.stop_delete_user = ctk.CTkButton(self.user_frame,
@@ -633,27 +686,46 @@ class LoginAndUserScreen():
                                                         command=self.delete_delete_user_widgets,
                                                         fg_color="grey90",
                                                         text_color="blue",
-                                                        hover_color="#E6E6FA") # pylint: disable=line-too-long
+                                                        hover_color="#E6E6FA")
         self.stop_delete_user.place(x=795, y=500)
 
     def delete_delete_user_widgets(self):
         """
         Function to delete the widgets created for the delete user feature
         """
-        self.instruction_label_delete_user.destroy()
-        self.entry_label.destroy()
-        self.username_delete_user_entry.destroy()
-        self.password_delete_user_entry.destroy()
-        self.username_delete_user_entry_label.destroy()
-        self.password_delete_user_entry_label.destroy()
-        self.delete_user_button.destroy()
-        self.stop_delete_user.destroy()
-        self.forgot_button.configure(state="normal")
-        self.delete_button.configure(state="normal")
-        self.create_button.configure(state="normal")
-        self.login_button.configure(state="normal")
-        self.password_entry.configure(state="normal")
-        self.username_entry.configure(state="normal")
+        attributes_to_delete = [
+            'instruction_label_delete_user',
+            'entry_label',
+            'username_delete_user_entry',
+            'password_delete_user_entry',
+            'username_delete_user_entry_label',
+            'password_delete_user_entry_label',
+            'delete_user_button',
+            'stop_delete_user',
+            'confimation_label',
+            'yes_button',
+            'no_button'
+        ]
+
+        for attr in attributes_to_delete:
+            if hasattr(self, attr):
+                widget = getattr(self, attr)
+                if widget is not None and widget.winfo_exists():
+                    widget.destroy()
+                setattr(self, attr, None)
+
+        buttons_to_enable = [
+            'forgot_button',
+            'delete_button',
+            'create_button',
+            'login_button',
+            'password_entry',
+            'username_entry'
+        ]
+
+        for button in buttons_to_enable:
+            if hasattr(self, button):
+                getattr(self, button).configure(state="normal")
 
     def delete_user_callback(self):
         """

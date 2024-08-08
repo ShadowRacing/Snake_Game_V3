@@ -69,7 +69,7 @@ class OptionButtonPanel:
             self.theme_config = self.config.get('Settings', 'theme', fallback='Default')
             self.theme_var = ctk.StringVar()  # Variable to track the selected value
             self.theme_var.set(self.theme_config)
-            self.theme_changer = ThemeUpdater(self.game_logger)
+            self.theme_changer = ThemeUpdater(self.game_logger, self.config, self.config_path)
         except FileNotFoundError as e:
             traceback.print_exc(e)
 
@@ -78,7 +78,7 @@ class OptionButtonPanel:
             self.contrast_config = self.config.get('Settings', 'contrast', fallback='Default')
             self.contrast_mode = ctk.StringVar()
             self.contrast_mode.set(self.contrast_config)
-            self.contrast_updater = UpdateContrast(self.game_logger)
+            self.contrast_updater = UpdateContrast(self.game_logger, self.config, self.config_path)
         except FileNotFoundError as e:
             traceback.print_exc(e)
 

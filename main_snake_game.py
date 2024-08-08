@@ -395,8 +395,8 @@ class SnakeGameApp:
         }
 
         # Update the circles
-        self.contrast = self.config.get('Settings', 'contrast', fallback='Default')
-        self.theme = self.config.get('Settings', 'theme', fallback='Default')
+        self.contrast = self.config.get('Settings', {}).get('contrast', 'Default')
+        self.theme = self.config.get('Settings', {}).get('theme', 'Default')
 
         # Use the dictionary to get the color code for the theme
         if self.theme in theme_colors:

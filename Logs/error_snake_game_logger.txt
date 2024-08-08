@@ -5817,3 +5817,2503 @@ TypeError: dict.get() takes no keyword arguments
 
 
 
+[2024-08-07 16:46:21] 
+
+
+[2024-08-07 16:46:21] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 363, in handle_reset_password
+    if hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+[2024-08-07 16:49:33] No errors occurred
+[2024-08-07 16:49:33] Closed the Error Log File
+
+
+
+
+[2024-08-07 16:53:33] 
+
+
+[2024-08-07 16:53:33] Started the Error Log File
+[2024-08-07 16:55:31] No errors occurred
+[2024-08-07 16:55:31] Closed the Error Log File
+
+
+
+
+[2024-08-07 16:59:17] 
+
+
+[2024-08-07 16:59:17] Started the Error Log File
+[2024-08-07 16:59:30] No errors occurred
+[2024-08-07 16:59:30] Closed the Error Log File
+
+
+
+
+[2024-08-07 16:59:34] 
+
+
+[2024-08-07 16:59:34] Started the Error Log File
+[2024-08-07 17:05:47] No errors occurred
+[2024-08-07 17:05:47] Closed the Error Log File
+
+
+
+
+[2024-08-07 17:05:49] 
+
+
+[2024-08-07 17:05:49] Started the Error Log File
+[2024-08-07 17:06:11] No errors occurred
+[2024-08-07 17:06:11] Closed the Error Log File
+
+
+
+
+[2024-08-07 17:09:30] 
+
+
+[2024-08-07 17:09:30] Started the Error Log File
+[2024-08-07 17:09:50] No errors occurred
+[2024-08-07 17:09:50] Closed the Error Log File
+
+
+
+
+[2024-08-07 17:11:52] 
+
+
+[2024-08-07 17:11:52] Started the Error Log File
+[2024-08-07 17:13:28] No errors occurred
+[2024-08-07 17:13:28] Closed the Error Log File
+
+
+
+
+[2024-08-07 17:13:33] 
+
+
+[2024-08-07 17:13:33] Started the Error Log File
+[2024-08-07 17:14:09] No errors occurred
+[2024-08-07 17:14:09] Closed the Error Log File
+
+
+
+
+[2024-08-07 17:14:34] 
+
+
+[2024-08-07 17:14:34] Started the Error Log File
+[2024-08-07 17:17:13] No errors occurred
+[2024-08-07 17:17:13] Closed the Error Log File
+
+
+
+
+[2024-08-08 09:59:32] 
+
+
+[2024-08-08 09:59:32] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 222, in <lambda>
+    self.parent.bind('<Control-c>', lambda event: self.handle_shortcut('create_user'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 236, in handle_shortcut
+    if action == 'create_user' and self.create_button['state'] != 'disabled':
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 223, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 238, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 224, in <lambda>
+    self.parent.bind('<Control-d>', lambda event: self.handle_shortcut('delete_account'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 240, in handle_shortcut
+    elif action == 'delete_account' and self.delete_button['state'] != 'disabled':
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 227, in <lambda>
+    self.parent.bind('<Control-r>', lambda event: self.handle_shortcut('reset_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 246, in handle_shortcut
+    elif action == 'reset_password' and hasattr(self, 'reset_password_button') and self.reset_password_button.winfo_exists():
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'winfo_exists'
+[2024-08-08 10:02:44] No errors occurred
+[2024-08-08 10:02:44] Closed the Error Log File
+
+
+
+
+[2024-08-08 10:07:23] 
+
+
+[2024-08-08 10:07:23] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+[2024-08-08 10:07:31] No errors occurred
+[2024-08-08 10:07:31] Closed the Error Log File
+
+
+
+
+[2024-08-08 10:09:10] 
+
+
+[2024-08-08 10:09:10] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 92, in <lambda>
+    self.parent.bind('<Control-f>', lambda event: self.handle_shortcut('forgot_password'))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 241, in handle_shortcut
+    elif action == 'forgot_password' and self.forgot_button['state'] != 'disabled':
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1708, in cget
+    return self.tk.call(self._w, 'cget', '-' + key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown option "-state"
+[2024-08-08 10:17:10] No errors occurred
+[2024-08-08 10:17:10] Closed the Error Log File
+
+
+
+
+[2024-08-08 10:17:39] 
+
+
+[2024-08-08 10:17:39] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 102, in __init__
+    self.login_frame.focus_set()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'focus_set'
+[2024-08-08 10:18:13] 
+
+
+[2024-08-08 10:18:13] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 102, in __init__
+    self.login_frame.focus_set()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'focus_set'
+[2024-08-08 10:18:17] 
+
+
+[2024-08-08 10:18:17] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1361, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 71, in __init__
+    self.login_screen = LoginAndUserScreen(self.root, self.game_logger, on_login_success_callback=self.show_loading_screen_after_login) # pylint: disable=line-too-long
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 102, in __init__
+    self.login_frame.focus_set()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'focus_set'
+[2024-08-08 10:19:18] 
+
+
+[2024-08-08 10:19:18] Started the Error Log File
+[2024-08-08 10:19:47] No errors occurred
+[2024-08-08 10:19:47] Closed the Error Log File
+
+
+
+
+[2024-08-08 10:19:49] 
+
+
+[2024-08-08 10:19:49] Started the Error Log File
+[2024-08-08 10:20:02] No errors occurred
+[2024-08-08 10:20:02] Closed the Error Log File
+
+
+
+
+[2024-08-08 10:27:13] 
+
+
+[2024-08-08 10:27:13] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 626, in delete_account
+    self.delete_delete_user_widgets()  # Clear any existing delete user widgets
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 691, in delete_delete_user_widgets
+    self.instruction_label_delete_user.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 626, in delete_account
+    self.delete_delete_user_widgets()  # Clear any existing delete user widgets
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Login\login_snake_game.py", line 691, in delete_delete_user_widgets
+    self.instruction_label_delete_user.destroy()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'destroy'
+[2024-08-08 10:27:24] No errors occurred
+[2024-08-08 10:27:24] Closed the Error Log File
+
+
+
+
+[2024-08-08 11:32:25] 
+
+
+[2024-08-08 11:32:25] Started the Error Log File
+[2024-08-08 11:37:41] No errors occurred
+[2024-08-08 11:37:41] Closed the Error Log File
+
+
+
+
+[2024-08-08 11:37:47] 
+
+
+[2024-08-08 11:37:47] Started the Error Log File
+[2024-08-08 11:37:50] No errors occurred
+[2024-08-08 11:37:50] Closed the Error Log File
+
+
+
+
+[2024-08-08 11:38:09] 
+
+
+[2024-08-08 11:38:09] Started the Error Log File
+[2024-08-08 11:38:47] No errors occurred
+[2024-08-08 11:38:47] Closed the Error Log File
+
+
+
+
+[2024-08-08 11:38:51] 
+
+
+[2024-08-08 11:38:51] Started the Error Log File
+[2024-08-08 11:39:15] No errors occurred
+[2024-08-08 11:39:15] Closed the Error Log File
+
+
+
+
+[2024-08-08 11:39:18] 
+
+
+[2024-08-08 11:39:18] Started the Error Log File
+[2024-08-08 11:39:34] No errors occurred
+[2024-08-08 11:39:34] Closed the Error Log File
+
+
+
+
+[2024-08-08 11:39:37] 
+
+
+[2024-08-08 11:39:37] Started the Error Log File
+[2024-08-08 11:40:18] No errors occurred
+[2024-08-08 11:40:18] Closed the Error Log File
+
+
+
+
+[2024-08-08 11:40:21] 
+
+
+[2024-08-08 11:40:21] Started the Error Log File
+[2024-08-08 11:40:46] No errors occurred
+[2024-08-08 11:40:46] Closed the Error Log File
+
+
+
+
+[2024-08-08 11:40:48] 
+
+
+[2024-08-08 11:40:48] Started the Error Log File
+[2024-08-08 12:02:32] No errors occurred
+[2024-08-08 12:02:32] Closed the Error Log File
+
+
+
+
+[2024-08-08 12:03:41] 
+
+
+[2024-08-08 12:03:41] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "c:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 398, in update_loading_screen_position
+    self.contrast = self.config.get('Settings', 'contrast', fallback='Default')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict.get() takes no keyword arguments
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "c:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "C:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\button_commands_snake_game.py", line 152, in classic_snake_command
+    self.functions['classic_snake']()
+  File "C:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 530, in classic_snake
+    self.start_game("classic_snake")
+  File "C:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 674, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 134, in __init__
+    self.configfile()
+  File "C:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 173, in configfile
+    self.start_screen()
+  File "C:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 213, in start_screen
+    self.bind_and_unbind_keys()
+  File "C:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 542, in bind_and_unbind_keys
+    for key in self.key_bindings['StartGame']:
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'StartGame'
+[2024-08-08 12:09:11] No errors occurred
+[2024-08-08 12:09:11] Closed the Error Log File
+
+
+
+

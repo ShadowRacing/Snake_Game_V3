@@ -9,12 +9,13 @@ class ButtonCommands:
     """
     Class for assigning functions to button commands.
     """
-    def __init__(self, game_logger, functions, config, config_path):
+    def __init__(self, game_logger, functions, config, config_path, config_handler):
         self.game_logger = game_logger
         self.config = config
         self.config_path = config_path
         self.functions = functions
         self.game_logger = game_logger
+        self.config_handler = config_handler
         self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
 
     def home_command(self):

@@ -21,10 +21,11 @@ class OptionButtonPanel:
     """
     Class for creating the option button panel of the Shadows Snake game.
     """
-    def __init__(self, root, settings_canvas_values, game_logger):
+    def __init__(self, root, settings_canvas_values, game_logger, config_handler):
         # Initializing variables
         self.settings_canvas_values = settings_canvas_values
         self.game_logger = game_logger
+        self.config_handler = config_handler
         self.label_panel = SettingsOptionButtonLabels(game_logger, self.settings_canvas_values)
         self.config_dir = path.dirname(__file__)
         self.config_path = path.join(self.config_dir, '..','config.ini')
@@ -69,7 +70,7 @@ class OptionButtonPanel:
             self.theme_config = self.config.get('Settings', 'theme', fallback='Default')
             self.theme_var = ctk.StringVar()  # Variable to track the selected value
             self.theme_var.set(self.theme_config)
-            self.theme_changer = ThemeUpdater(self.game_logger, self.config, self.config_path)
+            self.theme_changer = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
         except FileNotFoundError as e:
             traceback.print_exc(e)
 

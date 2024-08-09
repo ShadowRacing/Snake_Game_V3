@@ -13,16 +13,17 @@ class ResetSettingsPanel:
     """
     Class for creating the reset settings panel of the Shadows Snake game.
     """
-    def __init__(self, settings_canvas_reset, game_logger, functions, config, config_path):
+    def __init__(self, settings_canvas_reset, game_logger, functions, config, config_path, config_handler):
         self.game_logger = game_logger
         self.config = config
         self.config_path = config_path
         # Initializing variables
         self.settings_canvas_reset = settings_canvas_reset
         self.game_logger = game_logger
+        self.config_handler = config_handler
         self.functions = functions
         self.buttons = []
-        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path)
+        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
 
         # Managing the buttons height and width
         self.button_width = GameConstants.SETTINGS_BUTTON_RESET_WIDTH

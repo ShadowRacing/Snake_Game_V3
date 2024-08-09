@@ -7,9 +7,9 @@ This module is responsible for the classic snake game mode of the Shadows Snake 
 """
 
 import time
-import configparser
+# import configparser
 import traceback
-import json
+# import json
 from os import path
 from PIL import Image
 import customtkinter as ctk
@@ -117,7 +117,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.food = ClassicFood(self.game_logger, self.snake_canvas, game_config)
         self.game_labels_panel = GameLabelsPanel(parent, self.game_logger,  self.game_config)
         self.game_config = GameConfig(self.game_logger, 'classic_snake')
-        self.create_button_panel = ClickButtonPanel(parent, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
+        self.create_button_panel = ClickButtonPanel(parent, self.game_logger, self.functions, self.config, self.config_path, self.config_handler) # pylint: disable=line-too-long
 
 
         # Create the classic snake game labels

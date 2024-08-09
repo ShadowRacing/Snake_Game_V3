@@ -8342,3 +8342,208 @@ Traceback (most recent call last):
     self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path)
                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: ThemeUpdater.__init__() missing 1 required positional argument: 'config_handler'
+[2024-08-09 19:27:31] 
+
+
+[2024-08-09 19:27:31] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1366, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 241, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 43, in __init__
+    self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
+                                                                                       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ClickButtonPanel' object has no attribute 'config_handler'
+[2024-08-09 19:27:36] 
+
+
+[2024-08-09 19:27:36] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1366, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 241, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 43, in __init__
+    self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
+                                                                                       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ClickButtonPanel' object has no attribute 'config_handler'
+[2024-08-09 19:37:42] 
+
+
+[2024-08-09 19:37:42] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1366, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 241, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions, self.config, self.config_path, self.config_handler) # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 51, in __init__
+    self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\button_commands_snake_game.py", line 18, in __init__
+    self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
+                                                                                       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ButtonCommands' object has no attribute 'config_handler'
+[2024-08-09 19:39:04] 
+
+
+[2024-08-09 19:39:04] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1366, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 241, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions, self.config, self.config_path, self.config_handler) # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 51, in __init__
+    self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ButtonCommands.__init__() missing 1 required positional argument: 'config_handler'
+[2024-08-09 19:39:41] 
+
+
+[2024-08-09 19:39:41] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1366, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 241, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions, self.config, self.config_path, self.config_handler) # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 51, in __init__
+    self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ButtonCommands.__init__() missing 1 required positional argument: 'config_handler'
+[2024-08-09 19:40:25] 
+
+
+[2024-08-09 19:40:25] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1366, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 243, in __init__
+    self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\buttonpanelreset_snake_game.py", line 25, in __init__
+    self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ThemeUpdater.__init__() missing 1 required positional argument: 'config_handler'
+[2024-08-09 19:42:08] 
+
+
+[2024-08-09 19:42:08] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\button_commands_snake_game.py", line 153, in classic_snake_command
+    self.functions['classic_snake']()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 535, in classic_snake
+    self.start_game("classic_snake")
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 679, in start_game
+    self.classic_snake_canvas = SnakeClassicGame(self.root, self.game_config,
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 120, in __init__
+    self.create_button_panel = ClickButtonPanel(parent, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ClickButtonPanel.__init__() missing 1 required positional argument: 'config_handler'
+[2024-08-09 19:42:22] No errors occurred
+[2024-08-09 19:42:22] Closed the Error Log File
+
+
+
+
+[2024-08-09 19:43:07] 
+
+
+[2024-08-09 19:43:07] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\button_commands_snake_game.py", line 153, in classic_snake_command
+    self.functions['classic_snake']()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 535, in classic_snake
+    self.start_game("classic_snake")
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 770, in start_game
+    self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\optionmenubuttonpanel.py", line 72, in __init__
+    self.theme_changer = ThemeUpdater(self.game_logger, self.config, self.config_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ThemeUpdater.__init__() missing 1 required positional argument: 'config_handler'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Games\snake_classic_game.py", line 255, in start_game
+    self.create_button_panel.update_button_state()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 228, in update_button_state
+    self.home_button.configure(state=self.home_button_state)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'configure'
+[2024-08-09 19:43:27] No errors occurred
+[2024-08-09 19:43:27] Closed the Error Log File
+
+
+
+
+[2024-08-09 19:44:49] 
+
+
+[2024-08-09 19:44:49] Started the Error Log File
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1948, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\wimjr\AppData\Local\Programs\Python\Python311\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\button_commands_snake_game.py", line 153, in classic_snake_command
+    self.functions['classic_snake']()
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 535, in classic_snake
+    self.start_game("classic_snake")
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 770, in start_game
+    self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: OptionButtonPanel.__init__() missing 1 required positional argument: 'config_handler'
+[2024-08-09 19:45:13] No errors occurred
+[2024-08-09 19:45:13] Closed the Error Log File
+
+
+
+
+[2024-08-09 19:45:51] 
+
+
+[2024-08-09 19:45:51] Started the Error Log File
+[2024-08-09 19:46:42] No errors occurred
+[2024-08-09 19:46:42] Closed the Error Log File
+
+
+
+
+[2024-08-09 19:48:43] 
+
+
+[2024-08-09 19:48:43] Started the Error Log File
+[2024-08-09 19:48:58] No errors occurred
+[2024-08-09 19:48:58] Closed the Error Log File
+
+
+
+

@@ -28,10 +28,11 @@ class ClickButtonPanel:
             cls._instance = super(ClickButtonPanel, cls).__new__(cls)
         return cls._instance
 
-    def __init__(self, parent, game_logger, functions, config, config_path, home_button=None):
+    def __init__(self, parent, game_logger, functions, config, config_path, config_handler, home_button=None):
         self.game_logger = game_logger
         self.config = config
         self.config_path = config_path
+        self.config_handler = config_handler
         # Check if we've already initialized the instance
         if getattr(self, '_initialized', False):
             return
@@ -47,7 +48,7 @@ class ClickButtonPanel:
         self.button_height = GameConstants.CLICK_BUTTON_HEIGHT
         self.corner_radius = GameConstants.CLICK_BUTTON_CORNER_RADIUS
 
-        self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path)
+        self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path, self.config_handler) # pylint: disable=line-too-long
 
         # Creating a separate canvas for the buttons
         self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long

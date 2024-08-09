@@ -10863,3 +10863,758 @@ Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
 [2024-08-08 16:40:07] Game mode: initial config
 Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
 Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:27:31] Started the app
+[2024-08-09 19:27:31] Started the GameApp Class
+[2024-08-09 19:27:31] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:27:36] Started the app
+[2024-08-09 19:27:36] Started the GameApp Class
+[2024-08-09 19:27:36] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:37:42] Started the app
+[2024-08-09 19:37:42] Started the GameApp Class
+[2024-08-09 19:37:42] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:39:04] Started the app
+[2024-08-09 19:39:04] Started the GameApp Class
+[2024-08-09 19:39:04] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:39:41] Started the app
+[2024-08-09 19:39:41] Started the GameApp Class
+[2024-08-09 19:39:41] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:40:25] Started the app
+[2024-08-09 19:40:25] Started the GameApp Class
+[2024-08-09 19:40:25] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:42:08] Started the app
+[2024-08-09 19:42:08] Started the GameApp Class
+[2024-08-09 19:42:08] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:42:08] Resetting snake
+[2024-08-09 19:42:08] Set initial game size to: 600x600
+[2024-08-09 19:42:08] Updated initial_game_size in config.ini to: 600x600
+[2024-08-09 19:42:08] Current initial_game_size in config.ini to: 600x600
+Loaded config from c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:42:16] Current Theme: Red
+[2024-08-09 19:42:16] Set initial theme to: Red
+[2024-08-09 19:42:16] Updated initial_theme in config to: Red
+[2024-08-09 19:42:16] Current initial_theme in config: Red
+Loaded config from c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:42:16] Theme applied: Red
+[2024-08-09 19:42:16] Updated contrast in config to: Default
+[2024-08-09 19:42:16] Contrast mode set to: default
+[2024-08-09 19:42:16] {'Settings': {'initial_theme': 'Red', 'theme': 'Red', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': '800x500', 'label_needed_theme': 'true', 'button_press_time_limit': 0.5, 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'game_mode': 'classic_snake', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'DefaultSettings': {'initial_theme': 'Default', 'theme': 'Default', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': 'Default', 'button_press_time_limit': 0.5, 'game_mode': 'classic_snake', 'label_needed_theme': 'false', 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'KeyBindings': {'move_up': 'w', 'move_left': 'a', 'move_down': 's', 'move_right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Default_KeyBindings': {'up': 'w', 'down': 's', 'left': 'a', 'right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Classic_Snake_Values': {'score': 0, 'high_score': 1, 'snake_length': 0, 'snake_length_high_score': 6, 'time_score': 0, 'high_score_time': 3}, 'Classic_Snake_Settings': {'state': 'start_game'}, 'Endless_Snake_Values': {'score': 0, 'high_score': 270, 'special_score': 0, 'special_score_high_score': 4, 'snake_length': 0, 'snake_length_high_score': 28, 'time_score': 0, 'high_score_time': 55, 'shorten_score': 0, 'shorten_snake_high_score': 2, 'next_special_food_score': 50, 'next_shorten_food_score': 100}, 'Endless_Snake_Settings': {'state': 'start_game'}, 'Leveling_Snake_Values': {'score': 0, 'high_score': 0, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 0, 'snake_length_high_score': 0, 'time_score': 0, 'high_score_time': 0, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 0, 'level_high_score': 0, 'xp': 0, 'initial_xp_needed': 10, 'levels_to_increase_xp': 10, 'xp_increase_amount': 20, 'xp_high_score': 0}, 'Leveling_Snake_Settings': {'state': 'start_game'}, 'food_time_attack_Values': {'score': 0, 'high_score': 10, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 5, 'snake_length_high_score': 15, 'time_score': 0, 'high_score_time': 21, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 1, 'level_high_score': 1, 'xp': 0, 'xp_high_score': 0, 'initial_xp_needed': 100, 'levels_to_increase_xp': 10, 'xp_increase_amount': 50, 'state': 'start_screen'}, 'food_time_attack_Settings': {'state': 'start_game'}}
+[2024-08-09 19:42:16] c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:42:19] Label border width: 1
+[2024-08-09 19:42:19] label_border_height: 1
+[2024-08-09 19:42:19] User: 8
+Config saved successfully to c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:42:20] Game mode: classic_snake
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:42:20] Config file read in Classic snake game file: c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:42:20] Snake length: 5
+[2024-08-09 19:42:20] Game width: 600
+[2024-08-09 19:42:20] Game height: 600
+[2024-08-09 19:42:20] Highlight thickness: 5
+[2024-08-09 19:42:20] Highlight background: Black
+[2024-08-09 19:42:20] Initial direction of snake: down
+[2024-08-09 19:42:20] Initial score: 0
+[2024-08-09 19:42:20] Game over flag: False
+[2024-08-09 19:42:20] Game paused: False
+[2024-08-09 19:42:20] Has changed direction: False
+[2024-08-09 19:42:20] Time-related variables initialized.
+[2024-08-09 19:42:20] Start time: None
+[2024-08-09 19:42:20] Paused time: None
+[2024-08-09 19:42:20] Total paused time: 0
+[2024-08-09 19:42:20] Total time played: 0
+[2024-08-09 19:42:20] Total time paused: 0
+[2024-08-09 19:42:20] Last direction change time: 0
+[2024-08-09 19:42:20] Pause duration: 0
+[2024-08-09 19:42:20] High score time: 0
+[2024-08-09 19:42:20] Current time: 0
+[2024-08-09 19:42:20] Get time score: 0
+[2024-08-09 19:42:20] Get snake length: 0
+[2024-08-09 19:42:20] High scores initialized
+[2024-08-09 19:42:20] High score: 0
+[2024-08-09 19:42:20] Snake length high score: 0
+[2024-08-09 19:42:20] Reset snake length
+[2024-08-09 19:42:20] Game mode: classic_snake
+[2024-08-09 19:42:22] Closed the app
+
+
+
+
+[2024-08-09 19:43:07] Started the app
+[2024-08-09 19:43:07] Started the GameApp Class
+[2024-08-09 19:43:07] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:43:08] Resetting snake
+[2024-08-09 19:43:08] Set initial game size to: 600x600
+[2024-08-09 19:43:08] Updated initial_game_size in config.ini to: 600x600
+[2024-08-09 19:43:08] Current initial_game_size in config.ini to: 600x600
+Loaded config from c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:43:19] Current Theme: Red
+[2024-08-09 19:43:19] Set initial theme to: Red
+[2024-08-09 19:43:19] Updated initial_theme in config to: Red
+[2024-08-09 19:43:19] Current initial_theme in config: Red
+Loaded config from c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:43:19] Theme applied: Red
+[2024-08-09 19:43:19] Updated contrast in config to: Default
+[2024-08-09 19:43:19] Contrast mode set to: default
+[2024-08-09 19:43:19] {'Settings': {'initial_theme': 'Red', 'theme': 'Red', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': '800x500', 'label_needed_theme': 'true', 'button_press_time_limit': 0.5, 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'game_mode': 'classic_snake', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'DefaultSettings': {'initial_theme': 'Default', 'theme': 'Default', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': 'Default', 'button_press_time_limit': 0.5, 'game_mode': 'classic_snake', 'label_needed_theme': 'false', 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'KeyBindings': {'move_up': 'w', 'move_left': 'a', 'move_down': 's', 'move_right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Default_KeyBindings': {'up': 'w', 'down': 's', 'left': 'a', 'right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Classic_Snake_Values': {'score': 0, 'high_score': 1, 'snake_length': 0, 'snake_length_high_score': 6, 'time_score': 0, 'high_score_time': 3}, 'Classic_Snake_Settings': {'state': 'start_game'}, 'Endless_Snake_Values': {'score': 0, 'high_score': 270, 'special_score': 0, 'special_score_high_score': 4, 'snake_length': 0, 'snake_length_high_score': 28, 'time_score': 0, 'high_score_time': 55, 'shorten_score': 0, 'shorten_snake_high_score': 2, 'next_special_food_score': 50, 'next_shorten_food_score': 100}, 'Endless_Snake_Settings': {'state': 'start_game'}, 'Leveling_Snake_Values': {'score': 0, 'high_score': 0, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 0, 'snake_length_high_score': 0, 'time_score': 0, 'high_score_time': 0, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 0, 'level_high_score': 0, 'xp': 0, 'initial_xp_needed': 10, 'levels_to_increase_xp': 10, 'xp_increase_amount': 20, 'xp_high_score': 0}, 'Leveling_Snake_Settings': {'state': 'start_game'}, 'food_time_attack_Values': {'score': 0, 'high_score': 10, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 5, 'snake_length_high_score': 15, 'time_score': 0, 'high_score_time': 21, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 1, 'level_high_score': 1, 'xp': 0, 'xp_high_score': 0, 'initial_xp_needed': 100, 'levels_to_increase_xp': 10, 'xp_increase_amount': 50, 'state': 'start_screen'}, 'food_time_attack_Settings': {'state': 'start_game'}}
+[2024-08-09 19:43:19] c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:43:22] Label border width: 1
+[2024-08-09 19:43:22] label_border_height: 1
+[2024-08-09 19:43:22] User: 8
+Config saved successfully to c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:43:23] Game mode: classic_snake
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:43:23] Config file read in Classic snake game file: c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:43:23] Snake length: 5
+[2024-08-09 19:43:23] Game width: 600
+[2024-08-09 19:43:23] Game height: 600
+[2024-08-09 19:43:23] Highlight thickness: 5
+[2024-08-09 19:43:23] Highlight background: Black
+[2024-08-09 19:43:23] Initial direction of snake: down
+[2024-08-09 19:43:23] Initial score: 0
+[2024-08-09 19:43:23] Game over flag: False
+[2024-08-09 19:43:23] Game paused: False
+[2024-08-09 19:43:23] Has changed direction: False
+[2024-08-09 19:43:23] Time-related variables initialized.
+[2024-08-09 19:43:23] Start time: None
+[2024-08-09 19:43:23] Paused time: None
+[2024-08-09 19:43:23] Total paused time: 0
+[2024-08-09 19:43:23] Total time played: 0
+[2024-08-09 19:43:23] Total time paused: 0
+[2024-08-09 19:43:23] Last direction change time: 0
+[2024-08-09 19:43:23] Pause duration: 0
+[2024-08-09 19:43:23] High score time: 0
+[2024-08-09 19:43:23] Current time: 0
+[2024-08-09 19:43:23] Get time score: 0
+[2024-08-09 19:43:23] Get snake length: 0
+[2024-08-09 19:43:23] High scores initialized
+[2024-08-09 19:43:23] High score: 0
+[2024-08-09 19:43:23] Snake length high score: 0
+[2024-08-09 19:43:23] Reset snake length
+[2024-08-09 19:43:23] Game mode: classic_snake
+[2024-08-09 19:43:23] Wrote changes to config file
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:43:23] Config file read
+[2024-08-09 19:43:23] Game mode set to classic_snake.
+[2024-08-09 19:43:23] Game focused
+[2024-08-09 19:43:23] Updated high score labels.
+[2024-08-09 19:43:23] Wrote changes to config file
+[2024-08-09 19:43:23] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-08-09 19:43:26] Unbound and bound keys.
+[2024-08-09 19:43:26] Game state: playing
+[2024-08-09 19:43:26] Set buttons states to: disabled
+[2024-08-09 19:43:26] Wrote changes to config file
+[2024-08-09 19:43:26] Wrote changes to config.ini
+[2024-08-09 19:43:26] Game is in an unexpected state
+[2024-08-09 19:43:27] Closed the app
+
+
+
+
+[2024-08-09 19:44:49] Started the app
+[2024-08-09 19:44:49] Started the GameApp Class
+[2024-08-09 19:44:50] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:44:50] Resetting snake
+[2024-08-09 19:44:50] Set initial game size to: 600x600
+[2024-08-09 19:44:50] Updated initial_game_size in config.ini to: 600x600
+[2024-08-09 19:44:50] Current initial_game_size in config.ini to: 600x600
+Loaded config from c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:44:55] Current Theme: Red
+[2024-08-09 19:44:55] Set initial theme to: Red
+[2024-08-09 19:44:55] Updated initial_theme in config to: Red
+[2024-08-09 19:44:55] Current initial_theme in config: Red
+Loaded config from c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:44:55] Theme applied: Red
+[2024-08-09 19:44:55] Updated contrast in config to: Default
+[2024-08-09 19:44:55] Contrast mode set to: default
+[2024-08-09 19:44:55] {'Settings': {'initial_theme': 'Red', 'theme': 'Red', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': '800x500', 'label_needed_theme': 'true', 'button_press_time_limit': 0.5, 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'game_mode': 'classic_snake', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'DefaultSettings': {'initial_theme': 'Default', 'theme': 'Default', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': 'Default', 'button_press_time_limit': 0.5, 'game_mode': 'classic_snake', 'label_needed_theme': 'false', 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'KeyBindings': {'move_up': 'w', 'move_left': 'a', 'move_down': 's', 'move_right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Default_KeyBindings': {'up': 'w', 'down': 's', 'left': 'a', 'right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Classic_Snake_Values': {'score': 0, 'high_score': 1, 'snake_length': 0, 'snake_length_high_score': 6, 'time_score': 0, 'high_score_time': 3}, 'Classic_Snake_Settings': {'state': 'start_game'}, 'Endless_Snake_Values': {'score': 0, 'high_score': 270, 'special_score': 0, 'special_score_high_score': 4, 'snake_length': 0, 'snake_length_high_score': 28, 'time_score': 0, 'high_score_time': 55, 'shorten_score': 0, 'shorten_snake_high_score': 2, 'next_special_food_score': 50, 'next_shorten_food_score': 100}, 'Endless_Snake_Settings': {'state': 'start_game'}, 'Leveling_Snake_Values': {'score': 0, 'high_score': 0, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 0, 'snake_length_high_score': 0, 'time_score': 0, 'high_score_time': 0, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 0, 'level_high_score': 0, 'xp': 0, 'initial_xp_needed': 10, 'levels_to_increase_xp': 10, 'xp_increase_amount': 20, 'xp_high_score': 0}, 'Leveling_Snake_Settings': {'state': 'start_game'}, 'food_time_attack_Values': {'score': 0, 'high_score': 10, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 5, 'snake_length_high_score': 15, 'time_score': 0, 'high_score_time': 21, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 1, 'level_high_score': 1, 'xp': 0, 'xp_high_score': 0, 'initial_xp_needed': 100, 'levels_to_increase_xp': 10, 'xp_increase_amount': 50, 'state': 'start_screen'}, 'food_time_attack_Settings': {'state': 'start_game'}}
+[2024-08-09 19:44:55] c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:44:58] Label border width: 1
+[2024-08-09 19:44:58] label_border_height: 1
+[2024-08-09 19:44:58] User: 8
+Config saved successfully to c:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:45:12] Game mode: classic_snake
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:45:12] Config file read in Classic snake game file: c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:45:12] Snake length: 5
+[2024-08-09 19:45:12] Game width: 600
+[2024-08-09 19:45:12] Game height: 600
+[2024-08-09 19:45:12] Highlight thickness: 5
+[2024-08-09 19:45:12] Highlight background: Black
+[2024-08-09 19:45:12] Initial direction of snake: down
+[2024-08-09 19:45:12] Initial score: 0
+[2024-08-09 19:45:12] Game over flag: False
+[2024-08-09 19:45:12] Game paused: False
+[2024-08-09 19:45:12] Has changed direction: False
+[2024-08-09 19:45:12] Time-related variables initialized.
+[2024-08-09 19:45:12] Start time: None
+[2024-08-09 19:45:12] Paused time: None
+[2024-08-09 19:45:12] Total paused time: 0
+[2024-08-09 19:45:12] Total time played: 0
+[2024-08-09 19:45:12] Total time paused: 0
+[2024-08-09 19:45:12] Last direction change time: 0
+[2024-08-09 19:45:12] Pause duration: 0
+[2024-08-09 19:45:12] High score time: 0
+[2024-08-09 19:45:12] Current time: 0
+[2024-08-09 19:45:12] Get time score: 0
+[2024-08-09 19:45:12] Get snake length: 0
+[2024-08-09 19:45:12] High scores initialized
+[2024-08-09 19:45:12] High score: 0
+[2024-08-09 19:45:12] Snake length high score: 0
+[2024-08-09 19:45:12] Reset snake length
+[2024-08-09 19:45:12] Game mode: classic_snake
+[2024-08-09 19:45:12] Wrote changes to config file
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:45:12] Config file read
+[2024-08-09 19:45:12] Game mode set to classic_snake.
+[2024-08-09 19:45:12] Game focused
+[2024-08-09 19:45:12] Updated high score labels.
+[2024-08-09 19:45:12] Wrote changes to config file
+[2024-08-09 19:45:12] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-08-09 19:45:13] Closed the app
+
+
+
+
+[2024-08-09 19:45:51] Started the app
+[2024-08-09 19:45:51] Started the GameApp Class
+[2024-08-09 19:45:51] Game mode: initial config
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:45:51] Resetting snake
+[2024-08-09 19:45:51] Set initial game size to: 600x600
+[2024-08-09 19:45:51] Updated initial_game_size in config.ini to: 600x600
+[2024-08-09 19:45:51] Current initial_game_size in config.ini to: 600x600
+Loaded config from C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:45:56] Current Theme: Red
+[2024-08-09 19:45:56] Set initial theme to: Red
+[2024-08-09 19:45:56] Updated initial_theme in config to: Red
+[2024-08-09 19:45:56] Current initial_theme in config: Red
+Loaded config from C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:45:56] Theme applied: Red
+[2024-08-09 19:45:56] Updated contrast in config to: Default
+[2024-08-09 19:45:56] Contrast mode set to: default
+[2024-08-09 19:45:56] {'Settings': {'initial_theme': 'Red', 'theme': 'Red', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': '800x500', 'label_needed_theme': 'true', 'button_press_time_limit': 0.5, 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'game_mode': 'classic_snake', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'DefaultSettings': {'initial_theme': 'Default', 'theme': 'Default', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': 'Default', 'button_press_time_limit': 0.5, 'game_mode': 'classic_snake', 'label_needed_theme': 'false', 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'KeyBindings': {'move_up': 'w', 'move_left': 'a', 'move_down': 's', 'move_right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Default_KeyBindings': {'up': 'w', 'down': 's', 'left': 'a', 'right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Classic_Snake_Values': {'score': 0, 'high_score': 1, 'snake_length': 0, 'snake_length_high_score': 6, 'time_score': 0, 'high_score_time': 3}, 'Classic_Snake_Settings': {'state': 'start_game'}, 'Endless_Snake_Values': {'score': 0, 'high_score': 270, 'special_score': 0, 'special_score_high_score': 4, 'snake_length': 0, 'snake_length_high_score': 28, 'time_score': 0, 'high_score_time': 55, 'shorten_score': 0, 'shorten_snake_high_score': 2, 'next_special_food_score': 50, 'next_shorten_food_score': 100}, 'Endless_Snake_Settings': {'state': 'start_game'}, 'Leveling_Snake_Values': {'score': 0, 'high_score': 0, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 0, 'snake_length_high_score': 0, 'time_score': 0, 'high_score_time': 0, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 0, 'level_high_score': 0, 'xp': 0, 'initial_xp_needed': 10, 'levels_to_increase_xp': 10, 'xp_increase_amount': 20, 'xp_high_score': 0}, 'Leveling_Snake_Settings': {'state': 'start_game'}, 'food_time_attack_Values': {'score': 0, 'high_score': 10, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 5, 'snake_length_high_score': 15, 'time_score': 0, 'high_score_time': 21, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 1, 'level_high_score': 1, 'xp': 0, 'xp_high_score': 0, 'initial_xp_needed': 100, 'levels_to_increase_xp': 10, 'xp_increase_amount': 50, 'state': 'start_screen'}, 'food_time_attack_Settings': {'state': 'start_game'}}
+[2024-08-09 19:45:56] C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:45:59] Label border width: 1
+[2024-08-09 19:45:59] label_border_height: 1
+[2024-08-09 19:45:59] User: 8
+Config saved successfully to C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:46:04] Game mode: classic_snake
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:46:04] Config file read in Classic snake game file: C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:46:04] Snake length: 5
+[2024-08-09 19:46:04] Game width: 600
+[2024-08-09 19:46:04] Game height: 600
+[2024-08-09 19:46:04] Highlight thickness: 5
+[2024-08-09 19:46:04] Highlight background: Black
+[2024-08-09 19:46:04] Initial direction of snake: down
+[2024-08-09 19:46:04] Initial score: 0
+[2024-08-09 19:46:04] Game over flag: False
+[2024-08-09 19:46:04] Game paused: False
+[2024-08-09 19:46:04] Has changed direction: False
+[2024-08-09 19:46:04] Time-related variables initialized.
+[2024-08-09 19:46:04] Start time: None
+[2024-08-09 19:46:04] Paused time: None
+[2024-08-09 19:46:04] Total paused time: 0
+[2024-08-09 19:46:04] Total time played: 0
+[2024-08-09 19:46:04] Total time paused: 0
+[2024-08-09 19:46:04] Last direction change time: 0
+[2024-08-09 19:46:04] Pause duration: 0
+[2024-08-09 19:46:04] High score time: 0
+[2024-08-09 19:46:04] Current time: 0
+[2024-08-09 19:46:04] Get time score: 0
+[2024-08-09 19:46:04] Get snake length: 0
+[2024-08-09 19:46:04] High scores initialized
+[2024-08-09 19:46:04] High score: 0
+[2024-08-09 19:46:04] Snake length high score: 0
+[2024-08-09 19:46:04] Reset snake length
+[2024-08-09 19:46:04] Game mode: classic_snake
+[2024-08-09 19:46:04] Wrote changes to config file
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:46:04] Config file read
+[2024-08-09 19:46:04] Game mode set to classic_snake.
+[2024-08-09 19:46:04] Game focused
+[2024-08-09 19:46:04] Updated high score labels.
+[2024-08-09 19:46:04] Wrote changes to config file
+[2024-08-09 19:46:04] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-08-09 19:46:04] Resetting snake
+[2024-08-09 19:46:04] Set initial game size to: 600x600
+[2024-08-09 19:46:04] Updated initial_game_size in config.ini to: 600x600
+[2024-08-09 19:46:04] Current initial_game_size in config.ini to: 600x600
+[2024-08-09 19:46:04] Label border width: 1
+[2024-08-09 19:46:04] label_border_height: 1
+[2024-08-09 19:46:05] Unbound and bound keys.
+[2024-08-09 19:46:05] Game state: playing
+[2024-08-09 19:46:05] Set buttons states to: disabled
+[2024-08-09 19:46:05] Wrote changes to config file
+[2024-08-09 19:46:05] Wrote changes to config.ini
+[2024-08-09 19:46:06] Game is in an unexpected state
+[2024-08-09 19:46:06] Updated button states.
+[2024-08-09 19:46:06] Bound and unbound keys.
+[2024-08-09 19:46:06] got high scores from config.ini
+[2024-08-09 19:46:06] Updated high score labels.
+[2024-08-09 19:46:06] Deleted all items on the canvas.
+[2024-08-09 19:46:06] Got the snake coordinates.
+[2024-08-09 19:46:06] Food ID: a52fd187-feb4-41c7-96f4-53cbcf8df6bb
+[2024-08-09 19:46:06] Food items: {'a52fd187-feb4-41c7-96f4-53cbcf8df6bb': {'x': 240, 'y': 200, 'tag': 'fooda52fd187-feb4-41c7-96f4-53cbcf8df6bb', 'oval_id': 7}}
+[2024-08-09 19:46:06] Spawned food.
+[2024-08-09 19:46:06] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Set time score in config.ini to total time played
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Set time score in config.ini to total time played
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Set time score in config.ini to total time played
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Set time score in config.ini to total time played
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Set time score in config.ini to total time played
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Set time score in config.ini to total time played
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Set time score in config.ini to total time played
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:06] Set time score in config.ini to total time played
+[2024-08-09 19:46:06] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:07] Set time score in config.ini to total time played
+[2024-08-09 19:46:07] Wrote changes to config file
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Set time score in config.ini to total time played
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Set time score in config.ini to total time played
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Set time score in config.ini to total time played
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Set time score in config.ini to total time played
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Set time score in config.ini to total time played
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Set time score in config.ini to total time played
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Set time score in config.ini to total time played
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Set time score in config.ini to total time played
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:08] Set time score in config.ini to total time played
+[2024-08-09 19:46:08] Wrote changes to config file
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Set time score in config.ini to total time played
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Set time score in config.ini to total time played
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Set time score in config.ini to total time played
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Set time score in config.ini to total time played
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Set time score in config.ini to total time played
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Set time score in config.ini to total time played
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Set time score in config.ini to total time played
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Food eaten and deleted from list.
+[2024-08-09 19:46:09] Food ID: 78e58823-04c9-40e9-b6e5-e6f5beb41bfd
+[2024-08-09 19:46:09] Food items: {'78e58823-04c9-40e9-b6e5-e6f5beb41bfd': {'x': 340, 'y': 240, 'tag': 'food78e58823-04c9-40e9-b6e5-e6f5beb41bfd', 'oval_id': 42}}
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Set time score in config.ini to total time played
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:09] Set time score in config.ini to total time played
+[2024-08-09 19:46:09] Wrote changes to config file
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Set time score in config.ini to total time played
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Set time score in config.ini to total time played
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Set time score in config.ini to total time played
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Set time score in config.ini to total time played
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Set time score in config.ini to total time played
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Set time score in config.ini to total time played
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Set time score in config.ini to total time played
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Set time score in config.ini to total time played
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:10] Game paused
+[2024-08-09 19:46:10] Wrote changes to config file
+[2024-08-09 19:46:11] Game is in an unexpected state
+[2024-08-09 19:46:11] Paused label displayed
+[2024-08-09 19:46:11] Bound and unbound keys.
+[2024-08-09 19:46:34] Game resumed
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Game is in an unexpected state
+[2024-08-09 19:46:34] Paused label deleted
+[2024-08-09 19:46:34] Bound and unbound keys.
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Set time score in config.ini to total time played
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Set time score in config.ini to total time played
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Set time score in config.ini to total time played
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Set time score in config.ini to total time played
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Set time score in config.ini to total time played
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Set time score in config.ini to total time played
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:34] Set time score in config.ini to total time played
+[2024-08-09 19:46:34] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Food eaten and deleted from list.
+[2024-08-09 19:46:35] Food ID: 32afdc54-b99b-4aca-a4d1-cd0f5756c812
+[2024-08-09 19:46:35] Food items: {'32afdc54-b99b-4aca-a4d1-cd0f5756c812': {'x': 60, 'y': 340, 'tag': 'food32afdc54-b99b-4aca-a4d1-cd0f5756c812', 'oval_id': 69}}
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:35] Set time score in config.ini to total time played
+[2024-08-09 19:46:35] Wrote changes to config file
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Set time score in config.ini to total time played
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Set time score in config.ini to total time played
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Set time score in config.ini to total time played
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Set time score in config.ini to total time played
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Set time score in config.ini to total time played
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Set time score in config.ini to total time played
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Set time score in config.ini to total time played
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Set time score in config.ini to total time played
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:36] Set time score in config.ini to total time played
+[2024-08-09 19:46:36] Wrote changes to config file
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Set time score in config.ini to total time played
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Set time score in config.ini to total time played
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Set time score in config.ini to total time played
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Set time score in config.ini to total time played
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Set time score in config.ini to total time played
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Set time score in config.ini to total time played
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Set time score in config.ini to total time played
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Set time score in config.ini to total time played
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Food eaten and deleted from list.
+[2024-08-09 19:46:37] Food ID: 063954c2-16c8-43d7-9c5b-2236686196a6
+[2024-08-09 19:46:37] Food items: {'063954c2-16c8-43d7-9c5b-2236686196a6': {'x': 300, 'y': 340, 'tag': 'food063954c2-16c8-43d7-9c5b-2236686196a6', 'oval_id': 89}}
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:37] Set time score in config.ini to total time played
+[2024-08-09 19:46:37] Wrote changes to config file
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Set time score in config.ini to total time played
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Set time score in config.ini to total time played
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Set time score in config.ini to total time played
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Set time score in config.ini to total time played
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Set time score in config.ini to total time played
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Set time score in config.ini to total time played
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Set time score in config.ini to total time played
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Set time score in config.ini to total time played
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:38] Set time score in config.ini to total time played
+[2024-08-09 19:46:38] Wrote changes to config file
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Set time score in config.ini to total time played
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Set time score in config.ini to total time played
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Set time score in config.ini to total time played
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Set time score in config.ini to total time played
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Set time score in config.ini to total time played
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Set time score in config.ini to total time played
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Set time score in config.ini to total time played
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Set time score in config.ini to total time played
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:39] Set time score in config.ini to total time played
+[2024-08-09 19:46:39] Wrote changes to config file
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Set time score in config.ini to total time played
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Set time score in config.ini to total time played
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Set time score in config.ini to total time played
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Set time score in config.ini to total time played
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Set time score in config.ini to total time played
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Set time score in config.ini to total time played
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Set time score in config.ini to total time played
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Set time score in config.ini to total time played
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Set time score in config.ini to total time played
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] snake has a collision
+[2024-08-09 19:46:40] bound and unbound keys.
+[2024-08-09 19:46:40] Set buttons states to: normal.
+[2024-08-09 19:46:40] Wrote changes to config file
+[2024-08-09 19:46:40] Game is in an unexpected state
+[2024-08-09 19:46:41] Game state: game_over
+[2024-08-09 19:46:41] Snake coordinates after reset: [(-20, 340), (0, 340), (20, 340), (40, 340), (60, 340), (80, 340), (100, 340), (120, 340)]
+[2024-08-09 19:46:41] Deleted all items on the canvas.
+[2024-08-09 19:46:41] Unbound space key.
+[2024-08-09 19:46:41] Bound and unbound keys.
+[2024-08-09 19:46:41] Got the high score from config.ini
+[2024-08-09 19:46:41] High score: 0
+[2024-08-09 19:46:41] Score: 6
+[2024-08-09 19:46:41] Set high score in config.ini
+[2024-08-09 19:46:41] Got time score: 0
+[2024-08-09 19:46:41] high_score_time updated to: 11
+[2024-08-09 19:46:41] Got snake length high score: 0
+[2024-08-09 19:46:41] snake_length_high_score updated to: 8
+[2024-08-09 19:46:41] Wrote changes to config file
+[2024-08-09 19:46:42] Closed the app
+
+
+
+
+[2024-08-09 19:48:43] Started the app
+[2024-08-09 19:48:43] Started the GameApp Class
+[2024-08-09 19:48:43] Game mode: initial config
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:48:43] Resetting snake
+[2024-08-09 19:48:43] Set initial game size to: 600x600
+[2024-08-09 19:48:43] Updated initial_game_size in config.ini to: 600x600
+[2024-08-09 19:48:43] Current initial_game_size in config.ini to: 600x600
+Loaded config from C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:48:52] Current Theme: Red
+[2024-08-09 19:48:52] Set initial theme to: Red
+[2024-08-09 19:48:52] Updated initial_theme in config to: Red
+[2024-08-09 19:48:52] Current initial_theme in config: Red
+Loaded config from C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:48:52] Theme applied: Red
+[2024-08-09 19:48:52] Updated contrast in config to: Default
+[2024-08-09 19:48:52] Contrast mode set to: default
+[2024-08-09 19:48:52] {'Settings': {'initial_theme': 'Red', 'theme': 'Red', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': '800x500', 'label_needed_theme': 'true', 'button_press_time_limit': 0.5, 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'game_mode': 'classic_snake', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'DefaultSettings': {'initial_theme': 'Default', 'theme': 'Default', 'contrast': 'Default', 'language': 'English', 'snake_color': 'Default', 'screen_size': 'Default', 'button_press_time_limit': 0.5, 'game_mode': 'classic_snake', 'label_needed_theme': 'false', 'label_needed_high_score': 'Default', 'label_needed_game_size': 'false', 'snake_speed': 50, 'initial_game_size': '600x600', 'game_size': '600x600', 'home_button_state': 'normal', 'classic_reset_high_score_button_state': 'normal', 'classic_reset_high_score_time_button_state': 'normal', 'classic_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_button_state': 'normal', 'endless_reset_high_score_time_button_state': 'normal', 'endless_reset_high_score_snake_length_button_state': 'normal', 'endless_reset_high_score_special_button_state': 'normal', 'endless_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_button_state': 'normal', 'leveling_reset_high_score_time_button_state': 'normal', 'leveling_reset_high_score_snake_length_button_state': 'normal', 'leveling_reset_high_score_special_button_state': 'normal', 'leveling_reset_high_score_shorten_button_state': 'normal', 'leveling_reset_high_score_xp_button_state': 'normal', 'leveling_reset_high_score_level_button_state': 'normal'}, 'KeyBindings': {'move_up': 'w', 'move_left': 'a', 'move_down': 's', 'move_right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Default_KeyBindings': {'up': 'w', 'down': 's', 'left': 'a', 'right': 'd', 'startgame': 'space', 'pausegame': 'Escape', 'restartgame': 'r'}, 'Classic_Snake_Values': {'score': 0, 'high_score': 1, 'snake_length': 0, 'snake_length_high_score': 6, 'time_score': 0, 'high_score_time': 3}, 'Classic_Snake_Settings': {'state': 'start_game'}, 'Endless_Snake_Values': {'score': 0, 'high_score': 270, 'special_score': 0, 'special_score_high_score': 4, 'snake_length': 0, 'snake_length_high_score': 28, 'time_score': 0, 'high_score_time': 55, 'shorten_score': 0, 'shorten_snake_high_score': 2, 'next_special_food_score': 50, 'next_shorten_food_score': 100}, 'Endless_Snake_Settings': {'state': 'start_game'}, 'Leveling_Snake_Values': {'score': 0, 'high_score': 0, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 0, 'snake_length_high_score': 0, 'time_score': 0, 'high_score_time': 0, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 0, 'level_high_score': 0, 'xp': 0, 'initial_xp_needed': 10, 'levels_to_increase_xp': 10, 'xp_increase_amount': 20, 'xp_high_score': 0}, 'Leveling_Snake_Settings': {'state': 'start_game'}, 'food_time_attack_Values': {'score': 0, 'high_score': 10, 'special_score': 0, 'special_score_high_score': 0, 'snake_length': 5, 'snake_length_high_score': 15, 'time_score': 0, 'high_score_time': 21, 'shorten_score': 0, 'shorten_snake_high_score': 0, 'next_special_food_score': 50, 'next_shorten_food_score': 100, 'level': 1, 'level_high_score': 1, 'xp': 0, 'xp_high_score': 0, 'initial_xp_needed': 100, 'levels_to_increase_xp': 10, 'xp_increase_amount': 50, 'state': 'start_screen'}, 'food_time_attack_Settings': {'state': 'start_game'}}
+[2024-08-09 19:48:52] C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:48:55] Label border width: 1
+[2024-08-09 19:48:55] label_border_height: 1
+[2024-08-09 19:48:55] User: 8
+Config saved successfully to C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-09 19:48:56] Game mode: classic_snake
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:48:56] Config file read in Classic snake game file: C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:48:56] Snake length: 5
+[2024-08-09 19:48:56] Game width: 600
+[2024-08-09 19:48:56] Game height: 600
+[2024-08-09 19:48:56] Highlight thickness: 5
+[2024-08-09 19:48:56] Highlight background: Black
+[2024-08-09 19:48:56] Initial direction of snake: down
+[2024-08-09 19:48:56] Initial score: 0
+[2024-08-09 19:48:56] Game over flag: False
+[2024-08-09 19:48:56] Game paused: False
+[2024-08-09 19:48:56] Has changed direction: False
+[2024-08-09 19:48:56] Time-related variables initialized.
+[2024-08-09 19:48:56] Start time: None
+[2024-08-09 19:48:56] Paused time: None
+[2024-08-09 19:48:56] Total paused time: 0
+[2024-08-09 19:48:56] Total time played: 0
+[2024-08-09 19:48:56] Total time paused: 0
+[2024-08-09 19:48:56] Last direction change time: 0
+[2024-08-09 19:48:56] Pause duration: 0
+[2024-08-09 19:48:56] High score time: 0
+[2024-08-09 19:48:56] Current time: 0
+[2024-08-09 19:48:56] Get time score: 0
+[2024-08-09 19:48:56] Get snake length: 0
+[2024-08-09 19:48:56] High scores initialized
+[2024-08-09 19:48:56] High score: 0
+[2024-08-09 19:48:56] Snake length high score: 0
+[2024-08-09 19:48:56] Reset snake length
+[2024-08-09 19:48:56] Game mode: classic_snake
+[2024-08-09 19:48:56] Wrote changes to config file
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-09 19:48:56] Config file read
+[2024-08-09 19:48:56] Game mode set to classic_snake.
+[2024-08-09 19:48:56] Game focused
+[2024-08-09 19:48:56] Updated high score labels.
+[2024-08-09 19:48:56] Wrote changes to config file
+[2024-08-09 19:48:56] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-08-09 19:48:56] Resetting snake
+[2024-08-09 19:48:56] Set initial game size to: 600x600
+[2024-08-09 19:48:56] Updated initial_game_size in config.ini to: 600x600
+[2024-08-09 19:48:56] Current initial_game_size in config.ini to: 600x600
+[2024-08-09 19:48:56] Label border width: 1
+[2024-08-09 19:48:56] label_border_height: 1
+[2024-08-09 19:48:58] Closed the app
+
+
+
+

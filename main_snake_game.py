@@ -238,12 +238,12 @@ class SnakeGameApp:
 
         
 
-        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
+        self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions, self.config, self.config_path, self.config_handler) # pylint: disable=line-too-long
 
-        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
+        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions, self.config, self.config_path, self.config_handler) # pylint: disable=line-too-long
 
         # And then create the ButtonCommands instance
-        self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path)
+        self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path, self.config_handler)
 
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger,
                                                         self.game_config, self.open_info,
@@ -326,6 +326,8 @@ class SnakeGameApp:
         self.initialize_user_config()
         #self.apply_user_config()
         self.create_loading_screen()
+        self.game_logger.log_game_event(self.config)
+        self.game_logger.log_game_event(self.config_path)
     
     def apply_user_config(self):
         # Apply user-specific settings
@@ -447,7 +449,7 @@ class SnakeGameApp:
         Apply the theme from the configuration file.
         """
         self.config, _ = self.config_handler.load_config(self.username)
-        theme_name = self.config.get('Settings', {}).get('theme', 'Red')
+        theme_name = self.config.get('Settings', {}).get('theme', 'purple')
         theme_dir = path.dirname(__file__)
         theme_path = path.join(theme_dir, 'themes', f"{theme_name}.json")
         try:
@@ -765,9 +767,9 @@ class SnakeGameApp:
 
         # Initializing the button panel and label panel
         #self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions) # pylint: disable=line-too-long
-        self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger) # pylint: disable=line-too-long
-        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
-        self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path)
+        self.create_option_button_panel = OptionButtonPanel(self.root, self.main_canvas, self.game_logger, self.config_handler) # pylint: disable=line-too-long
+        self.create_reset_button_panel = ResetSettingsPanel(self.challange_settings_canvas, self.game_logger, self.functions, self.config, self.config_path, self.config_handler) # pylint: disable=line-too-long
+        self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path, self.config_handler)
         self.framelabel_panel = NameOffFrameLabelPanel(self.main_canvas, self.game_logger, self.game_config, self.open_info, self.open_settings) # pylint: disable=line-too-long
         self.game_labels_panel = GameLabelsPanel(self.main_canvas, self.game_logger, self.game_config) # pylint: disable=line-too-long
         self.settings_labels = SettingsOptionButtonLabels(self.game_logger, self.main_canvas)

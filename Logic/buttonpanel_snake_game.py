@@ -28,7 +28,10 @@ class ClickButtonPanel:
             cls._instance = super(ClickButtonPanel, cls).__new__(cls)
         return cls._instance
 
-    def __init__(self, parent, game_logger, functions, home_button=None):
+    def __init__(self, parent, game_logger, functions, config, config_path, home_button=None):
+        self.game_logger = game_logger
+        self.config = config
+        self.config_path = config_path
         # Check if we've already initialized the instance
         if getattr(self, '_initialized', False):
             return
@@ -37,14 +40,14 @@ class ClickButtonPanel:
         self.game_logger = game_logger
         self.functions = functions
         self.home_button = home_button
-        self.theme_updater = ThemeUpdater(self.game_logger)
+        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
 
         # Managing the buttons height and width
         self.button_width = GameConstants.CLICK_BUTTON_WIDTH
         self.button_height = GameConstants.CLICK_BUTTON_HEIGHT
         self.corner_radius = GameConstants.CLICK_BUTTON_CORNER_RADIUS
 
-        self.button_commands = ButtonCommands(self.game_logger, self.functions)
+        self.button_commands = ButtonCommands(self.game_logger, self.functions, self.config, self.config_path)
 
         # Creating a separate canvas for the buttons
         self.button_canvas = ctk.CTkCanvas(self.parent, bg='Grey10', highlightbackground='Black', highlightthickness=5) # pylint: disable=line-too-long
@@ -129,7 +132,7 @@ class ClickButtonPanel:
         self.config_path = path.join(self.config_dir, 'config.ini')
         self.config_path_icon = path.join(self.config_dir, '..', 'app_icon.ico')
 
-        self.create_and_place_image_label(self.button_canvas, 5, 635, self.config_path_icon)
+        #self.create_and_place_image_label(self.button_canvas, 5, 635, self.config_path_icon)
 
     def create_and_place_image_label(self, canvas, x, y, image_path):
         """
@@ -197,16 +200,19 @@ class ClickButtonPanel:
 
         if self.game_mode  == 'classic_snake':
             if self.classic_state_game == 'playing':
+                self.game_logger.log_game_event('Game is playing')
                 self.home_button_state = 'disabled'
                 self.classic_reset_high_score_button_state = 'disabled'
                 self.classic_reset_high_score_time_button_state = 'disabled'
                 self.classic_reset_high_score_snake_length_button_state = 'disabled'
             elif self.classic_state_game == 'paused':
+                self.game_logger.log_game_event('Game is paused')
                 self.classic_reset_high_score_button_state = 'normal'
                 self.classic_reset_high_score_time_button_state = 'normal'
                 self.classic_reset_high_score_snake_length_button_state = 'normal'
             else:
                 # Handle unexpected state or fallback to a default
+                self.game_logger.log_game_event('Game is in an unexpected state')
                 self.home_button_state = 'normal'
                 self.classic_reset_high_score_button_state = 'normal'
                 self.classic_reset_high_score_time_button_state = 'normal'

@@ -8317,3 +8317,28 @@ KeyError: 'StartGame'
 
 
 
+[2024-08-08 16:06:08] 
+
+
+[2024-08-08 16:06:08] Started the Error Log File
+[2024-08-08 16:07:08] No errors occurred
+[2024-08-08 16:07:08] Closed the Error Log File
+
+
+
+
+[2024-08-08 16:40:07] 
+
+
+[2024-08-08 16:40:07] Started the Error Log File
+Traceback (most recent call last):
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 1364, in <module>
+    app = SnakeGameApp(root, GameConstants.MIN_WIDTH, GameConstants.MIN_HEIGHT)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\main_snake_game.py", line 241, in __init__
+    self.create_button_panel = ClickButtonPanel(self.main_canvas, self.game_logger, self.functions, self.config, self.config_path) # pylint: disable=line-too-long
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\wimjr\Documents\snake\Snake_Game_V3\Logic\buttonpanel_snake_game.py", line 43, in __init__
+    self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ThemeUpdater.__init__() missing 1 required positional argument: 'config_handler'

@@ -8,14 +8,16 @@ This module is responsible for updating the theme of the Shadows Snake game.
 import json
 from os import path
 
+
 class ThemeUpdater:
     """
     Class for updating the theme of the Shadows Snake game.
     """
-    def __init__(self, game_logger, config, config_path):
+    def __init__(self, game_logger, config, config_path, config_handler):
         self.game_logger = game_logger
         self.config = config
         self.config_path = config_path
+        self.config_handler = config_handler
         self.themes = {
             "Default": self.load_theme("default"),
             "Black": self.load_theme("black"),
@@ -83,8 +85,7 @@ class ThemeUpdater:
         """
         Save the configuration to the file.
         """
-        with open(self.config_path, 'w', encoding='utf-8') as configfile:
-            json.dump(self.config, configfile, indent=4)
+        self.config_handler.save_config(self.config, self.config_path)
 
 # *****************************************
 # Shadows Snake Theme Updater File

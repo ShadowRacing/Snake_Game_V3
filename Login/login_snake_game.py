@@ -606,6 +606,14 @@ class LoginAndUserScreen():
             self.image_label.destroy()
         self.username_entry.unbind('<Return>')
         self.password_entry.unbind('<Return>')
+        self.parent.unbind('<Control-c>')
+        self.parent.unbind('<Control-f>')
+        self.parent.unbind('<Control-d>')
+        self.parent.unbind('<Control-y>')
+        self.parent.unbind('<Control-n>')
+        self.parent.unbind('<Control-r>')
+        self.parent.unbind('<Control-s>')
+        self.parent.unbind('<Escape>')
         self.login_frame.destroy()
 
     def get_user_name(self):

@@ -40,7 +40,7 @@ class ClickButtonPanel:
         self.game_logger = game_logger
         self.functions = functions
         self.home_button = home_button
-        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path)
+        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
 
         # Managing the buttons height and width
         self.button_width = GameConstants.CLICK_BUTTON_WIDTH

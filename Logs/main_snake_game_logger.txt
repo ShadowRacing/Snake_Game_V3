@@ -9580,3 +9580,1286 @@ Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
 
 
 
+[2024-08-08 16:05:11] Started the app
+[2024-08-08 16:05:11] Started the GameApp Class
+[2024-08-08 16:05:11] Game mode: initial config
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:05:11] Resetting snake
+[2024-08-08 16:05:11] Set initial game size to: 600x600
+[2024-08-08 16:05:11] Updated initial_game_size in config.ini to: 600x600
+[2024-08-08 16:05:11] Current initial_game_size in config.ini to: 600x600
+Loaded config from C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-08 16:05:20] Current Theme: Red
+[2024-08-08 16:05:20] Set initial theme to: Red
+[2024-08-08 16:05:20] Updated initial_theme in config to: Red
+[2024-08-08 16:05:20] Current initial_theme in config: Red
+[2024-08-08 16:05:20] Theme applied: Red
+[2024-08-08 16:05:20] Updated contrast in config to: Default
+[2024-08-08 16:05:20] Contrast mode set to: default
+[2024-08-08 16:05:23] Label border width: 1
+[2024-08-08 16:05:23] label_border_height: 1
+[2024-08-08 16:05:23] User: 8
+Config saved successfully to C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-08 16:05:24] Game mode: classic_snake
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:05:24] Config file read in Classic snake game file: C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:05:24] Snake length: 5
+[2024-08-08 16:05:24] Game width: 600
+[2024-08-08 16:05:24] Game height: 600
+[2024-08-08 16:05:24] Highlight thickness: 5
+[2024-08-08 16:05:24] Highlight background: Black
+[2024-08-08 16:05:24] Initial direction of snake: down
+[2024-08-08 16:05:24] Initial score: 0
+[2024-08-08 16:05:24] Game over flag: False
+[2024-08-08 16:05:24] Game paused: False
+[2024-08-08 16:05:24] Has changed direction: False
+[2024-08-08 16:05:24] Time-related variables initialized.
+[2024-08-08 16:05:24] Start time: None
+[2024-08-08 16:05:24] Paused time: None
+[2024-08-08 16:05:24] Total paused time: 0
+[2024-08-08 16:05:24] Total time played: 0
+[2024-08-08 16:05:24] Total time paused: 0
+[2024-08-08 16:05:24] Last direction change time: 0
+[2024-08-08 16:05:24] Pause duration: 0
+[2024-08-08 16:05:24] High score time: 0
+[2024-08-08 16:05:24] Current time: 0
+[2024-08-08 16:05:24] Get time score: 0
+[2024-08-08 16:05:24] Get snake length: 0
+[2024-08-08 16:05:24] High scores initialized
+[2024-08-08 16:05:24] High score: 0
+[2024-08-08 16:05:24] Snake length high score: 0
+[2024-08-08 16:05:24] Reset snake length
+[2024-08-08 16:05:24] Game mode: classic_snake
+[2024-08-08 16:05:24] Wrote changes to config file
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:05:24] Config file read
+[2024-08-08 16:05:24] Game mode set to classic_snake.
+[2024-08-08 16:05:24] Game focused
+[2024-08-08 16:05:24] Updated high score labels.
+[2024-08-08 16:05:24] Wrote changes to config file
+[2024-08-08 16:05:24] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-08-08 16:05:24] Resetting snake
+[2024-08-08 16:05:24] Set initial game size to: 600x600
+[2024-08-08 16:05:24] Updated initial_game_size in config.ini to: 600x600
+[2024-08-08 16:05:24] Current initial_game_size in config.ini to: 600x600
+[2024-08-08 16:05:24] Label border width: 1
+[2024-08-08 16:05:24] label_border_height: 1
+[2024-08-08 16:05:24] Unbound and bound keys.
+[2024-08-08 16:05:24] Game state: playing
+[2024-08-08 16:05:24] Set buttons states to: disabled
+[2024-08-08 16:05:24] Wrote changes to config file
+[2024-08-08 16:05:24] Wrote changes to config.ini
+[2024-08-08 16:05:25] Game is in an unexpected state
+[2024-08-08 16:05:25] Updated button states.
+[2024-08-08 16:05:25] Bound and unbound keys.
+[2024-08-08 16:05:25] got high scores from config.ini
+[2024-08-08 16:05:25] Updated high score labels.
+[2024-08-08 16:05:25] Deleted all items on the canvas.
+[2024-08-08 16:05:25] Got the snake coordinates.
+[2024-08-08 16:05:25] Food ID: 401ec1e1-a8e5-41af-8401-04bdace9d539
+[2024-08-08 16:05:25] Food items: {'401ec1e1-a8e5-41af-8401-04bdace9d539': {'x': 20, 'y': 0, 'tag': 'food401ec1e1-a8e5-41af-8401-04bdace9d539', 'oval_id': 7}}
+[2024-08-08 16:05:25] Spawned food.
+[2024-08-08 16:05:25] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:25] Set time score in config.ini to total time played
+[2024-08-08 16:05:25] Wrote changes to config file
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Set time score in config.ini to total time played
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Set time score in config.ini to total time played
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Set time score in config.ini to total time played
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Set time score in config.ini to total time played
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Set time score in config.ini to total time played
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Set time score in config.ini to total time played
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Set time score in config.ini to total time played
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Set time score in config.ini to total time played
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:26] Set time score in config.ini to total time played
+[2024-08-08 16:05:26] Wrote changes to config file
+[2024-08-08 16:05:27] Wrote changes to config file
+[2024-08-08 16:05:27] Set time score in config.ini to total time played
+[2024-08-08 16:05:27] Wrote changes to config file
+[2024-08-08 16:05:27] Wrote changes to config file
+[2024-08-08 16:05:27] Set time score in config.ini to total time played
+[2024-08-08 16:05:27] Wrote changes to config file
+[2024-08-08 16:06:08] Started the app
+[2024-08-08 16:06:08] Started the GameApp Class
+[2024-08-08 16:06:08] Game mode: initial config
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:06:09] Resetting snake
+[2024-08-08 16:06:09] Set initial game size to: 600x600
+[2024-08-08 16:06:09] Updated initial_game_size in config.ini to: 600x600
+[2024-08-08 16:06:09] Current initial_game_size in config.ini to: 600x600
+Loaded config from C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-08 16:06:19] Current Theme: Red
+[2024-08-08 16:06:19] Set initial theme to: Red
+[2024-08-08 16:06:19] Updated initial_theme in config to: Red
+[2024-08-08 16:06:19] Current initial_theme in config: Red
+[2024-08-08 16:06:19] Theme applied: Red
+[2024-08-08 16:06:19] Updated contrast in config to: Default
+[2024-08-08 16:06:19] Contrast mode set to: default
+[2024-08-08 16:06:22] Label border width: 1
+[2024-08-08 16:06:22] label_border_height: 1
+[2024-08-08 16:06:22] User: 8
+Config saved successfully to C:\Users\wimjr\Documents\snake\Login\8_data.json
+[2024-08-08 16:06:23] Game mode: classic_snake
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:06:23] Config file read in Classic snake game file: C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:06:23] Snake length: 5
+[2024-08-08 16:06:23] Game width: 600
+[2024-08-08 16:06:23] Game height: 600
+[2024-08-08 16:06:23] Highlight thickness: 5
+[2024-08-08 16:06:23] Highlight background: Black
+[2024-08-08 16:06:23] Initial direction of snake: down
+[2024-08-08 16:06:23] Initial score: 0
+[2024-08-08 16:06:23] Game over flag: False
+[2024-08-08 16:06:23] Game paused: False
+[2024-08-08 16:06:23] Has changed direction: False
+[2024-08-08 16:06:23] Time-related variables initialized.
+[2024-08-08 16:06:23] Start time: None
+[2024-08-08 16:06:23] Paused time: None
+[2024-08-08 16:06:23] Total paused time: 0
+[2024-08-08 16:06:23] Total time played: 0
+[2024-08-08 16:06:23] Total time paused: 0
+[2024-08-08 16:06:23] Last direction change time: 0
+[2024-08-08 16:06:23] Pause duration: 0
+[2024-08-08 16:06:23] High score time: 0
+[2024-08-08 16:06:23] Current time: 0
+[2024-08-08 16:06:23] Get time score: 0
+[2024-08-08 16:06:23] Get snake length: 0
+[2024-08-08 16:06:23] High scores initialized
+[2024-08-08 16:06:23] High score: 0
+[2024-08-08 16:06:23] Snake length high score: 0
+[2024-08-08 16:06:23] Reset snake length
+[2024-08-08 16:06:23] Game mode: classic_snake
+[2024-08-08 16:06:23] Wrote changes to config file
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:06:24] Config file read
+[2024-08-08 16:06:24] Game mode set to classic_snake.
+[2024-08-08 16:06:24] Game focused
+[2024-08-08 16:06:24] Updated high score labels.
+[2024-08-08 16:06:24] Wrote changes to config file
+[2024-08-08 16:06:24] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-08-08 16:06:24] Resetting snake
+[2024-08-08 16:06:24] Set initial game size to: 600x600
+[2024-08-08 16:06:24] Updated initial_game_size in config.ini to: 600x600
+[2024-08-08 16:06:24] Current initial_game_size in config.ini to: 600x600
+[2024-08-08 16:06:24] Label border width: 1
+[2024-08-08 16:06:24] label_border_height: 1
+[2024-08-08 16:06:27] Unbound and bound keys.
+[2024-08-08 16:06:27] Game state: playing
+[2024-08-08 16:06:27] Set buttons states to: disabled
+[2024-08-08 16:06:27] Wrote changes to config file
+[2024-08-08 16:06:27] Wrote changes to config.ini
+[2024-08-08 16:06:27] Game is in an unexpected state
+[2024-08-08 16:06:27] Updated button states.
+[2024-08-08 16:06:27] Bound and unbound keys.
+[2024-08-08 16:06:27] got high scores from config.ini
+[2024-08-08 16:06:27] Updated high score labels.
+[2024-08-08 16:06:27] Deleted all items on the canvas.
+[2024-08-08 16:06:27] Got the snake coordinates.
+[2024-08-08 16:06:27] Food ID: 1cf6c3bc-cdd1-4dd0-b81d-a339eb7e8609
+[2024-08-08 16:06:27] Food items: {'1cf6c3bc-cdd1-4dd0-b81d-a339eb7e8609': {'x': 280, 'y': 160, 'tag': 'food1cf6c3bc-cdd1-4dd0-b81d-a339eb7e8609', 'oval_id': 7}}
+[2024-08-08 16:06:27] Spawned food.
+[2024-08-08 16:06:27] Snake coordinates at start: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+[2024-08-08 16:06:27] Wrote changes to config file
+[2024-08-08 16:06:27] Set time score in config.ini to total time played
+[2024-08-08 16:06:27] Wrote changes to config file
+[2024-08-08 16:06:27] Wrote changes to config file
+[2024-08-08 16:06:27] Set time score in config.ini to total time played
+[2024-08-08 16:06:27] Wrote changes to config file
+[2024-08-08 16:06:27] Wrote changes to config file
+[2024-08-08 16:06:27] Set time score in config.ini to total time played
+[2024-08-08 16:06:27] Wrote changes to config file
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Set time score in config.ini to total time played
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Set time score in config.ini to total time played
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Set time score in config.ini to total time played
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Set time score in config.ini to total time played
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Set time score in config.ini to total time played
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Set time score in config.ini to total time played
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Set time score in config.ini to total time played
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Set time score in config.ini to total time played
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:28] Set time score in config.ini to total time played
+[2024-08-08 16:06:28] Wrote changes to config file
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Set time score in config.ini to total time played
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Set time score in config.ini to total time played
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Set time score in config.ini to total time played
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Set time score in config.ini to total time played
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Set time score in config.ini to total time played
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Set time score in config.ini to total time played
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Set time score in config.ini to total time played
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Set time score in config.ini to total time played
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:29] Set time score in config.ini to total time played
+[2024-08-08 16:06:29] Wrote changes to config file
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Set time score in config.ini to total time played
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Set time score in config.ini to total time played
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Set time score in config.ini to total time played
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Set time score in config.ini to total time played
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Set time score in config.ini to total time played
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Set time score in config.ini to total time played
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Set time score in config.ini to total time played
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Set time score in config.ini to total time played
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:30] Set time score in config.ini to total time played
+[2024-08-08 16:06:30] Wrote changes to config file
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Set time score in config.ini to total time played
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Set time score in config.ini to total time played
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Set time score in config.ini to total time played
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Set time score in config.ini to total time played
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Set time score in config.ini to total time played
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Set time score in config.ini to total time played
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Set time score in config.ini to total time played
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Set time score in config.ini to total time played
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:31] Set time score in config.ini to total time played
+[2024-08-08 16:06:31] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Food eaten and deleted from list.
+[2024-08-08 16:06:32] Food ID: 2039e423-70d5-4e81-a57f-2f757f8884e1
+[2024-08-08 16:06:32] Food items: {'2039e423-70d5-4e81-a57f-2f757f8884e1': {'x': 340, 'y': 320, 'tag': 'food2039e423-70d5-4e81-a57f-2f757f8884e1', 'oval_id': 54}}
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:32] Set time score in config.ini to total time played
+[2024-08-08 16:06:32] Wrote changes to config file
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Set time score in config.ini to total time played
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Set time score in config.ini to total time played
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Set time score in config.ini to total time played
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Set time score in config.ini to total time played
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Set time score in config.ini to total time played
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Set time score in config.ini to total time played
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Set time score in config.ini to total time played
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Set time score in config.ini to total time played
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:33] Set time score in config.ini to total time played
+[2024-08-08 16:06:33] Wrote changes to config file
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Set time score in config.ini to total time played
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Set time score in config.ini to total time played
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Set time score in config.ini to total time played
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Set time score in config.ini to total time played
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Set time score in config.ini to total time played
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Set time score in config.ini to total time played
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Set time score in config.ini to total time played
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Set time score in config.ini to total time played
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:34] Set time score in config.ini to total time played
+[2024-08-08 16:06:34] Wrote changes to config file
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Set time score in config.ini to total time played
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Set time score in config.ini to total time played
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Set time score in config.ini to total time played
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Set time score in config.ini to total time played
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Set time score in config.ini to total time played
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Set time score in config.ini to total time played
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Set time score in config.ini to total time played
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Set time score in config.ini to total time played
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:35] Set time score in config.ini to total time played
+[2024-08-08 16:06:35] Wrote changes to config file
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Set time score in config.ini to total time played
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Set time score in config.ini to total time played
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Set time score in config.ini to total time played
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Set time score in config.ini to total time played
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Set time score in config.ini to total time played
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Set time score in config.ini to total time played
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Set time score in config.ini to total time played
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Set time score in config.ini to total time played
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:36] Set time score in config.ini to total time played
+[2024-08-08 16:06:36] Wrote changes to config file
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Set time score in config.ini to total time played
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Set time score in config.ini to total time played
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Set time score in config.ini to total time played
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Set time score in config.ini to total time played
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Set time score in config.ini to total time played
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Set time score in config.ini to total time played
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Set time score in config.ini to total time played
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Set time score in config.ini to total time played
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:37] Set time score in config.ini to total time played
+[2024-08-08 16:06:37] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Food eaten and deleted from list.
+[2024-08-08 16:06:38] Food ID: c958bf6f-fbeb-4b53-8f2e-9b7de4848361
+[2024-08-08 16:06:38] Food items: {'c958bf6f-fbeb-4b53-8f2e-9b7de4848361': {'x': 380, 'y': 260, 'tag': 'foodc958bf6f-fbeb-4b53-8f2e-9b7de4848361', 'oval_id': 104}}
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:38] Set time score in config.ini to total time played
+[2024-08-08 16:06:38] Wrote changes to config file
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Set time score in config.ini to total time played
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Set time score in config.ini to total time played
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Set time score in config.ini to total time played
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Set time score in config.ini to total time played
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Set time score in config.ini to total time played
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Set time score in config.ini to total time played
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Set time score in config.ini to total time played
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Set time score in config.ini to total time played
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:39] Set time score in config.ini to total time played
+[2024-08-08 16:06:39] Wrote changes to config file
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Set time score in config.ini to total time played
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Set time score in config.ini to total time played
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Set time score in config.ini to total time played
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Set time score in config.ini to total time played
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Set time score in config.ini to total time played
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Food eaten and deleted from list.
+[2024-08-08 16:06:40] Food ID: 48842c7b-3b66-4b61-a4c1-121b33c9350b
+[2024-08-08 16:06:40] Food items: {'48842c7b-3b66-4b61-a4c1-121b33c9350b': {'x': 260, 'y': 220, 'tag': 'food48842c7b-3b66-4b61-a4c1-121b33c9350b', 'oval_id': 128}}
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Set time score in config.ini to total time played
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Set time score in config.ini to total time played
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Set time score in config.ini to total time played
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:40] Set time score in config.ini to total time played
+[2024-08-08 16:06:40] Wrote changes to config file
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Set time score in config.ini to total time played
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Set time score in config.ini to total time played
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Set time score in config.ini to total time played
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Set time score in config.ini to total time played
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Set time score in config.ini to total time played
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Set time score in config.ini to total time played
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Set time score in config.ini to total time played
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Set time score in config.ini to total time played
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:41] Set time score in config.ini to total time played
+[2024-08-08 16:06:41] Wrote changes to config file
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Set time score in config.ini to total time played
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Set time score in config.ini to total time played
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Set time score in config.ini to total time played
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Set time score in config.ini to total time played
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Set time score in config.ini to total time played
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Food eaten and deleted from list.
+[2024-08-08 16:06:42] Food ID: bddef3f8-1208-411a-995b-501f608327af
+[2024-08-08 16:06:42] Food items: {'bddef3f8-1208-411a-995b-501f608327af': {'x': 120, 'y': 40, 'tag': 'foodbddef3f8-1208-411a-995b-501f608327af', 'oval_id': 147}}
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Set time score in config.ini to total time played
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Set time score in config.ini to total time played
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Set time score in config.ini to total time played
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:42] Set time score in config.ini to total time played
+[2024-08-08 16:06:42] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:43] Set time score in config.ini to total time played
+[2024-08-08 16:06:43] Wrote changes to config file
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Set time score in config.ini to total time played
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Set time score in config.ini to total time played
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Set time score in config.ini to total time played
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Set time score in config.ini to total time played
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Set time score in config.ini to total time played
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Set time score in config.ini to total time played
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Set time score in config.ini to total time played
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Set time score in config.ini to total time played
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:44] Set time score in config.ini to total time played
+[2024-08-08 16:06:44] Wrote changes to config file
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Set time score in config.ini to total time played
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Set time score in config.ini to total time played
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Set time score in config.ini to total time played
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Food eaten and deleted from list.
+[2024-08-08 16:06:45] Food ID: 60f2155d-5629-4e50-b7aa-d0b86a791b91
+[2024-08-08 16:06:45] Food items: {'60f2155d-5629-4e50-b7aa-d0b86a791b91': {'x': 100, 'y': 280, 'tag': 'food60f2155d-5629-4e50-b7aa-d0b86a791b91', 'oval_id': 174}}
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Set time score in config.ini to total time played
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Set time score in config.ini to total time played
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Set time score in config.ini to total time played
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Set time score in config.ini to total time played
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Set time score in config.ini to total time played
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:45] Set time score in config.ini to total time played
+[2024-08-08 16:06:45] Wrote changes to config file
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Set time score in config.ini to total time played
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Set time score in config.ini to total time played
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Set time score in config.ini to total time played
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Set time score in config.ini to total time played
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Set time score in config.ini to total time played
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Set time score in config.ini to total time played
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Set time score in config.ini to total time played
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Food eaten and deleted from list.
+[2024-08-08 16:06:46] Food ID: b89fc193-fd86-4a7b-b2d5-5dba8708f53e
+[2024-08-08 16:06:46] Food items: {'b89fc193-fd86-4a7b-b2d5-5dba8708f53e': {'x': 100, 'y': 180, 'tag': 'foodb89fc193-fd86-4a7b-b2d5-5dba8708f53e', 'oval_id': 188}}
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Set time score in config.ini to total time played
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:46] Set time score in config.ini to total time played
+[2024-08-08 16:06:46] Wrote changes to config file
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Set time score in config.ini to total time played
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Set time score in config.ini to total time played
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Set time score in config.ini to total time played
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Set time score in config.ini to total time played
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Set time score in config.ini to total time played
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Food eaten and deleted from list.
+[2024-08-08 16:06:47] Food ID: 6e3cfd54-9f1d-4b62-af20-d5ccec2f5028
+[2024-08-08 16:06:47] Food items: {'6e3cfd54-9f1d-4b62-af20-d5ccec2f5028': {'x': 240, 'y': 20, 'tag': 'food6e3cfd54-9f1d-4b62-af20-d5ccec2f5028', 'oval_id': 196}}
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Set time score in config.ini to total time played
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Set time score in config.ini to total time played
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Set time score in config.ini to total time played
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:47] Set time score in config.ini to total time played
+[2024-08-08 16:06:47] Wrote changes to config file
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Set time score in config.ini to total time played
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Set time score in config.ini to total time played
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Set time score in config.ini to total time played
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Set time score in config.ini to total time played
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Set time score in config.ini to total time played
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Set time score in config.ini to total time played
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Set time score in config.ini to total time played
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Set time score in config.ini to total time played
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:48] Set time score in config.ini to total time played
+[2024-08-08 16:06:48] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:49] Set time score in config.ini to total time played
+[2024-08-08 16:06:49] Wrote changes to config file
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Set time score in config.ini to total time played
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Set time score in config.ini to total time played
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Set time score in config.ini to total time played
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Set time score in config.ini to total time played
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Set time score in config.ini to total time played
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Set time score in config.ini to total time played
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Set time score in config.ini to total time played
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Set time score in config.ini to total time played
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:50] Set time score in config.ini to total time played
+[2024-08-08 16:06:50] Wrote changes to config file
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Set time score in config.ini to total time played
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Set time score in config.ini to total time played
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Set time score in config.ini to total time played
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Set time score in config.ini to total time played
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Set time score in config.ini to total time played
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Set time score in config.ini to total time played
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Set time score in config.ini to total time played
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Set time score in config.ini to total time played
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:51] Set time score in config.ini to total time played
+[2024-08-08 16:06:51] Wrote changes to config file
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Set time score in config.ini to total time played
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Set time score in config.ini to total time played
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Set time score in config.ini to total time played
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Set time score in config.ini to total time played
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Set time score in config.ini to total time played
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Set time score in config.ini to total time played
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Set time score in config.ini to total time played
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Set time score in config.ini to total time played
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Food eaten and deleted from list.
+[2024-08-08 16:06:52] Food ID: cbe6bef6-47c4-4f1e-8f4e-cb1e63f9faa7
+[2024-08-08 16:06:52] Food items: {'cbe6bef6-47c4-4f1e-8f4e-cb1e63f9faa7': {'x': 300, 'y': 180, 'tag': 'foodcbe6bef6-47c4-4f1e-8f4e-cb1e63f9faa7', 'oval_id': 246}}
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:52] Set time score in config.ini to total time played
+[2024-08-08 16:06:52] Wrote changes to config file
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Set time score in config.ini to total time played
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Set time score in config.ini to total time played
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Set time score in config.ini to total time played
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Set time score in config.ini to total time played
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Set time score in config.ini to total time played
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Set time score in config.ini to total time played
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Set time score in config.ini to total time played
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Set time score in config.ini to total time played
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:53] Set time score in config.ini to total time played
+[2024-08-08 16:06:53] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:54] Set time score in config.ini to total time played
+[2024-08-08 16:06:54] Wrote changes to config file
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Set time score in config.ini to total time played
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Set time score in config.ini to total time played
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Set time score in config.ini to total time played
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Set time score in config.ini to total time played
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Set time score in config.ini to total time played
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Set time score in config.ini to total time played
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Set time score in config.ini to total time played
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Set time score in config.ini to total time played
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:55] Set time score in config.ini to total time played
+[2024-08-08 16:06:55] Wrote changes to config file
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Food eaten and deleted from list.
+[2024-08-08 16:06:56] Food ID: febb0953-07f1-405c-a5b0-b6d2bafc7050
+[2024-08-08 16:06:56] Food items: {'febb0953-07f1-405c-a5b0-b6d2bafc7050': {'x': 40, 'y': 40, 'tag': 'foodfebb0953-07f1-405c-a5b0-b6d2bafc7050', 'oval_id': 276}}
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Set time score in config.ini to total time played
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Set time score in config.ini to total time played
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Set time score in config.ini to total time played
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Set time score in config.ini to total time played
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Set time score in config.ini to total time played
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Set time score in config.ini to total time played
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Set time score in config.ini to total time played
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Set time score in config.ini to total time played
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:56] Set time score in config.ini to total time played
+[2024-08-08 16:06:56] Wrote changes to config file
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Set time score in config.ini to total time played
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Set time score in config.ini to total time played
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Set time score in config.ini to total time played
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Set time score in config.ini to total time played
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Set time score in config.ini to total time played
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Set time score in config.ini to total time played
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Set time score in config.ini to total time played
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Set time score in config.ini to total time played
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:57] Set time score in config.ini to total time played
+[2024-08-08 16:06:57] Wrote changes to config file
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Set time score in config.ini to total time played
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Set time score in config.ini to total time played
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Set time score in config.ini to total time played
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Set time score in config.ini to total time played
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Food eaten and deleted from list.
+[2024-08-08 16:06:58] Food ID: 7ea30c54-8ca0-40c1-98d5-8b8e5ebd8962
+[2024-08-08 16:06:58] Food items: {'7ea30c54-8ca0-40c1-98d5-8b8e5ebd8962': {'x': 260, 'y': 160, 'tag': 'food7ea30c54-8ca0-40c1-98d5-8b8e5ebd8962', 'oval_id': 299}}
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Set time score in config.ini to total time played
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Set time score in config.ini to total time played
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Set time score in config.ini to total time played
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Set time score in config.ini to total time played
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:58] Set time score in config.ini to total time played
+[2024-08-08 16:06:58] Wrote changes to config file
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Set time score in config.ini to total time played
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Set time score in config.ini to total time played
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Set time score in config.ini to total time played
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Set time score in config.ini to total time played
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Set time score in config.ini to total time played
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Set time score in config.ini to total time played
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Set time score in config.ini to total time played
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Set time score in config.ini to total time played
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:06:59] Set time score in config.ini to total time played
+[2024-08-08 16:06:59] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Food eaten and deleted from list.
+[2024-08-08 16:07:00] Food ID: c26248a1-5c40-4dd3-8cea-7cc07a282fce
+[2024-08-08 16:07:00] Food items: {'c26248a1-5c40-4dd3-8cea-7cc07a282fce': {'x': 180, 'y': 20, 'tag': 'foodc26248a1-5c40-4dd3-8cea-7cc07a282fce', 'oval_id': 321}}
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:00] Set time score in config.ini to total time played
+[2024-08-08 16:07:00] Wrote changes to config file
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Set time score in config.ini to total time played
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Set time score in config.ini to total time played
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Set time score in config.ini to total time played
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Set time score in config.ini to total time played
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Set time score in config.ini to total time played
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Set time score in config.ini to total time played
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] snake has a collision
+[2024-08-08 16:07:01] bound and unbound keys.
+[2024-08-08 16:07:01] Set buttons states to: normal.
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:01] Game is in an unexpected state
+[2024-08-08 16:07:01] Game state: game_over
+[2024-08-08 16:07:01] Snake coordinates after reset: [(260, -20), (260, 0), (260, 20), (260, 40), (260, 60), (260, 80), (260, 100), (260, 120), (260, 140), (260, 160), (260, 180), (260, 200), (240, 200), (220, 200), (200, 200), (180, 200)]
+[2024-08-08 16:07:01] Deleted all items on the canvas.
+[2024-08-08 16:07:01] Unbound space key.
+[2024-08-08 16:07:01] Bound and unbound keys.
+[2024-08-08 16:07:01] Got the high score from config.ini
+[2024-08-08 16:07:01] High score: 0
+[2024-08-08 16:07:01] Score: 12
+[2024-08-08 16:07:01] Set high score in config.ini
+[2024-08-08 16:07:01] Got time score: 0
+[2024-08-08 16:07:01] high_score_time updated to: 33
+[2024-08-08 16:07:01] Got snake length high score: 0
+[2024-08-08 16:07:01] snake_length_high_score updated to: 16
+[2024-08-08 16:07:01] Wrote changes to config file
+[2024-08-08 16:07:05] Updated the config of theme
+[2024-08-08 16:07:05] Reset theme
+[2024-08-08 16:07:06] Game mode: classic_snake
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:07:06] Config file read in Classic snake game file: C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:07:06] Snake length: 5
+[2024-08-08 16:07:06] Game width: 600
+[2024-08-08 16:07:06] Game height: 600
+[2024-08-08 16:07:06] Highlight thickness: 5
+[2024-08-08 16:07:06] Highlight background: Black
+[2024-08-08 16:07:06] Initial direction of snake: down
+[2024-08-08 16:07:06] Initial score: 0
+[2024-08-08 16:07:06] Game over flag: False
+[2024-08-08 16:07:06] Game paused: False
+[2024-08-08 16:07:06] Has changed direction: False
+[2024-08-08 16:07:06] Time-related variables initialized.
+[2024-08-08 16:07:06] Start time: None
+[2024-08-08 16:07:06] Paused time: None
+[2024-08-08 16:07:06] Total paused time: 0
+[2024-08-08 16:07:06] Total time played: 0
+[2024-08-08 16:07:06] Total time paused: 0
+[2024-08-08 16:07:06] Last direction change time: 0
+[2024-08-08 16:07:06] Pause duration: 0
+[2024-08-08 16:07:06] High score time: 0
+[2024-08-08 16:07:06] Current time: 0
+[2024-08-08 16:07:06] Get time score: 0
+[2024-08-08 16:07:06] Get snake length: 0
+[2024-08-08 16:07:06] High scores initialized
+[2024-08-08 16:07:06] High score: 0
+[2024-08-08 16:07:06] Snake length high score: 0
+[2024-08-08 16:07:06] Reset snake length
+[2024-08-08 16:07:06] Game mode: classic_snake
+[2024-08-08 16:07:06] Wrote changes to config file
+Loaded config from C:\Users\wimjr\Documents\snake\default_config.json
+[2024-08-08 16:07:06] Config file read
+[2024-08-08 16:07:06] Game mode set to classic_snake.
+[2024-08-08 16:07:06] Game focused
+[2024-08-08 16:07:06] Updated high score labels.
+[2024-08-08 16:07:06] Wrote changes to config file
+[2024-08-08 16:07:06] Set the game state to start_screen. And wrote changes to config.ini.
+[2024-08-08 16:07:06] Resetting snake
+[2024-08-08 16:07:06] Set initial game size to: 600x600
+[2024-08-08 16:07:06] Updated initial_game_size in config.ini to: 600x600
+[2024-08-08 16:07:06] Current initial_game_size in config.ini to: 600x600
+[2024-08-08 16:07:06] Label border width: 1
+[2024-08-08 16:07:06] label_border_height: 1
+[2024-08-08 16:07:08] Closed the app
+
+
+
+
+[2024-08-08 16:40:07] Started the app
+[2024-08-08 16:40:07] Started the GameApp Class
+[2024-08-08 16:40:07] Game mode: initial config
+Loaded config from c:\Users\wimjr\Documents\snake\default_config.json
+Config saved successfully to c:\Users\wimjr\Documents\snake\default_config.json

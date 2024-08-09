@@ -15,7 +15,7 @@ class ButtonCommands:
         self.config_path = config_path
         self.functions = functions
         self.game_logger = game_logger
-        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path)
+        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
 
     def home_command(self):
         """

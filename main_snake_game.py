@@ -282,7 +282,7 @@ class SnakeGameApp:
     
     def initialize_user_config(self):
         self.update_contrast = UpdateContrast(self.game_logger, self.config, self.config_path)
-        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path)
+        self.theme_updater = ThemeUpdater(self.game_logger, self.config, self.config_path, self.config_handler)
 
         self.theme = None
         self.contrast = None
@@ -329,6 +329,7 @@ class SnakeGameApp:
     
     def apply_user_config(self):
         # Apply user-specific settings
+        self.config, _ = self.config_handler.load_config(self.username)
         self.theme = self.config.get('Settings', {}).get('theme', 'Default')
         self.contrast = self.config.get('Settings', {}).get('contrast', 'Default')
         self.snake_color = self.config.get('Settings', {}).get('snake_color', 'Default')
@@ -445,6 +446,7 @@ class SnakeGameApp:
         """
         Apply the theme from the configuration file.
         """
+        self.config, _ = self.config_handler.load_config(self.username)
         theme_name = self.config.get('Settings', {}).get('theme', 'Red')
         theme_dir = path.dirname(__file__)
         theme_path = path.join(theme_dir, 'themes', f"{theme_name}.json")
@@ -456,8 +458,9 @@ class SnakeGameApp:
 
     def save_config(self):
         try:
-            with open(self.config_path, 'w', encoding='utf-8') as configfile:
-                json.dump(self.config, configfile, indent=4)
+            # with open(self.config_path, 'w', encoding='utf-8') as configfile:
+            #     json.dump(self.config, configfile, indent=4)
+            self.config_handler.save_config(self.config, self.config_path)
             print(f"Config saved successfully to {self.config_path}")
         except Exception as e:
             print(f"Error saving config: {str(e)}")

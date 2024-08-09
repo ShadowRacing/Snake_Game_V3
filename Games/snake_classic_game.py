@@ -257,10 +257,10 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.bind_and_unbind_keys()
         self.game_logger.log_game_event("Bound and unbound keys.")
 
-        try:
-            self.config.read(self.config_path)
-        except FileNotFoundError as e:
-            traceback.print_exc(e)
+        # try:
+        #     #self.config.read(self.config_path)
+        # except FileNotFoundError as e:
+        #     traceback.print_exc(e)
 
         try:
             self.high_score = int(self.config['Classic_Snake_Values'].get('high_score', 0))
@@ -296,7 +296,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         x, y = snake.coordinates[0]
 
         try:
-            self.config.read(self.config_path)
+            #self.config.read(self.config_path)
             self.score = int(self.config['Classic_Snake_Values'].get('score', 0))
         except KeyError as e:
             self.game_logger.log_game_event(f"Error accessing score from config: {str(e)}")
@@ -412,7 +412,7 @@ class SnakeClassicGame(ctk.CTkCanvas):
         self.bind_and_unbind_keys()
         self.game_logger.log_game_event("Bound and unbound keys.")
 
-        self.config.read(self.config_path)
+        #self.config.read(self.config_path)
         self.high_score = int(self.config['Classic_Snake_Values'].get('high_score', 0))
         self.game_logger.log_game_event("Got the high score from config.ini")
         self.game_logger.log_game_event(f"High score: {self.high_score}")
